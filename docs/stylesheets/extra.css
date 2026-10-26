@@ -58,3 +58,12 @@
   color: var(--md-default-fg-color--light);
   font-size: 0.82rem;
 }
+
+
+/* Fremhev viktige formler med en farget ramme og litt ekstra luft. */
+mjx-container[jax="CHTML"] mjx-menclose[notation="box"] {
+  border: 2px solid var(--r1-teal) !important;
+  border-radius: 0.35rem;
+  padding: 0.28em 0.55em !important;
+  margin: 0.2em 0.12em;
+}
