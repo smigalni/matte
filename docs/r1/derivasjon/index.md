@@ -142,105 +142,105 @@ Dermed blir tangentens likning.
     y-f(a)=f'(a)(x-a)
     \]
 
-### Eksempel – Finn tangentens likning
+!!! example "Eksempel – Finn tangentens likning"
 
-Vi bruker \(f(x)=x^2\) og finner tangenten i punktet der \(x=1\).
+    Vi bruker \(f(x)=x^2\) og finner tangenten i punktet der \(x=1\).
 
-**Steg 1: Finn punktet på grafen.**
+    **Steg 1: Finn punktet på grafen.**
 
-\[
-f(1)=1^2=1
-\]
+    \[
+    f(1)=1^2=1
+    \]
 
-Punktet er altså \(P=(1,1)\).
+    Punktet er altså \(P=(1,1)\).
 
-**Steg 2: Finn stigningstallet.**
+    **Steg 2: Finn stigningstallet.**
 
-Vi vet at den deriverte i dette punktet er \(f'(1)=2\).
+    Vi vet at den deriverte i dette punktet er \(f'(1)=2\).
 
-**Steg 3: Bruk et punkts formel.**
+    **Steg 3: Bruk et punkts formel.**
 
-Sett \(x_1=1\), \(y_1=1\) og \(m=2\):
+    Sett \(x_1=1\), \(y_1=1\) og \(m=2\):
 
-\[
-y-1=2(x-1)
-\]
+    \[
+    y-1=2(x-1)
+    \]
 
-Gang ut parentesen og isoler \(y\):
+    Gang ut parentesen og isoler \(y\):
 
-\[
-y-1=2x-2
-\]
+    \[
+    y-1=2x-2
+    \]
 
-\[
-\boxed{y=2x-1}
-\]
+    \[
+    \boxed{y=2x-1}
+    \]
 
-Dette er tangentens likning.
+    Dette er tangentens likning.
 
 ## 4. Oppgaver
 
 Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
 
-### Oppgave 1 – Forstå den deriverte
+!!! question "Oppgave 1 – Forstå den deriverte"
 
-En funksjon har \(f'(2)=5\).
+    En funksjon har \(f'(2)=5\).
 
-a) Hva er stigningstallet til tangenten når \(x=2\)?
+    a) Hva er stigningstallet til tangenten når \(x=2\)?
 
-b) Hva forteller tallet 5 om den momentane vekstfarten?
+    b) Hva forteller tallet 5 om den momentane vekstfarten?
 
-c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
+    c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
 
-### Oppgave 2 – Fra stigningstall til tangent
+!!! question "Oppgave 2 – Fra stigningstall til tangent"
 
-En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(m=3\).
+    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(m=3\).
 
-a) Skriv opp et punkts formel.
+    a) Skriv opp et punkts formel.
 
-b) Sett inn punktet og stigningstallet.
+    b) Sett inn punktet og stigningstallet.
 
-c) Finn likningen på formen \(y=ax+b\).
+    c) Finn likningen på formen \(y=ax+b\).
 
-### Oppgave 3 – Tangent til en parabel
+!!! question "Oppgave 3 – Tangent til en parabel"
 
-Grafen til \(f(x)=x^2\) har punktet \(P=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
+    Grafen til \(f(x)=x^2\) har punktet \(P=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
 
-a) Hva er tangentens stigningstall?
+    a) Hva er tangentens stigningstall?
 
-b) Bruk et punkts formel til å finne tangentens likning.
+    b) Bruk et punkts formel til å finne tangentens likning.
 
-c) Skriv svaret på formen \(y=ax+b\).
+    c) Skriv svaret på formen \(y=ax+b\).
 
-### Oppgave 4 – Momentan fart
+!!! question "Oppgave 4 – Momentan fart"
 
-Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
+    Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
 
-a) Hva er syklistens momentane vekstfart ved \(t=3\)?
+    a) Hva er syklistens momentane vekstfart ved \(t=3\)?
 
-b) Hva er stigningstallet til tangenten på strekning–tid-grafen ved \(t=3\)?
+    b) Hva er stigningstallet til tangenten på strekning–tid-grafen ved \(t=3\)?
 
-c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
+    c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
 
-### Oppgave 5 – Tegn og tolk
+!!! question "Oppgave 5 – Tegn og tolk"
 
-Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
+    Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
 
-a) Tegn tangenten i punktet.
+    a) Tegn tangenten i punktet.
 
-b) Forklar hva stigningstallet forteller om den momentane vekstfarten.
+    b) Forklar hva stigningstallet forteller om den momentane vekstfarten.
 
-c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
+    c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
 
-### Oppgave 6 – Finn to ulike tangenter
+!!! question "Oppgave 6 – Finn to ulike tangenter"
 
-En rett linje går gjennom punktet \(P=(3,4)\).
+    En rett linje går gjennom punktet \(P=(3,4)\).
 
-a) Finn likningen til linjen når stigningstallet er \(m=2\).
+    a) Finn likningen til linjen når stigningstallet er \(m=2\).
 
-b) Finn likningen til en annen linje gjennom samme punkt når stigningstallet er \(m=-1\).
+    b) Finn likningen til en annen linje gjennom samme punkt når stigningstallet er \(m=-1\).
 
-c) Tegn begge linjene i samme koordinatsystem. Hva er likt, og hva er forskjellig?
+    c) Tegn begge linjene i samme koordinatsystem. Hva er likt, og hva er forskjellig?
 
 ??? note "Fasit – åpne når du har prøvd selv"
 
