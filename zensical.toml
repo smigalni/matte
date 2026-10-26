@@ -31,6 +31,7 @@ features = [
 ]
 
 [project.markdown_extensions]
+admonition = {}
 pymdownx.arithmatex.generic = true
 pymdownx.details = {}
 pymdownx.superfences = {}
