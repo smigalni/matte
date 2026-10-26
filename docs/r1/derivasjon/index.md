@@ -46,13 +46,13 @@ Se på funksjonen \(f(x)=x^2\) og punktet \(P=(1,1)\).
     <text x="44" y="160">1</text><text x="44" y="120">2</text><text x="44" y="80">3</text><text x="44" y="40">4</text>
   </g>
   <g clip-path="url(#plot1)">
-    <path d="M44 195 Q100 195 140 156 Q180 84 220 36" fill="none" stroke="#16803d" stroke-width="3"/>
-    <path d="M80 236 L220 36" fill="none" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M60 196 Q80 196 100 156 Q120 116 140 36" fill="none" stroke="#16803d" stroke-width="3"/>
+    <path d="M80 196 L120 116" fill="none" stroke="#d97706" stroke-width="2.5"/>
   </g>
   <circle cx="100" cy="156" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
   <g fill="currentColor" font-size="11">
     <text x="109" y="150">P = (1, 1)</text>
-    <text x="224" y="49" fill="#d97706">Tangent</text>
+    <text x="124" y="108" fill="#d97706">Tangent</text>
     <text x="226" y="87" fill="#16803d">f(x) = x²</text>
   </g>
 </svg>
