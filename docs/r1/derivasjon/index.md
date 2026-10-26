@@ -46,17 +46,19 @@ Se på funksjonen \(f(x)=x^2\) og punktet \(P=(1,1)\).
     <text x="44" y="160">1</text><text x="44" y="120">2</text><text x="44" y="80">3</text><text x="44" y="40">4</text>
   </g>
   <g clip-path="url(#plot1)">
-    <path d="M60 196 Q80 196 100 156 Q120 116 140 36" fill="none" stroke="#16803d" stroke-width="3"/>
-    <path d="M80 196 L120 116" fill="none" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M60 196 C73.3 196 86.7 182.7 100 156 C113.3 129.3 126.7 89.3 140 36" fill="none" stroke="#16803d" stroke-width="3"/>
+    <path d="M60 236 L140 76" fill="none" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M100 156 L140 156 L140 76" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4 3"/>
   </g>
   <circle cx="100" cy="156" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
-  <g fill="currentColor" font-size="11">
-    <text x="109" y="150">P = (1, 1)</text>
-    <text x="124" y="108" fill="#d97706">Tangent</text>
-    <text x="226" y="87" fill="#16803d">f(x) = x²</text>
+  <g fill="currentColor" font-size="10">
+    <text x="105" y="148">P = (1, 1)</text>
+    <text x="104" y="171" fill="#d97706">1 rute bort</text>
+    <text x="145" y="119" fill="#d97706">2 ruter opp</text>
+    <text x="203" y="52" fill="#16803d">f(x) = x²</text>
   </g>
 </svg>
-<figcaption>Skisse av grafen og tangenten i punktet P. Tangenten har samme retning som grafen akkurat i berøringspunktet.</figcaption>
+<figcaption>Fra P går vi 1 rute mot høyre og 2 ruter opp langs tangenten. Stigningstallet er derfor 2/1 = 2. Tangenten berører grafen i P.</figcaption>
 </figure>
 
 For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at tangenten i punktet \((1,1)\) har stigningstall 2.
