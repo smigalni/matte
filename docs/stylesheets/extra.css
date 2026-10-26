@@ -1,0 +1,60 @@
+/* Litt mer liv i R1-siden, uten å gjøre teksten vanskelig å lese. */
+:root {
+  --r1-blue: #3157a4;
+  --r1-teal: #087f8c;
+  --r1-orange: #d97706;
+  --r1-soft-blue: #edf3ff;
+  --r1-soft-teal: #e8f7f5;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--r1-blue);
+}
+
+.md-typeset h3 {
+  color: var(--r1-teal);
+}
+
+.md-typeset a {
+  text-decoration-color: #6b91d6;
+  text-underline-offset: 0.16em;
+}
+
+.md-typeset a:hover {
+  color: var(--r1-teal);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.55rem;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 700;
+}
+
+.md-typeset .arithmatex,
+.md-typeset .highlight {
+  border-radius: 0.45rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--r1-soft-blue);
+  color: #203b70;
+}
+
+.md-typeset blockquote {
+  border-left-color: var(--r1-teal);
+}
+
+.md-typeset hr {
+  border-bottom-color: #d7e1f3;
+}
+
+/* Match fargene i figurene i kapittel 3.1. */
+.md-typeset figure figcaption {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.82rem;
+}
