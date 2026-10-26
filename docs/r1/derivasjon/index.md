@@ -16,7 +16,7 @@ I dette delkapitlet fokuserer vi på betydningen av den deriverte i et punkt. Vi
 Den deriverte hjelper oss å beskrive **hvor raskt noe endrer seg akkurat nå**. Det er nyttig i mange situasjoner:
 
 - **Fart:** Hvor fort kjører bilen akkurat i dette øyeblikket?
-- **Økonomi:** Hvor mye øker kostnaden omtrent hvis vi produserer én enhet til?
+- **Aksjer og krypto:** Vi kan analysere hvordan en pris endrer seg, og bruke slike beregninger som én del av en algoritme eller en bot som handler automatisk. Den deriverte kan hjelpe oss å beskrive prisendringer, men kan ikke alene forutsi markedet eller garantere gevinst.
 - **Grafer:** Hvor raskt øker eller minker en funksjon på et bestemt sted?
 
 I alle disse eksemplene handler det om endring. Den deriverte gir oss et mål på hvor rask endringen er. I dette kapittelet skal vi se at den også kan forstås geometrisk: Den deriverte i et punkt er stigningstallet til tangenten til grafen i punktet.
