@@ -318,55 +318,66 @@ c) Tegn begge linjene i samme koordinatsystem. Hva er likt, og hva er forskjelli
 
 ## Oppsummering
 
-Bruk denne delen som en kort huskelapp når du skal løse oppgaver om tangenter.
+Bruk denne delen som en kort huskelapp når du løser oppgaver om tangenter.
 
 ### 1. Den deriverte gir stigningstallet
 
-Den deriverte i punktet \(x=a\) forteller oss stigningstallet til tangenten i punktet \((a,f(a))\).
+Den deriverte \(f'(a)\) forteller oss stigningstallet til tangenten i punktet \((a,f(a))\).
 
-!!! info "Husk"
-    \[
-    \boxed{m=f'(a)}
-    \]
+**Husk:**
 
-    **Den deriverte = tangentens stigningstall.**
+\[
+m=f'(a)
+\]
 
 ### 2. Ettpunktsformelen
 
 Når vi kjenner et punkt på en rett linje og stigningstallet, kan vi finne likningen til linjen.
 
-!!! important "Viktig formel – etpunktsformelen"
-    \[
-    \boxed{y-y_1=m(x-x_1)}
-    \]
+**Ettpunktsformelen:**
 
-    - \((x_1,y_1)\) er punktet linjen går gjennom.
-    - \(m\) er stigningstallet.
+\[
+\boxed{y-y_1=m(x-x_1)}
+\]
 
-    **Eksempel:** Linjen går gjennom \((1,1)\) og har stigningstall \(m=2\).
+Her er:
 
-    \[
-    \begin{aligned}
-    y-1&=2(x-1)\\
-    y-1&=2x-2\\
-    \boxed{y&=2x-1}
-    \end{aligned}
-    \]
+- \((x_1,y_1)\) punktet linjen går gjennom.
+- \(m\) stigningstallet.
 
-### 3. Sett dem sammen for å finne en tangent
+**Eksempel:** En linje går gjennom punktet \((1,1)\) og har stigningstall \(m=2\).
+
+Sett inn punktet og stigningstallet i formelen:
+
+\[
+y-1=2(x-1)
+\]
+
+Gang ut parentesen:
+
+\[
+y-1=2x-2
+\]
+
+Løs med hensyn på \(y\):
+
+\[
+\boxed{y=2x-1}
+\]
+
+### 3. Bruk etpunktsformelen til å finne en tangent
 
 For tangenten til grafen \(y=f(x)\) når \(x=a\):
 
 - Punktet er \((a,f(a))\).
-- Stigningstallet er \(m=f'(a)\).
+- Stigningstallet er \(f'(a)\).
 
-Derfor er tangentens likning
+Setter vi dette inn i etpunktsformelen, får vi tangentens likning:
 
 \[
 \boxed{y-f(a)=f'(a)(x-a)}
 \]
 
-!!! tip "Huskeregel"
-    **Deriverte → stigningstall → etpunktsformelen → tangentlikning.**
+**Huskeregel:** Deriverte → stigningstall → etpunktsformelen → tangentlikning.
 
 Foreløpig fokuserer vi på disse ideene. Produktregelen, brøkregelen og andre derivasjonsregler kommer senere.
