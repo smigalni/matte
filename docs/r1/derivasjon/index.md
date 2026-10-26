@@ -1,272 +1,313 @@
-# Kapittel 3 – Derivasjon
+# 3.1 Den deriverte i et punkt
 
 ## Læringsmål
 
-Når du har arbeidet med dette kapitlet, skal du kunne:
+Når du har arbeidet med dette delkapitlet, skal du kunne:
 
-- forklare hva den deriverte forteller oss om en funksjon
-- bruke sentrale derivasjonsregler
-- derivere summer, produkter, brøker og sammensatte funksjoner når reglene er relevante
-- bruke den deriverte til å undersøke vekst, topp- og bunnpunkter
-- vise en ryddig matematisk løsning og begrunne metodevalget
+- forklare hva den deriverte i et punkt forteller
+- tolke den deriverte som **momentan vekstfart**
+- forklare at den deriverte er **stigningstallet til tangenten**
+- finne likningen til en tangent ved hjelp av **et punkts formel**
 
-Tilpass læringsmålene til den konkrete læreboken og undervisningsplanen dere følger.
+I dette delkapitlet fokuserer vi på betydningen av den deriverte i et punkt. Vi venter med derivasjonsreglene til senere.
 
-## 3.1 Hva betyr derivasjon?
+## 1. Hva betyr den deriverte i et punkt?
 
-Den deriverte beskriver hvor raskt en funksjon endrer seg. Geometrisk kan den deriverte i et punkt tolkes som stigningstallet til tangenten til grafen i punktet.
-
-Hvis funksjonen er \(f(x)\), skriver vi den deriverte som
+Den deriverte til en funksjon \(f\) i punktet \(x=a\) skrives
 
 \[
-f'(x)
+f'(a)
 \]
 
-Verdien \(f'(a)\) forteller hvor raskt funksjonen endrer seg når \(x=a\).
+Verdien \(f'(a)\) forteller hvor raskt funksjonen endrer seg akkurat når \(x=a\). Det er den **momentane vekstfarten**.
 
-### Eksempel 1 – En enkel derivasjon
+Geometrisk forteller den samme verdien oss **stigningstallet til tangenten** til grafen i punktet \((a,f(a))\).
 
-La
+### Figur 1 – Graf, punkt og tangent
+
+Se på funksjonen \(f(x)=x^2\) og punktet \(P=(1,1)\).
+
+<figure markdown>
+<svg viewBox="0 0 360 270" role="img" aria-label="Grafen y lik x i andre og tangenten y lik 2x minus 1 i punktet 1,1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="plot1"><rect x="42" y="18" width="286" height="218"/></clipPath>
+  </defs>
+  <g stroke="currentColor" stroke-opacity="0.13" stroke-width="1">
+    <path d="M60 20V236 M100 20V236 M140 20V236 M180 20V236 M220 20V236 M260 20V236 M300 20V236"/>
+    <path d="M42 36H328 M42 76H328 M42 116H328 M42 156H328 M42 196H328 M42 236H328"/>
+  </g>
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
+    <path d="M42 196H333"/>
+    <path d="M60 242V14"/>
+  </g>
+  <g fill="currentColor" font-size="10">
+    <text x="334" y="191">x</text><text x="67" y="15">y</text>
+    <text x="48" y="209">0</text><text x="96" y="209">1</text><text x="136" y="209">2</text><text x="176" y="209">3</text>
+    <text x="44" y="160">1</text><text x="44" y="120">2</text><text x="44" y="80">3</text><text x="44" y="40">4</text>
+  </g>
+  <g clip-path="url(#plot1)">
+    <path d="M44 195 Q100 195 140 156 Q180 84 220 36" fill="none" stroke="#16803d" stroke-width="3"/>
+    <path d="M80 236 L220 36" fill="none" stroke="#d97706" stroke-width="2.5"/>
+  </g>
+  <circle cx="100" cy="156" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
+  <g fill="currentColor" font-size="11">
+    <text x="109" y="150">P = (1, 1)</text>
+    <text x="224" y="49" fill="#d97706">Tangent</text>
+    <text x="226" y="87" fill="#16803d">f(x) = x²</text>
+  </g>
+</svg>
+<figcaption>Skisse av grafen og tangenten i punktet P. Tangenten har samme retning som grafen akkurat i berøringspunktet.</figcaption>
+</figure>
+
+For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at tangenten i punktet \((1,1)\) har stigningstall 2.
+
+**Husk:** \(f'(1)\) er et tall – stigningstallet akkurat i punktet \(x=1\). \(f'(x)\) betegner derimot den deriverte som en funksjon av \(x\).
+
+## 2. Momentan vekstfart
+
+Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\) sekunder.
+
+- Gjennomsnittlig vekstfart beskriver endringen over et tidsintervall.
+- Momentan vekstfart beskriver farten ved ett bestemt tidspunkt.
+- Når grafen viser strekning som funksjon av tid, er den momentane vekstfarten stigningstallet til tangenten.
+
+### Figur 2 – Strekning som funksjon av tid
+
+<figure markdown>
+<svg viewBox="0 0 360 255" role="img" aria-label="Strekning som funksjon av tid med tangent i et bestemt tidspunkt" xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="plot2"><rect x="46" y="18" width="282" height="200"/></clipPath></defs>
+  <g stroke="currentColor" stroke-opacity="0.13" stroke-width="1">
+    <path d="M60 20V218 M110 20V218 M160 20V218 M210 20V218 M260 20V218 M310 20V218"/>
+    <path d="M46 218H328 M46 178H328 M46 138H328 M46 98H328 M46 58H328 M46 18H328"/>
+  </g>
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
+    <path d="M46 218H334"/><path d="M60 228V12"/>
+  </g>
+  <g fill="currentColor" font-size="10">
+    <text x="336" y="213">t (s)</text><text x="68" y="13">s(t) (m)</text>
+    <text x="48" y="231">0</text><text x="106" y="231">1</text><text x="156" y="231">2</text><text x="206" y="231">3</text><text x="256" y="231">4</text>
+  </g>
+  <g clip-path="url(#plot2)">
+    <path d="M60 218 Q110 214 160 178 Q210 118 260 18" fill="none" stroke="#16803d" stroke-width="3"/>
+    <path d="M95 218 L255 58" fill="none" stroke="#d97706" stroke-width="2.5"/>
+  </g>
+  <circle cx="160" cy="178" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
+  <g fill="currentColor" font-size="11">
+    <text x="170" y="171">Tidspunktet t = a</text>
+    <text x="248" y="49" fill="#d97706">Tangent</text>
+  </g>
+</svg>
+<figcaption>På en strekning–tid-graf er tangentens stigningstall den momentane farten på det aktuelle tidspunktet.</figcaption>
+</figure>
+
+- Hvis tangenten stiger mot høyre, er vekstfarten positiv.
+- Hvis tangenten er vannrett, er vekstfarten null.
+- Hvis tangenten synker mot høyre, er vekstfarten negativ.
+
+I en strekning–tid-modell måles den momentane vekstfarten i for eksempel meter per sekund (m/s).
+
+## 3. Tangentens likning – et punkts formel
+
+En rett linje med stigningstall \(m\) som går gjennom punktet \((x_1,y_1)\), har likningen
 
 \[
-f(x)=x^2.
+\boxed{y-y_1=m(x-x_1)}
 \]
 
-Da er
+Dette kalles **et punkts formel**.
+
+For tangenten til grafen til \(f\) i \(x=a\) kjenner vi både punktet og stigningstallet:
+
+- Punktet er \((a,f(a))\).
+- Stigningstallet er \(f'(a)\).
+
+Dermed blir tangentens likning
 
 \[
-f'(x)=2x.
+\boxed{y-f(a)=f'(a)(x-a)}
 \]
 
-I punktet \(x=3\) er stigningstallet
+### Eksempel – Finn tangentens likning
+
+Vi bruker \(f(x)=x^2\) og finner tangenten i punktet der \(x=1\).
+
+**Steg 1: Finn punktet på grafen.**
 
 \[
-f'(3)=2\cdot 3=6.
+f(1)=1^2=1
 \]
 
-Tangenten til grafen når \(x=3\), har altså stigningstall 6.
+Punktet er altså \(P=(1,1)\).
 
-## 3.2 Grunnleggende derivasjonsregler
+**Steg 2: Finn stigningstallet.**
 
-### Konstantregelen
+Vi vet at den deriverte i dette punktet er \(f'(1)=2\).
 
-Hvis \(f(x)=c\), der \(c\) er en konstant, er
+**Steg 3: Bruk et punkts formel.**
+
+Sett \(x_1=1\), \(y_1=1\) og \(m=2\):
 
 \[
-f'(x)=0.
+y-1=2(x-1)
 \]
 
-Eksempel:
+Gang ut parentesen og isoler \(y\):
 
 \[
-f(x)=7 \quad\Rightarrow\quad f'(x)=0.
+y-1=2x-2
 \]
-
-### Potensregelen
-
-For en passende potensfunksjon gjelder
 
 \[
-\frac{d}{dx}x^n=nx^{n-1}.
+\boxed{y=2x-1}
 \]
 
-Eksempel:
+Dette er tangentens likning.
 
-\[
-f(x)=x^5 \quad\Rightarrow\quad f'(x)=5x^4.
-\]
+## 4. Oppgaver
 
-### Sumregelen
+Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
 
-Deriver hvert ledd for seg:
+### Oppgave 1 – Forstå den deriverte
 
-\[
-\frac{d}{dx}\big(f(x)+g(x)\big)=f'(x)+g'(x).
-\]
+En funksjon har \(f'(2)=5\).
 
-Eksempel:
+a) Hva er stigningstallet til tangenten når \(x=2\)?
 
-\[
-h(x)=3x^4+2x^2-5x+8
-\]
+b) Hva forteller tallet 5 om den momentane vekstfarten?
 
-Dermed er
+c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
 
-\[
-h'(x)=12x^3+4x-5.
-\]
+### Oppgave 2 – Fra stigningstall til tangent
 
-Husk at den deriverte av konstantleddet 8 er 0.
+En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(m=3\).
 
-## 3.3 Produktregelen
+a) Skriv opp et punkts formel.
 
-Når to funksjoner multipliseres, kan vi bruke produktregelen:
+b) Sett inn punktet og stigningstallet.
 
-\[
-(fg)'=f'g+fg'.
-\]
+c) Finn likningen på formen \(y=ax+b\).
 
-Med ord: Deriver den første og behold den andre, pluss behold den første og deriver den andre.
+### Oppgave 3 – Tangent til en parabel
 
-### Eksempel 2
+Grafen til \(f(x)=x^2\) har punktet \(P=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
 
-Deriver
+a) Hva er tangentens stigningstall?
 
-\[
-p(x)=x^2(x+3).
-\]
+b) Bruk et punkts formel til å finne tangentens likning.
 
-Sett \(f(x)=x^2\) og \(g(x)=x+3\). Da er
+c) Skriv svaret på formen \(y=ax+b\).
 
-\[
-f'(x)=2x,\qquad g'(x)=1.
-\]
+### Oppgave 4 – Momentan fart
 
-Bruk produktregelen:
+Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
 
-\[
-p'(x)=2x(x+3)+x^2\cdot 1.
-\]
+a) Hva er syklistens momentane vekstfart ved \(t=3\)?
 
-Forenkle:
+b) Hva er stigningstallet til tangenten på strekning–tid-grafen ved \(t=3\)?
 
-\[
-p'(x)=2x^2+6x+x^2=3x^2+6x.
-\]
+c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
 
-**Vanlig feil:** Produktregelen er ikke \((fg)'=f'g'\).
+### Oppgave 5 – Tegn og tolk
 
-## 3.4 Brøkregelen
+Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
 
-Når en funksjon er skrevet som en brøk av to funksjoner, kan vi bruke brøkregelen, forutsatt at nevneren ikke er null:
+a) Tegn tangenten i punktet.
 
-\[
-\left(\frac{f(x)}{g(x)}\right)'
-=
-\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}.
-\]
+b) Forklar hva stigningstallet forteller om den momentane vekstfarten.
 
-Husk rekkefølgen i telleren: *deriver øverst ganger nederst, minus øverst ganger deriver nederst*.
+c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
 
-### Eksempel 3
+### Oppgave 6 – Finn to ulike tangenter
 
-Deriver
+En rett linje går gjennom punktet \(P=(3,4)\).
 
-\[
-h(x)=\frac{x^2+1}{x+2}.
-\]
+a) Finn likningen til linjen når stigningstallet er \(m=2\).
 
-Vi setter
+b) Finn likningen til en annen linje gjennom samme punkt når stigningstallet er \(m=-1\).
 
-\[
-f(x)=x^2+1,\qquad g(x)=x+2.
-\]
-
-Da er
-
-\[
-f'(x)=2x,\qquad g'(x)=1.
-\]
-
-Sett inn i brøkregelen:
-
-\[
-h'(x)=\frac{2x(x+2)-(x^2+1)\cdot 1}{(x+2)^2}.
-\]
-
-Gang ut og trekk sammen telleren:
-
-\[
-h'(x)=\frac{2x^2+4x-x^2-1}{(x+2)^2}
-=\frac{x^2+4x-1}{(x+2)^2}.
-\]
-
-Funksjonen og den deriverte er definert for \(x\neq -2\).
-
-**Vanlige feil**
-
-- Glemme å kvadrere hele nevneren.
-- Glemme minustegnet mellom leddene i telleren.
-- Derivere bare telleren og nevneren hver for seg. Det er ikke en generell regel for derivasjon av en brøk.
-
-## 3.5 Kjerneregelen
-
-Når en funksjon er sammensatt av en ytre og en indre funksjon, bruker vi kjerneregelen:
-
-\[
-(f(g(x)))'=f'(g(x))\cdot g'(x).
-\]
-
-Med ord: Deriver den ytre funksjonen, behold den indre, og gang med den deriverte av den indre funksjonen.
-
-### Eksempel 4
-
-Deriver
-
-\[
-q(x)=(3x+1)^4.
-\]
-
-Den ytre funksjonen er \(u^4\), og den indre funksjonen er \(u=3x+1\).
-
-Dermed får vi
-
-\[
-q'(x)=4(3x+1)^3\cdot 3
-=12(3x+1)^3.
-\]
-
-**Vanlig feil:** Ikke glem å gange med den deriverte av det som står inni parentesen.
-
-## 3.6 Hvilken regel skal jeg velge?
-
-| Uttrykk | Typisk metode |
-|---|---|
-| \(x^5+3x^2-1\) | Potensregel og sumregel |
-| \(x^2(x+3)\) | Produktregel, eventuelt utvid først |
-| \(\frac{x^2+1}{x+2}\) | Brøkregel, eventuelt omskriving hvis det er mulig |
-| \((3x+1)^4\) | Kjerneregel |
-
-Noen uttrykk kan løses på flere måter. Velg en metode som er korrekt og gjør utregningen oversiktlig.
-
-## 3.7 Oppgaver
-
-Prøv selv før du åpner løsningsforslagene.
-
-### Oppgave A – Grunnleggende
-
-1. Deriver \(f(x)=4x^3-2x+7\).
-2. Deriver \(g(x)=x^6+3x^2\).
-3. Deriver \(h(x)=(2x-1)^3\).
-
-### Oppgave B – Velg riktig regel
-
-4. Deriver \(p(x)=x^2(x+4)\).
-5. Deriver \(r(x)=\frac{x^2+3}{x-1}\).
-6. Deriver \(s(x)=(x^2+2)^3\).
-
-### Oppgave C – Forklar
-
-7. Forklar med egne ord hva \(f'(2)=5\) forteller om grafen til \(f\).
-8. En elev hevder at \((f(x)g(x))'=f'(x)g'(x)\). Forklar hvorfor dette ikke er riktig.
+c) Tegn begge linjene i samme koordinatsystem. Hva er likt, og hva er forskjellig?
 
 ??? note "Fasit – åpne når du har prøvd selv"
 
-    1. \(f'(x)=12x^2-2\)
-    2. \(g'(x)=6x^5+6x\)
-    3. \(h'(x)=6(2x-1)^2\)
-    4. \(p'(x)=2x(x+4)+x^2=3x^2+8x\)
-    5. \(r'(x)=\frac{2x(x-1)-(x^2+3)}{(x-1)^2}=\frac{x^2-2x-3}{(x-1)^2}\), for \(x\neq 1\)
-    6. \(s'(x)=3(x^2+2)^2\cdot 2x=6x(x^2+2)^2\)
-    7. Tangenten til grafen i \(x=2\) har stigningstall 5.
-    8. Produktregelen er \((fg)'=f'g+fg'\), ikke \(f'g'\).
+    **Oppgave 1**
+
+    a) Stigningstallet er 5.
+
+    b) Funksjonen øker momentant med 5 enheter i \(y\) for hver enhet i \(x\), ved \(x=2\). I en fysisk modell avhenger enhetene av hva \(x\) og \(y\) beskriver.
+
+    c) Den momentane vekstfarten er 0; tangenten er vannrett.
+
+    **Oppgave 2**
+
+    \[
+    y-5=3(x-2)
+    \]
+
+    \[
+    y-5=3x-6
+    \]
+
+    \[
+    \boxed{y=3x-1}
+    \]
+
+    **Oppgave 3**
+
+    a) Stigningstallet er \(f'(2)=4\).
+
+    b)
+
+    \[
+    y-4=4(x-2)
+    \]
+
+    c)
+
+    \[
+    \boxed{y=4x-4}
+    \]
+
+    **Oppgave 4**
+
+    a) Den momentane vekstfarten er \(6\text{ m/s}\).
+
+    b) Tangentens stigningstall er 6.
+
+    c)
+
+    \[
+    s-20=6(t-3)
+    \]
+
+    \[
+    \boxed{s=6t+2}
+    \]
+
+    **Oppgave 5**
+
+    a–c) Tegningene kan variere. Positivt stigningstall betyr at tangenten stiger mot høyre; negativt stigningstall betyr at den synker mot høyre.
+
+    **Oppgave 6**
+
+    a)
+
+    \[
+    y-4=2(x-3)\quad\Rightarrow\quad \boxed{y=2x-2}
+    \]
+
+    b)
+
+    \[
+    y-4=-(x-3)\quad\Rightarrow\quad \boxed{y=-x+7}
+    \]
+
+    c) Begge linjene går gjennom \((3,4)\), men de har ulike stigningstall.
 
 ## Oppsummering
 
-- Den deriverte beskriver momentan vekstfart og tangentens stigningstall.
-- Bruk potensregelen og sumregelen på polynomer.
-- Bruk produktregelen på produkter og brøkregelen på brøker når det er hensiktsmessig.
-- Bruk kjerneregelen på sammensatte funksjoner.
-- Vis mellomregning, og kontroller fortegn og parenteser.
+- \(f'(a)\) er den momentane vekstfarten når \(x=a\).
+- Geometrisk er \(f'(a)\) stigningstallet til tangenten i punktet \((a,f(a))\).
+- Et punkts formel er \(y-y_1=m(x-x_1)\).
+- Tangentens likning kan skrives \(y-f(a)=f'(a)(x-a)\).
 
-*Læreren bør tilpasse rekkefølge, oppgavenivå og terminologi til læreboken og kompetansemålene klassen arbeider med.*
+Neste delkapittel kan bygge videre på dette. Foreløpig går vi ikke inn på produktregelen, brøkregelen eller andre derivasjonsregler.
