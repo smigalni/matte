@@ -370,7 +370,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Nei. Gjennomsnittet beskriver hele perioden, ikke veksten i hver enkelt uke.
 
-    **Oppgave 7**
+    **Oppgave 3**
 
     a) \\(a=\\frac{f(5)-f(1)}{5-1}=\\frac{17-5}{4}=3\\).
 
@@ -378,7 +378,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Svarene er like fordi en lineær funksjon har konstant stigningstall.
 
-    **Oppgave 8**
+    **Oppgave 4**
 
     a) \\(a=\\frac{f(2)-f(0)}{2-0}=\\frac{5-1}{2}=2\\).
 
@@ -408,7 +408,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{y=3x-1}
     \]
 
-    **Oppgave 5**
+    **Oppgave 7**
 
     a) Stigningstallet er \(f'(2)=4\).
 
@@ -424,7 +424,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{y=4x-4}
     \]
 
-    **Oppgave 10**
+    **Oppgave 8**
 
     a) Den momentane vekstfarten er \(6\text{ m/s}\).
 
