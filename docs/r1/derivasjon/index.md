@@ -198,17 +198,17 @@ En rett linje med stigningstall \(a\) som går gjennom punktet \((x_1,y_1)\), ha
 
 Dette kalles **etpunktsformelen**.
 
-For tangenten til grafen til \(f\) i \(x=a\) kjenner vi både punktet og stigningstallet:
+For tangenten til grafen til \\(f\\) i \\(x=x_0\\) kjenner vi både punktet og stigningstallet:
 
-- Punktet er \((a,f(a))\).
-- Stigningstallet er \(f'(a)\).
+- Punktet er \\((x_0,f(x_0))\\).
+- Stigningstallet er \\(f'(x_0)\\).
 
 Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
-    \[
-    y-f(a)=f'(a)(x-a)
-    \]
+    \\[
+    y-f(x_0)=f'(x_0)(x-x_0)
+    \\]
 
 !!! example "Eksempel – Finn tangentens likning"
 
@@ -272,7 +272,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Betyr svaret at planten vokste nøyaktig like mange centimeter hver uke?
 
-!!! question "Oppgave 5 – Gjennomsnittlig vekstfart med en lineær funksjon"
+!!! question "Oppgave 3 – Gjennomsnittlig vekstfart med en lineær funksjon"
 
     Gitt funksjonen \\(f(x)=3x+2\\).
 
@@ -282,7 +282,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Hva legger du merke til ved svarene? Forklar hvorfor.
 
-!!! question "Oppgave 6 – Sammenlign gjennomsnittlig vekstfart"
+!!! question "Oppgave 4 – Sammenlign gjennomsnittlig vekstfart"
 
     Gitt funksjonen \\(f(x)=x^2+1\\).
 
@@ -292,7 +292,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) I hvilket intervall vokser funksjonen raskest i gjennomsnitt?
 
-!!! question "Oppgave 3 – Forstå den deriverte"
+!!! question "Oppgave 5 – Forstå den deriverte"
 
     En funksjon har \(f'(2)=5\).
 
@@ -302,7 +302,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
 
-!!! question "Oppgave 4 – Fra stigningstall til tangent"
+!!! question "Oppgave 6 – Fra stigningstall til tangent"
 
     En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(m=3\).
 
@@ -370,7 +370,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Nei. Gjennomsnittet beskriver hele perioden, ikke veksten i hver enkelt uke.
 
-    **Oppgave 5**
+    **Oppgave 7**
 
     a) \\(a=\\frac{f(5)-f(1)}{5-1}=\\frac{17-5}{4}=3\\).
 
@@ -378,7 +378,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Svarene er like fordi en lineær funksjon har konstant stigningstall.
 
-    **Oppgave 6**
+    **Oppgave 8**
 
     a) \\(a=\\frac{f(2)-f(0)}{2-0}=\\frac{5-1}{2}=2\\).
 
@@ -394,7 +394,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Den momentane vekstfarten er 0; tangenten er vannrett.
 
-    **Oppgave 4**
+    **Oppgave 6**
 
     \[
     y-5=3(x-2)
@@ -424,7 +424,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{y=4x-4}
     \]
 
-    **Oppgave 8**
+    **Oppgave 10**
 
     a) Den momentane vekstfarten er \(6\text{ m/s}\).
 
