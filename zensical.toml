@@ -5,6 +5,9 @@ site_author = "Matteundervisning"
 # Legg inn den endelige nettadressen her når nettstedet publiseres:
 # site_url = "https://DITT-NETTSTED/"
 docs_dir = "docs"
+extra_css = [
+  "stylesheets/extra.css",
+]
 extra_javascript = [
   "javascripts/mathjax.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
@@ -32,3 +35,7 @@ pymdownx.arithmatex.generic = true
 pymdownx.details = {}
 pymdownx.superfences = {}
 pymdownx.tasklist.custom_checkbox = true
+
+[project.theme.palette]
+primary = "indigo"
+accent = "teal"
