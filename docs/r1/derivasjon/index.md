@@ -318,9 +318,55 @@ c) Tegn begge linjene i samme koordinatsystem. Hva er likt, og hva er forskjelli
 
 ## Oppsummering
 
-- \(f'(a)\) er den momentane vekstfarten når \(x=a\).
-- Geometrisk er \(f'(a)\) stigningstallet til tangenten i punktet \((a,f(a))\).
-- Et punkts formel er \(y-y_1=m(x-x_1)\).
-- Tangentens likning kan skrives \(y-f(a)=f'(a)(x-a)\).
+Bruk denne delen som en kort huskelapp når du skal løse oppgaver om tangenter.
 
-Neste delkapittel kan bygge videre på dette. Foreløpig går vi ikke inn på produktregelen, brøkregelen eller andre derivasjonsregler.
+### 1. Den deriverte gir stigningstallet
+
+Den deriverte i punktet (x=a) forteller oss stigningstallet til tangenten i punktet ((a,f(a))).
+
+!!! info "Husk"
+    [
+    \boxed{m=f'(a)}
+    ]
+
+    **Den deriverte = tangentens stigningstall.**
+
+### 2. Ettpunktsformelen
+
+Når vi kjenner et punkt på en rett linje og stigningstallet, kan vi finne likningen til linjen.
+
+!!! important "Viktig formel – etpunktsformelen"
+    [
+    \boxed{y-y_1=m(x-x_1)}
+    ]
+
+    - ((x_1,y_1)) er punktet linjen går gjennom.
+    - (m) er stigningstallet.
+
+    **Eksempel:** Linjen går gjennom ((1,1)) og har stigningstall (m=2).
+
+    [
+    \begin{aligned}
+    y-1&=2(x-1)\\
+    y-1&=2x-2\\
+    \boxed{y&=2x-1}
+    \end{aligned}
+    ]
+
+### 3. Sett dem sammen for å finne en tangent
+
+For tangenten til grafen (y=f(x)) når (x=a):
+
+- Punktet er ((a,f(a))).
+- Stigningstallet er (m=f'(a)).
+
+Derfor er tangentens likning
+
+[
+\boxed{y-f(a)=f'(a)(x-a)}
+]
+
+!!! tip "Huskeregel"
+    **Deriverte → stigningstall → etpunktsformelen → tangentlikning.**
+
+Foreløpig fokuserer vi på disse ideene. Produktregelen, brøkregelen og andre derivasjonsregler kommer senere.
