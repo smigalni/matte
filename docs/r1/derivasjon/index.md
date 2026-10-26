@@ -75,7 +75,67 @@ For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at ta
 
 **Husk:** \(f'(1)\) er et tall – stigningstallet akkurat i punktet \(x=1\). \(f'(x)\) betegner derimot den deriverte som en funksjon av \(x\).
 
-## 2. Momentan vekstfart
+## 2. Gjennomsnittlig vekstfart
+
+Den **gjennomsnittlige vekstfarten** forteller hvor mye funksjonsverdien endrer seg i gjennomsnitt når vi går fra én x-verdi til en annen. Geometrisk er den stigningstallet til en **sekant** – en rett linje som går gjennom to punkter på grafen.
+
+!!! important "Formel for gjennomsnittlig vekstfart"
+    \[
+    a=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+    \]
+
+Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser endringen i funksjonsverdi, og nevneren viser endringen i x.
+
+### Figur – Sekant mellom to punkter
+
+<figure markdown>
+<svg viewBox="0 0 620 330" role="img" aria-label="En kurve med to punkter P og Q og en sekantlinje mellom dem" xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="avgPlot"><rect x="48" y="20" width="520" height="250"/></clipPath></defs>
+  <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
+    <path d="M80 25V270 M140 25V270 M200 25V270 M260 25V270 M320 25V270 M380 25V270 M440 25V270 M500 25V270"/>
+    <path d="M48 50H568 M48 100H568 M48 150H568 M48 200H568 M48 250H568"/>
+  </g>
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
+    <path d="M48 270H580"/><path d="M80 285V18"/>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="582" y="275">x</text><text x="64" y="18">y</text>
+  </g>
+  <g clip-path="url(#avgPlot)">
+    <path d="M80 250 C160 245 205 218 260 190 S390 115 500 35" fill="none" stroke="#2563eb" stroke-width="4"/>
+    <path d="M200 218 L440 83" fill="none" stroke="#7c3aed" stroke-width="3"/>
+    <path d="M200 218V270 M440 83V270" stroke="currentColor" stroke-opacity="0.55" stroke-dasharray="6 5" stroke-width="1.5"/>
+  </g>
+  <circle cx="200" cy="218" r="5.5" fill="#2563eb"/><circle cx="440" cy="83" r="5.5" fill="#2563eb"/>
+  <g font-size="14" fill="currentColor">
+    <text x="120" y="207">P (x₁, f(x₁))</text><text x="390" y="65">Q (x₂, f(x₂))</text>
+    <text x="190" y="291">x₁</text><text x="432" y="291">x₂</text>
+    <text x="320" y="130" fill="#7c3aed">Sekant</text>
+  </g>
+  <path d="M200 301H440" stroke="#0d9488" stroke-width="2" fill="none"/>
+  <path d="M200 301l9 -5v10z M440 301l-9 -5v10z" fill="#0d9488"/>
+  <text x="245" y="323" font-size="14" fill="#0d9488">Endring i x: x₂ − x₁</text>
+</svg>
+<figcaption>Sekanten går gjennom begge punktene. Stigningstallet viser gjennomsnittlig endring mellom \(x_1\) og \(x_2\).</figcaption>
+</figure>
+
+### Eksempel – Finn gjennomsnittlig vekstfart
+
+La \(f(x)=x^2\). Vi finner gjennomsnittlig vekstfart fra \(x=1\) til \(x=4\).
+
+\[
+f(1)=1^2=1,\qquad f(4)=4^2=16
+\]
+
+\[
+a=\frac{f(4)-f(1)}{4-1}
+=\frac{16-1}{3}=5
+\]
+
+!!! example "Svar"
+    Den gjennomsnittlige vekstfarten er \(a=5\).
+
+## 3. Momentan vekstfart
 
 Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\) sekunder.
 
@@ -118,13 +178,13 @@ Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\)
 
 I en strekning–tid-modell måles den momentane vekstfarten i for eksempel meter per sekund (m/s).
 
-## 3. Tangentens likning – et punkts formel
+## 4. Tangentens likning – et punkts formel
 
-En rett linje med stigningstall \(m\) som går gjennom punktet \((x_1,y_1)\), har likningen:
+En rett linje med stigningstall \(a\) som går gjennom punktet \((x_1,y_1)\), har likningen:
 
 !!! important "Ettpunktsformelen"
     \[
-    y-y_1=m(x-x_1)
+    y-y_1=a(x-x_1)
     \]
 
 Dette kalles **etpunktsformelen**.
@@ -159,7 +219,7 @@ Tangentens likning blir derfor:
 
     **Steg 3: Bruk et punkts formel.**
 
-    Sett \(x_1=1\), \(y_1=1\) og \(m=2\):
+    Sett \(x_1=1\), \(y_1=1\) og \(a=2\):
 
     \[
     y-1=2(x-1)
@@ -179,11 +239,31 @@ Tangentens likning blir derfor:
 
     Dette er tangentens likning.
 
-## 4. Oppgaver
+## 5. Oppgaver
 
 Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
 
-!!! question "Oppgave 1 – Forstå den deriverte"
+!!! question "Oppgave 1 – Gjennomsnittlig vekstfart"
+
+    Gitt funksjonen \(f(x)=x^2\).
+
+    a) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=3\).
+
+    b) Finn gjennomsnittlig vekstfart fra \(x=2\) til \(x=4\).
+
+    c) Forklar hvorfor svarene er forskjellige.
+
+!!! question "Oppgave 2 – Gjennomsnittlig vekstfart i praksis"
+
+    En plante er 12 cm høy etter én uke og 27 cm høy etter fire uker.
+
+    a) Finn plantens gjennomsnittlige vekstfart i cm per uke mellom uke 1 og uke 4.
+
+    b) Forklar hva svaret betyr.
+
+    c) Betyr svaret at planten vokste nøyaktig like mange centimeter hver uke?
+
+!!! question "Oppgave 3 – Forstå den deriverte"
 
     En funksjon har \(f'(2)=5\).
 
@@ -193,7 +273,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
 
-!!! question "Oppgave 2 – Fra stigningstall til tangent"
+!!! question "Oppgave 4 – Fra stigningstall til tangent"
 
     En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(m=3\).
 
@@ -203,7 +283,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Finn likningen på formen \(y=ax+b\).
 
-!!! question "Oppgave 3 – Tangent til en parabel"
+!!! question "Oppgave 5 – Tangent til en parabel"
 
     Grafen til \(f(x)=x^2\) har punktet \(P=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
 
@@ -213,7 +293,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Skriv svaret på formen \(y=ax+b\).
 
-!!! question "Oppgave 4 – Momentan fart"
+!!! question "Oppgave 6 – Momentan fart"
 
     Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
 
@@ -223,7 +303,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
 
-!!! question "Oppgave 5 – Tegn og tolk"
+!!! question "Oppgave 7 – Tegn og tolk"
 
     Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
 
@@ -233,7 +313,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
 
-!!! question "Oppgave 6 – Finn to ulike tangenter"
+!!! question "Oppgave 8 – Finn to ulike tangenter"
 
     En rett linje går gjennom punktet \(P=(3,4)\).
 
@@ -247,13 +327,29 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     **Oppgave 1**
 
+    a) \(a=\frac{f(3)-f(1)}{3-1}=\frac{9-1}{2}=4\).
+
+    b) \(a=\frac{f(4)-f(2)}{4-2}=\frac{16-4}{2}=6\).
+
+    c) Gjennomsnittlig vekstfart er større i intervallet fra 2 til 4.
+
+    **Oppgave 2**
+
+    a) \(a=\frac{27-12}{4-1}=5\) cm per uke.
+
+    b) Planten vokste i gjennomsnitt 5 cm per uke i perioden.
+
+    c) Nei. Gjennomsnittet beskriver hele perioden, ikke veksten i hver enkelt uke.
+
+    **Oppgave 3**
+
     a) Stigningstallet er 5.
 
     b) Funksjonen øker momentant med 5 enheter i \(y\) for hver enhet i \(x\), ved \(x=2\). I en fysisk modell avhenger enhetene av hva \(x\) og \(y\) beskriver.
 
     c) Den momentane vekstfarten er 0; tangenten er vannrett.
 
-    **Oppgave 2**
+    **Oppgave 4**
 
     \[
     y-5=3(x-2)
@@ -267,7 +363,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{y=3x-1}
     \]
 
-    **Oppgave 3**
+    **Oppgave 5**
 
     a) Stigningstallet er \(f'(2)=4\).
 
@@ -283,7 +379,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{y=4x-4}
     \]
 
-    **Oppgave 4**
+    **Oppgave 6**
 
     a) Den momentane vekstfarten er \(6\text{ m/s}\).
 
@@ -299,11 +395,11 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{s=6t+2}
     \]
 
-    **Oppgave 5**
+    **Oppgave 7**
 
     a–c) Tegningene kan variere. Positivt stigningstall betyr at tangenten stiger mot høyre; negativt stigningstall betyr at den synker mot høyre.
 
-    **Oppgave 6**
+    **Oppgave 8**
 
     a)
 
