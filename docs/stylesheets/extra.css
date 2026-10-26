@@ -59,20 +59,28 @@
   font-size: 0.82rem;
 }
 
-/* Viktige formler: lilla ramme, lys bakgrunn og tydelig avstand rundt. */
-.md-typeset mjx-container[display="true"]:has(mjx-menclose[notation="box"]) {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #7c3aed !important;
-  border-radius: 0.65rem;
-  background: #f5f0ff;
-  padding: 0.8em 1.1em !important;
-  margin: 1.2em 0.5em !important;
+
+/* Egen, tydelig boks for viktige formler i kapittelet. */
+.md-typeset .admonition.important {
+  border: 2px solid #2563eb;
+  border-left-width: 6px;
+  border-radius: 0.75rem;
+  background: #eff6ff;
+  margin: 1.5rem 0;
+  padding: 0.7rem 1rem 0.9rem;
+  box-shadow: none;
 }
 
-/* Litt ekstra luft mellom selve formelen og rammen. */
-.md-typeset mjx-menclose[notation="box"] {
-  padding: 0.15em 0.25em !important;
+.md-typeset .admonition.important > .admonition-title {
+  background: #dbeafe;
+  color: #1e40af;
+  font-weight: 700;
+  margin: -0.7rem -1rem 0.7rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.55rem 0.55rem 0 0;
+}
+
+.md-typeset .admonition.important mjx-container[display="true"] {
+  text-align: center;
+  margin: 1rem 0 !important;
 }
