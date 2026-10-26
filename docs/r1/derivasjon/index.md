@@ -121,24 +121,26 @@ I en strekning–tid-modell måles den momentane vekstfarten i for eksempel mete
 
 ## 3. Tangentens likning – et punkts formel
 
-En rett linje med stigningstall \(m\) som går gjennom punktet \((x_1,y_1)\), har likningen
+En rett linje med stigningstall \(m\) som går gjennom punktet \((x_1,y_1)\), har likningen.
 
-\[
-\boxed{y-y_1=m(x-x_1)}
-\]
+!!! important "Ettpunktsformelen"
+    \[
+    y-y_1=m(x-x_1)
+    \]
 
-Dette kalles **et punkts formel**.
+Dette kalles **etpunktsformelen**.
 
 For tangenten til grafen til \(f\) i \(x=a\) kjenner vi både punktet og stigningstallet:
 
 - Punktet er \((a,f(a))\).
 - Stigningstallet er \(f'(a)\).
 
-Dermed blir tangentens likning
+Dermed blir tangentens likning.
 
-\[
-\boxed{y-f(a)=f'(a)(x-a)}
-\]
+!!! important "Tangentens likning"
+    \[
+    y-f(a)=f'(a)(x-a)
+    \]
 
 ### Eksempel – Finn tangentens likning
 
