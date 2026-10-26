@@ -272,6 +272,26 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Betyr svaret at planten vokste nøyaktig like mange centimeter hver uke?
 
+!!! question "Oppgave 5 – Gjennomsnittlig vekstfart med en lineær funksjon"
+
+    Gitt funksjonen \\(f(x)=3x+2\\).
+
+    a) Finn gjennomsnittlig vekstfart fra \\(x=1\\) til \\(x=5\\).
+
+    b) Finn gjennomsnittlig vekstfart fra \\(x=2\\) til \\(x=6\\).
+
+    c) Hva legger du merke til ved svarene? Forklar hvorfor.
+
+!!! question "Oppgave 6 – Sammenlign gjennomsnittlig vekstfart"
+
+    Gitt funksjonen \\(f(x)=x^2+1\\).
+
+    a) Finn gjennomsnittlig vekstfart fra \\(x=0\\) til \\(x=2\\).
+
+    b) Finn gjennomsnittlig vekstfart fra \\(x=2\\) til \\(x=4\\).
+
+    c) I hvilket intervall vokser funksjonen raskest i gjennomsnitt?
+
 !!! question "Oppgave 3 – Forstå den deriverte"
 
     En funksjon har \(f'(2)=5\).
@@ -292,7 +312,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Finn likningen på formen \(y=ax+b\).
 
-!!! question "Oppgave 5 – Tangent til en parabel"
+!!! question "Oppgave 7 – Tangent til en parabel"
 
     Grafen til \(f(x)=x^2\) har punktet \(P=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
 
@@ -302,7 +322,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Skriv svaret på formen \(y=ax+b\).
 
-!!! question "Oppgave 6 – Momentan fart"
+!!! question "Oppgave 8 – Momentan fart"
 
     Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
 
@@ -312,7 +332,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
 
-!!! question "Oppgave 7 – Tegn og tolk"
+!!! question "Oppgave 9 – Tegn og tolk"
 
     Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
 
@@ -322,7 +342,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
 
-!!! question "Oppgave 8 – Finn to ulike tangenter"
+!!! question "Oppgave 10 – Finn to ulike tangenter"
 
     En rett linje går gjennom punktet \(P=(3,4)\).
 
@@ -350,7 +370,23 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Nei. Gjennomsnittet beskriver hele perioden, ikke veksten i hver enkelt uke.
 
-    **Oppgave 3**
+    **Oppgave 5**
+
+    a) \\(a=\\frac{f(5)-f(1)}{5-1}=\\frac{17-5}{4}=3\\).
+
+    b) \\(a=\\frac{f(6)-f(2)}{6-2}=\\frac{20-8}{4}=3\\).
+
+    c) Svarene er like fordi en lineær funksjon har konstant stigningstall.
+
+    **Oppgave 6**
+
+    a) \\(a=\\frac{f(2)-f(0)}{2-0}=\\frac{5-1}{2}=2\\).
+
+    b) \\(a=\\frac{f(4)-f(2)}{4-2}=\\frac{17-5}{2}=6\\).
+
+    c) Funksjonen vokser raskest i gjennomsnitt fra \\(x=2\\) til \\(x=4\\).
+
+    **Oppgave 5**
 
     a) Stigningstallet er 5.
 
@@ -388,7 +424,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{y=4x-4}
     \]
 
-    **Oppgave 6**
+    **Oppgave 8**
 
     a) Den momentane vekstfarten er \(6\text{ m/s}\).
 
@@ -404,11 +440,11 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{s=6t+2}
     \]
 
-    **Oppgave 7**
+    **Oppgave 9**
 
     a–c) Tegningene kan variere. Positivt stigningstall betyr at tangenten stiger mot høyre; negativt stigningstall betyr at den synker mot høyre.
 
-    **Oppgave 8**
+    **Oppgave 10**
 
     a)
 
