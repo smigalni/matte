@@ -88,13 +88,13 @@ Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\)
     <text x="48" y="231">0</text><text x="106" y="231">1</text><text x="156" y="231">2</text><text x="206" y="231">3</text><text x="256" y="231">4</text>
   </g>
   <g clip-path="url(#plot2)">
-    <path d="M60 218 Q110 214 160 178 Q210 118 260 18" fill="none" stroke="#16803d" stroke-width="3"/>
-    <path d="M95 218 L255 58" fill="none" stroke="#d97706" stroke-width="2.5"/>
+    <path d="M60 218 Q160 218 260 18" fill="none" stroke="#16803d" stroke-width="3"/>
+    <path d="M110 218 L260 68" fill="none" stroke="#d97706" stroke-width="2.5"/>
   </g>
-  <circle cx="160" cy="178" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
+  <circle cx="160" cy="168" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
   <g fill="currentColor" font-size="11">
-    <text x="170" y="171">Tidspunktet t = a</text>
-    <text x="248" y="49" fill="#d97706">Tangent</text>
+    <text x="169" y="159">Tidspunktet t = a</text>
+    <text x="248" y="62" fill="#d97706">Tangent</text>
   </g>
 </svg>
 <figcaption>På en strekning–tid-graf er tangentens stigningstall den momentane farten på det aktuelle tidspunktet.</figcaption>
