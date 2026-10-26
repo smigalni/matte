@@ -21,7 +21,6 @@ Den deriverte hjelper oss å beskrive **hvor raskt noe endrer seg akkurat nå**.
 
 I alle disse eksemplene handler det om endring. Den deriverte gir oss et mål på hvor rask endringen er. I dette kapittelet skal vi se at den også kan forstås geometrisk: Den deriverte i et punkt er stigningstallet til tangenten til grafen i punktet.
 
-
 ## 1. Hva betyr den deriverte i et punkt?
 
 Den deriverte til en funksjon \(f\) i punktet \(x=a\) skrives
@@ -121,7 +120,7 @@ I en strekning–tid-modell måles den momentane vekstfarten i for eksempel mete
 
 ## 3. Tangentens likning – et punkts formel
 
-En rett linje med stigningstall \(m\) som går gjennom punktet \((x_1,y_1)\), har likningen.
+En rett linje med stigningstall \(m\) som går gjennom punktet \((x_1,y_1)\), har likningen:
 
 !!! important "Ettpunktsformelen"
     \[
@@ -135,7 +134,7 @@ For tangenten til grafen til \(f\) i \(x=a\) kjenner vi både punktet og stignin
 - Punktet er \((a,f(a))\).
 - Stigningstallet er \(f'(a)\).
 
-Dermed blir tangentens likning.
+Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
     \[
@@ -172,8 +171,10 @@ Dermed blir tangentens likning.
     y-1=2x-2
     \]
 
+    **Svar:**
+
     \[
-    \boxed{y=2x-1}
+    \underline{\underline{y=2x-1}}
     \]
 
     Dette er tangentens likning.
