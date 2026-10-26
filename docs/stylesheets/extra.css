@@ -59,11 +59,20 @@
   font-size: 0.82rem;
 }
 
+/* Viktige formler: lilla ramme, lys bakgrunn og tydelig avstand rundt. */
+.md-typeset mjx-container[display="true"]:has(mjx-menclose[notation="box"]) {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #7c3aed !important;
+  border-radius: 0.65rem;
+  background: #f5f0ff;
+  padding: 0.8em 1.1em !important;
+  margin: 1.2em 0.5em !important;
+}
 
-/* Fremhev viktige formler med en farget ramme og litt ekstra luft. */
-mjx-container[jax="CHTML"] mjx-menclose[notation="box"] {
-  border: 2px solid var(--r1-teal) !important;
-  border-radius: 0.35rem;
-  padding: 0.28em 0.55em !important;
-  margin: 0.2em 0.12em;
+/* Litt ekstra luft mellom selve formelen og rammen. */
+.md-typeset mjx-menclose[notation="box"] {
+  padding: 0.15em 0.25em !important;
 }
