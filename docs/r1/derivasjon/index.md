@@ -304,7 +304,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
 !!! question "Oppgave 6 – Fra stigningstall til tangent"
 
-    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(m=3\).
+    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(a=3\).
 
     a) Skriv opp et punkts formel.
 
@@ -346,9 +346,9 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     En rett linje går gjennom punktet \(P=(3,4)\).
 
-    a) Finn likningen til linjen når stigningstallet er \(m=2\).
+    a) Finn likningen til linjen når stigningstallet er \(a=2\).
 
-    b) Finn likningen til en annen linje gjennom samme punkt når stigningstallet er \(m=-1\).
+    b) Finn likningen til en annen linje gjennom samme punkt når stigningstallet er \(a=-1\).
 
     c) Tegn begge linjene i samme koordinatsystem. Hva er likt, og hva er forskjellig?
 
