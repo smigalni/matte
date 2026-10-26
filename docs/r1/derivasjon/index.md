@@ -119,21 +119,30 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 <figcaption>Sekanten går gjennom begge punktene. Stigningstallet viser gjennomsnittlig endring mellom \(x_1\) og \(x_2\).</figcaption>
 </figure>
 
-### Eksempel – Finn gjennomsnittlig vekstfart
+!!! example "Eksempel – Finn gjennomsnittlig vekstfart"
 
-La \(f(x)=x^2\). Vi finner gjennomsnittlig vekstfart fra \(x=1\) til \(x=4\).
+    La \(f(x)=x^2\). Vi finner gjennomsnittlig vekstfart fra \(x=1\) til \(x=4\).
 
-\[
-f(1)=1^2=1,\qquad f(4)=4^2=16
-\]
+    **Steg 1: Finn funksjonsverdiene.**
 
-\[
-a=\frac{f(4)-f(1)}{4-1}
-=\frac{16-1}{3}=5
-\]
+    \[
+    f(1)=1^2=1,\qquad f(4)=4^2=16
+    \]
 
-!!! example "Svar"
-    Den gjennomsnittlige vekstfarten er \(a=5\).
+    **Steg 2: Bruk formelen for gjennomsnittlig vekstfart.**
+
+    \[
+    a=\frac{f(4)-f(1)}{4-1}
+    =\frac{16-1}{3}=5
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{a=5}}
+    \]
+
+    Den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=4\) er 5.
 
 ## 3. Momentan vekstfart
 
