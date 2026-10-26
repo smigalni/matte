@@ -11,6 +11,17 @@ Når du har arbeidet med dette delkapitlet, skal du kunne:
 
 I dette delkapitlet fokuserer vi på betydningen av den deriverte i et punkt. Vi venter med derivasjonsreglene til senere.
 
+## Hvorfor bryr vi oss om den deriverte?
+
+Den deriverte hjelper oss å beskrive **hvor raskt noe endrer seg akkurat nå**. Det er nyttig i mange situasjoner:
+
+- **Fart:** Hvor fort kjører bilen akkurat i dette øyeblikket?
+- **Økonomi:** Hvor mye øker kostnaden omtrent hvis vi produserer én enhet til?
+- **Grafer:** Hvor raskt øker eller minker en funksjon på et bestemt sted?
+
+I alle disse eksemplene handler det om endring. Den deriverte gir oss et mål på hvor rask endringen er. I dette kapittelet skal vi se at den også kan forstås geometrisk: Den deriverte i et punkt er stigningstallet til tangenten til grafen i punktet.
+
+
 ## 1. Hva betyr den deriverte i et punkt?
 
 Den deriverte til en funksjon \(f\) i punktet \(x=a\) skrives
