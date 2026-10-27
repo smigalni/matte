@@ -84,73 +84,73 @@ f'_-(a)=f'_+(a)
 
 Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
-## Eksempel 2 – Undersøk deriverbarheten
+!!! example "Eksempel 2 – Undersøk deriverbarheten"
 
-Vi har funksjonen
+    Vi har funksjonen
 
-\[
-f(x)=
-\begin{cases}
-x+1, & x<1,\\
-2x, & x\geq 1.
-\end{cases}
-\]
+    \[
+    f(x)=
+    \begin{cases}
+    x+1, & x<1,\\
+    2x, & x\geq 1.
+    \end{cases}
+    \]
 
-Undersøk om funksjonen er deriverbar i \(x=1\).
+    Undersøk om funksjonen er deriverbar i \(x=1\).
 
-**Trinn 1: Undersøk kontinuiteten.**
+    **Trinn 1: Undersøk kontinuiteten.**
 
-Fra venstre får vi
+    Fra venstre får vi
 
-\[
-\lim_{x\to1^-}f(x)=1+1=2
-\]
+    \[
+    \lim_{x\to1^-}f(x)=1+1=2
+    \]
 
-Fra høyre får vi
+    Fra høyre får vi
 
-\[
-\lim_{x\to1^+}f(x)=2\cdot1=2
-\]
+    \[
+    \lim_{x\to1^+}f(x)=2\cdot1=2
+    \]
 
-Dessuten er \(f(1)=2\). Funksjonen er derfor kontinuerlig i \(x=1\).
+    Dessuten er \(f(1)=2\). Funksjonen er derfor kontinuerlig i \(x=1\).
 
-**Trinn 2: Undersøk stigningstallet fra venstre.**
+    **Trinn 2: Undersøk stigningstallet fra venstre.**
 
-Vi bruker uttrykket for \(x<1\):
+    Vi bruker uttrykket for \(x<1\):
 
-\[
-\begin{aligned}
-f'_-(1)
-&=\lim_{x\to1^-}\frac{f(x)-f(1)}{x-1}\\
-&=\lim_{x\to1^-}\frac{x+1-2}{x-1}\\
-&=\lim_{x\to1^-}\frac{x-1}{x-1}\\
-&=1
-\end{aligned}
-\]
+    \[
+    \begin{aligned}
+    f'_-(1)
+    &=\lim_{x\to1^-}\frac{f(x)-f(1)}{x-1}\\
+    &=\lim_{x\to1^-}\frac{x+1-2}{x-1}\\
+    &=\lim_{x\to1^-}\frac{x-1}{x-1}\\
+    &=1
+    \end{aligned}
+    \]
 
-**Trinn 3: Undersøk stigningstallet fra høyre.**
+    **Trinn 3: Undersøk stigningstallet fra høyre.**
 
-Vi bruker uttrykket for \(x\geq1\):
+    Vi bruker uttrykket for \(x\geq1\):
 
-\[
-\begin{aligned}
-f'_+(1)
-&=\lim_{x\to1^+}\frac{f(x)-f(1)}{x-1}\\
-&=\lim_{x\to1^+}\frac{2x-2}{x-1}\\
-&=\lim_{x\to1^+}\frac{2(x-1)}{x-1}\\
-&=2
-\end{aligned}
-\]
+    \[
+    \begin{aligned}
+    f'_+(1)
+    &=\lim_{x\to1^+}\frac{f(x)-f(1)}{x-1}\\
+    &=\lim_{x\to1^+}\frac{2x-2}{x-1}\\
+    &=\lim_{x\to1^+}\frac{2(x-1)}{x-1}\\
+    &=2
+    \end{aligned}
+    \]
 
-**Konklusjon:**
+    **Konklusjon:**
 
-Vi har fått
+    Vi har fått
 
-\[
-f'_-(1)=1\neq2=f'_+(1)
-\]
+    \[
+    f'_-(1)=1\neq2=f'_+(1)
+    \]
 
-De ensidige grenseverdiene er forskjellige. Derfor er funksjonen **ikke deriverbar i \(x=1\)**, selv om den er kontinuerlig der.
+    De ensidige grenseverdiene er forskjellige. Derfor er funksjonen **ikke deriverbar i \(x=1\)**, selv om den er kontinuerlig der.
 
 ## Oppgaver
 
@@ -243,15 +243,15 @@ De ensidige grenseverdiene er forskjellige. Derfor er funksjonen **ikke deriverb
 
     b) I et knekkpunkt møtes grafdeler med ulike stigningstall.
 
-    c) Ja. For eksempel er \\(f(x)=|x|\\) kontinuerlig i \\(x=0\\), men ikke deriverbar der.
+    c) Ja. For eksempel er \(f(x)=|x|\) kontinuerlig i \(x=0\), men ikke deriverbar der.
 
     d) Nei. Deriverbarhet i et punkt innebærer kontinuitet i punktet.
 
     **Oppgave 2**
 
-    a) Stigningstallet er \\(-1\\).
+    a) Stigningstallet er \(-1\).
 
-    b) Stigningstallet er \\(1\\).
+    b) Stigningstallet er \(1\).
 
     c) De ensidige stigningstallene er ulike.
 
@@ -263,26 +263,26 @@ De ensidige grenseverdiene er forskjellige. Derfor er funksjonen **ikke deriverb
 
     **Oppgave 4**
 
-    a) Fra venstre er grenseverdien \\(2\\cdot2+1=5\\), mens fra høyre og funksjonsverdien er \\(2+3=5\\). Funksjonen er kontinuerlig.
+    a) Fra venstre er grenseverdien \(2\\cdot2+1=5\), mens fra høyre og funksjonsverdien er \(2+3=5\). Funksjonen er kontinuerlig.
 
-    b) \\(f'_-(2)=2\\).
+    b) \(f'_-(2)=2\).
 
-    c) \\(f'_+(2)=1\\).
+    c) \(f'_+(2)=1\).
 
     d) Funksjonen er ikke deriverbar fordi de ensidige stigningstallene er ulike.
 
     **Oppgave 5**
 
-    Fra venstre er stigningstallet \\(a\\), og fra høyre er stigningstallet til \\(x^2\\) ved \\(x=1\\) lik \\(2\\). Dermed må \\(a=2\\).
+    Fra venstre er stigningstallet \(a\), og fra høyre er stigningstallet til \(x^2\) ved \(x=1\) lik \(2\). Dermed må \(a=2\).
 
     **Svar:**
 
-    \\[ \\underline{\\underline{a=2}} \\]
+    \[ \\underline{\\underline{a=2}} \]
 
     **Oppgave 6**
 
-    a) Venstre grenseverdi er \\(1+2=3\\), mens høyre grenseverdi og funksjonsverdien er \\(-1+2+1=2\\). Funksjonen er ikke kontinuerlig.
+    a) Venstre grenseverdi er \(1+2=3\), mens høyre grenseverdi og funksjonsverdien er \(-1+2+1=2\). Funksjonen er ikke kontinuerlig.
 
-    b) Venstre stigningstall er \\(1\\), og høyre stigningstall er \\(-2x+2\\), som gir \\(0\\) ved \\(x=1\\).
+    b) Venstre stigningstall er \(1\), og høyre stigningstall er \(-2x+2\), som gir \(0\) ved \(x=1\).
 
-    c) Funksjonen er ikke deriverbar fordi den ikke er kontinuerlig i \\(x=1\\).
+    c) Funksjonen er ikke deriverbar fordi den ikke er kontinuerlig i \(x=1\).
