@@ -10,20 +10,20 @@ De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter de
 
 !!! example "Eksempel 1 – En funksjon som ikke er deriverbar"
 
-Vi ser på funksjonen
+    Vi ser på funksjonen
 
-\[
-f(x)=|x|
-\]
+    \[
+    f(x)=|x|
+    \]
 
-Grafen består av to rette linjer som møtes i origo.
+    Grafen består av to rette linjer som møtes i origo.
 
-- Til venstre for \(x=0\) er stigningstallet \(-1\).
-- Til høyre for \(x=0\) er stigningstallet \(1\).
+    - Til venstre for \(x=0\) er stigningstallet \(-1\).
+    - Til høyre for \(x=0\) er stigningstallet \(1\).
 
-I punktet \(x=0\) har grafen et **knekkpunkt**. Stigningstallet fra venstre og høyre er forskjellig, og derfor er funksjonen ikke deriverbar i dette punktet.
+    I punktet \(x=0\) har grafen et **knekkpunkt**. Stigningstallet fra venstre og høyre er forskjellig, og derfor er funksjonen ikke deriverbar i dette punktet.
 
-Funksjonen er likevel kontinuerlig i \(x=0\). Dette viser at en funksjon kan være kontinuerlig uten å være deriverbar.
+    Funksjonen er likevel kontinuerlig i \(x=0\). Dette viser at en funksjon kan være kontinuerlig uten å være deriverbar.
 
 ## Sammenhengen mellom kontinuitet og deriverbarhet
 
@@ -156,80 +156,133 @@ De ensidige grenseverdiene er forskjellige. Derfor er funksjonen **ikke deriverb
 
 !!! question "Oppgave 1 – Forstå begrepene"
 
-a) Forklar med egne ord hva det betyr at en funksjon er deriverbar i et punkt.
+    a) Forklar med egne ord hva det betyr at en funksjon er deriverbar i et punkt.
 
-b) Hva kjennetegner et knekkpunkt?
+    b) Hva kjennetegner et knekkpunkt?
 
-c) Kan en funksjon være kontinuerlig, men ikke deriverbar? Forklar med et eksempel.
+    c) Kan en funksjon være kontinuerlig, men ikke deriverbar? Forklar med et eksempel.
 
-d) Kan en funksjon være deriverbar i et punkt der den ikke er kontinuerlig? Begrunn svaret.
+    d) Kan en funksjon være deriverbar i et punkt der den ikke er kontinuerlig? Begrunn svaret.
 
 !!! question "Oppgave 2 – Undersøk en graf"
 
-Tegn en skisse av grafen til \(f(x)=|x|\).
+    Tegn en skisse av grafen til \(f(x)=|x|\).
 
-a) Bestem stigningstallet til grafen for \(x<0\).
+    a) Bestem stigningstallet til grafen for \(x<0\).
 
-b) Bestem stigningstallet til grafen for \(x>0\).
+    b) Bestem stigningstallet til grafen for \(x>0\).
 
-c) Forklar hvorfor funksjonen ikke er deriverbar i \(x=0\).
+    c) Forklar hvorfor funksjonen ikke er deriverbar i \(x=0\).
 
 !!! question "Oppgave 3 – Kontinuitet og deriverbarhet"
 
-En funksjon har et bruddpunkt i \(x=2\).
+    En funksjon har et bruddpunkt i \(x=2\).
 
-a) Kan funksjonen være deriverbar i \(x=2\)? Begrunn svaret.
+    a) Kan funksjonen være deriverbar i \(x=2\)? Begrunn svaret.
 
-b) En annen funksjon er kontinuerlig i \(x=2\), men har et knekkpunkt der. Kan den være deriverbar i dette punktet? Forklar.
+    b) En annen funksjon er kontinuerlig i \(x=2\), men har et knekkpunkt der. Kan den være deriverbar i dette punktet? Forklar.
 
 !!! question "Oppgave 4 – Undersøk med ensidige grenseverdier"
 
-Vi har funksjonen
+    Vi har funksjonen
 
-\[
-f(x)=
-\begin{cases}
-2x+1, & x<2,\\
-x+3, & x\geq2.
-\end{cases}
-\]
+    \[
+    f(x)=
+    \begin{cases}
+    2x+1, & x<2,\\
+    x+3, & x\geq2.
+    \end{cases}
+    \]
 
-a) Vis at funksjonen er kontinuerlig i \(x=2\).
+    a) Vis at funksjonen er kontinuerlig i \(x=2\).
 
-b) Beregn \(f'_-(2)\).
+    b) Beregn \(f'_-(2)\).
 
-c) Beregn \(f'_+(2)\).
+    c) Beregn \(f'_+(2)\).
 
-d) Avgjør om funksjonen er deriverbar i \(x=2\).
+    d) Avgjør om funksjonen er deriverbar i \(x=2\).
 
 !!! question "Oppgave 5 – Finn parameteren"
 
-Vi har funksjonen
+    Vi har funksjonen
 
-\[
-h(x)=
-\begin{cases}
-a(x-1)+1, & x<1,\\
-x^2, & x\geq1.
-\end{cases}
-\]
+    \[
+    h(x)=
+    \begin{cases}
+    a(x-1)+1, & x<1,\\
+    x^2, & x\geq1.
+    \end{cases}
+    \]
 
-Bestem verdien av \(a\) slik at funksjonen er deriverbar i \(x=1\). Vis framgangsmåten.
+    Bestem verdien av \(a\) slik at funksjonen er deriverbar i \(x=1\). Vis framgangsmåten.
 
 !!! question "Oppgave 6 – Undersøk en funksjon med flere uttrykk"
 
-Vi har funksjonen
+    Vi har funksjonen
 
-\[
-g(x)=
-\begin{cases}
-x+2, & x<1,\\
--x^2+2x+1, & x\geq1.
-\end{cases}
-\]
+    \[
+    g(x)=
+    \begin{cases}
+    x+2, & x<1,\\
+    -x^2+2x+1, & x\geq1.
+    \end{cases}
+    \]
 
-a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
+    a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
 
-b) Beregn de ensidige grenseverdiene for stigningstallet i \(x=1\).
+    b) Beregn de ensidige grenseverdiene for stigningstallet i \(x=1\).
 
-c) Avgjør om funksjonen er deriverbar i \(x=1\). Begrunn svaret.
+    c) Avgjør om funksjonen er deriverbar i \(x=1\). Begrunn svaret.
+
+
+??? note "Fasit – åpne når du har prøvd selv"
+
+    **Oppgave 1**
+
+    a) En funksjon er deriverbar i et punkt når den deriverte finnes som et endelig tall der.
+
+    b) I et knekkpunkt møtes grafdeler med ulike stigningstall.
+
+    c) Ja. For eksempel er \\(f(x)=|x|\\) kontinuerlig i \\(x=0\\), men ikke deriverbar der.
+
+    d) Nei. Deriverbarhet i et punkt innebærer kontinuitet i punktet.
+
+    **Oppgave 2**
+
+    a) Stigningstallet er \\(-1\\).
+
+    b) Stigningstallet er \\(1\\).
+
+    c) De ensidige stigningstallene er ulike.
+
+    **Oppgave 3**
+
+    a) Nei. Deriverbarhet innebærer kontinuitet.
+
+    b) Nei. I et knekkpunkt er stigningstallene fra venstre og høyre ulike.
+
+    **Oppgave 4**
+
+    a) Fra venstre er grenseverdien \\(2\\cdot2+1=5\\), mens fra høyre og funksjonsverdien er \\(2+3=5\\). Funksjonen er kontinuerlig.
+
+    b) \\(f'_-(2)=2\\).
+
+    c) \\(f'_+(2)=1\\).
+
+    d) Funksjonen er ikke deriverbar fordi de ensidige stigningstallene er ulike.
+
+    **Oppgave 5**
+
+    Fra venstre er stigningstallet \\(a\\), og fra høyre er stigningstallet til \\(x^2\\) ved \\(x=1\\) lik \\(2\\). Dermed må \\(a=2\\).
+
+    **Svar:**
+
+    \\[ \\underline{\\underline{a=2}} \\]
+
+    **Oppgave 6**
+
+    a) Venstre grenseverdi er \\(1+2=3\\), mens høyre grenseverdi og funksjonsverdien er \\(-1+2+1=2\\). Funksjonen er ikke kontinuerlig.
+
+    b) Venstre stigningstall er \\(1\\), og høyre stigningstall er \\(-2x+2\\), som gir \\(0\\) ved \\(x=1\\).
+
+    c) Funksjonen er ikke deriverbar fordi den ikke er kontinuerlig i \\(x=1\\).
