@@ -252,7 +252,7 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     \end{cases}
     \]
 
-    Bestem verdien av \(a\) slik at funksjonen er deriverbar i \(x=1\). Vis framgangsmåten.
+    Bestem verdien av \(k\) slik at funksjonen er deriverbar i \(x=1\). Vis framgangsmåten.
 
 !!! question "Oppgave 6 – Undersøk en funksjon med flere uttrykk"
 
@@ -311,11 +311,11 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
     **Oppgave 5**
 
-    Fra venstre er stigningstallet \(a\), og fra høyre er stigningstallet til \(x^2\) ved \(x=1\) lik \(2\). Dermed må \(k=2\).
+    Fra venstre er stigningstallet \(k\), og fra høyre er stigningstallet til \(x^2\) ved \(x=1\) lik \(2\). Dermed må \(k=2\).
 
     **Svar:**
 
-    \[ \underline{\underline{a=2}} \]
+    \[ \underline{\underline{k=2}} \]
 
     **Oppgave 6**
 
