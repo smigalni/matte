@@ -58,9 +58,10 @@ En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deri
 
 For å undersøke deriverbarheten i et punkt \(x=a\) kan vi bruke definisjonen av den deriverte:
 
-\[
-f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}
-\]
+!!! important "Definisjonen av den deriverte"
+    \[
+    f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}
+    \]
 
 Vi undersøker hva som skjer når \(x\) nærmer seg \(a\) fra venstre og fra høyre.
 
@@ -78,9 +79,10 @@ f'_+(a)=\lim_{x\to a^+}\frac{f(x)-f(a)}{x-a}
 
 Funksjonen er deriverbar i \(x=a\) dersom begge disse grensene eksisterer som endelige tall og er like:
 
-\[
-f'_-(a)=f'_+(a)
-\]
+!!! important "Kriterium for deriverbarhet"
+    \[
+    f'_-(a)=f'_+(a)
+    \]
 
 Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
