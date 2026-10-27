@@ -100,31 +100,24 @@ En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deri
 
 ### Algebraisk metode – ensidige grenseverdier
 
-### Hvor kommer formelen fra?
+#### Hvor kommer formelen fra?
 
-    Vi starter med det vi allerede kjenner fra 3.1: Stigningstallet til en sekant gjennom to punkter på grafen er
+Vi starter med det vi allerede kjenner fra 3.1: Stigningstallet til en sekant gjennom punktene \\( (a,f(a)) \\) og \\( (x,f(x)) \\) er
 
-    \\[
-    a=\\frac{f(x)-f(a)}{x-a}.
-    \\]
+\\[
+a_{\\text{sekant}}=\\frac{f(x)-f(a)}{x-a}.
+\\]
 
-    Her er punktene \\( (a,f(a)) \\) og \\( (x,f(x)) \\). Når \\(x\\) nærmer seg \\(a\\), kommer det andre punktet nærmere det første. Sekanten nærmer seg da tangenten i \\( (a,f(a)) \\).
+Når \\(x\\) nærmer seg \\(a\\), kommer punktet \\( (x,f(x)) \\) nærmere \\( (a,f(a)) \\). Sekanten nærmer seg da tangenten i \\( (a,f(a)) \\).
 
-    Hvis grenseverdien finnes, får vi tangentens stigningstall ved å ta grensen:
-
-    !!! important "Definisjonen av den deriverte"
-        \\[
-        f'(a)=\\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}
-        \\]
-
-    Dette er altså ikke en ny formel vi bare må huske: Vi får den ved å la sekantens andre punkt nærme seg punktet der vi vil finne tangentens stigningstall.
-
-For å undersøke deriverbarheten i et punkt \(x=a\) kan vi bruke definisjonen av den deriverte:
+Hvis grenseverdien finnes som et endelig tall, får vi tangentens stigningstall ved å ta grensen:
 
 !!! important "Definisjonen av den deriverte"
-    \[
-    f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}
-    \]
+    \\[
+    f'(a)=\\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}
+    \\]
+
+Dette er altså ikke en ny formel vi bare må huske: Vi får den ved å la sekantens andre punkt nærme seg punktet der vi vil finne tangentens stigningstall.
 
 Vi undersøker hva som skjer når \(x\) nærmer seg \(a\) fra venstre og fra høyre.
 
