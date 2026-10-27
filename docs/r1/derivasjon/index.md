@@ -137,8 +137,10 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
     <text x="142" y="301">x₁</text><text x="432" y="301">x₂</text>
   </g>
 </svg>
-<figcaption>Den blå kurven er grafen til \(f\). Den røde, rette sekanten går gjennom P og Q. Stigningstallet til sekanten er den gjennomsnittlige vekstfarten mellom \(x_1\) og \(x_2\).</figcaption>
+
 </figure>
+
+Den blå kurven viser grafen til \(f\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \(x_1\) og \(x_2\).
 
 !!! example "Eksempel – Finn gjennomsnittlig vekstfart"
 
@@ -219,16 +221,16 @@ Den enkleste metoden er ofte å starte med \(y=ax+b\). Når vi kjenner tangenten
 
 Dette kalles **etpunktsformelen**.
 
-For tangenten til grafen til \(f\) i \(x=x_0\) kjenner vi både punktet og stigningstallet:
+For tangenten til grafen til \(f\) i \(x=x_1\) kjenner vi både punktet og stigningstallet:
 
-- Punktet er \((x_0,f(x_0))\).
-- Stigningstallet er \(f'(x_0)\).
+- Punktet er \((x_1,f(x_1))\).
+- Stigningstallet er \(f'(x_1)\).
 
 Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
     \[
-    y-f(x_0)=f'(x_0)(x-x_0)
+    y-f(x_1)=f'(x_1)(x-x_1)
     \]
 
 !!! example "Eksempel – Finn tangentens likning steg for steg"
