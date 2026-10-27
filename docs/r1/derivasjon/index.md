@@ -1,4 +1,4 @@
-# 3.1 Den deriverte i et punkt
+# 3.1 Gjennomsnittlig og momentan vekstfart – og tangentens likning
 
 ## Læringsmål
 
