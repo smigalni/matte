@@ -1,6 +1,6 @@
 [project]
 site_name = "R1-matte"
-site_description = "Digitale forklaringer, eksempler og oppgaver i matematikk R1"
+site_description = "Digitale forklaringer, eksempler og oppgaver i matematikk R1 og S1"
 site_author = "Matteundervisning"
 site_url = "https://smigalni.github.io/matte/"
 docs_dir = "docs"
@@ -17,7 +17,12 @@ nav = [
   { "R1" = [
     { "Kapittel 3 – Derivasjon" = [
       { "Oversikt" = "r1/derivasjon/index.md" },
+      { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
     ] },
+  ] },
+  { "S1" = [
+    { "Oversikt" = "s1/index.md" },
+    { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
   ] },
 ]
 
