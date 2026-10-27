@@ -37,7 +37,7 @@ De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter de
       <circle cx="160" cy="155" r="4.5" fill="#1671c5"/>
       <text x="172" y="190" fill="currentColor" font-size="12">Knekkpunkt (0, 0)</text>
     </svg>
-    <figcaption>Grafen til \\(f(x)=|x|\\). De to rette linjene møtes i et knekkpunkt ved \\(x=0\\).</figcaption>
+    <figcaption>Grafen til \(f(x)=|x|\). De to rette linjene møtes i et knekkpunkt ved \(x=0\).</figcaption>
     </figure>
 
     - Til venstre for \(x=0\) er stigningstallet \(-1\).
