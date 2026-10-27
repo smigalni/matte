@@ -1,18 +1,19 @@
 # R1-matte
 
-Velkommen til en digital ressurs for matematikk R1.
+**Matematikk forklart steg for steg.**
 
-Målet er å forklare matematiske ideer tydelig, vise løsningsmetoder trinn for trinn og gi deg oppgaver du kan prøve selv.
+Teori, eksempler og oppgaver for deg som vil forstå matematikk – ikke bare pugge regler.
 
-## Kapitler
+## Innhold
 
-- [Kapittel 3 – Derivasjon](r1/derivasjon/index.md)
+### R1 · Derivasjon
 
-## Slik bruker du siden
+**[3.1 Vekstfart og tangent](r1/derivasjon/index.md)**
 
-1. Les forklaringen og studer eksemplene.
-2. Prøv oppgavene uten å se på løsningen først.
-3. Skriv hele fremgangsmåten, ikke bare svaret.
-4. Gå tilbake til teorien hvis du står fast.
+- Gjennomsnittlig og momentan vekstfart
+- Den deriverte i et punkt
+- Sekant og tangent
+- Tangentens likning
+- Oppgaver med fasit
 
-*Dette er en prototype. Innholdet vil bli utvidet og kvalitetssikret underveis.*
+*Flere kapitler kommer etter hvert.*
