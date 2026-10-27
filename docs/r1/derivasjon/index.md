@@ -4,12 +4,12 @@
 
 Når du har arbeidet med dette delkapitlet, skal du kunne:
 
-- forklare hva den deriverte i et punkt forteller
-- tolke den deriverte som **momentan vekstfart**
-- forklare at den deriverte er **stigningstallet til tangenten**
-- finne likningen til en tangent ved hjelp av **et punkts formel**
+- skille mellom **gjennomsnittlig** og **momentan vekstfart**
+- beregne gjennomsnittlig vekstfart mellom to x-verdier
+- forklare at momentan vekstfart er stigningstallet til tangenten i punktet
+- finne tangentens funksjonsuttrykk ved å bruke formen \(y=ax+b\)
 
-I dette delkapitlet fokuserer vi på betydningen av den deriverte i et punkt. Vi venter med derivasjonsreglene til senere.
+I 3.1 lærer vi først forskjellen på gjennomsnittlig og momentan vekstfart. Deretter bruker vi punktet på grafen og tangentens stigningstall til å finne tangentens funksjonsuttrykk.
 
 ## Hvorfor bryr vi oss om den deriverte?
 
@@ -21,7 +21,19 @@ Den deriverte hjelper oss å beskrive **hvor raskt noe endrer seg akkurat nå**.
 
 I alle disse eksemplene handler det om endring. Den deriverte gir oss et mål på hvor rask endringen er. I dette kapittelet skal vi se at den også kan forstås geometrisk: Den deriverte i et punkt er stigningstallet til tangenten til grafen i punktet.
 
-## 1. Hva betyr den deriverte i et punkt?
+## 1. Gjennomsnittlig og momentan vekstfart – hva er forskjellen?
+
+Tenk at du sykler en tur. Gjennomsnittsfarten beskriver hele turen, mens sykkelcomputeren kan vise farten **akkurat nå**. Dette er to forskjellige spørsmål.
+
+| Gjennomsnittlig vekstfart | Momentan vekstfart |
+|---|---|
+| Endring **mellom to punkter** på grafen. | Endring **i ett bestemt punkt** på grafen. |
+| Vi bruker en **sekant** gjennom to punkter. | Vi bruker en **tangent** i ett punkt. |
+| Som gjennomsnittsfarten på en hel tur. | Som farten sykkelcomputeren viser akkurat nå. |
+
+Begge beskriver hvor raskt noe endrer seg. Forskjellen er om vi ser på et helt intervall eller ett bestemt øyeblikk.
+
+## 2. Hva betyr den deriverte i et punkt?
 
 Den deriverte til en funksjon \(f\) i punktet \(x=a\) skrives
 
@@ -75,7 +87,7 @@ For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at ta
 
 **Husk:** \(f'(1)\) er et tall – stigningstallet akkurat i punktet \(x=1\). \(f'(x)\) betegner derimot den deriverte som en funksjon av \(x\).
 
-## 2. Gjennomsnittlig vekstfart
+## 3. Gjennomsnittlig vekstfart
 
 Den **gjennomsnittlige vekstfarten** forteller hvor mye funksjonsverdien endrer seg i gjennomsnitt når vi går fra én x-verdi til en annen. Geometrisk er den stigningstallet til en **sekant** – en rett linje som går gjennom to punkter på grafen.
 
@@ -86,7 +98,7 @@ Den **gjennomsnittlige vekstfarten** forteller hvor mye funksjonsverdien endrer 
 
 Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser endringen i funksjonsverdi, og nevneren viser endringen i x.
 
-### Figur – Sekant mellom to punkter
+### Figur – En sekant gjennom to punkter på kurven
 
 <figure markdown>
 <svg viewBox="0 0 620 330" role="img" aria-label="En kurve med to punkter P og Q og en sekantlinje mellom dem" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +156,7 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 
     Den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=4\) er 5.
 
-## 3. Momentan vekstfart
+## 4. Momentan vekstfart
 
 Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\) sekunder.
 
@@ -152,7 +164,7 @@ Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\)
 - Momentan vekstfart beskriver farten ved ett bestemt tidspunkt.
 - Når grafen viser strekning som funksjon av tid, er den momentane vekstfarten stigningstallet til tangenten.
 
-### Figur 2 – Strekning som funksjon av tid
+### Figur – Tangenten viser vekstfarten akkurat i punktet
 
 <figure markdown>
 <svg viewBox="0 0 360 255" role="img" aria-label="Strekning som funksjon av tid med tangent i et bestemt tidspunkt" xmlns="http://www.w3.org/2000/svg">
@@ -187,7 +199,7 @@ Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\)
 
 I en strekning–tid-modell måles den momentane vekstfarten i for eksempel meter per sekund (m/s).
 
-## 4. Tangentens likning – et punkts formel
+## 5. Tangentens likning – finn funksjonsuttrykket
 
 Den enkleste metoden er ofte å starte med \(y=ax+b\). Når vi kjenner tangentens stigningstall, bruker vi punktet på grafen til å finne konstanten \(b\). Vi kan også bruke et punkts formel:
 
@@ -246,7 +258,7 @@ Tangentens likning blir derfor:
     \]
 
     **Husk metoden:** Finn punktet, finn tangentens stigningstall, sett inn i \(y=ax+b\), og bruk punktet til å finne \(b\).
-## 5. Oppgaver
+## 6. Oppgaver
 
 Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
 
