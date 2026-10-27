@@ -101,7 +101,7 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 ### Sekant: gjennomsnittlig vekstfart
 
 <figure markdown>
-<svg viewBox="0 0 620 350" role="img" aria-label="En krum graf med to markerte punkter P og Q og en rett sekant gjennom begge punktene. Loddrette hjelpelinjer viser x1 og x2." xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 620 350" role="img" aria-label="Graf med to punkter P og Q på kurven og en sekant gjennom nøyaktig begge punktene. Stiplede hjelpelinjer viser x1 og x2." xmlns="http://www.w3.org/2000/svg">
   <defs><clipPath id="avgPlot"><rect x="55" y="25" width="510" height="270"/></clipPath></defs>
   <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
     <path d="M100 25V295 M160 25V295 M220 25V295 M280 25V295 M340 25V295 M400 25V295 M460 25V295 M520 25V295"/>
@@ -114,18 +114,20 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
     <text x="582" y="300">x</text><text x="88" y="20">f(x)</text>
   </g>
   <g clip-path="url(#avgPlot)">
-    <path d="M80 265 C135 258 175 235 220 205 S315 145 370 115 S470 65 545 35" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
-    <path d="M160 238 L430 88" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
-    <path d="M160 238V295 M430 88V295" stroke="#64748b" stroke-opacity="0.8" stroke-dasharray="6 5" stroke-width="1.6"/>
+    <!-- Kurvensegmentet er konstruert slik at grafen går nøyaktig gjennom P og Q. -->
+    <path d="M80 270 C115 264 139 245 160 238 C242 207 347 132 430 88 C473 65 510 45 545 35" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+    <!-- Sekanten går gjennom både P=(160,238) og Q=(430,88). -->
+    <path d="M110 266 L490 55" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+    <path d="M160 238V295 M430 88V295" stroke="#64748b" stroke-opacity="0.85" stroke-dasharray="6 5" stroke-width="1.6"/>
   </g>
   <circle cx="160" cy="238" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
   <circle cx="430" cy="88" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
   <g font-size="15" fill="currentColor">
-    <text x="112" y="225" font-weight="600">P</text>
-    <text x="440" y="80" font-weight="600">Q</text>
+    <text x="137" y="226" font-weight="600">P</text>
+    <text x="441" y="80" font-weight="600">Q</text>
     <text x="148" y="318">x₁</text><text x="420" y="318">x₂</text>
-    <text x="285" y="143" fill="#7c3aed" font-weight="600">Sekant</text>
-    <text x="310" y="46" fill="#2563eb" font-weight="600">Grafen til f</text>
+    <text x="290" y="151" fill="#7c3aed" font-weight="600">Sekant</text>
+    <text x="320" y="49" fill="#2563eb" font-weight="600">Grafen til f</text>
   </g>
   <path d="M160 335H430" stroke="#0d9488" stroke-width="2" fill="none"/>
   <path d="M160 335l9 -5v10z M430 335l-9 -5v10z" fill="#0d9488"/>
