@@ -41,6 +41,7 @@ pymdownx.arithmatex.generic = true
 pymdownx.details = {}
 pymdownx.superfences = {}
 pymdownx.tasklist.custom_checkbox = true
+md_in_html = {}
 
 [project.theme.palette]
 primary = "indigo"
