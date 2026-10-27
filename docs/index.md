@@ -15,12 +15,12 @@
     <p>Funksjoner, derivasjon og videre mot mer avansert matematikk.</p>
     <span class="course-link">Utforsk R1 <span aria-hidden="true">→</span></span>
   </a>
-  <div class="course-card course-s1">
+  <a class="course-card course-s1" href="s1/index.md">
     <span class="course-tag">S1 · SAMFUNNSFAG</span>
     <h3>S1 – Matematikk</h3>
     <p>Algebra, funksjoner, likninger og matematikk brukt i samfunn og økonomi.</p>
-    <span class="course-link">Kommer etter hvert</span>
-  </div>
+    <span class="course-link">Utforsk S1 <span aria-hidden="true">→</span></span>
+  </a>
 </div>
 
 ## Slik lærer du her
