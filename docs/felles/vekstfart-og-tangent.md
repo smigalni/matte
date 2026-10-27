@@ -43,7 +43,7 @@ f'(a)
 
 Verdien \(f'(a)\) forteller hvor raskt funksjonen endrer seg akkurat når \(x=a\). Det er den **momentane vekstfarten**.
 
-Geometrisk forteller den samme verdien oss **stigningstallet til tangenten** til grafen i punktet \((a,f(a))\).
+Geometrisk forteller den samme verdien oss **stigningstallet til tangenten** til grafen i punktet \(P=(x_1,y_1)\).
 
 ### Figur 1 – Graf, punkt og tangent
 
@@ -83,7 +83,7 @@ Se på funksjonen \(f(x)=x^2\) og punktet \(P=(1,1)\).
 <figcaption>Fra P går vi 1 rute mot høyre og 2 ruter opp langs tangenten. Stigningstallet er derfor 2/1 = 2. Tangenten berører grafen i P.</figcaption>
 </figure>
 
-For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at tangenten i punktet \((1,1)\) har stigningstall 2.
+For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at tangenten i punktet \(P=(x_1,y_1)=(1,1)\) har stigningstall 2.
 
 **Husk:** \(f'(1)\) er et tall – stigningstallet akkurat i punktet \(x=1\). \(f'(x)\) betegner derimot den deriverte som en funksjon av \(x\).
 
@@ -223,19 +223,19 @@ Dette kalles **etpunktsformelen**.
 
 For tangenten til grafen til \(f\) i \(x=x_1\) kjenner vi både punktet og stigningstallet:
 
-- Punktet er \((x_1,f(x_1))\).
-- Stigningstallet er \(f'(x_1)\).
+- Punktet er \(P=(x_1,y_1)\), der \(y_1=f(x_1)\).
+- Stigningstallet er \(a=f'(x_1)\).
 
 Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
     \[
-    y-f(x_1)=f'(x_1)(x-x_1)
+    y-y_1=f'(x_1)(x-x_1)
     \]
 
 !!! example "Eksempel – Finn tangentens likning steg for steg"
 
-    Vi bruker \(f(x)=x^2\) og finner tangenten der \(x=1\). Punktet på grafen er \(P=(1,1)\), og tangentens stigningstall er \(f'(1)=2\).
+    Vi bruker \(f(x)=x^2\) og finner tangenten der \(x=1\). Punktet på grafen er \(P=(x_1,y_1)=(1,1)\), og tangentens stigningstall er \(f'(1)=2\).
 
     **Steg 1: Start med likningen for en rett linje.**
 
@@ -253,7 +253,7 @@ Tangentens likning blir derfor:
 
     **Steg 3: Bruk punktet til å finne \(b\).**
 
-    Punktet \(P=(1,1)\) ligger på tangenten. Sett derfor inn \(x=1\) og \(y=1\):
+    Punktet \(P=(x_1,y_1)=(1,1)\) ligger på tangenten. Sett derfor inn \(x=1\) og \(y=1\):
 
     \[
     1=2\cdot1+b
@@ -325,7 +325,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
 !!! question "Oppgave 6 – Fra stigningstall til tangent"
 
-    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall \(a=3\).
+    En tangent går gjennom punktet \(P=(x_1,y_1)=(2,5)\) og har stigningstall \(a=3\).
 
     a) Skriv opp et punkts formel.
 
@@ -335,7 +335,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
 !!! question "Oppgave 7 – Tangent til en parabel"
 
-    Grafen til \(f(x)=x^2\) har punktet \(P=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
+    Grafen til \(f(x)=x^2\) har punktet \(P=(x_1,y_1)=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
 
     a) Hva er tangentens stigningstall?
 
@@ -365,7 +365,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
 !!! question "Oppgave 10 – Finn to ulike tangenter"
 
-    En rett linje går gjennom punktet \(P=(3,4)\).
+    En rett linje går gjennom punktet \(P=(x_1,y_1)=(3,4)\).
 
     a) Finn likningen til linjen når stigningstallet er \(a=2\).
 
