@@ -78,42 +78,42 @@ En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deri
 
 #### Hvor kommer formelen fra?
 
-Vi starter med det vi allerede kjenner fra 3.1: Stigningstallet til en sekant gjennom punktene \( (x_1,y_1) \) og \( (x,f(x)) \) er
+Vi starter med det vi allerede kjenner fra 3.1: Stigningstallet til en sekant gjennom punktene \( (a,f(a)) \) og \( (x,f(x)) \) er
 
 \[
-a_{\text{sekant}}=\frac{f(x)-y_1}{x-x_1}.
+a_{\text{sekant}}=\frac{f(x)-f(a)}{x-a}.
 \]
 
-Når \(x\) nærmer seg \(x_1\), kommer punktet \( (x,f(x)) \) nærmere \( (x_1,y_1) \). Sekanten nærmer seg da tangenten i \( (x_1,y_1) \).
+Når \(x\) nærmer seg \(a\), kommer punktet \( (x,f(x)) \) nærmere \( (a,f(a)) \). Sekanten nærmer seg da tangenten i \( (a,f(a)) \).
 
 Hvis grenseverdien finnes som et endelig tall, får vi tangentens stigningstall ved å ta grensen:
 
 !!! important "Definisjonen av den deriverte"
     \[
-    a=\lim_{x\to x_1}\frac{f(x)-y_1}{x-x_1}
+    f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}
     \]
 
 Dette er altså ikke en ny formel vi bare må huske: Vi får den ved å la sekantens andre punkt nærme seg punktet der vi vil finne tangentens stigningstall.
 
-Vi undersøker hva som skjer når \(x\) nærmer seg \(x_1\) fra venstre og fra høyre.
+Vi undersøker hva som skjer når \(x\) nærmer seg \(a\) fra venstre og fra høyre.
 
 Fra venstre får vi
 
 \[
-a_- =\lim_{x\to x_1^-}\frac{f(x)-y_1}{x-x_1}
+f'_-(a) =\lim_{x\to a^-}\frac{f(x)-f(a)}{x-a}
 \]
 
 og fra høyre får vi
 
 \[
-a_+ =\lim_{x\to x_1^+}\frac{f(x)-y_1}{x-x_1}
+f'_+(a) =\lim_{x\to a^+}\frac{f(x)-f(a)}{x-a}
 \]
 
-Funksjonen er deriverbar i \(x=x_1\) dersom begge grensene eksisterer som endelige tall og er like:
+Funksjonen er deriverbar i \(x=a\) dersom begge grensene eksisterer som endelige tall og er like:
 
 !!! important "Kriterium for deriverbarhet"
     \[
-    a_-=a_+
+    f'_-(a)=f'_+(a)
     \]
 
 Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
@@ -247,7 +247,7 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     \[
     h(x)=
     \begin{cases}
-    a(x-1)+1, & x<1,\\
+    k(x-1)+1, & x<1,\\
     x^2, & x\geq1.
     \end{cases}
     \]
@@ -311,7 +311,7 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
     **Oppgave 5**
 
-    Fra venstre er stigningstallet \(a\), og fra høyre er stigningstallet til \(x^2\) ved \(x=1\) lik \(2\). Dermed må \(a=2\).
+    Fra venstre er stigningstallet \(a\), og fra høyre er stigningstallet til \(x^2\) ved \(x=1\) lik \(2\). Dermed må \(k=2\).
 
     **Svar:**
 
