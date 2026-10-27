@@ -101,51 +101,43 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 ### Sekant: gjennomsnittlig vekstfart
 
 <figure markdown>
-<svg viewBox="0 0 620 360" role="img" aria-label="Tydelig skille mellom blå krum graf og rød rett sekant som går gjennom punktene P og Q. Stiplede loddrette linjer viser x1 og x2." xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath id="avgPlot"><rect x="65" y="25" width="500" height="275"/></clipPath>
-  </defs>
-  <rect x="65" y="25" width="500" height="275" fill="#94a3b8" fill-opacity="0.035" rx="5"/>
-  <g stroke="currentColor" stroke-opacity="0.13" stroke-width="1">
-    <path d="M115 25V300 M165 25V300 M215 25V300 M265 25V300 M315 25V300 M365 25V300 M415 25V300 M465 25V300 M515 25V300"/>
+<svg viewBox="0 0 620 330" role="img" aria-label="Blå krum graf med punktene P og Q. Rød rett sekant forbinder P og Q, og avstanden mellom kurven og sekanten er tydelig synlig mellom punktene." xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="avgPlot"><rect x="65" y="28" width="500" height="250"/></clipPath></defs>
+  <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
+    <path d="M115 28V278 M165 28V278 M215 28V278 M265 28V278 M315 28V278 M365 28V278 M415 28V278 M465 28V278 M515 28V278"/>
     <path d="M65 50H565 M65 100H565 M65 150H565 M65 200H565 M65 250H565"/>
   </g>
   <g stroke="currentColor" stroke-width="1.6" fill="none">
-    <path d="M65 300H578"/><path d="M75 310V18"/>
+    <path d="M65 278H578"/><path d="M75 288V18"/>
   </g>
   <g fill="currentColor" font-size="13">
-    <text x="582" y="305">x</text><text x="83" y="18">f(x)</text>
+    <text x="582" y="283">x</text><text x="83" y="18">f(x)</text>
   </g>
   <g clip-path="url(#avgPlot)">
-    <!-- Blå kurve: tydelig krum og konstruert gjennom P=(165,240) og Q=(415,90). -->
-    <path d="M80 280 C112 279 140 264 165 240 C245 164 335 104 415 90 C462 82 507 51 550 30"
-          fill="none" stroke="#0877d1" stroke-width="5" stroke-linecap="round"/>
-    <!-- Rød sekant: rett linje som går nøyaktig gjennom P og Q. -->
-    <path d="M100 279 L490 45" fill="none" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
-    <!-- Hjelpelinjer fra punktene til x-aksen. -->
-    <path d="M165 240V300 M415 90V300" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7 6"/>
+    <!-- Grafen er tydelig krum mellom P og Q, og går gjennom begge punktene. -->
+    <path d="M85 263 C112 260 132 250 155 230 C225 118 340 78 445 100 C485 108 520 70 550 38"
+          fill="none" stroke="#0877d1" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Sekanten er en rett linje fra P til Q; fargen skiller den tydelig fra grafen. -->
+    <path d="M155 230 L445 100" fill="none" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
+    <path d="M155 230V278 M445 100V278" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7 6"/>
   </g>
-  <circle cx="165" cy="240" r="7" fill="#0877d1" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="415" cy="90" r="7" fill="#0877d1" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="155" cy="230" r="7" fill="#0877d1" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="445" cy="100" r="7" fill="#0877d1" stroke="#ffffff" stroke-width="2"/>
   <g font-size="16" font-weight="600">
-    <text x="143" y="228" fill="#0877d1">P</text>
-    <text x="429" y="83" fill="#0877d1">Q</text>
+    <text x="132" y="218" fill="#0877d1">P</text>
+    <text x="458" y="94" fill="#0877d1">Q</text>
   </g>
-  <!-- Tydelig legend, adskilt fra selve grafen -->
   <g font-size="14">
-    <path d="M115 42H153" stroke="#0877d1" stroke-width="5" stroke-linecap="round"/>
-    <text x="162" y="47" fill="currentColor">Grafen til f</text>
-    <path d="M305 42H343" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
-    <text x="352" y="47" fill="currentColor">Sekant</text>
+    <path d="M112 43H151" stroke="#0877d1" stroke-width="5.5" stroke-linecap="round"/>
+    <text x="160" y="48" fill="currentColor">Grafen til f</text>
+    <path d="M310 43H349" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
+    <text x="358" y="48" fill="currentColor">Sekant</text>
   </g>
   <g fill="currentColor" font-size="15">
-    <text x="151" y="323">x₁</text><text x="401" y="323">x₂</text>
+    <text x="142" y="301">x₁</text><text x="432" y="301">x₂</text>
   </g>
-  <path d="M165 341H415" stroke="#0d9488" stroke-width="2.5" fill="none"/>
-  <path d="M165 341l9 -5v10z M415 341l-9 -5v10z" fill="#0d9488"/>
-  <text x="228" y="335" font-size="13" fill="#0d9488">intervallet fra x₁ til x₂</text>
 </svg>
-<figcaption>Sekanten går gjennom både P og Q. Stigningstallet til denne rette linjen gir gjennomsnittlig vekstfart mellom \(x_1\) og \(x_2\).</figcaption>
+<figcaption>Den blå kurven er grafen til \(f\). Den røde, rette sekanten går gjennom P og Q. Stigningstallet til sekanten er den gjennomsnittlige vekstfarten mellom \(x_1\) og \(x_2\).</figcaption>
 </figure>
 
 !!! example "Eksempel – Finn gjennomsnittlig vekstfart"
