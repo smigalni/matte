@@ -18,6 +18,28 @@ De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter de
 
     Grafen består av to rette linjer som møtes i origo.
 
+    <figure markdown>
+    <svg viewBox="0 0 360 230" role="img" aria-label="Grafen til f av x er absoluttverdien av x, en V-formet graf med knekkpunkt i origo" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
+        <path d="M40 35H330 M40 75H330 M40 115H330 M40 155H330 M40 195H330"/>
+        <path d="M80 20V205 M120 20V205 M160 20V205 M200 20V205 M240 20V205 M280 20V205"/>
+      </g>
+      <g stroke="currentColor" stroke-width="1.4" fill="none">
+        <path d="M30 155H338"/><path d="M160 210V14"/>
+      </g>
+      <g fill="currentColor" font-size="12">
+        <text x="340" y="151">x</text><text x="168" y="17">y</text>
+        <text x="145" y="172">0</text><text x="112" y="172">−1</text><text x="202" y="172">1</text>
+        <text x="171" y="118">1</text><text x="171" y="78">2</text>
+        <text x="238" y="42">f(x) = |x|</text>
+      </g>
+      <path d="M70 65 L160 155 L250 65" fill="none" stroke="#1671c5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="160" cy="155" r="4.5" fill="#1671c5"/>
+      <text x="172" y="190" fill="currentColor" font-size="12">Knekkpunkt (0, 0)</text>
+    </svg>
+    <figcaption>Grafen til \\(f(x)=|x|\\). De to rette linjene møtes i et knekkpunkt ved \\(x=0\\).</figcaption>
+    </figure>
+
     - Til venstre for \(x=0\) er stigningstallet \(-1\).
     - Til høyre for \(x=0\) er stigningstallet \(1\).
 
@@ -50,11 +72,52 @@ Dette kan for eksempel være:
 
 - **Knekkpunkter:** Grafen skifter retning brått, slik som grafen til \(f(x)=|x|\) i \(x=0\).
 - **Bruddpunkter:** Grafen er ikke kontinuerlig.
-- **Punkter med vertikal tangent:** Tangenten har ikke et endelig stigningstall.
+- **Punkter med vertikal tangent:** Grafen blir nesten loddrett i punktet. En loddrett linje har ikke et vanlig, endelig stigningstall, fordi vi da deler på en vannrett endring på null. Derfor finnes det ikke noe endelig tangentstigningstall i punktet.
+
+    <figure markdown>
+    <svg viewBox="0 0 360 230" role="img" aria-label="Kurven y lik kubikkroten av x med loddrett tangent langs y-aksen i origo" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
+        <path d="M35 35H330 M35 75H330 M35 115H330 M35 155H330 M35 195H330"/>
+        <path d="M70 20V205 M110 20V205 M150 20V205 M190 20V205 M230 20V205 M270 20V205 M310 20V205"/>
+      </g>
+      <g stroke="currentColor" stroke-width="1.4" fill="none">
+        <path d="M30 115H338"/><path d="M170 210V14"/>
+      </g>
+      <path d="M75 190 C115 178 140 151 170 115 C200 79 225 52 265 40" fill="none" stroke="#1671c5" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M170 205V25" fill="none" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <circle cx="170" cy="115" r="4.5" fill="#1671c5"/>
+      <g fill="currentColor" font-size="12">
+        <text x="340" y="110">x</text><text x="178" y="17">y</text>
+        <text x="154" y="132">0</text><text x="208" y="31">Kurve</text>
+        <text x="183" y="187" fill="#d97706">Loddrett tangent</text>
+        <text x="183" y="201" fill="#d97706">x = 0</text>
+      </g>
+    </svg>
+    <figcaption>Eksempel: \\(f(x)=\\sqrt[3]{x}\\) har en loddrett tangent i origo.</figcaption>
+    </figure>
 
 En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deriverbar.
 
 ### Algebraisk metode – ensidige grenseverdier
+
+### Hvor kommer formelen fra?
+
+    Vi starter med det vi allerede kjenner fra 3.1: Stigningstallet til en sekant gjennom to punkter på grafen er
+
+    \\[
+    a=\\frac{f(x)-f(a)}{x-a}.
+    \\]
+
+    Her er punktene \\( (a,f(a)) \\) og \\( (x,f(x)) \\). Når \\(x\\) nærmer seg \\(a\\), kommer det andre punktet nærmere det første. Sekanten nærmer seg da tangenten i \\( (a,f(a)) \\).
+
+    Hvis grenseverdien finnes, får vi tangentens stigningstall ved å ta grensen:
+
+    !!! important "Definisjonen av den deriverte"
+        \\[
+        f'(a)=\\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}
+        \\]
+
+    Dette er altså ikke en ny formel vi bare må huske: Vi får den ved å la sekantens andre punkt nærme seg punktet der vi vil finne tangentens stigningstall.
 
 For å undersøke deriverbarheten i et punkt \(x=a\) kan vi bruke definisjonen av den deriverte:
 
