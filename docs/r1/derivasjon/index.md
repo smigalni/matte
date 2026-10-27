@@ -1,4 +1,4 @@
-# 3.1 Gjennomsnittlig og momentan vekstfart – og tangentens likning
+# 3.1 Vekstfart og tangent
 
 ## Læringsmål
 
@@ -21,7 +21,7 @@ Den deriverte hjelper oss å beskrive **hvor raskt noe endrer seg akkurat nå**.
 
 I alle disse eksemplene handler det om endring. Den deriverte gir oss et mål på hvor rask endringen er. I dette kapittelet skal vi se at den også kan forstås geometrisk: Den deriverte i et punkt er stigningstallet til tangenten til grafen i punktet.
 
-## 1. Gjennomsnittlig og momentan vekstfart – hva er forskjellen?
+## Gjennomsnittlig og momentan vekstfart
 
 Tenk at du sykler en tur. Gjennomsnittsfarten beskriver hele turen, mens sykkelcomputeren kan vise farten **akkurat nå**. Dette er to forskjellige spørsmål.
 
@@ -98,37 +98,40 @@ Den **gjennomsnittlige vekstfarten** forteller hvor mye funksjonsverdien endrer 
 
 Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser endringen i funksjonsverdi, og nevneren viser endringen i x.
 
-### Figur – En sekant gjennom to punkter på kurven
+### Sekant: gjennomsnittlig vekstfart
 
 <figure markdown>
-<svg viewBox="0 0 620 330" role="img" aria-label="En kurve med to punkter P og Q og en sekantlinje mellom dem" xmlns="http://www.w3.org/2000/svg">
-  <defs><clipPath id="avgPlot"><rect x="48" y="20" width="520" height="250"/></clipPath></defs>
+<svg viewBox="0 0 620 350" role="img" aria-label="En krum graf med to markerte punkter P og Q og en rett sekant gjennom begge punktene. Loddrette hjelpelinjer viser x1 og x2." xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="avgPlot"><rect x="55" y="25" width="510" height="270"/></clipPath></defs>
   <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
-    <path d="M80 25V270 M140 25V270 M200 25V270 M260 25V270 M320 25V270 M380 25V270 M440 25V270 M500 25V270"/>
-    <path d="M48 50H568 M48 100H568 M48 150H568 M48 200H568 M48 250H568"/>
+    <path d="M100 25V295 M160 25V295 M220 25V295 M280 25V295 M340 25V295 M400 25V295 M460 25V295 M520 25V295"/>
+    <path d="M55 55H565 M55 105H565 M55 155H565 M55 205H565 M55 255H565"/>
   </g>
-  <g stroke="currentColor" stroke-width="1.6" fill="none">
-    <path d="M48 270H580"/><path d="M80 285V18"/>
+  <g stroke="currentColor" stroke-width="1.5" fill="none">
+    <path d="M55 295H578"/><path d="M80 310V20"/>
   </g>
   <g fill="currentColor" font-size="13">
-    <text x="582" y="275">x</text><text x="64" y="18">y</text>
+    <text x="582" y="300">x</text><text x="88" y="20">f(x)</text>
   </g>
   <g clip-path="url(#avgPlot)">
-    <path d="M80 250 C160 245 205 218 260 190 S390 115 500 35" fill="none" stroke="#2563eb" stroke-width="4"/>
-    <path d="M200 218 L440 83" fill="none" stroke="#7c3aed" stroke-width="3"/>
-    <path d="M200 218V270 M440 83V270" stroke="currentColor" stroke-opacity="0.55" stroke-dasharray="6 5" stroke-width="1.5"/>
+    <path d="M80 265 C135 258 175 235 220 205 S315 145 370 115 S470 65 545 35" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+    <path d="M160 238 L430 88" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+    <path d="M160 238V295 M430 88V295" stroke="#64748b" stroke-opacity="0.8" stroke-dasharray="6 5" stroke-width="1.6"/>
   </g>
-  <circle cx="200" cy="218" r="5.5" fill="#2563eb"/><circle cx="440" cy="83" r="5.5" fill="#2563eb"/>
-  <g font-size="14" fill="currentColor">
-    <text x="120" y="207">P (x₁, f(x₁))</text><text x="390" y="65">Q (x₂, f(x₂))</text>
-    <text x="190" y="291">x₁</text><text x="432" y="291">x₂</text>
-    <text x="320" y="130" fill="#7c3aed">Sekant</text>
+  <circle cx="160" cy="238" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+  <circle cx="430" cy="88" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+  <g font-size="15" fill="currentColor">
+    <text x="112" y="225" font-weight="600">P</text>
+    <text x="440" y="80" font-weight="600">Q</text>
+    <text x="148" y="318">x₁</text><text x="420" y="318">x₂</text>
+    <text x="285" y="143" fill="#7c3aed" font-weight="600">Sekant</text>
+    <text x="310" y="46" fill="#2563eb" font-weight="600">Grafen til f</text>
   </g>
-  <path d="M200 301H440" stroke="#0d9488" stroke-width="2" fill="none"/>
-  <path d="M200 301l9 -5v10z M440 301l-9 -5v10z" fill="#0d9488"/>
-  <text x="245" y="323" font-size="14" fill="#0d9488">Endring i x: x₂ − x₁</text>
+  <path d="M160 335H430" stroke="#0d9488" stroke-width="2" fill="none"/>
+  <path d="M160 335l9 -5v10z M430 335l-9 -5v10z" fill="#0d9488"/>
+  <text x="226" y="329" font-size="13" fill="#0d9488">intervallet fra x₁ til x₂</text>
 </svg>
-<figcaption>Sekanten går gjennom begge punktene. Stigningstallet viser gjennomsnittlig endring mellom \(x_1\) og \(x_2\).</figcaption>
+<figcaption>Sekanten går gjennom både P og Q. Stigningstallet til denne rette linjen gir gjennomsnittlig vekstfart mellom \(x_1\) og \(x_2\).</figcaption>
 </figure>
 
 !!! example "Eksempel – Finn gjennomsnittlig vekstfart"
@@ -210,17 +213,17 @@ Den enkleste metoden er ofte å starte med \(y=ax+b\). Når vi kjenner tangenten
 
 Dette kalles **etpunktsformelen**.
 
-For tangenten til grafen til \\(f\\) i \\(x=x_0\\) kjenner vi både punktet og stigningstallet:
+For tangenten til grafen til \(f\) i \(x=x_0\) kjenner vi både punktet og stigningstallet:
 
-- Punktet er \\((x_0,f(x_0))\\).
-- Stigningstallet er \\(f'(x_0)\\).
+- Punktet er \((x_0,f(x_0))\).
+- Stigningstallet er \(f'(x_0)\).
 
 Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
-    \\[
+    \[
     y-f(x_0)=f'(x_0)(x-x_0)
-    \\]
+    \]
 
 !!! example "Eksempel – Finn tangentens likning steg for steg"
 
@@ -284,21 +287,21 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
 !!! question "Oppgave 3 – Gjennomsnittlig vekstfart med en lineær funksjon"
 
-    Gitt funksjonen \\(f(x)=3x+2\\).
+    Gitt funksjonen \(f(x)=3x+2\).
 
-    a) Finn gjennomsnittlig vekstfart fra \\(x=1\\) til \\(x=5\\).
+    a) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=5\).
 
-    b) Finn gjennomsnittlig vekstfart fra \\(x=2\\) til \\(x=6\\).
+    b) Finn gjennomsnittlig vekstfart fra \(x=2\) til \(x=6\).
 
     c) Hva legger du merke til ved svarene? Forklar hvorfor.
 
 !!! question "Oppgave 4 – Sammenlign gjennomsnittlig vekstfart"
 
-    Gitt funksjonen \\(f(x)=x^2+1\\).
+    Gitt funksjonen \(f(x)=x^2+1\).
 
-    a) Finn gjennomsnittlig vekstfart fra \\(x=0\\) til \\(x=2\\).
+    a) Finn gjennomsnittlig vekstfart fra \(x=0\) til \(x=2\).
 
-    b) Finn gjennomsnittlig vekstfart fra \\(x=2\\) til \\(x=4\\).
+    b) Finn gjennomsnittlig vekstfart fra \(x=2\) til \(x=4\).
 
     c) I hvilket intervall vokser funksjonen raskest i gjennomsnitt?
 
@@ -382,19 +385,19 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     **Oppgave 3**
 
-    a) \\(a=\\frac{f(5)-f(1)}{5-1}=\\frac{17-5}{4}=3\\).
+    a) \(a=\\frac{f(5)-f(1)}{5-1}=\\frac{17-5}{4}=3\).
 
-    b) \\(a=\\frac{f(6)-f(2)}{6-2}=\\frac{20-8}{4}=3\\).
+    b) \(a=\\frac{f(6)-f(2)}{6-2}=\\frac{20-8}{4}=3\).
 
     c) Svarene er like fordi en lineær funksjon har konstant stigningstall.
 
     **Oppgave 4**
 
-    a) \\(a=\\frac{f(2)-f(0)}{2-0}=\\frac{5-1}{2}=2\\).
+    a) \(a=\\frac{f(2)-f(0)}{2-0}=\\frac{5-1}{2}=2\).
 
-    b) \\(a=\\frac{f(4)-f(2)}{4-2}=\\frac{17-5}{2}=6\\).
+    b) \(a=\\frac{f(4)-f(2)}{4-2}=\\frac{17-5}{2}=6\).
 
-    c) Funksjonen vokser raskest i gjennomsnitt fra \\(x=2\\) til \\(x=4\\).
+    c) Funksjonen vokser raskest i gjennomsnitt fra \(x=2\) til \(x=4\).
 
     **Oppgave 5**
 
