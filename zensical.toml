@@ -2,8 +2,7 @@
 site_name = "R1-matte"
 site_description = "Digitale forklaringer, eksempler og oppgaver i matematikk R1"
 site_author = "Matteundervisning"
-# Legg inn den endelige nettadressen her når nettstedet publiseres:
-# site_url = "https://DITT-NETTSTED/"
+site_url = "https://smigalni.github.io/matte/"
 docs_dir = "docs"
 extra_css = [
   "stylesheets/extra.css",
