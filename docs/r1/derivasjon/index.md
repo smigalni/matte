@@ -101,37 +101,40 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 ### Sekant: gjennomsnittlig vekstfart
 
 <figure markdown>
-<svg viewBox="0 0 620 350" role="img" aria-label="Graf med to punkter P og Q på kurven og en sekant gjennom nøyaktig begge punktene. Stiplede hjelpelinjer viser x1 og x2." xmlns="http://www.w3.org/2000/svg">
-  <defs><clipPath id="avgPlot"><rect x="55" y="25" width="510" height="270"/></clipPath></defs>
+<svg viewBox="0 0 620 340" role="img" aria-label="Gjennomsnittlig vekstfart: en blå kurve med punktene P og Q, en lilla sekant gjennom begge punktene og stiplede loddrette hjelpelinjer til x1 og x2." xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="avgPlot"><rect x="70" y="28" width="485" height="250"/></clipPath></defs>
+  <!-- Diskré rutenett -->
   <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
-    <path d="M100 25V295 M160 25V295 M220 25V295 M280 25V295 M340 25V295 M400 25V295 M460 25V295 M520 25V295"/>
-    <path d="M55 55H565 M55 105H565 M55 155H565 M55 205H565 M55 255H565"/>
+    <path d="M120 28V278 M170 28V278 M220 28V278 M270 28V278 M320 28V278 M370 28V278 M420 28V278 M470 28V278 M520 28V278"/>
+    <path d="M70 60H555 M70 110H555 M70 160H555 M70 210H555 M70 260H555"/>
   </g>
+  <!-- Akser -->
   <g stroke="currentColor" stroke-width="1.5" fill="none">
-    <path d="M55 295H578"/><path d="M80 310V20"/>
+    <path d="M70 278H570"/><path d="M70 290V20"/>
   </g>
   <g fill="currentColor" font-size="13">
-    <text x="582" y="300">x</text><text x="88" y="20">f(x)</text>
+    <text x="574" y="283">x</text><text x="78" y="19">f(x)</text>
   </g>
   <g clip-path="url(#avgPlot)">
-    <!-- Kurvensegmentet er konstruert slik at grafen går nøyaktig gjennom P og Q. -->
-    <path d="M80 270 C115 264 139 245 160 238 C242 207 347 132 430 88 C473 65 510 45 545 35" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
-    <!-- Sekanten går gjennom både P=(160,238) og Q=(430,88). -->
-    <path d="M110 266 L490 55" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
-    <path d="M160 238V295 M430 88V295" stroke="#64748b" stroke-opacity="0.85" stroke-dasharray="6 5" stroke-width="1.6"/>
+    <!-- Kurven går nøyaktig gjennom P=(170,220) og Q=(420,90). -->
+    <path d="M88 260 C120 252 145 229 170 220 C245 194 345 118 420 90 C462 74 495 49 540 32" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+    <!-- Sekanten går nøyaktig gjennom P og Q. -->
+    <path d="M105 253.8 L490 53.6" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+    <path d="M170 220V278 M420 90V278" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6 5"/>
   </g>
-  <circle cx="160" cy="238" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
-  <circle cx="430" cy="88" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+  <circle cx="170" cy="220" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+  <circle cx="420" cy="90" r="6" fill="#2563eb" stroke="white" stroke-width="1.5"/>
   <g font-size="15" fill="currentColor">
-    <text x="137" y="226" font-weight="600">P</text>
-    <text x="441" y="80" font-weight="600">Q</text>
-    <text x="148" y="318">x₁</text><text x="420" y="318">x₂</text>
-    <text x="290" y="151" fill="#7c3aed" font-weight="600">Sekant</text>
-    <text x="320" y="49" fill="#2563eb" font-weight="600">Grafen til f</text>
+    <text x="148" y="208" font-weight="600">P</text>
+    <text x="432" y="84" font-weight="600">Q</text>
+    <text x="158" y="301">x₁</text><text x="408" y="301">x₂</text>
+    <text x="285" y="143" fill="#7c3aed" font-weight="600">Sekant</text>
+    <text x="318" y="50" fill="#2563eb" font-weight="600">Grafen til f</text>
   </g>
-  <path d="M160 335H430" stroke="#0d9488" stroke-width="2" fill="none"/>
-  <path d="M160 335l9 -5v10z M430 335l-9 -5v10z" fill="#0d9488"/>
-  <text x="226" y="329" font-size="13" fill="#0d9488">intervallet fra x₁ til x₂</text>
+  <!-- Intervallet markeres separat under x-aksen, uten å kollidere med x-etikettene. -->
+  <path d="M170 321H420" stroke="#0d9488" stroke-width="2" fill="none"/>
+  <path d="M170 321l8 -4v8z M420 321l-8 -4v8z" fill="#0d9488"/>
+  <text x="237" y="316" font-size="13" fill="#0d9488">intervallet [x₁, x₂]</text>
 </svg>
 <figcaption>Sekanten går gjennom både P og Q. Stigningstallet til denne rette linjen gir gjennomsnittlig vekstfart mellom \(x_1\) og \(x_2\).</figcaption>
 </figure>
