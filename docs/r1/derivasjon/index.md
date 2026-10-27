@@ -189,7 +189,7 @@ I en strekning–tid-modell måles den momentane vekstfarten i for eksempel mete
 
 ## 4. Tangentens likning – et punkts formel
 
-En rett linje med stigningstall \(a\) som går gjennom punktet \((x_1,y_1)\), har likningen:
+Den enkleste metoden er ofte å starte med \(y=ax+b\). Når vi kjenner tangentens stigningstall, bruker vi punktet på grafen til å finne konstanten \(b\). Vi kan også bruke et punkts formel:
 
 !!! important "Ettpunktsformelen"
     \[
@@ -210,34 +210,33 @@ Tangentens likning blir derfor:
     y-f(x_0)=f'(x_0)(x-x_0)
     \\]
 
-!!! example "Eksempel – Finn tangentens likning"
+!!! example "Eksempel – Finn tangentens likning steg for steg"
 
-    Vi bruker \(f(x)=x^2\) og finner tangenten i punktet der \(x=1\).
+    Vi bruker \(f(x)=x^2\) og finner tangenten der \(x=1\). Punktet på grafen er \(P=(1,1)\), og tangentens stigningstall er \(f'(1)=2\).
 
-    **Steg 1: Finn punktet på grafen.**
+    **Steg 1: Start med likningen for en rett linje.**
 
     \[
-    f(1)=1^2=1
+    y=ax+b
     \]
 
-    Punktet er altså \(P=(1,1)\).
+    **Steg 2: Sett inn stigningstallet.**
 
-    **Steg 2: Finn stigningstallet.**
-
-    Vi vet at den deriverte i dette punktet er \(f'(1)=2\).
-
-    **Steg 3: Bruk et punkts formel.**
-
-    Sett \(x_1=1\), \(y_1=1\) og \(a=2\):
+    Siden stigningstallet er \(a=2\), får vi
 
     \[
-    y-1=2(x-1)
+    y=2x+b
     \]
 
-    Gang ut parentesen og isoler \(y\):
+    **Steg 3: Bruk punktet til å finne \(b\).**
+
+    Punktet \(P=(1,1)\) ligger på tangenten. Sett derfor inn \(x=1\) og \(y=1\):
 
     \[
-    y-1=2x-2
+    1=2\cdot1+b
+    \]
+    \[
+    1=2+b\qquad\Rightarrow\qquad b=-1
     \]
 
     **Svar:**
@@ -246,8 +245,7 @@ Tangentens likning blir derfor:
     \underline{\underline{y=2x-1}}
     \]
 
-    Dette er tangentens likning.
-
+    **Husk metoden:** Finn punktet, finn tangentens stigningstall, sett inn i \(y=ax+b\), og bruk punktet til å finne \(b\).
 ## 5. Oppgaver
 
 Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
