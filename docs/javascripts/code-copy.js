@@ -6,10 +6,11 @@
   function addCopyButtons() {
     document.querySelectorAll('.md-typeset .highlight pre').forEach((pre) => {
       const code = pre.querySelector('code');
-      if (!code || !/language-python/.test(code.className) || pre.querySelector('.code-copy-button')) return;
+      if (!code || !/language-python/.test(code.className)) return;
 
       const container = pre.closest('.highlight');
-      if (!container) return;
+      if (!container || container.querySelector('.code-copy-button')) return;
+      container.classList.add('has-copy-button');
 
       const button = document.createElement('button');
       button.type = 'button';
