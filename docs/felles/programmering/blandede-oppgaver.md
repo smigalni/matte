@@ -282,4 +282,4 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
             sum_tall += 2 * i - 1
         return sum_tall
     ```
-    For (n=1,2,3,4,5,10) blir summene (1,4,9,16,25,100), lik (n^2) i alle testene. Dette er evidens, men et endelig antall tester utelukker ikke at det finnes et senere moteksempel. Et generelt bevis krever et matematisk argument, for eksempel induksjon.
+    For \(n=1,2,3,4,5,10\) blir summene \(1,4,9,16,25,100\), lik \(n^2\) i alle testene. Testene støtter påstanden, men et endelig antall tester utelukker ikke at det finnes et moteksempel for en større verdi. Et generelt bevis krever et matematisk argument, for eksempel induksjon. Et generelt bevis krever et matematisk argument, for eksempel induksjon.
