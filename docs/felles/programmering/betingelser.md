@@ -65,6 +65,8 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
 
 ## 4.5 Oppgaver
 
+## 🟢 Grønn – Grunnlag
+
 **Oppgave 1 – Sant eller usant?**
 
 ```python
