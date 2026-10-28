@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="620" height="330" viewBox="0 0 620 330" role="img" aria-label="Blå krum graf med punktene P og Q. Rød rett sekant forbinder P og Q, og avstanden mellom kurven og sekanten er tydelig synlig mellom punktene." xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="avgPlot"><rect x="65" y="28" width="500" height="250"/></clipPath></defs>
+  <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
+    <path d="M115 28V278 M165 28V278 M215 28V278 M265 28V278 M315 28V278 M365 28V278 M415 28V278 M465 28V278 M515 28V278"/>
+    <path d="M65 50H565 M65 100H565 M65 150H565 M65 200H565 M65 250H565"/>
+  </g>
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
+    <path d="M65 278H578"/><path d="M75 288V18"/>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="582" y="283">x</text><text x="83" y="18">f(x)</text>
+  </g>
+  <g clip-path="url(#avgPlot)">
+    <!-- Grafen er tydelig krum mellom P og Q, og går gjennom begge punktene. -->
+    <path d="M85 263 C112 260 132 250 155 230 C225 118 340 78 445 100 C485 108 520 70 550 38"
+          fill="none" stroke="#0877d1" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Sekanten er en rett linje fra P til Q; fargen skiller den tydelig fra grafen. -->
+    <path d="M155 230 L445 100" fill="none" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
+    <path d="M155 230V278 M445 100V278" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7 6"/>
+  </g>
+  <circle cx="155" cy="230" r="7" fill="#0877d1" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="445" cy="100" r="7" fill="#0877d1" stroke="#ffffff" stroke-width="2"/>
+  <g font-size="16" font-weight="600">
+    <text x="132" y="218" fill="#0877d1">P</text>
+    <text x="458" y="94" fill="#0877d1">Q</text>
+  </g>
+  <g font-size="14">
+    <path d="M112 43H151" stroke="#0877d1" stroke-width="5.5" stroke-linecap="round"/>
+    <text x="160" y="48" fill="currentColor">Grafen til f</text>
+    <path d="M310 43H349" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
+    <text x="358" y="48" fill="currentColor">Sekant</text>
+  </g>
+  <g fill="currentColor" font-size="15">
+    <text x="142" y="301">x₁</text><text x="432" y="301">x₂</text>
+  </g>
+</svg>
