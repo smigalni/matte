@@ -72,6 +72,8 @@ Utskriften er 14 og 20. Multiplikasjon utføres før addisjon, med mindre parent
 
 Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før du ser på fasiten.
 
+## 🟢 Grønn – Grunnlag
+
 !!! question "Oppgave 1 – Følg utskriften"
     Hva skriver programmet ut?
 
@@ -117,6 +119,8 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
     y = (5 + 2) * 3
     ```
 
+## 🟡 Gul – Kombiner ideer
+
 !!! question "Oppgave 5 – Potenser"
     Hva skriver programmet ut?
 
@@ -134,6 +138,8 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
     x = x + 3
     print(x)
     ```
+
+## 🔴 Rød – Selvstendig problemløsing
 
 !!! question "Oppgave 7 – Skriv kode på papir"
     Skriv et program som lagrer 12 i `a`, 5 i `b`, regner ut summen i en tredje variabel og skriver ut summen.
