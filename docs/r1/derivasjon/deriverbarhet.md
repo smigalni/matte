@@ -184,7 +184,7 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     f'_-(1)=1\neq2=f'_+(1)
     \]
 
-    De ensidige grenseverdiene er forskjellige. Derfor er funksjonen ikke deriverbar i \\(x=1\\), selv om den er kontinuerlig der.
+    De ensidige grenseverdiene er forskjellige. Derfor er funksjonen ikke deriverbar i \(x=1\), selv om den er kontinuerlig der.
 
     **Svar:**
 
