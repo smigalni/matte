@@ -20,10 +20,28 @@ nav = [
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
       { "3.2 Deriverbarhet" = "r1/derivasjon/deriverbarhet.md" },
     ] },
+    { "Programmering" = [
+      { "Oversikt" = "felles/programmering/index.md" },
+      { "1. Algoritmer og kode" = "felles/programmering/algoritmer-og-kode.md" },
+      { "2. Variabler og regning" = "felles/programmering/variabler-og-regning.md" },
+      { "3. Oppgaver og fasit" = "felles/programmering/oppgaver.md" },
+      { "4. Betingelser: if og else" = "felles/programmering/betingelser.md" },
+      { "5. Løkker: for og while" = "felles/programmering/lokker.md" },
+      { "6. Blandede oppgaver" = "felles/programmering/blandede-oppgaver.md" },
+    ] },
   ] },
   { "S1" = [
     { "Oversikt" = "s1/index.md" },
     { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
+    { "Programmering" = [
+      { "Oversikt" = "felles/programmering/index.md" },
+      { "1. Algoritmer og kode" = "felles/programmering/algoritmer-og-kode.md" },
+      { "2. Variabler og regning" = "felles/programmering/variabler-og-regning.md" },
+      { "3. Oppgaver og fasit" = "felles/programmering/oppgaver.md" },
+      { "4. Betingelser: if og else" = "felles/programmering/betingelser.md" },
+      { "5. Løkker: for og while" = "felles/programmering/lokker.md" },
+      { "6. Blandede oppgaver" = "felles/programmering/blandede-oppgaver.md" },
+    ] },
   ] },
 ]
 
