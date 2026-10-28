@@ -96,72 +96,72 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
 
 ## 🟢 Grønn – Grunnlag
 
-**Oppgave 1 – Hva skrives ut?**
+!!! question "Oppgave 1 – Hva skrives ut?"
 
-```python
-for i in range(3):
-    print(i)
-```
+    ```python
+    for i in range(3):
+        print(i)
+    ```
 
-**Oppgave 2 – Start og stopp**
+!!! question "Oppgave 2 – Start og stopp"
 
-Hvilke tall skrives ut?
+    Hvilke tall skrives ut?
 
-```python
-for i in range(3, 7):
-    print(i)
-```
+    ```python
+    for i in range(3, 7):
+        print(i)
+    ```
 
-**Oppgave 3 – Følg summen**
+!!! question "Oppgave 3 – Følg summen"
 
-```python
-sum = 0
-for i in range(1, 5):
-    sum = sum + i
-print(sum)
-```
+    ```python
+    sum = 0
+    for i in range(1, 5):
+        sum = sum + i
+    print(sum)
+    ```
 
-Hva blir utskriften? Vis verdien til `sum` etter hver runde.
+    Hva blir utskriften? Vis verdien til `sum` etter hver runde.
 
-**Oppgave 4 – Funksjonstabell**
+!!! question "Oppgave 4 – Funksjonstabell"
 
-Fyll ut tabellen på papir og finn utskriften.
+    Fyll ut tabellen på papir og finn utskriften.
 
-```python
-for x in range(0, 4):
-    y = x * x
-    print(x, y)
-```
+    ```python
+    for x in range(0, 4):
+        y = x * x
+        print(x, y)
+    ```
 
-**Oppgave 5 – `while`**
+!!! question "Oppgave 5 – `while`"
 
-```python
-n = 3
-while n > 0:
-    print(n)
-    n = n - 1
-print("Ferdig")
-```
+    ```python
+    n = 3
+    while n > 0:
+        print(n)
+        n = n - 1
+    print("Ferdig")
+    ```
 
-Hva skriver programmet ut?
+    Hva skriver programmet ut?
 
-**Oppgave 6 – Finn feilen**
+!!! question "Oppgave 6 – Finn feilen"
 
-Hvorfor stopper ikke denne løkken? Hvordan kan du rette den?
+    Hvorfor stopper ikke denne løkken? Hvordan kan du rette den?
 
-```python
-n = 1
-while n < 4:
-    print(n)
-```
+    ```python
+    n = 1
+    while n < 4:
+        print(n)
+    ```
 
-**Oppgave 7 – Lag en løkke**
+!!! question "Oppgave 7 – Lag en løkke"
 
-Skriv en `for`-løkke som skriver ut tallene fra 1 til 10.
+    Skriv en `for`-løkke som skriver ut tallene fra 1 til 10.
 
-**Oppgave 8 – Matematikk**
+!!! question "Oppgave 8 – Matematikk"
 
-Skriv en løkke som regner ut og skriver ut \(y=3x-2\) for \(x=1,2,3,4,5\).
+    Skriv en løkke som regner ut og skriver ut \(y=3x-2\) for \(x=1,2,3,4,5\).
 
 ## Fasit
 
