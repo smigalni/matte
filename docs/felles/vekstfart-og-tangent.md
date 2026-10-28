@@ -300,13 +300,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
 !!! question "Oppgave 6 – Fra stigningstall til tangent"
 
-    En tangent går gjennom punktet \(P=(x_1,y_1)=(2,5)\) og har stigningstall \(a=3\).
-
-    a) Skriv opp et punkts formel.
-
-    b) Sett inn punktet og stigningstallet.
-
-    c) Finn likningen på formen \(y=ax+b\).
+    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall 3. Finn funksjonsuttrykket for tangenten.
 
 !!! question "Oppgave 7 – Tangent til en parabel"
 
