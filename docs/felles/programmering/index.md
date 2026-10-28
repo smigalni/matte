@@ -14,6 +14,16 @@ Målet er at du skal forstå hva programmet gjør – ikke bare huske kommandoer
 - forutsi hva et program skriver ut
 - bruke programmering til å løse matematiske problemer
 
+## Fargene i oppgavene
+
+Vi bruker de samme nivåene i oppgaver på tvers av R1 og S1:
+
+- 🟢 **Grønn – Start:** øv på én grunnleggende idé om gangen.
+- 🟡 **Gul – På vei:** arbeid gjennom flere steg og kombiner ideer.
+- 🔴 **Rød – Utfordring:** løs mer sammensatte oppgaver og forklar tankegangen din.
+
+Fargene er veiledning, ikke karakterer. Tekst følger alltid med fargen.
+
 ## Delkapitler
 
 1. [Algoritmer og å lese kode](algoritmer-og-kode.md) – forstå instruksjoner og følge et program trinn for trinn.
