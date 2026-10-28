@@ -189,7 +189,7 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
     **Svar:**
 
-    \\[\underline{\underline{\text{Ikke deriverbar i }x=1}}\]
+    \[\underline{\underline{\text{Ikke deriverbar i }x=1}}\]
 
 ## Oppgaver
 
