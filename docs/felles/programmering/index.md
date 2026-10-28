@@ -33,7 +33,7 @@ Du skal kunne løse mange av oppgavene **på papir, uten PC**.
 
 - 🟢 **Grønn – Grunnlag:** én sentral idé om gangen. Vis at du forstår den.
 - 🟡 **Gul – Kombinasjon:** bruk flere ideer, spor flere verdier eller velg en fremgangsmåte.
-- 🔴 **Rød – Utfordring:** analyser et ukjent problem, finn en ikke-opplagt feil, lag en algoritme eller begrunn hvorfor løsningen virker.
+- 🔴 **Rød – Selvstendig problemløsing:** analyser et ukjent problem, finn en ikke-opplagt feil, lag en algoritme eller begrunn hvorfor løsningen virker.
 
 Fargene er veiledning, ikke karakterer. En rød oppgave skal kreve mer enn bare flere regneoperasjoner.
 
