@@ -29,6 +29,7 @@ nav = [
       { "4. Betingelser: if og else" = "felles/programmering/betingelser.md" },
       { "5. Løkker: for og while" = "felles/programmering/lokker.md" },
       { "6. Blandede oppgaver" = "felles/programmering/blandede-oppgaver.md" },
+      { "7. Funksjoner og lister" = "felles/programmering/funksjoner-og-lister.md" },
     ] },
   ] },
   { "S1" = [
@@ -42,6 +43,7 @@ nav = [
       { "4. Betingelser: if og else" = "felles/programmering/betingelser.md" },
       { "5. Løkker: for og while" = "felles/programmering/lokker.md" },
       { "6. Blandede oppgaver" = "felles/programmering/blandede-oppgaver.md" },
+      { "7. Funksjoner og lister" = "felles/programmering/funksjoner-og-lister.md" },
     ] },
   ] },
 ]
