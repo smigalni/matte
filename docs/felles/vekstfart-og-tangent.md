@@ -9,14 +9,18 @@ Når du har arbeidet med dette delkapitlet, skal du kunne:
 - forklare at momentan vekstfart er stigningstallet til tangenten i punktet
 - finne tangentens funksjonsuttrykk ved å bruke formen \(y=ax+b\)
 
-I 3.1 lærer vi først forskjellen på gjennomsnittlig og momentan vekstfart. Deretter bruker vi punktet på grafen og tangentens stigningstall til å finne tangentens funksjonsuttrykk.
+!!! important "Kort repetisjon – dette må du kunne"
+    - **Gjennomsnittlig vekstfart:** stigningstallet til sekanten mellom to punkter.
+    - **Momentan vekstfart:** stigningstallet til tangenten i ett punkt.
+    - **Tangentlikning:** bruk punktet \(P=(x_1,y_1)\) og stigningstallet \(a=f'(x_1)\) i \(y-y_1=a(x-x_1)\).
+
+    Hvis du kan forklare disse tre punktene og bruke formlene, gå direkte til oppgavene for å kontrollere at du husker metoden.
 
 ## Hvorfor bryr vi oss om den deriverte?
 
 Den deriverte hjelper oss å beskrive **hvor raskt noe endrer seg akkurat nå**. Det er nyttig i mange situasjoner:
 
 - **Fart:** Hvor fort kjører bilen akkurat i dette øyeblikket?
-- **Aksjer og krypto:** Vi kan analysere hvordan en pris endrer seg, og bruke slike beregninger som én del av en algoritme eller en bot som handler automatisk. Den deriverte kan hjelpe oss å beskrive prisendringer, men kan ikke alene forutsi markedet eller garantere gevinst.
 - **Grafer:** Hvor raskt øker eller minker en funksjon på et bestemt sted?
 
 I alle disse eksemplene handler det om endring. Den deriverte gir oss et mål på hvor rask endringen er. I dette kapittelet skal vi se at den også kan forstås geometrisk: Den deriverte i et punkt er stigningstallet til tangenten til grafen i punktet.
