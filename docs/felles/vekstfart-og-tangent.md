@@ -225,6 +225,7 @@ Tangentens likning blir derfor:
     \[
     1=2\cdot1+b
     \]
+
     \[
     1=2+b\qquad\Rightarrow\qquad b=-1
     \]
