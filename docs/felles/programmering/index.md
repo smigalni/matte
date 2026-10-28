@@ -32,5 +32,4 @@ Fargene er veiledning, ikke karakterer. Tekst følger alltid med fargen.
 4. [Betingelser: if, else og elif](betingelser.md) – la programmet ta valg ut fra sammenligninger.
 5. [Løkker: for og while](lokker.md) – gjenta instruksjoner og arbeide med tallrekker og funksjonstabeller.
 6. [Blandede oppgaver](blandede-oppgaver.md) – oppgaver fra hele grunnkurset, sortert etter vanskelighetsgrad og markert med farger.
-
-Senere kan vi bygge videre med funksjoner og mer sammensatte matematiske problemer.
+7. [Funksjoner og lister](funksjoner-og-lister.md) – definer funksjoner, bruk parametere og `return`, og lagre flere verdier i lister.
