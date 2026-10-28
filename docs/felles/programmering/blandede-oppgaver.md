@@ -165,7 +165,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 !!! question "Oppgave 16 – Finn et mønster og begrunn det"
     Se på summen av de første \(n\) positive oddetallene. Vi mistenker at summen er \(n^2\).
 
-    **a)** Skriv en funksjon som beregner summen av de første (n) positive oddetallene ved hjelp av en løkke.
+    **a)** Skriv en funksjon som beregner summen av de første \(n\) positive oddetallene ved hjelp av en løkke.
 
     **b)** Bruk funksjonen til å undersøke påstanden for \(n=1,2,3,4,5,10\).
 
@@ -178,7 +178,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 ??? note "Fasit – oppgave 1–5"
     **1.** 7.
 
-    **2.** `Minus`, fordi (-2<0).
+    **2.** `Minus`, fordi \(-2<0\).
 
     **3.**
     ```text
@@ -187,7 +187,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
     9
     ```
 
-    **4.** Funksjonen returnerer (2\cdot4+1=9), og programmet skriver ut 9.
+    **4.** Funksjonen returnerer \(2\cdot4+1=9\), og programmet skriver ut 9.
 
     **5.**
     ```python
@@ -223,7 +223,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
     ```
     Resultatet er `[4, 9, 16]`. En ny liste bygges opp uten å endre originalen.
 
-    **10.** Summen er (1\cdot1+1\cdot2+2\cdot1+2\cdot2+3\cdot1+3\cdot2=18).
+    **10.** Summen er \(1\cdot1+1\cdot2+2\cdot1+2\cdot2+3\cdot1+3\cdot2=18\).
 
     **11.** Programmet skriver ut `Bestått`, fordi første betingelse er sann. Hvis `poeng >= 90` testes først, blir utskriften `Svært høyt`. Mer generelle betingelser kan fange opp verdier før mer spesifikke betingelser.
 
@@ -272,7 +272,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
                 sum_tall += x
         return sum_tall
     ```
-    Resultatet er (3+9+12=24). Kravet `x > 0` utelukker negative tall og null.
+    Resultatet er \(3+9+12=24\). Kravet `x > 0` utelukker negative tall og null.
 
     **16.**
     ```python
