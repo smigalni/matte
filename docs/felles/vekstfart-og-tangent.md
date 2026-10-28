@@ -310,9 +310,17 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     Bruk et punkts formel til å finne tangentens likning, og skriv svaret på formen \(y=ax+b\).
 
+!!! question "Oppgave 8 – Finn tangentens funksjonsuttrykk"
+
+    En tangent går gjennom punktet \(P=(3,7)\) og har stigningstall \(-2\). Finn tangentens funksjonsuttrykk på formen \(y=ax+b\).
+
+!!! question "Oppgave 9 – Tangent til en annen funksjon"
+
+    Grafen til en funksjon går gjennom punktet \(P=(1,3)\), og tangenten i dette punktet har stigningstall \(4\). Finn tangentens funksjonsuttrykk på formen \(y=ax+b\).
+
 ## 🔴 Rød – Selvstendig problemløsing
 
-!!! question "Oppgave 8 – Momentan fart"
+!!! question "Oppgave 10 – Momentan fart"
 
     Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
 
@@ -322,7 +330,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
 
-!!! question "Oppgave 9 – Tegn og tolk"
+!!! question "Oppgave 11 – Tegn og tolk"
 
     Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
 
@@ -332,7 +340,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
 
-!!! question "Oppgave 10 – Finn to ulike tangenter"
+!!! question "Oppgave 12 – Finn to ulike tangenter"
 
     En rett linje går gjennom punktet \(P=(x_1,y_1)=(3,4)\).
 
@@ -402,21 +410,25 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     **Oppgave 7**
 
-    a) Stigningstallet er \(f'(2)=4\).
-
-    b)
+    Stigningstallet er \(f'(2)=4\).
 
     \[
-    y-4=4(x-2)
-    \]
-
-    c)
-
-    \[
-    \boxed{y=4x-4}
+    y-4=4(x-2)\quad\Rightarrow\quad \boxed{y=4x-4}
     \]
 
     **Oppgave 8**
+
+    \[
+    y-7=-2(x-3)\quad\Rightarrow\quad \boxed{y=-2x+13}
+    \]
+
+    **Oppgave 9**
+
+    \[
+    y-3=4(x-1)\quad\Rightarrow\quad \boxed{y=4x-1}
+    \]
+
+    **Oppgave 10**
 
     a) Den momentane vekstfarten er \(6\text{ m/s}\).
 
@@ -432,11 +444,11 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{s=6t+2}
     \]
 
-    **Oppgave 9**
+    **Oppgave 11**
 
     a–c) Tegningene kan variere. Positivt stigningstall betyr at tangenten stiger mot høyre; negativt stigningstall betyr at den synker mot høyre.
 
-    **Oppgave 10**
+    **Oppgave 12**
 
     a)
 
