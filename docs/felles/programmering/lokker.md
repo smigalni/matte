@@ -1,8 +1,8 @@
-# Del 5 – Løkker: `for` og `while`
+# Del 4 – Løkker: `for` og `while`
 
 Løkker brukes når vi vil gjenta instruksjoner. I stedet for å skrive den samme koden mange ganger, kan vi la programmet gjøre jobben.
 
-## 5.1 En enkel `for`-løkke
+## 4.1 En enkel `for`-løkke
 
 ```python
 for i in range(4):
@@ -20,7 +20,7 @@ for i in range(2, 6):
 
 Dette skriver ut 2, 3, 4 og 5. Startverdien er med, men stoppverdien er ikke med.
 
-## 5.2 Følg variablene for hver runde
+## 4.2 Følg variablene for hver runde
 
 ```python
 sum = 0
@@ -40,7 +40,7 @@ print(sum)
 
 Til slutt skriver programmet ut 6, fordi det regner ut \(1+2+3\).
 
-## 5.3 Løkker og matematikk
+## 4.3 Løkker og matematikk
 
 ```python
 for x in range(1, 5):
@@ -59,7 +59,7 @@ Utskriften blir:
 
 Hver runde regner programmet ut \(y=2x+1\) for en ny verdi av \(x\). Slik kan vi lage en funksjonstabell.
 
-## 5.4 `while`-løkker
+## 4.4 `while`-løkker
 
 En `while`-løkke gjentas så lenge betingelsen er sann.
 
@@ -85,14 +85,14 @@ while tall <= 4:
 
 Her endres aldri `tall`, så betingelsen forblir sann. På papir skal du kunne oppdage hvorfor løkken ikke stopper.
 
-## 5.5 Velge mellom `for` og `while`
+## 4.5 Velge mellom `for` og `while`
 
 - Bruk ofte `for` når du vet hvor mange ganger noe skal gjentas, eller vil gå gjennom en rekke verdier.
 - Bruk ofte `while` når gjentakelsen skal fortsette så lenge en betingelse er sann.
 
 Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og når den stopper.
 
-## 5.6 Oppgaver
+## 4.6 Oppgaver
 
 ## 🟢 Grønn – Grunnlag
 
