@@ -300,7 +300,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
 !!! question "Oppgave 6 – Fra stigningstall til tangent"
 
-    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall 3. Finn funksjonsuttrykket for tangenten.
+    Tegn en mulig skisse.
 
 !!! question "Oppgave 7 – Tangent til en parabel"
 
