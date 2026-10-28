@@ -318,9 +318,27 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     Grafen til en funksjon går gjennom punktet \(P=(1,3)\), og tangenten i dette punktet har stigningstall \(4\). Finn tangentens funksjonsuttrykk på formen \(y=ax+b\).
 
+!!! question "Oppgave 10 – Finn tangenten når funksjonen er gitt"
+
+    Gitt funksjonen \(f(x)=x^2+1\).
+
+    Finn tangentens funksjonsuttrykk når \(x=2\). Skriv svaret på formen \(y=ax+b\).
+
+!!! question "Oppgave 11 – Tangent til en andregradsfunksjon"
+
+    Gitt funksjonen \(f(x)=2x^2-3x+1\).
+
+    Finn tangentens funksjonsuttrykk når \(x=1\). Skriv svaret på formen \(y=ax+b\).
+
+!!! question "Oppgave 12 – Tangent med negativt stigningstall"
+
+    Gitt funksjonen \(f(x)=x^2-4x+2\).
+
+    Finn tangentens funksjonsuttrykk når \(x=1\). Skriv svaret på formen \(y=ax+b\).
+
 ## 🔴 Rød – Selvstendig problemløsing
 
-!!! question "Oppgave 10 – Momentan fart"
+!!! question "Oppgave 13 – Momentan fart"
 
     Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
 
@@ -330,7 +348,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
 
-!!! question "Oppgave 11 – Tegn og tolk"
+!!! question "Oppgave 14 – Tegn og tolk"
 
     Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
 
@@ -340,7 +358,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
 
-!!! question "Oppgave 12 – Finn to ulike tangenter"
+!!! question "Oppgave 15 – Finn to ulike tangenter"
 
     En rett linje går gjennom punktet \(P=(x_1,y_1)=(3,4)\).
 
@@ -430,6 +448,42 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     **Oppgave 10**
 
+    \[
+    f(2)=2^2+1=5,\qquad f'(x)=2x,\qquad f'(2)=4
+    \]
+
+    Tangenten går gjennom \((2,5)\) og har stigningstall 4:
+
+    \[
+    y-5=4(x-2)\quad\Rightarrow\quad \boxed{y=4x-3}
+    \]
+
+    **Oppgave 11**
+
+    \[
+    f(1)=2-3+1=0,\qquad f'(x)=4x-3,\qquad f'(1)=1
+    \]
+
+    Tangenten går gjennom \((1,0)\) og har stigningstall 1:
+
+    \[
+    y-0=1(x-1)\quad\Rightarrow\quad \boxed{y=x-1}
+    \]
+
+    **Oppgave 12**
+
+    \[
+    f(1)=1-4+2=-1,\qquad f'(x)=2x-4,\qquad f'(1)=-2
+    \]
+
+    Tangenten går gjennom \((1,-1)\) og har stigningstall \(-2\):
+
+    \[
+    y+1=-2(x-1)\quad\Rightarrow\quad \boxed{y=-2x+1}
+    \]
+
+    **Oppgave 13**
+
     a) Den momentane vekstfarten er \(6\text{ m/s}\).
 
     b) Tangentens stigningstall er 6.
@@ -444,11 +498,11 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \boxed{s=6t+2}
     \]
 
-    **Oppgave 11**
+    **Oppgave 14**
 
     a–c) Tegningene kan variere. Positivt stigningstall betyr at tangenten stiger mot høyre; negativt stigningstall betyr at den synker mot høyre.
 
-    **Oppgave 12**
+    **Oppgave 15**
 
     a)
 
