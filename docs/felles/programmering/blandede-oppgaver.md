@@ -6,170 +6,170 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 
 ## 🟢 Grønn – Grunnlag
 
-### Oppgave 1 – Følg variablene
-Hva skrives ut?
+!!! question "Oppgave 1 – Følg variablene"
+    Hva skrives ut?
 
-```python
-a = 4
-b = 3
-a = a + b
-print(a)
-```
+    ```python
+    a = 4
+    b = 3
+    a = a + b
+    print(a)
+    ```
 
-### Oppgave 2 – Betingelse
-Hva skrives ut?
+!!! question "Oppgave 2 – Betingelse"
+    Hva skrives ut?
 
-```python
-temperatur = -2
-if temperatur < 0:
-    print("Minus")
-else:
-    print("Null eller mer")
-```
+    ```python
+    temperatur = -2
+    if temperatur < 0:
+        print("Minus")
+    else:
+        print("Null eller mer")
+    ```
 
-### Oppgave 3 – Løkke
-Skriv nøyaktig hva programmet skriver ut.
+!!! question "Oppgave 3 – Løkke"
+    Skriv nøyaktig hva programmet skriver ut.
 
-```python
-for i in range(1, 4):
-    print(i * i)
-```
+    ```python
+    for i in range(1, 4):
+        print(i * i)
+    ```
 
-### Oppgave 4 – Funksjon
-Hva skrives ut? Forklar hvilken verdi funksjonen returnerer.
+!!! question "Oppgave 4 – Funksjon"
+    Hva skrives ut? Forklar hvilken verdi funksjonen returnerer.
 
-```python
-def beregn(x):
-    return 2 * x + 1
+    ```python
+    def beregn(x):
+        return 2 * x + 1
 
-svar = beregn(4)
-print(svar)
-```
+    svar = beregn(4)
+    print(svar)
+    ```
 
-### Oppgave 5 – Liste
-Gitt `tall = [6, 2, 9]`, skriv kode som endrer det andre elementet til 5 og legger 12 bakerst. Hva blir listen?
+!!! question "Oppgave 5 – Liste"
+    Gitt `tall = [6, 2, 9]`, skriv kode som endrer det andre elementet til 5 og legger 12 bakerst. Hva blir listen?
 
 ## 🟡 Gul – Kombiner ideer
 
-### Oppgave 6 – Spor flere variabler
-Fyll ut en tabell med verdiene til `i`, `a` og `b` for hver runde. Hva skrives ut til slutt?
+!!! question "Oppgave 6 – Spor flere variabler"
+    Fyll ut en tabell med verdiene til `i`, `a` og `b` for hver runde. Hva skrives ut til slutt?
 
-```python
-a = 2
-b = 1
-for i in range(1, 5):
-    a = a + i
-    if i % 2 == 0:
-        b = b + a
+    ```python
+    a = 2
+    b = 1
+    for i in range(1, 5):
+        a = a + i
+        if i % 2 == 0:
+            b = b + a
+        else:
+            b = b + i
+    print(a, b)
+    ```
+
+!!! question "Oppgave 7 – Summer utvalgte tall"
+    Følg både `sum_tall` og `antall`. Hvilke tall blir tatt med?
+
+    ```python
+    sum_tall = 0
+    antall = 0
+    for tall in range(1, 8):
+        if tall % 2 != 0:
+            sum_tall += tall
+            antall += 1
+    print(sum_tall, antall)
+    ```
+
+!!! question "Oppgave 8 – Funksjon som teller"
+    Skriv funksjonen `tell_storre(tall, grense)`, som returnerer hvor mange elementer i listen som er større enn grensen. Test med `[7, 2, 9, 4]` og grensen 5.
+
+!!! question "Oppgave 9 – Lag en ny liste"
+    Skriv funksjonen `kvadrater(tall)`, som returnerer en ny liste med kvadratet av hvert element. Test med `[-2, 3, 4]`. Forklar hvorfor resultatet er en ny liste.
+
+!!! question "Oppgave 10 – Løkke inni løkke"
+    Finn utskriften og vis hvordan summen bygges opp.
+
+    ```python
+    sum_tall = 0
+    for i in range(1, 4):
+        for j in range(1, 3):
+            sum_tall += i * j
+    print(sum_tall)
+    ```
+
+!!! question "Oppgave 11 – Grense og rekkefølge"
+    Hva skriver programmet ut? Hva ville skjedd hvis den første betingelsen ble flyttet under den andre?
+
+    ```python
+    poeng = 92
+    if poeng >= 60:
+        print("Bestått")
+    elif poeng >= 90:
+        print("Svært høyt")
     else:
-        b = b + i
-print(a, b)
-```
-
-### Oppgave 7 – Summer utvalgte tall
-Følg både `sum_tall` og `antall`. Hvilke tall blir tatt med?
-
-```python
-sum_tall = 0
-antall = 0
-for tall in range(1, 8):
-    if tall % 2 != 0:
-        sum_tall += tall
-        antall += 1
-print(sum_tall, antall)
-```
-
-### Oppgave 8 – Funksjon som teller
-Skriv funksjonen `tell_storre(tall, grense)`, som returnerer hvor mange elementer i listen som er større enn grensen. Test med `[7, 2, 9, 4]` og grensen 5.
-
-### Oppgave 9 – Lag en ny liste
-Skriv funksjonen `kvadrater(tall)`, som returnerer en ny liste med kvadratet av hvert element. Test med `[-2, 3, 4]`. Forklar hvorfor resultatet er en ny liste.
-
-### Oppgave 10 – Løkke inni løkke
-Finn utskriften og vis hvordan summen bygges opp.
-
-```python
-sum_tall = 0
-for i in range(1, 4):
-    for j in range(1, 3):
-        sum_tall += i * j
-print(sum_tall)
-```
-
-### Oppgave 11 – Grense og rekkefølge
-Hva skriver programmet ut? Hva ville skjedd hvis den første betingelsen ble flyttet under den andre?
-
-```python
-poeng = 92
-if poeng >= 60:
-    print("Bestått")
-elif poeng >= 90:
-    print("Svært høyt")
-else:
-    print("Ikke bestått")
-```
+        print("Ikke bestått")
+    ```
 
 ## 🔴 Rød – Selvstendig problemløsing
 
-### Oppgave 12 – Feilsøk løkken
-En elev vil skrive ut tallene 1, 2, 3 og 4, men har skrevet:
+!!! question "Oppgave 12 – Feilsøk løkken"
+    En elev vil skrive ut tallene 1, 2, 3 og 4, men har skrevet:
 
-```python
-n = 1
-while n <= 4:
-    if n % 2 == 0:
-        n = n + 1
-    print(n)
-```
+    ```python
+    n = 1
+    while n <= 4:
+        if n % 2 == 0:
+            n = n + 1
+        print(n)
+    ```
 
-**a)** Spor programmet fra starten. Hva skjer faktisk? Stopper det?
+    **a)** Spor programmet fra starten. Hva skjer faktisk? Stopper det?
 
-**b)** Forklar den konkrete årsaken til feilen.
+    **b)** Forklar den konkrete årsaken til feilen.
 
-**c)** Skriv en rettet versjon som skriver ut 1, 2, 3 og 4 én gang hver og deretter stopper.
+    **c)** Skriv en rettet versjon som skriver ut 1, 2, 3 og 4 én gang hver og deretter stopper.
 
-### Oppgave 13 – Lag en robust listefunksjon
-Lag funksjonen `statistikk(tall)`, som returnerer både summen og antallet positive tall i listen. Du skal ikke bruke innebygde funksjoner for sum eller antall positive tall.
+!!! question "Oppgave 13 – Lag en robust listefunksjon"
+    Lag funksjonen `statistikk(tall)`, som returnerer både summen og antallet positive tall i listen. Du skal ikke bruke innebygde funksjoner for sum eller antall positive tall.
 
-Test med `[-3, 4, 0, 2, -1]`. Hva bør funksjonen returnere for en tom liste? Begrunn svaret, og velg en tydelig løsning.
+    Test med `[-3, 4, 0, 2, -1]`. Hva bør funksjonen returnere for en tom liste? Begrunn svaret, og velg en tydelig løsning.
 
-### Oppgave 14 – Finn og rett to feil
-Funksjonen skal returnere en ny liste med bare partall større enn en grense. Den inneholder to feil:
+!!! question "Oppgave 14 – Finn og rett to feil"
+    Funksjonen skal returnere en ny liste med bare partall større enn en grense. Den inneholder to feil:
 
-```python
-def velg_partall(tall, grense):
-    ny = []
-    for x in tall:
-        if x % 2 == 0:
-            ny.append(x)
-        return ny
-```
+    ```python
+    def velg_partall(tall, grense):
+        ny = []
+        for x in tall:
+            if x % 2 == 0:
+                ny.append(x)
+            return ny
+    ```
 
-**a)** Finn begge feilene i forhold til oppgaven.
+    **a)** Finn begge feilene i forhold til oppgaven.
 
-**b)** Rett funksjonen.
+    **b)** Rett funksjonen.
 
-**c)** Vis resultatet av `velg_partall([2, 7, 8, 10, 3], 5)`.
+    **c)** Vis resultatet av `velg_partall([2, 7, 8, 10, 3], 5)`.
 
-### Oppgave 15 – Undersøk en matematisk regel
-Lag en funksjon som mottar en liste med heltall og returnerer summen av tallene som er både positive og delelige med 3.
+!!! question "Oppgave 15 – Undersøk en matematisk regel"
+    Lag en funksjon som mottar en liste med heltall og returnerer summen av tallene som er både positive og delelige med 3.
 
-Test med `[-6, 3, 4, 9, 12, -3, 0]`.
+    Test med `[-6, 3, 4, 9, 12, -3, 0]`.
 
-**a)** Skriv først en algoritme med ord.
+    **a)** Skriv først en algoritme med ord.
 
-**b)** Skriv funksjonen i Python.
+    **b)** Skriv funksjonen i Python.
 
-**c)** Forklar hvordan betingelsene sørger for at negative tall og null ikke tas med.
+    **c)** Forklar hvordan betingelsene sørger for at negative tall og null ikke tas med.
 
-### Oppgave 16 – Finn et mønster og begrunn det
-Se på summen av de første (n) positive oddetallene. Vi mistenker at summen er (n^2).
+!!! question "Oppgave 16 – Finn et mønster og begrunn det"
+    Se på summen av de første \(n\) positive oddetallene. Vi mistenker at summen er \(n^2\).
 
-**a)** Skriv en funksjon som beregner summen av de første (n) positive oddetallene ved hjelp av en løkke.
+    **a)** Skriv en funksjon som beregner summen av de første (n) positive oddetallene ved hjelp av en løkke.
 
-**b)** Bruk funksjonen til å undersøke påstanden for (n=1,2,3,4,5,10).
+    **b)** Bruk funksjonen til å undersøke påstanden for \(n=1,2,3,4,5,10\).
 
-**c)** Forklar hvorfor testene støtter påstanden, men ikke alene beviser at den gjelder for alle positive heltall (n).
+    **c)** Forklar hvorfor testene støtter påstanden, men ikke alene beviser at den gjelder for alle positive heltall \(n\).
 
 ---
 
@@ -248,7 +248,7 @@ Se på summen av de første (n) positive oddetallene. Vi mistenker at summen er 
                 positive += 1
         return sum_tall, positive
     ```
-    For listen i oppgaven returneres `(2, 2)`. For tom liste returneres `(0, 0)), som er en konsistent løsning fordi ingen elementer er behandlet.
+    For listen i oppgaven returneres `(2, 2)`. For tom liste returneres `(0, 0)`, som er en konsistent løsning fordi ingen elementer er behandlet.
 
     **14.** `return ny` står inne i løkken, så funksjonen avsluttes for tidlig. Grensen brukes heller ikke. Riktig versjon:
 
