@@ -19,8 +19,8 @@ nav = [
       { "Oversikt" = "r1/derivasjon/index.md" },
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
       { "3.2 Deriverbarhet" = "r1/derivasjon/deriverbarhet.md" },
-      { "Programmering – grunnleggende" = "felles/programmering.md" },
     ] },
+    { "Programmering – grunnleggende" = "felles/programmering.md" },
   ] },
   { "S1" = [
     { "Oversikt" = "s1/index.md" },
