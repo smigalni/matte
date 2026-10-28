@@ -296,7 +296,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
 
-    d) Tegn en mulig skisse av en graf og tangenten ved (x=2) når (f'(2)=5). Marker punktet og tangenten. Vis med en liten stigningstrekant hvordan stigningstallet kan være 5.
+    d) Tegn en mulig skisse
 
 !!! question "Oppgave 6 – Fra stigningstall til tangent"
 
