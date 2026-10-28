@@ -23,15 +23,15 @@ Dette skriver ut 2, 3, 4 og 5. Startverdien er med, men stoppverdien er ikke med
 ## 4.2 Følg variablene for hver runde
 
 ```python
-sum = 0
+sum_tall = 0
 
 for i in range(1, 4):
-    sum = sum + i
+    sum_tall = sum_tall + i
 
-print(sum)
+print(sum_tall)
 ```
 
-| Runde | `i` | `sum` etter oppdatering |
+| Runde | `i` | `sum_tall` etter oppdatering |
 |---:|---:|---:|
 | Start | – | 0 |
 | 1 | 1 | 1 |
@@ -115,13 +115,13 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
 !!! question "Oppgave 3 – Følg summen"
 
     ```python
-    sum = 0
+    sum_tall = 0
     for i in range(1, 5):
-        sum = sum + i
-    print(sum)
+        sum_tall = sum_tall + i
+    print(sum_tall)
     ```
 
-    Hva blir utskriften? Vis verdien til `sum` etter hver runde.
+    Hva blir utskriften? Vis verdien til `sum_tall` etter hver runde.
 
 !!! question "Oppgave 4 – Funksjonstabell"
 
@@ -172,7 +172,7 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
     Tallene 3, 4, 5 og 6.
 
 ??? note "Fasit – oppgave 3"
-    Verdiene til `sum` blir 1, 3, 6 og 10. Utskriften er 10.
+    Verdiene til `sum_tall` blir 1, 3, 6 og 10. Utskriften er 10.
 
 ??? note "Fasit – oppgave 4"
     ```text
