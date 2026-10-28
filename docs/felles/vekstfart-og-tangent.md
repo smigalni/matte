@@ -236,6 +236,7 @@ Tangentens likning blir derfor:
     \]
 
     **Husk metoden:** Finn punktet, finn tangentens stigningstall, sett inn i \(y=ax+b\), og bruk punktet til å finne \(b\).
+
 ## 6. Oppgaver
 
 Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
