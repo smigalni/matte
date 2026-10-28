@@ -1,11 +1,11 @@
-# S1 – Funksjoner
+# S1 – Oversikt
 
 Velkommen til matematikk S1. Her får du en egen faglig progresjon tilpasset S1.
 
 ## Kapittel 3.1 – Vekstfart og tangent
 
-Dette temaet deler vi med R1, slik at den samme forklaringen bare trenger å vedlikeholdes ett sted.
+S1 og R1 deler denne grunnforklaringen om gjennomsnittlig og momentan vekstfart og tangentens likning.
 
 [Åpne kapittel 3.1 – Vekstfart og tangent](../felles/vekstfart-og-tangent.md)
 
-> Merk: Dette er en test av felles innhold. Kapittelnummer og plassering i S1 kan justeres når vi har bestemt den endelige kapittelstrukturen.
+Vi bygger videre med S1-tilpassede eksempler og oppgaver etter hvert.

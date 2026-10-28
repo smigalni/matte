@@ -72,6 +72,7 @@ Dette kan for eksempel være:
 
 - **Knekkpunkter:** Grafen skifter retning brått, slik som grafen til \(f(x)=|x|\) i \(x=0\).
 - **Bruddpunkter:** Grafen er ikke kontinuerlig.
+
 En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deriverbar.
 
 ### Algebraisk metode – ensidige grenseverdier
@@ -184,13 +185,15 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     f'_-(1)=1\neq2=f'_+(1)
     \]
 
-    De ensidige grenseverdiene er forskjellige. Derfor er funksjonen ikke deriverbar i \\(x=1\\), selv om den er kontinuerlig der.
+    De ensidige grenseverdiene er forskjellige. Derfor er funksjonen ikke deriverbar i \(x=1\), selv om den er kontinuerlig der.
 
     **Svar:**
 
-    \\[\underline{\underline{\text{Ikke deriverbar i }x=1}}\]
+    \[\underline{\underline{\text{Ikke deriverbar i }x=1}}\]
 
 ## Oppgaver
+
+## 🟢 Grønn – Grunnlag
 
 !!! question "Oppgave 1 – Forstå begrepene"
 
@@ -219,6 +222,8 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     a) Kan funksjonen være deriverbar i \(x=2\)? Begrunn svaret.
 
     b) En annen funksjon er kontinuerlig i \(x=2\), men har et knekkpunkt der. Kan den være deriverbar i dette punktet? Forklar.
+
+## 🟡 Gul – Kombiner ideer
 
 !!! question "Oppgave 4 – Undersøk med ensidige grenseverdier"
 
@@ -253,6 +258,8 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     \]
 
     Bestem verdien av \(k\) slik at funksjonen er deriverbar i \(x=1\). Vis framgangsmåten.
+
+## 🔴 Rød – Selvstendig problemløsing
 
 !!! question "Oppgave 6 – Undersøk en funksjon med flere uttrykk"
 

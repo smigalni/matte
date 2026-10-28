@@ -1,8 +1,8 @@
-# Del 4 – Betingelser: `if`, `else` og `elif`
+# Del 3 – Betingelser: `if`, `else` og `elif`
 
 Et program kan gjøre forskjellige ting avhengig av en betingelse. I Python bruker vi `if` («hvis»), `else` («ellers») og noen ganger `elif` («ellers hvis»).
 
-## 4.1 Sammenligninger
+## 3.1 Sammenligninger
 
 | Operator | Betydning | Eksempel |
 |---|---|---|
@@ -23,7 +23,7 @@ print(x > 8)
 
 Utskriften blir `True` og deretter `False`.
 
-## 4.2 `if` og `else`
+## 3.2 `if` og `else`
 
 ```python
 alder = 17
@@ -38,7 +38,7 @@ Programmet undersøker om `alder >= 18` er sant. Det er usant, så det skriver u
 
 Kolonet `:` starter en blokk. Linjene i blokken må ha innrykk. Innrykket viser hvilke instruksjoner som hører til betingelsen.
 
-## 4.3 Flere valg med `elif`
+## 3.3 Flere valg med `elif`
 
 ```python
 poeng = 72
@@ -55,7 +55,7 @@ else:
 
 Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er sann, kjøres den tilhørende blokken. Her skriver programmet ut `Karakter 4`.
 
-## 4.4 En fast metode for å lese betingelser
+## 3.4 En fast metode for å lese betingelser
 
 1. Skriv ned verdien til hver variabel.
 2. Undersøk betingelsen nøyaktig slik den står.
@@ -63,64 +63,66 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
 4. Følg bare blokken som passer.
 5. Les av utskriften.
 
-## 4.5 Oppgaver
+## 3.5 Oppgaver
 
-**Oppgave 1 – Sant eller usant?**
+## 🟢 Grønn – Grunnlag
 
-```python
-x = 7
-print(x > 5)
-print(x == 5)
-print(x != 7)
-```
+!!! question "Oppgave 1 – Sant eller usant?"
 
-Hva skrives ut?
+    ```python
+    x = 7
+    print(x > 5)
+    print(x == 5)
+    print(x != 7)
+    ```
 
-**Oppgave 2 – Hvilken blokk kjører?**
+    Hva skrives ut?
 
-```python
-temperatur = 3
+!!! question "Oppgave 2 – Hvilken blokk kjører?"
 
-if temperatur < 0:
-    print("Frost")
-else:
-    print("Ikke frost")
-```
+    ```python
+    temperatur = 3
 
-Hva blir utskriften?
+    if temperatur < 0:
+        print("Frost")
+    else:
+        print("Ikke frost")
+    ```
 
-**Oppgave 3 – Flere valg**
+    Hva blir utskriften?
 
-```python
-x = 12
+!!! question "Oppgave 3 – Flere valg"
 
-if x > 20:
-    print("A")
-elif x > 10:
-    print("B")
-elif x > 5:
-    print("C")
-else:
-    print("D")
-```
+    ```python
+    x = 12
 
-Hva skriver programmet ut? Forklar hvorfor det ikke skriver ut de andre bokstavene.
+    if x > 20:
+        print("A")
+    elif x > 10:
+        print("B")
+    elif x > 5:
+        print("C")
+    else:
+        print("D")
+    ```
 
-**Oppgave 4 – Matematikk**
+    Hva skriver programmet ut? Forklar hvorfor det ikke skriver ut de andre bokstavene.
 
-Skriv en algoritme og deretter Python-kode som undersøker om et tall er positivt eller ikke-positivt. Test med tallene 8, 0 og -3.
+!!! question "Oppgave 4 – Matematikk"
 
-**Oppgave 5 – Feilsøking**
+    Skriv en algoritme og deretter Python-kode som undersøker om et tall er positivt eller ikke-positivt. Test med tallene 8, 0 og -3.
 
-Hva er feil med denne koden? Skriv den riktig.
+!!! question "Oppgave 5 – Feilsøking"
 
-```python
-x = 4
-if x == 4:
-print("Fire")
-else:
-print("Ikke fire")
-```
+    Hva er feil med denne koden? Skriv den riktig.
+
+    ```python
+    x = 4
+    if x == 4:
+    print("Fire")
+    else:
+    print("Ikke fire")
+    ```
 
 ## Fasit
 

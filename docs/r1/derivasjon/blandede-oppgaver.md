@@ -6,11 +6,11 @@ Her får du øve på temaene fra kapittel 3 så langt: gjennomsnittlig og moment
 
 ## Slik leser du nivåene
 
-- 🟢 **Grønn – Start:** øv på én grunnleggende idé om gangen.
-- 🟡 **Gul – På vei:** bruk flere steg eller koble sammen metoder.
-- 🔴 **Rød – Utfordring:** kombiner flere ideer og begrunn konklusjonen.
+- 🟢 **Grønn – Grunnlag:** øv på én sentral idé om gangen.
+- 🟡 **Gul – Kombinasjon:** bruk flere ideer, flere steg eller koble sammen metoder.
+- 🔴 **Rød – Selvstendig problemløsing:** kombiner flere ideer og begrunn konklusjonen.
 
-## 🟢 Grønn – Start
+## 🟢 Grønn – Grunnlag
 
 !!! question "Oppgave 1 – Gjennomsnittlig vekstfart"
     Vi har funksjonen \(f(x)=x^2+2\).
@@ -46,7 +46,7 @@ Her får du øve på temaene fra kapittel 3 så langt: gjennomsnittlig og moment
 
     c) Funksjonen \(f(x)=|x|\) er kontinuerlig i \(x=0\), men ikke deriverbar der.
 
-## 🟡 Gul – På vei
+## 🟡 Gul – Kombinasjon
 
 !!! question "Oppgave 5 – Sammenlign vekstfart"
     Vi har \(g(x)=x^2-1\).
@@ -98,7 +98,7 @@ Her får du øve på temaene fra kapittel 3 så langt: gjennomsnittlig og moment
 
     Bestem \(k\) slik at funksjonen er deriverbar i \(x=1\). Vis både at funksjonen er kontinuerlig og at de ensidige stigningstallene er like.
 
-## 🔴 Rød – Utfordring
+## 🔴 Rød – Selvstendig problemløsing
 
 !!! question "Oppgave 9 – Fra vekstfart til tangent"
     Vi har \(f(x)=x^2\). I punktet med \(x=2\) er punktet på grafen \(P=(2,4)\), og tangentens stigningstall er \(f'(2)=4\).
