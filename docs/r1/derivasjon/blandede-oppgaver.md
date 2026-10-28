@@ -1,4 +1,4 @@
-# Delkapittel 3.3 – Blandede oppgaver
+# Blandede oppgaver – kapittel 3
 
 Her får du øve på temaene fra kapittel 3 så langt: gjennomsnittlig og momentan vekstfart, tangenter og tangentlikninger, kontinuitet og deriverbarhet. Oppgavene er inspirert av eksemplene og oppgavene i delkapitlene, men tall og situasjoner er endret slik at du får trene på å bruke metodene selv.
 
