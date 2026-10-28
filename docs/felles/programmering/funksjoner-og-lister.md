@@ -55,6 +55,8 @@ Funksjonen returnerer 12. Deretter lagres 12 i `svar`, og programmet skriver ut 
     - Kodeblokken må ha riktig innrykk.
     - `return` avslutter funksjonskallet og gir tilbake en verdi.
 
+## 🟢 Grønn – Grunnlag
+
 !!! question "Oppgave 1 – Forstå funksjoner"
     **a)** Skriv en funksjon `kvadrat(tall)` som returnerer kvadratet av tallet. Test med 5.
 
@@ -163,6 +165,8 @@ Sporing:
 | 3 | 2 | 10 |
 
 Først går løkken gjennom alle elementene. Etter løkken returneres summen. Legg merke til at `return` står **utenfor** løkken; ellers ville funksjonen stoppet før den hadde behandlet alle elementene.
+
+## 🔴 Rød – Selvstendig problemløsing
 
 !!! question "Oppgave 3 – Kombiner verktøyene"
     **a)** Lag `tell_positive(tall)`, som returnerer hvor mange elementer som er større enn 0. Test med `[-2, 4, 0, 7, -1, 3]`.
