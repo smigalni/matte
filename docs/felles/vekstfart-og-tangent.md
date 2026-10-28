@@ -25,7 +25,7 @@ Den deriverte hjelper oss å beskrive **hvor raskt noe endrer seg akkurat nå**.
 
 I alle disse eksemplene handler det om endring. Den deriverte gir oss et mål på hvor rask endringen er. I dette kapittelet skal vi se at den også kan forstås geometrisk: Den deriverte i et punkt er stigningstallet til tangenten til grafen i punktet.
 
-## Gjennomsnittlig og momentan vekstfart
+## 1. Gjennomsnittlig og momentan vekstfart
 
 Tenk at du sykler en tur. Gjennomsnittsfarten beskriver hele turen, mens sykkelcomputeren kan vise farten **akkurat nå**. Dette er to forskjellige spørsmål.
 
