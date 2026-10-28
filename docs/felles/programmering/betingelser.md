@@ -1,8 +1,8 @@
-# Del 4 – Betingelser: `if`, `else` og `elif`
+# Del 3 – Betingelser: `if`, `else` og `elif`
 
 Et program kan gjøre forskjellige ting avhengig av en betingelse. I Python bruker vi `if` («hvis»), `else` («ellers») og noen ganger `elif` («ellers hvis»).
 
-## 4.1 Sammenligninger
+## 3.1 Sammenligninger
 
 | Operator | Betydning | Eksempel |
 |---|---|---|
@@ -23,7 +23,7 @@ print(x > 8)
 
 Utskriften blir `True` og deretter `False`.
 
-## 4.2 `if` og `else`
+## 3.2 `if` og `else`
 
 ```python
 alder = 17
@@ -38,7 +38,7 @@ Programmet undersøker om `alder >= 18` er sant. Det er usant, så det skriver u
 
 Kolonet `:` starter en blokk. Linjene i blokken må ha innrykk. Innrykket viser hvilke instruksjoner som hører til betingelsen.
 
-## 4.3 Flere valg med `elif`
+## 3.3 Flere valg med `elif`
 
 ```python
 poeng = 72
@@ -55,7 +55,7 @@ else:
 
 Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er sann, kjøres den tilhørende blokken. Her skriver programmet ut `Karakter 4`.
 
-## 4.4 En fast metode for å lese betingelser
+## 3.4 En fast metode for å lese betingelser
 
 1. Skriv ned verdien til hver variabel.
 2. Undersøk betingelsen nøyaktig slik den står.
@@ -63,7 +63,7 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
 4. Følg bare blokken som passer.
 5. Les av utskriften.
 
-## 4.5 Oppgaver
+## 3.5 Oppgaver
 
 ## 🟢 Grønn – Grunnlag
 
