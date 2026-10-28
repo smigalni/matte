@@ -53,7 +53,7 @@ Når `x = x + y` utføres, brukes de gjeldende verdiene (x=4) og (y=3). Resultat
 
 ### Modulo: resten etter divisjon
 
-- `7 % 3` gir 1, fordi (7=2\cdot3+1).
+- `7 % 3` gir 1, fordi \(7=2\cdot3+1\).
 - `12 % 3` gir 0, fordi 12 er delelig med 3.
 - `tall % 2 == 0` kan brukes til å undersøke om et heltall er partall.
 
@@ -164,10 +164,10 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
 
     Utskriften er 7 og deretter 5.
 
-    **4.** (x=11) og (y=21).
+    **4.** \(x=11\) og \(y=21\).
 
 ??? note "Fasit – oppgave 5–8"
-    **5.** (2^3=8) og (3^2=9). Summen er 17.
+    **5.** \(2^3=8\) og \(3^2=9\). Summen er 17.
 
     **6.** Linjen `x = x + 3` bruker den gjeldende verdien 4, regner ut 7 og lagrer 7. Utskriften er 7.
 
