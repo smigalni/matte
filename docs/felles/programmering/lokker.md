@@ -94,6 +94,8 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
 
 ## 5.6 Oppgaver
 
+## 🟢 Grønn – Grunnlag
+
 **Oppgave 1 – Hva skrives ut?**
 
 ```python
