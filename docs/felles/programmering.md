@@ -104,7 +104,7 @@ x = x + y
 print(x)
 ```
 
-Når programmet leser `x = x + y`, bruker det de gjeldende verdiene: (x=4) og (y=3). Det regner ut (4+3=7) og lagrer 7 i `x).
+Når programmet leser `x = x + y`, bruker det de gjeldende verdiene: \\(x=4\\) og \\(y=3\\). Det regner ut \\(4+3=7\\) og lagrer 7 i `x`. 
 
 | Etter linjen | Verdien til `x` | Verdien til `y` |
 |---|---:|---:|
@@ -128,7 +128,7 @@ Python kan utføre vanlige regneoperasjoner. Disse symbolene er spesielt viktige
 | Divisjon | `/` | `6 / 2` | 3 |
 | Potens | `**` | `2 ** 3` | 8 |
 
-Legg merke til at multiplikasjon skrives med `*`, og at potens skrives med `**`. Vi skriver altså `2 ** 3` for (2^3).
+Legg merke til at multiplikasjon skrives med `*`, og at potens skrives med `**`. Vi skriver altså `2 ** 3` for \\(2^3\\).
 
 Python følger vanlige regneregler for parenteser og regnerekkefølge:
 
@@ -139,7 +139,7 @@ print(a)
 print(b)
 ```
 
-- `a` blir (2+12=14).
+- `a` blir \\(2+12=14\\).
 - `b` blir (5\cdot4=20).
 
 Utskriften blir først 14 og deretter 20.
@@ -231,8 +231,8 @@ Prøv å løse oppgavene uten PC. Skriv gjerne en tabell over variablene. Fasite
 !!! question "Oppgave 7 – Skriv kode på papir"
     Skriv et Python-program som:
 
-    1. lagrer tallet 12 i variabelen `a)
-    2. lagrer tallet 5 i variabelen `b)
+    1. lagrer tallet 12 i variabelen `a`
+    2. lagrer tallet 5 i variabelen `b`
     3. lagrer summen av tallene i variabelen `sum`
     4. skriver ut summen
 
@@ -269,10 +269,10 @@ Prøv å løse oppgavene uten PC. Skriv gjerne en tabell over variablene. Fasite
     (x=5+2\cdot3=11) og (y=(5+2)\cdot3=21).
 
 ??? note "Oppgave 5"
-    (a=8) og (b=9). Programmet skriver ut 17.
+    \\(a=8\\) og \\(b=9\\). Programmet skriver ut 17.
 
 ??? note "Oppgave 6"
-    Når linjen `x = x + 3` utføres, bruker programmet den gamle verdien 4 og regner ut (4+3=7). Deretter lagres 7 i `x). Utskriften er 7.
+    Når linjen `x = x + 3` utføres, bruker programmet den gamle verdien 4 og regner ut \\(4+3=7\\). Deretter lagres 7 i `x`.  Utskriften er 7.
 
 ??? note "Oppgave 7"
     Én mulig løsning:
