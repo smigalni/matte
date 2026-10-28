@@ -18,6 +18,7 @@ nav = [
     { "Kapittel 3 – Derivasjon" = [
       { "Oversikt" = "r1/derivasjon/index.md" },
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
+      { "3.2 Deriverbarhet" = "r1/derivasjon/deriverbarhet.md" },
     ] },
   ] },
   { "S1" = [
@@ -40,6 +41,7 @@ pymdownx.arithmatex.generic = true
 pymdownx.details = {}
 pymdownx.superfences = {}
 pymdownx.tasklist.custom_checkbox = true
+md_in_html = {}
 
 [project.theme.palette]
 primary = "indigo"

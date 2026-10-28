@@ -230,7 +230,7 @@ Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
     \[
-    y-y_1=f'(x_1)(x-x_1)
+    y-y_1=a(x-x_1)
     \]
 
 !!! example "Eksempel – Finn tangentens likning steg for steg"
