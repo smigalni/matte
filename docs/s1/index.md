@@ -1,4 +1,4 @@
-# S1 – Funksjoner
+# S1 – Oversikt
 
 Velkommen til matematikk S1. Her får du en egen faglig progresjon tilpasset S1.
 
