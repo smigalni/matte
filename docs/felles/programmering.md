@@ -140,7 +140,7 @@ print(b)
 ```
 
 - `a` blir \(2+12=14\).
-- `b` blir (5\cdot4=20).
+- `b` blir \(5\cdot4=20\).
 
 Utskriften blir først 14 og deretter 20.
 
