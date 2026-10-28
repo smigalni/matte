@@ -198,7 +198,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
     Listen blir `[6, 5, 9, 12]`.
 
 ??? note "Fasit – oppgave 6–11"
-    **6.** Etter hver runde blir `(a,b)`: ((3,2)), ((5,7)), ((8,10)), ((12,22)). Utskrift: `12 22`.
+    **6.** Etter hver runde blir `(a,b)`: (3, 2), (5, 7), (8, 10), (12, 22). Utskrift: `12 22`.
 
     **7.** Oddetallene 1, 3, 5 og 7 tas med. Summen er 16, antallet er 4. Utskrift: `16 4`.
 
@@ -282,4 +282,4 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
             sum_tall += 2 * i - 1
         return sum_tall
     ```
-    For \(n=1,2,3,4,5,10\) blir summene \(1,4,9,16,25,100\), lik \(n^2\) i alle testene. Testene støtter påstanden, men et endelig antall tester utelukker ikke at det finnes et moteksempel for en større verdi. Et generelt bevis krever et matematisk argument, for eksempel induksjon. Et generelt bevis krever et matematisk argument, for eksempel induksjon.
+    For \(n=1,2,3,4,5,10\) blir summene \(1,4,9,16,25,100\), lik \(n^2\) i alle testene. Testene støtter påstanden, men et endelig antall tester utelukker ikke at det finnes et moteksempel for en større verdi. Et generelt bevis krever et matematisk argument, for eksempel induksjon.

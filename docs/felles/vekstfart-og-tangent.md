@@ -186,7 +186,7 @@ Den enkleste metoden er ofte å starte med \(y=ax+b\). Når vi kjenner tangenten
     y-y_1=a(x-x_1)
     \]
 
-Dette kalles **etpunktsformelen**.
+Dette kalles **ettpunktsformelen**.
 
 For tangenten til grafen til \(f\) i \(x=x_1\) kjenner vi både punktet og stigningstallet:
 
