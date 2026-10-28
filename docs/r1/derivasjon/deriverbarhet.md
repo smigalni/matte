@@ -193,6 +193,8 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
 ## Oppgaver
 
+## 🟢 Grønn – Grunnlag
+
 !!! question "Oppgave 1 – Forstå begrepene"
 
     a) Forklar med egne ord hva det betyr at en funksjon er deriverbar i et punkt.
@@ -220,6 +222,8 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     a) Kan funksjonen være deriverbar i \(x=2\)? Begrunn svaret.
 
     b) En annen funksjon er kontinuerlig i \(x=2\), men har et knekkpunkt der. Kan den være deriverbar i dette punktet? Forklar.
+
+## 🟡 Gul – Kombiner ideer
 
 !!! question "Oppgave 4 – Undersøk med ensidige grenseverdier"
 
@@ -254,6 +258,8 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     \]
 
     Bestem verdien av \(k\) slik at funksjonen er deriverbar i \(x=1\). Vis framgangsmåten.
+
+## 🔴 Rød – Selvstendig problemløsing
 
 !!! question "Oppgave 6 – Undersøk en funksjon med flere uttrykk"
 
