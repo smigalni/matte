@@ -306,9 +306,9 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     Grafen til \(f(x)=x^2\) har punktet \(P=(x_1,y_1)=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
 
-    a) Hva er tangentens stigningstall?
+    Hva er tangentens stigningstall?
 
-    b) Bruk et punkts formel til å finne tangentens likning, og skriv svaret på formen \(y=ax+b\).
+    Bruk et punkts formel til å finne tangentens likning, og skriv svaret på formen \(y=ax+b\).
 
 ## 🔴 Rød – Selvstendig problemløsing
 
