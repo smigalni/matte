@@ -296,6 +296,8 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
 
+    d) Tegn en mulig skisse av en graf og tangenten ved (x=2) når (f'(2)=5). Marker punktet og tangenten. Vis med en liten stigningstrekant hvordan stigningstallet kan være 5.
+
 !!! question "Oppgave 6 – Fra stigningstall til tangent"
 
     En tangent går gjennom punktet \(P=(x_1,y_1)=(2,5)\) og har stigningstall \(a=3\).
@@ -389,6 +391,8 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     b) Funksjonen øker momentant med 5 enheter i \(y\) for hver enhet i \(x\), ved \(x=2\). I en fysisk modell avhenger enhetene av hva \(x\) og \(y\) beskriver.
 
     c) Den momentane vekstfarten er 0; tangenten er vannrett.
+
+    d) Skissen kan variere. Tangenten skal stige mot høyre og ha stigningstall 5, for eksempel 5 ruter opp for hver rute mot høyre. Punktets høyde kan velges fritt.
 
     **Oppgave 6**
 
