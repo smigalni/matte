@@ -67,62 +67,62 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
 
 ## 🟢 Grønn – Grunnlag
 
-**Oppgave 1 – Sant eller usant?**
+!!! question "Oppgave 1 – Sant eller usant?"
 
-```python
-x = 7
-print(x > 5)
-print(x == 5)
-print(x != 7)
-```
+    ```python
+    x = 7
+    print(x > 5)
+    print(x == 5)
+    print(x != 7)
+    ```
 
-Hva skrives ut?
+    Hva skrives ut?
 
-**Oppgave 2 – Hvilken blokk kjører?**
+!!! question "Oppgave 2 – Hvilken blokk kjører?"
 
-```python
-temperatur = 3
+    ```python
+    temperatur = 3
 
-if temperatur < 0:
-    print("Frost")
-else:
-    print("Ikke frost")
-```
+    if temperatur < 0:
+        print("Frost")
+    else:
+        print("Ikke frost")
+    ```
 
-Hva blir utskriften?
+    Hva blir utskriften?
 
-**Oppgave 3 – Flere valg**
+!!! question "Oppgave 3 – Flere valg"
 
-```python
-x = 12
+    ```python
+    x = 12
 
-if x > 20:
-    print("A")
-elif x > 10:
-    print("B")
-elif x > 5:
-    print("C")
-else:
-    print("D")
-```
+    if x > 20:
+        print("A")
+    elif x > 10:
+        print("B")
+    elif x > 5:
+        print("C")
+    else:
+        print("D")
+    ```
 
-Hva skriver programmet ut? Forklar hvorfor det ikke skriver ut de andre bokstavene.
+    Hva skriver programmet ut? Forklar hvorfor det ikke skriver ut de andre bokstavene.
 
-**Oppgave 4 – Matematikk**
+!!! question "Oppgave 4 – Matematikk"
 
-Skriv en algoritme og deretter Python-kode som undersøker om et tall er positivt eller ikke-positivt. Test med tallene 8, 0 og -3.
+    Skriv en algoritme og deretter Python-kode som undersøker om et tall er positivt eller ikke-positivt. Test med tallene 8, 0 og -3.
 
-**Oppgave 5 – Feilsøking**
+!!! question "Oppgave 5 – Feilsøking"
 
-Hva er feil med denne koden? Skriv den riktig.
+    Hva er feil med denne koden? Skriv den riktig.
 
-```python
-x = 4
-if x == 4:
-print("Fire")
-else:
-print("Ikke fire")
-```
+    ```python
+    x = 4
+    if x == 4:
+    print("Fire")
+    else:
+    print("Ikke fire")
+    ```
 
 ## Fasit
 
