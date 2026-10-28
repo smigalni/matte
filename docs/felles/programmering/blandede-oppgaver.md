@@ -63,107 +63,140 @@ for i in range(1, 4):
 
 ## 🟡 Gul – På vei
 
-### Oppgave 5 – Oppdatering flere ganger
+### Oppgave 5 – Spor flere variabler
 
-Fyll ut verdiene til `n` etter hver runde. Hva skrives til slutt?
+Fyll ut en tabell med verdiene til `i`, `a` og `b` for hver runde. Hva skrives ut til slutt?
 
 ```python
-n = 2
+a = 2
+b = 1
 
-for i in range(3):
-    n = n + 2
+for i in range(1, 5):
+    a = a + i
+    if i % 2 == 0:
+        b = b + a
+    else:
+        b = b + i
 
-print(n)
+print(a, b)
 ```
 
-### Oppgave 6 – Flere valg
+### Oppgave 6 – Flere betingelser i riktig rekkefølge
 
-Hva skriver programmet ut? Forklar hvorfor.
+Hva skriver programmet ut? Forklar hvorfor rekkefølgen på betingelsene betyr noe. Prøv også å endre rekkefølgen og beskriv hva som kan gå galt.
 
 ```python
-poeng = 65
+poeng = 78
 
-if poeng >= 80:
-    print("A")
+if poeng >= 90:
+    karakter = "A"
+elif poeng >= 75:
+    karakter = "B"
 elif poeng >= 60:
-    print("B")
+    karakter = "C"
 else:
-    print("C")
+    karakter = "D"
+
+print(karakter)
 ```
 
-### Oppgave 7 – Summer tall
+### Oppgave 7 – Summer utvalgte tall
 
-Følg med på `sum` for hver runde. Hva blir sluttverdien?
+Følg både `sum` og `antall` gjennom løkken. Hva skrives ut? Forklar hvilke tall som blir tatt med.
 
 ```python
 sum = 0
+antall = 0
 
-for tall in range(2, 6):
-    sum = sum + tall
+for tall in range(1, 8):
+    if tall % 2 != 0:
+        sum = sum + tall
+        antall = antall + 1
 
-print(sum)
+print(sum, antall)
 ```
 
-### Oppgave 8 – Løkke med betingelse
+### Oppgave 8 – Løkke inni løkke
 
-Hvilke tall skrives ut?
+Lag en tabell som viser verdiene til `i`, `j` og `produkt` hver gang linjen med `produkt = produkt + i * j` kjøres. Finn til slutt utskriften.
 
 ```python
-for x in range(1, 7):
-    if x % 2 == 0:
-        print(x)
-```
+produkt = 0
 
-Hint: `%` gir resten etter divisjon.
+for i in range(1, 4):
+    for j in range(1, 3):
+        produkt = produkt + i * j
+
+print(produkt)
+```
 
 ---
 
 ## 🔴 Rød – Utfordring
 
-### Oppgave 9 – Finn feilen
+### Oppgave 9 – Finn feilen og forklar hvorfor løkken stopper
 
-Programmet skal skrive ut tallene 1, 2, 3 og 4, men det stopper ikke. Forklar hvorfor og rett koden.
+En elev ønsker at programmet skal skrive ut 1, 2, 3 og 4. Programmet under oppfører seg ikke som ønsket.
 
 ```python
 n = 1
 
 while n <= 4:
+    if n % 2 == 0:
+        n = n + 1
     print(n)
 ```
 
-### Oppgave 10 – To variabler endres
+a) Følg programmet linje for linje. Hva skjer faktisk? Vil løkken stoppe?
 
-Fyll ut en tabell med `a`, `b` og `i` for hver runde. Hva skrives ut?
+b) Forklar nøyaktig hvorfor programmet ikke gjør det eleven ønsker.
 
-```python
-a = 1
-b = 2
+c) Skriv om programmet slik at det skriver ut 1, 2, 3 og 4 én gang hver og deretter stopper.
 
-for i in range(3):
-    a = a + b
-    b = b + 1
+### Oppgave 10 – To løkker og en betingelse
 
-print(a, b)
-```
-
-### Oppgave 11 – Matematisk mønster
-
-Programmet lager verdier for en funksjon. Fyll ut tabellen for \(x\) og \(y\), og forklar mønsteret.
+Fyll ut en sporingstabell med `i`, `j`, `sum` og `antall` hver gang den innerste løkken kjører. Hva skrives ut til slutt?
 
 ```python
-for x in range(-2, 3):
-    y = x * x - 1
-    print(x, y)
+sum = 0
+antall = 0
+
+for i in range(1, 4):
+    for j in range(i, 5):
+        if (i + j) % 2 == 0:
+            sum = sum + i * j
+            antall = antall + 1
+
+print(sum, antall)
 ```
 
-### Oppgave 12 – Lag programmet selv
+### Oppgave 11 – Undersøk et tallmønster
 
-Skriv Python-kode som går gjennom heltallene fra 1 til 10 og:
+Uten å kjøre programmet: finn all utskrift, og forklar hvorfor noen verdier av `x` ikke fører til at `sum` endres.
 
-1. skriver ut tallet hvis det er delelig med 3
-2. ellers skriver ut teksten `Ikke delelig med 3`
+```python
+sum = 0
 
-Prøv først å lage en algoritme med vanlige ord.
+for x in range(-3, 5):
+    y = x * x - 2 * x
+    if y > 0 and x % 2 != 0:
+        sum = sum + y
+    print(x, y, sum)
+
+print("Sluttsum:", sum)
+```
+
+### Oppgave 12 – Lag en algoritme og et program
+
+Skriv først en algoritme med vanlige norske setninger. Skriv deretter Python-kode som går gjennom heltallene fra 1 til 30 og:
+
+1. skriver ut tallet hvis det er delelig med både 2 og 3
+2. ellers skriver ut tallet hvis det er delelig med 2
+3. ellers hopper over tallet
+
+Til slutt skal programmet skrive ut hvor mange tall som ble skrevet ut, og summen av disse tallene.
+
+**Ekstra utfordring:** Løs oppgaven uten å bruke en liste. Forklar hvorfor rekkefølgen på betingelsene er viktig.
 
 ---
 
@@ -186,23 +219,37 @@ Prøv først å lage en algoritme med vanlige ord.
     ```
 
 ??? note "Fasit – oppgave 5"
-    `n` starter på 2 og øker med 2 tre ganger: 4, 6, 8. Programmet skriver ut 8.
+    `a` starter på 2 og øker med `i` hver runde. `b` øker med `i` når `i` er oddetall, og med den oppdaterte verdien av `a` når `i` er partall.
+
+    | Runde | `i` | `a` etter oppdatering | Endring i `b` | `b` etter runden |
+    |---:|---:|---:|---:|---:|
+    | 1 | 1 | 3 | +1 | 2 |
+    | 2 | 2 | 5 | +5 | 7 |
+    | 3 | 3 | 8 | +3 | 10 |
+    | 4 | 4 | 12 | +12 | 22 |
+
+    Programmet skriver ut `12 22`.
 
 ??? note "Fasit – oppgave 6"
-    Programmet skriver ut `B`, fordi 65 ikke er minst 80, men er minst 60.
+    Programmet skriver ut `B`, fordi 78 ikke er minst 90, men er minst 75. Betingelsene testes ovenfra og ned; så snart én betingelse er sann, hoppes resten over. Hvis `poeng >= 75` stod først, ville også en elev med 95 poeng fått B.
 
 ??? note "Fasit – oppgave 7"
-    Løkken legger sammen 2, 3, 4 og 5. Sluttverdien er 14.
+    Løkken tar med oddetallene 1, 3, 5 og 7. Summen blir \(1+3+5+7=16\), og antallet er 4. Utskriften er `16 4`.
 
 ??? note "Fasit – oppgave 8"
-    ```text
-    2
-    4
-    6
-    ```
+    Den indre løkken summerer produktene for \(i=1,2,3\) og \(j=1,2\):
+    \[
+    1\cdot1+1\cdot2+2\cdot1+2\cdot2+3\cdot1+3\cdot2
+    =1+2+2+4+3+6=18.
+    \]
+    Programmet skriver ut 18.
 
 ??? note "Fasit – oppgave 9"
-    Variabelen `n` endres aldri. Øk den med 1 inne i løkken:
+    a) Første runde skriver ut 1. Andre runde øker `n` fra 2 til 3 før utskriften, så programmet skriver ut 3. Deretter økes `n` aldri når det er oddetall. Når `n=3`, blir derfor `3` skrevet ut om og om igjen: løkken stopper ikke.
+
+    b) Økningen skjer bare når `n` er partall. Når `n` blir 3, endres den ikke lenger, og betingelsen `n <= 4` forblir sann.
+
+    c) Én riktig løsning er:
 
     ```python
     n = 1
@@ -212,26 +259,50 @@ Prøv først å lage en algoritme med vanlige ord.
     ```
 
 ??? note "Fasit – oppgave 10"
-    Etter rundene er `a` lik 3, 6 og 10. `b` blir 3, 4 og 5. Programmet skriver ut `10 5`.
+    Vi tar bare med produkter når \(i+j\) er partall.
+
+    - Når \(i=1\), er \(j=1,3\) med: \(1\cdot1+1\cdot3=4\).
+    - Når \(i=2\), er \(j=2,4\) med: \(2\cdot2+2\cdot4=12\).
+    - Når \(i=3\), er \(j=3\) med: \(3\cdot3=9\).
+
+    Summen blir \(4+12+9=25\), og fem produkter ble lagt til. Utskriften er `25 5`.
 
 ??? note "Fasit – oppgave 11"
+    Programmet skriver ut:
+
     ```text
-    -2 3
-    -1 0
-    0 -1
-    1 0
-    2 3
+    -3 15 15
+    -2 8 15
+    -1 3 18
+    0 0 18
+    1 -1 18
+    2 0 18
+    3 3 21
+    4 8 21
+    Sluttsum: 21
     ```
 
-    Verdiene er symmetriske rundt \(x=0\), fordi \(x^2\) har samme verdi for \(x\) og \(-x\).
+    `sum` endres bare når både `y > 0` og `x` er oddetall. For eksempel er \(x=1\) oddetall, men \(y=-1\), så summen øker ikke.
 
 ??? note "Fasit – oppgave 12"
     Én mulig løsning:
 
     ```python
-    for tall in range(1, 11):
-        if tall % 3 == 0:
+    antall = 0
+    sum = 0
+
+    for tall in range(1, 31):
+        if tall % 6 == 0:
             print(tall)
-        else:
-            print("Ikke delelig med 3")
+            antall = antall + 1
+            sum = sum + tall
+        elif tall % 2 == 0:
+            print(tall)
+            antall = antall + 1
+            sum = sum + tall
+
+    print("Antall:", antall)
+    print("Sum:", sum)
     ```
+
+    Tallene som skrives ut, er alle partall fra 2 til 30. Det er 15 tall, og summen er \(2+4+\cdots+30=240\). Tall som er delelige med både 2 og 3, må testes først hvis vi vil skille dem fra de andre partallene. Her blir de skrevet ut én gang hver.
