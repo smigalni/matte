@@ -304,7 +304,7 @@
 .md-typeset .admonition.question p:last-child { margin-bottom: .25rem; }
 
 /* Kopier-knapp for Python-kode i programmeringskapitlene */
-.md-typeset .highlight {
+.md-typeset .highlight.has-copy-button {
   position: relative;
   padding-top: 2.5rem;
 }
