@@ -308,9 +308,7 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     a) Hva er tangentens stigningstall?
 
-    b) Bruk et punkts formel til å finne tangentens likning.
-
-    c) Skriv svaret på formen \(y=ax+b\).
+    b) Bruk et punkts formel til å finne tangentens likning, og skriv svaret på formen \(y=ax+b\).
 
 ## 🔴 Rød – Selvstendig problemløsing
 
