@@ -306,3 +306,156 @@ Til slutt skal programmet skrive ut hvor mange tall som ble skrevet ut, og summe
     ```
 
     Tallene som skrives ut, er alle partall fra 2 til 30. Det er 15 tall, og summen er \(2+4+\cdots+30=240\). Tall som er delelige med både 2 og 3, må testes først hvis vi vil skille dem fra de andre partallene. Her blir de skrevet ut én gang hver.
+
+
+---
+
+## 🟢 Grønn – Funksjoner og lister
+
+### Oppgave 13 – En enkel funksjon
+
+Skriv funksjonen `pluss_to(tall)`, som returnerer tallet pluss 2. Kall funksjonen med 8 og skriv ut resultatet.
+
+### Oppgave 14 – Liste og indeks
+
+Gitt listen `temperatur = [12, 15, 11, 18]`:
+
+a) Skriv ut det første elementet.
+
+b) Skriv ut det siste elementet ved å bruke indeks 3.
+
+c) Legg til tallet 20 bakerst.
+
+### Oppgave 15 – Tell elementer
+
+Lag funksjonen `antall_elementer(liste)`, som returnerer hvor mange elementer listen inneholder. Test med `[4, 8, 12]`.
+
+## 🟡 Gul – Kombiner flere ideer
+
+### Oppgave 16 – Summen av en liste
+
+Lag funksjonen `sum_liste(tall)`, som returnerer summen av alle tallene i listen. Bruk en `for`-løkke. Test med `[3, 5, 2]`.
+
+### Oppgave 17 – Tell positive tall
+
+Lag funksjonen `tell_positive(tall)`, som teller hvor mange elementer i en liste som er større enn 0. Test med `[-2, 4, 0, 7, -1, 3]`.
+
+### Oppgave 18 – Lag en ny liste
+
+Lag funksjonen `doble_liste(tall)`, som returnerer en ny liste der hvert element er dobbelt så stort som i den opprinnelige listen. Eksempel: `[2, 5, 1]` skal gi `[4, 10, 2]`. Den opprinnelige listen skal ikke endres.
+
+## 🔴 Rød – Utfordring
+
+### Oppgave 19 – Gjennomsnitt og tom liste
+
+Lag funksjonen `gjennomsnitt(tall)`, som returnerer gjennomsnittet av tallene i en liste.
+
+a) Test med `[4, 6, 8]`.
+
+b) Hva kan gå galt dersom listen er tom? Endre funksjonen slik at den håndterer en tom liste på en fornuftig måte, og forklar valget ditt.
+
+### Oppgave 20 – Filtrer etter grense
+
+Lag funksjonen `over_grense(tall, grense)`, som returnerer en ny liste med bare tallene som er større enn `grense`. Rekkefølgen skal bevares.
+
+Eksempel: `over_grense([3, 8, 2, 10], 5)` skal gi `[8, 10]`.
+
+### Oppgave 21 – Feilsøking: Hvor skal return stå?
+
+En elev har skrevet:
+
+```python
+def tell_storre(liste, grense):
+    antall = 0
+    for tall in liste:
+        if tall > grense:
+            antall = antall + 1
+        return antall
+```
+
+Funksjonen gir feil resultat for `tell_storre([7, 2, 9, 4], 5)`.
+
+a) Forklar feilen.
+
+b) Rett koden.
+
+c) Hva skal funksjonen returnere?
+
+---
+
+## Fasit – funksjoner og lister
+
+??? note "Fasit – oppgave 13–15"
+    **13.**
+    ```python
+    def pluss_to(tall):
+        return tall + 2
+
+    print(pluss_to(8))  # 10
+    ```
+
+    **14.** a) 12. b) 18. c) `temperatur.append(20)`.
+
+    **15.**
+    ```python
+    def antall_elementer(liste):
+        return len(liste)
+
+    print(antall_elementer([4, 8, 12]))  # 3
+    ```
+
+??? note "Fasit – oppgave 16–18"
+    **16.**
+    ```python
+    def sum_liste(tall):
+        sum_tall = 0
+        for x in tall:
+            sum_tall += x
+        return sum_tall
+    ```
+    Testen gir 10.
+
+    **17.**
+    ```python
+    def tell_positive(tall):
+        antall = 0
+        for x in tall:
+            if x > 0:
+                antall += 1
+        return antall
+    ```
+    Testen gir 3.
+
+    **18.**
+    ```python
+    def doble_liste(tall):
+        ny = []
+        for x in tall:
+            ny.append(2 * x)
+        return ny
+    ```
+
+??? note "Fasit – oppgave 19–21"
+    **19.**
+    ```python
+    def gjennomsnitt(tall):
+        if len(tall) == 0:
+            return None
+        sum_tall = 0
+        for x in tall:
+            sum_tall += x
+        return sum_tall / len(tall)
+    ```
+    En tom liste har ikke et gjennomsnitt. Her returnerer funksjonen `None` for å markere at resultatet ikke finnes.
+
+    **20.**
+    ```python
+    def over_grense(tall, grense):
+        ny = []
+        for x in tall:
+            if x > grense:
+                ny.append(x)
+        return ny
+    ```
+
+    **21.** `return antall` ligger inne i løkken, slik at funksjonen avsluttes etter første element. Flytt `return antall` ut av løkken. Resultatet skal være 2.
