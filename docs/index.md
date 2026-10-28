@@ -48,6 +48,16 @@
   </div>
 </div>
 
+## Slik bruker du fargene i oppgavene
+
+Fargene viser **hvor krevende oppgaven er**, ikke hvor flink du er. Bruk dem som en veiviser i både R1 og S1:
+
+- 🟢 **Grønn – Start:** grunnleggende ferdigheter og korte oppgaver.
+- 🟡 **Gul – På vei:** flere steg, valg av metode eller sammenkobling av ideer.
+- 🔴 **Rød – Utfordring:** sammensatte oppgaver der du må planlegge, begrunne eller bruke flere metoder.
+
+Fargene skal alltid stå sammen med tekst, slik at nivåene er tydelige også uten fargesyn. Det er helt greit å gå tilbake til grønne oppgaver når du vil repetere, eller å prøve en rød oppgave før du har løst alle de andre.
+
 ## Start med R1
 
 <div class="chapter-feature">
