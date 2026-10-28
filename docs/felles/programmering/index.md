@@ -21,5 +21,6 @@ Målet er at du skal forstå hva programmet gjør – ikke bare huske kommandoer
 3. [Oppgaver og fasit](oppgaver.md) – grunnleggende oppgaver med kode og variabler.
 4. [Betingelser: if, else og elif](betingelser.md) – la programmet ta valg ut fra sammenligninger.
 5. [Løkker: for og while](lokker.md) – gjenta instruksjoner og arbeide med tallrekker og funksjonstabeller.
+6. [Blandede oppgaver](blandede-oppgaver.md) – oppgaver fra hele grunnkurset, sortert etter vanskelighetsgrad og markert med farger.
 
 Senere kan vi bygge videre med funksjoner og mer sammensatte matematiske problemer.
