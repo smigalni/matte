@@ -245,9 +245,9 @@ Til slutt skal programmet skrive ut hvor mange tall som ble skrevet ut, og summe
     Programmet skriver ut 18.
 
 ??? note "Fasit – oppgave 9"
-    a) Første runde skriver ut 1. Andre runde øker `n` fra 2 til 3 før utskriften, så programmet skriver ut 3. Deretter økes `n` aldri når det er oddetall. Når `n=3`, blir derfor `3` skrevet ut om og om igjen: løkken stopper ikke.
+    a) Programmet skriver ut `1` om og om igjen. Når `n=1`, er `n` oddetall, så betingelsen `n % 2 == 0` er usann. Variabelen `n` blir derfor aldri endret, og utskriften gjentas for alltid.
 
-    b) Økningen skjer bare når `n` er partall. Når `n` blir 3, endres den ikke lenger, og betingelsen `n <= 4` forblir sann.
+    b) Feilen er at `n` bare økes når det er partall. Programmet starter på 1 og kommer aldri videre til 2. Derfor forblir `n <= 4` sann hele tiden.
 
     c) Én riktig løsning er:
 
