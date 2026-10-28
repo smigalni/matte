@@ -40,6 +40,7 @@ nav = [
       { "3. Oppgaver og fasit" = "felles/programmering/oppgaver.md" },
       { "4. Betingelser: if og else" = "felles/programmering/betingelser.md" },
       { "5. Løkker: for og while" = "felles/programmering/lokker.md" },
+      { "6. Blandede oppgaver" = "felles/programmering/blandede-oppgaver.md" },
     ] },
   ] },
 ]
