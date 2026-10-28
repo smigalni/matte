@@ -240,6 +240,8 @@ Tangentens likning blir derfor:
 
 Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
 
+## 🟢 Grønn – Grunnlag
+
 !!! question "Oppgave 1 – Gjennomsnittlig vekstfart"
 
     Gitt funksjonen \(f(x)=x^2\).
@@ -269,6 +271,8 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     b) Finn gjennomsnittlig vekstfart fra \(x=2\) til \(x=6\).
 
     c) Hva legger du merke til ved svarene? Forklar hvorfor.
+
+## 🟡 Gul – Kombiner ideer
 
 !!! question "Oppgave 4 – Sammenlign gjennomsnittlig vekstfart"
 
@@ -309,6 +313,8 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     b) Bruk et punkts formel til å finne tangentens likning.
 
     c) Skriv svaret på formen \(y=ax+b\).
+
+## 🔴 Rød – Selvstendig problemløsing
 
 !!! question "Oppgave 8 – Momentan fart"
 
@@ -360,17 +366,17 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
 
     **Oppgave 3**
 
-    a) \(a=\\frac{f(5)-f(1)}{5-1}=\\frac{17-5}{4}=3\).
+    a) \(a=\frac{f(5)-f(1)}{5-1}=\frac{17-5}{4}=3\).
 
-    b) \(a=\\frac{f(6)-f(2)}{6-2}=\\frac{20-8}{4}=3\).
+    b) \(a=\frac{f(6)-f(2)}{6-2}=\frac{20-8}{4}=3\).
 
     c) Svarene er like fordi en lineær funksjon har konstant stigningstall.
 
     **Oppgave 4**
 
-    a) \(a=\\frac{f(2)-f(0)}{2-0}=\\frac{5-1}{2}=2\).
+    a) \(a=\frac{f(2)-f(0)}{2-0}=\frac{5-1}{2}=2\).
 
-    b) \(a=\\frac{f(4)-f(2)}{4-2}=\\frac{17-5}{2}=6\).
+    b) \(a=\frac{f(4)-f(2)}{4-2}=\frac{17-5}{2}=6\).
 
     c) Funksjonen vokser raskest i gjennomsnitt fra \(x=2\) til \(x=4\).
 
