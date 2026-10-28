@@ -275,7 +275,7 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
     a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
 
-    b) Beregn de ensidige grenseverdiene for stigningstallet i \(x=1\).
+    b) Sammenlign uttrykkene til venstre og høyre for \(x=1\). Forklar hvorfor det ikke er nødvendig å beregne ensidige deriverte når funksjonen ikke er kontinuerlig der.
 
     c) Avgjør om funksjonen er deriverbar i \(x=1\). Begrunn svaret.
 
@@ -328,6 +328,6 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
     a) Venstre grenseverdi er \(1+2=3\), mens høyre grenseverdi og funksjonsverdien er \(-1+2+1=2\). Funksjonen er ikke kontinuerlig.
 
-    b) Venstre stigningstall er \(1\), og høyre stigningstall er \(-2x+2\), som gir \(0\) ved \(x=1\).
+    b) Den venstre grenseverdien til funksjonen er \(3\), mens funksjonsverdien og høyre grenseverdi er \(2\). Siden funksjonen ikke er kontinuerlig i \(x=1\), finnes det ikke en vanlig derivert der. Differansekvotienten fra venstre går dessuten ikke mot et endelig tall.
 
     c) Funksjonen er ikke deriverbar fordi den ikke er kontinuerlig i \(x=1\).
