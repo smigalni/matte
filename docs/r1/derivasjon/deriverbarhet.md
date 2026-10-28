@@ -72,6 +72,7 @@ Dette kan for eksempel være:
 
 - **Knekkpunkter:** Grafen skifter retning brått, slik som grafen til \(f(x)=|x|\) i \(x=0\).
 - **Bruddpunkter:** Grafen er ikke kontinuerlig.
+
 En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deriverbar.
 
 ### Algebraisk metode – ensidige grenseverdier
