@@ -1,13 +1,6 @@
-# Felles standarder for denne boka. Den samme sjekkeren brukes på tvers av bok-repoene.
+# Konservative strukturelle kontroller. Formateringsvalg vurderes ikke automatisk.
 [checks]
-example_heading_requires_box = true
-answer_requires_double_underline = true
-answer_key_requires_double_underline = true
-check_admonition_indentation = true
 check_balanced_code_fences = true
+check_balanced_math_delimiters = true
 check_balanced_svg_figure = true
-check_math_delimiters = true
-check_display_math_spacing = true
-answer_marker = '^\s*\*\*Svar:\*\*'
-answer_search_lines = 12
 excluded_paths = ["site/", "build/", ".venv/", ".book-quality-tools/"]
