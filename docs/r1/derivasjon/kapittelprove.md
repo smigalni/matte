@@ -62,3 +62,13 @@
 - **3.P2.3:** \(f'(1)=1\). Numeriske verdier bør nærme seg 1 når \(h\) blir mindre, men avrunding kan etter hvert påvirke resultatet.
 
 **Viktig faglig kontroll før bruk:** I oppgave 3.9.6 er funksjonen både kontinuerlig og deriverbar ved \(x=2\), siden både funksjonsverdiene og stigningstallene samsvarer.
+
+
+## Fasit og løsningsskisser
+
+- **3.P1.1:** \(f'(x)=3x^2+2ax+b\). Betingelsene gir \(3+2a+b=0\) og \(3-2a+b=5\). Dermed \(a=-5/4\), \(b=-1/2\). Siden \(f''(1)=6+2a=7/2>0\), er punktet ved \(x=1\) et lokalt bunnpunkt.
+- **3.P1.2:** \(g'(x)=e^{2x}(2x^2+2x-2)\). Siden \(e^{2x}\ne0\), er horisontale tangenter når \(x^2+x-1=0\), altså \(x=(-1\pm\sqrt5)/2\).
+- **3.P1.3:** Kontinuitet krever \(2a+1=4+b\). Deriverbarhet krever i tillegg \(a=4\), som sammen gir \(b=5\).
+- **3.P2.1:** \(s'(t)=3t^2-12t+9=3(t-1)(t-3)\). Objektet står stille ved \(t=1\) og \(t=3\). Fortegnet er positivt før 1, negativt mellom 1 og 3 og positivt etter 3. Kontroller \(s(0),s(1),s(3),s(5)\) for ekstremalverdier på intervallet.
+- **3.P2.2:** Fra \(f(0)=3\) får vi \(a=3\). Videre er \(f'(0)=ab=2\), så \(b=2/3\).
+- **3.P2.3:** Den eksakte deriverte er \(f'(x)=1/x\), altså \(f'(1)=1\). Differansekvotientene bør nærme seg 1 når \(h\) blir mindre, men svært små \(h\)-verdier kan gi avrundingsfeil.
