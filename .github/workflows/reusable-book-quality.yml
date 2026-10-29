@@ -25,10 +25,10 @@ jobs:
       - name: Find changed Markdown files
         shell: bash
         env:
-          EVENT_NAME: \${{ github.event_name }}
-          BEFORE_SHA: \${{ github.event.before }}
-          HEAD_SHA: \${{ github.sha }}
-          PR_BASE_SHA: \${{ github.event.pull_request.base.sha }}
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           if [[ "$EVENT_NAME" == "pull_request" ]]; then
             git diff --name-only --diff-filter=ACMR "$PR_BASE_SHA"...HEAD
@@ -41,8 +41,8 @@ jobs:
           cat changed-files.txt
 
       - name: Test the shared checker
-        run: python -m unittest discover -s .book-quality-tools/tests -v
+        run: python .book-quality-tools/tests/book-quality/test_check_book_format.py
 
       - name: Validate changed Markdown
         run: |
-          python .book-quality-tools/scripts/check_book_format.py --root . --config .book-quality.toml --files-from changed-files.txt
+          python .book-quality-tools/scripts/book-quality/check_book_format.py --root . --config .book-quality.toml --files-from changed-files.txt
