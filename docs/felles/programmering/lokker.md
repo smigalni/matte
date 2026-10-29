@@ -25,29 +25,32 @@ Dette skriver ut 2, 3, 4 og 5. Startverdien er med, men stoppverdien er ikke med
 Programmet legger til én verdi av `i` i hver runde.
 
 ```python
-sum = 0
+sum_tall = 0
 
 for i in range(1, 4):
-    sum = sum + i
+    sum_tall = sum_tall + i
 
-print(sum)
+print(sum_tall)
 ```
 
-**Start:** `sum = 0`
+**Start:** `sum_tall = 0`
 
-**Runde 1** · `i = 1`
+!!! info "Runde 1 · i = 1"
+    `0 + 1 = 1`
 
-`0 + 1 = 1` → ny sum: **1**
+    **Ny sum: 1**
 
-**Runde 2** · `i = 2`
+!!! success "Runde 2 · i = 2"
+    `1 + 2 = 3`
 
-`1 + 2 = 3` → ny sum: **3**
+    **Ny sum: 3**
 
-**Runde 3** · `i = 3`
+!!! tip "Runde 3 · i = 3"
+    `3 + 3 = 6`
 
-`3 + 3 = 6` → ny sum: **6**
+    **Ny sum: 6**
 
-Når løkken er ferdig, skriver `print(sum)` ut **6**.
+Når løkken er ferdig, skriver `print(sum_tall)` ut **6**.
 
 ## 4.3 Løkker og matematikk
 
