@@ -1,42 +1,169 @@
 # 3.2 Vanlige derivasjonsregler
 
-Derivasjonsreglene gjør det mulig å finne den deriverte uten å bruke definisjonen hver gang.
+Derivasjonsreglene gjør det mulig å finne den deriverte uten å bruke definisjonen hver gang. Lær reglene i små grupper, og øv på å kjenne igjen hvilken regel du skal bruke.
 
 ## Regler du må kunne
 
-\[
-(c)'=0,\qquad (x^n)'=nx^{n-1}
-\]
-
-\[
-(cf(x))'=cf'(x),\qquad (f(x)+g(x))'=f'(x)+g'(x)
-\]
-
-I tillegg gjelder
-
-\[
-(e^x)'=e^x,\qquad (\ln x)'=\frac1x\quad(x>0).
-\]
-
-!!! example "Eksempel 1 – Deriver ledd for ledd"
-
-    La \(f(x)=3x^4-2x^2+5x-7\).
+!!! info "1. Konstantregelen"
 
     \[
-    f'(x)=12x^3-4x+5.
+    (c)'=0
     \]
 
-    Konstantleddet \(-7\) blir \(0\). Hvert potensledd deriveres for seg.
+    Et konstant tall blir \(0\) når vi deriverer.
 
-!!! example "Eksempel 2 – Eksponential- og logaritmefunksjon"
-
-    Hvis \(g(x)=4e^x+3\ln x\), er
+!!! info "2. Potensregelen"
 
     \[
-    g'(x)=4e^x+\frac3x,\qquad x>0.
+    (x^n)'=nx^{n-1}
     \]
 
-    Husk at logaritmeleddet begrenser definisjonsmengden.
+    Flytt eksponenten foran \(x\), og trekk \(1\) fra eksponenten.
+
+!!! info "3. Konstant faktor"
+
+    \[
+    (cf(x))'=cf'(x)
+    \]
+
+    Konstanten foran funksjonen blir stående.
+
+!!! info "4. Sum- og differanseregelen"
+
+    \[
+    (f(x)+g(x))'=f'(x)+g'(x)
+    \]
+
+    \[
+    (f(x)-g(x))'=f'(x)-g'(x)
+    \]
+
+    Deriver hvert ledd for seg. Behold pluss- og minustegnene.
+
+!!! info "5. Eksponential- og logaritmeregelen"
+
+    \[
+    (e^x)'=e^x,\qquad (\ln x)'=\frac{1}{x}\quad (x>0)
+    \]
+
+    \(e^x\) er sin egen deriverte. Logaritmen \(\ln x\) er bare definert for \(x>0\).
+
+## Eksempler med mellomregning
+
+!!! example "Eksempel 3.2.1 – Deriver et polynom"
+
+    Vi skal derivere
+
+    \[
+    f(x)=3x^4-2x^2+5x-7.
+    \]
+
+    **Steg 1: Del opp uttrykket i ledd.**
+
+    Vi bruker sum- og differanseregelen. Det betyr at vi kan derivere hvert ledd for seg.
+
+    **Steg 2: Deriver hvert ledd, og vis hvilken regel vi bruker.**
+
+    Konstant faktor og potensregel:
+
+    \[
+    \begin{aligned}
+    (3x^4)'&=3\cdot(x^4)'\\
+    &=3\cdot4x^{4-1}\\
+    &=12x^3
+    \end{aligned}
+    \]
+
+    Konstant faktor og potensregel:
+
+    \[
+    \begin{aligned}
+    (-2x^2)'&=-2\cdot(x^2)'\\
+    &=-2\cdot2x^{2-1}\\
+    &=-4x
+    \end{aligned}
+    \]
+
+    Potensregelen:
+
+    \[
+    \begin{aligned}
+    (5x)'&=5\cdot(x)'\\
+    &=5\cdot1x^{1-1}\\
+    &=5
+    \end{aligned}
+    \]
+
+    Konstantregelen:
+
+    \[
+    (-7)'=0
+    \]
+
+    **Steg 3: Sett sammen leddene.**
+
+    \[
+    \begin{aligned}
+    f'(x)&=12x^3-4x+5+0\\
+    &=\underline{\underline{12x^3-4x+5}}
+    \end{aligned}
+    \]
+
+    **Husk:** Eksponenten reduseres med \(1\). Konstantleddet blir \(0\), og pluss- og minustegnene beholdes.
+
+!!! example "Eksempel 3.2.2 – Eksponential- og logaritmeledd"
+
+    Vi skal derivere
+
+    \[
+    g(x)=4e^x+3\ln x.
+    \]
+
+    **Steg 1: Identifiser reglene.**
+
+    - Vi bruker sumregelen fordi leddene er addert.
+    - Vi bruker regelen for konstant faktor fordi \(4\) og \(3\) står foran funksjonene.
+    - Vi bruker \((e^x)'=e^x\) og \((\ln x)'=\frac{1}{x}\).
+
+    **Steg 2: Deriver hvert ledd.**
+
+    Første ledd:
+
+    \[
+    \begin{aligned}
+    (4e^x)'&=4\cdot(e^x)'\\
+    &=4e^x
+    \end{aligned}
+    \]
+
+    Andre ledd:
+
+    \[
+    \begin{aligned}
+    (3\ln x)'&=3\cdot(\ln x)'\\
+    &=3\cdot\frac{1}{x}\\
+    &=\frac{3}{x}
+    \end{aligned}
+    \]
+
+    **Steg 3: Sett sammen leddene.**
+
+    \[
+    \begin{aligned}
+    g'(x)&=4e^x+\frac{3}{x}\\
+    &=\underline{\underline{4e^x+\frac{3}{x}}}
+    \end{aligned}
+    \]
+
+    **Steg 4: Husk definisjonsmengden.**
+
+    Siden \(\ln x\) bare er definert for \(x>0\), gjelder
+
+    \[
+    \boxed{x>0}.
+    \]
+
+    Både \(g(x)\) og \(g'(x)\) er definert for \(x>0\).
 
 ## Oppgaver
 
@@ -69,21 +196,46 @@ I tillegg gjelder
 ??? note "Fasit – oppgave 3.2.1"
 
     \[
-    f'(x)=20x^3-9x^2+2.
+    \begin{aligned}
+    f'(x)&=20x^3-9x^2+2\\
+    &=\underline{\underline{20x^3-9x^2+2}}
+    \end{aligned}
     \]
 
 ??? note "Fasit – oppgave 3.2.2"
 
     \[
-    g'(x)=2e^x-\frac5x.
+    \begin{aligned}
+    g'(x)&=2e^x-\frac{5}{x}\\
+    &=\underline{\underline{2e^x-\frac{5}{x}}}
+    \end{aligned}
     \]
 
     Både \(g(x)\) og \(g'(x)\) er definert for \(x>0\).
 
 ??? note "Fasit – oppgave 3.2.3"
 
-    Konstantleddet \(4\) blir \(0\), og \((7x^3)'=21x^2\). Riktig svar er \(h'(x)=21x^2\).
+    Konstantleddet \(4\) blir \(0\). Vi bruker konstant faktor og potensregelen:
+
+    \[
+    \begin{aligned}
+    h'(x)&=(7x^3+4)'\\
+    &=7\cdot(x^3)'+0\\
+    &=7\cdot3x^2\\
+    &=\underline{\underline{21x^2}}
+    \end{aligned}
+    \]
 
 ??? note "Fasit – oppgave 3.2.4"
 
-    Av \(f'(x)=3ax^2+2bx+c=6x^2-4x+3\) får vi \(a=2\), \(b=-2\) og \(c=3\). Siden \(f(0)=d=5\), er også \(d=5\) bestemt. Dermed \(f(x)=2x^3-2x^2+3x+5\).
+    Vi deriverer ledd for ledd:
+
+    \[
+    f'(x)=3ax^2+2bx+c.
+    \]
+
+    Sammenligning med \(6x^2-4x+3\) gir \(a=2\), \(b=-2\) og \(c=3\). Fra \(f(0)=5\) får vi \(d=5\).
+
+    \[
+    f(x)=\underline{\underline{2x^3-2x^2+3x+5}}
+    \]
