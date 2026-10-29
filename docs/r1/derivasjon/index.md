@@ -1,6 +1,6 @@
 # R1 – Derivasjon
 
-Kapittel 3 handler om vekstfart, tangenter og derivasjon. Start med **3.1 Vekstfart og tangent**, og arbeid deretter videre med reglene og anvendelsene.
+Kapittel 3 handler om vekstfart, tangenter og derivasjon. Delkapitlene **3.1–3.4** og relevante programmeringsoppgaver deles med S1 og vedlikeholdes i én felles kilde. Fra 3.5 fortsetter R1-sporet med egne fordypninger.
 
 ## Læringsløp
 
@@ -14,6 +14,14 @@ Kapittel 3 handler om vekstfart, tangenter og derivasjon. Start med **3.1 Vekstf
 8. **3.8 Programmering** – utforsk deriverte numerisk og modeller bevegelse.
 9. **3.9 Blandede oppgaver** – tren på å velge metode på tvers av delkapitlene.
 10. **3.10 Kapittelprøve** – krevende oppgaver i Del 1 og Del 2.
+
+## Felles innhold med S1
+
+- [3.1 Vekstfart og tangent](../../felles/vekstfart-og-tangent.md)
+- [3.2 Vanlige derivasjonsregler](../../felles/derivasjon/vanlige-derivasjonsregler.md)
+- [3.3 Kjerneregelen](../../felles/derivasjon/kjerneregelen.md)
+- [3.4 Produktregelen og kvotientregelen](../../felles/derivasjon/produkt-og-kvotientregelen.md)
+- [Relevante programmeringsoppgaver](../../felles/derivasjon/programmering.md)
 
 ## Slik arbeider du
 
