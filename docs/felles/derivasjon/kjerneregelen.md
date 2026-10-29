@@ -69,9 +69,9 @@ Med ord: Deriver den ytre funksjonen, behold den indre funksjonen, og gang med d
 
     Deriver funksjonen
 
-    \\\[
-    f(x)=\\ln(3x).
-    \\\]
+    \[
+    f(x)=\ln(3x).
+    \]
 
     Vis tydelig hva som er den ytre og den indre funksjonen, og bruk kjerneregelen.
 
@@ -124,11 +124,10 @@ Med ord: Deriver den ytre funksjonen, behold den indre funksjonen, og gang med d
 
 ??? note "Fasit – oppgave 3.3.5"
 
-    Den ytre funksjonen er \\(\\ln(u)\\), og den indre funksjonen er \\(u=3x\\).
+    Den ytre funksjonen er \(\ln(u)\), og den indre funksjonen er \(u=3x\).
 
-    Derivert av den ytre funksjonen er \\(1/u\\), og den deriverte av den indre funksjonen er \\(3\\). Derfor får vi
+    Derivert av den ytre funksjonen er \(1/u\), og den deriverte av den indre funksjonen er \(3\). Derfor får vi
 
-    \\\[
-    f'(x)=\\frac{1}{3x}\\cdot 3=\\underline{\\underline{\\frac{1}{x}}}.
-    \\\]
-
+    \[
+    f'(x)=\frac{1}{3x}\cdot 3=\underline{\underline{\frac{1}{x}}}.
+    \]
