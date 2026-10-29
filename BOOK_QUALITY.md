@@ -19,7 +19,7 @@ Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-re
 5. Kodeblokker skal være lukket.
 6. Antall åpne og lukkede SVG- og figure-tagger skal stemme.
 7. Visningsformler skal ha en tom linje før og etter formelblokken.
-8. Display-matematikk skal bruke balanserte MathJax-avgrensninger: `\\[ ... \\]` eller `$$ ... $$`.
+8. Display-matematikk skal bruke balanserte MathJax-avgrensninger: `\[ ... \]` eller `$$ ... $$`.
 9. Matematikk skal ikke skrives som vanlige hakeparenteser rundt et uttrykk, for eksempel `[ f(x)=x^2 ]`.
 
 ## Lokal kjøring
