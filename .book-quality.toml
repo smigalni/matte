@@ -2,6 +2,7 @@
 [checks]
 example_heading_requires_box = true
 answer_requires_double_underline = true
+answer_key_requires_double_underline = true
 check_admonition_indentation = true
 check_balanced_code_fences = true
 check_balanced_svg_figure = true
