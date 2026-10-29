@@ -10,15 +10,15 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
     Hvis
 
-    $
+    $$
     f(x)=u(x)\cdot v(x),
-    $
+    $$
 
     så er
 
-    $
+    $$
     \boxed{f'(x)=u'(x)v(x)+u(x)v'(x)}.
-    $
+    $$
 
     Med ord: Deriver den første funksjonen og behold den andre, pluss behold den første funksjonen og deriver den andre.
 
