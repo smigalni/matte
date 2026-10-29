@@ -101,7 +101,7 @@ Med ord: Deriver den ytre funksjonen, behold den indre funksjonen, og gang med d
 
 **3.3.3** Deriver \(h(x)=e^{x^2-3x}\).
 
-**3.3.4** Bestem \(a\) slik at tangenten til \(f(x)=(x^2+a)^3\) ved \(x=1\) har stigningstall 24. Vis at du må bruke kjerneregelen, og undersøk om løsningen er entydig.
+**3.3.4** Bestem alle verdier av \\(a\\) slik at tangenten til \\(f(x)=(x^2+a)^3\\) ved \\(x=1\\) har stigningstall 24. Vis at du må bruke kjerneregelen, og undersøk om løsningen er entydig.
 
 ## 3.4 Produktregelen og kvotientregelen
 
@@ -315,8 +315,9 @@ Bestem betingelsen mellom \(a\) og \(b\) for kontinuitet ved \(x=2\). Bestem der
 - **3.2.4:** \(a=2\), \(b=-2\), \(c=3\), \(d=5\).
 - **3.3.1:** \(12(2x-5)^5\).
 - **3.3.2:** \(4x/\sqrt{4x^2+1}\).
-- **3.3.3:** \((2x-3)e^{x^2-3x}\).
-- **3.4.1:** \(6x^2-6x-3\).
+- **3.3.3:** \\((2x-3)e^{x^2-3x}\\).
+- **3.3.4:** \\(f'(1)=6(1+a)^2=24\\), så \\(a=1\\) eller \\(a=-3\\); løsningen er ikke entydig.
+- **3.4.1:** \\(6x^2+2x-6\\).
 - **3.4.2:** \((2-2x^2-2x)/(x^2+1)^2\); definert for alle reelle x.
 - **3.4.3:** \(2x\ln x+x\), for \(x>0\).
 - **3.5.2:** Kontinuerlig i 1; venstrederivert 2 og høyrederivert 2, altså deriverbar.
@@ -329,11 +330,11 @@ Bestem betingelsen mellom \(a\) og \(b\) for kontinuitet ved \(x=2\). Bestem der
 - **3.9.4:** \(f'(x)=3x^2-2\), ved 1 er stigningstallet 1 og punktet \((1,-1)\). Tangent: \(y=x-2\).
 - **3.9.5:** \(f'(x)=\frac{x^2-2x-1}{(x-1)^2}\), for \(x\ne1\).
 - **3.9.6:** Kontinuerlig, men ikke deriverbar: venstrederivert 4, høyrederivert 4? Kontroller overgangsleddet: venstrederivert \(2x\) gir 4 og høyrederivert gir 4. Dermed er funksjonen deriverbar i 2.
-- **3.P1.1:** \(f'(x)=3x^2+2ax+b\). Betingelsene gir \(3+2a+b=0\) og \(3-2a+b=5\). Løsning: \(a=-1/2\), \(b=-2\). Klassifiser punktet ved å undersøke fortegnet til \(f''(1)\).
+- **3.P1.1:** Betingelsene gir \\(3+2a+b=0\\) og \\(3-2a+b=5\\), altså \\(a=-5/4\\), \\(b=-1/2\\). Siden \\(f''(1)=7/2>0\\), er punktet ved \\(x=1\\) et lokalt bunnpunkt.
 - **3.P1.2:** \(g'(x)=e^{2x}(2x+2x^2-2)\). Horisontale tangenter finnes når \(x^2+x-1=0\), altså \(x=(-1\pm\sqrt5)/2\).
 - **3.P1.3:** Kontinuitet krever \(2a+1=4+b\). Deriverbarhet krever \(a=4\). Kombinert gir \(b=5\).
 - **3.P2.1:** \(s'(t)=3(t-1)(t-3)\). Står stille ved \(t=1,3\); fortegnet bestemmer opp-/nedoverbevegelse. Kontroller endepunkter og kritiske punkter for ekstremalverdier.
-- **3.P2.2:** \(a=3\) fra funksjonsverdien, og \(f'(0)=2b=2\), så \(b=1\).
+- **3.P2.2:** \\(a=3\\) fra funksjonsverdien. \\(f'(0)=ab=3b=2\\), så \\(b=2/3\\).
 - **3.P2.3:** \(f'(1)=1\). Numeriske verdier bør nærme seg 1 når \(h\) blir mindre, men avrunding kan etter hvert påvirke resultatet.
 
 **Viktig faglig kontroll før bruk:** I oppgave 3.9.6 er funksjonen både kontinuerlig og deriverbar ved \(x=2\), siden både funksjonsverdiene og stigningstallene samsvarer.
