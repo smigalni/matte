@@ -1,31 +1,35 @@
 # 3.10 Kapittelprøve – derivasjon
 
-3.10 Kapittelprøve – derivasjon
-
 **Anbefaling:** Del 1 kan gjennomføres uten digitale hjelpemidler og Del 2 med digitale hjelpemidler, hvis dette samsvarer med vurderingsformen. Oppgavene er laget for høyt nivå. Vis metodevalg, mellomregning og tolkning.
 
 ### Del 1 – uten digitale hjelpemidler
 
-**3.P1.1** Funksjonen \(f(x)=x^3+ax^2+bx\) har et stasjonært punkt ved \(x=1\), og tangenten ved \(x=-1\) har stigningstall 5. Bestem \(a\) og \(b\). Undersøk om punktet ved \(x=1\) er et toppunkt, bunnpunkt eller noe annet.
 
-**3.P1.2** La \(g(x)=(x^2-1)e^{2x}\). Finn \(g'(x)\), bestem alle punkter der tangenten er horisontal, og forklar hvordan du vet at du har funnet alle løsningene.
+!!! question "Oppgave 3.P1.1 – Funksjonen \(f(x)=x^3+ax^2+bx\) har et stasjonært punkt ved \(x=1\), og tangenten ved \(x=-1\) har stigningstall 5. Bestem \(a\) og \(b\). Undersøk om punktet ved \(x=1\) er et toppunkt, bunnpunkt eller noe annet."
 
-**3.P1.3** En delt funksjon er gitt ved
-\[
-h(x)=\begin{cases}
-ax+1,&x<2,\\
-x^2+b,&x\geq2.
-\end{cases}
-\]
-Bestem betingelsen mellom \(a\) og \(b\) for kontinuitet ved \(x=2\). Bestem deretter betingelsen for deriverbarhet, og avgjør om begge kravene kan oppfylles samtidig.
+
+!!! question "Oppgave 3.P1.2 – La \(g(x)=(x^2-1)e^{2x}\). Finn \(g'(x)\), bestem alle punkter der tangenten er horisontal, og forklar hvordan du vet at du har funnet alle løsningene."
+
+
+!!! question "Oppgave 3.P1.3 – En delt funksjon er gitt ved"
+    \[
+    h(x)=\begin{cases}
+    ax+1,&x<2,\\
+    x^2+b,&x\geq2.
+    \end{cases}
+    \]
+    Bestem betingelsen mellom \(a\) og \(b\) for kontinuitet ved \(x=2\). Bestem deretter betingelsen for deriverbarhet, og avgjør om begge kravene kan oppfylles samtidig.
 
 ### Del 2 – med digitale hjelpemidler
 
-**3.P2.1** En modell for høyde er \(s(t)=t^3-6t^2+9t+2\), for \(0\leq t\leq5\). Bruk algebra og et digitalt verktøy til å undersøke når objektet står stille, når det beveger seg oppover eller nedover, og hvilke lokale ekstremalverdier det har i intervallet. Forklar hvordan den deriverte knytter sammen alle delene av svaret.
 
-**3.P2.2** En funksjon \(f(x)=(x^2+a)e^{bx}\) går gjennom punktet \((0,3)\), og tangenten i dette punktet har stigningstall 2. Bestem \(a\) og \(b\). Bruk deretter et digitalt verktøy til å undersøke grafen, men begrunn parametrene analytisk.
+!!! question "Oppgave 3.P2.1 – En modell for høyde er \(s(t)=t^3-6t^2+9t+2\), for \(0\leq t\leq5\). Bruk algebra og et digitalt verktøy til å undersøke når objektet står stille, når det beveger seg oppover eller nedover, og hvilke lokale ekstremalverdier det har i intervallet. Forklar hvordan den deriverte knytter sammen alle delene av svaret."
 
-**3.P2.3** Undersøk numerisk og analytisk hvor godt differansekvotienten til \(f(x)=\ln x\) tilnærmer den deriverte ved \(x=1\). Sammenlign minst fire verdier av \(h\), forklar eventuelle avvik og bruk den eksakte deriverte som kontroll.
+
+!!! question "Oppgave 3.P2.2 – En funksjon \(f(x)=(x^2+a)e^{bx}\) går gjennom punktet \((0,3)\), og tangenten i dette punktet har stigningstall 2. Bestem \(a\) og \(b\). Bruk deretter et digitalt verktøy til å undersøke grafen, men begrunn parametrene analytisk."
+
+
+!!! question "Oppgave 3.P2.3 – Undersøk numerisk og analytisk hvor godt differansekvotienten til \(f(x)=\ln x\) tilnærmer den deriverte ved \(x=1\). Sammenlign minst fire verdier av \(h\), forklar eventuelle avvik og bruk den eksakte deriverte som kontroll."
 
 ## Fasit og løsningsskisser
 
