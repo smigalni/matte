@@ -26,7 +26,16 @@ class BookQualityTests(unittest.TestCase):
             return checker.check_file(path, "page.md", BASE_CHECKS)
 
     def test_example_in_admonition_passes(self):
-        content = '!!! example "Eksempel"\n\n    Regn ut.\n\n    **Svar:**\n\n    \\\\[\n    \\\\underline{\\\\underline{x=2}}\n    \\\\]\n'
+        content = r'''!!! example "Eksempel"
+
+    Regn ut.
+
+    **Svar:**
+
+    \[
+    \underline{\underline{x=2}}
+    \]
+'''
         self.assertEqual(self.check(content), [])
 
     def test_plain_example_heading_fails(self):
@@ -34,7 +43,13 @@ class BookQualityTests(unittest.TestCase):
         self.assertTrue(any("Eksempel-heading utenfor boks" in e for e in errors))
 
     def test_missing_double_underline_fails(self):
-        errors = self.check('!!! example "Eksempel"\n\n    **Svar:**\n\n    \\\\(x=2\\\\)\n')
+        content = r'''!!! example "Eksempel"
+
+    **Svar:**
+
+    \(x=2\)
+'''
+        errors = self.check(content)
         self.assertTrue(any("Svar mangler dobbel understreking" in e for e in errors))
 
     def test_unclosed_fence_fails(self):
