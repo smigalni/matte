@@ -64,16 +64,6 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
     \underline{\underline{f'(x)=e^x(x^2+2x+1)}}
     \]
 
-!!! warning "Vanlig feil"
-
-    Produktregelen er **ikke**
-
-    \[
-    (uv)'=u'v'.
-    \]
-
-    Vi må ha med to ledd: \(u'v+uv'\).
-
 ## Kvotientregelen
 
 Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er rekkefølgen i telleren spesielt viktig.
@@ -141,16 +131,6 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
     \]
 
     Nevneren kan ikke være null, så \(x\ne2\).
-
-!!! warning "Vanlig feil"
-
-    Ikke bytt om på leddene i telleren. Rekkefølgen er
-
-    \[
-    u'v-uv',
-    \]
-
-    ikke \(uv'-u'v\). Husk også at hele nevneren skal opphøyes i andre.
 
 ## Slik bruker du \(u\) og \(v\)
 
