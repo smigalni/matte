@@ -7,6 +7,7 @@ I dette delkapittelet lærer vi å derivere funksjoner som består av et produkt
 Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
 !!! important "Produktregelen"
+
     Hvis
     \[
     f(x)=u(x)\cdot v(x),
@@ -60,6 +61,7 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
     \]
 
 !!! warning "Vanlig feil"
+
     Produktregelen er **ikke**
     \[
     (uv)'=u'v'.
@@ -71,6 +73,7 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er rekkefølgen i telleren spesielt viktig.
 
 !!! important "Kvotientregelen"
+
     Hvis
     \[
     f(x)=\frac{u(x)}{v(x)},\qquad v(x)\ne0,
@@ -130,6 +133,7 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
     Nevneren kan ikke være null, så \(x\ne2\).
 
 !!! warning "Vanlig feil"
+
     Ikke bytt om på leddene i telleren. Rekkefølgen er
     \[
     u'v-uv',
@@ -163,6 +167,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 ## Oppgaver
 
 !!! question "Oppgave 3.4.1 – Produktregelen"
+
     Deriver
     \[
     f(x)=(x^2-3)(2x+1).
@@ -170,6 +175,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Bruk \(u\), \(v\), \(u'\) og \(v'\), og vis mellomregningen.
 
 !!! question "Oppgave 3.4.2 – Kvotientregelen"
+
     Deriver
     \[
     g(x)=\frac{2x+1}{x^2+1}.
@@ -177,6 +183,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Bruk \(u\) og \(v\), og oppgi eventuelle begrensninger.
 
 !!! question "Oppgave 3.4.3 – Produkt med logaritme"
+
     Deriver
     \[
     h(x)=x^2\ln x.
@@ -184,6 +191,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Husk å oppgi definisjonsmengden.
 
 !!! question "Oppgave 3.4.4 – Finn og forklar feilen"
+
     En elev påstår at
     \[
     (uv)'=u'v'.
@@ -191,6 +199,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Bruk \(u=x^2\) og \(v=x^3\) til å vise at påstanden er feil. Skriv også den riktige regelen.
 
 !!! question "Oppgave 3.4.5 – Produkt med eksponentialfunksjon"
+
     Deriver
     \[
     p(x)=xe^x.
@@ -198,6 +207,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Vis først hva du velger som \(u\) og \(v\).
 
 !!! question "Oppgave 3.4.6 – Kvotient med en potens i telleren"
+
     Deriver
     \[
     q(x)=\frac{x^2+1}{x}.
@@ -205,6 +215,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Bruk kvotientregelen, og forenkle svaret så langt som mulig. Husk at \(x\ne0\).
 
 !!! question "Oppgave 3.4.7 – Pass på minustegnet"
+
     Deriver
     \[
     r(x)=\frac{x-3}{x+2}.
@@ -212,6 +223,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Skriv telleren i kvotientregelen tydelig før du forenkler.
 
 !!! question "Oppgave 3.4.8 – To produktledd"
+
     Deriver
     \[
     s(x)=(x^2+1)(x^3-2x).
@@ -219,6 +231,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     La \(u=x^2+1\) og \(v=x^3-2x\). Finn \(u'\) og \(v'\) før du bruker regelen.
 
 !!! question "Oppgave 3.4.9 – Hvilken regel skal du bruke?"
+
     Velg produktregelen eller kvotientregelen, og deriver.
 
     a) \(\displaystyle a(x)=(3x-1)e^x\)
@@ -226,6 +239,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     b) \(\displaystyle b(x)=\frac{e^x}{x+1}\)
 
 !!! question "Oppgave 3.4.10 – Kontroller en påstand"
+
     En elev sier at
     \[
     \left(\frac{u}{v}\right)'=\frac{u'}{v'}.
@@ -235,6 +249,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 ## Fasit
 
 ??? note "Fasit – oppgave 3.4.1"
+
     Sett \(u=x^2-3\) og \(v=2x+1\). Da er \(u'=2x\) og \(v'=2\).
 
     \[
@@ -246,6 +261,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \]
 
 ??? note "Fasit – oppgave 3.4.2"
+
     Sett \(u=2x+1\) og \(v=x^2+1\). Da er \(u'=2\) og \(v'=2x\).
 
     \[
@@ -259,6 +275,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Siden \(x^2+1>0\) for alle reelle \(x\), er funksjonen definert for alle reelle \(x\).
 
 ??? note "Fasit – oppgave 3.4.3"
+
     Sett \(u=x^2\) og \(v=\ln x\). Da er \(u'=2x\) og \(v'=\frac1x\).
 
     \[
@@ -272,6 +289,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Funksjonen er definert for \(x>0\).
 
 ??? note "Fasit – oppgave 3.4.4"
+
     Med \(u=x^2\) og \(v=x^3\) får vi \(uv=x^5\), så \((uv)'=5x^4\). Men \(u'v'=2x\cdot3x^2=6x^3\). Disse uttrykkene er ikke like for alle \(x\).
 
     Riktig regel er
@@ -280,6 +298,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \]
 
 ??? note "Fasit – oppgave 3.4.5"
+
     Sett \(u=x\), \(v=e^x\), \(u'=1\) og \(v'=e^x\).
 
     \[
@@ -291,6 +310,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \]
 
 ??? note "Fasit – oppgave 3.4.6"
+
     Sett \(u=x^2+1\), \(v=x\), \(u'=2x\) og \(v'=1\).
 
     \[
@@ -305,6 +325,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Her må \(x\ne0\).
 
 ??? note "Fasit – oppgave 3.4.7"
+
     Sett \(u=x-3\), \(v=x+2\), \(u'=1\) og \(v'=1\).
 
     \[
@@ -318,6 +339,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Her må \(x\ne-2\).
 
 ??? note "Fasit – oppgave 3.4.8"
+
     Sett \(u=x^2+1\) og \(v=x^3-2x\). Da er \(u'=2x\) og \(v'=3x^2-2\).
 
     \[
@@ -330,6 +352,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \]
 
 ??? note "Fasit – oppgave 3.4.9"
+
     **a)** Produktregelen. Sett \(u=3x-1\), \(v=e^x\), \(u'=3\) og \(v'=e^x\).
 
     \[
@@ -351,6 +374,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Her må \(x\ne-1\).
 
 ??? note "Fasit – oppgave 3.4.10"
+
     Med \(u=x+1\) og \(v=x-2\) er \(u'=1\) og \(v'=1\). Brøken \(\frac{u'}{v'}=1\) gir ikke den deriverte av \(\frac{x+1}{x-2}\).
 
     Riktig regel er
