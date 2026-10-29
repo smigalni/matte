@@ -18,7 +18,8 @@ Dette er den felles standarden for bok-repoene. Målet er å unngå at hver chat
 3. Innhold i admonition-bokser skal være korrekt indenteret.
 4. Kodeblokker skal være lukket.
 5. Antall åpne og lukkede SVG- og figure-tagger skal stemme.
-6. Display-matematikk skal bruke gyldige MathJax-avgrensninger (`\\[...\\]` eller `$...$`); løse `# Felles kvalitetssystem for mattebøkene
+6. Visningsformler skal ha tom linje før og etter formelblokken, slik at tekst og matematikk rendres konsekvent.
+7. Display-matematikk skal bruke gyldige MathJax-avgrensninger (`\\[...\\]` eller `$...$`); løse `# Felles kvalitetssystem for mattebøkene
 
 Dette er den felles standarden for bok-repoene. Målet er å unngå at hver chat eller hvert repo utvikler sin egen formateringspraksis.
 
