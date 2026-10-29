@@ -14,7 +14,7 @@ Dette er den felles standarden for bok-repoene. Målet er å unngå at hver chat
 ## Standardkontroller
 
 1. Et gjennomarbeidet eksempel skal bruke en example-boks, ikke en løs Eksempel-overskrift.
-2. Et Svar skal etterfølges av et MathJax-svar med dobbel understreking.
+2. Et Svar skal etterfølges av et MathJax-svar med dobbel understreking. Fasitbokser som inneholder matematikk, skal også ha et dobbeltunderstreket sluttsvar.
 3. Innhold i admonition-bokser skal være korrekt indenteret.
 4. Kodeblokker skal være lukket.
 5. Antall åpne og lukkede SVG- og figure-tagger skal stemme.
