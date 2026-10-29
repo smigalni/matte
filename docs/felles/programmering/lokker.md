@@ -22,7 +22,7 @@ Dette skriver ut 2, 3, 4 og 5. Startverdien er med, men stoppverdien er ikke med
 
 ## 4.2 Følg summen for hver runde
 
-Vi skal se hvordan programmet legger sammen tallene 1, 2 og 3.
+Programmet legger til én verdi av `i` i hver runde.
 
 ```python
 sum = 0
@@ -33,43 +33,21 @@ for i in range(1, 4):
 print(sum)
 ```
 
-Før løkken starter, er `sum = 0`. Summen begynner altså på 0.
+**Start:** `sum = 0`
 
-`range(1, 4)` gir verdiene 1, 2 og 3. Tallet 4 er ikke med.
+**Runde 1** · `i = 1`
 
-**Runde 1**
+`0 + 1 = 1` → ny sum: **1**
 
-`i = 1`
+**Runde 2** · `i = 2`
 
-`sum = 0 + 1 = 1`
+`1 + 2 = 3` → ny sum: **3**
 
-Nå er summen 1.
+**Runde 3** · `i = 3`
 
-**Runde 2**
+`3 + 3 = 6` → ny sum: **6**
 
-`i = 2`
-
-`sum = 1 + 2 = 3`
-
-Vi bruker summen fra forrige runde og legger til 2. Nå er summen 3.
-
-**Runde 3**
-
-`i = 3`
-
-`sum = 3 + 3 = 6`
-
-Vi bruker summen fra forrige runde og legger til 3. Nå er summen 6.
-
-**Når løkken er ferdig**
-
-Programmet kjører `print(sum)). Da skriver det ut:
-
-```text
-6
-```
-
-Programmet har regnet ut `1 + 2 + 3 = 6`. Summen starter ikke på nytt i hver runde; den bygger videre på resultatet fra forrige runde.
+Når løkken er ferdig, skriver `print(sum)` ut **6**.
 
 ## 4.3 Løkker og matematikk
 
