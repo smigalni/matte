@@ -1,7 +1,5 @@
 # 3.4 Produktregelen og kvotientregelen
 
-3.4 Produktregelen og kvotientregelen
-
 Når to funksjoner multipliseres, kan vi ikke bare derivere hver faktor og gange resultatene. Produktregelen er
 
 \[
@@ -36,10 +34,14 @@ Legg merke til rekkefølgen i telleren: «derivert av teller ganger nevner, minu
 
 ### Oppgaver 3.4
 
-**3.4.1** Deriver \(f(x)=(x^2-3)(2x+1)\) med produktregelen.
 
-**3.4.2** Deriver \(g(x)=\frac{2x+1}{x^2+1}\). Oppgi eventuelle begrensninger.
+!!! question "Oppgave 3.4.1 – Deriver \(f(x)=(x^2-3)(2x+1)\) med produktregelen."
 
-**3.4.3** Deriver \(h(x)=x^2\ln x\), og oppgi definisjonsmengden.
 
-**3.4.4** En elev påstår at \((fg)'=f'g'\). Bruk et konkret eksempel for å vise at påstanden er feil, og forklar den riktige regelen.
+!!! question "Oppgave 3.4.2 – Deriver \(g(x)=\frac{2x+1}{x^2+1}\). Oppgi eventuelle begrensninger."
+
+
+!!! question "Oppgave 3.4.3 – Deriver \(h(x)=x^2\ln x\), og oppgi definisjonsmengden."
+
+
+!!! question "Oppgave 3.4.4 – En elev påstår at \((fg)'=f'g'\). Bruk et konkret eksempel for å vise at påstanden er feil, og forklar den riktige regelen."
