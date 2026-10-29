@@ -517,3 +517,91 @@ Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner
     \]
 
     c) Begge linjene går gjennom \((3,4)\), men de har ulike stigningstall.
+
+
+## 7. Programmering – løs vekstfart og tangent med Python
+
+I disse oppgavene bruker du Python til å regne ut størrelser vi har arbeidet med i kapittelet. Målet er ikke bare å få et svar, men også å forstå hvilken matematisk metode programmet bruker.
+
+### 🟢 Grønn – Beregn gjennomsnittlig vekstfart
+
+!!! question "Programmeringsoppgave 1 – Gjennomsnittlig vekstfart"
+    Gjennomsnittlig vekstfart mellom \(x_1\) og \(x_2\) er
+
+    \[
+    a=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+    \]
+
+    **a)** Lag en funksjon `gjennomsnittlig_vekstfart(f1, f2, x1, x2)` som returnerer gjennomsnittlig vekstfart.
+
+    **b)** Test funksjonen med \(f(x)=x^2\) fra \(x=1\) til \(x=3\). Bruk funksjonsverdiene \(f(1)=1\) og \(f(3)=9\).
+
+    **c)** Test på nytt fra \(x=2\) til \(x=4\), der \(f(2)=4\) og \(f(4)=16\). Sammenlign svarene.
+
+    **Hint:** Funksjonen trenger funksjonsverdiene og x-verdiene, ikke selve funksjonsuttrykket.
+
+!!! question "Programmeringsoppgave 2 – Vekst i praksis"
+    En plante er 12 cm høy etter én uke og 27 cm høy etter fire uker.
+
+    **a)** Bruk funksjonen fra oppgave 1 til å beregne gjennomsnittlig vekstfart.
+
+    **b)** Skriv ut svaret sammen med teksten `cm per uke`.
+
+    **c)** Endre programmet slik at du også kan bruke det på andre start- og sluttverdier.
+
+### 🟡 Gul – Bruk funksjoner og lag tangentlikninger
+
+!!! question "Programmeringsoppgave 3 – Finn tangentens likning"
+    En tangent går gjennom punktet \((x_1,y_1)=(2,5)\) og har stigningstall \(a=3\).
+
+    Bruk ettpunktsformelen
+
+    \[
+    y-y_1=a(x-x_1)
+    \]
+
+    **a)** Lag en funksjon `finn_konstant(x1, y1, a)` som returnerer konstanten \(b\) i likningen \(y=ax+b\).
+
+    **b)** Bruk funksjonen til å finne \(b\) for punktet og stigningstallet ovenfor.
+
+    **c)** Skriv ut hele tangentens likning, for eksempel på formen `y = 3x - 1`.
+
+    **Hint:** Sett punktet inn i \(y=ax+b\) og løs likningen \(b=y_1-ax_1\).
+
+!!! question "Programmeringsoppgave 4 – Sammenlign tangenter"
+    Lag et program som finner tangentlikningen for linjer gjennom samme punkt \((3,4)\).
+
+    **a)** Bruk funksjonen fra oppgave 3 med stigningstall \(2\).
+
+    **b)** Gjenta med stigningstall \(-1\).
+
+    **c)** Skriv ut begge likningene. Forklar hvorfor de har samme punkt, men ulike stigningstall.
+
+### 🔴 Rød – Sett sammen flere steg
+
+!!! question "Programmeringsoppgave 5 – Fra funksjonsverdier til tangent"
+    Vi arbeider med funksjonen \(f(x)=x^2+1\). Når \(x=2\), er \(f(2)=5\), og den deriverte er \(f'(2)=4\).
+
+    **a)** Lag variabler for punktets x-verdi, funksjonsverdi og tangentens stigningstall.
+
+    **b)** Bruk funksjonen fra oppgave 3 til å finne konstanten \(b\).
+
+    **c)** Skriv ut tangentens likning på formen \(y=ax+b\).
+
+    **d)** Sammenlign resultatet med tangentlikningen du fant ved regning i oppgave 10 tidligere i kapittelet.
+
+!!! question "Programmeringsoppgave 6 – Lag en liten kalkulator"
+    Lag et program som ber brukeren skrive inn:
+    
+    - to x-verdier \(x_1\) og \(x_2\)
+    - funksjonsverdiene \(f(x_1)\) og \(f(x_2)\)
+
+    Programmet skal beregne og skrive ut gjennomsnittlig vekstfart.
+
+    **a)** Bruk `input()` til å lese inn verdiene og gjør dem om til tall med `float()`.
+
+    **b)** Bruk funksjonen fra oppgave 1.
+
+    **c)** Test programmet med \(f(x)=x^2\), først fra \(x=1\) til \(x=3\), og deretter fra \(x=2\) til \(x=4\).
+
+    **d)** Hva bør programmet gjøre dersom brukeren skriver inn samme x-verdi for \(x_1\) og \(x_2\)? Endre programmet slik at det gir en forståelig melding i stedet for å dele på null.
