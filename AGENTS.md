@@ -15,7 +15,7 @@ Disse reglene gjelder for alt arbeid i dette repositoriet. Følg eksisterende l�
 
 Bruk kapittel 3.1 og de nærmeste eksisterende kapitlene som visuell og strukturell fasit. Gjenbruk repoets etablerte MkDocs/Zensical-syntaks; ikke finn opp et nytt design for hver side.
 
-- **Eksempler:** bruk samme turkise eksempelbokser som i kapittel 3.1 og andre ferdige sider.
+- **Eksempler:** alle gjennomarbeidede eksempler skal ligge inni en `!!! example`-boks. Bruk samme turkise eksempelbokser som i kapittel 3.1 og andre ferdige sider. Ikke presenter et fullstendig regneeksempel som en vanlig `### Eksempel`-overskrift uten boks.
 - **Regler og viktige formler:** bruk etablerte blå/regelfremhevende bokser og passende overskrifter.
 - **Oppgaver:** bruk etablerte lilla oppgavebokser med konsekvent nummerering.
 - **Fasit:** legg fasit i sammenleggbare bokser med samme mønster som resten av nettstedet, for eksempel `??? note "Fasit – oppgave ..."` når dette er mønsteret på siden.
