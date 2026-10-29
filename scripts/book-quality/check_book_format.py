@@ -16,6 +16,7 @@ DEFAULTS = {
     "check_balanced_code_fences": True,
     "check_balanced_svg_figure": True,
     "check_math_delimiters": True,
+    "check_display_math_spacing": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
     "excluded_paths": ["site/", "build/", ".venv/", ".book-quality-tools/"],
@@ -108,7 +109,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 break
 
     if checks.get("check_math_delimiters", True):
-        # Display math uses \[...\] or $$...$$. Bare Markdown brackets/dollars are not math delimiters.
+        # Check display delimiters as standalone lines; do not count inline math.
         for number, line in enumerate(lines, 1):
             stripped = line.strip()
             if stripped in {"[", "]", "$"}:
@@ -123,17 +124,45 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                     f"{relative}:{number}: Matematikk står i vanlige hakeparenteser. "
                     "Bruk \\[ ... \\] eller $$ ... $$ for display-matematikk."
                 )
-        # Ensure each display delimiter is balanced across the file.
-        for opening, closing, label in (
-            (r"\\\[", r"\\\]", r"\[ \]"),
-            (r"\$\$", r"\$\$", "$$")
-        ):
-            open_count = len(re.findall(opening, content))
-            close_count = len(re.findall(closing, content))
-            if (open_count != close_count) if label == r"\[ \]" else (open_count % 2 != 0):
+
+        display_open = 0
+        display_close = 0
+        dollar_delimiters = 0
+        for _, line in visible:
+            stripped = line.strip()
+            if stripped == r"\[":
+                display_open += 1
+            elif stripped == r"\]":
+                display_close += 1
+            elif stripped == "$$":
+                dollar_delimiters += 1
+        if display_open != display_close:
+            errors.append(
+                f"{relative}: Ubalanserte display-matematikkavgrensninger (\\[ \\]): "
+                f"åpning={display_open}, lukking={display_close}."
+            )
+        if dollar_delimiters % 2:
+            errors.append(
+                f"{relative}: Ubalanserte display-matematikkavgrensninger ($$): "
+                f"antall avgrensningslinjer={dollar_delimiters}."
+            )
+
+    if checks.get("check_display_math_spacing", True):
+        visible_by_number = dict(visible)
+        dollar_is_open = False
+        for number, line in visible:
+            stripped = line.strip()
+            is_open = stripped == r"\[" or (stripped == "$$" and not dollar_is_open)
+            is_close = stripped == r"\]" or (stripped == "$$" and dollar_is_open)
+            if stripped == "$$":
+                dollar_is_open = not dollar_is_open
+            if is_open and number > 1 and lines[number - 2].strip():
                 errors.append(
-                    f"{relative}: Ubalanserte display-matematikkavgrensninger ({label}): "
-                    f"åpning={open_count}, lukking={close_count}."
+                    f"{relative}:{number}: Mangler tom linje før visningsformelen."
+                )
+            if is_close and number < len(lines) and lines[number].strip():
+                errors.append(
+                    f"{relative}:{number}: Mangler tom linje etter visningsformelen."
                 )
 
     if checks.get("check_balanced_code_fences", True):
