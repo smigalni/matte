@@ -1,4 +1,4 @@
-# 3.2 Deriverbarhet
+# 3.5 Deriverbarhet
 
 ## Hva betyr det at en funksjon er deriverbar?
 
