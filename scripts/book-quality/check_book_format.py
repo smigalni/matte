@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
-"""Konservative, konfigurerbare strukturelle kontroller for Markdown-mattebøker."""
+"""Reusable, configuration-driven quality checks for Markdown math-book repositories."""
 from __future__ import annotations
-
 import argparse
 import re
 import sys
 import tomllib
 from pathlib import Path
+from typing import Iterable
 
 DEFAULTS = {
+    "example_heading_requires_box": True,
+    "answer_requires_double_underline": True,
+    "answer_key_requires_double_underline": True,
+    "check_admonition_indentation": True,
     "check_balanced_code_fences": True,
-    "check_balanced_math_delimiters": True,
     "check_balanced_svg_figure": True,
+    "check_math_delimiters": True,
+    "check_display_math_spacing": True,
+    "answer_marker": r"^\s*\*\*Svar:\*\*",
+    "answer_search_lines": 12,
     "excluded_paths": ["site/", "build/", ".venv/", ".book-quality-tools/"],
 }
-
 
 def load_config(path: Path | None) -> dict:
     config = {"checks": dict(DEFAULTS)}
@@ -23,13 +29,10 @@ def load_config(path: Path | None) -> dict:
             config["checks"].update(tomllib.load(stream).get("checks", {}))
     return config
 
-
-def visible_lines(lines: list[str]) -> list[tuple[int, str]]:
-    """Return lines outside fenced code blocks, so examples in code aren't checked."""
-    visible = []
+def visible_lines(lines: list[str]) -> Iterable[tuple[int, str]]:
     fence_char = None
     fence_len = 0
-    fence_pattern = r"^\s*(" + re.escape(chr(96) + chr(96) + chr(96)) + r"+|~{3,})"
+    fence_pattern = r"^\s*(" + re.escape(chr(96)) + r"{3,}|~{3,})"
     for number, line in enumerate(lines, 1):
         match = re.match(fence_pattern, line)
         if match:
@@ -40,25 +43,98 @@ def visible_lines(lines: list[str]) -> list[tuple[int, str]]:
                 fence_char, fence_len = None, 0
             continue
         if fence_char is None:
-            visible.append((number, line))
-    return visible
-
+            yield number, line
 
 def check_file(path: Path, relative: str, checks: dict) -> list[str]:
     try:
         content = path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
         return [f"{relative}: kan ikke leses som UTF-8"]
-
     lines = content.splitlines()
-    visible = visible_lines(lines)
+    visible = list(visible_lines(lines))
     errors: list[str] = []
 
-    if checks.get("check_balanced_math_delimiters", True):
-        # Only check delimiter balance. Do not infer that formatting choices are errors.
-        display_open = sum(1 for _, line in visible if line.strip() == r"\[")
-        display_close = sum(1 for _, line in visible if line.strip() == r"\]")
-        dollar_delimiters = sum(1 for _, line in visible if line.strip() == "$$")
+    if checks.get("example_heading_requires_box", True):
+        for number, line in visible:
+            if re.match(r"^#{1,6}\s+Eksempel(?:\s|$)", line, re.IGNORECASE):
+                errors.append(f"{relative}:{number}: Eksempel-heading utenfor boks. Bruk en example-admonition og indenter innholdet.")
+
+    if checks.get("answer_requires_double_underline", True):
+        marker = re.compile(checks.get("answer_marker", DEFAULTS["answer_marker"]), re.IGNORECASE)
+        search_lines = int(checks.get("answer_search_lines", 12))
+        for number, line in visible:
+            if marker.search(line):
+                end = min(len(lines), number + search_lines)
+                nearby = "\n".join(visible_by_number.get(n, "") for n in range(number + 1, end + 1))
+                if not re.search(r"\\underline\s*\{\s*\\underline\s*\{", nearby):
+                    errors.append(f"{relative}:{number}: Svar mangler dobbel understreking i de neste {search_lines} linjene.")
+
+    if checks.get("answer_key_requires_double_underline", True):
+        fasit_marker = re.compile(r'^\s*\?\?\?\s+\w+\s+["\']?Fasit\b', re.IGNORECASE)
+        for position, (number, line) in enumerate(visible):
+            if not fasit_marker.search(line):
+                continue
+            base_indent = len(line) - len(line.lstrip(" \t"))
+            block_lines = []
+            for _, candidate in visible[position + 1:]:
+                if candidate.strip():
+                    candidate_indent = len(candidate) - len(candidate.lstrip(" \t"))
+                    if candidate_indent <= base_indent:
+                        break
+                block_lines.append(candidate)
+            block_text = "\n".join(block_lines)
+            contains_math = re.search(r"\\\[|\\\(|\$\$|\\begin\{", block_text)
+            has_double_underline = re.search(r"\\underline\s*\{\s*\\underline\s*\{", block_text)
+            if contains_math and not has_double_underline:
+                errors.append(f"{relative}:{number}: Fasitblokk med matematikk mangler dobbeltunderstreket sluttsvar.")
+
+    if checks.get("check_admonition_indentation", True):
+        for index, line in enumerate(lines):
+            match = re.match(r"^(\s*)(!!!|\?\?\?)\s+\w+", line)
+            if not match:
+                continue
+            base_indent = len(match.group(1).expandtabs(4))
+            for next_index in range(index + 1, len(lines)):
+                candidate = lines[next_index]
+                if not candidate.strip():
+                    continue
+                indent = len(candidate) - len(candidate.lstrip(" \t"))
+                expanded_indent = len(candidate[:indent].expandtabs(4))
+                if expanded_indent > base_indent:
+                    break
+                if re.match(r"^\s*#{1,6}\s", candidate) or re.match(r"^\s*(!!!|\?\?\?)\s+", candidate):
+                    break
+                errors.append(f"{relative}:{next_index + 1}: Innhold i admonition må indenteres fire mellomrom under markørlinjen.")
+                break
+
+    if checks.get("check_math_delimiters", True):
+        # Check display delimiters as standalone lines; do not count inline math.
+        for number, line in enumerate(lines, 1):
+            stripped = line.strip()
+            if stripped in {"[", "]", "$"}:
+                errors.append(
+                    f"{relative}:{number}: Mulig ugyldig matematikkavgrensning '{stripped}'. "
+                    "Bruk \\[ ... \\] eller $$ ... $$ for display-matematikk."
+                )
+            elif re.match(r"^\[.*\]$", stripped) and re.search(
+                r"(=|\\(?:frac|dfrac|boxed|cdot|sqrt|begin)|[a-zA-Z]\s*\()", stripped
+            ):
+                errors.append(
+                    f"{relative}:{number}: Matematikk står i vanlige hakeparenteser. "
+                    "Bruk \\[ ... \\] eller $$ ... $$ for display-matematikk."
+                )
+
+        display_open = 0
+        display_close = 0
+        dollar_delimiters = 0
+        for _, line in visible:
+            stripped = line.strip()
+            if stripped == r"\[":
+                display_open += 1
+            elif stripped == r"\]":
+                display_close += 1
+            elif stripped == "$$":
+                dollar_delimiters += 1
         if display_open != display_close:
             errors.append(
                 f"{relative}: Ubalanserte display-matematikkavgrensninger (\\[ \\]): "
@@ -70,9 +146,27 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 f"antall avgrensningslinjer={dollar_delimiters}."
             )
 
+    if checks.get("check_display_math_spacing", True):
+        visible_by_number = dict(visible)
+        dollar_is_open = False
+        for number, line in visible:
+            stripped = line.strip()
+            is_open = stripped == r"\[" or (stripped == "$$" and not dollar_is_open)
+            is_close = stripped == r"\]" or (stripped == "$$" and dollar_is_open)
+            if stripped == "$$":
+                dollar_is_open = not dollar_is_open
+            if is_open and number > 1 and lines[number - 2].strip():
+                errors.append(
+                    f"{relative}:{number}: Mangler tom linje før visningsformelen."
+                )
+            if is_close and number < len(lines) and lines[number].strip():
+                errors.append(
+                    f"{relative}:{number}: Mangler tom linje etter visningsformelen."
+                )
+
     if checks.get("check_balanced_code_fences", True):
         open_fence = None
-        fence_pattern = r"^\s*(" + re.escape(chr(96) * 3) + r"+|~{3,})"
+        fence_pattern = r"^\s*(" + re.escape(chr(96)) + r"{3,}|~{3,})"
         for number, line in enumerate(lines, 1):
             match = re.match(fence_pattern, line)
             if not match:
@@ -90,12 +184,8 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
             opening = len(re.findall(fr"<{tag}\b", content, re.IGNORECASE))
             closing = len(re.findall(fr"</{tag}\s*>", content, re.IGNORECASE))
             if opening != closing:
-                errors.append(
-                    f"{relative}: Ubalansert HTML/SVG: åpne {tag}-tagger={opening}, "
-                    f"lukkede={closing}."
-                )
+                errors.append(f"{relative}: Ubalansert HTML/SVG: åpne {tag}-tagger={opening}, lukkede={closing}.")
     return errors
-
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -137,7 +227,6 @@ def main() -> int:
         return 1
     print(f"Book quality: OK – {len(selected)} Markdown-fil(er) kontrollert.")
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
