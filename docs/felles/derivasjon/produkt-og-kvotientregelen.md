@@ -20,7 +20,44 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
 !!! example "Eksempel 3.4.1 – Produktregelen med u og v"
 
-    #
+    Vi skal derivere
+    \[
+    f(x)=(x^2+1)e^x.
+    \]
+
+    **Trinn 1: Finn \(u\) og \(v\).**
+
+    Vi lar den første faktoren være \(u\) og den andre faktoren være \(v\):
+
+    \[
+    u=x^2+1
+    \qquad\text{og}\qquad
+    v=e^x.
+    \]
+
+    **Trinn 2: Finn de deriverte \(u'\) og \(v'\).**
+
+    \[
+    u'=2x
+    \qquad\text{og}\qquad
+    v'=e^x.
+    \]
+
+    **Trinn 3: Sett inn i produktregelen.**
+
+    \[
+    \begin{aligned}
+    f'(x)&=u'v+uv'\\
+    &=2x\cdot e^x+(x^2+1)\cdot e^x\\
+    &=e^x(2x+x^2+1).
+    \end{aligned}
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{f'(x)=e^x(x^2+2x+1)}}
+    \]
 
 !!! warning "Vanlig feil"
     Produktregelen er **ikke**
@@ -47,7 +84,50 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
 
 !!! example "Eksempel 3.4.2 – Kvotientregelen med u og v"
 
-    #
+    Vi skal derivere
+    \[
+    g(x)=\frac{x+1}{x-2}.
+    \]
+
+    **Trinn 1: Finn \(u\) og \(v\).**
+
+    Telleren er \(u\), og nevneren er \(v\):
+
+    \[
+    u=x+1
+    \qquad\text{og}\qquad
+    v=x-2.
+    \]
+
+    **Trinn 2: Finn de deriverte \(u'\) og \(v'\).**
+
+    \[
+    u'=1
+    \qquad\text{og}\qquad
+    v'=1.
+    \]
+
+    **Trinn 3: Sett inn i kvotientregelen.**
+
+    Vi skriver brøken stort og tar ett ledd om gangen:
+
+    \[
+    \begin{aligned}
+    g'(x)
+    &=\dfrac{u'v-uv'}{v^2}\\[6pt]
+    &=\dfrac{1\cdot(x-2)-(x+1)\cdot1}{(x-2)^2}\\[6pt]
+    &=\dfrac{x-2-x-1}{(x-2)^2}\\[6pt]
+    &=\frac{-3}{(x-2)^2}.
+    \end{aligned}
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{g'(x)=\dfrac{-3}{(x-2)^2}}}
+    \]
+
+    Nevneren kan ikke være null, så \(x\ne2\).
 
 !!! warning "Vanlig feil"
     Ikke bytt om på leddene i telleren. Rekkefølgen er
