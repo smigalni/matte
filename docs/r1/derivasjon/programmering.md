@@ -1,7 +1,5 @@
 # 3.8 Programmering: deriverte og vekstfart
 
-3.8 Programmering: deriverte og vekstfart
-
 ### Oppgave 3.8.1 – numerisk tilnærming
 
 Skriv en funksjon i Python som tar inn en funksjon, et punkt \(x\) og en liten verdi \(h\), og beregner
