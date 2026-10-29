@@ -18,7 +18,16 @@ nav = [
     { "Kapittel 3 – Derivasjon" = [
       { "Oversikt" = "r1/derivasjon/index.md" },
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
-      { "3.2 Deriverbarhet" = "r1/derivasjon/deriverbarhet.md" },
+
+      { "3.2 Vanlige derivasjonsregler" = "felles/derivasjon/vanlige-derivasjonsregler.md" },
+      { "3.3 Kjerneregelen" = "felles/derivasjon/kjerneregelen.md" },
+      { "3.4 Produktregelen og kvotientregelen" = "felles/derivasjon/produkt-og-kvotientregelen.md" },
+      { "3.5 Deriverbarhet" = "r1/derivasjon/deriverbarhet.md" },
+      { "3.6 Definisjonen av den deriverte" = "r1/derivasjon/definisjonen-av-deriverte.md" },
+      { "3.7 Numerisk derivasjon" = "r1/derivasjon/numerisk-derivasjon.md" },
+      { "3.8 Programmering" = "felles/derivasjon/programmering.md" },
+      { "3.9 Blandede oppgaver" = "r1/derivasjon/blandede-oppgaver.md" },
+      { "3.10 Kapittelprøve" = "r1/derivasjon/kapittelprove.md" },
       { "Blandede oppgaver" = "r1/derivasjon/blandede-oppgaver.md" },
     ] },
     { "Programmering" = [
@@ -33,7 +42,13 @@ nav = [
   ] },
   { "S1" = [
     { "Oversikt" = "s1/index.md" },
-    { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
+    { "Kapittel 3 – Derivasjon" = [
+      { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
+      { "3.2 Vanlige derivasjonsregler" = "felles/derivasjon/vanlige-derivasjonsregler.md" },
+      { "3.3 Kjerneregelen" = "felles/derivasjon/kjerneregelen.md" },
+      { "3.4 Produktregelen og kvotientregelen" = "felles/derivasjon/produkt-og-kvotientregelen.md" },
+      { "3.8 Programmeringsoppgaver" = "felles/derivasjon/programmering.md" },
+    ] },
     { "Programmering" = [
       { "Oversikt og læringsløp" = "felles/programmering/index.md" },
       { "1. Algoritmer og kode" = "felles/programmering/algoritmer-og-kode.md" },
