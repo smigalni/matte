@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPT = Path(__file__).resolve().parents[1] / "check_book_format.py"
+SCRIPT = Path(__file__).resolve().parents[2] / "scripts" / "book-quality" / "check_book_format.py"
 spec = importlib.util.spec_from_file_location("check_book_format", SCRIPT)
 checker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(checker)
