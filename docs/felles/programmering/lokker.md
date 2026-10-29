@@ -35,17 +35,17 @@ print(summen)
 
 **Start:** `summen = 0`
 
-!!! info "Runde 1 · i = 1"
+!!! note "Runde 1 · i = 1"
     `0 + 1 = 1`
 
     **Ny sum: 1**
 
-!!! success "Runde 2 · i = 2"
+!!! note "Runde 2 · i = 2"
     `1 + 2 = 3`
 
     **Ny sum: 3**
 
-!!! tip "Runde 3 · i = 3"
+!!! note "Runde 3 · i = 3"
     `3 + 3 = 6`
 
     **Ny sum: 6**
