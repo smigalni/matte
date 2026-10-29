@@ -18,6 +18,26 @@ Dette er den felles standarden for bok-repoene. Målet er å unngå at hver chat
 3. Innhold i admonition-bokser skal være korrekt indenteret.
 4. Kodeblokker skal være lukket.
 5. Antall åpne og lukkede SVG- og figure-tagger skal stemme.
+6. Display-matematikk skal bruke gyldige MathJax-avgrensninger (`\\[...\\]` eller `$...$`); løse `# Felles kvalitetssystem for mattebøkene
+
+Dette er den felles standarden for bok-repoene. Målet er å unngå at hver chat eller hvert repo utvikler sin egen formateringspraksis.
+
+## Slik fungerer det
+
+- Den delte sjekkeren ligger i scripts/book-quality/check_book_format.py.
+- Hvert bok-repo har en .book-quality.toml som slår regler av/på og justerer terskler.
+- Den gjenbrukbare GitHub Actions-workflowen ligger i .github/workflows/reusable-book-quality.yml.
+- Hvert repo har en liten workflow som kaller den gjenbrukbare workflowen.
+- Kontrollene kjører automatisk ved push og pull request. Push kontrollerer alle Markdown-filer som er endret i pushen. PR-kontrollen kontrollerer siste commit; tidligere commits er allerede kontrollert ved push, slik at urørt historisk innhold ikke blokkerer nye endringer.
+- Sjekkeren bruker bare Python-standardbiblioteket.
+
+## Standardkontroller
+
+1. Et gjennomarbeidet eksempel skal bruke en example-boks, ikke en løs Eksempel-overskrift.
+2. Et Svar skal etterfølges av et MathJax-svar med dobbel understreking. Fasitbokser som inneholder matematikk, skal også ha et dobbeltunderstreket sluttsvar.
+3. Innhold i admonition-bokser skal være korrekt indenteret.
+4. Kodeblokker skal være lukket.
+, `[` eller `]` som avgrensninger og formler skrevet som vanlig `[ ... ]` skal feile kontrollen.
 
 ## Lokal kjøring
 
