@@ -15,6 +15,9 @@ extra_javascript = [
 nav = [
   { "Hjem" = "index.md" },
   { "R1" = [
+    { "Kapittel 2 – Grenseverdier og kontinuitet" = [
+      { "Oversikt og innhold" = "r1/grenseverdier/index.md" },
+    ] },
     { "Kapittel 3 – Derivasjon" = [
       { "Oversikt" = "r1/derivasjon/index.md" },
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
