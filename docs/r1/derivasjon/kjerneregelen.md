@@ -1,7 +1,5 @@
 # 3.3 Kjerneregelen
 
-3.3 Kjerneregelen
-
 Kjerneregelen bruker vi når en funksjon er satt sammen av en ytre funksjon og en indre funksjon. Hvis
 
 \[
@@ -30,10 +28,14 @@ Med ord: Deriver den ytre funksjonen, behold den indre funksjonen, og gang med d
 
 ### Oppgaver 3.3
 
-**3.3.1** Deriver \(f(x)=(2x-5)^6\).
 
-**3.3.2** Deriver \(g(x)=\sqrt{4x^2+1}\). Skriv svaret med potensform eller brøk.
+!!! question "Oppgave 3.3.1 – Deriver \(f(x)=(2x-5)^6\)."
 
-**3.3.3** Deriver \(h(x)=e^{x^2-3x}\).
 
-**3.3.4** Bestem alle verdier av \\(a\\) slik at tangenten til \\(f(x)=(x^2+a)^3\\) ved \\(x=1\\) har stigningstall 24. Vis at du må bruke kjerneregelen, og undersøk om løsningen er entydig.
+!!! question "Oppgave 3.3.2 – Deriver \(g(x)=\sqrt{4x^2+1}\). Skriv svaret med potensform eller brøk."
+
+
+!!! question "Oppgave 3.3.3 – Deriver \(h(x)=e^{x^2-3x}\)."
+
+
+!!! question "Oppgave 3.3.4 – Bestem alle verdier av \\(a\\) slik at tangenten til \\(f(x)=(x^2+a)^3\\) ved \\(x=1\\) har stigningstall 24. Vis at du må bruke kjerneregelen, og undersøk om løsningen er entydig."
