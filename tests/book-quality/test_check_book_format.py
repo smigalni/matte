@@ -15,6 +15,7 @@ BASE_CHECKS = {
     "check_admonition_indentation": True,
     "check_balanced_code_fences": True,
     "check_balanced_svg_figure": True,
+    "check_math_delimiters": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
 }
@@ -69,6 +70,27 @@ class BookQualityTests(unittest.TestCase):
     \[
     \underline{\underline{x=2}}
     \]
+'''
+        self.assertEqual(self.check(content), [])
+
+    def test_raw_square_bracket_math_fails(self):
+        errors = self.check("!!! important \\"Regel\\"\\n\\n    Hvis\\n\\n    [ f(x)=u(x)\\cdot v(x), ]\\n")
+        self.assertTrue(any("Matematikk står i vanlige hakeparenteser" in e for e in errors))
+
+    def test_lone_dollar_display_delimiter_fails(self):
+        errors = self.check("!!! important \\"Regel\\"\\n\\n    $\\n    f(x)=x^2\\n    $\\n")
+        self.assertTrue(any("Mulig ugyldig matematikkavgrensning" in e for e in errors))
+
+    def test_balanced_display_math_passes(self):
+        content = r'''!!! important "Regel"
+
+    $
+    f(x)=x^2
+    $
+
+    \\[
+    f'(x)=2x
+    \\]
 '''
         self.assertEqual(self.check(content), [])
 
