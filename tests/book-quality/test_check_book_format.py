@@ -16,6 +16,7 @@ BASE_CHECKS = {
     "check_balanced_code_fences": True,
     "check_balanced_svg_figure": True,
     "check_math_delimiters": True,
+    "check_display_math_spacing": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
 }
@@ -112,6 +113,35 @@ class BookQualityTests(unittest.TestCase):
     \[
     f'(x)=2x
     \]
+'''
+        self.assertEqual(self.check(content), [])
+
+    def test_display_math_missing_blank_line_before_fails(self):
+        content = r'''Tekst rett over
+    \[
+    x=2
+    \]
+'''
+        errors = self.check(content)
+        self.assertTrue(any("Mangler tom linje før visningsformelen" in e for e in errors))
+
+    def test_display_math_missing_blank_line_after_fails(self):
+        content = r'''    \[
+    x=2
+    \]
+Tekst rett under
+'''
+        errors = self.check(content)
+        self.assertTrue(any("Mangler tom linje etter visningsformelen" in e for e in errors))
+
+    def test_display_math_with_blank_lines_passes(self):
+        content = r'''Tekst over
+
+    \[
+    x=2
+    \]
+
+Tekst under
 '''
         self.assertEqual(self.check(content), [])
 
