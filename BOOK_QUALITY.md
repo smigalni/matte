@@ -8,7 +8,7 @@ Dette er den felles standarden for bok-repoene. Målet er å unngå at hver chat
 - Hvert bok-repo har en .book-quality.toml som slår regler av/på og justerer terskler.
 - Den gjenbrukbare GitHub Actions-workflowen ligger i .github/workflows/reusable-book-quality.yml.
 - Hvert repo har en liten workflow som kaller den gjenbrukbare workflowen.
-- Kontrollene kjører automatisk ved push og pull request. De sjekker endrede Markdown-filer, ikke hele den historiske boka hver gang.
+- Kontrollene kjører automatisk ved push og pull request. Push kontrollerer alle Markdown-filer som er endret i pushen. PR-kontrollen kontrollerer siste commit; tidligere commits er allerede kontrollert ved push, slik at urørt historisk innhold ikke blokkerer nye endringer.
 - Sjekkeren bruker bare Python-standardbiblioteket.
 
 ## Standardkontroller
