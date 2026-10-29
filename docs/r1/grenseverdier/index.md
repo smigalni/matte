@@ -389,7 +389,7 @@ Fasiten viser sentrale steg. I oppgaver der eleven skal lage et eksempel, finnes
 - **2.4.4:** For \(x\ne2\) er brøken \(x+2\), så \(k=4\).
 - **2.5.1:** \(6\).
 - **2.5.2:** \(1\).
-- **2.5.3:** Etter faktorisering er uttrykket \((x+1)/(2-x)\), og grenseverdien er \(2\).
+- **2.5.3:** Etter faktorisering blir uttrykket \\((x+1)/(x-2)\\), og grenseverdien er \\(-2\\).
 - **2.5.4:** \(5/2\).
 - **2.6.1:** Vertikal asymptote \(x=2\); horisontal asymptote \(y=3\).
 - **2.6.2:** For \(x\ne2\) er funksjonen lik \(x+2\), så det er et hull ved \(x=2\), ikke vertikal asymptote.
@@ -397,7 +397,7 @@ Fasiten viser sentrale steg. I oppgaver der eleven skal lage et eksempel, finnes
 - **2.8.1:** 5.
 - **2.8.2:** Begge ensidige grenser er 1.
 - **2.8.3:** \(x=-4\).
-- **2.8.4:** \(a=4\).
+- **2.8.4:** Kontinuitet gir \\(a+2=4\\), altså \\(a=2\\).
 - **2.8.5:** 8; funksjonen er ikke definert ved \(x=4\).
 - **2.8.6:** Vertikale asymptoter \(x=\pm3\); horisontal asymptote \(y=2\).
 - **2.P1.1:** Kontinuitet gir \(4+2a=8\), altså \(a=2\). Stigningstallene er da 4 og 5, så de er ikke like.
