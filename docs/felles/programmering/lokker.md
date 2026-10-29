@@ -20,54 +20,56 @@ for i in range(2, 6):
 
 Dette skriver ut 2, 3, 4 og 5. Startverdien er med, men stoppverdien er ikke med.
 
-## 4.2 Følg variablene for hver runde
+## 4.2 Følg summen for hver runde
 
-Når en løkke kjører, må vi følge med på **to ting**:
-
-- Hvilken verdi har løkkevariabelen `i` i denne runden?
-- Hva skjer med variabelen `sum_tall` når linjen inni løkken kjøres?
-
-Vi bruker et program som legger sammen tallene 1, 2 og 3.
+Vi skal se hvordan programmet legger sammen tallene 1, 2 og 3.
 
 ```python
-sum_tall = 0
+sum = 0
 
 for i in range(1, 4):
-    sum_tall = sum_tall + i
+    sum = sum + i
 
-print(sum_tall)
+print(sum)
 ```
 
-**Steg 1: Før løkken starter**
+Før løkken starter, er `sum = 0`. Summen begynner altså på 0.
 
-`sum_tall = 0` betyr at summen begynner på 0. Ingen tall er lagt til ennå.
+`range(1, 4)` gir verdiene 1, 2 og 3. Tallet 4 er ikke med.
 
-**Steg 2: Finn verdiene som løkken bruker**
+**Runde 1**
 
-`range(1, 4)` gir verdiene 1, 2 og 3. Tallet 4 er ikke med, fordi stoppverdien i `range` ikke tas med.
+`i = 1`
 
-**Steg 3: Gå gjennom én runde om gangen**
+`sum = 0 + 1 = 1`
 
-Linjen `sum_tall = sum_tall + i` betyr: Ta den gamle summen, legg til verdien av `i`, og lagre den nye summen.
+Nå er summen 1.
 
-| Når? | Verdi av `i` | Regnestykket | Ny verdi av `sum_tall` |
-|---|---:|---|---:|
-| Før løkken | – | – | 0 |
-| Runde 1 | 1 | 0 + 1 | 1 |
-| Runde 2 | 2 | 1 + 2 | 3 |
-| Runde 3 | 3 | 3 + 3 | 6 |
+**Runde 2**
 
-Legg merke til at summen **ikke starter på nytt** for hver runde. Den beholder svaret fra forrige runde og bygger videre på det.
+`i = 2`
 
-**Steg 4: Les av utskriften**
+`sum = 1 + 2 = 3`
 
-Når løkken er ferdig, kjører programmet `print(sum_tall)`. Da er verdien 6, så programmet skriver ut:
+Vi bruker summen fra forrige runde og legger til 2. Nå er summen 3.
+
+**Runde 3**
+
+`i = 3`
+
+`sum = 3 + 3 = 6`
+
+Vi bruker summen fra forrige runde og legger til 3. Nå er summen 6.
+
+**Når løkken er ferdig**
+
+Programmet kjører `print(sum)). Da skriver det ut:
 
 ```text
 6
 ```
 
-Det er det samme som regnestykket \(1+2+3=6\).
+Programmet har regnet ut `1 + 2 + 3 = 6`. Summen starter ikke på nytt i hver runde; den bygger videre på resultatet fra forrige runde.
 
 ## 4.3 Løkker og matematikk
 
