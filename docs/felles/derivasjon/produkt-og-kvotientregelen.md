@@ -67,9 +67,11 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 !!! warning "Vanlig feil"
 
     Produktregelen er **ikke**
+
     \[
     (uv)'=u'v'.
     \]
+
     Vi må ha med to ledd: \(u'v+uv'\).
 
 ## Kvotientregelen
@@ -79,10 +81,13 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
 !!! important "Kvotientregelen"
 
     Hvis
+
     \[
-    f(x)=\frac{u(x)}{v(x)},\qquad v(x)\ne0,
+    f(x)=\dfrac{u(x)}{v(x)},\qquad v(x)\ne0,
     \]
+
     så er
+
     \[
     \boxed{f'(x)=\dfrac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^2}}.
     \]
@@ -92,8 +97,9 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
 !!! example "Eksempel 3.4.2 – Kvotientregelen med u og v"
 
     Vi skal derivere
+
     \[
-    g(x)=\frac{x+1}{x-2}.
+    g(x)=\dfrac{x+1}{x-2}.
     \]
 
     **Trinn 1: Finn \(u\) og \(v\).**
@@ -124,7 +130,7 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
     &=\dfrac{u'v-uv'}{v^2}\\[6pt]
     &=\dfrac{1\cdot(x-2)-(x+1)\cdot1}{(x-2)^2}\\[6pt]
     &=\dfrac{x-2-x-1}{(x-2)^2}\\[6pt]
-    &=\frac{-3}{(x-2)^2}.
+    &=\dfrac{-3}{(x-2)^2}.
     \end{aligned}
     \]
 
@@ -139,9 +145,11 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
 !!! warning "Vanlig feil"
 
     Ikke bytt om på leddene i telleren. Rekkefølgen er
+
     \[
     u'v-uv',
     \]
+
     ikke \(uv'-u'v\). Husk også at hele nevneren skal opphøyes i andre.
 
 ## Slik bruker du \(u\) og \(v\)
@@ -173,65 +181,81 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 !!! question "Oppgave 3.4.1 – Produktregelen"
 
     Deriver
+
     \[
     f(x)=(x^2-3)(2x+1).
     \]
+
     Bruk \(u\), \(v\), \(u'\) og \(v'\), og vis mellomregningen.
 
 !!! question "Oppgave 3.4.2 – Kvotientregelen"
 
     Deriver
+
     \[
-    g(x)=\frac{2x+1}{x^2+1}.
+    g(x)=\dfrac{2x+1}{x^2+1}.
     \]
+
     Bruk \(u\) og \(v\), og oppgi eventuelle begrensninger.
 
 !!! question "Oppgave 3.4.3 – Produkt med logaritme"
 
     Deriver
+
     \[
     h(x)=x^2\ln x.
     \]
+
     Husk å oppgi definisjonsmengden.
 
 !!! question "Oppgave 3.4.4 – Finn og forklar feilen"
 
     En elev påstår at
+
     \[
     (uv)'=u'v'.
     \]
+
     Bruk \(u=x^2\) og \(v=x^3\) til å vise at påstanden er feil. Skriv også den riktige regelen.
 
 !!! question "Oppgave 3.4.5 – Produkt med eksponentialfunksjon"
 
     Deriver
+
     \[
     p(x)=xe^x.
     \]
+
     Vis først hva du velger som \(u\) og \(v\).
 
 !!! question "Oppgave 3.4.6 – Kvotient med en potens i telleren"
 
     Deriver
+
     \[
-    q(x)=\frac{x^2+1}{x}.
+    q(x)=\dfrac{x^2+1}{x}.
     \]
+
     Bruk kvotientregelen, og forenkle svaret så langt som mulig. Husk at \(x\ne0\).
 
 !!! question "Oppgave 3.4.7 – Pass på minustegnet"
 
     Deriver
+
     \[
-    r(x)=\frac{x-3}{x+2}.
+    r(x)=\dfrac{x-3}{x+2}.
     \]
+
     Skriv telleren i kvotientregelen tydelig før du forenkler.
 
 !!! question "Oppgave 3.4.8 – To produktledd"
 
     Deriver
+
     \[
     s(x)=(x^2+1)(x^3-2x).
     \]
+
     La \(u=x^2+1\) og \(v=x^3-2x\). Finn \(u'\) og \(v'\) før du bruker regelen.
 
 !!! question "Oppgave 3.4.9 – Hvilken regel skal du bruke?"
@@ -245,9 +269,11 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 !!! question "Oppgave 3.4.10 – Kontroller en påstand"
 
     En elev sier at
+
     \[
-    \left(\frac{u}{v}\right)'=\frac{u'}{v'}.
+    \left(\dfrac{u}{v}\right)'=\dfrac{u'}{v'}.
     \]
+
     Forklar hvorfor regelen er feil. Bruk gjerne \(u=x+1\) og \(v=x-2\) som eksempel.
 
 ## Fasit
@@ -271,8 +297,8 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \[
     \begin{aligned}
     g'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
-    &=\frac{2(x^2+1)-(2x+1)2x}{(x^2+1)^2}\\[4pt]
-    &=\underline{\underline{\frac{-2x^2-2x+2}{(x^2+1)^2}}}.
+    &=\dfrac{2(x^2+1)-(2x+1)2x}{(x^2+1)^2}\\[4pt]
+    &=\underline{\underline{\dfrac{-2x^2-2x+2}{(x^2+1)^2}}}.
     \end{aligned}
     \]
 
@@ -285,7 +311,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \[
     \begin{aligned}
     h'(x)&=u'v+uv'\\
-    &=2x\ln x+x^2\cdot\frac1x\\
+    &=2x\ln x+x^2\cdot\dfrac1x\\
     &=\underline{\underline{2x\ln x+x}}.
     \end{aligned}
     \]
@@ -297,6 +323,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Med \(u=x^2\) og \(v=x^3\) får vi \(uv=x^5\), så \((uv)'=5x^4\). Men \(u'v'=2x\cdot3x^2=6x^3\). Disse uttrykkene er ikke like for alle \(x\).
 
     Riktig regel er
+
     \[
     \underline{\underline{(uv)'=u'v+uv'}}.
     \]
@@ -320,9 +347,9 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \[
     \begin{aligned}
     q'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
-    &=\frac{2x\cdot x-(x^2+1)\cdot1}{x^2}\\[4pt]
-    &=\frac{x^2-1}{x^2}\\[4pt]
-    &=\underline{\underline{1-\frac{1}{x^2}}}.
+    &=\dfrac{2x\cdot x-(x^2+1)\cdot1}{x^2}\\[4pt]
+    &=\dfrac{x^2-1}{x^2}\\[4pt]
+    &=\underline{\underline{1-\dfrac{1}{x^2}}}.
     \end{aligned}
     \]
 
@@ -335,8 +362,8 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     \[
     \begin{aligned}
     r'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
-    &=\frac{(x+2)-(x-3)}{(x+2)^2}\\[4pt]
-    &=\underline{\underline{\frac{5}{(x+2)^2}}}.
+    &=\dfrac{(x+2)-(x-3)}{(x+2)^2}\\[4pt]
+    &=\underline{\underline{\dfrac{5}{(x+2)^2}}}.
     \end{aligned}
     \]
 
@@ -370,8 +397,8 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 
     \[
     \begin{aligned}
-    b'(x)&=\frac{e^x(x+1)-e^x}{(x+1)^2}\\
-    &=\underline{\underline{\frac{xe^x}{(x+1)^2}}}.
+    b'(x)&=\dfrac{e^x(x+1)-e^x}{(x+1)^2}\\
+    &=\underline{\underline{\dfrac{xe^x}{(x+1)^2}}}.
     \end{aligned}
     \]
 
@@ -382,6 +409,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
     Med \(u=x+1\) og \(v=x-2\) er \(u'=1\) og \(v'=1\). Brøken \(\frac{u'}{v'}=1\) gir ikke den deriverte av \(\frac{x+1}{x-2}\).
 
     Riktig regel er
+
     \[
-    \underline{\underline{\left(\frac{u}{v}\right)'=\dfrac{u'v-uv'}{v^2}}}.
+    \underline{\underline{\left(\dfrac{u}{v}\right)'=\dfrac{u'v-uv'}{v^2}}}.
     \]
