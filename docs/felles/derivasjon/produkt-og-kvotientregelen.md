@@ -18,46 +18,9 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
     Med ord: Deriver den første funksjonen og behold den andre, pluss behold den første funksjonen og deriver den andre.
 
-### Eksempel 1 – Produktregelen med \(u\) og \(v\)
+!!! example "Eksempel 3.4.1 – Produktregelen med u og v"
 
-Vi skal derivere
-\[
-f(x)=(x^2+1)e^x.
-\]
-
-**Trinn 1: Finn \(u\) og \(v\).**
-
-Vi lar den første faktoren være \(u\) og den andre faktoren være \(v\):
-
-\[
-u=x^2+1
-\qquad\text{og}\qquad
-v=e^x.
-\]
-
-**Trinn 2: Finn de deriverte \(u'\) og \(v'\).**
-
-\[
-u'=2x
-\qquad\text{og}\qquad
-v'=e^x.
-\]
-
-**Trinn 3: Sett inn i produktregelen.**
-
-\[
-\begin{aligned}
-f'(x)&=u'v+uv'\\
-&=2x\cdot e^x+(x^2+1)\cdot e^x\\
-&=e^x(2x+x^2+1).
-\end{aligned}
-\]
-
-**Svar:**
-
-\[
-\underline{\underline{f'(x)=e^x(x^2+2x+1)}}
-\]
+    #
 
 !!! warning "Vanlig feil"
     Produktregelen er **ikke**
@@ -77,57 +40,14 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
     \]
     så er
     \[
-    \boxed{f'(x)=\frac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^2}}.
+    \boxed{f'(x)=\dfrac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^2}}.
     \]
 
     Med ord: Derivert av teller ganger nevner, **minus** teller ganger derivert av nevner. Del på nevneren i andre.
 
-### Eksempel 2 – Kvotientregelen med \(u\) og \(v\)
+!!! example "Eksempel 3.4.2 – Kvotientregelen med u og v"
 
-Vi skal derivere
-\[
-g(x)=\frac{x+1}{x-2}.
-\]
-
-**Trinn 1: Finn \(u\) og \(v\).**
-
-Telleren er \(u\), og nevneren er \(v\):
-
-\[
-u=x+1
-\qquad\text{og}\qquad
-v=x-2.
-\]
-
-**Trinn 2: Finn de deriverte \(u'\) og \(v'\).**
-
-\[
-u'=1
-\qquad\text{og}\qquad
-v'=1.
-\]
-
-**Trinn 3: Sett inn i kvotientregelen.**
-
-Vi skriver brøken stort og tar ett ledd om gangen:
-
-\[
-\begin{aligned}
-g'(x)
-&=\frac{u'v-uv'}{v^2}\\[6pt]
-&=\frac{1\cdot(x-2)-(x+1)\cdot1}{(x-2)^2}\\[6pt]
-&=\frac{x-2-x-1}{(x-2)^2}\\[6pt]
-&=\frac{-3}{(x-2)^2}.
-\end{aligned}
-\]
-
-**Svar:**
-
-\[
-\underline{\underline{g'(x)=\dfrac{-3}{(x-2)^2}}}
-\]
-
-Nevneren kan ikke være null, så \(x\ne2\).
+    #
 
 !!! warning "Vanlig feil"
     Ikke bytt om på leddene i telleren. Rekkefølgen er
@@ -250,7 +170,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 
     \[
     \begin{aligned}
-    g'(x)&=\frac{u'v-uv'}{v^2}\\[4pt]
+    g'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
     &=\frac{2(x^2+1)-(2x+1)2x}{(x^2+1)^2}\\[4pt]
     &=\underline{\underline{\frac{-2x^2-2x+2}{(x^2+1)^2}}}.
     \end{aligned}
@@ -295,7 +215,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 
     \[
     \begin{aligned}
-    q'(x)&=\frac{u'v-uv'}{v^2}\\[4pt]
+    q'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
     &=\frac{2x\cdot x-(x^2+1)\cdot1}{x^2}\\[4pt]
     &=\frac{x^2-1}{x^2}\\[4pt]
     &=\underline{\underline{1-\frac{1}{x^2}}}.
@@ -309,7 +229,7 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 
     \[
     \begin{aligned}
-    r'(x)&=\frac{u'v-uv'}{v^2}\\[4pt]
+    r'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
     &=\frac{(x+2)-(x-3)}{(x+2)^2}\\[4pt]
     &=\underline{\underline{\frac{5}{(x+2)^2}}}.
     \end{aligned}
@@ -355,5 +275,5 @@ Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på fun
 
     Riktig regel er
     \[
-    \underline{\underline{\left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^2}}}.
+    \underline{\underline{\left(\frac{u}{v}\right)'=\dfrac{u'v-uv'}{v^2}}}.
     \]
