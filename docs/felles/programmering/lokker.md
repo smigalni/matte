@@ -22,6 +22,13 @@ Dette skriver ut 2, 3, 4 og 5. Startverdien er med, men stoppverdien er ikke med
 
 ## 4.2 Følg variablene for hver runde
 
+Når en løkke kjører, må vi følge med på **to ting**:
+
+- Hvilken verdi har løkkevariabelen `i` i denne runden?
+- Hva skjer med variabelen `sum_tall` når linjen inni løkken kjøres?
+
+Vi bruker et program som legger sammen tallene 1, 2 og 3.
+
 ```python
 sum_tall = 0
 
@@ -31,14 +38,36 @@ for i in range(1, 4):
 print(sum_tall)
 ```
 
-| Runde | `i` | `sum_tall` etter oppdatering |
-|---:|---:|---:|
-| Start | – | 0 |
-| 1 | 1 | 1 |
-| 2 | 2 | 3 |
-| 3 | 3 | 6 |
+**Steg 1: Før løkken starter**
 
-Til slutt skriver programmet ut 6, fordi det regner ut \(1+2+3\).
+`sum_tall = 0` betyr at summen begynner på 0. Ingen tall er lagt til ennå.
+
+**Steg 2: Finn verdiene som løkken bruker**
+
+`range(1, 4)` gir verdiene 1, 2 og 3. Tallet 4 er ikke med, fordi stoppverdien i `range` ikke tas med.
+
+**Steg 3: Gå gjennom én runde om gangen**
+
+Linjen `sum_tall = sum_tall + i` betyr: Ta den gamle summen, legg til verdien av `i`, og lagre den nye summen.
+
+| Når? | Verdi av `i` | Regnestykket | Ny verdi av `sum_tall` |
+|---|---:|---|---:|
+| Før løkken | – | – | 0 |
+| Runde 1 | 1 | 0 + 1 | 1 |
+| Runde 2 | 2 | 1 + 2 | 3 |
+| Runde 3 | 3 | 3 + 3 | 6 |
+
+Legg merke til at summen **ikke starter på nytt** for hver runde. Den beholder svaret fra forrige runde og bygger videre på det.
+
+**Steg 4: Les av utskriften**
+
+Når løkken er ferdig, kjører programmet `print(sum_tall)`. Da er verdien 6, så programmet skriver ut:
+
+```text
+6
+```
+
+Det er det samme som regnestykket \(1+2+3=6\).
 
 ## 4.3 Løkker og matematikk
 
