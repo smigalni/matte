@@ -526,19 +526,19 @@ I disse oppgavene bruker du Python til å regne ut størrelser vi har arbeidet m
 ### 🟢 Grønn – Beregn gjennomsnittlig vekstfart
 
 !!! question "Programmeringsoppgave 1 – Gjennomsnittlig vekstfart"
-    Vi bruker funksjonen \\(f(x)=x^2\\) og formelen for gjennomsnittlig vekstfart:
+    Vi bruker funksjonen \(f(x)=x^2\) og formelen for gjennomsnittlig vekstfart:
 
-    \\[
-    a=\\frac{f(x_2)-f(x_1)}{x_2-x_1}
-    \\]
+    \[
+    a=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+    \]
 
-    **a)** Lag en funksjon med `def` som beregner \\(f(x)=x^2\\). Funksjonen skal ta inn en x-verdi og returnere funksjonsverdien.
+    **a)** Lag en funksjon med `def` som beregner \(f(x)=x^2\). Funksjonen skal ta inn en x-verdi og returnere funksjonsverdien.
 
-    **b)** Bruk funksjonen din til å beregne \\(f(x_1)\\) og \\(f(x_2)\\) når \\(x_1=1\\) og \\(x_2=3\\).
+    **b)** Bruk funksjonen din til å beregne \(f(x_1)\) og \(f(x_2)\) når \(x_1=1\) og \(x_2=3\).
 
-    **c)** Bruk funksjonsverdiene til å beregne den gjennomsnittlige vekstfarten fra \\(x=1\\) til \\(x=3\\).
+    **c)** Bruk funksjonsverdiene til å beregne den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=3\).
 
-    **d)** Gjenta beregningen fra \\(x=2\\) til \\(x=4\\). Sammenlign svarene og forklar hvorfor vekstfarten er forskjellig.
+    **d)** Gjenta beregningen fra \(x=2\) til \(x=4\). Sammenlign svarene og forklar hvorfor vekstfarten er forskjellig.
 
 
 !!! question "Programmeringsoppgave 2 – Vekst i praksis"
