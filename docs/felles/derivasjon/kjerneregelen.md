@@ -45,57 +45,57 @@ Uttrykket inni parentesen er den **indre funksjonen**. Deretter bruker vi dette 
 <figcaption>Funksjonen består av to lag. Begge må tas med når vi deriverer.</figcaption>
 </figure>
 
-## Eksempel 2 – Kjerneregelen med u-metoden
+!!! example "Eksempel 3.3.1 – Kjerneregelen med u-metoden"
 
-Vi skal derivere
+    Vi skal derivere
 
-\[
-y=(3x+2)^4.
-\]
+    \[
+    y=(3x+2)^4.
+    \]
 
-**Trinn 1: Finn den indre funksjonen.**
+    **Trinn 1: Finn den indre funksjonen.**
 
-Sett
+    Sett
 
-\[
-u=3x+2.
-\]
+    \[
+    u=3x+2.
+    \]
 
-**Trinn 2: Skriv den ytre funksjonen ved hjelp av \(u\).**
+    **Trinn 2: Skriv den ytre funksjonen ved hjelp av \(u\).**
 
-\[
-y=f(u)=u^4.
-\]
+    \[
+    y=f(u)=u^4.
+    \]
 
-**Trinn 3: Deriver hver funksjon for seg.**
+    **Trinn 3: Deriver hver funksjon for seg.**
 
-Den ytre funksjonen:
+    Den ytre funksjonen:
 
-\[
-f'(u)=4u^3.
-\]
+    \[
+    f'(u)=4u^3.
+    \]
 
-Den indre funksjonen:
+    Den indre funksjonen:
 
-\[
-u'=3.
-\]
+    \[
+    u'=3.
+    \]
 
-**Trinn 4: Gang de deriverte sammen og sett inn \(u=3x+2\).**
+    **Trinn 4: Gang de deriverte sammen og sett inn \(u=3x+2\).**
 
-\[
-\begin{aligned}
-y'&=f'(u)\cdot u'\\
-&=4u^3\cdot3\\
-&=4(3x+2)^3\cdot3.
-\end{aligned}
-\]
+    \[
+    \begin{aligned}
+    y'&=f'(u)\cdot u'\\
+    &=4u^3\cdot3\\
+    &=4(3x+2)^3\cdot3.
+    \end{aligned}
+    \]
 
-**Svar:**
+    **Svar:**
 
-\[
-\underline{\underline{y'=12(3x+2)^3}}
-\]
+    \[
+    \underline{\underline{y'=12(3x+2)^3}}
+    \]
 
 ### Huskeregel
 
@@ -120,15 +120,19 @@ y'&=f'(u)\cdot u'\\
 4. Gang de deriverte sammen, og sett inn uttrykket for \(u\).
 
 
-!!! example "Eksempel 1 – Bruk kjerneregelen"
+!!! example "Eksempel 3.3.2 – Bruk kjerneregelen"
 
     La \(f(x)=(3x^2+1)^4\).
 
     Den ytre funksjonen er «opphøyd i fjerde», og den indre er \(3x^2+1\).
 
+    **Svar:**
+
     \[
-    f'(x)=4(3x^2+1)^3\cdot 6x
-    =24x(3x^2+1)^3.
+    \begin{aligned}
+    f'(x)&=4(3x^2+1)^3\cdot 6x\\
+    &=\underline{\underline{24x(3x^2+1)^3}}.
+    \end{aligned}
     \]
 
     En vanlig feil er å glemme faktoren \(6x\).
