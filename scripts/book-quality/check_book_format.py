@@ -61,7 +61,6 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
 
     if checks.get("answer_requires_double_underline", True):
         marker = re.compile(checks.get("answer_marker", DEFAULTS["answer_marker"]), re.IGNORECASE)
-        visible_by_number = dict(visible)
         search_lines = int(checks.get("answer_search_lines", 12))
         for number, line in visible:
             if marker.search(line):
