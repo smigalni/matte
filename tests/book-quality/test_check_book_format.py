@@ -74,23 +74,44 @@ class BookQualityTests(unittest.TestCase):
         self.assertEqual(self.check(content), [])
 
     def test_raw_square_bracket_math_fails(self):
-        errors = self.check("!!! important \\"Regel\\"\\n\\n    Hvis\\n\\n    [ f(x)=u(x)\\cdot v(x), ]\\n")
+        content = r'''!!! important "Regel"
+
+    Hvis
+
+    [ f(x)=u(x)\cdot v(x), ]
+'''
+        errors = self.check(content)
         self.assertTrue(any("Matematikk står i vanlige hakeparenteser" in e for e in errors))
 
     def test_lone_dollar_display_delimiter_fails(self):
-        errors = self.check("!!! important \\"Regel\\"\\n\\n    $\\n    f(x)=x^2\\n    $\\n")
-        self.assertTrue(any("Mulig ugyldig matematikkavgrensning" in e for e in errors))
-
-    def test_balanced_display_math_passes(self):
         content = r'''!!! important "Regel"
 
     $
     f(x)=x^2
     $
+'''
+        errors = self.check(content)
+        self.assertTrue(any("Mulig ugyldig matematikkavgrensning" in e for e in errors))
 
-    \\[
+    def test_unbalanced_display_math_fails(self):
+        content = r'''!!! important "Regel"
+
+    \[
+    f(x)=x^2
+'''
+        errors = self.check(content)
+        self.assertTrue(any("Ubalanserte display-matematikkavgrensninger" in e for e in errors))
+
+    def test_balanced_display_math_passes(self):
+        content = r'''!!! important "Regel"
+
+    $$
+    f(x)=x^2
+    $$
+
+    \[
     f'(x)=2x
-    \\]
+    \]
 '''
         self.assertEqual(self.check(content), [])
 
