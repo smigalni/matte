@@ -1,0 +1,10 @@
+# Felles standarder for denne boka. Den samme sjekkeren brukes på tvers av bok-repoene.
+[checks]
+example_heading_requires_box = true
+answer_requires_double_underline = true
+check_admonition_indentation = true
+check_balanced_code_fences = true
+check_balanced_svg_figure = true
+answer_marker = '^\\s*\\*\\*Svar:\\*\\*'
+answer_search_lines = 12
+excluded_paths = ["site/", "build/", ".venv/", ".book-quality-tools/"]
