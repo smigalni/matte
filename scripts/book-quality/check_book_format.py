@@ -15,6 +15,7 @@ DEFAULTS = {
     "check_admonition_indentation": True,
     "check_balanced_code_fences": True,
     "check_balanced_svg_figure": True,
+    "check_math_delimiters": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
     "excluded_paths": ["site/", "build/", ".venv/", ".book-quality-tools/"],
@@ -105,6 +106,33 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                     break
                 errors.append(f"{relative}:{next_index + 1}: Innhold i admonition må indenteres fire mellomrom under markørlinjen.")
                 break
+
+    if checks.get("check_math_delimiters", True):
+        # Display math must use the configured MathJax delimiters (\\[...\\] or $...$).
+        # A lone square bracket or lone dollar is literal Markdown, not a display-math delimiter.
+        for number, line in enumerate(lines, 1):
+            stripped = line.strip()
+            if stripped in {"[", "]", "$"}:
+                errors.append(
+                    f"{relative}:{number}: Mulig ugyldig matematikkavgrensning '{stripped}'. "
+                    "Bruk \\[ ... \\] eller $ ... $ for display-matematikk."
+                )
+            elif re.match(r"^\\[.*\\]$", stripped) and re.search(
+                r"(=|\\\\(?:frac|dfrac|boxed|cdot|sqrt|begin)|[a-zA-Z]\\s*\\()", stripped
+            ):
+                errors.append(
+                    f"{relative}:{number}: Matematikk står i vanlige hakeparenteser. "
+                    "Bruk \\[ ... \\] eller $ ... $ for display-matematikk."
+                )
+        # Catch unclosed MathJax display pairs, while allowing multiple pairs per file.
+        for opening, closing, label in ((r"\\\\\\[", r"\\\\\\]", r"\\[ \\]"), (r"\\$\\$", r"\\$\\$", "$")):
+            open_count = len(re.findall(opening, content))
+            close_count = len(re.findall(closing, content))
+            if open_count != close_count:
+                errors.append(
+                    f"{relative}: Ubalanserte display-matematikkavgrensninger ({label}): "
+                    f"åpning={open_count}, lukking={close_count}."
+                )
 
     if checks.get("check_balanced_code_fences", True):
         open_fence = None
