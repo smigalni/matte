@@ -18,8 +18,16 @@ nav = [
     { "Kapittel 3 – Derivasjon" = [
       { "Oversikt" = "r1/derivasjon/index.md" },
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
-      { "Kapittelutkast – derivasjon" = "r1/derivasjon/kapittel-3.md" },
-      { "3.2 Deriverbarhet" = "r1/derivasjon/deriverbarhet.md" },
+
+      { "3.2 Vanlige derivasjonsregler" = "r1/derivasjon/vanlige-derivasjonsregler.md" },
+      { "3.3 Kjerneregelen" = "r1/derivasjon/kjerneregelen.md" },
+      { "3.4 Produktregelen og kvotientregelen" = "r1/derivasjon/produkt-og-kvotientregelen.md" },
+      { "3.5 Deriverbarhet" = "r1/derivasjon/deriverbarhet.md" },
+      { "3.6 Definisjonen av den deriverte" = "r1/derivasjon/definisjonen-av-deriverte.md" },
+      { "3.7 Numerisk derivasjon" = "r1/derivasjon/numerisk-derivasjon.md" },
+      { "3.8 Programmering" = "r1/derivasjon/programmering.md" },
+      { "3.9 Blandede oppgaver" = "r1/derivasjon/blandede-oppgaver.md" },
+      { "3.10 Kapittelprøve" = "r1/derivasjon/kapittelprove.md" },
       { "Blandede oppgaver" = "r1/derivasjon/blandede-oppgaver.md" },
     ] },
     { "Programmering" = [
