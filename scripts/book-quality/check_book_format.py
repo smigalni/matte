@@ -108,24 +108,26 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 break
 
     if checks.get("check_math_delimiters", True):
-        # Display math must use the configured MathJax delimiters (\\[...\\] or $...$).
-        # A lone square bracket or lone dollar is literal Markdown, not a display-math delimiter.
+        # Display math uses \[...\] or $$...$$. Bare Markdown brackets/dollars are not math delimiters.
         for number, line in enumerate(lines, 1):
             stripped = line.strip()
             if stripped in {"[", "]", "$"}:
                 errors.append(
                     f"{relative}:{number}: Mulig ugyldig matematikkavgrensning '{stripped}'. "
-                    "Bruk \\[ ... \\] eller $ ... $ for display-matematikk."
+                    "Bruk \\[ ... \\] eller $$ ... $$ for display-matematikk."
                 )
-            elif re.match(r"^\\[.*\\]$", stripped) and re.search(
-                r"(=|\\\\(?:frac|dfrac|boxed|cdot|sqrt|begin)|[a-zA-Z]\\s*\\()", stripped
+            elif re.match(r"^\[.*\]$", stripped) and re.search(
+                r"(=|\\(?:frac|dfrac|boxed|cdot|sqrt|begin)|[a-zA-Z]\s*\()", stripped
             ):
                 errors.append(
                     f"{relative}:{number}: Matematikk står i vanlige hakeparenteser. "
-                    "Bruk \\[ ... \\] eller $ ... $ for display-matematikk."
+                    "Bruk \\[ ... \\] eller $$ ... $$ for display-matematikk."
                 )
-        # Catch unclosed MathJax display pairs, while allowing multiple pairs per file.
-        for opening, closing, label in ((r"\\\\\\[", r"\\\\\\]", r"\\[ \\]"), (r"\\$\\$", r"\\$\\$", "$")):
+        # Ensure each display delimiter is balanced across the file.
+        for opening, closing, label in (
+            (r"\\\[", r"\\\]", r"\[ \]"),
+            (r"\$\$", r"\$\$", "$$")
+        ):
             open_count = len(re.findall(opening, content))
             close_count = len(re.findall(closing, content))
             if open_count != close_count:
