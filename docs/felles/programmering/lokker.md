@@ -33,10 +33,10 @@ for i in range(1, 4):
 print(summen)
 ```
 
-**Start:** `summen = **0**`
+**Start:** `summen = 0`
 
 !!! note "Runde 1 · i = 1"
-    `**0** + 1 = 1`
+    `0 + 1 = 1`
 
     **Ny sum: 1**
 
