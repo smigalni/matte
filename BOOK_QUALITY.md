@@ -1,16 +1,26 @@
 # Felles kvalitetssystem for mattebøkene
 
-Målet er å fange opp tydelige strukturelle feil uten at automatiske kontroller feilaktig klassifiserer gyldige pedagogiske eller typografiske valg som feil.
+Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-repoene. Målet er at vi ikke skal bruke tid på å rette de samme formateringsfeilene manuelt igjen og igjen.
 
-## Hva sjekkeren kontrollerer
+## Slik fungerer det
 
-Sjekkeren i `scripts/book-quality/check_book_format.py` holder seg til avgrensede strukturelle kontroller:
+- Den delte sjekkeren ligger i `scripts/book-quality/check_book_format.py`.
+- Hvert bok-repo har en `.book-quality.toml` som aktiverer og konfigurerer kontrollene.
+- GitHub Actions kjører kontrollene automatisk ved push og pull request.
+- Sjekkeren bruker bare Python-standardbiblioteket.
+- Kildekontroller finner kjente strukturelle feil, men erstatter ikke bygging av boken eller visuell kontroll i nettleseren.
 
-- Kodeblokker har avsluttende avgrensning.
-- Display-matematikk med egne `\\[ ... \\]`-linjer og `$$ ... $$`-linjer har balanserte avgrensninger.
-- Antall åpne og lukkede `svg`- og `figure`-tagger stemmer.
+## Standardkontroller
 
-Sjekkeren prøver **ikke** automatisk å bedømme eksempeloverskrifter, fasitoppsett, understreking av svar, innrykk i admonitions, blanklinjer rundt formler eller om hakeparenteser er brukt som matematisk notasjon. Slike vurderinger kan avhenge av konteksten og ga falske varsler.
+1. Et gjennomarbeidet eksempel skal bruke en `example`-admonition, ikke en løs Eksempel-overskrift.
+2. Et **Svar:** skal etterfølges av et MathJax-svar med dobbel understreking.
+3. Fasitbokser som inneholder matematikk, skal ha et dobbeltunderstreket sluttsvar.
+4. Innhold i admonition-bokser skal være korrekt indenteret.
+5. Kodeblokker skal være lukket.
+6. Antall åpne og lukkede SVG- og figure-tagger skal stemme.
+7. Visningsformler skal ha en tom linje før og etter formelblokken.
+8. Display-matematikk skal bruke balanserte MathJax-avgrensninger: `\[ ... \]` eller `$$ ... $$`.
+9. Matematikk skal ikke skrives som vanlige hakeparenteser rundt et uttrykk, for eksempel `[ f(x)=x^2 ]`.
 
 ## Lokal kjøring
 
@@ -28,11 +38,11 @@ python tests/book-quality/test_check_book_format.py
 
 ## Når vi legger til en ny bok
 
-1. Legg til en `.book-quality.toml` med kontrollene boka skal bruke.
-2. Legg til en workflow i `.github/workflows/book-quality.yml` som kaller den gjenbrukbare workflowen.
-3. Legg til `AGENTS.md` med bokas pedagogiske regler, og lenk hit for de felles strukturelle kontrollene.
-4. Ikke vedlikehold en separat kopi av Python-sjekkeren i hvert bok-repo.
+1. Legg til en `.book-quality.toml` med standardene boka skal følge.
+2. Legg til en liten workflow i `.github/workflows/book-quality.yml` som kaller den gjenbrukbare workflowen.
+3. Legg til `AGENTS.md` med bokas pedagogiske regler, og lenk hit for de felles formateringsreglene.
+4. Ikke lag og vedlikehold en separat kopi av Python-sjekkeren i hvert bok-repo.
 
 ## Vedlikehold
 
-Sjekkeren og den gjenbrukbare workflowen vedlikeholdes i `smigalni/matte`. Endringer i dette systemet gjøres først på en feature-branch og flettes til `main` gjennom vanlig gjennomgang.
+Sjekkeren og den gjenbrukbare workflowen vedlikeholdes i `smigalni/matte`. Etter at endringene er flettet til `main`, skal den gjenbrukbare workflowen peke på `main` i stedet for feature-branchen.
