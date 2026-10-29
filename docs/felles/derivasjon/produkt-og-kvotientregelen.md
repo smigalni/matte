@@ -25,6 +25,7 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 !!! example "Eksempel 3.4.1 – Produktregelen med u og v"
 
     Vi skal derivere
+
     \[
     f(x)=(x^2+1)e^x.
     \]
