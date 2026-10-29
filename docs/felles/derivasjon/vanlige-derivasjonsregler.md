@@ -2,51 +2,241 @@
 
 Derivasjonsreglene gjør det mulig å finne den deriverte uten å bruke definisjonen hver gang. Lær reglene i små grupper, og øv på å kjenne igjen hvilken regel du skal bruke.
 
-## Regler du må kunne
+## Gjennomgang av hver regel
 
-!!! info "1. Konstantregelen"
+## Konstantregelen
 
-    \[
-    (c)'=0
-    \]
+En konstant funksjon har samme verdi uansett hvilken \(x\)-verdi vi velger. Grafen er en vannrett linje, og stigningstallet er derfor null.
 
-    Et konstant tall blir \(0\) når vi deriverer.
-
-!!! info "2. Potensregelen"
+!!! important "Konstantregelen"
+    Hvis \(k\) er en konstant, gjelder
 
     \[
-    (x^n)'=nx^{n-1}
+    (k)'=0
     \]
 
-    Flytt eksponenten foran \(x\), og trekk \(1\) fra eksponenten.
+!!! example "Eksempel 1 – Deriver en konstant"
 
-!!! info "3. Konstant faktor"
+    Vi har funksjonen
 
     \[
-    (cf(x))'=cf'(x)
+    f(x)=7
     \]
 
-    Konstanten foran funksjonen blir stående.
-
-!!! info "4. Sum- og differanseregelen"
+    Siden funksjonen er konstant, er den deriverte null:
 
     \[
-    (f(x)+g(x))'=f'(x)+g'(x)
+    f'(x)=0
     \]
+
+    **Svar:**
 
     \[
-    (f(x)-g(x))'=f'(x)-g'(x)
+    \underline{\underline{f'(x)=0}}
     \]
 
-    Deriver hvert ledd for seg. Behold pluss- og minustegnene.
+## Potensregelen
 
-!!! info "5. Eksponential- og logaritmeregelen"
+Potensregelen bruker vi når \(x\) er opphøyd i en konstant eksponent. Vi ganger med eksponenten og trekker deretter 1 fra eksponenten.
+
+!!! important "Potensregelen"
+    \[
+    (x^n)'=n\cdot x^{n-1}
+    \]
+
+!!! example "Eksempel 2 – Deriver en potens"
+
+    Vi har funksjonen
 
     \[
-    (e^x)'=e^x,\qquad (\ln x)'=\frac{1}{x}\quad (x>0)
+    f(x)=x^5
     \]
 
-    \(e^x\) er sin egen deriverte. Logaritmen \(\ln x\) er bare definert for \(x>0\).
+    **Trinn 1:** Gange med eksponenten 5.
+
+    **Trinn 2:** Trekke 1 fra eksponenten.
+
+    \[
+    f'(x)=5x^{5-1}=5x^4
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{f'(x)=5x^4}}
+    \]
+
+!!! example "Eksempel 3 – Potenser med koeffisient"
+
+    Vi har funksjonen
+
+    \[
+    g(x)=3x^4
+    \]
+
+    Vi bruker potensregelen på \(x^4\) og beholder faktoren 3:
+
+    \[
+    g'(x)=3\cdot4x^{3}=12x^3
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{g'(x)=12x^3}}
+    \]
+
+## Konstant faktor-regelen
+
+Når en funksjon er multiplisert med en konstant, kan vi beholde konstanten og derivere funksjonen som står ved siden av.
+
+!!! important "Konstant faktor-regelen"
+    \[
+    (k\cdot u(x))'=k\cdot u'(x)
+    \]
+
+!!! example "Eksempel 4 – Konstant faktor"
+
+    Vi har funksjonen
+
+    \[
+    f(x)=5x^3
+    \]
+
+    Konstanten 5 blir stående. Vi deriverer \(x^3\):
+
+    \[
+    f'(x)=5\cdot3x^2=15x^2
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{f'(x)=15x^2}}
+    \]
+
+!!! example "Eksempel 5 – Konstant ganger en funksjon"
+
+    Vi har
+
+    \[
+    g(x)=2(x^2+3x)
+    \]
+
+    Vi beholder konstanten 2 og deriverer uttrykket i parentesen:
+
+    \[
+    \begin{aligned}
+    g'(x)&=2(2x+3)\\
+    &=4x+6
+    \end{aligned}
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{g'(x)=4x+6}}
+    \]
+
+## Sumregelen
+
+Hvis en funksjon består av flere ledd som legges sammen eller trekkes fra hverandre, kan vi derivere hvert ledd for seg. Ved subtraksjon beholder vi minustegnet.
+
+!!! important "Sumregelen"
+    \[
+    (u(x)+v(x))'=u'(x)+v'(x)
+    \]
+
+    Tilsvarende gjelder
+
+    \[
+    (u(x)-v(x))'=u'(x)-v'(x)
+    \]
+
+!!! example "Eksempel 6 – Deriver et polynom"
+
+    Vi har funksjonen
+
+    \[
+    f(x)=x^3+4x^2-5x+8
+    \]
+
+    Vi deriverer ett ledd om gangen:
+
+    - \((x^3)'=3x^2\)
+    - \((4x^2)'=8x\)
+    - \((-5x)'=-5\)
+    - \((8)'=0\)
+
+    Dermed får vi
+
+    \[
+    f'(x)=3x^2+8x-5
+    \]
+
+    **Svar:**
+
+    \[
+    \underline{\underline{f'(x)=3x^2+8x-5}}
+    \]
+
+## Derivasjon av eksponentialfunksjonen \(e^x\)
+
+Tallet \(e\) er en matematisk konstant som er omtrent \(2{,}718\). Eksponentialfunksjonen \(e^x\) er spesiell fordi den deriverte er lik funksjonen selv.
+
+!!! important "Derivasjon av \(e^x\)"
+    \[
+    (e^x)'=e^x
+    \]
+
+!!! example "Eksempel 7 – Deriver \(e^x\)"
+
+    Hvis
+
+    \[
+    f(x)=e^x
+    \]
+
+    får vi direkte
+
+    \[
+    f'(x)=e^x
+    \]
+
+    Hvis funksjonen har en konstant faktor, bruker vi også konstant faktor-regelen:
+
+    \[
+    g(x)=4e^x \quad\Rightarrow\quad g'(x)=4e^x
+    \]
+
+## Derivasjon av den naturlige logaritmen \(\ln x\)
+
+Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den deriverte av \(\ln x\) er \(1/x\), for \(x>0\).
+
+!!! important "Derivasjon av \(\ln x\)"
+    \[
+    (\ln x)'=\frac{1}{x},\qquad x>0
+    \]
+
+!!! example "Eksempel 8 – Deriver \(\ln x\)"
+
+    Vi har
+
+    \[
+    f(x)=\ln x
+    \]
+
+    Da er
+
+    \[
+    f'(x)=\frac{1}{x}
+    \]
+
+    Med en konstant faktor får vi for eksempel
+
+    \[
+    g(x)=5\ln x \quad\Rightarrow\quad g'(x)=\frac{5}{x}
+    \]
 
 ## Eksempler med mellomregning
 
