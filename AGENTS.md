@@ -51,3 +51,11 @@ Ikke erklær arbeidet ferdig bare fordi en commit er opprettet. Gjennomfør så 
 ## 5. Viktig samarbeidsregel
 
 Bruk disse instruksjonene automatisk i alle fremtidige oppgaver i repositoriet. Ikke spør brukeren om designvalg som allerede er bestemt her. Hvis en side ser annerledes ut enn den etablerte malen, undersøk og rett formateringen før du leverer.
+
+## 6. Gjenbrukbar kvalitetskontroll for alle bok-repoer
+
+- Følg den felles bokstandarden som er dokumentert i BOOK_QUALITY.md.
+- Før levering: kjør eller kontroller at den automatiske Markdown-kontrollen dekker alle endrede sider.
+- Den delte sjekkeren og reusable workflowen vedlikeholdes sentralt; ikke lag egne kopier i hvert bok-repo.
+- Bokspesifikke unntak skal ligge i .book-quality.toml, ikke som ad hoc-regler i hver chat.
+- Workflowen kontrollerer endrede Markdown-filer ved push og pull request. Den automatiske kontrollen supplerer, men erstatter ikke, faglig kontroll av matematikk eller visuell byggkontroll.
