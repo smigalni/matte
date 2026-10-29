@@ -11,6 +11,7 @@ from typing import Iterable
 DEFAULTS = {
     "example_heading_requires_box": True,
     "answer_requires_double_underline": True,
+    "answer_key_requires_double_underline": True,
     "check_admonition_indentation": True,
     "check_balanced_code_fences": True,
     "check_balanced_svg_figure": True,
@@ -66,6 +67,25 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 nearby = "\n".join(visible_by_number.get(n, "") for n in range(number + 1, end + 1))
                 if not re.search(r"\\underline\s*\{\s*\\underline\s*\{", nearby):
                     errors.append(f"{relative}:{number}: Svar mangler dobbel understreking i de neste {search_lines} linjene.")
+
+    if checks.get("answer_key_requires_double_underline", True):
+        fasit_marker = re.compile(r'^\s*\?\?\?\s+\w+\s+["\']?Fasit\b', re.IGNORECASE)
+        for position, (number, line) in enumerate(visible):
+            if not fasit_marker.search(line):
+                continue
+            base_indent = len(line) - len(line.lstrip(" \t"))
+            block_lines = []
+            for _, candidate in visible[position + 1:]:
+                if candidate.strip():
+                    candidate_indent = len(candidate) - len(candidate.lstrip(" \t"))
+                    if candidate_indent <= base_indent:
+                        break
+                block_lines.append(candidate)
+            block_text = "\n".join(block_lines)
+            contains_math = re.search(r"\\\[|\\\(|\$\$|\\begin\{", block_text)
+            has_double_underline = re.search(r"\\underline\s*\{\s*\\underline\s*\{", block_text)
+            if contains_math and not has_double_underline:
+                errors.append(f"{relative}:{number}: Fasitblokk med matematikk mangler dobbeltunderstreket sluttsvar.")
 
     if checks.get("check_admonition_indentation", True):
         for index, line in enumerate(lines):
