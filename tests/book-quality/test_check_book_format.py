@@ -11,6 +11,7 @@ spec.loader.exec_module(checker)
 BASE_CHECKS = {
     "example_heading_requires_box": True,
     "answer_requires_double_underline": True,
+    "answer_key_requires_double_underline": True,
     "check_admonition_indentation": True,
     "check_balanced_code_fences": True,
     "check_balanced_svg_figure": True,
@@ -51,6 +52,25 @@ class BookQualityTests(unittest.TestCase):
 '''
         errors = self.check(content)
         self.assertTrue(any("Svar mangler dobbel understreking" in e for e in errors))
+
+    def test_answer_key_requires_double_underline(self):
+        content = r'''??? note "Fasit – oppgave 1"
+
+    \[
+    x=2
+    \]
+'''
+        errors = self.check(content)
+        self.assertTrue(any("Fasitblokk med matematikk mangler" in e for e in errors))
+
+    def test_answer_key_with_double_underline_passes(self):
+        content = r'''??? note "Fasit – oppgave 1"
+
+    \[
+    \underline{\underline{x=2}}
+    \]
+'''
+        self.assertEqual(self.check(content), [])
 
     def test_unclosed_fence_fails(self):
         errors = self.check("~~~python\nprint('hei')\n")
