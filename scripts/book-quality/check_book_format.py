@@ -130,7 +130,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
         ):
             open_count = len(re.findall(opening, content))
             close_count = len(re.findall(closing, content))
-            if open_count != close_count:
+            if (open_count != close_count) if label == r"\[ \]" else (open_count % 2 != 0):
                 errors.append(
                     f"{relative}: Ubalanserte display-matematikkavgrensninger ({label}): "
                     f"åpning={open_count}, lukking={close_count}."
