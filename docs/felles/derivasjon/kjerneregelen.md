@@ -190,7 +190,7 @@ Uttrykket inni parentesen er den **indre funksjonen**. Deretter bruker vi dette 
 ??? note "Fasit – oppgave 3.3.1"
 
     \[
-    f'(x)=6(2x-5)^5\cdot 2=12(2x-5)^5.
+    f'(x)=6(2x-5)^5\cdot 2=\underline{\underline{12(2x-5)^5}}.
     \]
 
 ??? note "Fasit – oppgave 3.3.2"
@@ -199,13 +199,13 @@ Uttrykket inni parentesen er den **indre funksjonen**. Deretter bruker vi dette 
 
     \[
     g'(x)=\frac12(4x^2+1)^{-1/2}\cdot 8x
-    =\frac{4x}{\sqrt{4x^2+1}}.
+    =\underline{\underline{\frac{4x}{\sqrt{4x^2+1}}}}.
     \]
 
 ??? note "Fasit – oppgave 3.3.3"
 
     \[
-    h'(x)=(2x-3)e^{x^2-3x}.
+    h'(x)=\underline{\underline{(2x-3)e^{x^2-3x}}}.
     \]
 
 ??? note "Fasit – oppgave 3.3.4"
@@ -230,7 +230,13 @@ Uttrykket inni parentesen er den **indre funksjonen**. Deretter bruker vi dette 
     1+a=\pm2.
     \]
 
-    Vi får \(a=1\) eller \(a=-3\). Det finnes altså to løsninger, så løsningen er ikke entydig.
+    Vi får
+
+    \[
+    \underline{\underline{a=1 \quad\text{eller}\quad a=-3}}.
+    \]
+
+    Det finnes altså to løsninger, så løsningen er ikke entydig.
 
 ??? note "Fasit – oppgave 3.3.5"
 
