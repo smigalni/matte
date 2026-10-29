@@ -526,19 +526,20 @@ I disse oppgavene bruker du Python til å regne ut størrelser vi har arbeidet m
 ### 🟢 Grønn – Beregn gjennomsnittlig vekstfart
 
 !!! question "Programmeringsoppgave 1 – Gjennomsnittlig vekstfart"
-    Gjennomsnittlig vekstfart mellom \(x_1\) og \(x_2\) er
+    Vi bruker funksjonen \\(f(x)=x^2\\) og formelen for gjennomsnittlig vekstfart:
 
-    \[
-    a=\frac{f(x_2)-f(x_1)}{x_2-x_1}
-    \]
+    \\[
+    a=\\frac{f(x_2)-f(x_1)}{x_2-x_1}
+    \\]
 
-    **a)** Lag en funksjon `gjennomsnittlig_vekstfart(f1, f2, x1, x2)` som returnerer gjennomsnittlig vekstfart.
+    **a)** Lag en funksjon med `def` som beregner \\(f(x)=x^2\\). Funksjonen skal ta inn en x-verdi og returnere funksjonsverdien.
 
-    **b)** Test funksjonen med \(f(x)=x^2\) fra \(x=1\) til \(x=3\). Bruk funksjonsverdiene \(f(1)=1\) og \(f(3)=9\).
+    **b)** Bruk funksjonen din til å beregne \\(f(x_1)\\) og \\(f(x_2)\\) når \\(x_1=1\\) og \\(x_2=3\\).
 
-    **c)** Test på nytt fra \(x=2\) til \(x=4\), der \(f(2)=4\) og \(f(4)=16\). Sammenlign svarene.
+    **c)** Bruk funksjonsverdiene til å beregne den gjennomsnittlige vekstfarten fra \\(x=1\\) til \\(x=3\\).
 
-    **Hint:** Funksjonen trenger funksjonsverdiene og x-verdiene, ikke selve funksjonsuttrykket.
+    **d)** Gjenta beregningen fra \\(x=2\\) til \\(x=4\\). Sammenlign svarene og forklar hvorfor vekstfarten er forskjellig.
+
 
 !!! question "Programmeringsoppgave 2 – Vekst i praksis"
     En plante er 12 cm høy etter én uke og 27 cm høy etter fire uker.
