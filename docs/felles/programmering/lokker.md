@@ -20,25 +20,37 @@ for i in range(2, 6):
 
 Dette skriver ut 2, 3, 4 og 5. Startverdien er med, men stoppverdien er ikke med.
 
-## 4.2 Følg variablene for hver runde
+## 4.2 Følg summen for hver runde
+
+Programmet legger til én verdi av `i` i hver runde.
 
 ```python
-sum_tall = 0
+summen = 0
 
 for i in range(1, 4):
-    sum_tall = sum_tall + i
+    summen = summen + i
 
-print(sum_tall)
+print(summen)
 ```
 
-| Runde | `i` | `sum_tall` etter oppdatering |
-|---:|---:|---:|
-| Start | – | 0 |
-| 1 | 1 | 1 |
-| 2 | 2 | 3 |
-| 3 | 3 | 6 |
+**Start:** `summen = 0`
 
-Til slutt skriver programmet ut 6, fordi det regner ut \(1+2+3\).
+!!! note "Runde 1 · i = 1"
+    `0 + 1 = 1`
+
+    **Ny sum: 1**
+
+!!! note "Runde 2 · i = 2"
+    `1 + 2 = 3`
+
+    **Ny sum: 3**
+
+!!! note "Runde 3 · i = 3"
+    `3 + 3 = 6`
+
+    **Ny sum: 6**
+
+Når løkken er ferdig, skriver `print(summen)` ut **6**.
 
 ## 4.3 Løkker og matematikk
 

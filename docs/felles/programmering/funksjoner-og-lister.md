@@ -70,7 +70,11 @@ Funksjonen returnerer 12. Deretter lagres 12 i `svar`, og programmet skriver ut 
     print(a * 2)
     ```
 
-    **c)** Forklar forskjellen på `print(x)` og `return x`. Gi ett eksempel på når du trenger `return`.
+    **c)** Skriv en funksjon `kvadratrot(tall)` som returnerer kvadratroten av tallet. Test med 9.
+
+    **Hint:** Skriv kvadratroten som en potens med eksponent `1/2`.
+
+    **d)** Forklar forskjellen på `print(x)` og `return x`. Gi ett eksempel på når du trenger `return`.
 
 ## 5.2 Lister: lagre flere verdier
 
