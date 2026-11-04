@@ -240,369 +240,78 @@ Tangentens likning blir derfor:
 
 ## 6. Oppgaver
 
-Prøv å løse oppgavene før du åpner fasiten. Vis mellomregning der du regner.
+Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tangentens likning.
 
-## 🟢 Grønn – Grunnlag
-
-!!! question "Oppgave 1 – Gjennomsnittlig vekstfart"
+!!! question "Oppgave 3.1.1 – Gjennomsnittlig vekstfart"
 
     Gitt funksjonen \(f(x)=x^2\).
 
-    a) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=3\).
+    a) Finn \(f(1)\) og \(f(3)\).
+    b) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=3\).
 
-    b) Finn gjennomsnittlig vekstfart fra \(x=2\) til \(x=4\).
+!!! question "Oppgave 3.1.2 – Tolk vekstfarten"
 
-    c) Forklar hvorfor svarene er forskjellige.
+    En plante vokser fra 10 cm til 22 cm i løpet av tre uker.
 
-!!! question "Oppgave 2 – Gjennomsnittlig vekstfart i praksis"
-
-    En plante er 12 cm høy etter én uke og 27 cm høy etter fire uker.
-
-    a) Finn plantens gjennomsnittlige vekstfart i cm per uke mellom uke 1 og uke 4.
-
+    a) Finn den gjennomsnittlige vekstfarten per uke.
     b) Forklar hva svaret betyr.
 
-    c) Betyr svaret at planten vokste nøyaktig like mange centimeter hver uke?
+!!! question "Oppgave 3.1.3 – Momentan vekstfart"
 
-!!! question "Oppgave 3 – Gjennomsnittlig vekstfart med en lineær funksjon"
-
-    Gitt funksjonen \(f(x)=3x+2\).
-
-    a) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=5\).
-
-    b) Finn gjennomsnittlig vekstfart fra \(x=2\) til \(x=6\).
-
-    c) Hva legger du merke til ved svarene? Forklar hvorfor.
-
-## 🟡 Gul – Kombiner ideer
-
-!!! question "Oppgave 4 – Sammenlign gjennomsnittlig vekstfart"
-
-    Gitt funksjonen \(f(x)=x^2+1\).
-
-    a) Finn gjennomsnittlig vekstfart fra \(x=0\) til \(x=2\).
-
-    b) Finn gjennomsnittlig vekstfart fra \(x=2\) til \(x=4\).
-
-    c) I hvilket intervall vokser funksjonen raskest i gjennomsnitt?
-
-!!! question "Oppgave 5 – Forstå den deriverte"
-
-    En funksjon har \(f'(2)=5\).
+    En funksjon har \(f'(2)=4\).
 
     a) Hva er stigningstallet til tangenten når \(x=2\)?
+    b) Hva forteller dette om funksjonens momentane vekstfart?
 
-    b) Hva forteller tallet 5 om den momentane vekstfarten?
+!!! question "Oppgave 3.1.4 – Finn tangentens likning"
 
-    c) Hvis tangenten i et annet punkt har stigningstall 0, hva forteller det om den momentane vekstfarten der?
+    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall 3.
 
-    d) Tegn en mulig skisse
+    Bruk ettpunktsformelen til å finne tangentens likning på formen \(y=ax+b\).
 
-!!! question "Oppgave 6 – Fra stigningstall til tangent"
+!!! question "Oppgave 3.1.5 – Tangent til en parabel"
 
-    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall 3. Finn funksjonsuttrykket for tangenten.
+    Gitt funksjonen \(f(x)=x^2\).
 
-!!! question "Oppgave 7 – Tangent til en parabel"
+    a) Finn punktet på grafen når \(x=1\).
+    b) Tangentens stigningstall i punktet er 2. Finn tangentens likning.
 
-    Grafen til \(f(x)=x^2\) har punktet \(P=(x_1,y_1)=(2,4)\). Den deriverte i dette punktet er \(f'(2)=4\).
+## Fasit
 
-    Hva er tangentens stigningstall?
+??? note "Fasit – oppgave 3.1.1"
 
-    Bruk et punkts formel til å finne tangentens likning, og skriv svaret på formen \(y=ax+b\).
-
-!!! question "Oppgave 8 – Finn tangentens funksjonsuttrykk"
-
-    En tangent går gjennom punktet \(P=(3,7)\) og har stigningstall \(-2\). Finn tangentens funksjonsuttrykk på formen \(y=ax+b\).
-
-!!! question "Oppgave 9 – Tangent til en annen funksjon"
-
-    Grafen til en funksjon går gjennom punktet \(P=(1,3)\), og tangenten i dette punktet har stigningstall \(4\). Finn tangentens funksjonsuttrykk på formen \(y=ax+b\).
-
-!!! question "Oppgave 10 – Finn tangenten når funksjonen er gitt"
-
-    Gitt funksjonen \(f(x)=x^2+1\).
-
-    Finn tangentens funksjonsuttrykk når \(x=2\). Skriv svaret på formen \(y=ax+b\).
-
-!!! question "Oppgave 11 – Tangent til en andregradsfunksjon"
-
-    Gitt funksjonen \(f(x)=2x^2-3x+1\).
-
-    Finn tangentens funksjonsuttrykk når \(x=1\). Skriv svaret på formen \(y=ax+b\).
-
-!!! question "Oppgave 12 – Tangent med negativt stigningstall"
-
-    Gitt funksjonen \(f(x)=x^2-4x+2\).
-
-    Finn tangentens funksjonsuttrykk når \(x=1\). Skriv svaret på formen \(y=ax+b\).
-
-## 🔴 Rød – Selvstendig problemløsing
-
-!!! question "Oppgave 13 – Momentan fart"
-
-    Posisjonen til en syklist beskrives av \(s(t)\), der \(t\) måles i sekunder og \(s(t)\) i meter. Ved \(t=3\) er \(s(3)=20\) og \(s'(3)=6\).
-
-    a) Hva er syklistens momentane vekstfart ved \(t=3\)?
-
-    b) Hva er stigningstallet til tangenten på strekning–tid-grafen ved \(t=3\)?
-
-    c) Finn tangentens likning. Bruk \(t\) på den vannrette aksen og \(s\) på den loddrette aksen.
-
-!!! question "Oppgave 14 – Tegn og tolk"
-
-    Tegn en skisse av en funksjonsgraf med et punkt \(P\) der tangenten har positivt stigningstall.
-
-    a) Tegn tangenten i punktet.
-
-    b) Forklar hva stigningstallet forteller om den momentane vekstfarten.
-
-    c) Lag en ny skisse der tangenten har negativt stigningstall. Hva er forskjellen?
-
-!!! question "Oppgave 15 – Finn to ulike tangenter"
-
-    En rett linje går gjennom punktet \(P=(x_1,y_1)=(3,4)\).
-
-    a) Finn likningen til linjen når stigningstallet er \(a=2\).
-
-    b) Finn likningen til en annen linje gjennom samme punkt når stigningstallet er \(a=-1\).
-
-    c) Tegn begge linjene i samme koordinatsystem. Hva er likt, og hva er forskjellig?
-
-??? note "Fasit – åpne når du har prøvd selv"
-
-    **Oppgave 1**
-
-    a) \(a=\frac{f(3)-f(1)}{3-1}=\frac{9-1}{2}=4\).
-
-    b) \(a=\frac{f(4)-f(2)}{4-2}=\frac{16-4}{2}=6\).
-
-    c) Gjennomsnittlig vekstfart er større i intervallet fra 2 til 4.
-
-    **Oppgave 2**
-
-    a) \(a=\frac{27-12}{4-1}=5\) cm per uke.
-
-    b) Planten vokste i gjennomsnitt 5 cm per uke i perioden.
-
-    c) Nei. Gjennomsnittet beskriver hele perioden, ikke veksten i hver enkelt uke.
-
-    **Oppgave 3**
-
-    a) \(a=\frac{f(5)-f(1)}{5-1}=\frac{17-5}{4}=3\).
-
-    b) \(a=\frac{f(6)-f(2)}{6-2}=\frac{20-8}{4}=3\).
-
-    c) Svarene er like fordi en lineær funksjon har konstant stigningstall.
-
-    **Oppgave 4**
-
-    a) \(a=\frac{f(2)-f(0)}{2-0}=\frac{5-1}{2}=2\).
-
-    b) \(a=\frac{f(4)-f(2)}{4-2}=\frac{17-5}{2}=6\).
-
-    c) Funksjonen vokser raskest i gjennomsnitt fra \(x=2\) til \(x=4\).
-
-    **Oppgave 5**
-
-    a) Stigningstallet er 5.
-
-    b) Funksjonen øker momentant med 5 enheter i \(y\) for hver enhet i \(x\), ved \(x=2\). I en fysisk modell avhenger enhetene av hva \(x\) og \(y\) beskriver.
-
-    c) Den momentane vekstfarten er 0; tangenten er vannrett.
-
-    d) Skissen kan variere. Tangenten skal stige mot høyre og ha stigningstall 5, for eksempel 5 ruter opp for hver rute mot høyre. Punktets høyde kan velges fritt.
-
-    **Oppgave 6**
-
-    \[
-    y-5=3(x-2)
-    \]
-
-    \[
-    y-5=3x-6
-    \]
-
-    \[
-    \boxed{y=3x-1}
-    \]
-
-    **Oppgave 7**
-
-    Stigningstallet er \(f'(2)=4\).
-
-    \[
-    y-4=4(x-2)\quad\Rightarrow\quad \boxed{y=4x-4}
-    \]
-
-    **Oppgave 8**
-
-    \[
-    y-7=-2(x-3)\quad\Rightarrow\quad \boxed{y=-2x+13}
-    \]
-
-    **Oppgave 9**
-
-    \[
-    y-3=4(x-1)\quad\Rightarrow\quad \boxed{y=4x-1}
-    \]
-
-    **Oppgave 10**
-
-    \[
-    f(2)=2^2+1=5,\qquad f'(x)=2x,\qquad f'(2)=4
-    \]
-
-    Tangenten går gjennom \((2,5)\) og har stigningstall 4:
-
-    \[
-    y-5=4(x-2)\quad\Rightarrow\quad \boxed{y=4x-3}
-    \]
-
-    **Oppgave 11**
-
-    \[
-    f(1)=2-3+1=0,\qquad f'(x)=4x-3,\qquad f'(1)=1
-    \]
-
-    Tangenten går gjennom \((1,0)\) og har stigningstall 1:
-
-    \[
-    y-0=1(x-1)\quad\Rightarrow\quad \boxed{y=x-1}
-    \]
-
-    **Oppgave 12**
-
-    \[
-    f(1)=1-4+2=-1,\qquad f'(x)=2x-4,\qquad f'(1)=-2
-    \]
-
-    Tangenten går gjennom \((1,-1)\) og har stigningstall \(-2\):
-
-    \[
-    y+1=-2(x-1)\quad\Rightarrow\quad \boxed{y=-2x+1}
-    \]
-
-    **Oppgave 13**
-
-    a) Den momentane vekstfarten er \(6\text{ m/s}\).
-
-    b) Tangentens stigningstall er 6.
-
-    c)
-
-    \[
-    s-20=6(t-3)
-    \]
-
-    \[
-    \boxed{s=6t+2}
-    \]
-
-    **Oppgave 14**
-
-    a–c) Tegningene kan variere. Positivt stigningstall betyr at tangenten stiger mot høyre; negativt stigningstall betyr at den synker mot høyre.
-
-    **Oppgave 15**
-
-    a)
-
-    \[
-    y-4=2(x-3)\quad\Rightarrow\quad \boxed{y=2x-2}
-    \]
+    a) \(f(1)=1\) og \(f(3)=9\).
 
     b)
-
     \[
-    y-4=-(x-3)\quad\Rightarrow\quad \boxed{y=-x+7}
+    a=\frac{9-1}{3-1}=4.
     \]
 
-    c) Begge linjene går gjennom \((3,4)\), men de har ulike stigningstall.
+??? note "Fasit – oppgave 3.1.2"
 
+    a) \(\frac{22-10}{3}=4\) cm per uke.
 
-## 7. Programmering – løs vekstfart og tangent med Python
+    b) Planten vokste i gjennomsnitt 4 cm per uke i perioden.
 
-I disse oppgavene bruker du Python til å regne ut størrelser vi har arbeidet med i kapittelet. Målet er ikke bare å få et svar, men også å forstå hvilken matematisk metode programmet bruker.
+??? note "Fasit – oppgave 3.1.3"
 
-### 🟢 Grønn – Beregn gjennomsnittlig vekstfart
+    a) Stigningstallet er 4.
 
-!!! question "Programmeringsoppgave 1 – Gjennomsnittlig vekstfart"
-    Vi bruker funksjonen \(f(x)=x^2\) og formelen for gjennomsnittlig vekstfart:
+    b) Funksjonen øker momentant med 4 y-enheter per x-enhet ved \(x=2\).
 
-    \[
-    a=\frac{f(x_2)-f(x_1)}{x_2-x_1}
-    \]
-
-    **a)** Lag en funksjon med `def` som beregner \(f(x)=x^2\). Funksjonen skal ta inn en x-verdi og returnere funksjonsverdien.
-
-    **b)** Bruk funksjonen din til å beregne \(f(x_1)\) og \(f(x_2)\) når \(x_1=1\) og \(x_2=3\).
-
-    **c)** Bruk funksjonsverdiene til å beregne den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=3\).
-
-    **d)** Gjenta beregningen fra \(x=2\) til \(x=4\). Sammenlign svarene og forklar hvorfor vekstfarten er forskjellig.
-
-
-!!! question "Programmeringsoppgave 2 – Vekst i praksis"
-    En plante er 12 cm høy etter én uke og 27 cm høy etter fire uker.
-
-    **a)** Bruk funksjonen fra oppgave 1 til å beregne gjennomsnittlig vekstfart.
-
-    **b)** Skriv ut svaret sammen med teksten `cm per uke`.
-
-    **c)** Endre programmet slik at du også kan bruke det på andre start- og sluttverdier.
-
-### 🟡 Gul – Bruk funksjoner og lag tangentlikninger
-
-!!! question "Programmeringsoppgave 3 – Finn tangentens likning"
-    En tangent går gjennom punktet \((x_1,y_1)=(2,5)\) og har stigningstall \(a=3\).
-
-    Bruk ettpunktsformelen
+??? note "Fasit – oppgave 3.1.4"
 
     \[
-    y-y_1=a(x-x_1)
+    y-5=3(x-2)\quad\Rightarrow\quad
+    \underline{\underline{y=3x-1}}.
     \]
 
-    **a)** Lag en funksjon `finn_konstant(x1, y1, a)` som returnerer konstanten \(b\) i likningen \(y=ax+b\).
+??? note "Fasit – oppgave 3.1.5"
 
-    **b)** Bruk funksjonen til å finne \(b\) for punktet og stigningstallet ovenfor.
+    a) Punktet er \(P=(1,1)\).
 
-    **c)** Skriv ut hele tangentens likning, for eksempel på formen `y = 3x - 1`.
-
-    **Hint:** Sett punktet inn i \(y=ax+b\) og løs likningen \(b=y_1-ax_1\).
-
-!!! question "Programmeringsoppgave 4 – Sammenlign tangenter"
-    Lag et program som finner tangentlikningen for linjer gjennom samme punkt \((3,4)\).
-
-    **a)** Bruk funksjonen fra oppgave 3 med stigningstall \(2\).
-
-    **b)** Gjenta med stigningstall \(-1\).
-
-    **c)** Skriv ut begge likningene. Forklar hvorfor de har samme punkt, men ulike stigningstall.
-
-### 🔴 Rød – Sett sammen flere steg
-
-!!! question "Programmeringsoppgave 5 – Fra funksjonsverdier til tangent"
-    Vi arbeider med funksjonen \(f(x)=x^2+1\). Når \(x=2\), er \(f(2)=5\), og den deriverte er \(f'(2)=4\).
-
-    **a)** Lag variabler for punktets x-verdi, funksjonsverdi og tangentens stigningstall.
-
-    **b)** Bruk funksjonen fra oppgave 3 til å finne konstanten \(b\).
-
-    **c)** Skriv ut tangentens likning på formen \(y=ax+b\).
-
-    **d)** Sammenlign resultatet med tangentlikningen du fant ved regning i oppgave 10 tidligere i kapittelet.
-
-!!! question "Programmeringsoppgave 6 – Lag en liten kalkulator"
-    Lag et program som ber brukeren skrive inn:
-    
-    - to x-verdier \(x_1\) og \(x_2\)
-    - funksjonsverdiene \(f(x_1)\) og \(f(x_2)\)
-
-    Programmet skal beregne og skrive ut gjennomsnittlig vekstfart.
-
-    **a)** Bruk `input()` til å lese inn verdiene og gjør dem om til tall med `float()`.
-
-    **b)** Bruk funksjonen fra oppgave 1.
-
-    **c)** Test programmet med \(f(x)=x^2\), først fra \(x=1\) til \(x=3\), og deretter fra \(x=2\) til \(x=4\).
-
-    **d)** Hva bør programmet gjøre dersom brukeren skriver inn samme x-verdi for \(x_1\) og \(x_2\)? Endre programmet slik at det gir en forståelig melding i stedet for å dele på null.
+    b)
+    \[
+    y-1=2(x-1)\quad\Rightarrow\quad
+    \underline{\underline{y=2x-1}}.
+    \]
