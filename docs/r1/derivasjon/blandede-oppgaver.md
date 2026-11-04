@@ -4,7 +4,7 @@ Her må du selv velge hvilke metoder og derivasjonsregler du skal bruke. Oppgave
 
 Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevant.
 
-## Middels
+<h2 class="difficulty-heading difficulty-medium">Middels</h2>
 
 !!! question "Oppgave 3.9.1 – Produktregel, kjerneregel og tangent"
 
@@ -78,7 +78,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     c) Bestem tangentlikningen i hvert av punktene.
 
-## Vanskelig
+<h2 class="difficulty-heading difficulty-hard">Vanskelig</h2>
 
 !!! question "Oppgave 3.9.6 – Stasjonære punkter og fortegn"
 
@@ -164,7 +164,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     c) Finn riktig uttrykk for \(f'(x)\), og bestem \(f'(0)\).
 
-## Svært vanskelig
+<h2 class="difficulty-heading difficulty-very-hard">Svært vanskelig</h2>
 
 !!! question "Oppgave 3.9.11 – Bestem parametere og undersøk grafen"
 
