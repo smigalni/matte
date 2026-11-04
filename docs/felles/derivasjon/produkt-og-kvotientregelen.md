@@ -6,8 +6,6 @@ I dette delkapittelet lærer vi å derivere funksjoner som består av et produkt
 
 Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
-Når to funksjoner multipliseres, bruker vi produktregelen.
-
 \[
 f'(x)=u'v+uv'
 \]
@@ -58,9 +56,7 @@ Deriver den første faktoren og behold den andre. Deretter beholder du den førs
 
 ## Kvotientregelen (brøkregelen)
 
-Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er rekkefølgen i telleren spesielt viktig.
-
-Når en funksjon er delt på en annen, bruker vi kvotientregelen (brøkregelen).
+Når én funksjon er delt på en annen, bruker vi **kvotientregelen (brøkregelen)**. Her er rekkefølgen i telleren spesielt viktig.
 
 \[
 f(x)=\frac{u}{v},\qquad v\ne0
