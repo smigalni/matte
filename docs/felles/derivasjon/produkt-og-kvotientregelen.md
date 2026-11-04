@@ -9,7 +9,7 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 !!! important "Produktregelen"
 
     \[
-    \boxed{f'(x)=u'v+uv'}
+    f'(x)=u'v+uv'
     \]
 
     Deriver den første faktoren og behold den andre. Deretter beholder du den første faktoren og deriverer den andre. Legg sammen uttrykkene.
@@ -71,7 +71,7 @@ Når én funksjon er delt på en annen, bruker vi **brøkregelen**. Her er rekke
     så er
 
     \[
-    \boxed{f'(x)=\frac{u'v-uv'}{v^2}}
+    \frac{u'v-uv'}{v^2}
     \]
 
     Derivert av teller ganger nevner, minus teller ganger derivert av nevner. Del på nevneren i andre.
