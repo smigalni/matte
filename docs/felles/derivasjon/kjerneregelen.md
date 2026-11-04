@@ -176,7 +176,7 @@ Deriver funksjonene ved hjelp av kjerneregelen. Finn den indre funksjonen, og hu
 ??? note "Fasit – oppgave 3.3.3"
 
     \[
-    h'(x)=3e^{3x}.
+    h'(x)=\underline{\underline{3e^{3x}}}.
     \]
 
 ??? note "Fasit – oppgave 3.3.4"
