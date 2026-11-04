@@ -64,7 +64,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     c) Finnes det et punkt i intervallet \(0<x<3\) der den momentane vekstfarten er lik den gjennomsnittlige? Begrunn svaret.
 
-!!! question "Oppgave 3.9.5 – Tangent parallell med en linje"
+!!! question "Oppgave 3.9.5 – Horisontale tangenter"
 
     Vi har funksjonen
 
@@ -72,11 +72,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     h(x)=\frac{x^2+1}{x+1},\qquad x\ne-1.
     \]
 
-    Finn tangentene til grafen som er parallelle med x-aksen.
-
     a) Bestem \(h'(x)\).
 
-    b) Finn alle punktene der tangenten har stigningstall \(2\).
+    b) Finn alle punktene der tangenten er parallell med x-aksen.
 
     c) Bestem tangentlikningen i hvert av punktene.
 
@@ -339,19 +337,21 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
     =\frac{x^2+2x-1}{(x+1)^2}.
     \]
 
-    b) Vi setter \(h'(x)=2\):
+    b) Vi setter \(h'(x)=0\). Siden nevneren ikke er null for \(x\ne-1\), får vi
 
     \[
-    x^2+2x-1=2(x+1)^2
+    x^2+2x-1=0
+    \quad\Rightarrow\quad
+    x=-1\pm\sqrt2.
     \]
+
+    c) Setter vi x-verdiene inn i funksjonen, får vi de horisontale tangentene
 
     \[
-    x^2+2x+3=0.
+    \underline{\underline{y=2(\sqrt2-1)}}
+    \qquad\text{og}\qquad
+    \underline{\underline{y=-2(\sqrt2+1)}}.
     \]
-
-    Diskriminanten er \(4-12=-8\). Likningen har ingen reelle løsninger. Det finnes derfor ingen tangent som er parallell med linja.
-
-    c) Ingen slike tangentlikninger finnes.
 
 ??? note "Fasit – oppgave 3.9.6"
 
