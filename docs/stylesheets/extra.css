@@ -304,34 +304,42 @@
 .md-typeset .admonition.question p:last-child { margin-bottom: .25rem; }
 
 
+
+
 /* Vanskelighetsgrader – brukes kun i blandede oppgavesett */
-.md-typeset h2.difficulty-heading {
+.md-typeset h2:has(.difficulty-label) {
   margin: 2rem 0 1rem;
-  padding: .7rem 1rem;
+  line-height: 1.5;
+}
+.md-typeset .difficulty-label {
+  display: inline-block;
+  padding: .45rem .9rem;
   border: 1px solid transparent;
   border-left-width: 6px;
-  border-radius: .6rem;
-  font-size: 1.25rem;
+  border-radius: .55rem;
+  font-size: 1.05rem;
   font-weight: 750;
 }
-
-.md-typeset h2.difficulty-medium {
+.md-typeset .difficulty-medium {
   color: #166534;
   background: #f0fdf4;
   border-color: #86efac;
   border-left-color: #16a34a;
 }
-
-.md-typeset h2.difficulty-hard {
+.md-typeset .difficulty-hard {
   color: #92400e;
   background: #fffbeb;
   border-color: #fcd34d;
   border-left-color: #d97706;
 }
-
-.md-typeset h2.difficulty-very-hard {
+.md-typeset .difficulty-very-hard {
   color: #991b1b;
   background: #fef2f2;
   border-color: #fca5a5;
   border-left-color: #dc2626;
 }
+
+/* Samme fargekoder i høyre innholdsmeny – bare på 3.9 */
+.md-nav--secondary a.md-nav__link[href="#middels"] { color: #16a34a; font-weight: 700; }
+.md-nav--secondary a.md-nav__link[href="#vanskelig"] { color: #d97706; font-weight: 700; }
+.md-nav--secondary a.md-nav__link[href="#svært-vanskelig"] { color: #dc2626; font-weight: 700; }
