@@ -28,5 +28,5 @@ Kapittel 3 handler om vekstfart, tangenter og derivasjon. Delkapitlene **3.1–3
 - Les forklaringen og følg eksemplene steg for steg.
 - Løs oppgavene uten å se på fasiten først.
 - Vis mellomregning, skriv hvilken regel du bruker, og forklar hva svaret betyr.
-- I utfordringsoppgavene forventes det at du velger metode selv og begrunner konklusjonen.
+- Oppgavene etter hvert delkapittel trener på teorien du nettopp har lært. De blandede oppgavene og kapittelprøven kommer til slutt.
 
