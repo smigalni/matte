@@ -339,7 +339,3 @@
   border-left-color: #dc2626;
 }
 
-/* Samme fargekoder i høyre innholdsmeny – bare på 3.9 */
-.md-nav--secondary a.md-nav__link[href="#middels"] { color: #16a34a; font-weight: 700; }
-.md-nav--secondary a.md-nav__link[href="#vanskelig"] { color: #d97706; font-weight: 700; }
-.md-nav--secondary a.md-nav__link[href="#svært-vanskelig"] { color: #dc2626; font-weight: 700; }
