@@ -350,7 +350,7 @@ Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den derive
     Siden \(\ln x\) bare er definert for \(x>0\), gjelder
 
     \[
-    \boxed{x>0}.
+    x>0.
     \]
 
     Både \(g(x)\) og \(g'(x)\) er definert for \(x>0\).
