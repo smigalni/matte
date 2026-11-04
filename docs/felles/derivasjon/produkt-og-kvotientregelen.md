@@ -6,11 +6,13 @@ I dette delkapittelet lærer vi å derivere funksjoner som består av et produkt
 
 Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
-\[
-f'(x)=u'v+uv'
-\]
+!!! important "Produktregelen"
 
-Deriver den første faktoren og behold den andre. Deretter beholder du den første faktoren og deriverer den andre. Legg sammen uttrykkene.
+    \[
+    \boxed{f'(x)=u'v+uv'}
+    \]
+
+    Deriver den første faktoren og behold den andre. Deretter beholder du den første faktoren og deriverer den andre. Legg sammen uttrykkene.
 
 !!! example "Eksempel 3.4.1 – Produktregelen med u og v"
 
@@ -56,17 +58,23 @@ Deriver den første faktoren og behold den andre. Deretter beholder du den førs
 
 ## Kvotientregelen (brøkregelen)
 
-Når én funksjon er delt på en annen, bruker vi **kvotientregelen (brøkregelen)**. Her er rekkefølgen i telleren spesielt viktig.
+Når én funksjon er delt på en annen, bruker vi **brøkregelen**. Her er rekkefølgen i telleren spesielt viktig.
 
-\[
-f(x)=\frac{u}{v},\qquad v\ne0
-\]
+!!! important "Brøkregelen"
 
-\[
-f'(x)=\frac{u'v-uv'}{v^2}
-\]
+    Hvis
 
-Derivert av teller ganger nevner, minus teller ganger derivert av nevner. Del på nevneren i andre.
+    \[
+    f(x)=\frac{u}{v},\qquad v\ne0,
+    \]
+
+    så er
+
+    \[
+    \boxed{f'(x)=\frac{u'v-uv'}{v^2}}
+    \]
+
+    Derivert av teller ganger nevner, minus teller ganger derivert av nevner. Del på nevneren i andre.
 
 !!! example "Eksempel 3.4.2 – Kvotientregelen med u og v"
 
