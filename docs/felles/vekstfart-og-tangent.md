@@ -280,24 +280,24 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
 ??? note "Fasit – oppgave 3.1.1"
 
-    a) \(f(1)=1\) og \(f(3)=9\).
+    a) \(\underline{\underline{f(1)=1}}\) og \(\underline{\underline{f(3)=9}}\).
 
     b)
     \[
-    a=\frac{9-1}{3-1}=4.
+    a=\frac{9-1}{3-1}=\underline{\underline{4}}.
     \]
 
 ??? note "Fasit – oppgave 3.1.2"
 
-    a) \(\frac{22-10}{3}=4\) cm per uke.
+    a) \(\underline{\underline{\frac{22-10}{3}=4\text{ cm per uke}}}\).
 
     b) Planten vokste i gjennomsnitt 4 cm per uke i perioden.
 
 ??? note "Fasit – oppgave 3.1.3"
 
-    a) Stigningstallet er 4.
+    a) Stigningstallet er \(\underline{\underline{4}}\).
 
-    b) Funksjonen øker momentant med 4 y-enheter per x-enhet ved \(x=2\).
+    b) Funksjonen øker momentant med \(\underline{\underline{4}}\) y-enheter per x-enhet ved \(x=2\).
 
 ??? note "Fasit – oppgave 3.1.4"
 
