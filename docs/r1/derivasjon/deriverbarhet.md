@@ -1,4 +1,4 @@
-# 3.2 Deriverbarhet
+# 3.5 Deriverbarhet
 
 ## Hva betyr det at en funksjon er deriverbar?
 
@@ -193,141 +193,55 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
 ## Oppgaver
 
-## 🟢 Grønn – Grunnlag
+Oppgavene trener på kontinuitet, knekkpunkt og sammenligning av ensidige stigningstall.
 
-!!! question "Oppgave 1 – Forstå begrepene"
+!!! question "Oppgave 3.5.1 – Deriverbarhet og kontinuitet"
 
-    a) Forklar med egne ord hva det betyr at en funksjon er deriverbar i et punkt.
+    a) Hva betyr det at en funksjon er deriverbar i et punkt?
+    b) Må en funksjon være kontinuerlig for å være deriverbar? Forklar.
 
-    b) Hva kjennetegner et knekkpunkt?
+!!! question "Oppgave 3.5.2 – Undersøk et knekkpunkt"
 
-    c) Kan en funksjon være kontinuerlig, men ikke deriverbar? Forklar med et eksempel.
+    Vi har funksjonen \(f(x)=|x|\).
 
-    d) Kan en funksjon være deriverbar i et punkt der den ikke er kontinuerlig? Begrunn svaret.
+    a) Er funksjonen kontinuerlig i \(x=0\)?
+    b) Hva er stigningstallet til venstre for null?
+    c) Hva er stigningstallet til høyre for null?
+    d) Er funksjonen deriverbar i \(x=0\)?
 
-!!! question "Oppgave 2 – Undersøk en graf"
-
-    Tegn en skisse av grafen til \(f(x)=|x|\).
-
-    a) Bestem stigningstallet til grafen for \(x<0\).
-
-    b) Bestem stigningstallet til grafen for \(x>0\).
-
-    c) Forklar hvorfor funksjonen ikke er deriverbar i \(x=0\).
-
-!!! question "Oppgave 3 – Kontinuitet og deriverbarhet"
-
-    En funksjon har et bruddpunkt i \(x=2\).
-
-    a) Kan funksjonen være deriverbar i \(x=2\)? Begrunn svaret.
-
-    b) En annen funksjon er kontinuerlig i \(x=2\), men har et knekkpunkt der. Kan den være deriverbar i dette punktet? Forklar.
-
-## 🟡 Gul – Kombiner ideer
-
-!!! question "Oppgave 4 – Undersøk med ensidige grenseverdier"
+!!! question "Oppgave 3.5.3 – Sammenlign ensidige stigningstall"
 
     Vi har funksjonen
 
     \[
     f(x)=
     \begin{cases}
-    2x+1, & x<2,\\
-    x+3, & x\geq2.
-    \end{cases}
-    \]
-
-    a) Vis at funksjonen er kontinuerlig i \(x=2\).
-
-    b) Beregn \(f'_-(2)\).
-
-    c) Beregn \(f'_+(2)\).
-
-    d) Avgjør om funksjonen er deriverbar i \(x=2\).
-
-!!! question "Oppgave 5 – Finn parameteren"
-
-    Vi har funksjonen
-
-    \[
-    h(x)=
-    \begin{cases}
-    k(x-1)+1, & x<1,\\
-    x^2, & x\geq1.
-    \end{cases}
-    \]
-
-    Bestem verdien av \(k\) slik at funksjonen er deriverbar i \(x=1\). Vis framgangsmåten.
-
-## 🔴 Rød – Selvstendig problemløsing
-
-!!! question "Oppgave 6 – Undersøk en funksjon med flere uttrykk"
-
-    Vi har funksjonen
-
-    \[
-    g(x)=
-    \begin{cases}
-    x+2, & x<1,\\
-    -x^2+2x+1, & x\geq1.
+    2x+1, & x<1,\\
+    x^2+2, & x\geq1.
     \end{cases}
     \]
 
     a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
+    b) Finn stigningstallet fra venstre og fra høyre.
+    c) Er funksjonen deriverbar i \(x=1\)?
 
-    b) Sammenlign uttrykkene til venstre og høyre for \(x=1\). Forklar hvorfor det ikke er nødvendig å beregne ensidige deriverte når funksjonen ikke er kontinuerlig der.
+## Fasit
 
-    c) Avgjør om funksjonen er deriverbar i \(x=1\). Begrunn svaret.
+??? note "Fasit – oppgave 3.5.1"
 
+    a) Den deriverte finnes som et endelig tall i punktet.
 
-??? note "Fasit – åpne når du har prøvd selv"
+    b) Ja. Deriverbarhet innebærer kontinuitet.
 
-    **Oppgave 1**
+??? note "Fasit – oppgave 3.5.2"
 
-    a) En funksjon er deriverbar i et punkt når den deriverte finnes som et endelig tall der.
+    a) Ja, \(f(x)=|x|\) er kontinuerlig i null.
+    b) Stigningstallet fra venstre er \(-1\).
+    c) Stigningstallet fra høyre er \(1\).
+    d) Nei, fordi de ensidige stigningstallene er ulike.
 
-    b) I et knekkpunkt møtes grafdeler med ulike stigningstall.
+??? note "Fasit – oppgave 3.5.3"
 
-    c) Ja. For eksempel er \(f(x)=|x|\) kontinuerlig i \(x=0\), men ikke deriverbar der.
-
-    d) Nei. Deriverbarhet i et punkt innebærer kontinuitet i punktet.
-
-    **Oppgave 2**
-
-    a) Stigningstallet er \(-1\).
-
-    b) Stigningstallet er \(1\).
-
-    c) De ensidige stigningstallene er ulike.
-
-    **Oppgave 3**
-
-    a) Nei. Deriverbarhet innebærer kontinuitet.
-
-    b) Nei. I et knekkpunkt er stigningstallene fra venstre og høyre ulike.
-
-    **Oppgave 4**
-
-    a) Fra venstre er grenseverdien \(2\cdot2+1=5\), mens fra høyre og funksjonsverdien er \(2+3=5\). Funksjonen er kontinuerlig.
-
-    b) \(f'_-(2)=2\).
-
-    c) \(f'_+(2)=1\).
-
-    d) Funksjonen er ikke deriverbar fordi de ensidige stigningstallene er ulike.
-
-    **Oppgave 5**
-
-    Fra venstre er stigningstallet \(k\), og fra høyre er stigningstallet til \(x^2\) ved \(x=1\) lik \(2\). Dermed må \(k=2\).
-
-    **Svar:**
-
-    \[ \underline{\underline{k=2}} \]
-
-    **Oppgave 6**
-
-    a) Venstre grenseverdi er \(1+2=3\), mens høyre grenseverdi og funksjonsverdien er \(-1+2+1=2\). Funksjonen er ikke kontinuerlig.
-
-    b) Den venstre grenseverdien til funksjonen er \(3\), mens funksjonsverdien og høyre grenseverdi er \(2\). Siden funksjonen ikke er kontinuerlig i \(x=1\), finnes det ikke en vanlig derivert der. Differansekvotienten fra venstre går dessuten ikke mot et endelig tall.
-
-    c) Funksjonen er ikke deriverbar fordi den ikke er kontinuerlig i \(x=1\).
+    a) Fra venstre er grenseverdien \(3\), og funksjonsverdien fra høyre er \(3\). Funksjonen er kontinuerlig.
+    b) Fra venstre er stigningstallet \(2\). Fra høyre er den deriverte \(2x\), som gir \(2\) ved \(x=1\).
+    c) Ja, funksjonen er deriverbar i \(x=1\) fordi de ensidige stigningstallene er like.

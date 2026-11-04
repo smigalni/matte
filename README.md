@@ -19,7 +19,7 @@ Stopp serveren med `Ctrl+C`.
 ## Innhold
 
 - `docs/index.md`: startsiden
-- `docs/r1/derivasjon/index.md`: første kapittelutkast
+- `docs/felles/vekstfart-og-tangent.md`: delkapittel 3.1 – vekstfart og tangent
 - `docs/javascripts/mathjax.js`: oppsett for matematisk notasjon
 - `zensical.toml`: nettstedets konfigurasjon
 

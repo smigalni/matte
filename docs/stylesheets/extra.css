@@ -302,3 +302,36 @@
   border-radius: .5rem .5rem 0 0;
 }
 .md-typeset .admonition.question p:last-child { margin-bottom: .25rem; }
+
+
+
+
+/* Vanskelighetsgrader – kun overskriftene i blandede oppgaver (3.9) */
+.md-typeset h2#middels,
+.md-typeset h2#vanskelig,
+.md-typeset h2#svært-vanskelig {
+  margin: 2rem 0 1rem;
+  padding: .55rem .9rem;
+  border: 1px solid;
+  border-left-width: 6px;
+  border-radius: .55rem;
+  line-height: 1.5;
+}
+.md-typeset h2#middels {
+  color: #166534;
+  background: #f0fdf4;
+  border-color: #86efac;
+  border-left-color: #16a34a;
+}
+.md-typeset h2#vanskelig {
+  color: #92400e;
+  background: #fffbeb;
+  border-color: #fcd34d;
+  border-left-color: #d97706;
+}
+.md-typeset h2#svært-vanskelig {
+  color: #991b1b;
+  background: #fef2f2;
+  border-color: #fca5a5;
+  border-left-color: #dc2626;
+}

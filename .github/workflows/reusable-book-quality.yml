@@ -1,0 +1,49 @@
+name: Reusable book quality checks
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-quality:
+    name: Markdown structure and math-book style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the book repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the shared checker
+        shell: bash
+        run: |
+          # After this feature branch is merged, change the ref to main.
+          git clone --depth 1 --branch feature/kapittel-3-derivasjon-komplett https://github.com/smigalni/matte.git .book-quality-tools
+
+      - name: Find changed Markdown files
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            # Push checks validate all files changed in each push. The PR check validates its latest commit, so old untouched pages do not block a new change.
+            git diff --name-only --diff-filter=ACMR "$PR_HEAD_SHA^" "$PR_HEAD_SHA"
+          elif [[ -n "$BEFORE_SHA" && ! "$BEFORE_SHA" =~ ^0+$ ]]; then
+            git diff --name-only --diff-filter=ACMR "$BEFORE_SHA" "$HEAD_SHA"
+          else
+            git ls-files '*.md' '*.markdown'
+          fi > changed-files.txt
+          echo "Changed Markdown candidates:"
+          cat changed-files.txt
+
+      - name: Test the shared checker
+        run: python .book-quality-tools/tests/book-quality/test_check_book_format.py
+
+      - name: Validate changed Markdown
+        run: |
+          python .book-quality-tools/scripts/book-quality/check_book_format.py --root . --config .book-quality.toml --files-from changed-files.txt
