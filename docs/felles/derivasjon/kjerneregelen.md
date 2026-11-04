@@ -1,18 +1,22 @@
 # 3.3 Kjerneregelen
 
-Kjerneregelen bruker vi når en funksjon er satt sammen av en ytre funksjon og en indre funksjon. Hvis
+Kjerneregelen bruker vi når en funksjon er satt sammen av en ytre funksjon og en indre funksjon.
 
-\[
-y=f(g(x)),
-\]
+!!! important "Kjerneregelen"
 
-så er
+    Hvis
 
-\[
-y'=f'(g(x))\cdot g'(x).
-\]
+    \[
+    y=f(g(x)),
+    \]
 
-Med ord: Deriver den ytre funksjonen, behold den indre funksjonen, og gang med den deriverte av den indre funksjonen.
+    så er
+
+    \[
+    \boxed{y'=f'(g(x))\cdot g'(x)}
+    \]
+
+    Deriver den ytre funksjonen, behold den indre funksjonen, og gang med den deriverte av den indre funksjonen.
 
 
 ## Se funksjonen som to lag
