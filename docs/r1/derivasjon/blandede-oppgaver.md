@@ -238,7 +238,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     c) Bruk den symmetriske differansekvotienten med de samme \(h\)-verdiene.
 
-    d) Sammenlign resultatene. Hvilken metode gir best tilnærming her?\n\n    Lag gjerne en tabell med tilnærmingene og de absolutte feilene.
+    d) Sammenlign resultatene. Hvilken metode gir best tilnærming her? Lag en tabell med tilnærmingene og de absolutte feilene.
 
     e) Forklar hvorfor en svært liten \(h\) ikke alltid gir et mer nøyaktig numerisk svar.
 
@@ -345,7 +345,19 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
     x=-1\pm\sqrt2.
     \]
 
-    c) Setter vi x-verdiene inn i funksjonen, får vi de horisontale tangentene
+    c) Punktene er
+
+    \[
+    \left(-1+\sqrt2,\;2(\sqrt2-1)\right)
+    \]
+
+    og
+
+    \[
+    \left(-1-\sqrt2,\;-2(\sqrt2+1)\right).
+    \]
+
+    Tangentlikningene er derfor
 
     \[
     \underline{\underline{y=2(\sqrt2-1)}}
@@ -535,7 +547,15 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
 
     c) Den symmetriske differansekvotienten er \(\frac{\ln(2+h)-\ln(2-h)}{2h}\).
 
-    d) Begge metodene nærmer seg \(0,5\). Den symmetriske metoden gir vanligvis en bedre tilnærming for samme \(h\).
+    d) Omtrentlige verdier:
+
+    | \(h\) | Framoverdifferanse | Symmetrisk differanse |
+    |---:|---:|---:|
+    | \(0,1\) | \(0,487902\) | \(0,500417\) |
+    | \(0,01\) | \(0,498754\) | \(0,500004\) |
+    | \(0,001\) | \(0,499875\) | \(0,500000\) |
+
+    Den symmetriske metoden gir best tilnærming for disse verdiene av \(h\).
 
     e) Når \(h\) blir svært liten, trekkes nesten like tall fra hverandre. Avrundingsfeil kan da bli betydelige i forhold til differansen.
 
@@ -555,6 +575,6 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
     +(x^2-3x)\frac{1+\frac1x}{2\sqrt{\ln x+x}}.
     \]
 
-    c) Bruk for eksempel symmetrisk differansekvotient med en liten valgt \(h\) for hver funksjon.
+    c) Bruk symmetrisk differansekvotient med \(h=10^{-5}\).
 
-    d) Begge uttrykkene skal gi omtrent samme verdi. Små avvik skyldes numerisk tilnærming og avrunding.
+    d) Vi får omtrent \(u'(7)=11\), \(v'(7)=0,191051\) og \(f'(7)=38,250118\). Produktregelen gir også omtrent \(38,250118\). Små avvik skyldes numerisk tilnærming og avrunding.
