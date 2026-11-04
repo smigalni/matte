@@ -302,3 +302,36 @@
   border-radius: .5rem .5rem 0 0;
 }
 .md-typeset .admonition.question p:last-child { margin-bottom: .25rem; }
+
+
+/* Vanskelighetsgrader – brukes kun i blandede oppgavesett */
+.md-typeset h2.difficulty-heading {
+  margin: 2rem 0 1rem;
+  padding: .7rem 1rem;
+  border: 1px solid transparent;
+  border-left-width: 6px;
+  border-radius: .6rem;
+  font-size: 1.25rem;
+  font-weight: 750;
+}
+
+.md-typeset h2.difficulty-medium {
+  color: #166534;
+  background: #f0fdf4;
+  border-color: #86efac;
+  border-left-color: #16a34a;
+}
+
+.md-typeset h2.difficulty-hard {
+  color: #92400e;
+  background: #fffbeb;
+  border-color: #fcd34d;
+  border-left-color: #d97706;
+}
+
+.md-typeset h2.difficulty-very-hard {
+  color: #991b1b;
+  background: #fef2f2;
+  border-color: #fca5a5;
+  border-left-color: #dc2626;
+}
