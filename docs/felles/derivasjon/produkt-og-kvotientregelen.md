@@ -1,4 +1,4 @@
-# 3.4 Produktregelen og kvotientregelen
+# 3.4 Produktregelen og kvotientregelen (brøkregelen)
 
 I dette delkapittelet lærer vi å derivere funksjoner som består av et produkt eller en brøk. Her er det lett å gjøre feil hvis vi bare deriverer teller og nevner hver for seg. Derfor bruker vi faste regler og arbeider systematisk.
 
@@ -6,21 +6,13 @@ I dette delkapittelet lærer vi å derivere funksjoner som består av et produkt
 
 Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
-!!! important "Produktregelen"
+Når to funksjoner multipliseres, bruker vi produktregelen.
 
-    Hvis
+\[
+f'(x)=u'v+uv'
+\]
 
-    $$
-    f(x)=u(x)\cdot v(x),
-    $$
-
-    så er
-
-    $$
-    \boxed{f'(x)=u'(x)v(x)+u(x)v'(x)}.
-    $$
-
-    Med ord: Deriver den første funksjonen og behold den andre, pluss behold den første funksjonen og deriver den andre.
+Deriver den første faktoren og behold den andre. Deretter beholder du den første faktoren og deriverer den andre. Legg sammen uttrykkene.
 
 !!! example "Eksempel 3.4.1 – Produktregelen med u og v"
 
@@ -64,25 +56,21 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
     \underline{\underline{f'(x)=e^x(x^2+2x+1)}}
     \]
 
-## Kvotientregelen
+## Kvotientregelen (brøkregelen)
 
 Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er rekkefølgen i telleren spesielt viktig.
 
-!!! important "Kvotientregelen"
+Når en funksjon er delt på en annen, bruker vi kvotientregelen (brøkregelen).
 
-    Hvis
+\[
+f(x)=\frac{u}{v},\qquad v\ne0
+\]
 
-    \[
-    f(x)=\dfrac{u(x)}{v(x)},\qquad v(x)\ne0,
-    \]
+\[
+f'(x)=\frac{u'v-uv'}{v^2}
+\]
 
-    så er
-
-    \[
-    \boxed{f'(x)=\dfrac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^2}}.
-    \]
-
-    Med ord: Derivert av teller ganger nevner, **minus** teller ganger derivert av nevner. Del på nevneren i andre.
+Derivert av teller ganger nevner, minus teller ganger derivert av nevner. Del på nevneren i andre.
 
 !!! example "Eksempel 3.4.2 – Kvotientregelen med u og v"
 
@@ -132,29 +120,6 @@ Når én funksjon er delt på en annen, bruker vi **kvotientregelen**. Her er re
 
     Nevneren kan ikke være null, så \(x\ne2\).
 
-## Slik bruker du \(u\) og \(v\)
-
-Bruk samme framgangsmåte hver gang. Det gjør det enklere å holde styr på funksjonene og de deriverte.
-
-<figure markdown>
-<svg viewBox="0 0 360 300" role="img" aria-label="Framgangsmåte for produkt- og kvotientregelen: finn u og v, finn u-prime og v-prime, sett inn i riktig regel" xmlns="http://www.w3.org/2000/svg">
-  <rect x="25" y="14" width="310" height="62" rx="10" fill="#dff3e5" stroke="#328653" stroke-width="1.5"/>
-  <text x="180" y="38" text-anchor="middle" font-size="14" font-weight="600" fill="#17663a">1. Finn funksjonene</text>
-  <text x="180" y="59" text-anchor="middle" font-size="17" fill="#17663a">u = første del, v = andre del</text>
-  <path d="M180 77 V101" fill="none" stroke="currentColor" stroke-width="1.8"/>
-  <path d="M174 95 L180 103 L186 95" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="25" y="107" width="310" height="62" rx="10" fill="#e2ecff" stroke="#477bd1" stroke-width="1.5"/>
-  <text x="180" y="131" text-anchor="middle" font-size="14" font-weight="600" fill="#174ea6">2. Deriver hver for seg</text>
-  <text x="180" y="152" text-anchor="middle" font-size="17" fill="#174ea6">finn u′ og v′</text>
-  <path d="M180 170 V194" fill="none" stroke="currentColor" stroke-width="1.8"/>
-  <path d="M174 188 L180 196 L186 188" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="25" y="200" width="310" height="78" rx="10" fill="#f1e4ff" stroke="#8b5cc7" stroke-width="1.5"/>
-  <text x="180" y="224" text-anchor="middle" font-size="14" font-weight="600" fill="#5b2c91">3. Velg riktig regel</text>
-  <text x="180" y="247" text-anchor="middle" font-size="14" fill="#5b2c91">Produkt: u′v + uv′</text>
-  <text x="180" y="266" text-anchor="middle" font-size="14" fill="#5b2c91">Kvotient: (u′v − uv′) / v²</text>
-</svg>
-<figcaption>Finn først funksjonene og de deriverte. Velg deretter produktregelen eller kvotientregelen.</figcaption>
-</figure>
 
 ## Oppgaver
 
@@ -170,11 +135,11 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 !!! question "Oppgave 3.4.3 – Kvotientregelen"
 
-    Deriver \(h(x)=\frac{x+1}{x+2}\).
+    Deriver \(h(x)=\dfrac{x+1}{x+2}\).
 
 !!! question "Oppgave 3.4.4 – Kvotientregelen med en potens"
 
-    Deriver \(p(x)=\frac{x^2+1}{x}\), der \(x\ne0\).
+    Deriver \(p(x)=\dfrac{x^2+1}{x}\), der \(x\ne0\).
 
 !!! question "Oppgave 3.4.5 – Velg riktig regel"
 
