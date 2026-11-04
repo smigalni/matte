@@ -28,7 +28,6 @@ nav = [
       { "3.8 Programmering" = "felles/derivasjon/programmering.md" },
       { "3.9 Blandede oppgaver" = "r1/derivasjon/blandede-oppgaver.md" },
       { "3.10 Kapittelprøve" = "r1/derivasjon/kapittelprove.md" },
-      { "Blandede oppgaver" = "r1/derivasjon/blandede-oppgaver.md" },
     ] },
     { "Programmering" = [
       { "Oversikt og læringsløp" = "felles/programmering/index.md" },
