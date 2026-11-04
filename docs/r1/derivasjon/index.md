@@ -2,19 +2,6 @@
 
 Kapittel 3 handler om vekstfart, tangenter og derivasjon. Delkapitlene **3.1–3.4** og relevante programmeringsoppgaver deles med S1 og vedlikeholdes i én felles kilde. Fra 3.5 fortsetter R1-sporet med egne fordypninger.
 
-## Læringsløp
-
-1. **3.1 Vekstfart og tangent** – gjennomsnittlig og momentan vekstfart, tangentens stigningstall og tangentlikning.
-2. **3.2 Vanlige derivasjonsregler** – deriver polynomer, eksponential- og logaritmefunksjoner.
-3. **3.3 Kjerneregelen** – deriver sammensatte funksjoner.
-4. **3.4 Produktregelen og kvotientregelen** – deriver produkter og brøker.
-5. **3.5 Deriverbarhet** – undersøk kontinuitet og ensidige deriverte.
-6. **3.6 Definisjonen av den deriverte** – forstå grenseverdien bak derivasjon.
-7. **3.7 Numerisk derivasjon** – tilnærm den deriverte og vurder feilkilder.
-8. **3.8 Programmering** – utforsk deriverte numerisk og modeller bevegelse.
-9. **3.9 Blandede oppgaver** – tren på å velge metode på tvers av delkapitlene.
-10. **3.10 Kapittelprøve** – krevende oppgaver i Del 1 og Del 2.
-
 ## Felles innhold med S1
 
 - [3.1 Vekstfart og tangent](../../felles/vekstfart-og-tangent.md)
