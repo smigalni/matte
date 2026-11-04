@@ -1,335 +1,560 @@
-# Blandede oppgaver – kapittel 3
+# 3.9 Blandede oppgaver
 
-Her får du arbeide med temaene i kapittel 3 på tvers av delkapitlene. Oppgavene er inspirert av oppgavetyper i løsningsforslaget til R1 kapittel 3, men er formulert på nytt med andre funksjoner, tall og situasjoner.
+Her må du selv velge hvilke metoder og derivasjonsregler du skal bruke. Oppgavene kombinerer flere temaer fra kapittel 3 og er mer krevende enn oppgavene etter hvert delkapittel.
 
-Oppgavene blander temaene fra hele kapittel 3. Velg selv hvilken regel eller metode du skal bruke. Oppgavene varierer i omfang, men er samlet her for å trene på å kjenne igjen riktig framgangsmåte.
+Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevant.
 
-**Tips:** Skriv mellomregning, og oppgi hvilken regel du bruker. Når du forenkler et uttrykk, kontroller at du ikke mister faktorer eller fortegn.
+## Middels
 
+!!! question "Oppgave 3.9.1 – Produktregel, kjerneregel og tangent"
 
-!!! question "Oppgave 3.1 – Gjennomsnittlig vekstfart"
-    Vi har funksjonen \(f(x)=x^2-3\).
-
-    a) Finn \(f(1)\) og \(f(4)\).
-
-    b) Finn den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=4\).
-
-    c) Forklar forskjellen på den gjennomsnittlige vekstfarten i intervallet og den momentane vekstfarten i ett punkt.
-
-!!! question "Oppgave 3.2 – Deriver enkle funksjoner"
-    Deriver funksjonene.
-
-    a) \(f(x)=5x^4\)
-
-    b) \(g(x)=3x^2-4x+7\)
-
-    c) \(h(x)=\frac{2}{x}\)
-
-    d) \(p(x)=4e^x-3\ln x\)
-
-!!! question "Oppgave 3.3 – Deriverte i et bestemt punkt"
-    Funksjonen er \(f(x)=x^3-2x^2+1\).
-
-    a) Finn \(f'(x)\).
-
-    b) Finn \(f'(2)\).
-
-    c) Hva forteller tallet \(f'(2)\) geometrisk?
-
-!!! question "Oppgave 3.4 – Tangentens likning"
-    Grafen til en funksjon går gjennom punktet \(P=(2,5)\), og tangenten i punktet har stigningstall \(3\).
-
-    a) Bruk ettpunktsformelen til å finne tangentens likning.
-
-    b) Skriv svaret på formen \(y=ax+b\).
-
-!!! question "Oppgave 3.5 – Kjerneregelen"
-    Deriver funksjonene.
-
-    a) \(f(x)=(2x+1)^5\)
-
-    b) \(g(x)=e^{3x}\)
-
-    c) \(h(x)=\ln(4x-2)\)
-
-
-!!! question "Oppgave 3.6 – Flere derivasjonsregler"
-    Deriver og forenkle så langt det er naturlig.
-
-    a) \(f(x)=x^2e^x\)
-
-    b) \(g(x)=(3x-1)\ln x\)
-
-    c) \(h(x)=\frac{x^2+1}{x}\)
-
-    d) \(p(x)=\frac{e^{2x}}{x+1}\)
-
-!!! question "Oppgave 3.7 – Finn tangent til en funksjon"
-    Vi har funksjonen \(f(x)=x^2-4x+6\).
-
-    a) Finn den deriverte \(f'(x)\).
-
-    b) Finn stigningstallet til tangenten når \(x=3\).
-
-    c) Finn punktet på grafen når \(x=3\).
-
-    d) Bestem tangentens likning på formen \(y=ax+b\).
-
-!!! question "Oppgave 3.8 – Undersøk deriverbarhet"
     Vi har funksjonen
+
+    \[
+    f(x)=(x^2+1)e^{-x}.
+    \]
+
+    a) Finn \(f'(x)\), og faktoriser uttrykket så langt det er mulig.
+
+    b) Bestem tangentens likning når \(x=1\).
+
+    c) Forklar hvorfor tangenten i dette punktet er horisontal.
+
+!!! question "Oppgave 3.9.2 – Brøkregel og ekstremalpunkter"
+
+    Vi har funksjonen
+
+    \[
+    g(x)=\frac{(\ln x)^2}{x},\qquad x>0.
+    \]
+
+    a) Finn \(g'(x)\).
+
+    b) Bestem alle punktene der tangenten er horisontal.
+
+    c) Undersøk fortegnet til \(g'(x)\), og avgjør hvor funksjonen vokser og avtar.
+
+!!! question "Oppgave 3.9.3 – Finn funksjonen fra opplysninger"
+
+    En tredjegradsfunksjon har formen
+
+    \[
+    f(x)=ax^3+bx^2+cx+d.
+    \]
+
+    Vi vet at
+
+    - grafen går gjennom \((0,2)\) og \((1,3)\)
+    - tangentens stigningstall ved \(x=0\) er \(-1\)
+    - tangentens stigningstall ved \(x=1\) er \(4\).
+
+    Bestem \(a\), \(b\), \(c\) og \(d\), og skriv funksjonsuttrykket.
+
+!!! question "Oppgave 3.9.4 – Gjennomsnittlig og momentan vekstfart"
+
+    En funksjon er gitt ved
+
+    \[
+    f(x)=x^3-3x^2+2.
+    \]
+
+    a) Finn den gjennomsnittlige vekstfarten fra \(x=0\) til \(x=3\).
+
+    b) Finn den momentane vekstfarten ved \(x=1\).
+
+    c) Finnes det et punkt i intervallet \(0<x<3\) der den momentane vekstfarten er lik den gjennomsnittlige? Begrunn svaret.
+
+!!! question "Oppgave 3.9.5 – Tangent parallell med en linje"
+
+    Vi har funksjonen
+
+    \[
+    h(x)=\frac{x^2+1}{x+1},\qquad x\ne-1.
+    \]
+
+    En tangent til grafen skal være parallell med linja \(y=2x-5\).
+
+    a) Bestem \(h'(x)\).
+
+    b) Finn alle punktene der tangenten har stigningstall \(2\).
+
+    c) Bestem tangentlikningen i hvert av punktene.
+
+## Vanskelig
+
+!!! question "Oppgave 3.9.6 – Stasjonære punkter og fortegn"
+
+    Vi har funksjonen
+
+    \[
+    f(x)=(x^2-4)e^x.
+    \]
+
+    a) Finn \(f'(x)\), og faktoriser uttrykket.
+
+    b) Bestem alle stasjonære punkter eksakt.
+
+    c) Lag et fortegnsskjema for \(f'(x)\), og avgjør hvilke stasjonære punkter som er topp- eller bunnpunkter.
+
+!!! question "Oppgave 3.9.7 – Kontinuitet og deriverbarhet med parameter"
+
+    Funksjonen er gitt ved
 
     \[
     f(x)=
     \begin{cases}
-    x+2, & x<1,\\
-    x^2+2, & x\geq 1.
+    ax+b, & x<2,\\
+    x^2+1, & x\geq2.
     \end{cases}
     \]
 
-    a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
+    a) Bestem en sammenheng mellom \(a\) og \(b\) som gjør funksjonen kontinuerlig i \(x=2\).
 
-    b) Finn stigningstallet fra venstre og fra høyre ved \(x=1\).
+    b) Bestem \(a\) og \(b\) slik at funksjonen også er deriverbar i \(x=2\).
 
-    c) Avgjør om funksjonen er deriverbar i \(x=1\). Begrunn svaret.
+    c) Skriv funksjonen med de bestemte verdiene, og forklar hvorfor både kontinuitet og deriverbarhet er oppfylt.
 
-!!! question "Oppgave 3.9 – Finn og forklar feilen"
-    En elev skal derivere \(f(x)=e^{2x}(x-1)\), og skriver
+!!! question "Oppgave 3.9.8 – Tangent og skjæringspunkter"
 
-    \[
-    f'(x)=e^{2x}+e^{2x}=2e^{2x}.
-    \]
-
-    a) Hvilke derivasjonsregler må brukes?
-
-    b) Forklar hva eleven har gjort feil.
-
-    c) Finn riktig uttrykk for \(f'(x)\).
-
-!!! question "Oppgave 3.10 – Bestem en parameter"
-    Funksjonen er \(f(x)=x^3+kx\).
-
-    Bestem \(k\) slik at tangenten til grafen i \(x=1\) har stigningstall \(5\).
-
-!!! question "Oppgave 3.11 – Derivasjon av en brøk"
     Vi har funksjonen
 
     \[
-    f(x)=\frac{x^2+3}{x-1},\qquad x\ne 1.
+    f(x)=x^3-3x^2+2x+1.
     \]
 
-    a) Bruk kvotientregelen til å finne \(f'(x)\).
+    a) Finn tangentlikningen når \(x=1\).
 
-    b) Skriv telleren i den deriverte så enkelt som mulig.
+    b) Bestem alle skjæringspunktene mellom tangenten og grafen til \(f\).
 
-    c) Finn \(f'(2)\).
+    c) Forklar hvorfor ett av skjæringspunktene må være tangeringspunktet.
 
+!!! question "Oppgave 3.9.9 – Bevegelse og ekstremalverdier"
 
-!!! question "Oppgave 3.12 – Produkt eller kjerneregel?"
-    Vi har funksjonen \(f(x)=x^2e^{-2x}\).
+    Posisjonen til en gjenstand er gitt ved
 
-    a) Forklar hvorfor produktregelen må brukes.
+    \[
+    s(t)=t^3-6t^2+9t+2,\qquad 0\leq t\leq5,
+    \]
 
-    b) Deriver funksjonen. Husk også å derivere eksponenten i \(e^{-2x}\).
+    der \(s\) måles i meter og \(t\) i sekunder.
 
-    c) Faktoriser svaret slik at det blir tydelig hvor den deriverte er lik null.
+    a) Finn fartsfunksjonen \(v(t)\).
 
-!!! question "Oppgave 3.13 – Finn en funksjon ut fra informasjon"
-    En andregradsfunksjon har formen \(f(x)=ax^2+bx+c\). Grafen går gjennom punktet \((0,2)\), og tangentens stigningstall ved \(x=1\) er \(4\). Dessuten er \(f(1)=5\).
+    b) Bestem når gjenstanden står stille.
 
-    a) Bruk opplysningene til å lage likninger for \(a\), \(b\) og \(c\).
+    c) Undersøk når gjenstanden beveger seg i positiv og negativ retning.
 
-    b) Bestem funksjonen.
+    d) Finn største og minste posisjon i tidsintervallet. Husk å undersøke både endepunktene og de stasjonære punktene.
 
-    c) Kontroller at funksjonen oppfyller alle opplysningene.
+!!! question "Oppgave 3.9.10 – Finn og rett feil i en derivasjon"
 
-!!! question "Oppgave 3.14 – Deriverbarhet og parameter"
+    En elev skal derivere
+
+    \[
+    f(x)=\frac{e^{2x}}{x-1}
+    \]
+
+    og skriver
+
+    \[
+    f'(x)=\frac{2e^{2x}}{1}.
+    \]
+
+    a) Forklar hvilke regler eleven må bruke.
+
+    b) Pek på minst to feil i elevens framgangsmåte.
+
+    c) Finn riktig uttrykk for \(f'(x)\), og bestem \(f'(0)\).
+
+## Svært vanskelig
+
+!!! question "Oppgave 3.9.11 – Bestem parametere og undersøk grafen"
+
+    En funksjon er gitt ved
+
+    \[
+    f(x)=(x^2+a)e^{bx}.
+    \]
+
+    Grafen går gjennom punktet \((0,3)\), og tangenten i dette punktet har stigningstall \(2\).
+
+    a) Bestem \(a\) og \(b\).
+
+    b) Finn \(f'(x)\), og faktoriser uttrykket.
+
+    c) Bestem eventuelle stasjonære punkter eksakt.
+
+    d) Bruk et digitalt verktøy til å kontrollere resultatene grafisk. Den analytiske utregningen skal begrunne svaret.
+
+!!! question "Oppgave 3.9.12 – Derivasjon fra definisjonen og tangent"
+
     Vi har funksjonen
 
     \[
-    g(x)=
-    \begin{cases}
-    kx+1, & x<2,\\
-    x^2-1, & x\geq 2.
-    \end{cases}
+    f(x)=x^3-2x^2+x.
     \]
 
-    a) Bestem \(k\) slik at funksjonen er kontinuerlig i \(x=2\).
-
-    b) Bestem \(k\) slik at stigningstallene fra venstre og høyre er like ved \(x=2\).
-
-    c) Finnes det en verdi av \(k\) som gjør funksjonen deriverbar i \(x=2\)? Begrunn.
-
-!!! question "Oppgave 3.15 – Sammenlign to metoder"
-    Vi har funksjonen \(f(x)=x^2+2x\).
-
-    a) Finn \(f'(x)\) ved å bruke de vanlige derivasjonsreglene.
-
-    b) Bruk definisjonen
+    a) Bruk definisjonen av den deriverte til å vise at
 
     \[
-    f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+    f'(x)=3x^2-4x+1.
     \]
 
-    til å utlede den deriverte.
+    b) Bestem tangentlikningen når \(x=2\).
 
-    c) Sammenlign metodene. Hvorfor gir de samme svar?
+    c) Finn alle skjæringspunktene mellom tangenten og grafen til funksjonen.
 
-!!! question "Oppgave 3.16 – Modellering og tolkning"
-    Høyden til en ball over bakken er modellert ved
+!!! question "Oppgave 3.9.13 – Tolk informasjon om den deriverte"
+
+    Den deriverte til en funksjon \(f\) er en andregradsfunksjon. Vi vet at
 
     \[
-    h(t)=-5t^2+20t+1,
+    f'(-1)=0,\qquad f'(3)=0,\qquad f'(0)=-3.
     \]
 
-    der \(h\) måles i meter og \(t\) i sekunder.
+    a) Bestem uttrykket for \(f'(x)\).
 
-    a) Finn den momentane vekstfarten \(h'(t)\).
+    b) Undersøk hvor \(f\) vokser og avtar.
 
-    b) Finn vekstfarten etter \(1\) sekund.
+    c) Avgjør om \(f\) har toppunkt eller bunnpunkt ved \(x=-1\) og \(x=3\).
 
-    c) Når er vekstfarten lik null?
+    d) Kan du bestemme \(f(x)\) entydig ut fra opplysningene? Begrunn svaret, og beskriv alle funksjoner som passer.
 
-    d) Forklar hva tidspunktet i c betyr for ballens bevegelse, og finn høyden da.
+!!! question "Oppgave 3.9.14 – Numerisk og eksakt derivasjon"
+
+    Vi har funksjonen
+
+    \[
+    f(x)=\ln x.
+    \]
+
+    a) Finn den eksakte verdien av \(f'(2)\).
+
+    b) Bruk framoverdifferansen
+
+    \[
+    \frac{f(2+h)-f(2)}{h}
+    \]
+
+    med \(h=0,1\), \(h=0,01\) og \(h=0,001\).
+
+    c) Bruk den symmetriske differansekvotienten med de samme \(h\)-verdiene.
+
+    d) Sammenlign resultatene. Hvilken metode gir best tilnærming her?
+
+    e) Forklar hvorfor en svært liten \(h\) ikke alltid gir et mer nøyaktig numerisk svar.
+
+!!! question "Oppgave 3.9.15 – Kontroller produktregelen numerisk"
+
+    Vi har
+
+    \[
+    u(x)=x^2-3x,\qquad
+    v(x)=\sqrt{\ln x+x},\qquad x>0.
+    \]
+
+    La \(f(x)=u(x)v(x)\).
+
+    a) Finn \(u'(x)\) og \(v'(x)\) analytisk.
+
+    b) Bruk produktregelen til å finne \(f'(x)\).
+
+    c) Bruk et programmeringsverktøy til å tilnærme \(u'(7)\), \(v'(7)\) og \(f'(7)\) numerisk med symmetrisk differansekvotient.
+
+    d) Sammenlign den numeriske verdien av \(f'(7)\) med \(u'(7)v(7)+u(7)v'(7)\). Forklar hvorfor verdiene ikke nødvendigvis blir helt identiske.
 
 ---
 
 ## Fasit
 
-Prøv oppgavene først. Åpne deretter fasiten og sammenlign framgangsmåten din.
+Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan små avvik skyldes avrunding.
 
-??? note "Fasit – oppgave 3.1"
-    a) \(f(1)=-2\) og \(f(4)=13\).
+??? note "Fasit – oppgave 3.9.1"
 
-    b) \[
-    \frac{f(4)-f(1)}{4-1}=\frac{13-(-2)}{3}=5.
-    \]
-
-    c) Gjennomsnittlig vekstfart gjelder et helt intervall; momentan vekstfart gjelder ett bestemt punkt og er stigningstallet til tangenten.
-
-??? note "Fasit – oppgave 3.2"
-    a) \(f'(x)=20x^3\).
-
-    b) \(g'(x)=6x-4\).
-
-    c) \(h(x)=2x^{-1}\), så \(h'(x)=-2x^{-2}=-\frac{2}{x^2}\).
-
-    d) \(p'(x)=4e^x-\frac{3}{x}\), for \(x>0\).
-
-??? note "Fasit – oppgave 3.3"
-    a) \(f'(x)=3x^2-4x\).
-
-    b) \(f'(2)=12-8=4\).
-
-    c) Tangentens stigningstall ved \(x=2\) er 4.
-
-??? note "Fasit – oppgave 3.4"
-    \[
-    y-5=3(x-2)\quad\Rightarrow\quad \boxed{y=3x-1}.
-    \]
-
-??? note "Fasit – oppgave 3.5"
-    a) \(f'(x)=10(2x+1)^4\).
-
-    b) \(g'(x)=3e^{3x}\).
-
-    c) \(h'(x)=\frac{4}{4x-2}\), for \(x>\frac12\).
-
-??? note "Fasit – oppgave 3.6"
-    a) \(f'(x)=2xe^x+x^2e^x=e^x(x^2+2x)\).
-
-    b) \(g'(x)=3\ln x+\frac{3x-1}{x}=3\ln x+3-\frac1x\), for \(x>0\).
-
-    c) \(h(x)=x+\frac1x\), så \(h'(x)=1-\frac1{x^2}\).
-
-    d) \[
-    p'(x)=\frac{2e^{2x}(x+1)-e^{2x}}{(x+1)^2}
-    =\frac{e^{2x}(2x+1)}{(x+1)^2}.
-    \]
-
-??? note "Fasit – oppgave 3.7"
-    a) \(f'(x)=2x-4\).
-
-    b) \(f'(3)=2\).
-
-    c) \(f(3)=9-12+6=3\), altså \((3,3)\).
-
-    d) \(y-3=2(x-3)\), altså \(\boxed{y=2x-3}\).
-
-??? note "Fasit – oppgave 3.8"
-    a) Fra venstre er grenseverdien \(1+2=3\). Fra høyre er funksjonsverdien \(1^2+2=3\). Funksjonen er kontinuerlig.
-
-    b) Fra venstre er stigningstallet 1. Fra høyre er den deriverte av \(x^2+2\) lik \(2x\), som gir 2 ved \(x=1\).
-
-    c) Funksjonen er ikke deriverbar fordi stigningstallene fra venstre og høyre er ulike.
-
-??? note "Fasit – oppgave 3.9"
-    a) Produktregelen og kjerneregelen.
-
-    b) Eleven har ikke derivert faktoren \(x-1\) korrekt i produktregelen: den deriverte av \(x-1\) er 1, men den andre termen må fortsatt multipliseres med \(x-1\). Dessuten er \((e^{2x})'=2e^{2x}\).
-
-    c) \[
-    f'(x)=2e^{2x}(x-1)+e^{2x}
-    =e^{2x}(2x-1).
-    \]
-
-??? note "Fasit – oppgave 3.10"
-    \(f'(x)=3x^2+k\). Kravet \(f'(1)=5\) gir \(3+k=5\), altså \(\boxed{k=2}\).
-
-??? note "Fasit – oppgave 3.11"
-    a) \[
-    f'(x)=\frac{2x(x-1)-(x^2+3)}{(x-1)^2}.
-    \]
-
-    b) Telleren blir \(2x^2-2x-x^2-3=x^2-2x-3\). Dermed
+    a)
 
     \[
-    f'(x)=\frac{x^2-2x-3}{(x-1)^2}.
-    \]
-
-    c) \(f'(2)=\frac{4-4-3}{1}=-3\).
-
-??? note "Fasit – oppgave 3.12"
-    a) Funksjonen er et produkt av \(x^2\) og \(e^{-2x}\).
-
-    b) \[
-    f'(x)=2xe^{-2x}+x^2e^{-2x}(-2)
-    =e^{-2x}(2x-2x^2).
-    \]
-
-    c) \(f'(x)=2xe^{-2x}(1-x)\). Siden \(e^{-2x}\) aldri er null, er den deriverte null når \(x=0\) eller \(x=1\).
-
-??? note "Fasit – oppgave 3.13"
-    a) \(f(0)=2\) gir \(c=2\). Videre er \(f(1)=a+b+c=5\), så \(a+b=3\). Den deriverte er \(f'(x)=2ax+b\), og \(f'(1)=4\) gir \(2a+b=4\).
-
-    b) Ved å trekke likningene fra hverandre får vi \(a=1\), dermed \(b=2\) og \(c=2\). Altså \(\boxed{f(x)=x^2+2x+2}\).
-
-    c) \(f(0)=2\), \(f(1)=5\), og \(f'(1)=2+2=4\).
-
-??? note "Fasit – oppgave 3.14"
-    a) Kontinuitet krever \(2k+1=2^2-1=3\), altså \(k=1\).
-
-    b) Stigningstallet fra venstre er \(k\), mens stigningstallet fra høyre er \(2x=4\) ved \(x=2\). Dermed krever like stigningstall \(k=4\).
-
-    c) Nei. Kontinuitet krever \(k=1\), mens like stigningstall krever \(k=4\). Ingen verdi oppfyller begge kravene.
-
-??? note "Fasit – oppgave 3.15"
-    a) \(f'(x)=2x+2\).
-
-    b) \[
     \begin{aligned}
-    f'(x)&=\lim_{h\to0}\frac{(x+h)^2+2(x+h)-(x^2+2x)}{h}\\
-    &=\lim_{h\to0}\frac{2xh+h^2+2h}{h}\\
-    &=\lim_{h\to0}(2x+h+2)=2x+2.
+    f'(x)
+    &=2xe^{-x}-(x^2+1)e^{-x}\\
+    &=\underline{\underline{e^{-x}(-x^2+2x-1)}}.
     \end{aligned}
     \]
 
-    c) Begge metodene beskriver den samme grenseverdien. Derivasjonsreglene gjør beregningen kortere, mens definisjonen viser hvorfor resultatet gjelder.
+    b) \(f(1)=2/e\) og \(f'(1)=0\). Tangenten er
 
-??? note "Fasit – oppgave 3.16"
-    a) \(h'(t)=-10t+20\).
+    \[
+    \underline{\underline{y=\frac2e}}.
+    \]
 
-    b) \(h'(1)=10\) m/s.
+    c) Stigningstallet er \(f'(1)=0\), så tangenten er horisontal.
 
-    c) \(-10t+20=0\) gir \(t=2\) sekunder.
+??? note "Fasit – oppgave 3.9.2"
 
-    d) Ballen er på sitt høyeste punkt når den momentane vertikale vekstfarten er null. Høyden er \(h(2)=-20+40+1=21\) meter.
+    a)
+
+    \[
+    \begin{aligned}
+    g'(x)
+    &=\frac{\frac{2\ln x}{x}\cdot x-(\ln x)^2}{x^2}\\
+    &=\underline{\underline{\frac{\ln x(2-\ln x)}{x^2}}}.
+    \end{aligned}
+    \]
+
+    b) \(g'(x)=0\) gir \(\ln x=0\) eller \(\ln x=2\). Dermed er \(x=1\) eller \(x=e^2\).
+
+    c) Den deriverte er negativ for \(0<x<1\), positiv for \(1<x<e^2\) og negativ for \(x>e^2\). Funksjonen avtar, vokser og avtar i disse intervallene. Det er bunnpunkt ved \(x=1\) og toppunkt ved \(x=e^2\).
+
+??? note "Fasit – oppgave 3.9.3"
+
+    \(f(0)=2\) gir \(d=2\), og \(f'(0)=-1\) gir \(c=-1\).
+
+    Videre gir \(f(1)=3\) likningen \(a+b=2\). Siden \(f'(x)=3ax^2+2bx+c\), gir \(f'(1)=4\) likningen \(3a+2b=5\).
+
+    Løsningen er \(a=\frac32\) og \(b=\frac12\).
+
+    \[
+    \underline{\underline{f(x)=\frac32x^3+\frac12x^2-x+2}}
+    \]
+
+??? note "Fasit – oppgave 3.9.4"
+
+    a) \(f(0)=2\) og \(f(3)=2\), så den gjennomsnittlige vekstfarten er \(0\).
+
+    b)
+
+    \[
+    f'(x)=3x^2-6x,\qquad
+    \underline{\underline{f'(1)=-3}}.
+    \]
+
+    c) Vi løser \(3x^2-6x=0\). Da får vi \(x=0\) eller \(x=2\). I intervallet \(0<x<3\) er \(x=2\) løsningen. Der er momentan vekstfart lik den gjennomsnittlige vekstfarten.
+
+??? note "Fasit – oppgave 3.9.5"
+
+    a)
+
+    \[
+    h'(x)=\frac{2x(x+1)-(x^2+1)}{(x+1)^2}
+    =\frac{x^2+2x-1}{(x+1)^2}.
+    \]
+
+    b) Vi setter \(h'(x)=2\):
+
+    \[
+    x^2+2x-1=2(x+1)^2
+    \]
+
+    \[
+    x^2+2x+3=0.
+    \]
+
+    Diskriminanten er \(4-12=-8\). Likningen har ingen reelle løsninger. Det finnes derfor ingen tangent som er parallell med linja.
+
+    c) Ingen slike tangentlikninger finnes.
+
+??? note "Fasit – oppgave 3.9.6"
+
+    a)
+
+    \[
+    f'(x)=2xe^x+(x^2-4)e^x
+    =\underline{\underline{e^x(x^2+2x-4)}}.
+    \]
+
+    b) Siden \(e^x\ne0\), løser vi \(x^2+2x-4=0\):
+
+    \[
+    \underline{\underline{x=-1\pm\sqrt5}}.
+    \]
+
+    c) Parabeluttrykket er positivt utenfor røttene og negativt mellom dem. Funksjonen vokser før den minste roten, avtar mellom røttene og vokser etter den største roten. Det er derfor toppunkt ved \(x=-1-\sqrt5\) og bunnpunkt ved \(x=-1+\sqrt5\).
+
+??? note "Fasit – oppgave 3.9.7"
+
+    a) Kontinuitet krever
+
+    \[
+    2a+b=5.
+    \]
+
+    b) Deriverbarhet krever i tillegg at stigningstallene er like. Venstre stigningstall er \(a\), mens høyre stigningstall er \(2x=4\) ved \(x=2\). Dermed er \(a=4\). Da gir kontinuitetskravet \(8+b=5\), altså \(b=-3\).
+
+    \[
+    \underline{\underline{a=4,\qquad b=-3}}
+    \]
+
+    c) Funksjonen blir \(f(x)=4x-3\) for \(x<2\) og \(f(x)=x^2+1\) for \(x\geq2\). Begge uttrykkene gir verdien \(5\) ved \(x=2\), og begge har stigningstall \(4\) der.
+
+??? note "Fasit – oppgave 3.9.8"
+
+    a) \(f'(x)=3x^2-6x+2\). Dermed er \(f'(1)=-1\) og \(f(1)=1\).
+
+    \[
+    \underline{\underline{y-1=-(x-1)\quad\Rightarrow\quad y=-x+2}}
+    \]
+
+    b) Vi setter \(f(x)=-x+2\):
+
+    \[
+    x^3-3x^2+2x+1=-x+2
+    \]
+
+    \[
+    x^3-3x^2+3x-1=0
+    \]
+
+    \[
+    (x-1)^3=0.
+    \]
+
+    c) Det eneste skjæringspunktet er \((1,1)\). Grafen og tangenten har her et skjæringspunkt med trippelrot.
+
+??? note "Fasit – oppgave 3.9.9"
+
+    a)
+
+    \[
+    \underline{\underline{v(t)=3t^2-12t+9=3(t-1)(t-3)}}.
+    \]
+
+    b) Gjenstanden står stille ved \(t=1\) og \(t=3\).
+
+    c) \(v(t)>0\) for \(0\leq t<1\) og \(3<t\leq5\). \(v(t)<0\) for \(1<t<3\).
+
+    d) Vi undersøker endepunktene og de stasjonære punktene:
+
+    \[
+    s(0)=2,\quad s(1)=6,\quad s(3)=2,\quad s(5)=22.
+    \]
+
+    Globalt minimum er \(2\) meter, ved \(t=0\) og \(t=3\). Globalt maksimum er \(22\) meter, ved \(t=5\).
+
+??? note "Fasit – oppgave 3.9.10"
+
+    a) Her må vi bruke kvotientregelen og kjerneregelen for \(e^{2x}\).
+
+    b) Eleven har ikke derivert nevneren riktig, og har ikke brukt kvotientregelen. Nevneren skal dessuten kvadreres.
+
+    c)
+
+    \[
+    f'(x)=\frac{2e^{2x}(x-1)-e^{2x}}{(x-1)^2}
+    =\frac{e^{2x}(2x-3)}{(x-1)^2}.
+    \]
+
+    \[
+    \underline{\underline{f'(0)=-3e^0=-3}}
+    \]
+
+??? note "Fasit – oppgave 3.9.11"
+
+    a) \(f(0)=a=3\). Videre er
+
+    \[
+    f'(x)=e^{bx}\bigl(2x+b(x^2+a)\bigr).
+    \]
+
+    \(f'(0)=ab=2\), så \(3b=2\) og \(b=\frac23\).
+
+    \[
+    \underline{\underline{a=3,\qquad b=\frac23}}
+    \]
+
+    b)
+
+    \[
+    f'(x)=e^{\frac23x}\left(2x+\frac23(x^2+3)\right)
+    =\frac23e^{\frac23x}(x^2+3x+3).
+    \]
+
+    c) Andregradsuttrykket har diskriminant \(9-12=-3\), så det har ingen reelle nullpunkter. Siden eksponentialfaktoren alltid er positiv, har funksjonen ingen stasjonære punkter.
+
+??? note "Fasit – oppgave 3.9.12"
+
+    a)
+
+    \[
+    \begin{aligned}
+    f'(x)
+    &=\lim_{h\to0}\frac{(x+h)^3-2(x+h)^2+(x+h)-(x^3-2x^2+x)}h\\
+    &=\lim_{h\to0}\frac{3x^2h+3xh^2+h^3-4xh-2h^2+h}{h}\\
+    &=\lim_{h\to0}(3x^2+3xh+h^2-4x-2h+1)\\
+    &=\underline{\underline{3x^2-4x+1}}.
+    \end{aligned}
+    \]
+
+    b) \(f'(2)=12-8+1=5\), og \(f(2)=8-8+2=2\).
+
+    \[
+    \underline{\underline{y-2=5(x-2)\quad\Rightarrow\quad y=5x-8}}
+    \]
+
+    c) Vi setter \(f(x)=5x-8\):
+
+    \[
+    x^3-2x^2+x=5x-8
+    \]
+
+    \[
+    x^3-2x^2-4x+8=0
+    =(x-2)^2(x+2).
+    \]
+
+    Skjæringspunktene er \((2,2)\) og \((-2,-18)\).
+
+??? note "Fasit – oppgave 3.9.13"
+
+    a) Siden nullpunktene er \(-1\) og \(3\), har vi \(f'(x)=k(x+1)(x-3)\). Bruker vi \(f'(0)=-3\), får vi \(-3k=-3\), altså \(k=1\).
+
+    \[
+    \underline{\underline{f'(x)=x^2-2x-3}}
+    \]
+
+    b) Den deriverte er positiv for \(x<-1\), negativ for \(-1<x<3\) og positiv for \(x>3\). Funksjonen vokser, avtar og vokser.
+
+    c) Det er toppunkt ved \(x=-1\) og bunnpunkt ved \(x=3\).
+
+    d) Nei. Alle funksjoner på formen
+
+    \[
+    \underline{\underline{f(x)=\frac13x^3-x^2-3x+C}}
+    \]
+
+    passer, der \(C\) er en vilkårlig konstant.
+
+??? note "Fasit – oppgave 3.9.14"
+
+    a)
+
+    \[
+    \underline{\underline{f'(2)=\frac12}}.
+    \]
+
+    b) Framoverdifferansen er \(\frac{\ln(2+h)-\ln2}{h}\).
+
+    c) Den symmetriske differansekvotienten er \(\frac{\ln(2+h)-\ln(2-h)}{2h}\).
+
+    d) Begge metodene nærmer seg \(0,5\). Den symmetriske metoden gir vanligvis en bedre tilnærming for samme \(h\).
+
+    e) Når \(h\) blir svært liten, trekkes nesten like tall fra hverandre. Avrundingsfeil kan da bli betydelige i forhold til differansen.
+
+??? note "Fasit – oppgave 3.9.15"
+
+    a)
+
+    \[
+    u'(x)=2x-3,\qquad
+    v'(x)=\frac{1}{2\sqrt{\ln x+x}}\left(\frac1x+1\right).
+    \]
+
+    b)
+
+    \[
+    f'(x)=(2x-3)\sqrt{\ln x+x}
+    +(x^2-3x)\frac{1+\frac1x}{2\sqrt{\ln x+x}}.
+    \]
+
+    c) Bruk for eksempel symmetrisk differansekvotient med en liten valgt \(h\) for hver funksjon.
+
+    d) Begge uttrykkene skal gi omtrent samme verdi. Små avvik skyldes numerisk tilnærming og avrunding.
