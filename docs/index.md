@@ -9,7 +9,7 @@
 ## Velg faget ditt
 
 <div class="course-grid">
-  <a class="course-card course-r1" href="r1/derivasjon/index.md">
+  <a class="course-card course-r1" href="felles/vekstfart-og-tangent.md">
     <span class="course-tag">R1 · REALFAG</span>
     <h3>R1 – Matematikk</h3>
     <p>Funksjoner, derivasjon og videre mot mer avansert matematikk.</p>
@@ -65,7 +65,7 @@ Fargene skal alltid stå sammen med tekst, slik at nivåene er tydelige også ut
     <span class="course-tag">KAPITTEL 3.1</span>
     <h3>Vekstfart og tangent</h3>
     <p>Lær forskjellen på gjennomsnittlig og momentan vekstfart, forstå den deriverte og finn likningen til en tangent.</p>
-    <p><strong><a href="r1/derivasjon/index.md">Gå til kapittelet →</a></strong></p>
+    <p><strong><a href="felles/vekstfart-og-tangent.md">Gå til kapittelet →</a></strong></p>
   </div>
   <div class="chapter-formula">f'(x_1)</div>
 </div>
