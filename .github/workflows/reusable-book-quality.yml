@@ -19,8 +19,8 @@ jobs:
       - name: Fetch the shared checker
         shell: bash
         run: |
-          # After this feature branch is merged, change the ref to main.
-          git clone --depth 1 --branch feature/kapittel-3-derivasjon-komplett https://github.com/smigalni/matte.git .book-quality-tools
+          # Use main so book repositories always fetch the released shared checker.
+          git clone --depth 1 --branch main https://github.com/smigalni/matte.git .book-quality-tools
 
       - name: Find changed Markdown files
         shell: bash
