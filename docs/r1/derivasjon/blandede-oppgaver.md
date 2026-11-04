@@ -2,17 +2,10 @@
 
 Her får du arbeide med temaene i kapittel 3 på tvers av delkapitlene. Oppgavene er inspirert av oppgavetyper i løsningsforslaget til R1 kapittel 3, men er formulert på nytt med andre funksjoner, tall og situasjoner.
 
-Oppgavene blander vekstfart og tangenter, derivasjonsregler, kjerneregelen, produktregelen, kvotientregelen og undersøkelse av deriverbarhet. Noen oppgaver ber deg også forklare framgangsmåten eller finne feil i en utregning.
+Oppgavene blander temaene fra hele kapittel 3. Velg selv hvilken regel eller metode du skal bruke. Oppgavene varierer i omfang, men er samlet her for å trene på å kjenne igjen riktig framgangsmåte.
 
 **Tips:** Skriv mellomregning, og oppgi hvilken regel du bruker. Når du forenkler et uttrykk, kontroller at du ikke mister faktorer eller fortegn.
 
-## Slik leser du nivåene
-
-- 🟢 **Grønn – Grunnlag:** én sentral ferdighet om gangen.
-- 🟡 **Gul – Kombinasjon:** flere steg eller flere regler i samme oppgave.
-- 🔴 **Rød – Selvstendig problemløsing:** velg metode selv, begrunn og kombiner flere ideer.
-
-## 🟢 Grønn – Grunnlag
 
 !!! question "Oppgave 3.1 – Gjennomsnittlig vekstfart"
     Vi har funksjonen \(f(x)=x^2-3\).
@@ -59,7 +52,6 @@ Oppgavene blander vekstfart og tangenter, derivasjonsregler, kjerneregelen, prod
 
     c) \(h(x)=\ln(4x-2)\)
 
-## 🟡 Gul – Kombinasjon
 
 !!! question "Oppgave 3.6 – Flere derivasjonsregler"
     Deriver og forenkle så langt det er naturlig.
@@ -131,7 +123,6 @@ Oppgavene blander vekstfart og tangenter, derivasjonsregler, kjerneregelen, prod
 
     c) Finn \(f'(2)\).
 
-## 🔴 Rød – Selvstendig problemløsing
 
 !!! question "Oppgave 3.12 – Produkt eller kjerneregel?"
     Vi har funksjonen \(f(x)=x^2e^{-2x}\).
