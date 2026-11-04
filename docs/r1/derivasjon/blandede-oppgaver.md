@@ -72,7 +72,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     h(x)=\frac{x^2+1}{x+1},\qquad x\ne-1.
     \]
 
-    En tangent til grafen skal være parallell med linja \(y=2x-5\).
+    Finn tangentene til grafen som er parallelle med x-aksen.
 
     a) Bestem \(h'(x)\).
 
@@ -240,7 +240,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     c) Bruk den symmetriske differansekvotienten med de samme \(h\)-verdiene.
 
-    d) Sammenlign resultatene. Hvilken metode gir best tilnærming her?
+    d) Sammenlign resultatene. Hvilken metode gir best tilnærming her?\n\n    Lag gjerne en tabell med tilnærmingene og de absolutte feilene.
 
     e) Forklar hvorfor en svært liten \(h\) ikke alltid gir et mer nøyaktig numerisk svar.
 
