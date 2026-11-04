@@ -357,75 +357,42 @@ Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den derive
 
 ## Oppgaver
 
-!!! question "Oppgave 3.2.1 – Deriver et polynom"
+Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
 
-    Deriver \(f(x)=5x^4-3x^3+2x-8\).
+!!! question "Oppgave 3.2.1 – Deriver polynomer"
 
-!!! question "Oppgave 3.2.2 – Deriver eksponential- og logaritmeledd"
+    a) \(f(x)=4x^3-2x+5\)
+    b) \(g(x)=3x^2+6x-1\)
 
-    Deriver \(g(x)=2e^x-5\ln x\), og oppgi hvor funksjonen og den deriverte er definert.
+!!! question "Oppgave 3.2.2 – Konstant faktor"
 
-!!! question "Oppgave 3.2.3 – Finn feilen"
+    a) \(f(x)=5x^4\)
+    b) \(g(x)=3e^x\)
+    c) \(h(x)=4\ln x\)
 
-    En elev deriverer \(h(x)=7x^3+4\) til \(h'(x)=7x^2+4\).
+!!! question "Oppgave 3.2.3 – Deriver eksponential- og logaritmefunksjoner"
 
-    Finn feilen og forklar regelen som skal brukes.
-
-!!! question "Oppgave 3.2.4 – Bestem en funksjon"
-
-    Bestem \(a\), \(b\), \(c\) og \(d\) så langt det er mulig når
-
-    \[
-    f(x)=ax^3+bx^2+cx+d,\qquad f'(x)=6x^2-4x+3,\qquad f(0)=5.
-    \]
-
-    Forklar hvilke koeffisienter som kan bestemmes entydig.
+    a) \(f(x)=e^x+2x^2\)
+    b) \(g(x)=\ln x-3x\)
 
 ## Fasit
 
 ??? note "Fasit – oppgave 3.2.1"
 
-    \[
-    \begin{aligned}
-    f'(x)&=20x^3-9x^2+2\\
-    &=\underline{\underline{20x^3-9x^2+2}}
-    \end{aligned}
-    \]
+    a) \(f'(x)=12x^2-2\).
+
+    b) \(g'(x)=6x+6\).
 
 ??? note "Fasit – oppgave 3.2.2"
 
-    \[
-    \begin{aligned}
-    g'(x)&=2e^x-\frac{5}{x}\\
-    &=\underline{\underline{2e^x-\frac{5}{x}}}
-    \end{aligned}
-    \]
+    a) \(f'(x)=20x^3\).
 
-    Både \(g(x)\) og \(g'(x)\) er definert for \(x>0\).
+    b) \(g'(x)=3e^x\).
+
+    c) \(h'(x)=\frac{4}{x}\), for \(x>0\).
 
 ??? note "Fasit – oppgave 3.2.3"
 
-    Konstantleddet \(4\) blir \(0\). Vi bruker konstant faktor og potensregelen:
+    a) \(f'(x)=e^x+4x\).
 
-    \[
-    \begin{aligned}
-    h'(x)&=(7x^3+4)'\\
-    &=7\cdot(x^3)'+0\\
-    &=7\cdot3x^2\\
-    &=\underline{\underline{21x^2}}
-    \end{aligned}
-    \]
-
-??? note "Fasit – oppgave 3.2.4"
-
-    Vi deriverer ledd for ledd:
-
-    \[
-    f'(x)=3ax^2+2bx+c.
-    \]
-
-    Sammenligning med \(6x^2-4x+3\) gir \(a=2\), \(b=-2\) og \(c=3\). Fra \(f(0)=5\) får vi \(d=5\).
-
-    \[
-    f(x)=\underline{\underline{2x^3-2x^2+3x+5}}
-    \]
+    b) \(g'(x)=\frac1x-3\), for \(x>0\).
