@@ -299,7 +299,7 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
     \end{aligned}
     \]
 
-    b) \(g'(x)=0\) gir \(\ln x=0\) eller \(\ln x=2\). Dermed er \(x=1\) eller \(x=e^2\).
+    b) \(g'(x)=0\) gir \(\ln x=0\) eller \(\ln x=2\). Dermed er \(x=1\) eller \(x=e^2\). Punktene er \((1,0)\) og \(\left(e^2,\frac4{e^2}\right)\).
 
     c) Den deriverte er negativ for \(0<x<1\), positiv for \(1<x<e^2\) og negativ for \(x>e^2\). Funksjonen avtar, vokser og avtar i disse intervallene. Det er bunnpunkt ved \(x=1\) og toppunkt ved \(x=e^2\).
 
@@ -326,7 +326,7 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
     \underline{\underline{f'(1)=-3}}.
     \]
 
-    c) Vi løser \(3x^2-6x=0\). Da får vi \(x=0\) eller \(x=2\). I intervallet \(0<x<3\) er \(x=2\) løsningen. Der er momentan vekstfart lik den gjennomsnittlige vekstfarten.
+    c) Vi løser \(3x^2-6x=0\). Da får vi \(x=0\) eller \(x=2\). I intervallet \(0<x<3\) er løsningen \(\underline{\underline{x=2}}\). Der er momentan vekstfart lik den gjennomsnittlige vekstfarten.
 
 ??? note "Fasit – oppgave 3.9.5"
 
@@ -440,7 +440,7 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
     s(0)=2,\quad s(1)=6,\quad s(3)=2,\quad s(5)=22.
     \]
 
-    Globalt minimum er \(2\) meter, ved \(t=0\) og \(t=3\). Globalt maksimum er \(22\) meter, ved \(t=5\).
+    Globalt minimum er \(\underline{\underline{2\text{ m}}}\), ved \(t=0\) og \(t=3\). Globalt maksimum er \(\underline{\underline{22\text{ m}}}\), ved \(t=5\).
 
 ??? note "Fasit – oppgave 3.9.10"
 
@@ -577,4 +577,4 @@ Prøv oppgavene før du åpner fasiten. I oppgaver med digitale hjelpemidler kan
 
     c) Bruk symmetrisk differansekvotient med \(h=10^{-5}\).
 
-    d) Vi får omtrent \(u'(7)=11\), \(v'(7)=0,191051\) og \(f'(7)=38,250118\). Produktregelen gir også omtrent \(38,250118\). Små avvik skyldes numerisk tilnærming og avrunding.
+    d) Vi får omtrent \(u'(7)=11\), \(v'(7)=0,191051\) og \(\underline{\underline{f'(7)\approx38,250118}}\). Produktregelen gir også omtrent \(38,250118\). Små avvik skyldes numerisk tilnærming og avrunding.
