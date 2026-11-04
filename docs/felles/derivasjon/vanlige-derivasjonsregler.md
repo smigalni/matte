@@ -379,20 +379,20 @@ Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
 
 ??? note "Fasit – oppgave 3.2.1"
 
-    a) \(f'(x)=12x^2-2\).
+    a) \(\underline{\underline{f'(x)=12x^2-2}}\).
 
-    b) \(g'(x)=6x+6\).
+    b) \(\underline{\underline{g'(x)=6x+6}}\).
 
 ??? note "Fasit – oppgave 3.2.2"
 
-    a) \(f'(x)=20x^3\).
+    a) \(\underline{\underline{f'(x)=20x^3}}\).
 
-    b) \(g'(x)=3e^x\).
+    b) \(\underline{\underline{g'(x)=3e^x}}\).
 
-    c) \(h'(x)=\frac{4}{x}\), for \(x>0\).
+    c) \(\underline{\underline{h'(x)=\frac{4}{x}}}\), for \(x>0\).
 
 ??? note "Fasit – oppgave 3.2.3"
 
-    a) \(f'(x)=e^x+4x\).
+    a) \(\underline{\underline{f'(x)=e^x+4x}}\).
 
-    b) \(g'(x)=\frac1x-3\), for \(x>0\).
+    b) \(\underline{\underline{g'(x)=\frac1x-3}}\), for \(x>0\).
