@@ -1,4 +1,4 @@
-# Del 2 – Variabler og regning
+# 2. Variabler og regning
 
 En variabel lagrer en verdi under et navn. Når vi leser kode, må vi følge hvordan verdiene endres fra linje til linje. Denne ferdigheten er grunnlaget for å forstå betingelser, løkker og funksjoner senere.
 
