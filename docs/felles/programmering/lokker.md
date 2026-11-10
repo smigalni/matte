@@ -113,6 +113,11 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
         print(i)
     ```
 
+
+??? note "Fasit – oppgave 1"
+    Utskriften er 0, 1 og 2.
+
+
 !!! question "Oppgave 2 – Start og stopp"
 
     Hvilke tall skrives ut?
@@ -121,6 +126,11 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
     for i in range(3, 7):
         print(i)
     ```
+
+
+??? note "Fasit – oppgave 2"
+    Tallene 3, 4, 5 og 6.
+
 
 !!! question "Oppgave 3 – Følg summen"
 
@@ -133,6 +143,11 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
 
     Hva blir utskriften? Vis verdien til `sum_tall` etter hver runde.
 
+
+??? note "Fasit – oppgave 3"
+    Verdiene til `sum_tall` blir 1, 3, 6 og 10. Utskriften er 10.
+
+
 !!! question "Oppgave 4 – Funksjonstabell"
 
     Fyll ut tabellen på papir og finn utskriften.
@@ -142,6 +157,16 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
         y = x * x
         print(x, y)
     ```
+
+
+??? note "Fasit – oppgave 4"
+    ```text
+    0 0
+    1 1
+    2 4
+    3 9
+    ```
+
 
 !!! question "Oppgave 5 – `while`"
 
@@ -155,6 +180,16 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
 
     Hva skriver programmet ut?
 
+
+??? note "Fasit – oppgave 5"
+    ```text
+    3
+    2
+    1
+    Ferdig
+    ```
+
+
 !!! question "Oppgave 6 – Finn feilen"
 
     Hvorfor stopper ikke denne løkken? Hvordan kan du rette den?
@@ -165,40 +200,6 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
         print(n)
     ```
 
-!!! question "Oppgave 7 – Lag en løkke"
-
-    Skriv en `for`-løkke som skriver ut tallene fra 1 til 10.
-
-!!! question "Oppgave 8 – Matematikk"
-
-    Skriv en løkke som regner ut og skriver ut \(y=3x-2\) for \(x=1,2,3,4,5\).
-
-## Fasit
-
-??? note "Fasit – oppgave 1"
-    Utskriften er 0, 1 og 2.
-
-??? note "Fasit – oppgave 2"
-    Tallene 3, 4, 5 og 6.
-
-??? note "Fasit – oppgave 3"
-    Verdiene til `sum_tall` blir 1, 3, 6 og 10. Utskriften er 10.
-
-??? note "Fasit – oppgave 4"
-    ```text
-    0 0
-    1 1
-    2 4
-    3 9
-    ```
-
-??? note "Fasit – oppgave 5"
-    ```text
-    3
-    2
-    1
-    Ferdig
-    ```
 
 ??? note "Fasit – oppgave 6"
     `n` blir aldri endret. Legg til `n = n + 1` inne i løkken:
@@ -210,6 +211,12 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
         n = n + 1
     ```
 
+
+!!! question "Oppgave 7 – Lag en løkke"
+
+    Skriv en `for`-løkke som skriver ut tallene fra 1 til 10.
+
+
 ??? note "Fasit – oppgave 7"
     ```python
     for i in range(1, 11):
@@ -217,6 +224,12 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
     ```
 
     Stoppverdien i `range` er ikke med, derfor bruker vi 11 for å få med 10.
+
+
+!!! question "Oppgave 8 – Matematikk"
+
+    Skriv en løkke som regner ut og skriver ut \(y=3x-2\) for \(x=1,2,3,4,5\).
+
 
 ??? note "Fasit – oppgave 8"
     ```python
