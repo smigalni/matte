@@ -17,6 +17,7 @@ DEFAULTS = {
     "check_balanced_svg_figure": True,
     "check_math_delimiters": True,
     "check_display_math_spacing": True,
+    "check_subtasks_separate_lines": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
     "excluded_paths": ["site/", "build/", ".venv/", ".book-quality-tools/"],
@@ -88,6 +89,26 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
             has_double_underline = re.search(r"\\underline\s*\{\s*\\underline\s*\{", block_text)
             if contains_math and not has_double_underline:
                 errors.append(f"{relative}:{number}: Fasitblokk med matematikk mangler dobbeltunderstreket sluttsvar.")
+
+    if checks.get("check_subtasks_separate_lines", True):
+        subtask_start = re.compile(r"^(\\s*)(-\\s+)?(?:\\*\\*)?([a-e])\\)(?:\\*\\*)?(?:\\s|$)")
+        subtask_anywhere = re.compile(r"(?<![\\w\\\\])(?:\\*\\*)?[a-e]\\)(?:\\*\\*)?")
+        for position, (number, line) in enumerate(visible):
+            match = subtask_start.match(line)
+            if not match:
+                continue
+            if match.group(2):
+                errors.append(
+                    f"{relative}:{number}: Deloppgaver skal ikke ha ekstra punktmarkør foran bokstaven."
+                )
+            if position > 0 and visible[position - 1][1].strip():
+                errors.append(
+                    f"{relative}:{number}: Deloppgaven må starte i et eget avsnitt med tom linje før."
+                )
+            if len(list(subtask_anywhere.finditer(line))) > 1:
+                errors.append(
+                    f"{relative}:{number}: Flere deloppgaver står på samme linje. Flytt hver bokstavmerking til eget avsnitt."
+                )
 
     if checks.get("check_admonition_indentation", True):
         for index, line in enumerate(lines):
