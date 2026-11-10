@@ -238,4 +238,4 @@ Det viktigste er å forstå når løkken starter, hva som skjer i hver runde, og
         print(x, y)
     ```
 
-    Verdiene for \(y\) blir 1, 4, 7, 10 og 13.
+    Verdiene for \(y\) blir \(\underline{\underline{1,\;4,\;7,\;10,\;13}}\).
