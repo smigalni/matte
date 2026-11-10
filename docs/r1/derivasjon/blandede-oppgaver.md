@@ -399,6 +399,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     c) Andregradsuttrykket har diskriminant \(9-12=-3\), så det har ingen reelle nullpunkter. Siden eksponentialfaktoren alltid er positiv, har funksjonen ingen stasjonære punkter.
 
+    d) Andregradsuttrykket har positiv koeffisient foran \(x^2\) og ingen reelle nullpunkter. Det er derfor positivt for alle \(x\). Eksponentialfaktoren er også alltid positiv, så \(f'(x)>0\) for alle reelle \(x\). Funksjonen er dermed strengt voksende på hele den reelle tallinjen.
+
+
 !!! question "Oppgave 3.9.12 – Derivasjon fra definisjonen og tangent"
 
     Vi har funksjonen
