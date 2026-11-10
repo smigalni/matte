@@ -21,7 +21,7 @@ Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-re
 7. Visningsformler skal ha en tom linje før og etter formelblokken.
 8. Display-matematikk skal bruke balanserte MathJax-avgrensninger: `\[ ... \]` eller `$$ ... $$`.
 9. Matematikk skal ikke skrives som vanlige hakeparenteser rundt et uttrykk, for eksempel `[ f(x)=x^2 ]`.
-10. Deloppgaver i oppgavetekster og fasiter skal stå som separate punkter på hver sin linje (`- a)`, `- b)` osv.); de skal ikke flyte sammen i samme avsnitt.
+10. Deloppgaver i oppgavetekster og fasiter skal stå på hver sin linje med bokstavmerking (`a)`, `b)`, `c)` osv.), uten ekstra punktmarkør eller nummerering foran bokstavene.
 
 ## Lokal kjøring
 
