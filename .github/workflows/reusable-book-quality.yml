@@ -16,11 +16,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch the shared checker
+      - name: Select the book quality checker
         shell: bash
         run: |
-          # Use main so book repositories always fetch the released shared checker.
-          git clone --depth 1 --branch main https://github.com/smigalni/matte.git .book-quality-tools
+          if [[ "${GITHUB_REPOSITORY}" == "smigalni/matte" ]]; then
+            # When developing the shared checker, test the code in this branch.
+            echo "BOOK_QUALITY_ROOT=${GITHUB_WORKSPACE}" >> "${GITHUB_ENV}"
+          else
+            # Book repositories always use the released shared checker from main.
+            git clone --depth 1 --branch main https://github.com/smigalni/matte.git .book-quality-tools
+            echo "BOOK_QUALITY_ROOT=${GITHUB_WORKSPACE}/.book-quality-tools" >> "${GITHUB_ENV}"
+          fi
 
       - name: Find changed Markdown files
         shell: bash
@@ -42,8 +48,8 @@ jobs:
           cat changed-files.txt
 
       - name: Test the shared checker
-        run: python .book-quality-tools/tests/book-quality/test_check_book_format.py
+        run: python "$BOOK_QUALITY_ROOT/tests/book-quality/test_check_book_format.py"
 
       - name: Validate changed Markdown
         run: |
-          python .book-quality-tools/scripts/book-quality/check_book_format.py --root . --config .book-quality.toml --files-from changed-files.txt
+          python "$BOOK_QUALITY_ROOT/scripts/book-quality/check_book_format.py" --root . --config .book-quality.toml --files-from changed-files.txt
