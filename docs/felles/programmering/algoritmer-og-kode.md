@@ -1,4 +1,4 @@
-# Del 1 – Algoritmer og å lese kode
+# 1. Algoritmer og kode
 
 ## 1.1 Hva er programmering?
 
