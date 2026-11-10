@@ -8,11 +8,19 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
 !!! important "Produktregelen"
 
+    Når
+
     \[
-    f'(x)=u'v+uv'
+    f(x)=u(x)\cdot v(x)
     \]
 
-    Deriver den første faktoren og behold den andre. Deretter beholder du den første faktoren og deriverer den andre. Legg sammen uttrykkene.
+    er den deriverte
+
+    \[
+    f'(x)=u'(x)v(x)+u(x)v'(x).
+    \]
+
+    Vi deriverer den første funksjonen og lar den andre stå. Deretter lar vi den første stå og deriverer den andre. Til slutt legger vi sammen uttrykkene.
 
 !!! example "Eksempel 3.4.1 – Produktregelen med u og v"
 
@@ -62,19 +70,19 @@ Når én funksjon er delt på en annen, bruker vi **brøkregelen**. Her er rekke
 
 !!! important "Brøkregelen"
 
-    Hvis
+    Når
 
     \[
-    f(x)=\dfrac{u}{v},\qquad v\ne0,
+    f(x)=\dfrac{u(x)}{v(x)},\qquad v(x)\ne0,
     \]
 
-    så er
+    er den deriverte
 
     \[
-    \dfrac{u'v-uv'}{v^2}
+    f'(x)=\dfrac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^2}.
     \]
 
-    Derivert av teller ganger nevner, minus teller ganger derivert av nevner. Del på nevneren i andre.
+    Vi deriverer telleren og ganger med nevneren, trekker fra telleren ganget med den deriverte av nevneren, og deler på nevneren i andre.
 
 !!! example "Eksempel 3.4.2 – Kvotientregelen med u og v"
 
