@@ -1,237 +1,324 @@
-# 3.8 Programmering: deriverte og vekstfart
+# 3.8 Programmering: lese og forstå kode
+
+I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningene steg for steg og finne ut hva programmet skriver ut. Du skal ikke programmere selv. Les koden nøye, og skriv gjerne verdiene i en liten tabell mens du følger programmet.
 
 ## Oppgaver
 
-!!! question "Oppgave 3.8.1 – Numerisk tilnærming"
+!!! question "Oppgave 3.8.1 – Variabler og utskrift"
 
-    Skriv en funksjon i Python som tar inn en funksjon, et punkt \(x\) og en liten verdi \(h\), og beregner
+    Les programmet:
 
-    \[
-    \dfrac{f(x+h)-f(x)}h.
-    \]
+    ```python
+    x = 3
+    y = x**2
+    print(y)
+    print(x + y)
+    ```
 
-    Test på \(f(x)=x^2\) ved \(x=3\). Sammenlign resultatet for flere verdier av \(h\) med den eksakte deriverte.
+    a) Hva skriver programmet ut?
+    b) Forklar kort hvordan programmet finner verdien til \(y\).
 
 ??? note "Fasit – oppgave 3.8.1"
 
-    \`\`\`python
-    def framoverdifferanse(f, x, h):
-        return (f(x + h) - f(x)) / h
+    Først er \(x=3\). Deretter blir \(y=3^2=9\).
 
-    f = lambda x: x**2
-    for h in [0.1, 0.01, 0.001]:
-        print(h, framoverdifferanse(f, 3, h))
-    \`\`\`
+    Programmet skriver ut:
 
-    Den eksakte deriverte er \(f'(x)=2x\), så \(f'(3)=6\). Tilnærmingene blir henholdsvis \(6,1\), \(6,01\) og \(6,001\).
+    ```text
+    9
+    12
+    ```
 
-!!! question "Oppgave 3.8.2 – Sammenlign to metoder"
+    Den siste utskriften er \(x+y=3+9=12\).
 
-    Utvid programmet til også å beregne den symmetriske tilnærmingen. Lag en tabell over resultatene og forklar hvilken metode som er mest nøyaktig i testene dine. Ikke konkluder bare fra én enkelt verdi.
+!!! question "Oppgave 3.8.2 – Funksjon og returverdi"
+
+    Les programmet:
+
+    ```python
+    def f(x):
+        return x**2 + 1
+
+    print(f(2))
+    print(f(4))
+    ```
+
+    a) Hva returnerer funksjonen når \(x=2\)?
+    b) Hva skriver programmet ut?
 
 ??? note "Fasit – oppgave 3.8.2"
 
-    Den symmetriske tilnærmingen er \(\dfrac{f(x+h)-f(x-h)}{2h}\). For \(f(x)=x^2\) ved \(x=3\) gir den eksakt \(6\) i ideell regning, fordi uttrykket forenkles til \(6\). I flyttallsregning kan avrunding likevel forekomme.
+    Når \(x=2\), får vi \(f(2)=2^2+1=5\). Når \(x=4\), får vi \(f(4)=4^2+1=17\).
 
-!!! question "Oppgave 3.8.3 – Bevegelse"
+    Programmet skriver ut:
 
-    La \(s(t)=t^3-6t^2+9t\) beskrive posisjon i meter etter \(t\) sekunder for \(0\leq t\leq5\).
+    ```text
+    5
+    17
+    ```
 
-    Skriv et program som beregner tilnærmet fart ved flere tidspunkter. Bruk deretter den deriverte til å finne den eksakte farten, og sammenlign. Drøft hva fortegnet på den deriverte betyr i modellen.
+!!! question "Oppgave 3.8.3 – Gjennomsnittlig vekstfart"
+
+    Les programmet:
+
+    ```python
+    def f(x):
+        return x**2
+
+    x1 = 1
+    x2 = 3
+    vekstfart = (f(x2) - f(x1)) / (x2 - x1)
+    print(vekstfart)
+    ```
+
+    a) Hva er verdiene til \(f(x_1)\) og \(f(x_2)\)?
+    b) Hva skriver programmet ut?
+    c) Hva forteller tallet om grafen?
 
 ??? note "Fasit – oppgave 3.8.3"
 
-    \[
-    s'(t)=3t^2-12t+9=3(t-1)(t-3).
-    \]
-
-    Den eksakte farten med fortegn er negativ for \(1<t<3\), positiv for \(0\leq t<1\) og \(3<t\leq5\), og lik null ved \(t=1\) og \(t=3\). Den numeriske tilnærmingen bør ligge nær \(s'(t)\) når \(h\) er tilstrekkelig liten.
-
-## Flere programmeringsoppgaver
-
-Disse oppgavene bruker Python til å beregne vekstfart og tangentlikninger. De bygger videre på funksjoner, variabler, input og utskrift.
-
-!!! question "Oppgave 3.8.4 – Beregn gjennomsnittlig vekstfart"
-
-    Vi bruker funksjonen \(f(x)=x^2\) og formelen for gjennomsnittlig vekstfart:
+    Vi får \(f(1)=1\) og \(f(3)=9\). Dermed blir
 
     \[
-    a=\dfrac{f(x_2)-f(x_1)}{x_2-x_1}
+    \frac{f(3)-f(1)}{3-1}=\frac{9-1}{2}=4.
     \]
 
-    a) Lag en Python-funksjon med `def` som beregner \(f(x)=x^2\). Funksjonen skal ta inn en x-verdi og returnere funksjonsverdien.
+    Programmet skriver ut:
 
-    b) Bruk funksjonen til å beregne \(f(x_1)\) og \(f(x_2)\) når \(x_1=1\) og \(x_2=3\).
+    ```text
+    4.0
+    ```
 
-    c) Beregn den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=3\).
+    Tallet er stigningstallet til sekanten, altså den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=3\).
 
-    d) Gjenta beregningen fra \(x=2\) til \(x=4\). Sammenlign svarene og forklar hvorfor vekstfarten er forskjellig.
+!!! question "Oppgave 3.8.4 – En løkke"
+
+    Les programmet:
+
+    ```python
+    for x in [1, 2, 3, 4]:
+        print(x**2)
+    ```
+
+    a) Hvilke verdier får \(x\) etter tur?
+    b) Hva skriver programmet ut?
+    c) Hvilken sammenheng ser du mellom tallene som skrives ut?
 
 ??? note "Fasit – oppgave 3.8.4"
 
-    a) ```python
-    def f(x):
-        return x**2
+    Løkken bruker først \(x=1\), deretter \(x=2\), \(x=3\) og til slutt \(x=4\). Hver gang skriver den ut \(x^2\).
+
+    Programmet skriver ut:
+
+    ```text
+    1
+    4
+    9
+    16
     ```
 
-    b) f(1) = 1 og f(3) = 9.
+    Tallene er funksjonsverdiene til \(f(x)=x^2\) for de fire x-verdiene.
 
-    c) Gjennomsnittlig vekstfart er (9 - 1)/(3 - 1) = 4.
+!!! question "Oppgave 3.8.5 – En løkke med beregning"
 
-    d) Fra x = 2 til x = 4 blir vekstfarten (16 - 4)/(4 - 2) = 6. Vekstfarten øker fordi grafen blir brattere.
+    Les programmet:
 
-!!! question "Oppgave 3.8.5 – Vekst i praksis"
+    ```python
+    for x in [1, 2, 3]:
+        y = 2*x + 1
+        print(y)
+    ```
 
-    En plante er 12 cm høy etter én uke og 27 cm høy etter fire uker.
-
-    a) Lag et program som beregner den gjennomsnittlige vekstfarten per uke.
-
-    b) Skriv ut svaret sammen med teksten `cm per uke`.
-
-    c) Endre programmet slik at det også kan brukes med andre start- og sluttverdier.
+    a) Hva blir verdien til \(y\) hver gang løkken kjøres?
+    b) Hva skriver programmet ut?
+    c) Hvilken funksjon beskriver beregningen?
 
 ??? note "Fasit – oppgave 3.8.5"
 
-    a) (27 - 12)/(4 - 1) = 5 cm per uke.
+    Når \(x=1\), blir \(y=3\). Når \(x=2\), blir \(y=5\). Når \(x=3\), blir \(y=7\).
 
-    b) Programmet skriver ut 5.0 cm per uke.
+    Programmet skriver ut:
 
-    c) En mulig funksjon er:
-    ```python
-    def gjennomsnittlig_vekstfart(startverdi, sluttverdi, starttid, sluttid):
-        return (sluttverdi - startverdi) / (sluttid - starttid)
+    ```text
+    3
+    5
+    7
     ```
 
-!!! question "Oppgave 3.8.6 – Finn tangentens likning"
+    Beregningen beskriver funksjonen \(f(x)=2x+1\).
 
-    En tangent går gjennom punktet \((x_1,y_1)=(2,5)\) og har stigningstall \(a=3\).
+!!! question "Oppgave 3.8.6 – Betingelse og fortegn"
 
-    Bruk ettpunktsformelen
+    Les programmet:
 
-    \[
-    y-y_1=a(x-x_1)
-    \]
+    ```python
+    for x in [-2, 0, 2]:
+        y = 2*x
+        if y > 0:
+            print("positiv")
+        else:
+            print("ikke positiv")
+    ```
 
-    a) Lag en funksjon `finn_konstant(x1, y1, a)` som returnerer konstanten \(b\) i likningen \(y=ax+b\).
-
-    b) Bruk funksjonen til å finne \(b\) for punktet og stigningstallet ovenfor.
-
-    c) Skriv ut hele tangentens likning, for eksempel på formen `y = 3x - 1`.
-
-    **Hint:** Sett punktet inn i \(y=ax+b\), og løs likningen \(b=y_1-ax_1\).
+    a) Hva blir verdien til \(y\) for hver x-verdi?
+    b) Hva skriver programmet ut?
+    c) Hvordan henger utskriften sammen med fortegnet til \(f'(x)\) når \(f(x)=x^2\)?
 
 ??? note "Fasit – oppgave 3.8.6"
 
-    a) ```python
-    def finn_konstant(x1, y1, a):
-        return y1 - a*x1
+    Verdiene til \(y=2x\) blir \(-4\), \(0\) og \(4\).
+
+    Programmet skriver ut:
+
+    ```text
+    ikke positiv
+    ikke positiv
+    positiv
     ```
 
-    b) b = 5 - 3*2 = -1.
+    For \(f(x)=x^2\) er \(f'(x)=2x\). Den deriverte er negativ ved \(x=-2\), null ved \(x=0\) og positiv ved \(x=2\). Programmet skiller bare mellom positiv og ikke positiv.
 
-    c) Tangentens likning er y = 3x - 1.
+!!! question "Oppgave 3.8.7 – Finn den største verdien"
 
-!!! question "Oppgave 3.8.7 – Sammenlign tangenter"
+    Les programmet:
 
-    Lag et program som finner tangentlikninger for rette linjer gjennom samme punkt \((3,4)\).
+    ```python
+    verdier = [3, 7, 2, 5]
+    storst = verdier[0]
 
-    a) Bruk funksjonen fra oppgave 3.8.6 med stigningstall \(2\).
+    for tall in verdier:
+        if tall > storst:
+            storst = tall
 
-    b) Gjenta med stigningstall \(-1\).
+    print(storst)
+    ```
 
-    c) Skriv ut begge likningene. Forklar hvorfor de går gjennom samme punkt, men har ulike stigningstall.
+    a) Hvilken verdi får variabelen storst til slutt?
+    b) Hva skriver programmet ut?
+    c) Hvorfor endres ikke storst når programmet møter tallet 2?
 
 ??? note "Fasit – oppgave 3.8.7"
 
-    a) Med stigningstall 2 blir b = 4 - 2*3 = -2, altså y = 2x - 2.
+    Programmet sammenligner hvert tall med den største verdien det har funnet så langt. Verdien ender på \(7\).
 
-    b) Med stigningstall -1 blir b = 4 - (-1)*3 = 7, altså y = -x + 7.
+    Programmet skriver ut:
 
-    c) Begge linjene går gjennom (3, 4), men har ulike stigningstall.
+    ```text
+    7
+    ```
 
-!!! question "Oppgave 3.8.8 – Fra funksjonsverdier til tangent"
+    Tallet 2 er mindre enn 7. Derfor er betingelsen tall > storst usann, og variabelen endres ikke.
 
-    Vi arbeider med funksjonen \(f(x)=x^2+1\). Når \(x=2\), er \(f(2)=5\), og den deriverte er \(f'(2)=4\).
+!!! question "Oppgave 3.8.8 – Differansekvotient"
 
-    a) Lag variabler for punktets x-verdi, funksjonsverdi og tangentens stigningstall.
+    Les programmet:
 
-    b) Bruk funksjonen fra oppgave 3.8.6 til å finne konstanten \(b\).
+    ```python
+    def f(x):
+        return x**2
 
-    c) Skriv ut tangentens likning på formen \(y=ax+b\).
+    x = 3
+    delta_x = 0.1
+    svar = (f(x + delta_x) - f(x)) / delta_x
+    print(round(svar, 2))
+    ```
 
-    d) Kontroller resultatet ved å sette punktet \((2,5)\) inn i tangentlikningen.
+    a) Hvilke to funksjonsverdier blir trukket fra hverandre?
+    b) Hva skriver programmet ut?
+    c) Hva er den eksakte verdien av \(f'(3)\) for funksjonen \(f(x)=x^2\)?
 
 ??? note "Fasit – oppgave 3.8.8"
 
-    a) x1 = 2, y1 = 5 og a = 4.
+    Vi får \(f(3)=9\) og \(f(3,1)=3,1^2=9,61\). Dermed blir differansekvotienten
 
-    b) b = 5 - 4*2 = -3.
+    \[
+    \frac{9,61-9}{0,1}=6,1.
+    \]
 
-    c) Tangentens likning er y = 4x - 3.
+    Programmet skriver ut:
 
-    d) Når x = 2, får vi y = 4*2 - 3 = 5. Punktet ligger på linjen.
+    ```text
+    6.1
+    ```
 
-!!! question "Oppgave 3.8.9 – Lag en kalkulator for gjennomsnittlig vekstfart"
+    Den eksakte deriverte er \(f'(x)=2x\), så \(f'(3)=6\).
 
-    Lag et program som ber brukeren skrive inn to x-verdier \(x_1\) og \(x_2\), og funksjonsverdiene \(f(x_1)\) og \(f(x_2)\).
+!!! question "Oppgave 3.8.9 – Følg verdiene i en løkke"
 
-    Programmet skal beregne og skrive ut den gjennomsnittlige vekstfarten.
+    Les programmet:
 
-    a) Bruk `input()` til å lese inn verdiene, og gjør dem om til tall med `float()`.
+    ```python
+    def f(x):
+        return x**2
 
-    b) Beregn vekstfarten ved hjelp av formelen.
+    for delta_x in [1, 0.1, 0.01]:
+        svar = (f(3 + delta_x) - f(3)) / delta_x
+        print(round(svar, 3))
+    ```
 
-    c) Test programmet med \(f(x)=x^2\), først fra \(x=1\) til \(x=3\), og deretter fra \(x=2\) til \(x=4\).
-
-    d) Hva bør programmet gjøre dersom brukeren skriver inn samme x-verdi for \(x_1\) og \(x_2\)? Endre programmet slik at det gir en forståelig melding i stedet for å dele på null.
+    a) Hva skriver programmet ut?
+    b) Hvilken verdi nærmer svarene seg?
+    c) Hvorfor nærmer svarene seg den deriverte i \(x=3\)?
 
 ??? note "Fasit – oppgave 3.8.9"
 
-    a) Les inn verdiene med input() og konverter dem med float().
+    Vi bruker \(f(x)=x^2\) og \(f(3)=9\).
 
-    b) Kontroller først at x1 og x2 er ulike. Beregn deretter (y2 - y1)/(x2 - x1).
+    - Når \(\Delta x=1\), blir svaret \(7\).
+    - Når \(\Delta x=0,1\), blir svaret \(6,1\).
+    - Når \(\Delta x=0,01\), blir svaret \(6,01\).
 
-    c) For f(x) = x^2 blir vekstfarten 4 fra x = 1 til x = 3, og 6 fra x = 2 til x = 4.
+    Programmet skriver ut:
 
-    d) Programmet bør skrive en forståelig feilmelding hvis x1 og x2 er like, slik at det ikke forsøker å dele på null.
+    ```text
+    7.0
+    6.1
+    6.01
+    ```
 
-!!! question "Oppgave 3.8.10 – Kontroller produktregelen numerisk"
+    Svarene nærmer seg \(6\), som er \(f'(3)\). Når \(\Delta x\) nærmer seg null, nærmer differansekvotienten seg den deriverte.
 
-    Vi har
+!!! question "Oppgave 3.8.10 – Les et program for tangent"
 
-    \[
-    u(x)=x^2-3x,\qquad
-    v(x)=\sqrt{\ln x+x},\qquad x>0.
-    \]
+    Les programmet:
 
-    La \(f(x)=u(x)v(x)\).
+    ```python
+    def f(x):
+        return x**2
 
-    a) Finn \(u'(x)\) og \(v'(x)\) analytisk.
+    def derivert(x):
+        return 2*x
 
-    b) Bruk produktregelen til å finne \(f'(x)\).
+    x1 = 2
+    y1 = f(x1)
+    a = derivert(x1)
+    b = y1 - a*x1
 
-    c) Bruk et programmeringsverktøy til å tilnærme \(u'(7)\), \(v'(7)\) og \(f'(7)\) numerisk med symmetrisk differansekvotient.
+    print(y1)
+    print(a)
+    print("y =", a, "x +", b)
+    ```
 
-    d) Sammenlign den numeriske verdien av \(f'(7)\) med \(u'(7)v(7)+u(7)v'(7)\). Forklar hvorfor verdiene ikke nødvendigvis blir helt identiske.
+    a) Hva blir verdiene til \(y_1\), \(a\) og \(b\)?
+    b) Hva skriver programmet ut?
+    c) Hva er tangentens likning i punktet?
 
 ??? note "Fasit – oppgave 3.8.10"
 
-    a)
+    Vi får \(y_1=f(2)=4\), \(a=f'(2)=4\) og
 
     \[
-    u'(x)=2x-3,\qquad
-    v'(x)=\dfrac{1}{2\sqrt{\ln x+x}}\left(\frac1x+1\right).
+    b=y_1-ax_1=4-4\cdot2=-4.
     \]
 
-    b)
+    Programmet skriver ut:
 
-    \[
-    f'(x)=(2x-3)\sqrt{\ln x+x}
-    +(x^2-3x)\dfrac{1+\frac1x}{2\sqrt{\ln x+x}}.
-    \]
+    ```text
+    4
+    4
+    y = 4 x + -4
+    ```
 
-    c) Bruk symmetrisk differansekvotient med \(h=10^{-5}\).
-
-    d) Vi får omtrent \(u'(7)=11\), \(v'(7)=0,191051\) og \(\underline{\underline{f'(7)\approx38,250118}}\). Produktregelen gir også omtrent \(38,250118\). Små avvik skyldes numerisk tilnærming og avrunding.
+    Tangentens likning er \(y=4x-4\). Den siste utskriften viser samme likning, men med + -4 i stedet for - 4.
 
 ---

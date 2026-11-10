@@ -20,9 +20,9 @@
 
     Stasjonært punkt ved \(x=1\) gir \(3+2a+b=0\). Tangentstigningstall \(5\) ved \(x=-1\) gir \(3-2a+b=5\).
 
-    Ved å trekke den første likningen fra den andre får vi \(-4a=2\), altså \(a=-\frac12\). Da blir \(b=-2\).
+    Ved å trekke den første likningen fra den andre får vi \(-4a=5\), altså \(a=-\frac54\). Da blir \(b=-\frac12\).
 
-    Siden \(f''(x)=6x+2a\), får vi \(f''(1)=5>0\). Punktet ved \(x=1\) er derfor et lokalt bunnpunkt.
+    Siden \(f''(x)=6x+2a\), får vi \(f''(1)=6-\frac52=\frac72>0\). Punktet ved \(x=1\) er derfor et lokalt bunnpunkt.
 
 !!! question "Oppgave 3.P1.2 – Produktregel og horisontale tangenter"
 
@@ -71,6 +71,41 @@
 
     Deriverbarhet krever i tillegg at de ensidige stigningstallene er like. Venstre stigningstall er \(a\), og høyre stigningstall er \(2x=4\) ved \(x=2\). Altså \(a=4\). Da gir kontinuitetskravet \(8+1=4+b\), så \(b=5\). Begge kravene kan oppfylles samtidig med \(a=4\) og \(b=5\).
 
+!!! question "Oppgave 3.P1.4 – Les Python-kode"
+
+    Les koden:
+
+    ```python
+    def f(x):
+        return x**2 - 2*x
+
+    for x in [0, 1, 2, 3]:
+        print(f(x))
+    ```
+
+    a) Hva returnerer funksjonen når \(x=2\)?
+    b) Hva skriver programmet ut?
+    c) Forklar hvordan du kan se av utskriften at funksjonen har verdien null ved \(x=0\) og \(x=2\).
+
+??? note "Fasit – oppgave 3.P1.4"
+
+    Vi regner ut funksjonsverdiene:
+
+    \[
+    f(0)=0,\quad f(1)=-1,\quad f(2)=0,\quad f(3)=3.
+    \]
+
+    Programmet skriver ut:
+
+    ```text
+    0
+    -1
+    0
+    3
+    ```
+
+    Funksjonen har verdien null ved \(x=0\) og \(x=2\), fordi utskriften for disse x-verdiene er 0.
+
 ## Del 2 – alle hjelpemidler tillatt, men uten PC
 
 !!! question "Oppgave 3.P2.1 – Bevegelse og ekstremalverdier"
@@ -109,6 +144,15 @@
 
     Dermed er \(f'(0)=ab=3b=2\), så \(b=\frac23\).
 
+    Vi får dermed
+
+    \[
+    f'(x)=\frac23e^{\frac23x}(x^2+3x+3).
+    \]
+
+    Andregradsuttrykket har diskriminant \(9-12=-3\) og positiv koeffisient foran \(x^2\). Det er derfor positivt for alle reelle \(x\). Siden \(e^{\frac23x}\) også alltid er positiv, er \(f'(x)>0\) for alle \(x\). Funksjonen er dermed strengt voksende på hele definisjonsmengden.
+
+
 !!! question "Oppgave 3.P2.3 – Numerisk derivasjon"
 
     Undersøk ved håndregning hvor godt differansekvotienten til \(f(x)=\ln x\) tilnærmer den deriverte ved \(x=1\).
@@ -124,3 +168,43 @@
     \]
 
     Verdiene bør nærme seg \(1\) når \(h\) blir mindre. For svært små \(h\) kan avrundingsfeil påvirke resultatet, så mindre \(h\) gir ikke alltid bedre tilnærming.
+
+!!! question "Oppgave 3.P2.4 – Les kode for numerisk derivasjon"
+
+    En elev har skrevet programmet:
+
+    ```python
+    def f(x):
+        return x**2
+
+    x = 2
+    for delta_x in [1, 0.1, 0.01]:
+        svar = (f(x + delta_x) - f(x)) / delta_x
+        print(round(svar, 2))
+    ```
+
+    a) Hva skriver programmet ut?
+    b) Hvilken verdi nærmer utskriften seg når \(\Delta x\) blir mindre?
+    c) Finn den eksakte verdien av \(f'(2)\), og sammenlign med utskriften.
+    d) Forklar hvorfor programmet ikke setter \(\Delta x=0\).
+
+??? note "Fasit – oppgave 3.P2.4"
+
+    Vi har \(f(2)=4\).
+
+    - Når \(\Delta x=1\), blir differansekvotienten \((9-4)/1=5\).
+    - Når \(\Delta x=0,1\), blir den \((4,41-4)/0,1=4,1\).
+    - Når \(\Delta x=0,01\), blir den \((4,0401-4)/0,01=4,01\).
+
+    Programmet skriver ut:
+
+    ```text
+    5.0
+    4.1
+    4.01
+    ```
+
+    Den eksakte deriverte er \(f'(x)=2x\), så \(f'(2)=4\). Utskriften nærmer seg 4 når \(\Delta x\) blir mindre.
+
+    Vi kan ikke sette \(\Delta x=0\) direkte fordi vi da deler på null. Vi må først beregne differansekvotienten for en verdi ulik null og deretter undersøke grenseverdien når \(\Delta x\) nærmer seg null.
+

@@ -8,11 +8,19 @@ Når to funksjoner multipliseres, bruker vi **produktregelen**.
 
 !!! important "Produktregelen"
 
+    Når
+
     \[
-    f'(x)=u'v+uv'
+    f(x)=u(x)\cdot v(x)
     \]
 
-    Deriver den første faktoren og behold den andre. Deretter beholder du den første faktoren og deriverer den andre. Legg sammen uttrykkene.
+    er den deriverte
+
+    \[
+    f'(x)=u'(x)v(x)+u(x)v'(x).
+    \]
+
+    Vi deriverer den første funksjonen og lar den andre stå. Deretter lar vi den første stå og deriverer den andre. Til slutt legger vi sammen uttrykkene.
 
 !!! example "Eksempel 3.4.1 – Produktregelen med u og v"
 
@@ -62,19 +70,19 @@ Når én funksjon er delt på en annen, bruker vi **brøkregelen**. Her er rekke
 
 !!! important "Brøkregelen"
 
-    Hvis
+    Når
 
     \[
-    f(x)=\dfrac{u}{v},\qquad v\ne0,
+    f(x)=\dfrac{u(x)}{v(x)},\qquad v(x)\ne0,
     \]
 
-    så er
+    er den deriverte
 
     \[
-    \dfrac{u'v-uv'}{v^2}
+    f'(x)=\dfrac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^2}.
     \]
 
-    Derivert av teller ganger nevner, minus teller ganger derivert av nevner. Del på nevneren i andre.
+    Vi deriverer telleren og ganger med nevneren, trekker fra telleren ganget med den deriverte av nevneren, og deler på nevneren i andre.
 
 !!! example "Eksempel 3.4.2 – Kvotientregelen med u og v"
 
@@ -134,12 +142,17 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.1"
 
-    Sett \(u=x^2+1\) og \(v=3x+2\). Da er \(u'=2x\) og \(v'=3\).
-
+    Vi skriver funksjonen som et produkt:
+    \[ f(x)=uv=(x^2+1)(3x+2). \]
+    Da er \(u=x^2+1\), \(v=3x+2\), \(u'=2x\) og \(v'=3\).
+    Produktregelen gir
     \[
-    f'(x)=2x(3x+2)+3(x^2+1)
-    =\underline{\underline{9x^2+4x+3}}.
+    f'(x)=u'v+uv'
+    =2x(3x+2)+(x^2+1)\cdot3
+    =9x^2+4x+3.
     \]
+    **Svar:**
+    \[f'(x)=9x^2+4x+3.\]
 
 !!! question "Oppgave 3.4.2 – Produktregelen med eksponentialfunksjon"
 
@@ -147,9 +160,14 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.2"
 
+    Vi skriver funksjonen som et produkt:
+    \[g(x)=uv=x\cdot e^x.\]
+    Da er \(u=x\), \(v=e^x\), \(u'=1\) og \(v'=e^x\).
+    Produktregelen gir
     \[
-    g'(x)=1\cdot e^x+x\cdot e^x
-    =\underline{\underline{e^x(1+x)}}.
+    g'(x)=u'v+uv'
+    =1\cdot e^x+x\cdot e^x
+    =e^x(1+x).
     \]
 
 !!! question "Oppgave 3.4.3 – Kvotientregelen"
@@ -158,9 +176,14 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.3"
 
+    Vi skriver funksjonen som en brøk:
+    \[h(x)=\dfrac{u}{v}=\dfrac{x+1}{x+2}.\]
+    Da er \(u=x+1\), \(v=x+2\), \(u'=1\) og \(v'=1\).
+    Brøkregelen gir
     \[
-    h'(x)=\dfrac{1\cdot(x+2)-(x+1)\cdot1}{(x+2)^2}
-    =\underline{\underline{\frac1{(x+2)^2}}}.
+    h'(x)=\dfrac{u'v-uv'}{v^2}
+    =\dfrac{1\cdot(x+2)-(x+1)\cdot1}{(x+2)^2}
+    =\dfrac{1}{(x+2)^2}.
     \]
 
 !!! question "Oppgave 3.4.4 – Kvotientregelen med en potens"
@@ -169,9 +192,14 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.4"
 
+    Vi skriver funksjonen som en brøk:
+    \[p(x)=\dfrac{u}{v}=\dfrac{x^2+1}{x}.\]
+    Da er \(u=x^2+1\), \(v=x\), \(u'=2x\) og \(v'=1\).
+    Brøkregelen gir
     \[
-    p'(x)=\dfrac{2x\cdot x-(x^2+1)\cdot1}{x^2}
-    =\underline{\underline{1-\frac1{x^2}}}.
+    p'(x)=\dfrac{u'v-uv'}{v^2}
+    =\dfrac{2x\cdot x-(x^2+1)\cdot1}{x^2}
+    =\dfrac{x^2-1}{x^2}=1-\dfrac1{x^2}.
     \]
 
 !!! question "Oppgave 3.4.5 – Velg riktig regel"
@@ -183,14 +211,46 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.5"
 
-    a)
+    **a) Produktregelen**
+
+    Vi skriver funksjonen som et produkt og setter \(u\) lik første faktor og \(v\) lik andre faktor:
+
     \[
-    a'(x)=2\ln x+(2x-1)\frac1x
-    =\underline{\underline{2\ln x+2-\frac1x}}.
+    \begin{aligned}
+    a(x)&=uv=(2x-1)\ln x\\
+    u&=2x-1,\qquad v=\ln x\\
+    u'&=2,\qquad v'=\dfrac1x
+    \end{aligned}
     \]
 
-    b)
+    Deretter bruker vi produktregelen:
+
     \[
-    b'(x)=\dfrac{e^x\cdot x-e^x}{x^2}
-    =\underline{\underline{\dfrac{e^x(x-1)}{x^2}}}.
+    \begin{aligned}
+    a'(x)&=u'v+uv'\\
+    &=2\ln x+(2x-1)\cdot\dfrac1x\\
+    &=2\ln x+2-\dfrac1x.
+    \end{aligned}
+    \]
+
+    **b) Brøkregelen**
+
+    Vi skriver funksjonen som en brøk:
+
+    \[
+    \begin{aligned}
+    b(x)&=\dfrac{u}{v}=\dfrac{e^x}{x}\\
+    u&=e^x,\qquad v=x\\
+    u'&=e^x,\qquad v'=1
+    \end{aligned}
+    \]
+
+    Deretter bruker vi brøkregelen:
+
+    \[
+    \begin{aligned}
+    b'(x)&=\dfrac{u'v-uv'}{v^2}\\
+    &=\dfrac{e^x\cdot x-e^x\cdot1}{x^2}\\
+    &=\dfrac{e^x(x-1)}{x^2}.
+    \end{aligned}
     \]

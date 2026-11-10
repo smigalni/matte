@@ -3,23 +3,23 @@
 Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan vi regner med reglene. Brøken
 
 \[
-\dfrac{f(a+h)-f(a)}h
+\dfrac{f(a+\Delta x)-f(a)}{\Delta x}
 \]
 
-er stigningstallet til en sekant. Når \(h\) nærmer seg null, nærmer sekanten seg tangenten, dersom grenseverdien finnes.
+er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer sekanten seg tangenten, dersom grenseverdien finnes.
 
 !!! example "Eksempel – Finn den deriverte til \(f(x)=x^2\)"
 
     \[
     \begin{aligned}
-    f'(x)&=\lim_{h\to0}\dfrac{(x+h)^2-x^2}{h}\\
-    &=\lim_{h\to0}\dfrac{x^2+2xh+h^2-x^2}{h}\\
-    &=\lim_{h\to0}\dfrac{2xh+h^2}{h}\\
-    &=\lim_{h\to0}(2x+h)=2x.
+    f'(x)&=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2-x^2}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{x^2+2x\Delta x+\Delta x^2-x^2}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2}{\Delta x}\\
+    &=\lim_{\Delta x\to0}(2x+\Delta x)=2x.
     \end{aligned}
     \]
 
-    Nøkkelsteget er å faktorisere eller forkorte \(h\) etter at telleren er forenklet. Vi setter ikke \(h=0\) før forkortingen.
+    Nøkkelsteget er å faktorisere eller forkorte \(\Delta x\) etter at telleren er forenklet. Vi setter ikke \(\Delta x=0\) før forkortingen.
 
 ## Oppgaver
 
@@ -30,8 +30,8 @@ er stigningstallet til en sekant. Når \(h\) nærmer seg null, nærmer sekanten 
 ??? note "Fasit – oppgave 3.6.1"
 
     \[
-    f'(x)=\lim_{h\to0}\dfrac{3(x+h)+2-(3x+2)}h
-    =\lim_{h\to0}\dfrac{3h}{h}=3.
+    f'(x)=\lim_{\Delta x\to0}\dfrac{3(x+\Delta x)+2-(3x+2)}{\Delta x}
+    =\lim_{\Delta x\to0}\dfrac{3\Delta x}{\Delta x}=3.
     \]
 
 !!! question "Oppgave 3.6.2 – Andregradsfunksjon"
@@ -42,18 +42,18 @@ er stigningstallet til en sekant. Når \(h\) nærmer seg null, nærmer sekanten 
 
     \[
     \begin{aligned}
-    f'(x)&=\lim_{h\to0}\dfrac{(x+h)^2+2(x+h)-(x^2+2x)}h\\
-    &=\lim_{h\to0}\dfrac{2xh+h^2+2h}{h}\\
-    &=\lim_{h\to0}(2x+h+2)=2x+2.
+    f'(x)&=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2+2(x+\Delta x)-(x^2+2x)}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2+2\Delta x}{\Delta x}\\
+    &=\lim_{\Delta x\to0}(2x+\Delta x+2)=2x+2.
     \end{aligned}
     \]
 
 !!! question "Oppgave 3.6.3 – Forklar en vanlig feil"
 
-    En elev setter \(h=0\) i differansekvotienten før forenkling.
+    En elev setter \(\Delta x=0\) i differansekvotienten før forenkling.
 
     Forklar hvorfor dette gir et problem, og vis riktig framgangsmåte for \(f(x)=x^2\).
 
 ??? note "Fasit – oppgave 3.6.3"
 
-    Når \(h=0\), blir nevneren i differansekvotienten \(0\), og uttrykket er ikke definert. For \(f(x)=x^2\) må telleren først forenkles til \(2xh+h^2\). Deretter forkortes \(h\), og først da lar vi \(h\to0\). Resultatet er \(f'(x)=2x\).
+    Når \(\Delta x=0\), blir nevneren i differansekvotienten \(0\), og uttrykket er ikke definert. For \(f(x)=x^2\) må telleren først forenkles til \(2x\Delta x+\Delta x^2\). Deretter forkortes \(\Delta x\), og først da lar vi \(\Delta x\to0\). Resultatet er \(f'(x)=2x\).

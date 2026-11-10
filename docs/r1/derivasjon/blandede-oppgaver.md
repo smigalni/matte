@@ -92,7 +92,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     Videre gir \(f(1)=3\) likningen \(a+b=2\). Siden \(f'(x)=3ax^2+2bx+c\), gir \(f'(1)=4\) likningen \(3a+2b=5\).
 
-    Løsningen er \(a=\frac32\) og \(b=\frac12\).
+    Løsningen er \(a=1\) og \(b=1\).
 
     \[
     \underline{\underline{f(x)=\frac32x^3+\frac12x^2-x+2}}
@@ -398,6 +398,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     \]
 
     c) Andregradsuttrykket har diskriminant \(9-12=-3\), så det har ingen reelle nullpunkter. Siden eksponentialfaktoren alltid er positiv, har funksjonen ingen stasjonære punkter.
+
+    d) Andregradsuttrykket har positiv koeffisient foran \(x^2\) og ingen reelle nullpunkter. Det er derfor positivt for alle \(x\). Eksponentialfaktoren er også alltid positiv, så \(f'(x)>0\) for alle reelle \(x\). Funksjonen er dermed strengt voksende på hele den reelle tallinjen.
+
 
 !!! question "Oppgave 3.9.12 – Derivasjon fra definisjonen og tangent"
 
