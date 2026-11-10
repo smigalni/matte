@@ -29,7 +29,6 @@ For hver oppgave:
 
 Du skal kunne løse mange av oppgavene **på papir, uten PC**.
 
-
 ## En viktig tanke
 
 Programmering og matematikk bruker mange av de samme ferdighetene: presisjon, logikk, mønstergjenkjenning og systematisk problemløsing. Etter hvert skal du bruke kode til å undersøke matematiske spørsmål – ikke bare øve på syntaks.
