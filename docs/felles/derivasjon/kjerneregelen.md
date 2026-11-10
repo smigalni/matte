@@ -18,7 +18,6 @@ Kjerneregelen bruker vi når en funksjon er satt sammen av en ytre funksjon og e
 
     Deriver den ytre funksjonen, behold den indre funksjonen, og gang med den deriverte av den indre funksjonen.
 
-
 ## Se funksjonen som to lag
 
 Vi ser på funksjonen
@@ -123,7 +122,6 @@ Uttrykket inni parentesen er den **indre funksjonen**. Deretter bruker vi dette 
 3. Deriver den ytre og den indre funksjonen hver for seg.
 4. Gang de deriverte sammen, og sett inn uttrykket for \(u\).
 
-
 !!! example "Eksempel 3.3.2 – Bruk kjerneregelen"
 
     La \(f(x)=(3x^2+1)^4\).
@@ -149,26 +147,16 @@ Deriver funksjonene ved hjelp av kjerneregelen. Finn den indre funksjonen, og hu
 
     Deriver \(f(x)=(2x+3)^4\).
 
-!!! question "Oppgave 3.3.2 – Potens av et polynom"
-
-    Deriver \(g(x)=(x^2+1)^3\).
-
-!!! question "Oppgave 3.3.3 – Eksponentialfunksjon"
-
-    Deriver \(h(x)=e^{3x}\).
-
-!!! question "Oppgave 3.3.4 – Logaritmefunksjon"
-
-    Deriver \(p(x)=\ln(3x)\). Vis hva som er den indre funksjonen.
-
-## Fasit
-
 ??? note "Fasit – oppgave 3.3.1"
 
     \[
     f'(x)=4(2x+3)^3\cdot2
     =\underline{\underline{8(2x+3)^3}}.
     \]
+
+!!! question "Oppgave 3.3.2 – Potens av et polynom"
+
+    Deriver \(g(x)=(x^2+1)^3\).
 
 ??? note "Fasit – oppgave 3.3.2"
 
@@ -177,17 +165,25 @@ Deriver funksjonene ved hjelp av kjerneregelen. Finn den indre funksjonen, og hu
     =\underline{\underline{6x(x^2+1)^2}}.
     \]
 
+!!! question "Oppgave 3.3.3 – Eksponentialfunksjon"
+
+    Deriver \(h(x)=e^{3x}\).
+
 ??? note "Fasit – oppgave 3.3.3"
 
     \[
     h'(x)=\underline{\underline{3e^{3x}}}.
     \]
 
+!!! question "Oppgave 3.3.4 – Logaritmefunksjon"
+
+    Deriver \(p(x)=\ln(3x)\). Vis hva som er den indre funksjonen.
+
 ??? note "Fasit – oppgave 3.3.4"
 
     Den indre funksjonen er \(u=3x\), og \(u'=3\).
 
     \[
-    p'(x)=\frac{1}{3x}\cdot3
+    p'(x)=\dfrac{1}{3x}\cdot3
     =\underline{\underline{\frac1x}}.
     \]
