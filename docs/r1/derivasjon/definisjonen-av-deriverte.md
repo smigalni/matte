@@ -43,7 +43,7 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
     \[
     \begin{aligned}
     f'(x)&=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2+2(x+\Delta x)-(x^2+2x)}\Delta x\\
-    &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2+2h}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2+2\Delta x}{\Delta x}\\
     &=\lim_{\Delta x\to0}(2x+\Delta x+2)=2x+2.
     \end{aligned}
     \]
