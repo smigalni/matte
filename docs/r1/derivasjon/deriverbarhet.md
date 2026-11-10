@@ -197,30 +197,37 @@ Oppgavene trener på kontinuitet, knekkpunkt og sammenligning av ensidige stigni
 
 !!! question "Oppgave 3.5.1 – Deriverbarhet og kontinuitet"
 
-    - a) Hva betyr det at en funksjon er deriverbar i et punkt?
-    - b) Må en funksjon være kontinuerlig for å være deriverbar? Forklar.
+    a) Hva betyr det at en funksjon er deriverbar i et punkt?
+
+    b) Må en funksjon være kontinuerlig for å være deriverbar? Forklar.
 
 ??? note "Fasit – oppgave 3.5.1"
 
-    - a) Den deriverte finnes som et endelig tall i punktet.
+    a) Den deriverte finnes som et endelig tall i punktet.
 
-    - b) Ja. Deriverbarhet innebærer kontinuitet.
+    b) Ja. Deriverbarhet innebærer kontinuitet.
 
 !!! question "Oppgave 3.5.2 – Undersøk et knekkpunkt"
 
     Vi har funksjonen \(f(x)=|x|\).
 
-    - a) Er funksjonen kontinuerlig i \(x=0\)?
-    - b) Hva er stigningstallet til venstre for null?
-    - c) Hva er stigningstallet til høyre for null?
-    - d) Er funksjonen deriverbar i \(x=0\)?
+    a) Er funksjonen kontinuerlig i \(x=0\)?
+
+    b) Hva er stigningstallet til venstre for null?
+
+    c) Hva er stigningstallet til høyre for null?
+
+    d) Er funksjonen deriverbar i \(x=0\)?
 
 ??? note "Fasit – oppgave 3.5.2"
 
-    - a) Ja, \(f(x)=|x|\) er kontinuerlig i null.
-    - b) Stigningstallet fra venstre er \(-1\).
-    - c) Stigningstallet fra høyre er \(1\).
-    - d) Nei, fordi de ensidige stigningstallene er ulike.
+    a) Ja, \(f(x)=|x|\) er kontinuerlig i null.
+
+    b) Stigningstallet fra venstre er \(-1\).
+
+    c) Stigningstallet fra høyre er \(1\).
+
+    d) Nei, fordi de ensidige stigningstallene er ulike.
 
 !!! question "Oppgave 3.5.3 – Sammenlign ensidige stigningstall"
 
@@ -234,12 +241,16 @@ Oppgavene trener på kontinuitet, knekkpunkt og sammenligning av ensidige stigni
     \end{cases}
     \]
 
-    - a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
-    - b) Finn stigningstallet fra venstre og fra høyre.
-    - c) Er funksjonen deriverbar i \(x=1\)?
+    a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
+
+    b) Finn stigningstallet fra venstre og fra høyre.
+
+    c) Er funksjonen deriverbar i \(x=1\)?
 
 ??? note "Fasit – oppgave 3.5.3"
 
-    - a) Fra venstre er grenseverdien \(3\), og funksjonsverdien fra høyre er \(3\). Funksjonen er kontinuerlig.
-    - b) Fra venstre er stigningstallet \(2\). Fra høyre er den deriverte \(2x\), som gir \(2\) ved \(x=1\).
-    - c) Ja, funksjonen er deriverbar i \(x=1\) fordi de ensidige stigningstallene er like.
+    a) Fra venstre er grenseverdien \(3\), og funksjonsverdien fra høyre er \(3\). Funksjonen er kontinuerlig.
+
+    b) Fra venstre er stigningstallet \(2\). Fra høyre er den deriverte \(2x\), som gir \(2\) ved \(x=1\).
+
+    c) Ja, funksjonen er deriverbar i \(x=1\) fordi de ensidige stigningstallene er like.
