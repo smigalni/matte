@@ -83,9 +83,11 @@
         print(f(x))
     ```
 
-    - a) Hva returnerer funksjonen når \(x=2\)?
-    - b) Hva skriver programmet ut?
-    - c) Forklar hvordan du kan se av utskriften at funksjonen har verdien null ved \(x=0\) og \(x=2\).
+    a) Hva returnerer funksjonen når \(x=2\)?
+
+    b) Hva skriver programmet ut?
+
+    c) Forklar hvordan du kan se av utskriften at funksjonen har verdien null ved \(x=0\) og \(x=2\).
 
 ??? note "Fasit – oppgave 3.P1.4"
 
@@ -183,10 +185,13 @@
         print(round(svar, 2))
     ```
 
-    - a) Hva skriver programmet ut?
-    - b) Hvilken verdi nærmer utskriften seg når \(\Delta x\) blir mindre?
-    - c) Finn den eksakte verdien av \(f'(2)\), og sammenlign med utskriften.
-    - d) Forklar hvorfor programmet ikke setter \(\Delta x=0\).
+    a) Hva skriver programmet ut?
+
+    b) Hvilken verdi nærmer utskriften seg når \(\Delta x\) blir mindre?
+
+    c) Finn den eksakte verdien av \(f'(2)\), og sammenlign med utskriften.
+
+    d) Forklar hvorfor programmet ikke setter \(\Delta x=0\).
 
 ??? note "Fasit – oppgave 3.P2.4"
 
