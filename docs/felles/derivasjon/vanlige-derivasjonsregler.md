@@ -361,36 +361,36 @@ Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
 
 !!! question "Oppgave 3.2.1 – Deriver polynomer"
 
-    a) \(f(x)=4x^3-2x+5\)
-    b) \(g(x)=3x^2+6x-1\)
+    - a) \(f(x)=4x^3-2x+5\)
+    - b) \(g(x)=3x^2+6x-1\)
 
 ??? note "Fasit – oppgave 3.2.1"
 
-    a) \(\underline{\underline{f'(x)=12x^2-2}}\).
+    - a) \(\underline{\underline{f'(x)=12x^2-2}}\).
 
-    b) \(\underline{\underline{g'(x)=6x+6}}\).
+    - b) \(\underline{\underline{g'(x)=6x+6}}\).
 
 !!! question "Oppgave 3.2.2 – Konstant faktor"
 
-    a) \(f(x)=5x^4\)
-    b) \(g(x)=3e^x\)
-    c) \(h(x)=4\ln x\)
+    - a) \(f(x)=5x^4\)
+    - b) \(g(x)=3e^x\)
+    - c) \(h(x)=4\ln x\)
 
 ??? note "Fasit – oppgave 3.2.2"
 
-    a) \(\underline{\underline{f'(x)=20x^3}}\).
+    - a) \(\underline{\underline{f'(x)=20x^3}}\).
 
-    b) \(\underline{\underline{g'(x)=3e^x}}\).
+    - b) \(\underline{\underline{g'(x)=3e^x}}\).
 
-    c) \(\underline{\underline{h'(x)=\dfrac{4}{x}}}\), for \(x>0\).
+    - c) \(\underline{\underline{h'(x)=\dfrac{4}{x}}}\), for \(x>0\).
 
 !!! question "Oppgave 3.2.3 – Deriver eksponential- og logaritmefunksjoner"
 
-    a) \(f(x)=e^x+2x^2\)
-    b) \(g(x)=\ln x-3x\)
+    - a) \(f(x)=e^x+2x^2\)
+    - b) \(g(x)=\ln x-3x\)
 
 ??? note "Fasit – oppgave 3.2.3"
 
-    a) \(\underline{\underline{f'(x)=e^x+4x}}\).
+    - a) \(\underline{\underline{f'(x)=e^x+4x}}\).
 
-    b) \(\underline{\underline{g'(x)=\frac1x-3}}\), for \(x>0\).
+    - b) \(\underline{\underline{g'(x)=\frac1x-3}}\), for \(x>0\).
