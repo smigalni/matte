@@ -65,13 +65,13 @@ Når én funksjon er delt på en annen, bruker vi **brøkregelen**. Her er rekke
     Hvis
 
     \[
-    f(x)=\frac{u}{v},\qquad v\ne0,
+    f(x)=\dfrac{u}{v},\qquad v\ne0,
     \]
 
     så er
 
     \[
-    \frac{u'v-uv'}{v^2}
+    \dfrac{u'v-uv'}{v^2}
     \]
 
     Derivert av teller ganger nevner, minus teller ganger derivert av nevner. Del på nevneren i andre.
@@ -124,7 +124,6 @@ Når én funksjon er delt på en annen, bruker vi **brøkregelen**. Her er rekke
 
     Nevneren kan ikke være null, så \(x\ne2\).
 
-
 ## Oppgaver
 
 Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotientregelen. Bruk gjerne \(u\) og \(v\) slik eksemplene viser.
@@ -132,27 +131,6 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 !!! question "Oppgave 3.4.1 – Produktregelen"
 
     Deriver \(f(x)=(x^2+1)(3x+2)\).
-
-!!! question "Oppgave 3.4.2 – Produktregelen med eksponentialfunksjon"
-
-    Deriver \(g(x)=xe^x\).
-
-!!! question "Oppgave 3.4.3 – Kvotientregelen"
-
-    Deriver \(h(x)=\dfrac{x+1}{x+2}\).
-
-!!! question "Oppgave 3.4.4 – Kvotientregelen med en potens"
-
-    Deriver \(p(x)=\dfrac{x^2+1}{x}\), der \(x\ne0\).
-
-!!! question "Oppgave 3.4.5 – Velg riktig regel"
-
-    Deriver begge funksjonene:
-
-    a) \(a(x)=(2x-1)\ln x\)
-    b) \(b(x)=\frac{e^x}{x}\)
-
-## Fasit
 
 ??? note "Fasit – oppgave 3.4.1"
 
@@ -163,6 +141,10 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
     =\underline{\underline{9x^2+4x+3}}.
     \]
 
+!!! question "Oppgave 3.4.2 – Produktregelen med eksponentialfunksjon"
+
+    Deriver \(g(x)=xe^x\).
+
 ??? note "Fasit – oppgave 3.4.2"
 
     \[
@@ -170,19 +152,34 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
     =\underline{\underline{e^x(1+x)}}.
     \]
 
+!!! question "Oppgave 3.4.3 – Kvotientregelen"
+
+    Deriver \(h(x)=\dfrac{x+1}{x+2}\).
+
 ??? note "Fasit – oppgave 3.4.3"
 
     \[
-    h'(x)=\frac{1\cdot(x+2)-(x+1)\cdot1}{(x+2)^2}
+    h'(x)=\dfrac{1\cdot(x+2)-(x+1)\cdot1}{(x+2)^2}
     =\underline{\underline{\frac1{(x+2)^2}}}.
     \]
+
+!!! question "Oppgave 3.4.4 – Kvotientregelen med en potens"
+
+    Deriver \(p(x)=\dfrac{x^2+1}{x}\), der \(x\ne0\).
 
 ??? note "Fasit – oppgave 3.4.4"
 
     \[
-    p'(x)=\frac{2x\cdot x-(x^2+1)\cdot1}{x^2}
+    p'(x)=\dfrac{2x\cdot x-(x^2+1)\cdot1}{x^2}
     =\underline{\underline{1-\frac1{x^2}}}.
     \]
+
+!!! question "Oppgave 3.4.5 – Velg riktig regel"
+
+    Deriver begge funksjonene:
+
+    a) \(a(x)=(2x-1)\ln x\)
+    b) \(b(x)=\dfrac{e^x}{x}\)
 
 ??? note "Fasit – oppgave 3.4.5"
 
@@ -194,6 +191,6 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
     b)
     \[
-    b'(x)=\frac{e^x\cdot x-e^x}{x^2}
-    =\underline{\underline{\frac{e^x(x-1)}{x^2}}}.
+    b'(x)=\dfrac{e^x\cdot x-e^x}{x^2}
+    =\underline{\underline{\dfrac{e^x(x-1)}{x^2}}}.
     \]
