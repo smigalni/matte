@@ -155,13 +155,11 @@ Tekst under
 
     def test_subtasks_on_separate_paragraphs_pass(self):
         content = """!!! question \"Oppgave 1\"
-
     a) Første deloppgave.
 
     b) Andre deloppgave.
 
 ??? note \"Fasit – oppgave 1\"
-
     a) Første svar.
 
     b) Andre svar.
