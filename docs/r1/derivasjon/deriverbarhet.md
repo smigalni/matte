@@ -82,7 +82,7 @@ En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deri
 Vi starter med det vi allerede kjenner fra 3.1: Stigningstallet til en sekant gjennom punktene \( (a,f(a)) \) og \( (x,f(x)) \) er
 
 \[
-a_{\text{sekant}}=\frac{f(x)-f(a)}{x-a}.
+a_{\text{sekant}}=\dfrac{f(x)-f(a)}{x-a}.
 \]
 
 Når \(x\) nærmer seg \(a\), kommer punktet \( (x,f(x)) \) nærmere \( (a,f(a)) \). Sekanten nærmer seg da tangenten i \( (a,f(a)) \).
@@ -91,7 +91,7 @@ Hvis grenseverdien finnes som et endelig tall, får vi tangentens stigningstall 
 
 !!! important "Definisjonen av den deriverte"
     \[
-    f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}
+    f'(a)=\lim_{x\to a}\dfrac{f(x)-f(a)}{x-a}
     \]
 
 Dette er altså ikke en ny formel vi bare må huske: Vi får den ved å la sekantens andre punkt nærme seg punktet der vi vil finne tangentens stigningstall.
@@ -101,13 +101,13 @@ Vi undersøker hva som skjer når \(x\) nærmer seg \(a\) fra venstre og fra hø
 Fra venstre får vi
 
 \[
-f'_-(a) =\lim_{x\to a^-}\frac{f(x)-f(a)}{x-a}
+f'_-(a) =\lim_{x\to a^-}\dfrac{f(x)-f(a)}{x-a}
 \]
 
 og fra høyre får vi
 
 \[
-f'_+(a) =\lim_{x\to a^+}\frac{f(x)-f(a)}{x-a}
+f'_+(a) =\lim_{x\to a^+}\dfrac{f(x)-f(a)}{x-a}
 \]
 
 Funksjonen er deriverbar i \(x=a\) dersom begge grensene eksisterer som endelige tall og er like:
@@ -156,9 +156,9 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     \[
     \begin{aligned}
     f'_-(1)
-    &=\lim_{x\to1^-}\frac{f(x)-f(1)}{x-1}\\
-    &=\lim_{x\to1^-}\frac{x+1-2}{x-1}\\
-    &=\lim_{x\to1^-}\frac{x-1}{x-1}\\
+    &=\lim_{x\to1^-}\dfrac{f(x)-f(1)}{x-1}\\
+    &=\lim_{x\to1^-}\dfrac{x+1-2}{x-1}\\
+    &=\lim_{x\to1^-}\dfrac{x-1}{x-1}\\
     &=1
     \end{aligned}
     \]
@@ -170,9 +170,9 @@ Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
     \[
     \begin{aligned}
     f'_+(1)
-    &=\lim_{x\to1^+}\frac{f(x)-f(1)}{x-1}\\
-    &=\lim_{x\to1^+}\frac{2x-2}{x-1}\\
-    &=\lim_{x\to1^+}\frac{2(x-1)}{x-1}\\
+    &=\lim_{x\to1^+}\dfrac{f(x)-f(1)}{x-1}\\
+    &=\lim_{x\to1^+}\dfrac{2x-2}{x-1}\\
+    &=\lim_{x\to1^+}\dfrac{2(x-1)}{x-1}\\
     &=2
     \end{aligned}
     \]
@@ -200,6 +200,12 @@ Oppgavene trener på kontinuitet, knekkpunkt og sammenligning av ensidige stigni
     a) Hva betyr det at en funksjon er deriverbar i et punkt?
     b) Må en funksjon være kontinuerlig for å være deriverbar? Forklar.
 
+??? note "Fasit – oppgave 3.5.1"
+
+    a) Den deriverte finnes som et endelig tall i punktet.
+
+    b) Ja. Deriverbarhet innebærer kontinuitet.
+
 !!! question "Oppgave 3.5.2 – Undersøk et knekkpunkt"
 
     Vi har funksjonen \(f(x)=|x|\).
@@ -208,6 +214,13 @@ Oppgavene trener på kontinuitet, knekkpunkt og sammenligning av ensidige stigni
     b) Hva er stigningstallet til venstre for null?
     c) Hva er stigningstallet til høyre for null?
     d) Er funksjonen deriverbar i \(x=0\)?
+
+??? note "Fasit – oppgave 3.5.2"
+
+    a) Ja, \(f(x)=|x|\) er kontinuerlig i null.
+    b) Stigningstallet fra venstre er \(-1\).
+    c) Stigningstallet fra høyre er \(1\).
+    d) Nei, fordi de ensidige stigningstallene er ulike.
 
 !!! question "Oppgave 3.5.3 – Sammenlign ensidige stigningstall"
 
@@ -224,21 +237,6 @@ Oppgavene trener på kontinuitet, knekkpunkt og sammenligning av ensidige stigni
     a) Undersøk om funksjonen er kontinuerlig i \(x=1\).
     b) Finn stigningstallet fra venstre og fra høyre.
     c) Er funksjonen deriverbar i \(x=1\)?
-
-## Fasit
-
-??? note "Fasit – oppgave 3.5.1"
-
-    a) Den deriverte finnes som et endelig tall i punktet.
-
-    b) Ja. Deriverbarhet innebærer kontinuitet.
-
-??? note "Fasit – oppgave 3.5.2"
-
-    a) Ja, \(f(x)=|x|\) er kontinuerlig i null.
-    b) Stigningstallet fra venstre er \(-1\).
-    c) Stigningstallet fra høyre er \(1\).
-    d) Nei, fordi de ensidige stigningstallene er ulike.
 
 ??? note "Fasit – oppgave 3.5.3"
 
