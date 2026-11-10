@@ -4,8 +4,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 
 **Arbeidsmåte:** Spor koden på papir før du prøver å løse den. Skriv ned mellomresultater. På de gule og røde oppgavene skal du også forklare hvorfor løsningen virker.
 
-## 🟢 Grønn – Grunnlag
-
+## Middels
 !!! question "Oppgave 1 – Følg variablene"
     Hva skrives ut?
 
@@ -49,8 +48,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 !!! question "Oppgave 5 – Liste"
     Gitt `tall = [6, 2, 9]`, skriv kode som endrer det andre elementet til 5 og legger 12 bakerst. Hva blir listen?
 
-## 🟡 Gul – Kombiner ideer
-
+## Vanskelig
 !!! question "Oppgave 6 – Spor flere variabler"
     Fyll ut en tabell med verdiene til `i`, `a` og `b` for hver runde. Hva skrives ut til slutt?
 
@@ -109,8 +107,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
         print("Ikke bestått")
     ```
 
-## 🔴 Rød – Selvstendig problemløsing
-
+## Svært vanskelig
 !!! question "Oppgave 12 – Feilsøk løkken"
     En elev vil skrive ut tallene 1, 2, 3 og 4, men har skrevet:
 
