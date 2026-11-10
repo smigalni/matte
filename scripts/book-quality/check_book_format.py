@@ -91,8 +91,8 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 errors.append(f"{relative}:{number}: Fasitblokk med matematikk mangler dobbeltunderstreket sluttsvar.")
 
     if checks.get("check_subtasks_separate_lines", True):
-        subtask_start = re.compile(r"^(\\s*)(-\\s+)?(?:\\*\\*)?([a-e])\\)(?:\\*\\*)?(?:\\s|$)")
-        subtask_anywhere = re.compile(r"(?<![\\w\\\\])(?:\\*\\*)?[a-e]\\)(?:\\*\\*)?")
+        subtask_start = re.compile(r"^(\s*)(-\s+)?(?:\*\*)?([a-e])\)(?:\*\*)?(?:\s|$)")
+        subtask_anywhere = re.compile(r"(?<![\w\\])(?:\*\*)?[a-e]\)(?:\*\*)?")
         for position, (number, line) in enumerate(visible):
             match = subtask_start.match(line)
             if not match:
@@ -102,7 +102,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                     f"{relative}:{number}: Deloppgaver skal ikke ha ekstra punktmarkør foran bokstaven."
                 )
             previous_line = visible[position - 1][1] if position > 0 else ""
-            previous_is_admonition = bool(re.match(r"^\\s*(?:!!!|\\?\\?\\?)\\s+", previous_line))
+            previous_is_admonition = bool(re.match(r"^\s*(?:!!!|\?\?\?)\s+", previous_line))
             if position > 0 and previous_line.strip() and not previous_is_admonition:
                 errors.append(
                     f"{relative}:{number}: Deloppgaven må starte i et eget avsnitt med tom linje før."
