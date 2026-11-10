@@ -29,7 +29,6 @@ nav = [
       { "3.10 Kapittelprøve" = "r1/derivasjon/kapittelprove.md" },
     ] },
     { "Programmering" = [
-      { "Oversikt og læringsløp" = "felles/programmering/index.md" },
       { "1. Algoritmer og kode" = "felles/programmering/algoritmer-og-kode.md" },
       { "2. Variabler og regning" = "felles/programmering/variabler-og-regning.md" },
       { "3. Betingelser" = "felles/programmering/betingelser.md" },
@@ -48,7 +47,6 @@ nav = [
       { "3.8 Programmeringsoppgaver" = "felles/derivasjon/programmering.md" },
     ] },
     { "Programmering" = [
-      { "Oversikt og læringsløp" = "felles/programmering/index.md" },
       { "1. Algoritmer og kode" = "felles/programmering/algoritmer-og-kode.md" },
       { "2. Variabler og regning" = "felles/programmering/variabler-og-regning.md" },
       { "3. Betingelser" = "felles/programmering/betingelser.md" },
