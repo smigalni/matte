@@ -250,12 +250,23 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
 ??? note "Fasit – oppgave 3.1.1"
 
-    a) \(\underline{\underline{f(1)=1}}\) og \(\underline{\underline{f(3)=9}}\).
+    a) Vi setter inn \(x=1\) og \(x=3\) i funksjonen:
 
-    b)
-    \[
-    a=\dfrac{9-1}{3-1}=\underline{\underline{4}}.
-    \]
+    \\[
+    f(1)=1^2=1
+    \\]
+
+    \\[
+    f(3)=3^2=9
+    \\]
+
+    b) Gjennomsnittlig vekstfart er
+
+    \\[
+    a=\dfrac{f(3)-f(1)}{3-1}=\dfrac{9-1}{2}=4.
+    \\]
+
+    **Svar:** Den gjennomsnittlige vekstfarten er \(4\).
 
 !!! question "Oppgave 3.1.2 – Tolk vekstfarten"
 
@@ -304,6 +315,30 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     b) Tangentens stigningstall i punktet er 2. Finn tangentens likning.
 
 ??? note "Fasit – oppgave 3.1.5"
+
+    a) Vi finner funksjonsverdien når \(x=1\):
+
+    \\[
+    f(1)=1^2=1.
+    \\]
+
+    Punktet er derfor \(P=(1,1)\).
+
+    b) Vi bruker ettpunktsformelen med stigningstall \(2\):
+
+    \\[
+    y-1=2(x-1)
+    \\]
+
+    \\[
+    y-1=2x-2
+    \\]
+
+    \\[
+    y=2x-1.
+    \\]
+
+    **Svar:** Tangentens likning er \(y=2x-1\).
 
     a) Punktet er \(P=(1,1)\).
 
