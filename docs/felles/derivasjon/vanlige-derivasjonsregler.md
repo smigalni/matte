@@ -215,7 +215,7 @@ Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den derive
 
 !!! important "Derivasjon av \(\ln x\)"
     \[
-    (\ln x)'=\frac{1}{x},\qquad x>0
+    (\ln x)'=\dfrac{1}{x},\qquad x>0
     \]
 
 !!! example "Eksempel 8 – Deriver \(\ln x\)"
@@ -229,13 +229,13 @@ Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den derive
     Da er
 
     \[
-    f'(x)=\frac{1}{x}
+    f'(x)=\dfrac{1}{x}
     \]
 
     Med en konstant faktor får vi for eksempel
 
     \[
-    g(x)=5\ln x \quad\Rightarrow\quad g'(x)=\frac{5}{x}
+    g(x)=5\ln x \quad\Rightarrow\quad g'(x)=\dfrac{5}{x}
     \]
 
 ## Eksempler med mellomregning
@@ -313,7 +313,7 @@ Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den derive
 
     - Vi bruker sumregelen fordi leddene er addert.
     - Vi bruker regelen for konstant faktor fordi \(4\) og \(3\) står foran funksjonene.
-    - Vi bruker \((e^x)'=e^x\) og \((\ln x)'=\frac{1}{x}\).
+    - Vi bruker \((e^x)'=e^x\) og \((\ln x)'=\dfrac{1}{x}\).
 
     **Steg 2: Deriver hvert ledd.**
 
@@ -331,8 +331,8 @@ Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den derive
     \[
     \begin{aligned}
     (3\ln x)'&=3\cdot(\ln x)'\\
-    &=3\cdot\frac{1}{x}\\
-    &=\frac{3}{x}
+    &=3\cdot\dfrac{1}{x}\\
+    &=\dfrac{3}{x}
     \end{aligned}
     \]
 
@@ -340,8 +340,8 @@ Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den derive
 
     \[
     \begin{aligned}
-    g'(x)&=4e^x+\frac{3}{x}\\
-    &=\underline{\underline{4e^x+\frac{3}{x}}}
+    g'(x)&=4e^x+\dfrac{3}{x}\\
+    &=\underline{\underline{4e^x+\dfrac{3}{x}}}
     \end{aligned}
     \]
 
@@ -364,24 +364,17 @@ Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
     a) \(f(x)=4x^3-2x+5\)
     b) \(g(x)=3x^2+6x-1\)
 
-!!! question "Oppgave 3.2.2 – Konstant faktor"
-
-    a) \(f(x)=5x^4\)
-    b) \(g(x)=3e^x\)
-    c) \(h(x)=4\ln x\)
-
-!!! question "Oppgave 3.2.3 – Deriver eksponential- og logaritmefunksjoner"
-
-    a) \(f(x)=e^x+2x^2\)
-    b) \(g(x)=\ln x-3x\)
-
-## Fasit
-
 ??? note "Fasit – oppgave 3.2.1"
 
     a) \(\underline{\underline{f'(x)=12x^2-2}}\).
 
     b) \(\underline{\underline{g'(x)=6x+6}}\).
+
+!!! question "Oppgave 3.2.2 – Konstant faktor"
+
+    a) \(f(x)=5x^4\)
+    b) \(g(x)=3e^x\)
+    c) \(h(x)=4\ln x\)
 
 ??? note "Fasit – oppgave 3.2.2"
 
@@ -389,7 +382,12 @@ Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
 
     b) \(\underline{\underline{g'(x)=3e^x}}\).
 
-    c) \(\underline{\underline{h'(x)=\frac{4}{x}}}\), for \(x>0\).
+    c) \(\underline{\underline{h'(x)=\dfrac{4}{x}}}\), for \(x>0\).
+
+!!! question "Oppgave 3.2.3 – Deriver eksponential- og logaritmefunksjoner"
+
+    a) \(f(x)=e^x+2x^2\)
+    b) \(g(x)=\ln x-3x\)
 
 ??? note "Fasit – oppgave 3.2.3"
 
