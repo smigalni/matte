@@ -92,7 +92,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     Videre gir \(f(1)=3\) likningen \(a+b=2\). Siden \(f'(x)=3ax^2+2bx+c\), gir \(f'(1)=4\) likningen \(3a+2b=5\).
 
-    Løsningen er \(a=\frac32\) og \(b=\frac12\).
+    Løsningen er \(a=1\) og \(b=1\).
 
     \[
     \underline{\underline{f(x)=\frac32x^3+\frac12x^2-x+2}}
