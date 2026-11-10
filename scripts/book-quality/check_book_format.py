@@ -101,7 +101,9 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 errors.append(
                     f"{relative}:{number}: Deloppgaver skal ikke ha ekstra punktmarkør foran bokstaven."
                 )
-            if position > 0 and visible[position - 1][1].strip():
+            previous_line = visible[position - 1][1] if position > 0 else ""
+            previous_is_admonition = bool(re.match(r"^\\s*(?:!!!|\\?\\?\\?)\\s+", previous_line))
+            if position > 0 and previous_line.strip() and not previous_is_admonition:
                 errors.append(
                     f"{relative}:{number}: Deloppgaven må starte i et eget avsnitt med tom linje før."
                 )
