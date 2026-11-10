@@ -148,7 +148,7 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
 
 
 ??? note "Fasit – oppgave 4"
-    **4.** \(x=11\) og \(y=21\).
+    **4.** \(\underline{\underline{x=11,\quad y=21}}\).
 
 
 !!! question "Oppgave 5 – Potenser"
@@ -162,7 +162,7 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
 
 
 ??? note "Fasit – oppgave 5"
-    **5.** \(2^3=8\) og \(3^2=9\). Summen er 17.
+    **5.** \(2^3=8\) og \(3^2=9\). Summen er \(\underline{\underline{17}}\).
 
 
 !!! question "Oppgave 6 – Finn feilen i tankegangen"
