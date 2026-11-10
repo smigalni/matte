@@ -1,4 +1,4 @@
-# Del 6 – Blandede oppgaver
+# 6. Blandede oppgaver
 
 Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelser, løkker, funksjoner og lister. Nå skal du selv avgjøre hvilke verktøy som passer.
 
