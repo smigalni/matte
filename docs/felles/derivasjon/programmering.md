@@ -15,8 +15,9 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print(x + y)
     ```
 
-    - a) Hva skriver programmet ut?
-    - b) Forklar kort hvordan programmet finner verdien til \(y\).
+    a) Hva skriver programmet ut?
+
+    b) Forklar kort hvordan programmet finner verdien til \(y\).
 
 ??? note "Fasit – oppgave 3.8.1"
 
@@ -43,8 +44,9 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print(f(4))
     ```
 
-    - a) Hva returnerer funksjonen når \(x=2\)?
-    - b) Hva skriver programmet ut?
+    a) Hva returnerer funksjonen når \(x=2\)?
+
+    b) Hva skriver programmet ut?
 
 ??? note "Fasit – oppgave 3.8.2"
 
@@ -71,9 +73,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print(vekstfart)
     ```
 
-    - a) Hva er verdiene til \(f(x_1)\) og \(f(x_2)\)?
-    - b) Hva skriver programmet ut?
-    - c) Hva forteller tallet om grafen?
+    a) Hva er verdiene til \(f(x_1)\) og \(f(x_2)\)?
+
+    b) Hva skriver programmet ut?
+
+    c) Hva forteller tallet om grafen?
 
 ??? note "Fasit – oppgave 3.8.3"
 
@@ -100,9 +104,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
         print(x**2)
     ```
 
-    - a) Hvilke verdier får \(x\) etter tur?
-    - b) Hva skriver programmet ut?
-    - c) Hvilken sammenheng ser du mellom tallene som skrives ut?
+    a) Hvilke verdier får \(x\) etter tur?
+
+    b) Hva skriver programmet ut?
+
+    c) Hvilken sammenheng ser du mellom tallene som skrives ut?
 
 ??? note "Fasit – oppgave 3.8.4"
 
@@ -129,9 +135,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
         print(y)
     ```
 
-    - a) Hva blir verdien til \(y\) hver gang løkken kjøres?
-    - b) Hva skriver programmet ut?
-    - c) Hvilken funksjon beskriver beregningen?
+    a) Hva blir verdien til \(y\) hver gang løkken kjøres?
+
+    b) Hva skriver programmet ut?
+
+    c) Hvilken funksjon beskriver beregningen?
 
 ??? note "Fasit – oppgave 3.8.5"
 
@@ -160,9 +168,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
             print("ikke positiv")
     ```
 
-    - a) Hva blir verdien til \(y\) for hver x-verdi?
-    - b) Hva skriver programmet ut?
-    - c) Hvordan henger utskriften sammen med fortegnet til \(f'(x)\) når \(f(x)=x^2\)?
+    a) Hva blir verdien til \(y\) for hver x-verdi?
+
+    b) Hva skriver programmet ut?
+
+    c) Hvordan henger utskriften sammen med fortegnet til \(f'(x)\) når \(f(x)=x^2\)?
 
 ??? note "Fasit – oppgave 3.8.6"
 
@@ -193,9 +203,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print(storst)
     ```
 
-    - a) Hvilken verdi får variabelen storst til slutt?
-    - b) Hva skriver programmet ut?
-    - c) Hvorfor endres ikke storst når programmet møter tallet 2?
+    a) Hvilken verdi får variabelen storst til slutt?
+
+    b) Hva skriver programmet ut?
+
+    c) Hvorfor endres ikke storst når programmet møter tallet 2?
 
 ??? note "Fasit – oppgave 3.8.7"
 
@@ -223,9 +235,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print(round(svar, 2))
     ```
 
-    - a) Hvilke to funksjonsverdier blir trukket fra hverandre?
-    - b) Hva skriver programmet ut?
-    - c) Hva er den eksakte verdien av \(f'(3)\) for funksjonen \(f(x)=x^2\)?
+    a) Hvilke to funksjonsverdier blir trukket fra hverandre?
+
+    b) Hva skriver programmet ut?
+
+    c) Hva er den eksakte verdien av \(f'(3)\) for funksjonen \(f(x)=x^2\)?
 
 ??? note "Fasit – oppgave 3.8.8"
 
@@ -256,9 +270,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
         print(round(svar, 3))
     ```
 
-    - a) Hva skriver programmet ut?
-    - b) Hvilken verdi nærmer svarene seg?
-    - c) Hvorfor nærmer svarene seg den deriverte i \(x=3\)?
+    a) Hva skriver programmet ut?
+
+    b) Hvilken verdi nærmer svarene seg?
+
+    c) Hvorfor nærmer svarene seg den deriverte i \(x=3\)?
 
 ??? note "Fasit – oppgave 3.8.9"
 
@@ -299,9 +315,11 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print("y =", a, "x +", b)
     ```
 
-    - a) Hva blir verdiene til \(y_1\), \(a\) og \(b\)?
-    - b) Hva skriver programmet ut?
-    - c) Hva er tangentens likning i punktet?
+    a) Hva blir verdiene til \(y_1\), \(a\) og \(b\)?
+
+    b) Hva skriver programmet ut?
+
+    c) Hva er tangentens likning i punktet?
 
 ??? note "Fasit – oppgave 3.8.10"
 
