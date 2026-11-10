@@ -14,15 +14,15 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f(x)=(x^2+1)e^{-x}.
     \]
 
-    - a) Finn \(f'(x)\), og faktoriser uttrykket så langt det er mulig.
+    a) Finn \(f'(x)\), og faktoriser uttrykket så langt det er mulig.
 
-    - b) Bestem tangentens likning når \(x=1\).
+    b) Bestem tangentens likning når \(x=1\).
 
-    - c) Forklar hvorfor tangenten i dette punktet er horisontal.
+    c) Forklar hvorfor tangenten i dette punktet er horisontal.
 
 ??? note "Fasit – oppgave 3.9.1"
 
-    - a)
+    a)
 
         \[
         \begin{aligned}
@@ -32,13 +32,13 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
         \end{aligned}
         \]
 
-    - b) \(f(1)=2/e\) og \(f'(1)=0\). Tangenten er
+    b) \(f(1)=2/e\) og \(f'(1)=0\). Tangenten er
 
         \[
         \underline{\underline{y=\frac2e}}.
         \]
 
-    - c) Stigningstallet er \(f'(1)=0\), så tangenten er horisontal.
+    c) Stigningstallet er \(f'(1)=0\), så tangenten er horisontal.
 
 !!! question "Oppgave 3.9.2 – Brøkregel og ekstremalpunkter"
 
@@ -48,15 +48,15 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     g(x)=\dfrac{(\ln x)^2}{x},\qquad x>0.
     \]
 
-    - a) Finn \(g'(x)\).
+    a) Finn \(g'(x)\).
 
-    - b) Bestem alle punktene der tangenten er horisontal.
+    b) Bestem alle punktene der tangenten er horisontal.
 
-    - c) Undersøk fortegnet til \(g'(x)\), og avgjør hvor funksjonen vokser og avtar.
+    c) Undersøk fortegnet til \(g'(x)\), og avgjør hvor funksjonen vokser og avtar.
 
 ??? note "Fasit – oppgave 3.9.2"
 
-    - a)
+    a)
 
         \[
         \begin{aligned}
@@ -66,9 +66,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
         \end{aligned}
         \]
 
-    - b) \(g'(x)=0\) gir \(\ln x=0\) eller \(\ln x=2\). Dermed er \(x=1\) eller \(x=e^2\). Punktene er \((1,0)\) og \(\left(e^2,\frac4{e^2}\right)\).
+    b) \(g'(x)=0\) gir \(\ln x=0\) eller \(\ln x=2\). Dermed er \(x=1\) eller \(x=e^2\). Punktene er \((1,0)\) og \(\left(e^2,\frac4{e^2}\right)\).
 
-    - c) Den deriverte er negativ for \(0<x<1\), positiv for \(1<x<e^2\) og negativ for \(x>e^2\). Funksjonen avtar, vokser og avtar i disse intervallene. Det er bunnpunkt ved \(x=1\) og toppunkt ved \(x=e^2\).
+    c) Den deriverte er negativ for \(0<x<1\), positiv for \(1<x<e^2\) og negativ for \(x>e^2\). Funksjonen avtar, vokser og avtar i disse intervallene. Det er bunnpunkt ved \(x=1\) og toppunkt ved \(x=e^2\).
 
 !!! question "Oppgave 3.9.3 – Finn funksjonen fra opplysninger"
 
@@ -106,24 +106,24 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f(x)=x^3-3x^2+2.
     \]
 
-    - a) Finn den gjennomsnittlige vekstfarten fra \(x=0\) til \(x=3\).
+    a) Finn den gjennomsnittlige vekstfarten fra \(x=0\) til \(x=3\).
 
-    - b) Finn den momentane vekstfarten ved \(x=1\).
+    b) Finn den momentane vekstfarten ved \(x=1\).
 
-    - c) Finnes det et punkt i intervallet \(0<x<3\) der den momentane vekstfarten er lik den gjennomsnittlige? Begrunn svaret.
+    c) Finnes det et punkt i intervallet \(0<x<3\) der den momentane vekstfarten er lik den gjennomsnittlige? Begrunn svaret.
 
 ??? note "Fasit – oppgave 3.9.4"
 
-    - a) \(f(0)=2\) og \(f(3)=2\), så den gjennomsnittlige vekstfarten er \(0\).
+    a) \(f(0)=2\) og \(f(3)=2\), så den gjennomsnittlige vekstfarten er \(0\).
 
-    - b)
+    b)
 
         \[
         f'(x)=3x^2-6x,\qquad
         \underline{\underline{f'(1)=-3}}.
         \]
 
-    - c) Vi løser \(3x^2-6x=0\). Da får vi \(x=0\) eller \(x=2\). I intervallet \(0<x<3\) er løsningen \(\underline{\underline{x=2}}\). Der er momentan vekstfart lik den gjennomsnittlige vekstfarten.
+    c) Vi løser \(3x^2-6x=0\). Da får vi \(x=0\) eller \(x=2\). I intervallet \(0<x<3\) er løsningen \(\underline{\underline{x=2}}\). Der er momentan vekstfart lik den gjennomsnittlige vekstfarten.
 
 !!! question "Oppgave 3.9.5 – Horisontale tangenter"
 
@@ -133,22 +133,22 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     h(x)=\dfrac{x^2+1}{x+1},\qquad x\ne-1.
     \]
 
-    - a) Bestem \(h'(x)\).
+    a) Bestem \(h'(x)\).
 
-    - b) Finn alle punktene der tangenten er parallell med x-aksen.
+    b) Finn alle punktene der tangenten er parallell med x-aksen.
 
-    - c) Bestem tangentlikningen i hvert av punktene.
+    c) Bestem tangentlikningen i hvert av punktene.
 
 ??? note "Fasit – oppgave 3.9.5"
 
-    - a)
+    a)
 
         \[
         h'(x)=\dfrac{2x(x+1)-(x^2+1)}{(x+1)^2}
         =\dfrac{x^2+2x-1}{(x+1)^2}.
         \]
 
-    - b) Vi setter \(h'(x)=0\). Siden nevneren ikke er null for \(x\ne-1\), får vi
+    b) Vi setter \(h'(x)=0\). Siden nevneren ikke er null for \(x\ne-1\), får vi
 
         \[
         x^2+2x-1=0
@@ -156,7 +156,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
         x=-1\pm\sqrt2.
         \]
 
-    - c) Punktene er
+    c) Punktene er
 
         \[
         \left(-1+\sqrt2,\;2(\sqrt2-1)\right)
@@ -186,28 +186,28 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f(x)=(x^2-4)e^x.
     \]
 
-    - a) Finn \(f'(x)\), og faktoriser uttrykket.
+    a) Finn \(f'(x)\), og faktoriser uttrykket.
 
-    - b) Bestem alle stasjonære punkter eksakt.
+    b) Bestem alle stasjonære punkter eksakt.
 
-    - c) Lag et fortegnsskjema for \(f'(x)\), og avgjør hvilke stasjonære punkter som er topp- eller bunnpunkter.
+    c) Lag et fortegnsskjema for \(f'(x)\), og avgjør hvilke stasjonære punkter som er topp- eller bunnpunkter.
 
 ??? note "Fasit – oppgave 3.9.6"
 
-    - a)
+    a)
 
         \[
         f'(x)=2xe^x+(x^2-4)e^x
         =\underline{\underline{e^x(x^2+2x-4)}}.
         \]
 
-    - b) Siden \(e^x\ne0\), løser vi \(x^2+2x-4=0\):
+    b) Siden \(e^x\ne0\), løser vi \(x^2+2x-4=0\):
 
         \[
         \underline{\underline{x=-1\pm\sqrt5}}.
         \]
 
-    - c) Parabeluttrykket er positivt utenfor røttene og negativt mellom dem. Funksjonen vokser før den minste roten, avtar mellom røttene og vokser etter den største roten. Det er derfor toppunkt ved \(x=-1-\sqrt5\) og bunnpunkt ved \(x=-1+\sqrt5\).
+    c) Parabeluttrykket er positivt utenfor røttene og negativt mellom dem. Funksjonen vokser før den minste roten, avtar mellom røttene og vokser etter den største roten. Det er derfor toppunkt ved \(x=-1-\sqrt5\) og bunnpunkt ved \(x=-1+\sqrt5\).
 
 !!! question "Oppgave 3.9.7 – Kontinuitet og deriverbarhet med parameter"
 
@@ -221,27 +221,27 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     \end{cases}
     \]
 
-    - a) Bestem en sammenheng mellom \(a\) og \(b\) som gjør funksjonen kontinuerlig i \(x=2\).
+    a) Bestem en sammenheng mellom \(a\) og \(b\) som gjør funksjonen kontinuerlig i \(x=2\).
 
-    - b) Bestem \(a\) og \(b\) slik at funksjonen også er deriverbar i \(x=2\).
+    b) Bestem \(a\) og \(b\) slik at funksjonen også er deriverbar i \(x=2\).
 
-    - c) Skriv funksjonen med de bestemte verdiene, og forklar hvorfor både kontinuitet og deriverbarhet er oppfylt.
+    c) Skriv funksjonen med de bestemte verdiene, og forklar hvorfor både kontinuitet og deriverbarhet er oppfylt.
 
 ??? note "Fasit – oppgave 3.9.7"
 
-    - a) Kontinuitet krever
+    a) Kontinuitet krever
 
         \[
         2a+b=5.
         \]
 
-    - b) Deriverbarhet krever i tillegg at stigningstallene er like. Venstre stigningstall er \(a\), mens høyre stigningstall er \(2x=4\) ved \(x=2\). Dermed er \(a=4\). Da gir kontinuitetskravet \(8+b=5\), altså \(b=-3\).
+    b) Deriverbarhet krever i tillegg at stigningstallene er like. Venstre stigningstall er \(a\), mens høyre stigningstall er \(2x=4\) ved \(x=2\). Dermed er \(a=4\). Da gir kontinuitetskravet \(8+b=5\), altså \(b=-3\).
 
         \[
         \underline{\underline{a=4,\qquad b=-3}}
         \]
 
-    - c) Funksjonen blir \(f(x)=4x-3\) for \(x<2\) og \(f(x)=x^2+1\) for \(x\geq2\). Begge uttrykkene gir verdien \(5\) ved \(x=2\), og begge har stigningstall \(4\) der.
+    c) Funksjonen blir \(f(x)=4x-3\) for \(x<2\) og \(f(x)=x^2+1\) for \(x\geq2\). Begge uttrykkene gir verdien \(5\) ved \(x=2\), og begge har stigningstall \(4\) der.
 
 !!! question "Oppgave 3.9.8 – Tangent og skjæringspunkter"
 
@@ -251,21 +251,21 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f(x)=x^3-3x^2+2x+1.
     \]
 
-    - a) Finn tangentlikningen når \(x=1\).
+    a) Finn tangentlikningen når \(x=1\).
 
-    - b) Bestem alle skjæringspunktene mellom tangenten og grafen til \(f\).
+    b) Bestem alle skjæringspunktene mellom tangenten og grafen til \(f\).
 
-    - c) Forklar hvorfor ett av skjæringspunktene må være tangeringspunktet.
+    c) Forklar hvorfor ett av skjæringspunktene må være tangeringspunktet.
 
 ??? note "Fasit – oppgave 3.9.8"
 
-    - a) \(f'(x)=3x^2-6x+2\). Dermed er \(f'(1)=-1\) og \(f(1)=1\).
+    a) \(f'(x)=3x^2-6x+2\). Dermed er \(f'(1)=-1\) og \(f(1)=1\).
 
         \[
         \underline{\underline{y-1=-(x-1)\quad\Rightarrow\quad y=-x+2}}
         \]
 
-    - b) Vi setter \(f(x)=-x+2\):
+    b) Vi setter \(f(x)=-x+2\):
 
         \[
         x^3-3x^2+2x+1=-x+2
@@ -279,7 +279,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     (x-1)^3=0.
     \]
 
-    - c) Det eneste skjæringspunktet er \((1,1)\). Grafen og tangenten har her et skjæringspunkt med trippelrot.
+    c) Det eneste skjæringspunktet er \((1,1)\). Grafen og tangenten har her et skjæringspunkt med trippelrot.
 
 !!! question "Oppgave 3.9.9 – Bevegelse og ekstremalverdier"
 
@@ -291,27 +291,27 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     der \(s\) måles i meter og \(t\) i sekunder.
 
-    - a) Finn fartsfunksjonen \(v(t)\).
+    a) Finn fartsfunksjonen \(v(t)\).
 
-    - b) Bestem når gjenstanden står stille.
+    b) Bestem når gjenstanden står stille.
 
-    - c) Undersøk når gjenstanden beveger seg i positiv og negativ retning.
+    c) Undersøk når gjenstanden beveger seg i positiv og negativ retning.
 
-    - d) Finn største og minste posisjon i tidsintervallet. Husk å undersøke både endepunktene og de stasjonære punktene.
+    d) Finn største og minste posisjon i tidsintervallet. Husk å undersøke både endepunktene og de stasjonære punktene.
 
 ??? note "Fasit – oppgave 3.9.9"
 
-    - a)
+    a)
 
         \[
         \underline{\underline{v(t)=3t^2-12t+9=3(t-1)(t-3)}}.
         \]
 
-    - b) Gjenstanden står stille ved \(t=1\) og \(t=3\).
+    b) Gjenstanden står stille ved \(t=1\) og \(t=3\).
 
-    - c) \(v(t)>0\) for \(0\leq t<1\) og \(3<t\leq5\). \(v(t)<0\) for \(1<t<3\).
+    c) \(v(t)>0\) for \(0\leq t<1\) og \(3<t\leq5\). \(v(t)<0\) for \(1<t<3\).
 
-    - d) Vi undersøker endepunktene og de stasjonære punktene:
+    d) Vi undersøker endepunktene og de stasjonære punktene:
 
         \[
         s(0)=2,\quad s(1)=6,\quad s(3)=2,\quad s(5)=22.
@@ -333,19 +333,19 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f'(x)=\dfrac{2e^{2x}}{1}.
     \]
 
-    - a) Forklar hvilke regler eleven må bruke.
+    a) Forklar hvilke regler eleven må bruke.
 
-    - b) Pek på minst to feil i elevens framgangsmåte.
+    b) Pek på minst to feil i elevens framgangsmåte.
 
-    - c) Finn riktig uttrykk for \(f'(x)\), og bestem \(f'(0)\).
+    c) Finn riktig uttrykk for \(f'(x)\), og bestem \(f'(0)\).
 
 ??? note "Fasit – oppgave 3.9.10"
 
-    - a) Her må vi bruke kvotientregelen og kjerneregelen for \(e^{2x}\).
+    a) Her må vi bruke kvotientregelen og kjerneregelen for \(e^{2x}\).
 
-    - b) Eleven har ikke derivert nevneren riktig, og har ikke brukt kvotientregelen. Nevneren skal dessuten kvadreres.
+    b) Eleven har ikke derivert nevneren riktig, og har ikke brukt kvotientregelen. Nevneren skal dessuten kvadreres.
 
-    - c)
+    c)
 
         \[
         f'(x)=\dfrac{2e^{2x}(x-1)-e^{2x}}{(x-1)^2}
@@ -368,17 +368,17 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     Grafen går gjennom punktet \((0,3)\), og tangenten i dette punktet har stigningstall \(2\).
 
-    - a) Bestem \(a\) og \(b\).
+    a) Bestem \(a\) og \(b\).
 
-    - b) Finn \(f'(x)\), og faktoriser uttrykket.
+    b) Finn \(f'(x)\), og faktoriser uttrykket.
 
-    - c) Bestem eventuelle stasjonære punkter eksakt.
+    c) Bestem eventuelle stasjonære punkter eksakt.
 
-    - d) Undersøk fortegnet til f'(x), og avgjør om funksjonen vokser eller avtar. Begrunn svaret.
+    d) Undersøk fortegnet til f'(x), og avgjør om funksjonen vokser eller avtar. Begrunn svaret.
 
 ??? note "Fasit – oppgave 3.9.11"
 
-    - a) \(f(0)=a=3\). Videre er
+    a) \(f(0)=a=3\). Videre er
 
         \[
         f'(x)=e^{bx}\bigl(2x+b(x^2+a)\bigr).
@@ -390,16 +390,16 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     \underline{\underline{a=3,\qquad b=\frac23}}
     \]
 
-    - b)
+    b)
 
         \[
         f'(x)=e^{\frac23x}\left(2x+\frac23(x^2+3)\right)
         =\frac23e^{\frac23x}(x^2+3x+3).
         \]
 
-    - c) Andregradsuttrykket har diskriminant \(9-12=-3\), så det har ingen reelle nullpunkter. Siden eksponentialfaktoren alltid er positiv, har funksjonen ingen stasjonære punkter.
+    c) Andregradsuttrykket har diskriminant \(9-12=-3\), så det har ingen reelle nullpunkter. Siden eksponentialfaktoren alltid er positiv, har funksjonen ingen stasjonære punkter.
 
-    - d) Andregradsuttrykket har positiv koeffisient foran \(x^2\) og ingen reelle nullpunkter. Det er derfor positivt for alle \(x\). Eksponentialfaktoren er også alltid positiv, så \(f'(x)>0\) for alle reelle \(x\). Funksjonen er dermed strengt voksende på hele den reelle tallinjen.
+    d) Andregradsuttrykket har positiv koeffisient foran \(x^2\) og ingen reelle nullpunkter. Det er derfor positivt for alle \(x\). Eksponentialfaktoren er også alltid positiv, så \(f'(x)>0\) for alle reelle \(x\). Funksjonen er dermed strengt voksende på hele den reelle tallinjen.
 
 
 !!! question "Oppgave 3.9.12 – Derivasjon fra definisjonen og tangent"
@@ -410,19 +410,19 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f(x)=x^3-2x^2+x.
     \]
 
-    - a) Bruk definisjonen av den deriverte til å vise at
+    a) Bruk definisjonen av den deriverte til å vise at
 
         \[
         f'(x)=3x^2-4x+1.
         \]
 
-    - b) Bestem tangentlikningen når \(x=2\).
+    b) Bestem tangentlikningen når \(x=2\).
 
-    - c) Finn alle skjæringspunktene mellom tangenten og grafen til funksjonen.
+    c) Finn alle skjæringspunktene mellom tangenten og grafen til funksjonen.
 
 ??? note "Fasit – oppgave 3.9.12"
 
-    - a)
+    a)
 
         \[
         \begin{aligned}
@@ -434,13 +434,13 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
         \end{aligned}
         \]
 
-    - b) \(f'(2)=12-8+1=5\), og \(f(2)=8-8+2=2\).
+    b) \(f'(2)=12-8+1=5\), og \(f(2)=8-8+2=2\).
 
         \[
         \underline{\underline{y-2=5(x-2)\quad\Rightarrow\quad y=5x-8}}
         \]
 
-    - c) Vi setter \(f(x)=5x-8\):
+    c) Vi setter \(f(x)=5x-8\):
 
         \[
         x^3-2x^2+x=5x-8
@@ -461,27 +461,27 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f'(-1)=0,\qquad f'(3)=0,\qquad f'(0)=-3.
     \]
 
-    - a) Bestem uttrykket for \(f'(x)\).
+    a) Bestem uttrykket for \(f'(x)\).
 
-    - b) Undersøk hvor \(f\) vokser og avtar.
+    b) Undersøk hvor \(f\) vokser og avtar.
 
-    - c) Avgjør om \(f\) har toppunkt eller bunnpunkt ved \(x=-1\) og \(x=3\).
+    c) Avgjør om \(f\) har toppunkt eller bunnpunkt ved \(x=-1\) og \(x=3\).
 
-    - d) Kan du bestemme \(f(x)\) entydig ut fra opplysningene? Begrunn svaret, og beskriv alle funksjoner som passer.
+    d) Kan du bestemme \(f(x)\) entydig ut fra opplysningene? Begrunn svaret, og beskriv alle funksjoner som passer.
 
 ??? note "Fasit – oppgave 3.9.13"
 
-    - a) Siden nullpunktene er \(-1\) og \(3\), har vi \(f'(x)=k(x+1)(x-3)\). Bruker vi \(f'(0)=-3\), får vi \(-3k=-3\), altså \(k=1\).
+    a) Siden nullpunktene er \(-1\) og \(3\), har vi \(f'(x)=k(x+1)(x-3)\). Bruker vi \(f'(0)=-3\), får vi \(-3k=-3\), altså \(k=1\).
 
         \[
         \underline{\underline{f'(x)=x^2-2x-3}}
         \]
 
-    - b) Den deriverte er positiv for \(x<-1\), negativ for \(-1<x<3\) og positiv for \(x>3\). Funksjonen vokser, avtar og vokser.
+    b) Den deriverte er positiv for \(x<-1\), negativ for \(-1<x<3\) og positiv for \(x>3\). Funksjonen vokser, avtar og vokser.
 
-    - c) Det er toppunkt ved \(x=-1\) og bunnpunkt ved \(x=3\).
+    c) Det er toppunkt ved \(x=-1\) og bunnpunkt ved \(x=3\).
 
-    - d) Nei. Alle funksjoner på formen
+    d) Nei. Alle funksjoner på formen
 
         \[
         \underline{\underline{f(x)=\frac13x^3-x^2-3x+C}}
@@ -497,9 +497,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     f(x)=\ln x.
     \]
 
-    - a) Finn den eksakte verdien av \(f'(2)\).
+    a) Finn den eksakte verdien av \(f'(2)\).
 
-    - b) Bruk framoverdifferansen
+    b) Bruk framoverdifferansen
 
         \[
         \dfrac{f(2+h)-f(2)}{h}
@@ -507,25 +507,25 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     med \(h=0,1\), \(h=0,01\) og \(h=0,001\).
 
-    - c) Bruk den symmetriske differansekvotienten med de samme \(h\)-verdiene.
+    c) Bruk den symmetriske differansekvotienten med de samme \(h\)-verdiene.
 
-    - d) Sammenlign resultatene. Hvilken metode gir best tilnærming her? Lag en tabell med tilnærmingene og de absolutte feilene.
+    d) Sammenlign resultatene. Hvilken metode gir best tilnærming her? Lag en tabell med tilnærmingene og de absolutte feilene.
 
-    - e) Forklar hvorfor en svært liten \(h\) ikke alltid gir et mer nøyaktig numerisk svar.
+    e) Forklar hvorfor en svært liten \(h\) ikke alltid gir et mer nøyaktig numerisk svar.
 
 ??? note "Fasit – oppgave 3.9.14"
 
-    - a)
+    a)
 
         \[
         \underline{\underline{f'(2)=\frac12}}.
         \]
 
-    - b) Framoverdifferansen er \(\dfrac{\ln(2+h)-\ln2}{h}\).
+    b) Framoverdifferansen er \(\dfrac{\ln(2+h)-\ln2}{h}\).
 
-    - c) Den symmetriske differansekvotienten er \(\dfrac{\ln(2+h)-\ln(2-h)}{2h}\).
+    c) Den symmetriske differansekvotienten er \(\dfrac{\ln(2+h)-\ln(2-h)}{2h}\).
 
-    - d) Omtrentlige verdier:
+    d) Omtrentlige verdier:
 
     | \(h\) | Framoverdifferanse | Symmetrisk differanse |
     |---:|---:|---:|
@@ -535,4 +535,4 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     Den symmetriske metoden gir best tilnærming for disse verdiene av \(h\).
 
-    - e) Når \(h\) blir svært liten, trekkes nesten like tall fra hverandre. Avrundingsfeil kan da bli betydelige i forhold til differansen.
+    e) Når \(h\) blir svært liten, trekkes nesten like tall fra hverandre. Avrundingsfeil kan da bli betydelige i forhold til differansen.
