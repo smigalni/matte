@@ -1,4 +1,4 @@
-# Del 4 – Løkker: `for` og `while`
+# 4. Løkker: `for` og `while`
 
 Løkker brukes når vi vil gjenta instruksjoner. I stedet for å skrive den samme koden mange ganger, kan vi la programmet gjøre jobben.
 
