@@ -207,6 +207,7 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
     Deriver begge funksjonene:
 
     a) \(a(x)=(2x-1)\ln x\)
+
     b) \(b(x)=\dfrac{e^x}{x}\)
 
 ??? note "Fasit – oppgave 3.4.5"
