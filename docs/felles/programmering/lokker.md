@@ -160,6 +160,32 @@ while tall < 100:
 
 Programmet skriver ut 1, 2, 4, 8, 16, 32 og 64. Etter det blir `tall` lik 128, og betingelsen er ikke lenger sann.
 
+### Rekker med desimaltall
+
+Hva gjør vi hvis vi vil skrive ut tallrekken 1, 1.5, 2, 2.5, 3? Her kan vi ikke skrive `range(1, 3.5, 0.5)), fordi `range()` bare bruker heltall.
+
+Vi kan bruke `while` og øke tallet med 0.5 for hver runde:
+
+```python
+tall = 1
+
+while tall <= 3:
+    print(tall)
+    tall = tall + 0.5
+```
+
+Vi kan også bruke `for`. Da lar vi løkken telle med heltall og regner ut desimaltallet i hver runde:
+
+```python
+for i in range(5):
+    tall = 1 + i * 0.5
+    print(tall)
+```
+
+Begge programmene skriver ut 1, 1.5, 2, 2.5 og 3.
+
+**Husk:** Vi må altså ikke bruke `while` bare fordi tallrekken inneholder desimaltall. `while` er et naturlig valg når vi øker et tall så lenge en betingelse er sann. `for` passer også når vi vet hvor mange verdier vi skal lage. Siden `range()` bare bruker heltall, kan vi la `for` telle med heltall og regne ut verdiene vi trenger.
+
 **Husk:** `for` passer ofte når gjentakelsen følger en bestemt rekke eller et bestemt antall runder. `while` passer ofte når gjentakelsen styres av en betingelse. Noen oppgaver kan løses med begge, men det er viktig å velge løkken som gjør hensikten tydeligst.
 
 ## 4.7 Oppgaver
