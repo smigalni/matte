@@ -134,12 +134,17 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.1"
 
-    Sett \(u=x^2+1\) og \(v=3x+2\). Da er \(u'=2x\) og \(v'=3\).
-
+    Vi skriver funksjonen som et produkt:
+    \[ f(x)=uv=(x^2+1)(3x+2). \]
+    Da er \(u=x^2+1\), \(v=3x+2\), \(u'=2x\) og \(v'=3\).
+    Produktregelen gir
     \[
-    f'(x)=2x(3x+2)+3(x^2+1)
-    =\underline{\underline{9x^2+4x+3}}.
+    f'(x)=u'v+uv'
+    =2x(3x+2)+(x^2+1)\cdot3
+    =9x^2+4x+3.
     \]
+    **Svar:**
+    \[f'(x)=9x^2+4x+3.\]
 
 !!! question "Oppgave 3.4.2 – Produktregelen med eksponentialfunksjon"
 
@@ -147,9 +152,14 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.2"
 
+    Vi skriver funksjonen som et produkt:
+    \[g(x)=uv=x\cdot e^x.\]
+    Da er \(u=x\), \(v=e^x\), \(u'=1\) og \(v'=e^x\).
+    Produktregelen gir
     \[
-    g'(x)=1\cdot e^x+x\cdot e^x
-    =\underline{\underline{e^x(1+x)}}.
+    g'(x)=u'v+uv'
+    =1\cdot e^x+x\cdot e^x
+    =e^x(1+x).
     \]
 
 !!! question "Oppgave 3.4.3 – Kvotientregelen"
@@ -158,9 +168,14 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.3"
 
+    Vi skriver funksjonen som en brøk:
+    \[h(x)=\dfrac{u}{v}=\dfrac{x+1}{x+2}.\]
+    Da er \(u=x+1\), \(v=x+2\), \(u'=1\) og \(v'=1\).
+    Brøkregelen gir
     \[
-    h'(x)=\dfrac{1\cdot(x+2)-(x+1)\cdot1}{(x+2)^2}
-    =\underline{\underline{\frac1{(x+2)^2}}}.
+    h'(x)=\dfrac{u'v-uv'}{v^2}
+    =\dfrac{1\cdot(x+2)-(x+1)\cdot1}{(x+2)^2}
+    =\dfrac{1}{(x+2)^2}.
     \]
 
 !!! question "Oppgave 3.4.4 – Kvotientregelen med en potens"
@@ -169,9 +184,14 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 
 ??? note "Fasit – oppgave 3.4.4"
 
+    Vi skriver funksjonen som en brøk:
+    \[p(x)=\dfrac{u}{v}=\dfrac{x^2+1}{x}.\]
+    Da er \(u=x^2+1\), \(v=x\), \(u'=2x\) og \(v'=1\).
+    Brøkregelen gir
     \[
-    p'(x)=\dfrac{2x\cdot x-(x^2+1)\cdot1}{x^2}
-    =\underline{\underline{1-\frac1{x^2}}}.
+    p'(x)=\dfrac{u'v-uv'}{v^2}
+    =\dfrac{2x\cdot x-(x^2+1)\cdot1}{x^2}
+    =\dfrac{x^2-1}{x^2}=1-\dfrac1{x^2}.
     \]
 
 !!! question "Oppgave 3.4.5 – Velg riktig regel"
@@ -182,6 +202,26 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
     b) \(b(x)=\dfrac{e^x}{x}\)
 
 ??? note "Fasit – oppgave 3.4.5"
+
+    **a) Produktregelen**
+    \[a(x)=uv=(2x-1)\ln x.\]
+    Her er \(u=2x-1\), \(v=\ln x\), \(u'=2\) og \(v'=\dfrac1x\).
+    Derfor
+    \[
+    a'(x)=u'v+uv'
+    =2\ln x+(2x-1)\cdot\dfrac1x
+    =2\ln x+2-\dfrac1x.
+    \]
+    **b) Brøkregelen**
+    \[b(x)=\dfrac{u}{v}=\dfrac{e^x}{x}.\]
+    Her er \(u=e^x\), \(v=x\), \(u'=e^x\) og \(v'=1\).
+    Derfor
+    \[
+    b'(x)=\dfrac{u'v-uv'}{v^2}
+    =\dfrac{e^x\cdot x-e^x\cdot1}{x^2}
+    =\dfrac{e^x(x-1)}{x^2}.
+    \]
+
 
     a)
     \[
