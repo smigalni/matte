@@ -75,13 +75,13 @@
 
     Les koden:
 
-    \`\`\`python
+    ```python
     def f(x):
         return x**2 - 2*x
 
     for x in [0, 1, 2, 3]:
         print(f(x))
-    \`\`\`
+    ```
 
     a) Hva returnerer funksjonen når \(x=2\)?
     b) Hva skriver programmet ut?
@@ -97,12 +97,12 @@
 
     Programmet skriver ut:
 
-    \`\`\`text
+    ```text
     0
     -1
     0
     3
-    \`\`\`
+    ```
 
     Funksjonen har verdien null ved \(x=0\) og \(x=2\), fordi utskriften for disse x-verdiene er 0.
 
@@ -173,7 +173,7 @@
 
     En elev har skrevet programmet:
 
-    \`\`\`python
+    ```python
     def f(x):
         return x**2
 
@@ -181,7 +181,7 @@
     for delta_x in [1, 0.1, 0.01]:
         svar = (f(x + delta_x) - f(x)) / delta_x
         print(round(svar, 2))
-    \`\`\`
+    ```
 
     a) Hva skriver programmet ut?
     b) Hvilken verdi nærmer utskriften seg når \(\Delta x\) blir mindre?
@@ -198,11 +198,11 @@
 
     Programmet skriver ut:
 
-    \`\`\`text
+    ```text
     5.0
     4.1
     4.01
-    \`\`\`
+    ```
 
     Den eksakte deriverte er \(f'(x)=2x\), så \(f'(2)=4\). Utskriften nærmer seg 4 når \(\Delta x\) blir mindre.
 
