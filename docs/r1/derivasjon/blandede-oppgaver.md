@@ -24,19 +24,19 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a)
 
-        \[
-        \begin{aligned}
-        f'(x)
-        &=2xe^{-x}-(x^2+1)e^{-x}\\
-        &=\underline{\underline{e^{-x}(-x^2+2x-1)}}.
-        \end{aligned}
-        \]
+    \[
+    \begin{aligned}
+    f'(x)
+    &=2xe^{-x}-(x^2+1)e^{-x}\\
+    &=\underline{\underline{e^{-x}(-x^2+2x-1)}}.
+    \end{aligned}
+    \]
 
     b) \(f(1)=2/e\) og \(f'(1)=0\). Tangenten er
 
-        \[
-        \underline{\underline{y=\frac2e}}.
-        \]
+    \[
+    \underline{\underline{y=\frac2e}}.
+    \]
 
     c) Stigningstallet er \(f'(1)=0\), så tangenten er horisontal.
 
@@ -58,13 +58,13 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a)
 
-        \[
-        \begin{aligned}
-        g'(x)
-        &=\dfrac{\dfrac{2\ln x}{x}\cdot x-(\ln x)^2}{x^2}\\
-        &=\underline{\underline{\dfrac{\ln x(2-\ln x)}{x^2}}}.
-        \end{aligned}
-        \]
+    \[
+    \begin{aligned}
+    g'(x)
+    &=\dfrac{\dfrac{2\ln x}{x}\cdot x-(\ln x)^2}{x^2}\\
+    &=\underline{\underline{\dfrac{\ln x(2-\ln x)}{x^2}}}.
+    \end{aligned}
+    \]
 
     b) \(g'(x)=0\) gir \(\ln x=0\) eller \(\ln x=2\). Dermed er \(x=1\) eller \(x=e^2\). Punktene er \((1,0)\) og \(\left(e^2,\frac4{e^2}\right)\).
 
@@ -118,10 +118,10 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     b)
 
-        \[
-        f'(x)=3x^2-6x,\qquad
-        \underline{\underline{f'(1)=-3}}.
-        \]
+    \[
+    f'(x)=3x^2-6x,\qquad
+    \underline{\underline{f'(1)=-3}}.
+    \]
 
     c) Vi løser \(3x^2-6x=0\). Da får vi \(x=0\) eller \(x=2\). I intervallet \(0<x<3\) er løsningen \(\underline{\underline{x=2}}\). Der er momentan vekstfart lik den gjennomsnittlige vekstfarten.
 
@@ -143,24 +143,24 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a)
 
-        \[
-        h'(x)=\dfrac{2x(x+1)-(x^2+1)}{(x+1)^2}
-        =\dfrac{x^2+2x-1}{(x+1)^2}.
-        \]
+    \[
+    h'(x)=\dfrac{2x(x+1)-(x^2+1)}{(x+1)^2}
+    =\dfrac{x^2+2x-1}{(x+1)^2}.
+    \]
 
     b) Vi setter \(h'(x)=0\). Siden nevneren ikke er null for \(x\ne-1\), får vi
 
-        \[
-        x^2+2x-1=0
-        \quad\Rightarrow\quad
-        x=-1\pm\sqrt2.
-        \]
+    \[
+    x^2+2x-1=0
+    \quad\Rightarrow\quad
+    x=-1\pm\sqrt2.
+    \]
 
     c) Punktene er
 
-        \[
-        \left(-1+\sqrt2,\;2(\sqrt2-1)\right)
-        \]
+    \[
+    \left(-1+\sqrt2,\;2(\sqrt2-1)\right)
+    \]
 
     og
 
@@ -196,16 +196,16 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a)
 
-        \[
-        f'(x)=2xe^x+(x^2-4)e^x
-        =\underline{\underline{e^x(x^2+2x-4)}}.
-        \]
+    \[
+    f'(x)=2xe^x+(x^2-4)e^x
+    =\underline{\underline{e^x(x^2+2x-4)}}.
+    \]
 
     b) Siden \(e^x\ne0\), løser vi \(x^2+2x-4=0\):
 
-        \[
-        \underline{\underline{x=-1\pm\sqrt5}}.
-        \]
+    \[
+    \underline{\underline{x=-1\pm\sqrt5}}.
+    \]
 
     c) Parabeluttrykket er positivt utenfor røttene og negativt mellom dem. Funksjonen vokser før den minste roten, avtar mellom røttene og vokser etter den største roten. Det er derfor toppunkt ved \(x=-1-\sqrt5\) og bunnpunkt ved \(x=-1+\sqrt5\).
 
@@ -231,15 +231,15 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a) Kontinuitet krever
 
-        \[
-        2a+b=5.
-        \]
+    \[
+    2a+b=5.
+    \]
 
     b) Deriverbarhet krever i tillegg at stigningstallene er like. Venstre stigningstall er \(a\), mens høyre stigningstall er \(2x=4\) ved \(x=2\). Dermed er \(a=4\). Da gir kontinuitetskravet \(8+b=5\), altså \(b=-3\).
 
-        \[
-        \underline{\underline{a=4,\qquad b=-3}}
-        \]
+    \[
+    \underline{\underline{a=4,\qquad b=-3}}
+    \]
 
     c) Funksjonen blir \(f(x)=4x-3\) for \(x<2\) og \(f(x)=x^2+1\) for \(x\geq2\). Begge uttrykkene gir verdien \(5\) ved \(x=2\), og begge har stigningstall \(4\) der.
 
@@ -261,15 +261,15 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a) \(f'(x)=3x^2-6x+2\). Dermed er \(f'(1)=-1\) og \(f(1)=1\).
 
-        \[
-        \underline{\underline{y-1=-(x-1)\quad\Rightarrow\quad y=-x+2}}
-        \]
+    \[
+    \underline{\underline{y-1=-(x-1)\quad\Rightarrow\quad y=-x+2}}
+    \]
 
     b) Vi setter \(f(x)=-x+2\):
 
-        \[
-        x^3-3x^2+2x+1=-x+2
-        \]
+    \[
+    x^3-3x^2+2x+1=-x+2
+    \]
 
     \[
     x^3-3x^2+3x-1=0
@@ -303,9 +303,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a)
 
-        \[
-        \underline{\underline{v(t)=3t^2-12t+9=3(t-1)(t-3)}}.
-        \]
+    \[
+    \underline{\underline{v(t)=3t^2-12t+9=3(t-1)(t-3)}}.
+    \]
 
     b) Gjenstanden står stille ved \(t=1\) og \(t=3\).
 
@@ -313,9 +313,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     d) Vi undersøker endepunktene og de stasjonære punktene:
 
-        \[
-        s(0)=2,\quad s(1)=6,\quad s(3)=2,\quad s(5)=22.
-        \]
+    \[
+    s(0)=2,\quad s(1)=6,\quad s(3)=2,\quad s(5)=22.
+    \]
 
     Globalt minimum er \(\underline{\underline{2\text{ m}}}\), ved \(t=0\) og \(t=3\). Globalt maksimum er \(\underline{\underline{22\text{ m}}}\), ved \(t=5\).
 
@@ -347,10 +347,10 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     c)
 
-        \[
-        f'(x)=\dfrac{2e^{2x}(x-1)-e^{2x}}{(x-1)^2}
-        =\dfrac{e^{2x}(2x-3)}{(x-1)^2}.
-        \]
+    \[
+    f'(x)=\dfrac{2e^{2x}(x-1)-e^{2x}}{(x-1)^2}
+    =\dfrac{e^{2x}(2x-3)}{(x-1)^2}.
+    \]
 
     \[
     \underline{\underline{f'(0)=-3e^0=-3}}
@@ -380,9 +380,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a) \(f(0)=a=3\). Videre er
 
-        \[
-        f'(x)=e^{bx}\bigl(2x+b(x^2+a)\bigr).
-        \]
+    \[
+    f'(x)=e^{bx}\bigl(2x+b(x^2+a)\bigr).
+    \]
 
     \(f'(0)=ab=2\), så \(3b=2\) og \(b=\frac23\).
 
@@ -392,10 +392,10 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     b)
 
-        \[
-        f'(x)=e^{\frac23x}\left(2x+\frac23(x^2+3)\right)
-        =\frac23e^{\frac23x}(x^2+3x+3).
-        \]
+    \[
+    f'(x)=e^{\frac23x}\left(2x+\frac23(x^2+3)\right)
+    =\frac23e^{\frac23x}(x^2+3x+3).
+    \]
 
     c) Andregradsuttrykket har diskriminant \(9-12=-3\), så det har ingen reelle nullpunkter. Siden eksponentialfaktoren alltid er positiv, har funksjonen ingen stasjonære punkter.
 
@@ -412,9 +412,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a) Bruk definisjonen av den deriverte til å vise at
 
-        \[
-        f'(x)=3x^2-4x+1.
-        \]
+    \[
+    f'(x)=3x^2-4x+1.
+    \]
 
     b) Bestem tangentlikningen når \(x=2\).
 
@@ -424,27 +424,27 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a)
 
-        \[
-        \begin{aligned}
-        f'(x)
-        &=\lim_{h\to0}\dfrac{(x+h)^3-2(x+h)^2+(x+h)-(x^3-2x^2+x)}h\\
-        &=\lim_{h\to0}\dfrac{3x^2h+3xh^2+h^3-4xh-2h^2+h}{h}\\
-        &=\lim_{h\to0}(3x^2+3xh+h^2-4x-2h+1)\\
-        &=\underline{\underline{3x^2-4x+1}}.
-        \end{aligned}
-        \]
+    \[
+    \begin{aligned}
+    f'(x)
+    &=\lim_{h\to0}\dfrac{(x+h)^3-2(x+h)^2+(x+h)-(x^3-2x^2+x)}h\\
+    &=\lim_{h\to0}\dfrac{3x^2h+3xh^2+h^3-4xh-2h^2+h}{h}\\
+    &=\lim_{h\to0}(3x^2+3xh+h^2-4x-2h+1)\\
+    &=\underline{\underline{3x^2-4x+1}}.
+    \end{aligned}
+    \]
 
     b) \(f'(2)=12-8+1=5\), og \(f(2)=8-8+2=2\).
 
-        \[
-        \underline{\underline{y-2=5(x-2)\quad\Rightarrow\quad y=5x-8}}
-        \]
+    \[
+    \underline{\underline{y-2=5(x-2)\quad\Rightarrow\quad y=5x-8}}
+    \]
 
     c) Vi setter \(f(x)=5x-8\):
 
-        \[
-        x^3-2x^2+x=5x-8
-        \]
+    \[
+    x^3-2x^2+x=5x-8
+    \]
 
     \[
     x^3-2x^2-4x+8=0
@@ -473,9 +473,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a) Siden nullpunktene er \(-1\) og \(3\), har vi \(f'(x)=k(x+1)(x-3)\). Bruker vi \(f'(0)=-3\), får vi \(-3k=-3\), altså \(k=1\).
 
-        \[
-        \underline{\underline{f'(x)=x^2-2x-3}}
-        \]
+    \[
+    \underline{\underline{f'(x)=x^2-2x-3}}
+    \]
 
     b) Den deriverte er positiv for \(x<-1\), negativ for \(-1<x<3\) og positiv for \(x>3\). Funksjonen vokser, avtar og vokser.
 
@@ -483,9 +483,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     d) Nei. Alle funksjoner på formen
 
-        \[
-        \underline{\underline{f(x)=\frac13x^3-x^2-3x+C}}
-        \]
+    \[
+    \underline{\underline{f(x)=\frac13x^3-x^2-3x+C}}
+    \]
 
     passer, der \(C\) er en vilkårlig konstant.
 
@@ -501,9 +501,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     b) Bruk framoverdifferansen
 
-        \[
-        \dfrac{f(2+h)-f(2)}{h}
-        \]
+    \[
+    \dfrac{f(2+h)-f(2)}{h}
+    \]
 
     med \(h=0,1\), \(h=0,01\) og \(h=0,001\).
 
@@ -517,9 +517,9 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
 
     a)
 
-        \[
-        \underline{\underline{f'(2)=\frac12}}.
-        \]
+    \[
+    \underline{\underline{f'(2)=\frac12}}.
+    \]
 
     b) Framoverdifferansen er \(\dfrac{\ln(2+h)-\ln2}{h}\).
 
