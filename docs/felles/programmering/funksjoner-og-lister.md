@@ -74,6 +74,21 @@ Funksjonen returnerer 12. Deretter lagres 12 i `svar`, og programmet skriver ut 
 
     **d)** Forklar forskjellen på `print(x)` og `return x`. Gi ett eksempel på når du trenger `return`.
 
+
+??? note "Fasit – oppgave 1"
+    **a)**
+    ```python
+    def kvadrat(tall):
+        return tall * tall
+
+    print(kvadrat(5))  # 25
+    ```
+
+    **b)** `a` blir 7, og programmet skriver ut 14.
+
+    **c)** `print` viser en verdi. `return` gir en verdi tilbake slik at den kan brukes videre, for eksempel `svar = kvadrat(5)`.
+
+
 ## 5.2 Lister: lagre flere verdier
 
 En liste lagrer flere verdier i en bestemt rekkefølge. Vi bruker hakeparenteser og komma mellom elementene.
@@ -141,6 +156,27 @@ Programmet skriver ut 4, 7 og 2. Variabelen `x` får verdien til ett element for
 
     **d)** Skriv en `for`-løkke som skriver ut hvert element i `farger = ["rød", "blå", "grønn"]`.
 
+
+??? note "Fasit – oppgave 2"
+    **a)** 6. Indeksering starter på 0, så indeks 1 viser til det andre elementet.
+
+    **b)**
+    ```python
+    tall = [3, 6, 9, 12]
+    tall[1] = 10
+    tall.append(15)
+    ```
+
+    **c)** Først skrives 4 ut, deretter `[4, 5, 8, 11]`.
+
+    **d)**
+    ```python
+    farger = ["rød", "blå", "grønn"]
+    for farge in farger:
+        print(farge)
+    ```
+
+
 ## 5.3 Kombiner funksjoner, lister og løkker
 
 Funksjoner blir særlig nyttige når de behandler lister. En god funksjon har en tydelig oppgave, mottar det den trenger som parametere og returnerer et resultat.
@@ -175,39 +211,6 @@ Først går løkken gjennom alle elementene. Etter løkken returneres summen. Le
 
     **c)** Lag `over_grense(tall, grense)`, som returnerer en ny liste med elementene som er større enn `grense`, i samme rekkefølge. Test med `[3, 8, 2, 10]` og grensen 5.
 
-## 5.4 Fasit
-
-??? note "Fasit – oppgave 1"
-    **a)**
-    ```python
-    def kvadrat(tall):
-        return tall * tall
-
-    print(kvadrat(5))  # 25
-    ```
-
-    **b)** `a` blir 7, og programmet skriver ut 14.
-
-    **c)** `print` viser en verdi. `return` gir en verdi tilbake slik at den kan brukes videre, for eksempel `svar = kvadrat(5)`.
-
-??? note "Fasit – oppgave 2"
-    **a)** 6. Indeksering starter på 0, så indeks 1 viser til det andre elementet.
-
-    **b)**
-    ```python
-    tall = [3, 6, 9, 12]
-    tall[1] = 10
-    tall.append(15)
-    ```
-
-    **c)** Først skrives 4 ut, deretter `[4, 5, 8, 11]`.
-
-    **d)**
-    ```python
-    farger = ["rød", "blå", "grønn"]
-    for farge in farger:
-        print(farge)
-    ```
 
 ??? note "Fasit – oppgave 3"
     **a)**
