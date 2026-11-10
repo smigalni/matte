@@ -245,12 +245,13 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
     Gitt funksjonen \(f(x)=x^2\).
 
-    - a) Finn \(f(1)\) og \(f(3)\).
-    - b) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=3\).
+    a) Finn \(f(1)\) og \(f(3)\).
+
+    b) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=3\).
 
 ??? note "Fasit – oppgave 3.1.1"
 
-    - a) Vi setter inn \(x=1\) og \(x=3\) i funksjonen:
+    a) Vi setter inn \(x=1\) og \(x=3\) i funksjonen:
 
         \[
         f(1)=1^2=1
@@ -260,7 +261,7 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     f(3)=3^2=9
     \]
 
-    - b) Gjennomsnittlig vekstfart er
+    b) Gjennomsnittlig vekstfart er
 
         \[
         a=\dfrac{f(3)-f(1)}{3-1}=\dfrac{9-1}{2}=4.
@@ -272,27 +273,29 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
     En plante vokser fra 10 cm til 22 cm i løpet av tre uker.
 
-    - a) Finn den gjennomsnittlige vekstfarten per uke.
-    - b) Forklar hva svaret betyr.
+    a) Finn den gjennomsnittlige vekstfarten per uke.
+
+    b) Forklar hva svaret betyr.
 
 ??? note "Fasit – oppgave 3.1.2"
 
-    - a) \(\underline{\underline{\dfrac{22-10}{3}=4\text{ cm per uke}}}\).
+    a) \(\underline{\underline{\dfrac{22-10}{3}=4\text{ cm per uke}}}\).
 
-    - b) Planten vokste i gjennomsnitt 4 cm per uke i perioden.
+    b) Planten vokste i gjennomsnitt 4 cm per uke i perioden.
 
 !!! question "Oppgave 3.1.3 – Momentan vekstfart"
 
     En funksjon har \(f'(2)=4\).
 
-    - a) Hva er stigningstallet til tangenten når \(x=2\)?
-    - b) Hva forteller dette om funksjonens momentane vekstfart?
+    a) Hva er stigningstallet til tangenten når \(x=2\)?
+
+    b) Hva forteller dette om funksjonens momentane vekstfart?
 
 ??? note "Fasit – oppgave 3.1.3"
 
-    - a) Stigningstallet er \(\underline{\underline{4}}\).
+    a) Stigningstallet er \(\underline{\underline{4}}\).
 
-    - b) Funksjonen øker momentant med \(\underline{\underline{4}}\) y-enheter per x-enhet ved \(x=2\).
+    b) Funksjonen øker momentant med \(\underline{\underline{4}}\) y-enheter per x-enhet ved \(x=2\).
 
 !!! question "Oppgave 3.1.4 – Finn tangentens likning"
 
@@ -311,12 +314,13 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
     Gitt funksjonen \(f(x)=x^2\).
 
-    - a) Finn punktet på grafen når \(x=1\).
-    - b) Tangentens stigningstall i punktet er 2. Finn tangentens likning.
+    a) Finn punktet på grafen når \(x=1\).
+
+    b) Tangentens stigningstall i punktet er 2. Finn tangentens likning.
 
 ??? note "Fasit – oppgave 3.1.5"
 
-    - a) Vi finner funksjonsverdien når \(x=1\):
+    a) Vi finner funksjonsverdien når \(x=1\):
 
         \[
         f(1)=1^2=1.
@@ -324,7 +328,7 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
     Punktet er derfor \(P=(1,1)\).
 
-    - b) Vi bruker ettpunktsformelen med stigningstall \(2\):
+    b) Vi bruker ettpunktsformelen med stigningstall \(2\):
 
         \[
         y-1=2(x-1)
