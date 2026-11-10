@@ -1,4 +1,4 @@
-# Del 3 – Betingelser: `if`, `else` og `elif`
+# 3. Betingelser: `if`, `else` og `elif`
 
 Et program kan gjøre forskjellige ting avhengig av en betingelse. I Python bruker vi `if` («hvis»), `else` («ellers») og noen ganger `elif` («ellers hvis»).
 
