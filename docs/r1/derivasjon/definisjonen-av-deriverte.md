@@ -3,7 +3,7 @@
 Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan vi regner med reglene. Brøken
 
 \[
-\dfrac{f(a+\Delta x)-f(a)}\Delta x
+\dfrac{f(a+\Delta x)-f(a)}{\Delta x}
 \]
 
 er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer sekanten seg tangenten, dersom grenseverdien finnes.
@@ -30,7 +30,7 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
 ??? note "Fasit – oppgave 3.6.1"
 
     \[
-    f'(x)=\lim_{\Delta x\to0}\dfrac{3(x+\Delta x)+2-(3x+2)}\Delta x
+    f'(x)=\lim_{\Delta x\to0}\dfrac{3(x+\Delta x)+2-(3x+2)}{\Delta x}
     =\lim_{\Delta x\to0}\dfrac{3\Delta x}{\Delta x}=3.
     \]
 
@@ -42,7 +42,7 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
 
     \[
     \begin{aligned}
-    f'(x)&=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2+2(x+\Delta x)-(x^2+2x)}\Delta x\\
+    f'(x)&=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2+2(x+\Delta x)-(x^2+2x)}{\Delta x}\\
     &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2+2\Delta x}{\Delta x}\\
     &=\lim_{\Delta x\to0}(2x+\Delta x+2)=2x+2.
     \end{aligned}
