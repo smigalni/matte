@@ -20,9 +20,9 @@
 
     Stasjonært punkt ved \(x=1\) gir \(3+2a+b=0\). Tangentstigningstall \(5\) ved \(x=-1\) gir \(3-2a+b=5\).
 
-    Ved å trekke den første likningen fra den andre får vi \(-4a=2\), altså \(a=-\frac12\). Da blir \(b=-2\).
+    Ved å trekke den første likningen fra den andre får vi \(-4a=5\), altså \(a=-\frac54\). Da blir \(b=-\frac12\).
 
-    Siden \(f''(x)=6x+2a\), får vi \(f''(1)=5>0\). Punktet ved \(x=1\) er derfor et lokalt bunnpunkt.
+    Siden \(f''(x)=6x+2a\), får vi \(f''(1)=6-\frac52=\frac72>0\). Punktet ved \(x=1\) er derfor et lokalt bunnpunkt.
 
 !!! question "Oppgave 3.P1.2 – Produktregel og horisontale tangenter"
 
@@ -108,6 +108,15 @@
     \]
 
     Dermed er \(f'(0)=ab=3b=2\), så \(b=\frac23\).
+
+    Vi får dermed
+
+    \[
+    f'(x)=\frac23e^{\frac23x}(x^2+3x+3).
+    \]
+
+    Andregradsuttrykket har diskriminant \(9-12=-3\) og positiv koeffisient foran \(x^2\). Det er derfor positivt for alle reelle \(x\). Siden \(e^{\frac23x}\) også alltid er positiv, er \(f'(x)>0\) for alle \(x\). Funksjonen er dermed strengt voksende på hele definisjonsmengden.
+
 
 !!! question "Oppgave 3.P2.3 – Numerisk derivasjon"
 
