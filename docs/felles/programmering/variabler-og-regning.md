@@ -81,6 +81,16 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
     print(3 + 8)
     ```
 
+
+??? note "Fasit – oppgave 1"
+    **1.**
+    ```text
+    3
+    8
+    11
+    ```
+
+
 !!! question "Oppgave 2 – En verdi blir erstattet"
     Hva skriver programmet ut? Forklar hvorfor svaret ikke er 6.
 
@@ -89,6 +99,11 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
     x = 2
     print(x)
     ```
+
+
+??? note "Fasit – oppgave 2"
+    **2.** Utskriften er 2. Den andre tilordningen erstatter verdien 6.
+
 
 !!! question "Oppgave 3 – Oppdater to variabler"
     Fyll ut tabellen og finn utskriften.
@@ -109,50 +124,8 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
     | `a = a + b` | | |
     | `b = a - b` | | |
 
-!!! question "Oppgave 4 – Regnerekkefølge"
-    Finn verdiene til `x` og `y`.
 
-    ```python
-    x = 5 + 2 * 3
-    y = (5 + 2) * 3
-    ```
-
-!!! question "Oppgave 5 – Potenser"
-    Hva skriver programmet ut?
-
-    ```python
-    a = 2 ** 3
-    b = 3 ** 2
-    print(a + b)
-    ```
-
-!!! question "Oppgave 6 – Finn feilen i tankegangen"
-    En elev sier at programmet skriver ut 4, fordi `x` først får verdien 4. Forklar feilen.
-
-    ```python
-    x = 4
-    x = x + 3
-    print(x)
-    ```
-
-!!! question "Oppgave 7 – Skriv kode på papir"
-    Skriv et program som lagrer 12 i `a`, 5 i `b`, regner ut summen i en tredje variabel og skriver ut summen.
-
-!!! question "Oppgave 8 – Fra algoritme til kode"
-    Skriv først en algoritme med norske setninger som finner gjennomsnittet av 8 og 14. Skriv deretter Python-kode som gjør det samme.
-
-## 2.4 Fasit
-
-??? note "Fasit – oppgave 1–4"
-    **1.**
-    ```text
-    3
-    8
-    11
-    ```
-
-    **2.** Utskriften er 2. Den andre tilordningen erstatter verdien 6.
-
+??? note "Fasit – oppgave 3"
     **3.**
 
     | Etter linjen | `a` | `b` |
@@ -164,13 +137,53 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
 
     Utskriften er 7 og deretter 5.
 
+
+!!! question "Oppgave 4 – Regnerekkefølge"
+    Finn verdiene til `x` og `y`.
+
+    ```python
+    x = 5 + 2 * 3
+    y = (5 + 2) * 3
+    ```
+
+
+??? note "Fasit – oppgave 4"
     **4.** \(x=11\) og \(y=21\).
 
-??? note "Fasit – oppgave 5–8"
+
+!!! question "Oppgave 5 – Potenser"
+    Hva skriver programmet ut?
+
+    ```python
+    a = 2 ** 3
+    b = 3 ** 2
+    print(a + b)
+    ```
+
+
+??? note "Fasit – oppgave 5"
     **5.** \(2^3=8\) og \(3^2=9\). Summen er 17.
 
+
+!!! question "Oppgave 6 – Finn feilen i tankegangen"
+    En elev sier at programmet skriver ut 4, fordi `x` først får verdien 4. Forklar feilen.
+
+    ```python
+    x = 4
+    x = x + 3
+    print(x)
+    ```
+
+
+??? note "Fasit – oppgave 6"
     **6.** Linjen `x = x + 3` bruker den gjeldende verdien 4, regner ut 7 og lagrer 7. Utskriften er 7.
 
+
+!!! question "Oppgave 7 – Skriv kode på papir"
+    Skriv et program som lagrer 12 i `a`, 5 i `b`, regner ut summen i en tredje variabel og skriver ut summen.
+
+
+??? note "Fasit – oppgave 7"
     **7.**
     ```python
     a = 12
@@ -180,6 +193,12 @@ Prøv å løse oppgavene uten PC. Skriv mellomregning og fyll ut tabeller før d
     ```
     Utskriften er 17.
 
+
+!!! question "Oppgave 8 – Fra algoritme til kode"
+    Skriv først en algoritme med norske setninger som finner gjennomsnittet av 8 og 14. Skriv deretter Python-kode som gjør det samme.
+
+
+??? note "Fasit – oppgave 8"
     **8.** Algoritme: legg sammen 8 og 14, del summen på 2, og skriv ut resultatet.
 
     ```python
