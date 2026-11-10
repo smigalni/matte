@@ -204,20 +204,45 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
 ??? note "Fasit – oppgave 3.4.5"
 
     **a) Produktregelen**
-    \[a(x)=uv=(2x-1)\ln x.\]
-    Her er \(u=2x-1\), \(v=\ln x\), \(u'=2\) og \(v'=\dfrac1x\).
-    Derfor
+
+    Vi skriver funksjonen som et produkt og setter \(u\) lik første faktor og \(v\) lik andre faktor:
+
     \[
-    a'(x)=u'v+uv'
-    =2\ln x+(2x-1)\cdot\dfrac1x
-    =2\ln x+2-\dfrac1x.
+    \begin{aligned}
+    a(x)&=uv=(2x-1)\ln x\\
+    u&=2x-1,\qquad v=\ln x\\
+    u'&=2,\qquad v'=\dfrac1x
+    \end{aligned}
     \]
-    **b) Brøkregelen**
-    \[b(x)=\dfrac{u}{v}=\dfrac{e^x}{x}.\]
-    Her er \(u=e^x\), \(v=x\), \(u'=e^x\) og \(v'=1\).
-    Derfor
+
+    Deretter bruker vi produktregelen:
+
     \[
-    b'(x)=\dfrac{u'v-uv'}{v^2}
-    =\dfrac{e^x\cdot x-e^x\cdot1}{x^2}
-    =\dfrac{e^x(x-1)}{x^2}.
+    \begin{aligned}
+    a'(x)&=u'v+uv'\\
+    &=2\ln x+(2x-1)\cdot\dfrac1x\\
+    &=2\ln x+2-\dfrac1x.
+    \end{aligned}
+    \]
+
+    **b) Brøkregelen**
+
+    Vi skriver funksjonen som en brøk:
+
+    \[
+    \begin{aligned}
+    b(x)&=\dfrac{u}{v}=\dfrac{e^x}{x}\\
+    u&=e^x,\qquad v=x\\
+    u'&=e^x,\qquad v'=1
+    \end{aligned}
+    \]
+
+    Deretter bruker vi brøkregelen:
+
+    \[
+    \begin{aligned}
+    b'(x)&=\dfrac{u'v-uv'}{v^2}\\
+    &=\dfrac{e^x\cdot x-e^x\cdot1}{x^2}\\
+    &=\dfrac{e^x(x-1)}{x^2}.
+    \end{aligned}
     \]
