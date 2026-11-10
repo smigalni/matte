@@ -1,4 +1,4 @@
-# Del 5 – Funksjoner og lister
+# 5. Funksjoner og lister
 
 Funksjoner og lister hjelper oss å lage større programmer uten å miste oversikten. En funksjon samler en oppgave under et navn. En liste samler flere verdier i en bestemt rekkefølge.
 
