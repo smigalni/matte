@@ -34,7 +34,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 
 
 ??? note "Fasit – oppgave 2"
-    **2.** `Minus`, fordi \(-2<0\).
+    **2.** Programmet skriver ut \(\underline{\underline{\text{Minus}}}\), fordi \(-2<0\).
 
 
 !!! question "Oppgave 3 – Løkke"
@@ -68,7 +68,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 
 
 ??? note "Fasit – oppgave 4"
-    **4.** Funksjonen returnerer \(2\cdot4+1=9\), og programmet skriver ut 9.
+    **4.** Funksjonen returnerer \(2\cdot4+1=\underline{\underline{9}}\), og programmet skriver ut 9.
 
 
 !!! question "Oppgave 5 – Liste"
@@ -171,7 +171,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
 
 
 ??? note "Fasit – oppgave 10"
-    **10.** Summen er \(1\cdot1+1\cdot2+2\cdot1+2\cdot2+3\cdot1+3\cdot2=18\).
+    **10.** Summen er \(1\cdot1+1\cdot2+2\cdot1+2\cdot2+3\cdot1+3\cdot2=\underline{\underline{18}}\).
 
 
 !!! question "Oppgave 11 – Grense og rekkefølge"
@@ -299,7 +299,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
                 sum_tall += x
         return sum_tall
     ```
-    Resultatet er \(3+9+12=24\). Kravet `x > 0` utelukker negative tall og null.
+    Resultatet er \(3+9+12=\underline{\underline{24}}\). Kravet `x > 0` utelukker negative tall og null.
 
 
 !!! question "Oppgave 16 – Finn et mønster og begrunn det"
@@ -321,7 +321,7 @@ Disse oppgavene samler hele programmeringskurset: variabler, regning, betingelse
             sum_tall += 2 * i - 1
         return sum_tall
     ```
-    For \(n=1,2,3,4,5,10\) blir summene \(1,4,9,16,25,100\), lik \(n^2\) i alle testene. Testene støtter påstanden, men et endelig antall tester utelukker ikke at det finnes et moteksempel for en større verdi. Et generelt bevis krever et matematisk argument, for eksempel induksjon.
+    For \(n=1,2,3,4,5,10\) blir summene \(1,4,9,16,25,100\), lik \(\underline{\underline{n^2}}\) i alle testene. Testene støtter påstanden, men et endelig antall tester utelukker ikke at det finnes et moteksempel for en større verdi. Et generelt bevis krever et matematisk argument, for eksempel induksjon.
 
 
 ---
