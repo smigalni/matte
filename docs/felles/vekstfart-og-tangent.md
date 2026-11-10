@@ -97,7 +97,7 @@ Den **gjennomsnittlige vekstfarten** forteller hvor mye funksjonsverdien endrer 
 
 !!! important "Formel for gjennomsnittlig vekstfart"
     \[
-    a=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+    a=\dfrac{f(x_2)-f(x_1)}{x_2-x_1}
     \]
 
 Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser endringen i funksjonsverdi, og nevneren viser endringen i x.
@@ -105,7 +105,6 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 ### Sekant: gjennomsnittlig vekstfart
 
 ![Grafen til f og sekanten gjennom punktene P og Q](../images/sekant-gjennomsnittlig-vekstfart.svg)
-
 
 Den blå kurven viser grafen til \(f\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \(x_1\) og \(x_2\).
 
@@ -122,8 +121,8 @@ Den blå kurven viser grafen til \(f\), mens den røde, rette linjen er sekanten
     **Steg 2: Bruk formelen for gjennomsnittlig vekstfart.**
 
     \[
-    a=\frac{f(4)-f(1)}{4-1}
-    =\frac{16-1}{3}=5
+    a=\dfrac{f(4)-f(1)}{4-1}
+    =\dfrac{16-1}{3}=5
     \]
 
     **Svar:**
@@ -249,12 +248,27 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     a) Finn \(f(1)\) og \(f(3)\).
     b) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=3\).
 
+??? note "Fasit – oppgave 3.1.1"
+
+    a) \(\underline{\underline{f(1)=1}}\) og \(\underline{\underline{f(3)=9}}\).
+
+    b)
+    \[
+    a=\dfrac{9-1}{3-1}=\underline{\underline{4}}.
+    \]
+
 !!! question "Oppgave 3.1.2 – Tolk vekstfarten"
 
     En plante vokser fra 10 cm til 22 cm i løpet av tre uker.
 
     a) Finn den gjennomsnittlige vekstfarten per uke.
     b) Forklar hva svaret betyr.
+
+??? note "Fasit – oppgave 3.1.2"
+
+    a) \(\underline{\underline{\dfrac{22-10}{3}=4\text{ cm per uke}}}\).
+
+    b) Planten vokste i gjennomsnitt 4 cm per uke i perioden.
 
 !!! question "Oppgave 3.1.3 – Momentan vekstfart"
 
@@ -263,41 +277,17 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     a) Hva er stigningstallet til tangenten når \(x=2\)?
     b) Hva forteller dette om funksjonens momentane vekstfart?
 
-!!! question "Oppgave 3.1.4 – Finn tangentens likning"
-
-    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall 3.
-
-    Bruk ettpunktsformelen til å finne tangentens likning på formen \(y=ax+b\).
-
-!!! question "Oppgave 3.1.5 – Tangent til en parabel"
-
-    Gitt funksjonen \(f(x)=x^2\).
-
-    a) Finn punktet på grafen når \(x=1\).
-    b) Tangentens stigningstall i punktet er 2. Finn tangentens likning.
-
-## Fasit
-
-??? note "Fasit – oppgave 3.1.1"
-
-    a) \(\underline{\underline{f(1)=1}}\) og \(\underline{\underline{f(3)=9}}\).
-
-    b)
-    \[
-    a=\frac{9-1}{3-1}=\underline{\underline{4}}.
-    \]
-
-??? note "Fasit – oppgave 3.1.2"
-
-    a) \(\underline{\underline{\frac{22-10}{3}=4\text{ cm per uke}}}\).
-
-    b) Planten vokste i gjennomsnitt 4 cm per uke i perioden.
-
 ??? note "Fasit – oppgave 3.1.3"
 
     a) Stigningstallet er \(\underline{\underline{4}}\).
 
     b) Funksjonen øker momentant med \(\underline{\underline{4}}\) y-enheter per x-enhet ved \(x=2\).
+
+!!! question "Oppgave 3.1.4 – Finn tangentens likning"
+
+    En tangent går gjennom punktet \(P=(2,5)\) og har stigningstall 3.
+
+    Bruk ettpunktsformelen til å finne tangentens likning på formen \(y=ax+b\).
 
 ??? note "Fasit – oppgave 3.1.4"
 
@@ -305,6 +295,13 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     y-5=3(x-2)\quad\Rightarrow\quad
     \underline{\underline{y=3x-1}}.
     \]
+
+!!! question "Oppgave 3.1.5 – Tangent til en parabel"
+
+    Gitt funksjonen \(f(x)=x^2\).
+
+    a) Finn punktet på grafen når \(x=1\).
+    b) Tangentens stigningstall i punktet er 2. Finn tangentens likning.
 
 ??? note "Fasit – oppgave 3.1.5"
 
