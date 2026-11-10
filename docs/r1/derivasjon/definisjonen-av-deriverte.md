@@ -13,8 +13,8 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
     \[
     \begin{aligned}
     f'(x)&=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2-x^2}{\Delta x}\\
-    &=\lim_{\Delta x\to0}\dfrac{x^2+2xh+\Delta x^2-x^2}{\Delta x}\\
-    &=\lim_{\Delta x\to0}\dfrac{2xh+\Delta x^2}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{x^2+2x\Delta x+\Delta x^2-x^2}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2}{\Delta x}\\
     &=\lim_{\Delta x\to0}(2x+\Delta x)=2x.
     \end{aligned}
     \]
@@ -31,7 +31,7 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
 
     \[
     f'(x)=\lim_{\Delta x\to0}\dfrac{3(x+\Delta x)+2-(3x+2)}\Delta x
-    =\lim_{\Delta x\to0}\dfrac{3h}{\Delta x}=3.
+    =\lim_{\Delta x\to0}\dfrac{3\Delta x}{\Delta x}=3.
     \]
 
 !!! question "Oppgave 3.6.2 – Andregradsfunksjon"
@@ -43,7 +43,7 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
     \[
     \begin{aligned}
     f'(x)&=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2+2(x+\Delta x)-(x^2+2x)}\Delta x\\
-    &=\lim_{\Delta x\to0}\dfrac{2xh+\Delta x^2+2h}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2+2h}{\Delta x}\\
     &=\lim_{\Delta x\to0}(2x+\Delta x+2)=2x+2.
     \end{aligned}
     \]
@@ -56,4 +56,4 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
 
 ??? note "Fasit – oppgave 3.6.3"
 
-    Når \(\Delta x=0\), blir nevneren i differansekvotienten \(0\), og uttrykket er ikke definert. For \(f(x)=x^2\) må telleren først forenkles til \(2xh+\Delta x^2\). Deretter forkortes \(\Delta x\), og først da lar vi \(\Delta x\to0\). Resultatet er \(f'(x)=2x\).
+    Når \(\Delta x=0\), blir nevneren i differansekvotienten \(0\), og uttrykket er ikke definert. For \(f(x)=x^2\) må telleren først forenkles til \(2x\Delta x+\Delta x^2\). Deretter forkortes \(\Delta x\), og først da lar vi \(\Delta x\to0\). Resultatet er \(f'(x)=2x\).
