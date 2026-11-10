@@ -153,5 +153,43 @@ Tekst under
         errors = self.check("<figure>\n<svg></figure>\n")
         self.assertTrue(any("Ubalansert HTML/SVG" in e for e in errors))
 
+    def test_subtasks_on_separate_paragraphs_pass(self):
+        content = """!!! question \"Oppgave 1\"
+    a) Første deloppgave.
+
+    b) Andre deloppgave.
+
+??? note \"Fasit – oppgave 1\"
+    a) Første svar.
+
+    b) Andre svar.
+"""
+        self.assertEqual(self.check(content), [])
+
+    def test_subtasks_on_same_line_fail(self):
+        content = """!!! question \"Oppgave 1\"
+
+    a) Første deloppgave. b) Andre deloppgave.
+"""
+        errors = self.check(content)
+        self.assertTrue(any("Flere deloppgaver står på samme linje" in e for e in errors))
+
+    def test_subtask_without_blank_line_before_fails(self):
+        content = """!!! question \"Oppgave 1\"
+
+    a) Første deloppgave.
+    b) Andre deloppgave.
+"""
+        errors = self.check(content)
+        self.assertTrue(any("eget avsnitt med tom linje før" in e for e in errors))
+
+    def test_subtask_with_extra_bullet_fails(self):
+        content = """!!! question \"Oppgave 1\"
+
+    - a) Første deloppgave.
+"""
+        errors = self.check(content)
+        self.assertTrue(any("ekstra punktmarkør" in e for e in errors))
+
 if __name__ == "__main__":
     unittest.main()
