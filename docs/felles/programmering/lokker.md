@@ -162,7 +162,7 @@ Programmet skriver ut 1, 2, 4, 8, 16, 32 og 64. Etter det blir `tall` lik 128, o
 
 ### Rekker med desimaltall
 
-Hva gjør vi hvis vi vil skrive ut tallrekken 1, 1.5, 2, 2.5, 3? Her kan vi ikke skrive `range(1, 3.5, 0.5)), fordi `range()` bare bruker heltall.
+Hva gjør vi hvis vi vil skrive ut tallrekken 1, 1.5, 2, 2.5, 3? Her kan vi ikke skrive `range(1, 3.5, 0.5)`, fordi `range()` bare bruker heltall.
 
 Vi kan bruke `while` og øke tallet med 0.5 for hver runde:
 
