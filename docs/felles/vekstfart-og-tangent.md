@@ -253,9 +253,9 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
     a) Vi setter inn \(x=1\) og \(x=3\) i funksjonen:
 
-        \[
-        f(1)=1^2=1
-        \]
+    \[
+    f(1)=1^2=1
+    \]
 
     \[
     f(3)=3^2=9
@@ -263,9 +263,9 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
     b) Gjennomsnittlig vekstfart er
 
-        \[
-        a=\dfrac{f(3)-f(1)}{3-1}=\dfrac{9-1}{2}=4.
-        \]
+    \[
+    a=\dfrac{f(3)-f(1)}{3-1}=\dfrac{9-1}{2}=4.
+    \]
 
     **Svar:** Den gjennomsnittlige vekstfarten er \(4\).
 
@@ -322,17 +322,17 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
 
     a) Vi finner funksjonsverdien når \(x=1\):
 
-        \[
-        f(1)=1^2=1.
-        \]
+    \[
+    f(1)=1^2=1.
+    \]
 
     Punktet er derfor \(P=(1,1)\).
 
     b) Vi bruker ettpunktsformelen med stigningstall \(2\):
 
-        \[
-        y-1=2(x-1)
-        \]
+    \[
+    y-1=2(x-1)
+    \]
 
     \[
     y-1=2x-2
