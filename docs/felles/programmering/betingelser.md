@@ -76,6 +76,15 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
 
     Hva skrives ut?
 
+
+??? note "Fasit – oppgave 1"
+    ```text
+    True
+    False
+    False
+    ```
+
+
 !!! question "Oppgave 2 – Hvilken blokk kjører?"
 
     ```python
@@ -88,6 +97,11 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
     ```
 
     Hva blir utskriften?
+
+
+??? note "Fasit – oppgave 2"
+    Programmet skriver ut `Ikke frost`, fordi 3 ikke er mindre enn 0.
+
 
 !!! question "Oppgave 3 – Flere valg"
 
@@ -106,9 +120,28 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
 
     Hva skriver programmet ut? Forklar hvorfor det ikke skriver ut de andre bokstavene.
 
+
+??? note "Fasit – oppgave 3"
+    Programmet skriver ut `B`. Den første betingelsen er usann, men `x > 10` er sann. Da hoppes resten av valgene over.
+
+
 !!! question "Oppgave 4 – Matematikk"
 
     Skriv en algoritme og deretter Python-kode som undersøker om et tall er positivt eller ikke-positivt. Test med tallene 8, 0 og -3.
+
+
+??? note "Fasit – oppgave 4"
+    ```python
+    tall = -3
+
+    if tall > 0:
+        print("Positivt")
+    else:
+        print("Ikke-positivt")
+    ```
+
+    For 8 blir utskriften `Positivt`. For 0 og -3 blir den `Ikke-positivt`.
+
 
 !!! question "Oppgave 5 – Feilsøking"
 
@@ -122,32 +155,6 @@ Programmet undersøker betingelsene ovenfra og ned. Så snart én betingelse er 
     print("Ikke fire")
     ```
 
-## Fasit
-
-??? note "Fasit – oppgave 1"
-    ```text
-    True
-    False
-    False
-    ```
-
-??? note "Fasit – oppgave 2"
-    Programmet skriver ut `Ikke frost`, fordi 3 ikke er mindre enn 0.
-
-??? note "Fasit – oppgave 3"
-    Programmet skriver ut `B`. Den første betingelsen er usann, men `x > 10` er sann. Da hoppes resten av valgene over.
-
-??? note "Fasit – oppgave 4"
-    ```python
-    tall = -3
-
-    if tall > 0:
-        print("Positivt")
-    else:
-        print("Ikke-positivt")
-    ```
-
-    For 8 blir utskriften `Positivt`. For 0 og -3 blir den `Ikke-positivt`.
 
 ??? note "Fasit – oppgave 5"
     Begge `print`-linjene må ha innrykk fordi de hører til hver sin blokk:
