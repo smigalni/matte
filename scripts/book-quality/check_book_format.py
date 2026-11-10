@@ -52,6 +52,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
         return [f"{relative}: kan ikke leses som UTF-8"]
     lines = content.splitlines()
     visible = list(visible_lines(lines))
+    visible_by_number = dict(visible)
     errors: list[str] = []
 
     if checks.get("example_heading_requires_box", True):
