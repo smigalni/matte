@@ -221,16 +221,3 @@ Deriver funksjonene. Bestem først om du skal bruke produktregelen eller kvotien
     =\dfrac{e^x\cdot x-e^x\cdot1}{x^2}
     =\dfrac{e^x(x-1)}{x^2}.
     \]
-
-
-    a)
-    \[
-    a'(x)=2\ln x+(2x-1)\frac1x
-    =\underline{\underline{2\ln x+2-\frac1x}}.
-    \]
-
-    b)
-    \[
-    b'(x)=\dfrac{e^x\cdot x-e^x}{x^2}
-    =\underline{\underline{\dfrac{e^x(x-1)}{x^2}}}.
-    \]
