@@ -12,7 +12,7 @@ Når du har arbeidet med dette delkapitlet, skal du kunne:
 !!! important "Kort repetisjon – dette må du kunne"
     - **Gjennomsnittlig vekstfart:** stigningstallet til sekanten mellom to punkter.
     - **Momentan vekstfart:** stigningstallet til tangenten i ett punkt.
-    - **Tangentlikning:** bruk punktet \(P=(x_1,y_1)\) og stigningstallet \(a=f'(x_1)\) i \(y-y_1=a(x-x_1)\).
+    - **Tangentlikning:** bruk punktet \(P=(x_1,y_1)\) og den deriverte i punktet: \(y-y_1=f'(x_1)(x-x_1)\).
 
     Hvis du kan forklare disse tre punktene og bruke formlene, gå direkte til oppgavene for å kontrollere at du husker metoden.
 
@@ -196,7 +196,7 @@ Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
     \[
-    y-y_1=a(x-x_1)
+    y-y_1=f'(x_1)(x-x_1)
     \]
 
 !!! example "Eksempel – Finn tangentens likning steg for steg"
