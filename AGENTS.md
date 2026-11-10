@@ -18,6 +18,7 @@ Bruk kapittel 3.1 og de nærmeste eksisterende kapitlene som visuell og struktur
 - **Eksempler:** alle gjennomarbeidede eksempler skal ligge inni en `!!! example`-boks. Bruk samme turkise eksempelbokser som i kapittel 3.1 og andre ferdige sider. Ikke presenter et fullstendig regneeksempel som en vanlig `### Eksempel`-overskrift uten boks.
 - **Regler og viktige formler:** bruk etablerte blå/regelfremhevende bokser og passende overskrifter.
 - **Oppgaver:** bruk etablerte lilla oppgavebokser med konsekvent nummerering.
+- **Deloppgaver:** presenter hver deloppgave på egen linje med bokstavmerking (`a)`, `b)`, `c)` osv.). Ikke bruk ekstra punktliste eller nummerering foran bokstavene. Bruk samme format i oppgavetekst og fasit, og sørg for at eventuelle formelblokker står riktig under tilhørende deloppgave.
 - **Fasit:** legg fasit i sammenleggbare bokser med samme mønster som resten av nettstedet, for eksempel `??? note "Fasit – oppgave ..."` når dette er mønsteret på siden.
 - **Svar:** alle endelige svar i utregnede eksempler og fasiter skal dobbeltunderstrekes i MathJax: `\\underline{\\underline{...}}`.
 - **Matematikk:** bruk korrekt MathJax. Bruk display-matematikk for sentrale formler og mellomregninger. Bruk `\\dfrac{...}{...}` når en brøk ellers blir for liten eller utydelig.

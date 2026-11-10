@@ -246,6 +246,7 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     Gitt funksjonen \(f(x)=x^2\).
 
     a) Finn \(f(1)\) og \(f(3)\).
+
     b) Finn gjennomsnittlig vekstfart fra \(x=1\) til \(x=3\).
 
 ??? note "Fasit – oppgave 3.1.1"
@@ -273,6 +274,7 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     En plante vokser fra 10 cm til 22 cm i løpet av tre uker.
 
     a) Finn den gjennomsnittlige vekstfarten per uke.
+
     b) Forklar hva svaret betyr.
 
 ??? note "Fasit – oppgave 3.1.2"
@@ -286,6 +288,7 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     En funksjon har \(f'(2)=4\).
 
     a) Hva er stigningstallet til tangenten når \(x=2\)?
+
     b) Hva forteller dette om funksjonens momentane vekstfart?
 
 ??? note "Fasit – oppgave 3.1.3"
@@ -312,6 +315,7 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     Gitt funksjonen \(f(x)=x^2\).
 
     a) Finn punktet på grafen når \(x=1\).
+
     b) Tangentens stigningstall i punktet er 2. Finn tangentens likning.
 
 ??? note "Fasit – oppgave 3.1.5"

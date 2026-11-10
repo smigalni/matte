@@ -40,6 +40,7 @@ En konstant funksjon har samme verdi uansett hvilken \(x\)-verdi vi velger. Graf
 Potensregelen bruker vi når \(x\) er opphøyd i en konstant eksponent. Vi ganger med eksponenten og trekker deretter 1 fra eksponenten.
 
 !!! important "Potensregelen"
+
     \[
     (x^n)'=n\cdot x^{n-1}
     \]
@@ -91,6 +92,7 @@ Potensregelen bruker vi når \(x\) er opphøyd i en konstant eksponent. Vi gange
 Når en funksjon er multiplisert med en konstant, kan vi beholde konstanten og derivere funksjonen som står ved siden av.
 
 !!! important "Konstant faktor-regelen"
+
     \[
     (k\cdot u(x))'=k\cdot u'(x)
     \]
@@ -143,6 +145,7 @@ Når en funksjon er multiplisert med en konstant, kan vi beholde konstanten og d
 Hvis en funksjon består av flere ledd som legges sammen eller trekkes fra hverandre, kan vi derivere hvert ledd for seg. Ved subtraksjon beholder vi minustegnet.
 
 !!! important "Sumregelen"
+
     \[
     (u(x)+v(x))'=u'(x)+v'(x)
     \]
@@ -185,6 +188,7 @@ Hvis en funksjon består av flere ledd som legges sammen eller trekkes fra hvera
 Tallet \(e\) er en matematisk konstant som er omtrent \(2{,}718\). Eksponentialfunksjonen \(e^x\) er spesiell fordi den deriverte er lik funksjonen selv.
 
 !!! important "Derivasjon av \(e^x\)"
+
     \[
     (e^x)'=e^x
     \]
@@ -214,6 +218,7 @@ Tallet \(e\) er en matematisk konstant som er omtrent \(2{,}718\). Eksponentialf
 Den naturlige logaritmen \(\ln x\) er logaritmen med grunntall \(e\). Den deriverte av \(\ln x\) er \(1/x\), for \(x>0\).
 
 !!! important "Derivasjon av \(\ln x\)"
+
     \[
     (\ln x)'=\dfrac{1}{x},\qquad x>0
     \]
@@ -362,6 +367,7 @@ Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
 !!! question "Oppgave 3.2.1 – Deriver polynomer"
 
     a) \(f(x)=4x^3-2x+5\)
+
     b) \(g(x)=3x^2+6x-1\)
 
 ??? note "Fasit – oppgave 3.2.1"
@@ -373,7 +379,9 @@ Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
 !!! question "Oppgave 3.2.2 – Konstant faktor"
 
     a) \(f(x)=5x^4\)
+
     b) \(g(x)=3e^x\)
+
     c) \(h(x)=4\ln x\)
 
 ??? note "Fasit – oppgave 3.2.2"
@@ -387,6 +395,7 @@ Deriver funksjonene. Bruk reglene fra dette delkapitlet, og vis mellomregning.
 !!! question "Oppgave 3.2.3 – Deriver eksponential- og logaritmefunksjoner"
 
     a) \(f(x)=e^x+2x^2\)
+
     b) \(g(x)=\ln x-3x\)
 
 ??? note "Fasit – oppgave 3.2.3"
