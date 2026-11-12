@@ -5,7 +5,7 @@ Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan 
 !!! important "Definisjonen av den deriverte"
 
     \[
-    f'(x)=\lim_{h\to0}\dfrac{f(x+h)-f(x)}{h}
+    f'(x)=\lim_{\Delta x\to0}\dfrac{f(x+\Delta x)-f(x)}{\Delta x}
     \]
 
     Brøken er stigningstallet til en sekant. Når \(h\) nærmer seg null, nærmer sekanten seg tangenten. Grenseverdien gir tangentens stigningstall dersom den finnes som et endelig tall.
@@ -65,11 +65,11 @@ Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan 
     \[
     \begin{aligned}
     f'(x)
-    &=\lim_{h\to0}\dfrac{(x+h)^2+3(x+h)-1-(x^2+3x-1)}{h}\\
-    &=\lim_{h\to0}\dfrac{2xh+h^2+3h}{h}\\
-    &=\lim_{h\to0}(2x+h+3)\\
+    &=\lim_{\Delta x\to0}\dfrac{(x+\Delta x)^2+3(x+\Delta x)-1-(x^2+3x-1)}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\dfrac{2x\Delta x+\Delta x^2+3\Delta x}{\Delta x}\\
+    &=\lim_{\Delta x\to0}(2x+\Delta x+3)\\
     &=\underline{\underline{2x+3}}.
     \end{aligned}
     \]
 
-    Vi kan ikke sette \(h=0\) med en gang, fordi det gir null i nevneren. Først forenkler vi og forkorter \(h\).
+    Vi kan ikke sette \(\(\Delta x=0\)\) med en gang, fordi det gir null i nevneren. Først forenkler vi og forkorter \(\Delta x\).
