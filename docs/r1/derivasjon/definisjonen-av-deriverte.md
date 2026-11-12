@@ -1,14 +1,16 @@
 # 3.6 Den deriverte definert ved grenseverdi
 
-Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan vi regner med reglene. Brøken
+Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan vi regner med reglene. Vi lar et punkt på grafen nærme seg punktet der vi vil undersøke tangentens stigningstall.
 
-\[
-\dfrac{f(a+\Delta x)-f(a)}{\Delta x}
-\]
+!!! important "Definisjonen av den deriverte"
 
-er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer sekanten seg tangenten, dersom grenseverdien finnes.
+    \[
+    f'(x)=\lim_{h\to0}\dfrac{f(x+h)-f(x)}{h}
+    \]
 
-!!! example "Eksempel – Finn den deriverte til \(f(x)=x^2\)"
+    Brøken er stigningstallet til en sekant. Når \(h\) nærmer seg null, nærmer sekanten seg tangenten. Grenseverdien gir tangentens stigningstall dersom den finnes som et endelig tall.
+
+!!! example "Eksempel 3.6.1 – Finn den deriverte til \(f(x)=x^2\)"
 
     \[
     \begin{aligned}
