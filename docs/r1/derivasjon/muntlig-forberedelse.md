@@ -26,21 +26,21 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
 
 - Forklar hva det betyr at en funksjon er deriverbar.
 - Forklar sammenhengen mellom kontinuitet og deriverbarhet.
-- Vis hvorfor (f(x)=|x-1|) ikke er deriverbar i (x=1).
+- Vis hvorfor \(f(x)=|x-1|\) ikke er deriverbar i \(x=1\).
 - Forklar hvordan vi kan undersøke ensidige stigningstall.
 
 ### 4. Definisjonen av den deriverte
 
 - Forklar hva differansekvotienten beskriver.
 - Vis hvordan vi bruker grenseverdien til å finne den deriverte.
-- Forklar hvorfor vi ikke kan sette (h=0) før uttrykket er forenklet.
+- Forklar hvorfor vi ikke kan sette \(h=0\) før uttrykket er forenklet.
 - Finn den deriverte av en enkel andregradsfunksjon ved hjelp av definisjonen.
 
 ### 5. Numerisk derivasjon
 
 - Forklar hvordan vi kan tilnærme den deriverte med en differansekvotient.
 - Sammenlign framoverdifferanse og symmetrisk differansekvotient.
-- Forklar hvordan valg av (h) påvirker nøyaktigheten.
+- Forklar hvordan valg av \(h\) påvirker nøyaktigheten.
 
 ### 6. Bruk av den deriverte
 
@@ -69,11 +69,11 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
     f(x)=(x^2+1)e^{3x}.
     \]
 
-    Forklar hvilke derivasjonsregler du må bruke, og finn (f'(x)). Begrunn rekkefølgen du arbeider i.
+    Forklar hvilke derivasjonsregler du må bruke, og finn \(f'(x)\). Begrunn rekkefølgen du arbeider i.
 
 ??? note "Momenter i et godt svar"
 
-    Vi bruker produktregelen fordi funksjonen er et produkt av to funksjoner. I derivasjonen av (e^{3x}) bruker vi også kjerneregelen.
+    Vi bruker produktregelen fordi funksjonen er et produkt av to funksjoner. I derivasjonen av \(e^{3x}\) bruker vi også kjerneregelen.
 
     \[
     \begin{aligned}
@@ -84,15 +84,15 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
 
 !!! question "Muntlig oppgave 3 – Kontinuerlig, men ikke deriverbar"
 
-    Bruk funksjonen (f(x)=|x-1|). Forklar hvorfor funksjonen er kontinuerlig, men ikke deriverbar i (x=1).
+    Bruk funksjonen \(f(x)=|x-1|\). Forklar hvorfor funksjonen er kontinuerlig, men ikke deriverbar i \(x=1\).
 
 ??? note "Momenter i et godt svar"
 
-    Funksjonen har ingen brudd i (x=1), og (f(1)=0). Til venstre for 1 er stigningstallet (-1), mens det til høyre er (1). De ensidige stigningstallene er ulike, så funksjonen er ikke deriverbar der.
+    Funksjonen har ingen brudd i \(x=1\), og \(f(1)=0\). Til venstre for 1 er stigningstallet \(-1\), mens det til høyre er \(1\). De ensidige stigningstallene er ulike, så funksjonen er ikke deriverbar der.
 
 !!! question "Muntlig oppgave 4 – Den deriverte fra definisjonen"
 
-    Bruk definisjonen til å finne den deriverte av (f(x)=x^2+2x). Forklar hvert steg.
+    Bruk definisjonen til å finne den deriverte av \(f(x)=x^2+2x\). Forklar hvert steg.
 
 ??? note "Momenter i et godt svar"
 
@@ -105,15 +105,15 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
     \end{aligned}
     \]
 
-    Det er viktig å forenkle og forkorte (h) før vi lar (h) gå mot null.
+    Det er viktig å forenkle og forkorte \(h\) før vi lar \(h\) gå mot null.
 
 !!! question "Muntlig oppgave 5 – Tangent og tolkning"
 
-    Vi har funksjonen (g(x)=x^2-4x+1).
+    Vi har funksjonen \(g(x)=x^2-4x+1\).
 
-    a) Finn (g'(x)).
+    a) Finn \(g'(x)\).
 
-    b) Bestem tangentens stigningstall når (x=3).
+    b) Bestem tangentens stigningstall når \(x=3\).
 
     c) Finn tangentlikningen i dette punktet.
 
@@ -125,7 +125,7 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
     g'(x)=2x-4,\qquad g'(3)=2.
     \]
 
-    Vi har (g(3)=-2). Tangenten blir
+    Vi har \(g(3)=-2\). Tangenten blir
 
     \[
     y+2=2(x-3)
@@ -133,7 +133,7 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
     y=2x-8.
     \]
 
-    Stigningstallet 2 betyr at grafen stiger med 2 enheter i y-retning per enhet i x-retning akkurat ved (x=3).
+    Stigningstallet 2 betyr at grafen stiger med 2 enheter i y-retning per enhet i x-retning akkurat ved \(x=3\).
 
 ## Kjennetegn på en god muntlig framføring
 
