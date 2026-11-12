@@ -8,7 +8,7 @@ Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan 
     f'(x)=\lim_{\Delta x\to0}\dfrac{f(x+\Delta x)-f(x)}{\Delta x}
     \]
 
-    Brøken er stigningstallet til en sekant. Når \(h\) nærmer seg null, nærmer sekanten seg tangenten. Grenseverdien gir tangentens stigningstall dersom den finnes som et endelig tall.
+    Brøken er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer sekanten seg tangenten. Grenseverdien gir tangentens stigningstall dersom den finnes som et endelig tall.
 
 !!! example "Eksempel 3.6.1 – Finn den deriverte til \(f(x)=x^2\)"
 
@@ -58,7 +58,7 @@ Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan 
     f(x)=x^2+3x-1.
     \]
 
-    Vis mellomregningen, og forklar hvorfor vi må forenkle uttrykket før vi lar \(h\) gå mot null.
+    Vis mellomregningen, og forklar hvorfor vi må forenkle uttrykket før vi lar \(\Delta x\) gå mot null.
 
 ??? note "Fasit – oppgave 3.6.3"
 
@@ -72,4 +72,4 @@ Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan 
     \end{aligned}
     \]
 
-    Vi kan ikke sette \(\(\Delta x=0\)\) med en gang, fordi det gir null i nevneren. Først forenkler vi og forkorter \(\Delta x\).
+    Vi kan ikke sette \(\Delta x=0\) med en gang, fordi det gir null i nevneren. Først forenkler vi og forkorter \(\Delta x\).
