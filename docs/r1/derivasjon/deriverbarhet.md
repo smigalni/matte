@@ -34,7 +34,7 @@ De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter de
         <text x="238" y="42">f(x) = |x-1|</text>
       </g>
       <path d="M110 65 L200 155 L290 65" fill="none" stroke="#1671c5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="160" cy="155" r="4.5" fill="#1671c5"/>
+      <circle cx="200" cy="155" r="4.5" fill="#1671c5"/>
       <text x="212" y="190" fill="currentColor" font-size="12">Knekkpunkt (1, 0)</text>
     </svg>
     <figcaption>Grafen til \(f(x)=|x-1|\). De to rette linjene møtes i et knekkpunkt ved \(x=1\).</figcaption>
