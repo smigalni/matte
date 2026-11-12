@@ -90,6 +90,7 @@ Når \(x\) nærmer seg \(a\), kommer punktet \( (x,f(x)) \) nærmere \( (a,f(a))
 Hvis grenseverdien finnes som et endelig tall, får vi tangentens stigningstall ved å ta grensen:
 
 !!! important "Definisjonen av den deriverte"
+
     \[
     f'(a)=\lim_{x\to a}\dfrac{f(x)-f(a)}{x-a}
     \]
@@ -113,6 +114,7 @@ f'_+(a) =\lim_{x\to a^+}\dfrac{f(x)-f(a)}{x-a}
 Funksjonen er deriverbar i \(x=a\) dersom begge grensene eksisterer som endelige tall og er like:
 
 !!! important "Kriterium for deriverbarhet"
+
     \[
     f'_-(a)=f'_+(a)
     \]
@@ -228,6 +230,8 @@ Oppgavene trener på kontinuitet, knekkpunkt og sammenligning av ensidige stigni
     c) Til høyre for 1 er funksjonen \(f(x)=x-1\), så stigningstallet er \(1\).
 
     d) Nei. De ensidige stigningstallene er ulike.
+
+    \[\underline{\underline{\text{Ikke deriverbar i }x=1}}\]
 
 !!! question "Oppgave 3.5.3 – Stigningstall for en andregradsfunksjon"
 
