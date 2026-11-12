@@ -1,4 +1,4 @@
-# 3.11 Formeloversikt – derivasjon
+# 3.12 Formeloversikt – derivasjon
 
 Denne siden samler de viktigste definisjonene, reglene og sammenhengene fra kapittel 3. Bruk den til repetisjon og som støtte når du arbeider med oppgaver.
 
