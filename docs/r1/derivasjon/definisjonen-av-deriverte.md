@@ -48,12 +48,26 @@ er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer se
     \end{aligned}
     \]
 
-!!! question "Oppgave 3.6.3 – Forklar en vanlig feil"
+!!! question "Oppgave 3.6.3 – Andregradsfunksjon"
 
-    En elev setter \(\Delta x=0\) i differansekvotienten før forenkling.
+    Bruk definisjonen av den deriverte til å finne \(f'(x)\) når
 
-    Forklar hvorfor dette gir et problem, og vis riktig framgangsmåte for \(f(x)=x^2\).
+    \[
+    f(x)=x^2+3x-1.
+    \]
+
+    Vis mellomregningen, og forklar hvorfor vi må forenkle uttrykket før vi lar \(h\) gå mot null.
 
 ??? note "Fasit – oppgave 3.6.3"
 
-    Når \(\Delta x=0\), blir nevneren i differansekvotienten \(0\), og uttrykket er ikke definert. For \(f(x)=x^2\) må telleren først forenkles til \(2x\Delta x+\Delta x^2\). Deretter forkortes \(\Delta x\), og først da lar vi \(\Delta x\to0\). Resultatet er \(f'(x)=2x\).
+    \[
+    \begin{aligned}
+    f'(x)
+    &=\lim_{h\to0}\dfrac{(x+h)^2+3(x+h)-1-(x^2+3x-1)}{h}\\
+    &=\lim_{h\to0}\dfrac{2xh+h^2+3h}{h}\\
+    &=\lim_{h\to0}(2x+h+3)\\
+    &=\underline{\underline{2x+3}}.
+    \end{aligned}
+    \]
+
+    Vi kan ikke sette \(h=0\) med en gang, fordi det gir null i nevneren. Først forenkler vi og forkorter \(h\).
