@@ -33,7 +33,7 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
 
 - Forklar hva differansekvotienten beskriver.
 - Vis hvordan vi bruker grenseverdien til å finne den deriverte.
-- Forklar hvorfor vi ikke kan sette \(h=0\) før uttrykket er forenklet.
+- Forklar hvorfor vi ikke kan sette \(\Delta x=0\) før uttrykket er forenklet.
 - Finn den deriverte av en enkel andregradsfunksjon ved hjelp av definisjonen.
 
 ### 5. Numerisk derivasjon
@@ -98,14 +98,14 @@ Velg et tema, forklar det med egne ord, og vis et eksempel på tavle eller papir
 
     \[
     \begin{aligned}
-    f'(x)&=\lim_{h\to0}\frac{(x+h)^2+2(x+h)-(x^2+2x)}h\\
-    &=\lim_{h\to0}\frac{2xh+h^2+2h}{h}\\
-    &=\lim_{h\to0}(2x+h+2)\\
+    f'(x)&=\lim_{\Delta x\to0}\frac{(x+\Delta x)^2+2(x+\Delta x)-(x^2+2x)}{\Delta x}\\
+    &=\lim_{\Delta x\to0}\frac{2x\Delta x+(\Delta x)^2+2\Delta x}{\Delta x}\\
+    &=\lim_{\Delta x\to0}(2x+\Delta x+2)\\
     &=2x+2.
     \end{aligned}
     \]
 
-    Det er viktig å forenkle og forkorte \(h\) før vi lar \(h\) gå mot null.
+    Det er viktig å forenkle og forkorte \(\Delta x\) før vi lar \(\Delta x\) gå mot null.
 
 !!! question "Muntlig oppgave 5 – Tangent og tolkning"
 
