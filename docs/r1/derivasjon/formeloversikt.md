@@ -25,10 +25,10 @@ y-f(a)=f'(a)(x-a)
 ## Definisjonen av den deriverte
 
 \[
-f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}
+f'(x)=\lim_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}
 \]
 
-Grenseverdien må finnes som et endelig tall. Differansekvotienten må forenkles før vi lar \(h\) gå mot null.
+Grenseverdien må finnes som et endelig tall. Differansekvotienten må forenkles før vi lar \(\Delta x\) gå mot null.
 
 ## Vanlige derivasjonsregler
 
