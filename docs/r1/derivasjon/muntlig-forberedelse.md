@@ -1,4 +1,4 @@
-# 3.12 Forberedelse til muntlig prøve – kapittel 3
+# 3.11 Forberedelse til muntlig prøve – kapittel 3
 
 Denne delen hjelper deg med å forberede deg til en muntlig prøve i derivasjon. Målet er ikke bare å kunne regne, men også å forklare hva du gjør, hvorfor metoden virker, og hvordan du tolker resultatene.
 
