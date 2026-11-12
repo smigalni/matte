@@ -8,7 +8,7 @@ En funksjon er **deriverbar i et punkt** dersom den deriverte eksisterer som et 
 
 De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter der den deriverte ikke eksisterer.
 
-!!! example "Eksempel 1 – En funksjon som ikke er deriverbar"
+!!! example "Eksempel 3.5.1 – En funksjon som ikke er deriverbar"
 
     Vi ser på funksjonen
 
@@ -19,7 +19,7 @@ De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter de
     Grafen består av to rette linjer som møtes i punktet (1, 0).
 
     <figure markdown>
-    <svg viewBox="0 0 360 230" role="img" aria-label="Grafen til f av x er absoluttverdien av x, en V-formet graf med knekkpunkt i origo" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 360 230" role="img" aria-label="Grafen til f av x er absoluttverdien av x minus 1, med knekkpunkt ved x lik 1" xmlns="http://www.w3.org/2000/svg">
       <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
         <path d="M40 35H330 M40 75H330 M40 115H330 M40 155H330 M40 195H330"/>
         <path d="M80 20V205 M120 20V205 M160 20V205 M200 20V205 M240 20V205 M280 20V205"/>
@@ -31,21 +31,21 @@ De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter de
         <text x="340" y="151">x</text><text x="168" y="17">y</text>
         <text x="145" y="172">0</text><text x="112" y="172">−1</text><text x="202" y="172">1</text>
         <text x="171" y="118">1</text><text x="171" y="78">2</text>
-        <text x="238" y="42">f(x) = |x|</text>
+        <text x="238" y="42">f(x) = |x-1|</text>
       </g>
       <path d="M110 65 L200 155 L290 65" fill="none" stroke="#1671c5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
       <circle cx="160" cy="155" r="4.5" fill="#1671c5"/>
-      <text x="172" y="190" fill="currentColor" font-size="12">Knekkpunkt (1, 0)</text>
+      <text x="212" y="190" fill="currentColor" font-size="12">Knekkpunkt (1, 0)</text>
     </svg>
-    <figcaption>Grafen til \(f(x)=|x|\). De to rette linjene møtes i et knekkpunkt ved \(x=1\).</figcaption>
+    <figcaption>Grafen til \(f(x)=|x-1|\). De to rette linjene møtes i et knekkpunkt ved \(x=1\).</figcaption>
     </figure>
 
-    - Til venstre for \(x=0\) er stigningstallet \(-1\).
-    - Til høyre for \(x=0\) er stigningstallet \(1\).
+    - Til venstre for \(x=1\) er stigningstallet \(-1\).
+    - Til høyre for \(x=1\) er stigningstallet \(1\).
 
-    I punktet \(x=0\) har grafen et **knekkpunkt**. Stigningstallet fra venstre og høyre er forskjellig, og derfor er funksjonen ikke deriverbar i dette punktet.
+    I punktet \(x=1\) har grafen et **knekkpunkt**. Stigningstallet fra venstre og høyre er forskjellig, og derfor er funksjonen ikke deriverbar i dette punktet.
 
-    Funksjonen er likevel kontinuerlig i \(x=0\). Dette viser at en funksjon kan være kontinuerlig uten å være deriverbar.
+    Funksjonen er likevel kontinuerlig i \(x=1\). Dette viser at en funksjon kan være kontinuerlig uten å være deriverbar.
 
 ## Sammenhengen mellom kontinuitet og deriverbarhet
 
@@ -70,7 +70,7 @@ Når vi undersøker en graf, ser vi etter punkter der tangentstigningstallet ikk
 
 Dette kan for eksempel være:
 
-- **Knekkpunkter:** Grafen skifter retning brått, slik som grafen til \(f(x)=|x|\) i \(x=0\).
+- **Knekkpunkter:** Grafen skifter retning brått, slik som grafen til \(f(x)=|x-1|\) i \(x=1\).
 - **Bruddpunkter:** Grafen er ikke kontinuerlig.
 
 En graf kan altså være kontinuerlig og likevel ha punkter der den ikke er deriverbar.
@@ -119,7 +119,7 @@ Funksjonen er deriverbar i \(x=a\) dersom begge grensene eksisterer som endelige
 
 Hvis grenseverdiene er forskjellige, er funksjonen ikke deriverbar i punktet.
 
-!!! example "Eksempel 2 – Undersøk deriverbarheten"
+!!! example "Eksempel 3.5.2 – Undersøk deriverbarheten"
 
     Vi har funksjonen
 
