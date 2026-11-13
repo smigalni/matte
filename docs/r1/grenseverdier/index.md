@@ -44,10 +44,12 @@ En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjo
 Eksempel:
 
 \[
+
 f(x)=\begin{cases}
 x+2, & x<1,\\
 x^2, & x\geq 1.
 \end{cases}
+
 \]
 
 Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet \(x=1\) er funksjonsverdien derfor \(f(1)=1\).
@@ -56,12 +58,16 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
 
 !!! example "Eksempel – finn funksjonsverdien"
     La
+
     \[
+
     g(x)=\begin{cases}
     3-x, & x<2,\\
     x^2-1, & x\geq 2.
     \end{cases}
+
     \]
+
     Finn \(g(1)\), \(g(2)\) og \(g(3)\).
 
     - \(g(1)=3-1=2\), fordi \(1<2\).
@@ -85,7 +91,9 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
 En grenseverdi beskriver hvilken verdi funksjonen nærmer seg når \(x\) nærmer seg et bestemt tall. Vi skriver
 
 \[
+
 \lim_{x\to a}f(x)=L.
+
 \]
 
 Dette betyr at funksjonsverdiene nærmer seg \(L\) når \(x\) nærmer seg \(a\). Det betyr ikke nødvendigvis at \(f(a)=L\), eller at \(f(a)\) er definert.
@@ -93,8 +101,10 @@ Dette betyr at funksjonsverdiene nærmer seg \(L\) når \(x\) nærmer seg \(a\).
 Vi skiller mellom to retninger:
 
 \[
+
 \lim_{x\to a^-}f(x) \quad\text{og}\quad
 \lim_{x\to a^+}f(x).
+
 \]
 
 - \(x\to a^-\): Vi nærmer oss \(a\) fra venstre, med x-verdier mindre enn \(a\).
@@ -106,20 +116,31 @@ Den vanlige grenseverdien \(\lim_{x\to a}f(x)\) finnes bare når begge ensidige 
     La \(f(x)=\begin{cases}x+1,&x<2,\\5-x,&x\geq2.\end{cases}\)
 
     Fra venstre nærmer \(x+1\) seg 3:
+
     \[
+
     \lim_{x\to2^-}f(x)=3.
+
     \]
+
     Fra høyre nærmer \(5-x\) seg også 3:
+
     \[
+
     \lim_{x\to2^+}f(x)=3.
+
     \]
+
     De ensidige grensene er like, så \(\lim_{x\to2}f(x)=3\). Funksjonsverdien er likevel \(f(2)=3\) her bare fordi den andre forskriften gir 3.
 
 ### Oppgaver 2.3
 
 **2.3.1** Bestem de ensidige grenseverdiene og avgjør om den vanlige grenseverdien finnes:
+
 \[
+
 f(x)=\begin{cases}2x-1,&x<1,\\x+3,&x\geq1.\end{cases}
+
 \]
 
 **2.3.2** En graf nærmer seg \(y=4\) fra begge sider når \(x\to2\), men punktet \((2,1)\) er fylt. Hva er grenseverdien, og hva er \(f(2)\)? Forklar forskjellen.
@@ -140,20 +161,27 @@ Det er nyttig å tenke på dette som tre kontrollspørsmål. At de ensidige gren
 
 !!! example "Eksempel – bestem en parameter for kontinuitet"
     La
+
     \[
+
     f(x)=\begin{cases}
     kx+1,&x<2,\\
     x^2-1,&x\geq2.
     \end{cases}
+
     \]
+
     For kontinuitet i \(x=2\) må venstre grenseverdi være lik \(f(2)\).
 
     \[
+
     \lim_{x\to2^-}f(x)=2k+1,\qquad f(2)=2^2-1=3.
+
     \]
+
     Dermed må \(2k+1=3\), altså \(k=1\).
 
-    **Svar:** Funksjonen er kontinuerlig i \(x=2\) når \(k=1\).
+    **Svar:** Funksjonen er kontinuerlig i \(x=2\) når \(k=1\). \(\underline{\underline{k=1}}\)
 
 ### Oppgaver 2.4
 
@@ -174,26 +202,34 @@ Når funksjonen er kontinuerlig i punktet og uttrykket er definert der, kan vi o
 Eksempel:
 
 \[
+
 \lim_{x\to2}\frac{x^2-4}{x-2}.
+
 \]
 
 Direkte innsetting gir \(\frac00\). Vi faktoriserer telleren:
 
 \[
+
 x^2-4=(x-2)(x+2).
+
 \]
 
 For \(x\ne2\) kan vi forkorte faktoren \(x-2\):
 
 \[
+
 \frac{(x-2)(x+2)}{x-2}=x+2.
+
 \]
 
 Derfor er
 
 \[
+
 \lim_{x\to2}\frac{x^2-4}{x-2}
 =\lim_{x\to2}(x+2)=4.
+
 \]
 
 Vi har ikke endret funksjonsverdien i \(x=2\); brøken er fortsatt ikke definert der. Vi har funnet hvilken verdi funksjonen nærmer seg.
@@ -203,8 +239,10 @@ Vi har ikke endret funksjonsverdien i \(x=2\); brøken er fortsatt ikke definert
 For en rasjonal funksjon kan vi ofte dele teller og nevner på den høyeste potensen av \(x\) i nevneren. Eksempel:
 
 \[
+
 \lim_{x\to\infty}\frac{3x^2+1}{x^2-4}
 =\lim_{x\to\infty}\frac{3+1/x^2}{1-4/x^2}=3.
+
 \]
 
 Siden \(1/x^2\to0\), nærmer funksjonen seg 3.
@@ -236,9 +274,11 @@ Eksempel: \(f(x)=\frac{2}{x-1}\) har vertikal asymptote \(x=1\), fordi nevneren 
 Linjen \(y=L\) er en horisontal asymptote dersom
 
 \[
+
 \lim_{x\to\infty}f(x)=L
 \quad\text{eller}\quad
 \lim_{x\to-\infty}f(x)=L.
+
 \]
 
 De to grensene kan gi ulike horisontale asymptoter.
@@ -250,7 +290,9 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
 Eksempel:
 
 \[
+
 f(x)=\frac{x^2+1}{x}=x+\frac1x.
+
 \]
 
 Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
@@ -296,7 +338,9 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     For \(x\ne2\) kan vi faktorisere uttrykket:
 
     \[
+
     f(x)=\frac{(x-2)(x+2)}{x-2}=x+2.
+
     \]
 
     Programmet skriver ut:
@@ -309,6 +353,8 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene nærmer seg 4. Funksjonen er ikke definert ved \(x=2\), fordi den opprinnelige nevneren blir null. Faktoriseringen viser matematisk at grenseverdien er 4.
+    **Svar:** \(\underline{\underline{4}}\).
+
 
 !!! question "Oppgave 2.7.2 – Les en undersøkelse fra begge sider"
 
@@ -340,13 +386,17 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene 2.9 og 2.99 ligger til venstre for 3. Verdiene 3.01 og 3.1 ligger til høyre. Dermed ser vi at funksjonen går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Dette viser hvorfor vi må undersøke begge retninger.
+    **Svar:** Fra venstre \(\underline{\underline{-\infty}}\), fra høyre \(\underline{\underline{+\infty}}\).
+
 
 !!! question "Oppgave 2.7.3 – Finn feilen i programmet"
 
     En elev vil undersøke funksjonen
 
     \[
+
     f(x)=\frac{x^2-4}{x-2}
+
     \]
 
     og skriver:
@@ -387,6 +437,8 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Funksjonen er ikke definert
     4.1
     ```
+    **Svar:** Programmet stopper ved \(\underline{\underline{x=2}}\) uten en kontroll.
+
 
 ### Del B – skriv egne programmer
 
@@ -395,7 +447,9 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Skriv et Python-program som undersøker funksjonen
 
     \[
+
     f(x)=\frac{x^2-9}{x-3}
+
     \]
 
     for \(x\)-verdiene 2.9, 2.99, 3.01 og 3.1.
@@ -428,13 +482,17 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene nærmer seg 6. Ved faktorisering får vi \(f(x)=x+3\) for \(x\ne3\), og dermed er grenseverdien 6.
+    **Svar:** \(\underline{\underline{6}}\).
+
 
 !!! question "Oppgave 2.7.5 – Undersøk venstre og høyre side"
 
     Skriv et program som undersøker
 
     \[
+
     g(x)=\frac{1}{x-1}
+
     \]
 
     for x-verdier nær 1 fra begge sider.
@@ -469,17 +527,21 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Derfor er \(x=1\) en vertikal asymptote.
+    **Svar:** Vertikal asymptote \(\underline{\underline{x=1}}\).
+
 
 !!! question "Oppgave 2.7.6 – Test kontinuitet med en parameter"
 
     Vi har funksjonen
 
     \[
+
     h(x)=
     \begin{cases}
     kx+1, & x<2,\\
     x^2-1, & x\geq2.
     \end{cases}
+
     \]
 
     Skriv et program som:
@@ -515,10 +577,14 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Algebraisk må vi ha
 
     \[
+
     2k+1=2^2-1=3.
+
     \]
 
     Dermed er \(k=1\). Programmet undersøker tallverdier, mens likningen gir den eksakte begrunnelsen.
+    **Svar:** Kontinuitet fås for \(\underline{\underline{k=1}}\).
+
 
 
 ## 2.8 Blandede oppgaver
@@ -544,12 +610,16 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 ### Krevende
 
 **2.8.7** La
+
 \[
+
 f(x)=\begin{cases}
 x^2+ax,&x<1,\\
 bx+2,&x\geq1.
 \end{cases}
+
 \]
+
 Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn deretter en sammenheng som også gjør de to uttrykkenes stigningstall like ved overgangen. Forklar forskjellen på kravene.
 
 **2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
@@ -561,8 +631,11 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn de
 **2.8.10 – flere fenomener i samme funksjon**
 
 Vi har funksjonen
+
 \[
+
 f_a(x)=\frac{x^2+(a-1)x-a}{x^2-1}.
+
 \]
 
 a) Faktoriser teller og nevner.
@@ -582,18 +655,26 @@ e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de
 ### Del 1 – uten digitale hjelpemidler
 
 **2.P1.1** En funksjon er gitt ved
+
 \[
+
 f(x)=\begin{cases}
 x^2+ax,&x<2,\\
 5x-2,&x\geq2.
 \end{cases}
+
 \]
+
 Bestem \(a\) slik at funksjonen er kontinuerlig i \(x=2\). Undersøk deretter om de to forskriftene også har samme stigningstall ved overgangen. Forklar hva resultatet forteller.
 
 **2.P1.2** Beregn
+
 \[
+
 \lim_{x\to3}\frac{x^2-5x+6}{x-3}.
+
 \]
+
 En elev forkorter med \(x-3\) direkte i telleren uten først å faktorisere. Forklar hvorfor metoden er ugyldig, og vis korrekt framgangsmåte.
 
 **2.P1.3** En funksjon har \(\lim_{x\to a^-}f(x)=4\), \(\lim_{x\to a^+}f(x)=4\) og \(f(a)=-2\). Drøft om grenseverdien finnes og om funksjonen er kontinuerlig. Lag en enkel delt forskrift som illustrerer situasjonen.
@@ -601,18 +682,26 @@ En elev forkorter med \(x-3\) direkte i telleren uten først å faktorisere. For
 ### Del 2 – med digitale hjelpemidler
 
 **2.P2.1** Undersøk funksjonen
+
 \[
+
 g(x)=\frac{x^2-4x+3}{x^2-5x+6}.
+
 \]
+
 Bestem definisjonsmengden, finn eventuelle hull og asymptoter, og skisser grafen. Bruk algebra til å begrunne resultatene; grafen alene er ikke tilstrekkelig.
 
 **2.P2.2** En modell er definert stykkevis:
+
 \[
+
 h(t)=\begin{cases}
 at+4,&t<2,\\
 t^2+bt,&t\geq2.
 \end{cases}
+
 \]
+
 Bestem alle par \((a,b)\) som gjør \(h\) kontinuerlig i \(t=2\). Undersøk om noen av disse parene også gir samme deriverte fra begge sider i overgangspunktet, og forklar hvordan du kontrollerer dette.
 
 **2.P2.3** Lag en funksjon med både en vertikal og en skrå asymptote. Bruk et digitalt verktøy til å undersøke grafen, og bruk deretter grenseverdier eller polynomdivisjon til å bevise asymptotene. Forklar hvorfor den numeriske grafen bare er støtte for argumentasjonen.
