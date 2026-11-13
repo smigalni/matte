@@ -383,7 +383,7 @@ Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
 
     **2.6.1:** Vertikal asymptote \(x=2\), horisontal asymptote \(y=3\).
 
-    **2.6.2:** For \(x\ne2\) er funksjonen lik \(x+2\). Det er et hull i \((2,4)\), ikke en vertikal asymptote.
+    **2.6.2:** For \\(x\\ne2\\) er funksjonen lik \\(x+2\\). Grafen ligger derfor på linjen \\(y=x+2\\), bortsett fra et hull i \\((2,4)\\). Linjen \\(y=x+2\\) er den skrå asymptoten. Det er ingen vertikal asymptote ved \\(x=2\\), fordi grenseverdiene er endelige.
 
     **2.6.3:** Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
 
