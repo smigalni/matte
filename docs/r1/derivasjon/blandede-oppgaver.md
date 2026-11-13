@@ -2,7 +2,166 @@
 
 Her må du selv velge hvilke metoder og derivasjonsregler du skal bruke. Oppgavene kombinerer flere temaer fra kapittel 3 og er mer krevende enn oppgavene etter hvert delkapittel.
 
-Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevant.
+Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevant. I de vanskeligste oppgavene må du ofte rydde opp i algebraen før du kan derivere.
+
+**Alle oppgavene løses uten CAS og GeoGebra.** Du skal vise algebraiske framgangsmåter og mellomregning.
+
+## Algebraisk verktøykasse – før de blandede oppgavene
+
+I R1 må du kunne bruke algebraen fra 1T også når uttrykkene inneholder logaritmer, eksponentialfunksjoner og brøker. Faktoriser før du forkorter, og husk at forkorting ikke endrer hvilke verdier som var utelukket i det opprinnelige uttrykket.
+
+!!! question "Oppgave 3.9A.1 – Faktoriser og forkort"
+
+    Faktoriser telleren og nevneren så langt som mulig, og forenkle uttrykket:
+
+    [
+    \frac{x^4-5x^2+4}{x^2-4}.
+    ]
+
+    a) Bruk gjerne substitusjonen (u=x^2) for å faktorisere telleren.
+
+    b) Skriv uttrykket som en enklere brøk.
+
+    c) Oppgi hvilke verdier av (x) som ikke er tillatt i det opprinnelige uttrykket.
+
+??? note "Fasit – oppgave 3.9A.1"
+
+    Vi faktoriserer telleren:
+
+    [
+    \begin{aligned}
+    x^4-5x^2+4
+    &=(x^2-1)(x^2-4)\\
+    &=(x-1)(x+1)(x-2)(x+2).
+    \end{aligned}
+    ]
+
+    Nevneren er (x^2-4=(x-2)(x+2)). Dermed kan vi forkorte:
+
+    [
+    \frac{(x-1)(x+1)(x-2)(x+2)}{(x-2)(x+2)}
+    =\underline{\underline{x^2-1}}.
+    ]
+
+    I det opprinnelige uttrykket kan nevneren ikke være null. Derfor må (x\ne -2) og (x\ne2), selv om faktorene forkortes.
+
+!!! question "Oppgave 3.9A.2 – Multiplikasjon av algebraiske brøker"
+
+    Forenkle uttrykket så langt som mulig:
+
+    [
+    \frac{x^2-4}{x^2-4x+4}\cdot\frac{x-2}{x+2}.
+    ]
+
+    a) Faktoriser alle polynomene.
+
+    b) Forkort uttrykket.
+
+    c) Oppgi definisjonsmengden til det opprinnelige uttrykket.
+
+??? note "Fasit – oppgave 3.9A.2"
+
+    Vi faktoriserer:
+
+    [
+    x^2-4=(x-2)(x+2),\qquad
+    x^2-4x+4=(x-2)^2.
+    ]
+
+    Da får vi
+
+    [
+    \frac{(x-2)(x+2)}{(x-2)^2}\cdot\frac{x-2}{x+2}
+    =\underline{\underline{1}}.
+    ]
+
+    Det opprinnelige uttrykket har nevnerne ((x-2)^2) og (x+2). Derfor er (x\ne2) og (x\ne-2). Det forenklede uttrykket er altså lik 1 for alle tillatte (x)-verdier, ikke for (x=\pm2).
+
+!!! question "Oppgave 3.9A.3 – Faktoriser en eksponentiallikning"
+
+    Løs likningen
+
+    [
+    e^{2x}-5e^x+6=0.
+    ]
+
+    a) Forklar hvorfor du kan bruke substitusjonen (u=e^x).
+
+    b) Faktoriser andregradslikningen i (u).
+
+    c) Bestem de eksakte løsningene for (x).
+
+??? note "Fasit – oppgave 3.9A.3"
+
+    Vi setter (u=e^x). Da er (e^{2x}=(e^x)^2=u^2), og likningen blir
+
+    [
+    u^2-5u+6=0
+    \quad\Longleftrightarrow\quad
+    (u-2)(u-3)=0.
+    ]
+
+    Dermed er (u=2) eller (u=3). Siden (u=e^x), får vi
+
+    [
+    e^x=2\quad\text{eller}\quad e^x=3.
+    ]
+
+    De eksakte løsningene er
+
+    [
+    \underline{\underline{x=\ln2\quad\text{eller}\quad x=\ln3}}.
+    ]
+
+!!! question "Oppgave 3.9A.4 – Logaritme, faktorisering og definisjonsmengde"
+
+    Vi har likningen
+
+    [
+    \ln(x^2-5x+6)=0.
+    ]
+
+    a) Faktoriser uttrykket inni logaritmen.
+
+    b) Bestem først hvilke (x)-verdier som er tillatt.
+
+    c) Løs likningen eksakt, og kontroller at løsningene er tillatt.
+
+??? note "Fasit – oppgave 3.9A.4"
+
+    Vi faktoriserer uttrykket inni logaritmen:
+
+    [
+    x^2-5x+6=(x-2)(x-3).
+    ]
+
+    Logaritmens argument må være positivt. Derfor må
+
+    [
+    (x-2)(x-3)>0,
+    ]
+
+    som gir (x<2) eller (x>3).
+
+    Siden (ln(a)=0) betyr at (a=1), løser vi
+
+    [
+    x^2-5x+6=1
+    \quad\Longleftrightarrow\quad
+    x^2-5x+5=0.
+    ]
+
+    Andregradslikningen gir
+
+    [
+    \underline{\underline{x=\frac{5-\sqrt5}{2}
+    \quad\text{eller}\quad
+    x=\frac{5+\sqrt5}{2}}}.
+    ]
+
+    Den første løsningen er mindre enn 2, og den andre er større enn 3. Begge oppfyller derfor kravet til definisjonsmengden.
+
+---
 
 ## Middels
 
@@ -536,3 +695,150 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     Den symmetriske metoden gir best tilnærming for disse verdiene av \(h\).
 
     e) Når \(h\) blir svært liten, trekkes nesten like tall fra hverandre. Avrundingsfeil kan da bli betydelige i forhold til differansen.
+
+
+## Svært vanskelig – kombiner produktregelen, kjerneregelen og brøkregelen
+
+I oppgavene nedenfor må du bruke flere derivasjonsregler i samme uttrykk. Du må blant annet derivere produkter i telleren, bruke kjerneregelen på eksponential- og logaritmefunksjoner og deretter bruke brøkregelen. Ikke prøv å utvide alt med én gang. Velg en ryddig struktur, og faktoriser der det er hensiktsmessig.
+
+!!! question "Oppgave 3.9.15 – Tre regler i samme uttrykk"
+
+    Vi har funksjonen
+
+    \[
+    f(x)=\\frac{(x^2-3x+2)e^{2x}\\ln(x+1)}{x^2+1},
+    \\qquad x>-1.
+    \]
+
+    a) Faktoriser polynomet \(x^2-3x+2\).
+
+    b) Sett telleren lik \(u(x)\) og nevneren lik \(v(x)\). Finn \(u'(x)\) ved å bruke produktregelen. Vis at du må bruke kjerneregelen både på \(e^{2x}\) og \(\ln(x+1)\).
+
+    c) Bruk brøkregelen til å bestemme \(f'(x)\).
+
+    d) Skriv svaret så ryddig og faktorisert som mulig. Du trenger ikke å multiplisere ut alle parentesene.
+
+??? note "Fasit – oppgave 3.9.15"
+
+    Vi setter
+
+    \[
+    A=x^2-3x+2=(x-1)(x-2).
+    \]
+
+    Telleren er \(u=Ae^{2x}\ln(x+1)\), og nevneren er \(v=x^2+1\).
+
+    Først deriverer vi telleren. Produktregelen og kjerneregelen gir
+
+    \[
+    \\begin{aligned}
+    u'
+    &= (2x-3)e^{2x}\\ln(x+1)
+    +A\\cdot2e^{2x}\\ln(x+1)\\\\
+    &\\quad +Ae^{2x}\\cdot\\frac1{x+1}.
+    \\end{aligned}
+    \]
+
+    Vi faktoriserer ut \(e^{2x}\) og samler leddene:
+
+    \[
+    u'=e^{2x}\\left[
+    (2x^2-4x+1)\\ln(x+1)
+    +\\frac{x^2-3x+2}{x+1}
+    \\right].
+    \]
+
+    Videre er \(v'=2x\). Brøkregelen gir
+
+    \[
+    f'(x)=\\frac{u'v-uv'}{v^2}.
+    \]
+
+    Setter vi inn, får vi
+
+    \[
+    \\boxed{
+    f'(x)=\\frac{e^{2x}}{(x^2+1)^2}
+    \\left[
+    (x^2+1)\\left(
+    (2x^2-4x+1)\\ln(x+1)
+    +\\frac{x^2-3x+2}{x+1}
+    \\right)
+    -2x(x^2-3x+2)\\ln(x+1)
+    \\right].
+    }
+    \]
+
+    Her er alle tre reglene brukt. Vi lar uttrykket stå på faktorisert form for å gjøre strukturen tydelig.
+
+!!! question "Oppgave 3.9.16 – Faktoriser først, deriver etterpå"
+
+    Vi har funksjonen
+
+    \[
+    g(x)=\\frac{(x^2-4x+3)e^{(x-1)^2}\\ln(2x+1)}{x^2+1},
+    \\qquad x>-\\frac12.
+    \]
+
+    a) Faktoriser polynomet \(x^2-4x+3\).
+
+    b) Finn de deriverte av hver faktor i telleren. Vær særlig oppmerksom på den indre funksjonen i eksponentialfunksjonen og logaritmen.
+
+    c) Bruk produktregelen til å derivere telleren.
+
+    d) Bruk brøkregelen til å finne \(g'(x)\). Svaret skal være ryddig faktorisert, ikke fullt ut multiplisert.
+
+    e) Pek på hvor du har brukt hver av de tre reglene: produktregelen, kjerneregelen og brøkregelen.
+
+??? note "Fasit – oppgave 3.9.16"
+
+    Vi faktoriserer først:
+
+    \[
+    A=x^2-4x+3=(x-1)(x-3).
+    \]
+
+    Sett \(B=e^{(x-1)^2}\), \(C=\\ln(2x+1)\) og \(D=x^2+1\). Da er
+
+    \[
+    A'=2x-4,
+    \\qquad B'=2(x-1)e^{(x-1)^2},
+    \\qquad C'=\\frac{2}{2x+1},
+    \\qquad D'=2x.
+    \]
+
+    Produktregelen på telleren \(u=ABC\) gir
+
+    \[
+    \\begin{aligned}
+    u'
+    &=A'BC+AB'C+ABC'\\\\
+    &=e^{(x-1)^2}
+    \\left[
+    \\bigl(2x-4+2(x-1)(x^2-4x+3)\\bigr)\\ln(2x+1)
+    +\\frac{2(x^2-4x+3)}{2x+1}
+    \\right].
+    \\end{aligned}
+    \]
+
+    Vi har \(v=D=x^2+1\) og \(v'=2x\). Brøkregelen gir dermed
+
+    \[
+    \\boxed{
+    \\begin{aligned}
+    g'(x)
+    &=\\frac{e^{(x-1)^2}}{(x^2+1)^2}
+    \\Bigg[
+    (x^2+1)\\Bigg(
+    &\\bigl(2x-4+2(x-1)(x^2-4x+3)\\bigr)\\ln(2x+1)\\\\
+    &+\\frac{2(x^2-4x+3)}{2x+1}
+    \\Bigg)
+    -2x(x^2-4x+3)\\ln(2x+1)
+    \\Bigg].
+    \\end{aligned}
+    }
+    \]
+
+    Produktregelen brukes på de tre faktorene i telleren, kjerneregelen brukes på \(e^{(x-1)^2}\) og \(\ln(2x+1)\), og brøkregelen brukes til slutt på hele telleren delt på nevneren.
+
+
