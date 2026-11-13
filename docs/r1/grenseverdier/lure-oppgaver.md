@@ -1,18 +1,27 @@
-# Lure oppgaver – vanlige feil i grenseverdier og kontinuitet
-
 Disse oppgavene undersøker om du forstår hva grenseverdier, kontinuitet og asymptoter faktisk forteller. Flere av påstandene høres rimelige ut, men inneholder en feil. Begrunn alltid konklusjonen matematisk.
+
+Bruk den samme arbeidsmåten hver gang:
+
+1. **Påstand eller fristende konklusjon:** Hva kan være feil?
+2. **Undersøk:** Regn, tegn eller bruk en definisjon.
+3. **Kontrollspørsmål:** Hva må være sant før du kan konkludere?
+4. **Konklusjon:** Forklar hvorfor påstanden holder eller ikke holder.
+
+Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal også dukke opp underveis i de vanlige delkapitlene, slik at elevene møter dem i riktig faglig sammenheng.
 
 ## Oppgave 1 – samme grenseverdi betyr ikke samme funksjonsverdi
 
 En funksjon er gitt ved
 
 \[
+
 f(x)=
 \begin{cases}
 2x+1, & x<1,\\
 4, & x=1,\\
 x+2, & x>1.
 \end{cases}
+
 \]
 
 a) Bestem venstre og høyre grenseverdi når \(x\to1\).
@@ -28,11 +37,13 @@ d) En elev sier: «Grenseverdien er 3, så funksjonsverdien må også være 3.»
 La
 
 \[
+
 g(x)=
 \begin{cases}
 2x+1, & x<1,\\
 x+2, & x\geq1.
 \end{cases}
+
 \]
 
 a) Undersøk om \(g\) er kontinuerlig i \(x=1\).
@@ -46,7 +57,9 @@ c) Kan funksjonen være kontinuerlig, men ha en knekk? Forklar med utgangspunkt 
 Vi har
 
 \[
+
 h(x)=\frac{1}{(x-2)^2}.
+
 \]
 
 a) Bestem grenseverdien når \(x\to2^-\).
@@ -62,7 +75,9 @@ d) Sammenlign med \(p(x)=\frac{1}{x-2}\). Hva er forskjellen på fortegnet til d
 Vi har funksjonen
 
 \[
+
 q(x)=\frac{x^2-1}{x-1},\qquad x\ne1.
+
 \]
 
 En elev forkorter og skriver \(q(x)=x+1\), og konkluderer med at \(q(1)=2\).
@@ -80,7 +95,9 @@ d) Hva måtte vi ha endret i definisjonen for at funksjonen skulle bli kontinuer
 Vi har
 
 \[
+
 r(x)=\frac{x^2+x}{x^2+1}.
+
 \]
 
 a) Bestem den horisontale asymptoten når \(x\to\infty\).
@@ -94,7 +111,9 @@ c) En elev sier: «En graf kan ikke krysse en asymptote.» Forklar hvorfor påst
 Vi har
 
 \[
+
 s(x)=\frac{x^2-1}{(x-1)^2}.
+
 \]
 
 a) Finn kandidaten til vertikal asymptote.
@@ -110,7 +129,9 @@ d) Forklar hvorfor det er nødvendig å undersøke fortegnet når \(x\) nærmer 
 Vi har
 
 \[
+
 t(x)=\frac{x}{\sqrt{x^2+1}}.
+
 \]
 
 a) Bestem grenseverdien når \(x\to\infty\).
@@ -164,12 +185,16 @@ d) Vi kan definere \(q(1)=2\). Da blir funksjonen kontinuerlig i \(x=1\).
 a) Ved å dele teller og nevner på \(x^2\) får vi horisontal asymptote \(y=1\) når \(x\to\infty\).
 
 b) Vi løser
+
 \[
+
 \frac{x^2+x}{x^2+1}=1
 \quad\Longrightarrow\quad
 x^2+x=x^2+1
 \quad\Longrightarrow\quad x=1.
+
 \]
+
 Grafen krysser derfor linjen \(y=1\) i punktet \((1,1)\).
 
 c) En horisontal asymptote beskriver hva funksjonen nærmer seg når \(x\) går mot uendelig. Den sier ikke at grafen aldri kan møte eller krysse linjen ved en endelig \(x\)-verdi.
@@ -179,9 +204,12 @@ c) En horisontal asymptote beskriver hva funksjonen nærmer seg når \(x\) går 
 a) Nevneren blir null når \(x=1\).
 
 b)
+
 \[
+
 s(x)=\frac{(x-1)(x+1)}{(x-1)^2}
 =\frac{x+1}{x-1},\qquad x\ne1.
+
 \]
 
 c) Når \(x\to1^-\), går funksjonen mot \(-\infty\). Når \(x\to1^+\), går den mot \(+\infty\). Dermed er \(x=1\) en vertikal asymptote.
@@ -193,8 +221,10 @@ d) Fortegnet til \(x-1\) er negativt på venstre side og positivt på høyre sid
 Vi skriver
 
 \[
+
 \frac{x}{\sqrt{x^2+1}}
 =\frac{x}{|x|\sqrt{1+1/x^2}}.
+
 \]
 
 a) Når \(x\to\infty\), er \(x/|x|=1\), og grenseverdien er 1.
