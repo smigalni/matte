@@ -398,15 +398,6 @@
   border-bottom: 2px solid #ddd6fe;
   color: #5b21b6;
 }
-.md-typeset .admonition.important {
-  border-color: #7c3aed !important;
-  border-left-color: #7c3aed !important;
-  background: #f5f3ff !important;
-}
-.md-typeset .admonition.important > .admonition-title {
-  background: #ede9fe !important;
-  color: #5b21b6 !important;
-}
 @media (max-width: 650px) {
   .md-typeset .advanced-hero { padding: 1.1rem; }
   .md-typeset .advanced-roadmap { grid-template-columns: 1fr; }
