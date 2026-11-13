@@ -117,13 +117,13 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     **2.8.9:** For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
 
-    **2.8.10:** \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\), og hull når \(a=1\). Horisontal asymptote er \(y=1\).
+    **2.8.10:** \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\). Når \(a=1\), blir det også et hull, denne gangen i \((-1,1)\). Horisontal asymptote er \(y=1\).
 
     **2.8.11:** Vi faktoriserer:
 
     **Svar:**
 
-    \(\underline{\underline{x\le -a\ \lor\ x>1,\ x\ne a}}\).
+    \(\underline{\underline{(-\infty,-a]\cup(1,a)\cup(a,\infty)}}\).
 
     \[
     f_a(x)=\frac{(x-a)(x+a)}{(x-a)(x-1)}
