@@ -126,6 +126,9 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Funksjonen er ikke definert
     4.1
     ```
+
+    Her er sammenligningen `x == 2` trygg fordi programmet tester den eksakte heltallsverdien 2 fra listen. Ved beregninger med desimaltall bør vi vanligvis ikke teste likhet direkte, fordi flyttallsavrunding kan gi små avvik.
+
     **Resultat:** Programmet stopper ved \(\underline{\underline{x=2}}\) uten en kontroll.
 
 
