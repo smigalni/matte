@@ -670,6 +670,26 @@ d) Bestem den horisontale asymptoten.
 
 e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de kommer fra samme nevner.
 
+**2.8.11 – R1 og T-matte: asymptoter og rasjonale ulikheter**
+
+La \(a>1\), og definer
+
+\[
+f_a(x)=\frac{x^2-a^2}{(x-a)(x-1)}.
+\]
+
+a) Faktoriser og forenkle uttrykket. Oppgi samtidig definisjonsmengden til den opprinnelige funksjonen.
+
+b) Undersøk hva som skjer når \(x\to a\). Finn koordinatene til hullet i grafen.
+
+c) Bestem den vertikale og den horisontale asymptoten. Begrunn svarene med grenseverdier.
+
+d) Bruk fortegnsskjema til å løse ulikheten \(f_a(x)\geq0\). Husk at den opprinnelige funksjonen ikke er definert i \(x=a\) eller \(x=1\).
+
+e) Forklar hvorfor det ikke er tilstrekkelig å løse ulikheten bare for det forkortede uttrykket uten å ta hensyn til den opprinnelige definisjonsmengden.
+
+Oppgaven kombinerer grenseverdier og asymptoter fra R1 med faktorisering, fortegnsskjema og rasjonale ulikheter fra T-matte.
+
 ??? note "Fasit – blandede oppgaver 2.8"
 
     **2.8.1:** \(5\).
@@ -691,6 +711,29 @@ e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de
     **2.8.9:** For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
 
     **2.8.10:** \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\), og hull når \(a=1\). Horisontal asymptote er \(y=1\).
+
+        **2.8.11:** Vi faktoriserer:
+
+    \[
+    f_a(x)=\frac{(x-a)(x+a)}{(x-a)(x-1)}
+    =\frac{x+a}{x-1},\qquad x\ne a,\;x\ne1.
+    \]
+
+    Den opprinnelige funksjonen er ikke definert for \(x=a\) eller \(x=1\). Når \(x\to a\), får vi
+
+    \[
+    \lim_{x\to a}f_a(x)=\frac{2a}{a-1},
+    \]
+
+    så grafen har et hull i \(\left(a,\frac{2a}{a-1}\right)\). Siden \(a>1\), er telleren \(x+a\) ulik null ved \(x=1\), og dermed er \(x=1\) en vertikal asymptote. For \(x\to\pm\infty\) går brøken mot 1, så den horisontale asymptoten er \(y=1\).
+
+    For ulikheten ser vi på fortegnene til \(x+a\) og \(x-1\). Siden \(-a<1\), er brøken positiv for \(x\leq-a\) og for \(x>1\), men null ved \(x=-a\). Vi må likevel utelate \(x=a\), der den opprinnelige funksjonen ikke er definert. Løsningen er derfor
+
+    \[
+    (-\infty,-a]\cup(1,a)\cup(a,\infty).
+    \]
+
+    Det forkortede uttrykket har samme funksjonsverdier som den opprinnelige funksjonen der begge er definert, men forkortingen fyller ikke inn de to punktene som manglet i den opprinnelige definisjonsmengden.
 
     **Resultat:** \(\underline{\underline{b=a-1}}\) for kontinuitet i oppgave 2.8.7.
 
