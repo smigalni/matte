@@ -20,7 +20,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 ## Krevende
 
-**2.8.7** La
+**2.8.7 – krevende: kontinuitet og stigningstall (bro til kapittel 3)** La
 
 \[
 f(x)=\begin{cases}
@@ -30,6 +30,8 @@ bx+2,&x\geq1.
 \]
 
 Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn deretter en sammenheng som også gjør de to uttrykkenes stigningstall like ved overgangen. Forklar forskjellen på kravene.
+
+*Merk: Del b er en smakebit på derivasjon og kan vente til kapittel 3 dersom klassen ikke har arbeidet med tangentstigningstall ennå.*
 
 **2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
 
