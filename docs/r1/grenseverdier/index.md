@@ -369,4 +369,23 @@ Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
 
 ### Oppgaver 2.6
 
-**2.6.1** Finn vertikal og horisontal asymptote til \(f(x)=\frac{3x+1}{x-2}\). Begrunn
+**2.6.1** Finn vertikal og horisontal asymptote til \(f(x)=\frac{3x+1}{x-2}\). Begrunn med grenseverdier.
+
+**2.6.2** Undersøk asymptotene til \(g(x)=\frac{x^2-4}{x-2}\). Forklar hvorfor en verdi som gjør nevneren null, ikke automatisk gir en vertikal asymptote.
+
+**2.6.3** Bruk polynomdivisjon til å bestemme eventuell skrå asymptote for \(h(x)=\frac{2x^2+3x-1}{x+1}\).
+
+**2.6.4** En rasjonal funksjon har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\). Lag et mulig funksjonsuttrykk og forklar hvordan du vet at uttrykket oppfyller kravene. Det finnes flere svar.
+
+
+??? note "Fasit – oppgaver 2.6"
+
+    **2.6.1:** Vertikal asymptote \(x=2\), horisontal asymptote \(y=3\).
+
+    **2.6.2:** For \(x\ne2\) er funksjonen lik \(x+2\). Det er et hull i \((2,4)\), ikke en vertikal asymptote.
+
+    **2.6.3:** Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
+
+    **2.6.4:** Ett mulig uttrykk er \(f(x)=3+\frac{1}{x+2}\). Det har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\).
+
+    **Resultat:** \(\underline{\underline{x=2,\;y=3}}\) i oppgave 2.6.1.
