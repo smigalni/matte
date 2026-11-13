@@ -28,3 +28,11 @@ jobs:
 
       - name: Build site
         run: zensical build --clean --strict
+
+      - name: Upload built site for visual review
+        uses: actions/upload-artifact@v4
+        with:
+          name: r1-kapittel-2-preview
+          path: site/
+          if-no-files-found: error
+          retention-days: 7
