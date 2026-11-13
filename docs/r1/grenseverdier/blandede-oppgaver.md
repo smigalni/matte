@@ -111,6 +111,8 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     **2.8.7:** Kontinuitet gir \(b=a-1\). Like stigningstall gir \(b=a+2\). Kravene kan ikke oppfylles samtidig.
 
+    **Resultat:** Kravene om kontinuitet og like stigningstall kan ikke oppfylles samtidig.
+
     **2.8.8:** Ett eksempel er \(f(x)=-1+\frac{1}{x-2}\).
 
     **2.8.9:** For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
@@ -167,5 +169,4 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
     (-1,1)\cup(1,\infty).
     \]
 
-    **Resultat:** \(\underline{\underline{b=a-1}}\) for kontinuitet i oppgave 2.8.7.
 
