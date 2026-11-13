@@ -18,6 +18,8 @@ nav = [
     { "Kapittel 2 – Grenseverdier og kontinuitet" = [
       { "Oversikt og innhold" = "r1/grenseverdier/index.md" },
       { "Fordypning – asymptotekandidater" = "r1/grenseverdier/fordypning-asymptoter.md" },
+      { "Forberedelse til muntlig prøve" = "r1/grenseverdier/muntlig-forberedelse.md" },
+      { "Formeloversikt" = "r1/grenseverdier/formeloversikt.md" },
     ] },
     { "Kapittel 3 – Derivasjon" = [
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
