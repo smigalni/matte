@@ -1,8 +1,10 @@
-# 3.8 Programmering: lese og forstå kode
+# 3.8 Programmering: lese og skrive kode
 
-I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningene steg for steg og finne ut hva programmet skriver ut. Du skal ikke programmere selv. Les koden nøye, og skriv gjerne verdiene i en liten tabell mens du følger programmet.
+I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **skrive egne programmer**. Du skal trene like mye på begge deler. Når du leser kode, følger du variabler og programflyt steg for steg. Når du skriver kode, må du velge en framgangsmåte, teste programmet og tolke resultatene.
 
 ## Oppgaver
+
+### Del A – les og forstå kode
 
 !!! question "Oppgave 3.8.1 – Variabler og utskrift"
 
@@ -84,7 +86,9 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     Vi får \(f(1)=1\) og \(f(3)=9\). Dermed blir
 
     \[
+
     \frac{f(3)-f(1)}{3-1}=\frac{9-1}{2}=4.
+
     \]
 
     Programmet skriver ut:
@@ -155,42 +159,64 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
 
     Beregningen beskriver funksjonen \(f(x)=2x+1\).
 
-!!! question "Oppgave 3.8.6 – Betingelse og fortegn"
+### Del B – skriv egne programmer
 
-    Les programmet:
+!!! question "Oppgave 3.8.6 – Undersøk fortegnet til den deriverte"
+
+    Vi har funksjonen \(f(x)=x^2\). Skriv et program som går gjennom x-verdiene -2, 0 og 2.
+
+    a) Beregn \(f'(x)=2x\) for hver x-verdi.
+
+    b) Bruk en betingelse til å skrive ut «positiv» når den deriverte er større enn null, og «ikke positiv» ellers.
+
+    c) Skriv ut både x-verdien og teksten som beskriver fortegnet.
+
+??? note "Fasit – oppgave 3.8.6"
+
+    Ett mulig program er:
 
     ```python
     for x in [-2, 0, 2]:
         y = 2*x
         if y > 0:
-            print("positiv")
+            print(x, "positiv")
         else:
-            print("ikke positiv")
+            print(x, "ikke positiv")
     ```
-
-    a) Hva blir verdien til \(y\) for hver x-verdi?
-
-    b) Hva skriver programmet ut?
-
-    c) Hvordan henger utskriften sammen med fortegnet til \(f'(x)\) når \(f(x)=x^2\)?
-
-??? note "Fasit – oppgave 3.8.6"
-
-    Verdiene til \(y=2x\) blir \(-4\), \(0\) og \(4\).
 
     Programmet skriver ut:
 
     ```text
-    ikke positiv
-    ikke positiv
-    positiv
+    -2 ikke positiv
+    0 ikke positiv
+    2 positiv
     ```
 
-    For \(f(x)=x^2\) er \(f'(x)=2x\). Den deriverte er negativ ved \(x=-2\), null ved \(x=0\) og positiv ved \(x=2\). Programmet skiller bare mellom positiv og ikke positiv.
+    Den deriverte er negativ ved \(x=-2\), null ved \(x=0\) og positiv ved \(x=2\).
+
+    **Resultat:** \(\underline{\underline{f'(-2)=-4,\;f'(0)=0,\;f'(2)=4}}\).
 
 !!! question "Oppgave 3.8.7 – Finn den største verdien"
 
-    Les programmet:
+    Skriv et program som finner den største verdien i listen
+
+    \[
+
+    verdier=[3,7,2,5].
+
+    \]
+
+    a) Sett først den største verdien lik det første tallet i listen.
+
+    b) Gå gjennom listen med en løkke.
+
+    c) Bruk en betingelse til å oppdatere den største verdien når du finner et større tall.
+
+    d) Skriv ut den største verdien.
+
+??? note "Fasit – oppgave 3.8.7"
+
+    Ett mulig program er:
 
     ```python
     verdier = [3, 7, 2, 5]
@@ -203,27 +229,31 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print(storst)
     ```
 
-    a) Hvilken verdi får variabelen storst til slutt?
+    Programmet sammenligner hvert tall med den største verdien det har funnet så langt. Det skriver ut 7.
 
-    b) Hva skriver programmet ut?
+    **Resultat:** \(\underline{\underline{7}}\).
 
-    c) Hvorfor endres ikke storst når programmet møter tallet 2?
+!!! question "Oppgave 3.8.8 – Beregn en differansekvotient"
 
-??? note "Fasit – oppgave 3.8.7"
+    Vi har funksjonen \(f(x)=x^2\). Skriv et program som beregner differansekvotienten i \(x=3\) når \(\Delta x=0,1\).
 
-    Programmet sammenligner hvert tall med den største verdien det har funnet så langt. Verdien ender på \(7\).
+    a) Lag en funksjon som beregner \(f(x)\).
 
-    Programmet skriver ut:
+    b) Beregn differansekvotienten
 
-    ```text
-    7
-    ```
+    \[
 
-    Tallet 2 er mindre enn 7. Derfor er betingelsen tall > storst usann, og variabelen endres ikke.
+    \frac{f(3+\Delta x)-f(3)}{\Delta x}.
 
-!!! question "Oppgave 3.8.8 – Differansekvotient"
+    \]
 
-    Les programmet:
+    c) Skriv ut svaret med to desimaler.
+
+    d) Sammenlign med den eksakte verdien av \(f'(3)\).
+
+??? note "Fasit – oppgave 3.8.8"
+
+    Ett mulig program er:
 
     ```python
     def f(x):
@@ -235,31 +265,29 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print(round(svar, 2))
     ```
 
-    a) Hvilke to funksjonsverdier blir trukket fra hverandre?
+    Programmet skriver ut 6.1. Den eksakte deriverte er \(f'(x)=2x\), så \(f'(3)=6\).
 
-    b) Hva skriver programmet ut?
+    **Resultat:** \(\underline{\underline{6,1}}\) som tilnærming og \(\underline{\underline{6}}\) som eksakt derivert verdi.
 
-    c) Hva er den eksakte verdien av \(f'(3)\) for funksjonen \(f(x)=x^2\)?
+!!! question "Oppgave 3.8.9 – Undersøk hva som skjer når steget blir mindre"
 
-??? note "Fasit – oppgave 3.8.8"
-
-    Vi får \(f(3)=9\) og \(f(3,1)=3,1^2=9,61\). Dermed blir differansekvotienten
+    Vi har fortsatt \(f(x)=x^2\). Skriv et program som beregner differansekvotienten i \(x=3\) for
 
     \[
-    \frac{9,61-9}{0,1}=6,1.
+
+    \Delta x=1,\quad 0,1,\quad 0,01.
+
     \]
 
-    Programmet skriver ut:
+    a) Bruk en liste med de tre steglengdene og en løkke.
 
-    ```text
-    6.1
-    ```
+    b) Skriv ut differansekvotienten for hver steglengde.
 
-    Den eksakte deriverte er \(f'(x)=2x\), så \(f'(3)=6\).
+    c) Forklar hvilken verdi svarene nærmer seg, og hvorfor.
 
-!!! question "Oppgave 3.8.9 – Følg verdiene i en løkke"
+??? note "Fasit – oppgave 3.8.9"
 
-    Les programmet:
+    Ett mulig program er:
 
     ```python
     def f(x):
@@ -270,20 +298,6 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
         print(round(svar, 3))
     ```
 
-    a) Hva skriver programmet ut?
-
-    b) Hvilken verdi nærmer svarene seg?
-
-    c) Hvorfor nærmer svarene seg den deriverte i \(x=3\)?
-
-??? note "Fasit – oppgave 3.8.9"
-
-    Vi bruker \(f(x)=x^2\) og \(f(3)=9\).
-
-    - Når \(\Delta x=1\), blir svaret \(7\).
-    - Når \(\Delta x=0,1\), blir svaret \(6,1\).
-    - Når \(\Delta x=0,01\), blir svaret \(6,01\).
-
     Programmet skriver ut:
 
     ```text
@@ -292,11 +306,25 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     6.01
     ```
 
-    Svarene nærmer seg \(6\), som er \(f'(3)\). Når \(\Delta x\) nærmer seg null, nærmer differansekvotienten seg den deriverte.
+    Svarene nærmer seg 6, som er \(f'(3)\). Når \(\Delta x\) nærmer seg null, nærmer differansekvotienten seg den deriverte.
 
-!!! question "Oppgave 3.8.10 – Les et program for tangent"
+    **Resultat:** \(\underline{\underline{f'(3)=6}}\).
 
-    Les programmet:
+!!! question "Oppgave 3.8.10 – Lag et program som finner tangenten"
+
+    Vi har funksjonen \(f(x)=x^2\). Skriv et program som finner tangentens likning når \(x_1=2\).
+
+    a) Lag en funksjon for \(f(x)\) og en funksjon for den deriverte.
+
+    b) Beregn \(y_1=f(x_1)\) og stigningstallet \(a=f'(x_1)\).
+
+    c) Bruk \(b=y_1-ax_1\) til å finne konstantleddet.
+
+    d) Skriv ut verdiene og tangentens likning.
+
+??? note "Fasit – oppgave 3.8.10"
+
+    Ett mulig program er:
 
     ```python
     def f(x):
@@ -315,20 +343,6 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     print("y =", a, "x +", b)
     ```
 
-    a) Hva blir verdiene til \(y_1\), \(a\) og \(b\)?
-
-    b) Hva skriver programmet ut?
-
-    c) Hva er tangentens likning i punktet?
-
-??? note "Fasit – oppgave 3.8.10"
-
-    Vi får \(y_1=f(2)=4\), \(a=f'(2)=4\) og
-
-    \[
-    b=y_1-ax_1=4-4\cdot2=-4.
-    \]
-
     Programmet skriver ut:
 
     ```text
@@ -337,6 +351,9 @@ I dette delkapitlet skal du øve på å **lese Python-kode**, følge beregningen
     y = 4 x + -4
     ```
 
-    Tangentens likning er \(y=4x-4\). Den siste utskriften viser samme likning, men med + -4 i stedet for - 4.
+    Vi får \(y_1=4\), \(a=4\) og \(b=-4\). Tangentens likning er \(y=4x-4\).
+
+    **Resultat:** \(\underline{\underline{y=4x-4}}\).
+
 
 ---
