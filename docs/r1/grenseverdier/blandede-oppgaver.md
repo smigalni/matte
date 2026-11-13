@@ -75,6 +75,26 @@ e) Forklar hvorfor det ikke er tilstrekkelig å løse ulikheten bare for det for
 
 Oppgaven kombinerer grenseverdier og asymptoter fra R1 med faktorisering, fortegnsskjema og rasjonale ulikheter fra T-matte.
 
+**2.8.12 – R1 og T-matte: polynomdivisjon, asymptoter og fortegn**
+
+La funksjonen være
+
+\[
+g(x)=\frac{(x-1)(x^2+2x+3)}{(x-1)(x+1)}.
+\]
+
+a) Oppgi definisjonsmengden og forenkle uttrykket så langt det lar seg gjøre.
+
+b) Bruk polynomdivisjon til å skrive funksjonen som et polynom pluss en brøk. Bestem den skrå asymptoten.
+
+c) Undersøk hva som skjer når \(x\to1\), og finn koordinatene til et eventuelt hull.
+
+d) Undersøk grenseverdiene når \(x\to-1^-\) og \(x\to-1^+\). Bestem den vertikale asymptoten.
+
+e) Bruk fortegn og egenskapene til andregradsuttrykket \(x^2+2x+3\) til å løse ulikheten \(g(x)\geq0\). Ta hensyn til den opprinnelige definisjonsmengden.
+
+Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk og fortegnsvurdering fra T-matte.
+
 ??? note "Fasit – blandede oppgaver 2.8"
 
     **2.8.1:** \(5\).
@@ -119,6 +139,33 @@ Oppgaven kombinerer grenseverdier og asymptoter fra R1 med faktorisering, forteg
     \]
 
     Det forkortede uttrykket har samme funksjonsverdier som den opprinnelige funksjonen der begge er definert, men forkortingen fyller ikke inn de to punktene som manglet i den opprinnelige definisjonsmengden.
+
+    **2.8.12:** Definisjonsmengden er \(\mathbb R\setminus\{-1,1\}\). For \(x\ne-1,1\) forkorter vi med \(x-1\):
+
+    \[
+    g(x)=\frac{x^2+2x+3}{x+1}
+    =x+1+\frac{2}{x+1}.
+    \]
+
+    Polynomdivisjonen viser at den skrå asymptoten er \(y=x+1\). Når \(x\to1\), får vi grenseverdien
+
+    \[
+    \lim_{x\to1}g(x)=\frac{1+2+3}{2}=3,
+    \]
+
+    så grafen har et hull i \((1,3)\). Når \(x\to-1\), går telleren mot \(2\), mens nevneren går mot null. Derfor går funksjonen mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Den vertikale asymptoten er \(x=-1\).
+
+    For ulikheten skriver vi
+
+    \[
+    x^2+2x+3=(x+1)^2+2>0.
+    \]
+
+    Telleren er altså positiv for alle reelle \(x\). Fortegnet bestemmes av \(x+1\), så brøken er positiv når \(x>-1\). Vi må utelate \(x=1\), der den opprinnelige funksjonen ikke er definert. Løsningen er
+
+    \[
+    (-1,1)\cup(1,\infty).
+    \]
 
     **Resultat:** \(\underline{\underline{b=a-1}}\) for kontinuitet i oppgave 2.8.7.
 
