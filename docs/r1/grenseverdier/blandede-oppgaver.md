@@ -1,45 +1,5 @@
 # 2.8 Blandede oppgaver
 
-rdi for \(k\)
-    - beregner funksjonsverdier for x-verdier like til venstre for 2
-    - beregner \(h(2)\)
-    - skriver ut verdiene slik at du kan sammenligne dem
-
-    Test minst \(k=0\), \(k=1\) og \(k=2\). Bruk deretter algebra til å bestemme nøyaktig hvilken verdi av \(k\) som gir kontinuitet.
-
-??? note "Fasit – oppgave 2.7.6"
-
-    Ett mulig program er:
-
-    ```python
-    for k in [0, 1, 2]:
-        def h(x):
-            if x < 2:
-                return k*x + 1
-            else:
-                return x**2 - 1
-
-        print("k =", k)
-        for x in [1.9, 1.99, 1.999]:
-            print(x, round(h(x), 3))
-        print("h(2) =", h(2))
-    ```
-
-    Programmet viser at venstreverdiene nærmer seg 1 når \(k=0\), 3 når \(k=1\) og 5 når \(k=2\). I alle tilfellene er \(h(2)=3\).
-
-    Algebraisk må vi ha
-
-    \[
-    2k+1=2^2-1=3.
-    \]
-
-    Dermed er \(k=1\). Programmet undersøker tallverdier, mens likningen gir den eksakte begrunnelsen.
-    **Resultat:** Kontinuitet fås for \(\underline{\underline{k=1}}\).
-
-
-
-## 2.8 Blandede oppgaver
-
 Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krevende oppgaver kan kreve flere forklaringer enn regning.
 
 ### Grunnleggende
@@ -141,4 +101,24 @@ Oppgaven kombinerer grenseverdier og asymptoter fra R1 med faktorisering, forteg
 
     \[
     f_a(x)=\frac{(x-a)(x+a)}{(x-a)(x-1)}
-    =\frac{x+
+    =\frac{x+a}{x-1},\qquad x\ne a,\;x\ne1.
+    \]
+
+    Den opprinnelige funksjonen er ikke definert for \(x=a\) eller \(x=1\). Når \(x\to a\), får vi
+
+    \[
+    \lim_{x\to a}f_a(x)=\frac{2a}{a-1},
+    \]
+
+    så grafen har et hull i \(\left(a,\frac{2a}{a-1}\right)\). Siden \(a>1\), er telleren \(x+a\) ulik null ved \(x=1\), og dermed er \(x=1\) en vertikal asymptote. For \(x\to\pm\infty\) går brøken mot 1, så den horisontale asymptoten er \(y=1\).
+
+    For ulikheten ser vi på fortegnene til \(x+a\) og \(x-1\). Siden \(-a<1\), er brøken positiv for \(x\leq-a\) og for \(x>1\), men null ved \(x=-a\). Vi må likevel utelate \(x=a\), der den opprinnelige funksjonen ikke er definert. Løsningen er derfor
+
+    \[
+    (-\infty,-a]\cup(1,a)\cup(a,\infty).
+    \]
+
+    Det forkortede uttrykket har samme funksjonsverdier som den opprinnelige funksjonen der begge er definert, men forkortingen fyller ikke inn de to punktene som manglet i den opprinnelige definisjonsmengden.
+
+    **Resultat:** \(\underline{\underline{b=a-1}}\) for kontinuitet i oppgave 2.8.7.
+
