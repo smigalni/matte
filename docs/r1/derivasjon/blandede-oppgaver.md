@@ -95,7 +95,7 @@ Vis mellomregning, begrunn metodevalgene dine og tolk svarene der det er relevan
     Løsningen er \(a=1\) og \(b=1\).
 
     \[
-    \underline{\underline{f(x)=\frac32x^3+\frac12x^2-x+2}}
+    \underline{\underline{f(x)=x^3+x^2-x+2}}
     \]
 
 !!! question "Oppgave 3.9.4 – Gjennomsnittlig og momentan vekstfart"
