@@ -84,7 +84,7 @@ Dermed får vi
 Når vi deler på det negative tallet \(u\), snur ulikhetene:
 
 \[
-1\geq\frac{\ln(1+u)}u\geq\frac1{1+u}.
+1\leq\frac{\ln(1+u)}u\leq\frac1{1+u}.
 \]
 
 Også her går begge ytteruttrykkene mot 1 når \(u\to0^-\).
