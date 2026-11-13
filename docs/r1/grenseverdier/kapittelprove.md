@@ -2,7 +2,7 @@
 
 **Anbefaling:** Bruk Del 1 uten digitale hjelpemidler og Del 2 med digitale hjelpemidler dersom dette passer med vurderingsformen i klassen. Alle oppgaver er ment å utfordre på høyt nivå. Vis mellomregning og begrunn konklusjonene.
 
-### Del 1 – uten digitale hjelpemidler
+## Del 1 – uten digitale hjelpemidler
 
 **2.P1.1** En funksjon er gitt ved
 
@@ -25,7 +25,7 @@ En elev forkorter med \(x-3\) direkte i telleren uten først å faktorisere. For
 
 **2.P1.3** En funksjon har \(\lim_{x\to a^-}f(x)=4\), \(\lim_{x\to a^+}f(x)=4\) og \(f(a)=-2\). Drøft om grenseverdien finnes og om funksjonen er kontinuerlig. Lag en enkel delt forskrift som illustrerer situasjonen.
 
-### Del 2 – med digitale hjelpemidler
+## Del 2 – med digitale hjelpemidler
 
 **2.P2.1** Undersøk funksjonen
 
