@@ -181,7 +181,9 @@ Det er nyttig å tenke på dette som tre kontrollspørsmål. At de ensidige gren
 
     Dermed må \(2k+1=3\), altså \(k=1\).
 
-    **Svar:** Funksjonen er kontinuerlig i \(x=2\) når \(k=1\). \(\underline{\underline{k=1}}\)
+    **Svar:** Funksjonen er kontinuerlig i x=2 når k=1.
+
+    \(\underline{\underline{k=1}}\)
 
 ### Oppgaver 2.4
 
@@ -353,7 +355,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene nærmer seg 4. Funksjonen er ikke definert ved \(x=2\), fordi den opprinnelige nevneren blir null. Faktoriseringen viser matematisk at grenseverdien er 4.
-    **Svar:** \(\underline{\underline{4}}\).
+    **Resultat:** \(\underline{\underline{4}}\).
 
 
 !!! question "Oppgave 2.7.2 – Les en undersøkelse fra begge sider"
@@ -386,7 +388,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene 2.9 og 2.99 ligger til venstre for 3. Verdiene 3.01 og 3.1 ligger til høyre. Dermed ser vi at funksjonen går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Dette viser hvorfor vi må undersøke begge retninger.
-    **Svar:** Fra venstre \(\underline{\underline{-\infty}}\), fra høyre \(\underline{\underline{+\infty}}\).
+    **Resultat:** Fra venstre \(\underline{\underline{-\infty}}\), fra høyre \(\underline{\underline{+\infty}}\).
 
 
 !!! question "Oppgave 2.7.3 – Finn feilen i programmet"
@@ -437,7 +439,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Funksjonen er ikke definert
     4.1
     ```
-    **Svar:** Programmet stopper ved \(\underline{\underline{x=2}}\) uten en kontroll.
+    **Resultat:** Programmet stopper ved \(\underline{\underline{x=2}}\) uten en kontroll.
 
 
 ### Del B – skriv egne programmer
@@ -482,7 +484,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene nærmer seg 6. Ved faktorisering får vi \(f(x)=x+3\) for \(x\ne3\), og dermed er grenseverdien 6.
-    **Svar:** \(\underline{\underline{6}}\).
+    **Resultat:** \(\underline{\underline{6}}\).
 
 
 !!! question "Oppgave 2.7.5 – Undersøk venstre og høyre side"
@@ -527,7 +529,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     ```
 
     Verdiene går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Derfor er \(x=1\) en vertikal asymptote.
-    **Svar:** Vertikal asymptote \(\underline{\underline{x=1}}\).
+    **Resultat:** Vertikal asymptote \(\underline{\underline{x=1}}\).
 
 
 !!! question "Oppgave 2.7.6 – Test kontinuitet med en parameter"
@@ -583,7 +585,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     \]
 
     Dermed er \(k=1\). Programmet undersøker tallverdier, mens likningen gir den eksakte begrunnelsen.
-    **Svar:** Kontinuitet fås for \(\underline{\underline{k=1}}\).
+    **Resultat:** Kontinuitet fås for \(\underline{\underline{k=1}}\).
 
 
 
