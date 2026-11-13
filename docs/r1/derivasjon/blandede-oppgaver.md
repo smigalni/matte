@@ -706,8 +706,8 @@ I oppgavene nedenfor må du bruke flere derivasjonsregler i samme uttrykk. Du m�
     Vi har funksjonen
 
     \[
-    f(x)=\\frac{(x^2-3x+2)e^{2x}\\ln(x+1)}{x^2+1},
-    \\qquad x>-1.
+    f(x)=\frac{(x^2-3x+2)e^{2x}\ln(x+1)}{x^2+1},
+    \qquad x>-1.
     \]
 
     a) Faktoriser polynomet \(x^2-3x+2\).
@@ -731,41 +731,41 @@ I oppgavene nedenfor må du bruke flere derivasjonsregler i samme uttrykk. Du m�
     Først deriverer vi telleren. Produktregelen og kjerneregelen gir
 
     \[
-    \\begin{aligned}
+    \begin{aligned}
     u'
-    &= (2x-3)e^{2x}\\ln(x+1)
-    +A\\cdot2e^{2x}\\ln(x+1)\\\\
-    &\\quad +Ae^{2x}\\cdot\\frac1{x+1}.
-    \\end{aligned}
+    &= (2x-3)e^{2x}\ln(x+1)
+    +A\cdot2e^{2x}\ln(x+1)\\
+    &\quad +Ae^{2x}\cdot\frac1{x+1}.
+    \end{aligned}
     \]
 
     Vi faktoriserer ut \(e^{2x}\) og samler leddene:
 
     \[
-    u'=e^{2x}\\left[
-    (2x^2-4x+1)\\ln(x+1)
-    +\\frac{x^2-3x+2}{x+1}
-    \\right].
+    u'=e^{2x}\left[
+    (2x^2-4x+1)\ln(x+1)
+    +\frac{x^2-3x+2}{x+1}
+    \right].
     \]
 
     Videre er \(v'=2x\). Brøkregelen gir
 
     \[
-    f'(x)=\\frac{u'v-uv'}{v^2}.
+    f'(x)=\frac{u'v-uv'}{v^2}.
     \]
 
     Setter vi inn, får vi
 
     \[
-    \\boxed{
-    f'(x)=\\frac{e^{2x}}{(x^2+1)^2}
-    \\left[
-    (x^2+1)\\left(
-    (2x^2-4x+1)\\ln(x+1)
-    +\\frac{x^2-3x+2}{x+1}
-    \\right)
-    -2x(x^2-3x+2)\\ln(x+1)
-    \\right].
+    \boxed{
+    f'(x)=\frac{e^{2x}}{(x^2+1)^2}
+    \left[
+    (x^2+1)\left(
+    (2x^2-4x+1)\ln(x+1)
+    +\frac{x^2-3x+2}{x+1}
+    \right)
+    -2x(x^2-3x+2)\ln(x+1)
+    \right].
     }
     \]
 
@@ -776,8 +776,8 @@ I oppgavene nedenfor må du bruke flere derivasjonsregler i samme uttrykk. Du m�
     Vi har funksjonen
 
     \[
-    g(x)=\\frac{(x^2-4x+3)e^{(x-1)^2}\\ln(2x+1)}{x^2+1},
-    \\qquad x>-\\frac12.
+    g(x)=\frac{(x^2-4x+3)e^{(x-1)^2}\ln(2x+1)}{x^2+1},
+    \qquad x>-\frac12.
     \]
 
     a) Faktoriser polynomet \(x^2-4x+3\).
@@ -798,44 +798,44 @@ I oppgavene nedenfor må du bruke flere derivasjonsregler i samme uttrykk. Du m�
     A=x^2-4x+3=(x-1)(x-3).
     \]
 
-    Sett \(B=e^{(x-1)^2}\), \(C=\\ln(2x+1)\) og \(D=x^2+1\). Da er
+    Sett \(B=e^{(x-1)^2}\), \(C=\ln(2x+1)\) og \(D=x^2+1\). Da er
 
     \[
     A'=2x-4,
-    \\qquad B'=2(x-1)e^{(x-1)^2},
-    \\qquad C'=\\frac{2}{2x+1},
-    \\qquad D'=2x.
+    \qquad B'=2(x-1)e^{(x-1)^2},
+    \qquad C'=\frac{2}{2x+1},
+    \qquad D'=2x.
     \]
 
     Produktregelen på telleren \(u=ABC\) gir
 
     \[
-    \\begin{aligned}
+    \begin{aligned}
     u'
-    &=A'BC+AB'C+ABC'\\\\
+    &=A'BC+AB'C+ABC'\\
     &=e^{(x-1)^2}
-    \\left[
-    \\bigl(2x-4+2(x-1)(x^2-4x+3)\\bigr)\\ln(2x+1)
-    +\\frac{2(x^2-4x+3)}{2x+1}
-    \\right].
-    \\end{aligned}
+    \left[
+    \bigl(2x-4+2(x-1)(x^2-4x+3)\bigr)\ln(2x+1)
+    +\frac{2(x^2-4x+3)}{2x+1}
+    \right].
+    \end{aligned}
     \]
 
     Vi har \(v=D=x^2+1\) og \(v'=2x\). Brøkregelen gir dermed
 
     \[
-    \\boxed{
-    \\begin{aligned}
+    \boxed{
+    \begin{aligned}
     g'(x)
-    &=\\frac{e^{(x-1)^2}}{(x^2+1)^2}
-    \\Bigg[
-    (x^2+1)\\Bigg(
-    &\\bigl(2x-4+2(x-1)(x^2-4x+3)\\bigr)\\ln(2x+1)\\\\
-    &+\\frac{2(x^2-4x+3)}{2x+1}
-    \\Bigg)
-    -2x(x^2-4x+3)\\ln(2x+1)
-    \\Bigg].
-    \\end{aligned}
+    &=\frac{e^{(x-1)^2}}{(x^2+1)^2}
+    \Bigg[
+    (x^2+1)\Bigg(
+    &\bigl(2x-4+2(x-1)(x^2-4x+3)\bigr)\ln(2x+1)\\
+    &+\frac{2(x^2-4x+3)}{2x+1}
+    \Bigg)
+    -2x(x^2-4x+3)\ln(2x+1)
+    \Bigg].
+    \end{aligned}
     }
     \]
 
