@@ -1,6 +1,6 @@
 # 3.10 Kapittelprøve – derivasjon
 
-**Anbefaling:** Del 1 gjennomføres uten hjelpemidler. Del 2 gjennomføres med alle hjelpemidler tillatt, men uten PC. Oppgavene er laget for høyt nivå. Vis metodevalg, mellomregning og tolkning.
+**Anbefaling:** Del 1 gjennomføres uten hjelpemidler. Del 2 gjennomføres med vanlige hjelpemidler, men uten PC, CAS eller GeoGebra. Oppgavene er laget for høyt nivå. Vis metodevalg, mellomregning og tolkning.
 
 ## Del 1 – uten digitale hjelpemidler
 
