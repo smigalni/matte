@@ -161,7 +161,7 @@ Dette er et typisk trekk ved matematiske bevis: En tilsynelatende enkel påstand
 
 Et annet viktig resultat er sammenhengen mellom den deriverte til en funksjon og den deriverte til den inverse funksjonen.
 
-Anta at \(f\) er deriverbar, at \(f'(a)\ne0\), og at den inverse funksjonen \(f^{-1}\) finnes i området vi undersøker. Sett
+Anta at \(f\) er deriverbar og strengt monoton i et område rundt \(a\), og at \(f'(a)\ne0\). Da finnes en kontinuerlig invers \(f^{-1}\) i det tilsvarende verdiområdet. Sett
 
 \[
 g=f^{-1},\qquad g(f(a))=a.
