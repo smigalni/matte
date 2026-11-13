@@ -34,6 +34,8 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
 
     Den siste utskriften er \(x+y=3+9=12\).
 
+    **Resultat:** \(\underline{\underline{9,\;12}}\).
+
 !!! question "Oppgave 3.8.2 – Funksjon og returverdi"
 
     Les programmet:
@@ -61,6 +63,8 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
     17
     ```
 
+    **Resultat:** \(\underline{\underline{5,\;17}}\).
+
 !!! question "Oppgave 3.8.3 – Gjennomsnittlig vekstfart"
 
     Les programmet:
@@ -86,9 +90,7 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
     Vi får \(f(1)=1\) og \(f(3)=9\). Dermed blir
 
     \[
-
     \frac{f(3)-f(1)}{3-1}=\frac{9-1}{2}=4.
-
     \]
 
     Programmet skriver ut:
@@ -98,6 +100,8 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
     ```
 
     Tallet er stigningstallet til sekanten, altså den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=3\).
+
+    **Resultat:** \(\underline{\underline{4}}\).
 
 !!! question "Oppgave 3.8.4 – En løkke"
 
@@ -129,6 +133,8 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
 
     Tallene er funksjonsverdiene til \(f(x)=x^2\) for de fire x-verdiene.
 
+    **Resultat:** \(\underline{\underline{1,\;4,\;9,\;16}}\).
+
 !!! question "Oppgave 3.8.5 – En løkke med beregning"
 
     Les programmet:
@@ -158,6 +164,8 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
     ```
 
     Beregningen beskriver funksjonen \(f(x)=2x+1\).
+
+    **Resultat:** \(\underline{\underline{3,\;5,\;7}}\).
 
 ### Del B – skriv egne programmer
 
@@ -201,9 +209,7 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
     Skriv et program som finner den største verdien i listen
 
     \[
-
     verdier=[3,7,2,5].
-
     \]
 
     a) Sett først den største verdien lik det første tallet i listen.
@@ -242,9 +248,7 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
     b) Beregn differansekvotienten
 
     \[
-
     \frac{f(3+\Delta x)-f(3)}{\Delta x}.
-
     \]
 
     c) Skriv ut svaret med to desimaler.
@@ -274,9 +278,7 @@ I dette delkapitlet skal du øve både på å **lese Python-kode** og på å **s
     Vi har fortsatt \(f(x)=x^2\). Skriv et program som beregner differansekvotienten i \(x=3\) for
 
     \[
-
     \Delta x=1,\quad 0,1,\quad 0,01.
-
     \]
 
     a) Bruk en liste med de tre steglengdene og en løkke.
