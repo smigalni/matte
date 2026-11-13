@@ -88,6 +88,19 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
 
 **2.2.4** Lag en delt forskrift som har \(f(0)=4\), men der venstre grenseverdi når \(x\to0\) er 2 og høyre grenseverdi er 5. Forklar hvordan forskriften din viser dette.
 
+
+??? note "Fasit – oppgaver 2.2"
+
+    **2.2.1:** \(f(0)=1\), \(f(3)=7\) og \(f(4)=14\).
+
+    **2.2.2:** \(|x-2|=2-x\) når \(x<2\), og \(|x-2|=x-2\) når \(x\geq2\).
+
+    **2.2.3:** Vi må ha \(2a+1=3\), så \(a=1\). Da er også \(g(2)=3\), og funksjonen er kontinuerlig i \(x=2\).
+
+    **2.2.4:** Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
+
+    **Resultat:** \(\underline{\underline{a=1}}\) i oppgave 2.2.3.
+
 ## 2.3 Ensidige grenseverdier og grenseverdier
 
 En grenseverdi beskriver hvilken verdi funksjonen nærmer seg når \(x\) nærmer seg et bestemt tall. Vi skriver
@@ -151,6 +164,19 @@ f(x)=\begin{cases}2x-1,&x<1,\\x+3,&x\geq1.\end{cases}
 
 **2.3.4** Lag en funksjon der \(\lim_{x\to1^-}f(x)=2\), mens \(\lim_{x\to1^+}f(x)=5\). Vis at den vanlige grenseverdien ikke finnes.
 
+
+??? note "Fasit – oppgaver 2.3"
+
+    **2.3.1:** Venstre grenseverdi er \(1\), mens høyre grenseverdi er \(4\). Den tosidige grenseverdien finnes ikke.
+
+    **2.3.2:** Grenseverdien er \(4\), mens \(f(2)=1\). Funksjonen er ikke kontinuerlig i \(x=2\).
+
+    **2.3.3:** Fra venstre går funksjonen mot \(-\infty\), og fra høyre mot \(+\infty\). Den har vertikal asymptote \(x=3\).
+
+    **2.3.4:** Ett eksempel er \(f(x)=2\) når \(x<1\), \(f(1)=3\) og \(f(x)=5\) når \(x>1\).
+
+    **Resultat:** \(\underline{\underline{\lim_{x\to1^-}f(x)=2,\quad \lim_{x\to1^+}f(x)=5}}\) i oppgave 2.3.4.
+
 ## 2.4 Kontinuitet
 
 En funksjon er kontinuerlig i \(x=a\) når grafen ikke har et brudd der. For å kontrollere kontinuitet må tre forhold være oppfylt:
@@ -196,6 +222,19 @@ Det er nyttig å tenke på dette som tre kontrollspørsmål. At de ensidige gren
 **2.4.3** En funksjon har like ensidige grenseverdier 6 ved \(x=2\), men \(f(2)=0\). Er funksjonen kontinuerlig i punktet? Kan grenseverdien finnes? Begrunn.
 
 **2.4.4** En funksjon er definert ved \(f(x)=\frac{x^2-4}{x-2}\) for \(x\ne2\), og \(f(2)=k\). Bestem \(k\) slik at funksjonen blir kontinuerlig i \(x=2\). Forklar hvorfor faktorisering er nyttig.
+
+
+??? note "Fasit – oppgaver 2.4"
+
+    **2.4.1:** Venstre grenseverdi er \(3\), mens høyre grenseverdi og funksjonsverdien er \(2\). Funksjonen er ikke kontinuerlig.
+
+    **2.4.2:** Kontinuitet gir \(3a-2=7\), altså \(a=3\).
+
+    **2.4.3:** Den tosidige grenseverdien finnes og er \(6\), men funksjonsverdien er \(0\). Funksjonen er derfor ikke kontinuerlig.
+
+    **2.4.4:** For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
+
+    **Resultat:** \(\underline{\underline{k=4}}\) i oppgave 2.4.4.
 
 ## 2.5 Teknikker for å beregne grenseverdier
 
@@ -263,6 +302,21 @@ Siden \(1/x^2\to0\), nærmer funksjonen seg 3.
 
 **2.5.5** En elev sier at \(\lim_{x\to2}\frac{x^2-4}{x-2}\) ikke finnes fordi uttrykket gir \(0/0\). Forklar presist hva som er feil i argumentet, og vis en korrekt løsning.
 
+
+??? note "Fasit – oppgaver 2.5"
+
+    **2.5.1:** \(x^2-9=(x-3)(x+3)\), så grenseverdien er \(6\).
+
+    **2.5.2:** \(x^2+5x+6=(x+2)(x+3)\), så grenseverdien er \(1\).
+
+    **2.5.3:** Etter faktorisering og forkorting får vi \((x+1)/(x-2)\). Grenseverdien er \(-2\).
+
+    **2.5.4:** Teller og nevner har samme grad. Grenseverdien er forholdet mellom koeffisientene foran \(x^2\), altså \(5/2\).
+
+    **2.5.5:** \(0/0\) er en ubestemt form. Faktorisering gir \((x-2)(x+2)/(x-2)=x+2\), så grenseverdien er \(4\).
+
+    **Resultat:** \(\underline{\underline{6,\;1,\;-2,\;\frac52,\;4}}\) i oppgave 2.5.1–2.5.5.
+
 ## 2.6 Asymptoter
 
 En asymptote er en rett linje som grafen nærmer seg. Vi undersøker tre vanlige typer.
@@ -310,6 +364,19 @@ Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
 **2.6.3** Bruk polynomdivisjon til å bestemme eventuell skrå asymptote for \(h(x)=\frac{2x^2+3x-1}{x+1}\).
 
 **2.6.4** En rasjonal funksjon har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\). Lag et mulig funksjonsuttrykk og forklar hvordan du vet at uttrykket oppfyller kravene. Det finnes flere svar.
+
+
+??? note "Fasit – oppgaver 2.6"
+
+    **2.6.1:** Vertikal asymptote \(x=2\), horisontal asymptote \(y=3\).
+
+    **2.6.2:** For \(x\ne2\) er funksjonen lik \(x+2\). Det er et hull i \((2,4)\), ikke en vertikal asymptote.
+
+    **2.6.3:** Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
+
+    **2.6.4:** Ett mulig uttrykk er \(f(x)=3+\frac{1}{x+2}\). Det har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\).
+
+    **Resultat:** \(\underline{\underline{x=2,\;y=3}}\) i oppgave 2.6.1.
 
 ## 2.7 Programmering: lese og skrive kode
 
@@ -709,39 +776,45 @@ Bestem alle par \((a,b)\) som gjør \(h\) kontinuerlig i \(t=2\). Undersøk om n
 
 **2.P2.3** Lag en funksjon med både en vertikal og en skrå asymptote. Bruk et digitalt verktøy til å undersøke grafen, og bruk deretter grenseverdier eller polynomdivisjon til å bevise asymptotene. Forklar hvorfor den numeriske grafen bare er støtte for argumentasjonen.
 
-## Fasit og løsningsskisser
 
-Fasiten viser sentrale steg. I oppgaver der eleven skal lage et eksempel, finnes det flere riktige svar.
+??? note "Fasit – blandede oppgaver 2.8"
 
-- **2.2.1:** \(f(0)=1\), \(f(3)=7\), \(f(4)=14\).
-- **2.2.2:** \(|x-2|=2-x\) for \(x<2\), og \(x-2\) for \(x\geq2\).
-- **2.2.3:** \(2a+1=3\), altså \(a=1\). Da er funksjonen også kontinuerlig siden \(f(2)=3\).
-- **2.3.1:** Venstre grenseverdi 1, høyre grenseverdi 4; tosidig grenseverdi finnes ikke.
-- **2.3.3:** Fra venstre går funksjonen mot \(-\infty\), fra høyre mot \(+\infty\).
-- **2.4.1:** Venstre grenseverdi 3, høyre grenseverdi og funksjonsverdi 2; ikke kontinuerlig.
-- **2.4.2:** \(3a-2=7\), altså \(a=3\).
-- **2.4.4:** For \(x\ne2\) er brøken \(x+2\), så \(k=4\).
-- **2.5.1:** \(6\).
-- **2.5.2:** \(1\).
-- **2.5.3:** Etter faktorisering blir uttrykket \((x+1)/(x-2)\), og grenseverdien er \(-2\).
-- **2.5.4:** \(5/2\).
-- **2.6.1:** Vertikal asymptote \(x=2\); horisontal asymptote \(y=3\).
-- **2.6.2:** For \(x\ne2\) er funksjonen lik \(x+2\), så det er et hull ved \(x=2\), ikke vertikal asymptote.
-- **2.6.3:** \(h(x)=2x+1-2/(x+1)\); skrå asymptote \(y=2x+1\), vertikal asymptote \(x=-1\).
-- **2.8.1:** 5.
-- **2.8.2:** Begge ensidige grenser er 1.
-- **2.8.3:** \(x=-4\).
-- **2.8.4:** Kontinuitet gir \(a+2=4\), altså \(a=2\).
-- **2.8.5:** 8; funksjonen er ikke definert ved \(x=4\).
-- **2.8.6:** Vertikale asymptoter \(x=\pm3\); horisontal asymptote \(y=2\).
-- **2.8.7:** Kontinuitet gir \(1+a=b+2\), altså \(b=a-1\). Like stigningstall gir \(2+a=b\), altså \(b=a+2\). Kravene kan ikke oppfylles samtidig.
-- **2.8.8:** Ett eksempel er \(f(x)=-1+\frac{1}{x-2}\). Den vertikale asymptoten er \(x=2\), og den horisontale er \(y=-1\).
-- **2.8.9:** For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt og krever videre undersøkelse.
-- **2.8.10:** \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\), og hull når \(a=1\). Den horisontale asymptoten er \(y=1\).
-- **2.P1.1:** Kontinuitet gir \(4+2a=8\), altså \(a=2\). Venstre stigningstall er da \(2x+a=6\) ved \(x=2\), mens høyre stigningstall er 5. De er ikke like.
-- **2.P1.2:** Telleren faktoriseres til \((x-2)(x-3)\). Etter forkorting er grenseverdien \(3-2=1\).
-- **2.P2.1:** \(g(x)=\frac{(x-1)(x-3)}{(x-2)(x-3)}=\frac{x-1}{x-2}\) for \(x\ne2,3\). Vertikal asymptote \(x=2\), horisontal asymptote \(y=1\), hull ved \((3,2)\).
-- **2.P2.2:** Kontinuitet gir \(2a+4=4+2b\), altså \(a=b\). Lik deriverte krever \(a=4+b\). Samlet gir \(a=b\) og \(a=b+4\), som ikke kan oppfylles samtidig. Ingen par gir begge egenskapene.
-- **2.P2.3:** Ett eksempel er \(f(x)=x+\frac{1}{x-1}\), med vertikal asymptote \(x=1\) og skrå asymptote \(y=x\).
+    **2.8.1:** \(5\).
 
-**Merk:** Løsningsskissene til de åpne oppgavene viser en mulig løsning; full uttelling krever tydelig argumentasjon.
+    **2.8.2:** Begge ensidige grenseverdiene er \(1\).
+
+    **2.8.3:** Vertikal asymptote \(x=-4\).
+
+    **2.8.4:** Kontinuitet gir \(a+2=4\), altså \(a=2\).
+
+    **2.8.5:** Grenseverdien er \(8\). Funksjonen er ikke definert ved \(x=4\).
+
+    **2.8.6:** Vertikale asymptoter \(x=-3\) og \(x=3\), horisontal asymptote \(y=2\).
+
+    **2.8.7:** Kontinuitet gir \(b=a-1\). Like stigningstall gir \(b=a+2\). Kravene kan ikke oppfylles samtidig.
+
+    **2.8.8:** Ett eksempel er \(f(x)=-1+\frac{1}{x-2}\).
+
+    **2.8.9:** For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
+
+    **2.8.10:** \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\), og hull når \(a=1\). Horisontal asymptote er \(y=1\).
+
+    **Resultat:** \(\underline{\underline{b=a-1}}\) for kontinuitet i oppgave 2.8.7.
+
+
+??? note "Fasit – kapittelprøve 2.9"
+
+    **2.P1.1:** Kontinuitet gir \(4+2a=8\), altså \(a=2\). Venstre stigningstall er da \(6\), mens høyre stigningstall er \(5\). De er ikke like.
+
+    **2.P1.2:** Telleren faktoriseres til \((x-2)(x-3)\). Etter forkorting er grenseverdien \(1\).
+
+    **2.P1.3:** Grenseverdien finnes og er \(4\), men funksjonsverdien er \(-2\). Funksjonen er ikke kontinuerlig.
+
+    **2.P2.1:** \(g(x)=\frac{(x-1)(x-3)}{(x-2)(x-3)}=\frac{x-1}{x-2}\), for \(x\ne2,3\). Vertikal asymptote \(x=2\), horisontal asymptote \(y=1\), hull ved \((3,2)\).
+
+    **2.P2.2:** Kontinuitet gir \(a=b\). Lik deriverte krever \(a=b+4\). Ingen par oppfyller begge kravene.
+
+    **2.P2.3:** Ett eksempel er \(f(x)=x+\frac{1}{x-1}\), med vertikal asymptote \(x=1\) og skrå asymptote \(y=x\).
+
+    **Resultat:** \(\underline{\underline{a=2}}\) i oppgave 2.P1.1.
+
