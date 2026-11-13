@@ -129,7 +129,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Her er sammenligningen `x == 2` trygg fordi programmet tester den eksakte heltallsverdien 2 fra listen. Ved beregninger med desimaltall bør vi vanligvis ikke teste likhet direkte, fordi flyttallsavrunding kan gi små avvik.
 
-    **Resultat:** Programmet stopper ved \(\underline{\underline{x=2}}\) uten en kontroll.
+    **Resultat:** Programmet må håndtere \(\underline{\underline{x=2}}\) særskilt for å unngå deling på null.
 
 
 ### Del B – skriv egne programmer
@@ -232,7 +232,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Skriv et program som:
 
-    - lar deg velge en verdi for \(k\)
+    - undersøker flere verdier for \(k\)
     - beregner funksjonsverdier for x-verdier like til venstre for 2
     - beregner \(h(2)\)
     - skriver ut verdiene slik at du kan sammenligne dem
