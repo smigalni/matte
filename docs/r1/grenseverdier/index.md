@@ -302,7 +302,7 @@ for flere verdier av \(k\). Sammenlign funksjonsverdien ved 2 med verdier like t
 
 Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krevende oppgaver kan kreve flere forklaringer enn regning.
 
-### Grønt nivå – grunnleggende
+### Grunnleggende
 
 **2.8.1** Finn \(\lim_{x\to2}(3x-1)\).
 
@@ -310,7 +310,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 **2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
 
-### Gult nivå – anvendelse
+### Middels
 
 **2.8.4** Bestem \(a\) slik at \(f(x)=\begin{cases}ax+2,&x<1,\\x^2+3,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\).
 
@@ -318,7 +318,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 **2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
 
-### Rødt nivå – utfordring
+### Krevende
 
 **2.8.7** La
 \[
@@ -331,7 +331,26 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn de
 
 **2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
 
+### Utfordrende
+
 **2.8.9** En elev hevder: «Hvis telleren og nevneren begge blir null, finnes det ingen grenseverdi.» Lag et moteksempel, løs grenseverdien og forklar hvilken konklusjon eleven burde trekke i stedet.
+
+**2.8.10 – flere fenomener i samme funksjon**
+
+Vi har funksjonen
+\[
+f_a(x)=\frac{x^2+(a-1)x-a}{x^2-1}.
+\]
+
+a) Faktoriser teller og nevner.
+
+b) Undersøk hva som skjer ved \(x=1\) for alle verdier av \(a\).
+
+c) Undersøk hva som skjer ved \(x=-1\). For hvilken verdi av \(a\) får vi et hull i stedet for en vertikal asymptote?
+
+d) Bestem den horisontale asymptoten.
+
+e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de kommer fra samme nevner.
 
 ## 2.9 Kapittelprøve – grenseverdier og kontinuitet
 
@@ -400,6 +419,10 @@ Fasiten viser sentrale steg. I oppgaver der eleven skal lage et eksempel, finnes
 - **2.8.4:** Kontinuitet gir \(a+2=4\), altså \(a=2\).
 - **2.8.5:** 8; funksjonen er ikke definert ved \(x=4\).
 - **2.8.6:** Vertikale asymptoter \(x=\pm3\); horisontal asymptote \(y=2\).
+- **2.8.7:** Kontinuitet gir \(1+a=b+2\), altså \(b=a-1\). Like stigningstall gir \(2+a=b\), altså \(b=a+2\). Kravene kan ikke oppfylles samtidig.
+- **2.8.8:** Ett eksempel er \(f(x)=-1+\frac{1}{x-2}\). Den vertikale asymptoten er \(x=2\), og den horisontale er \(y=-1\).
+- **2.8.9:** For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt og krever videre undersøkelse.
+- **2.8.10:** \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\), og hull når \(a=1\). Den horisontale asymptoten er \(y=1\).
 - **2.P1.1:** Kontinuitet gir \(4+2a=8\), altså \(a=2\). Venstre stigningstall er da \(2x+a=6\) ved \(x=2\), mens høyre stigningstall er 5. De er ikke like.
 - **2.P1.2:** Telleren faktoriseres til \((x-2)(x-3)\). Etter forkorting er grenseverdien \(3-2=1\).
 - **2.P2.1:** \(g(x)=\frac{(x-1)(x-3)}{(x-2)(x-3)}=\frac{x-1}{x-2}\) for \(x\ne2,3\). Vertikal asymptote \(x=2\), horisontal asymptote \(y=1\), hull ved \((3,2)\).
