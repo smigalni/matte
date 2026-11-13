@@ -69,7 +69,25 @@ Siden integralet er \(\ln(1+u)\), kan vi dele på \(u>0\):
 
 Når \(u\to0^+\), går begge ytteruttrykkene mot 1. Skviseteoremet gir dermed grenseverdien 1 fra høyre.
 
-For \(-1<u<0\) får vi tilsvarende ulikhet ved å undersøke integralet fra \(1+u\) til \(1\). Resultatet gir også grenseverdien 1 fra venstre.
+For \(-1<u<0\) undersøker vi integralet fra \(1+u\) til \(1\). På dette intervallet er
+
+\[
+1\leq\frac1t\leq\frac1{1+u}.
+\]
+
+Dermed får vi
+
+\[
+-u\leq-\ln(1+u)\leq-\frac{u}{1+u}.
+\]
+
+Når vi deler på det negative tallet \(u\), snur ulikhetene:
+
+\[
+1\geq\frac{\ln(1+u)}u\geq\frac1{1+u}.
+\]
+
+Også her går begge ytteruttrykkene mot 1 når \(u\to0^-\).
 
 Vi har dermed vist
 
