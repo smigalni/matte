@@ -275,13 +275,13 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Les programmet:
 
-    \`\`\`python
+    ```python
     def f(x):
         return (x**2 - 4) / (x - 2)
 
     for x in [1.9, 1.99, 2.01, 2.1]:
         print(x, round(f(x), 2))
-    \`\`\`
+    ```
 
     a) Hva skriver programmet ut?
 
@@ -301,12 +301,12 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Programmet skriver ut:
 
-    \`\`\`text
+    ```text
     1.9 3.9
     1.99 3.99
     2.01 4.01
     2.1 4.1
-    \`\`\`
+    ```
 
     Verdiene nærmer seg 4. Funksjonen er ikke definert ved \(x=2\), fordi den opprinnelige nevneren blir null. Faktoriseringen viser matematisk at grenseverdien er 4.
 
@@ -314,11 +314,11 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Les programmet:
 
-    \`\`\`python
+    ```python
     for x in [2.9, 2.99, 3.01, 3.1]:
         y = 1 / (x - 3)
         print(x, round(y, 2))
-    \`\`\`
+    ```
 
     a) Hva skriver programmet ut?
 
@@ -332,12 +332,12 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Programmet skriver ut:
 
-    \`\`\`text
+    ```text
     2.9 -10.0
     2.99 -100.0
     3.01 100.0
     3.1 10.0
-    \`\`\`
+    ```
 
     Verdiene 2.9 og 2.99 ligger til venstre for 3. Verdiene 3.01 og 3.1 ligger til høyre. Dermed ser vi at funksjonen går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Dette viser hvorfor vi må undersøke begge retninger.
 
@@ -351,13 +351,13 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     og skriver:
 
-    \`\`\`python
+    ```python
     def f(x):
         return (x**2 - 4) / (x - 2)
 
     for x in [1.9, 2, 2.1]:
         print(f(x))
-    \`\`\`
+    ```
 
     a) Hva skjer når programmet kommer til \(x=2\)?
 
@@ -367,9 +367,9 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
 ??? note "Fasit – oppgave 2.7.3"
 
-    Når \(x=2\), blir nevneren null. Python gir en \`ZeroDivisionError\`, og programmet stopper. En mulig løsning er å kontrollere verdien før funksjonen kalles:
+    Når \(x=2\), blir nevneren null. Python gir en `ZeroDivisionError`, og programmet stopper. En mulig løsning er å kontrollere verdien før funksjonen kalles:
 
-    \`\`\`python
+    ```python
     def f(x):
         return (x**2 - 4) / (x - 2)
 
@@ -378,15 +378,15 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
             print("Funksjonen er ikke definert")
         else:
             print(round(f(x), 2))
-    \`\`\`
+    ```
 
     Da skriver programmet ut:
 
-    \`\`\`text
+    ```text
     3.9
     Funksjonen er ikke definert
     4.1
-    \`\`\`
+    ```
 
 ### Del B – skriv egne programmer
 
@@ -400,9 +400,9 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     for \(x\)-verdiene 2.9, 2.99, 3.01 og 3.1.
 
-    a) Lag en funksjon \`f(x)\` som beregner uttrykket.
+    a) Lag en funksjon `f(x)` som beregner uttrykket.
 
-    b) Bruk en \`for\`-løkke til å skrive ut x-verdien og funksjonsverdien.
+    b) Bruk en `for`-løkke til å skrive ut x-verdien og funksjonsverdien.
 
     c) Rund av utskriften til to desimaler.
 
@@ -410,22 +410,22 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
 ??? note "Fasit – oppgave 2.7.4"
 
-    \`\`\`python
+    ```python
     def f(x):
         return (x**2 - 9) / (x - 3)
 
     for x in [2.9, 2.99, 3.01, 3.1]:
         print(x, round(f(x), 2))
-    \`\`\`
+    ```
 
     Programmet skriver ut:
 
-    \`\`\`text
+    ```text
     2.9 5.9
     2.99 5.99
     3.01 6.01
     3.1 6.1
-    \`\`\`
+    ```
 
     Verdiene nærmer seg 6. Ved faktorisering får vi \(f(x)=x+3\) for \(x\ne3\), og dermed er grenseverdien 6.
 
@@ -449,7 +449,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Ett mulig program er:
 
-    \`\`\`python
+    ```python
     def g(x):
         return 1 / (x - 1)
 
@@ -457,16 +457,16 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     for x in verdier:
         print(x, round(g(x), 2))
-    \`\`\`
+    ```
 
     Programmet skriver ut:
 
-    \`\`\`text
+    ```text
     0.9 -10.0
     0.99 -100.0
     1.01 100.0
     1.1 10.0
-    \`\`\`
+    ```
 
     Verdiene går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Derfor er \(x=1\) en vertikal asymptote.
 
@@ -495,7 +495,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Ett mulig program er:
 
-    \`\`\`python
+    ```python
     k = 1
 
     def h(x):
@@ -508,7 +508,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
         print(x, round(h(x), 3))
 
     print("h(2) =", h(2))
-    \`\`\`
+    ```
 
     Når \(k=1\), nærmer verdiene fra venstre seg 3, og \(h(2)=3\). For \(k=0\) nærmer venstreverdiene seg 1, og for \(k=2\) nærmer de seg 5.
 
