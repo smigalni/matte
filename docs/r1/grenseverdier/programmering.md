@@ -1,26 +1,5 @@
 # 2.7 Programmering: lese og skrive kode
 
-ymptotene til \(g(x)=\frac{x^2-4}{x-2}\). Forklar hvorfor en verdi som gjør nevneren null, ikke automatisk gir en vertikal asymptote.
-
-**2.6.3** Bruk polynomdivisjon til å bestemme eventuell skrå asymptote for \(h(x)=\frac{2x^2+3x-1}{x+1}\).
-
-**2.6.4** En rasjonal funksjon har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\). Lag et mulig funksjonsuttrykk og forklar hvordan du vet at uttrykket oppfyller kravene. Det finnes flere svar.
-
-
-??? note "Fasit – oppgaver 2.6"
-
-    **2.6.1:** Vertikal asymptote \(x=2\), horisontal asymptote \(y=3\).
-
-    **2.6.2:** For \(x\ne2\) er funksjonen lik \(x+2\). Det er et hull i \((2,4)\), ikke en vertikal asymptote.
-
-    **2.6.3:** Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
-
-    **2.6.4:** Ett mulig uttrykk er \(f(x)=3+\frac{1}{x+2}\). Det har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\).
-
-    **Resultat:** \(\underline{\underline{x=2,\;y=3}}\) i oppgave 2.6.1.
-
-## 2.7 Programmering: lese og skrive kode
-
 I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du skal trene like mye på begge deler. Når du leser kode, må du følge variabler og programflyt nøyaktig. Når du skriver kode, må du velge en framgangsmåte, teste programmet og tolke resultatene.
 
 ### Del A – les og forstå kode
@@ -248,4 +227,41 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Skriv et program som:
 
- 
+    - lar deg velge en verdi for \(k\)
+    - beregner funksjonsverdier for x-verdier like til venstre for 2
+    - beregner \(h(2)\)
+    - skriver ut verdiene slik at du kan sammenligne dem
+
+    Test minst \(k=0\), \(k=1\) og \(k=2\). Bruk deretter algebra til å bestemme nøyaktig hvilken verdi av \(k\) som gir kontinuitet.
+
+??? note "Fasit – oppgave 2.7.6"
+
+    Ett mulig program er:
+
+    ```python
+    for k in [0, 1, 2]:
+        def h(x):
+            if x < 2:
+                return k*x + 1
+            else:
+                return x**2 - 1
+
+        print("k =", k)
+        for x in [1.9, 1.99, 1.999]:
+            print(x, round(h(x), 3))
+        print("h(2) =", h(2))
+    ```
+
+    Programmet viser at venstreverdiene nærmer seg 1 når \(k=0\), 3 når \(k=1\) og 5 når \(k=2\). I alle tilfellene er \(h(2)=3\).
+
+    Algebraisk må vi ha
+
+    \[
+    2k+1=2^2-1=3.
+    \]
+
+    Dermed er \(k=1\). Programmet undersøker tallverdier, mens likningen gir den eksakte begrunnelsen.
+    **Resultat:** Kontinuitet fås for \(\underline{\underline{k=1}}\).
+
+
+
