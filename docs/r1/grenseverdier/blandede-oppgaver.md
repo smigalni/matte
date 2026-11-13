@@ -2,7 +2,7 @@
 
 Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krevende oppgaver kan kreve flere forklaringer enn regning.
 
-### Grunnleggende
+## Grunnleggende
 
 **2.8.1** Finn \(\lim_{x\to2}(3x-1)\).
 
@@ -10,7 +10,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 **2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
 
-### Middels
+## Middels
 
 **2.8.4** Bestem \(a\) slik at \(f(x)=\begin{cases}ax+2,&x<1,\\x^2+3,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\).
 
@@ -18,7 +18,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 **2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
 
-### Krevende
+## Krevende
 
 **2.8.7** La
 
@@ -33,7 +33,7 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn de
 
 **2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
 
-### Utfordrende
+## Utfordrende
 
 **2.8.9** En elev hevder: «Hvis telleren og nevneren begge blir null, finnes det ingen grenseverdi.» Lag et moteksempel, løs grenseverdien og forklar hvilken konklusjon eleven burde trekke i stedet.
 
