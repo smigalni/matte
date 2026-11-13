@@ -34,6 +34,7 @@ nav = [
       { "3.7 Numerisk derivasjon" = "r1/derivasjon/numerisk-derivasjon.md" },
       { "3.8 Programmering" = "felles/derivasjon/programmering.md" },
       { "3.9 Blandede oppgaver" = "r1/derivasjon/blandede-oppgaver.md" },
+      { "Lure oppgaver – derivasjon" = "r1/derivasjon/lure-oppgaver.md" },
       { "3.10 Kapittelprøve" = "r1/derivasjon/kapittelprove.md" },
       { "3.11 Forberedelse til muntlig prøve" = "r1/derivasjon/muntlig-forberedelse.md" },
       { "3.12 Formeloversikt" = "r1/derivasjon/formeloversikt.md" },
