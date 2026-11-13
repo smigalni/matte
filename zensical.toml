@@ -17,6 +17,7 @@ nav = [
   { "R1" = [
     { "Kapittel 2 – Grenseverdier og kontinuitet" = [
       { "Oversikt og innhold" = "r1/grenseverdier/index.md" },
+      { "Anvendelser av grenseverdier" = "r1/grenseverdier/anvendelser.md" },
       { "Fordypning – asymptotekandidater" = "r1/grenseverdier/fordypning-asymptoter.md" },
       { "Forberedelse til muntlig prøve" = "r1/grenseverdier/muntlig-forberedelse.md" },
       { "Formeloversikt" = "r1/grenseverdier/formeloversikt.md" },
