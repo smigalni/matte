@@ -1,25 +1,5 @@
 # 2.9 Kapittelprøve – grenseverdier og kontinuitet
 
-innelige funksjonen er ikke definert for \(x=a\) eller \(x=1\). Når \(x\to a\), får vi
-
-    \[
-    \lim_{x\to a}f_a(x)=\frac{2a}{a-1},
-    \]
-
-    så grafen har et hull i \(\left(a,\frac{2a}{a-1}\right)\). Siden \(a>1\), er telleren \(x+a\) ulik null ved \(x=1\), og dermed er \(x=1\) en vertikal asymptote. For \(x\to\pm\infty\) går brøken mot 1, så den horisontale asymptoten er \(y=1\).
-
-    For ulikheten ser vi på fortegnene til \(x+a\) og \(x-1\). Siden \(-a<1\), er brøken positiv for \(x\leq-a\) og for \(x>1\), men null ved \(x=-a\). Vi må likevel utelate \(x=a\), der den opprinnelige funksjonen ikke er definert. Løsningen er derfor
-
-    \[
-    (-\infty,-a]\cup(1,a)\cup(a,\infty).
-    \]
-
-    Det forkortede uttrykket har samme funksjonsverdier som den opprinnelige funksjonen der begge er definert, men forkortingen fyller ikke inn de to punktene som manglet i den opprinnelige definisjonsmengden.
-
-    **Resultat:** \(\underline{\underline{b=a-1}}\) for kontinuitet i oppgave 2.8.7.
-
-## 2.9 Kapittelprøve – grenseverdier og kontinuitet
-
 **Anbefaling:** Bruk Del 1 uten digitale hjelpemidler og Del 2 med digitale hjelpemidler dersom dette passer med vurderingsformen i klassen. Alle oppgaver er ment å utfordre på høyt nivå. Vis mellomregning og begrunn konklusjonene.
 
 ### Del 1 – uten digitale hjelpemidler
