@@ -1,6 +1,6 @@
 # 2.9 Kapittelprøve – grenseverdier og kontinuitet
 
-**Anbefaling:** Bruk Del 1 uten digitale hjelpemidler og Del 2 med digitale hjelpemidler dersom dette passer med vurderingsformen i klassen. Alle oppgaver er ment å utfordre på høyt nivå. Vis mellomregning og begrunn konklusjonene.
+**Anbefaling:** Bruk Del 1 uten digitale hjelpemidler og Del 2 med digitale hjelpemidler dersom dette passer med vurderingsformen i klassen. Oppgavene skal utfordre elevene til å begrunne framgangsmåter og konklusjoner. Vis mellomregning.
 
 ## Del 1 – uten digitale hjelpemidler
 
@@ -13,7 +13,7 @@ x^2+ax,&x<2,\\
 \end{cases}
 \]
 
-Bestem \(a\) slik at funksjonen er kontinuerlig i \(x=2\). Undersøk deretter om de to forskriftene også har samme stigningstall ved overgangen. Forklar hva resultatet forteller.
+Bestem \(a\) slik at funksjonen er kontinuerlig i \(x=2\). Vis hvilke tre krav du kontrollerer, og forklar hvorfor det er tilstrekkelig.
 
 **2.P1.2** Beregn
 
@@ -44,14 +44,14 @@ t^2+bt,&t\geq2.
 \end{cases}
 \]
 
-Bestem alle par \((a,b)\) som gjør \(h\) kontinuerlig i \(t=2\). Undersøk om noen av disse parene også gir samme deriverte fra begge sider i overgangspunktet, og forklar hvordan du kontrollerer dette.
+Bestem alle par \((a,b)\) som gjør \(h\) kontinuerlig i \(t=2\). Vis at betingelsen gir en sammenheng mellom parameterne, og oppgi tre ulike parameterpar som oppfyller kravet.
 
 **2.P2.3** Lag en funksjon med både en vertikal og en skrå asymptote. Bruk et digitalt verktøy til å undersøke grafen, og bruk deretter grenseverdier eller polynomdivisjon til å bevise asymptotene. Forklar hvorfor den numeriske grafen bare er støtte for argumentasjonen.
 
 
 ??? note "Fasit – kapittelprøve 2.9"
 
-    **2.P1.1:** Kontinuitet gir \(4+2a=8\), altså \(a=2\). Venstre stigningstall er da \(6\), mens høyre stigningstall er \(5\). De er ikke like.
+    **2.P1.1:** Kontinuitet krever at venstre grenseverdi er lik funksjonsverdien i \(x=2\): \(4+2a=8\). Dermed er \(a=2\). Da er funksjonen definert i punktet, grenseverdien finnes, og den er lik funksjonsverdien.
 
     **2.P1.2:** Telleren faktoriseres til \((x-2)(x-3)\). Etter forkorting er grenseverdien \(1\).
 
@@ -59,7 +59,7 @@ Bestem alle par \((a,b)\) som gjør \(h\) kontinuerlig i \(t=2\). Undersøk om n
 
     **2.P2.1:** \(g(x)=\frac{(x-1)(x-3)}{(x-2)(x-3)}=\frac{x-1}{x-2}\), for \(x\ne2,3\). Vertikal asymptote \(x=2\), horisontal asymptote \(y=1\), hull ved \((3,2)\).
 
-    **2.P2.2:** Kontinuitet gir \(a=b\). Lik deriverte krever \(a=b+4\). Ingen par oppfyller begge kravene.
+    **2.P2.2:** Kontinuitet gir \(2a+4=4+2b\), altså \(a=b\). Tre mulige par er \((0,0)\), \((1,1)\) og \((2,2)\). Det finnes uendelig mange løsninger.
 
     **2.P2.3:** Ett eksempel er \(f(x)=x+\frac{1}{x-1}\), med vertikal asymptote \(x=1\) og skrå asymptote \(y=x\).
 
