@@ -66,11 +66,16 @@ d) Forklar hvorfor dette ikke betyr at den opprinnelige funksjonen automatisk er
 ??? note "Fasit – oppgaver 2.1"
 
     **2.1.1:**
-    - a) Lineær funksjon, \(D_f=\mathbb R\).
-    - b) Andregradsfunksjon, \(D_g=\mathbb R\).
-    - c) Eksponentialfunksjon, \(D_h=\mathbb R\).
-    - d) Rasjonal funksjon, \(D_p=\mathbb R\setminus\{3\}\).
-    - e) Logaritmefunksjon, \(D_q=(2,\infty)\).
+
+    a) Lineær funksjon, \(D_f=\mathbb R\).
+
+    b) Andregradsfunksjon, \(D_g=\mathbb R\).
+
+    c) Eksponentialfunksjon, \(D_h=\mathbb R\).
+
+    d) Rasjonal funksjon, \(D_p=\mathbb R\setminus\{3\}\).
+
+    e) Logaritmefunksjon, \(D_q=(2,\infty)\).
 
     **2.1.2:** Vi faktoriserer \(x^2-4=(x-2)(x+2)\). For \(x\ne2\) får vi \(r(x)=x+2\). Definisjonsmengden er \(\mathbb R\setminus\{2\}\). Det forenklede uttrykket gir verdien 4 når vi setter inn \(x=2\), men den opprinnelige funksjonen er fortsatt ikke definert der. Forkortingen endrer ikke definisjonsmengden.
 
