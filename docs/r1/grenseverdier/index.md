@@ -20,7 +20,7 @@ Før vi arbeider med grenseverdier, repeterer vi hva som kjennetegner funksjonst
 |---|---|---|
 | Konstant | \(f(x)=4\) | Horisontal graf. Verdien endrer seg ikke. |
 | Lineær | \(f(x)=2x-3\) | Rett linje med stigningstall 2. |
-| Andregradsfunksjon | \(f(x)=x^2-4x+3\) | Parabel. Topp- eller bunnpunkt finnes ved symmetri eller derivasjon. |
+| Andregradsfunksjon | \(f(x)=x^2-4x+3\) | Parabel. Topp- eller bunnpunkt kan finnes ved symmetri. Derivasjon kommer senere. |
 | Potensfunksjon | \(f(x)=x^3\) | Formen avhenger av eksponenten. |
 | Eksponentialfunksjon | \(f(x)=2^x\) | Positiv graf som vokser når grunntallet er større enn 1. |
 | Logaritmefunksjon | \(f(x)=\ln x\) | Definert for \(x>0\). |
