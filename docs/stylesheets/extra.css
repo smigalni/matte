@@ -335,3 +335,79 @@
   border-color: #fca5a5;
   border-left-color: #dc2626;
 }
+
+
+/* Eget visuelt uttrykk for matematisk fordypning */
+.md-typeset .advanced-hero {
+  margin: 1.4rem 0 1.8rem;
+  padding: 1.5rem 1.7rem;
+  border: 1px solid #c4b5fd;
+  border-left: 7px solid #7c3aed;
+  border-radius: .9rem;
+  background: linear-gradient(120deg, #f5f3ff 0%, #eef6ff 100%);
+}
+.md-typeset .advanced-hero .advanced-eyebrow {
+  margin: 0 0 .55rem;
+  color: #6d28d9;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+.md-typeset .advanced-hero h2 {
+  margin: 0 0 .65rem;
+  color: #312e81;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+.md-typeset .advanced-hero p:last-child {
+  max-width: 48rem;
+  margin-bottom: 0;
+  color: #433b65;
+}
+.md-typeset .advanced-roadmap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .7rem;
+  margin: 1.2rem 0 2rem;
+}
+.md-typeset .advanced-roadmap > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: .65rem;
+  align-items: center;
+  padding: .8rem;
+  border: 1px solid #e2dcfa;
+  border-radius: .7rem;
+  background: #fbfaff;
+}
+.md-typeset .advanced-roadmap span {
+  grid-row: span 2;
+  color: #7c3aed;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.md-typeset .advanced-roadmap strong { color: #3b3263; }
+.md-typeset .advanced-roadmap small { color: #6b6680; }
+.md-typeset h2#bevis-1-den-deriverte-av-ln-x,
+.md-typeset h2#bevis-2-den-deriverte-av-en-invers-funksjon,
+.md-typeset h2#bevis-3-den-deriverte-av-a-x,
+.md-typeset h2#oppgaver-bevis-og-generalisering,
+.md-typeset h2#videre-utfordringer {
+  margin-top: 2.3rem;
+  padding-bottom: .45rem;
+  border-bottom: 2px solid #ddd6fe;
+  color: #5b21b6;
+}
+.md-typeset .admonition.important {
+  border-color: #7c3aed !important;
+  border-left-color: #7c3aed !important;
+  background: #f5f3ff !important;
+}
+.md-typeset .admonition.important > .admonition-title {
+  background: #ede9fe !important;
+  color: #5b21b6 !important;
+}
+@media (max-width: 650px) {
+  .md-typeset .advanced-hero { padding: 1.1rem; }
+  .md-typeset .advanced-roadmap { grid-template-columns: 1fr; }
+}
