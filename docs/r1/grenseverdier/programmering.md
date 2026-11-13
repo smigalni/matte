@@ -2,6 +2,8 @@
 
 I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du skal trene like mye på begge deler. Når du leser kode, må du følge variabler og programflyt nøyaktig. Når du skriver kode, må du velge en framgangsmåte, teste programmet og tolke resultatene.
 
+## Oppgaver
+
 ### Del A – les og forstå kode
 
 !!! question "Oppgave 2.7.1 – Følg beregningene nær et hull"
