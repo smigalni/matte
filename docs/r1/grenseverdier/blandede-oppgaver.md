@@ -121,7 +121,9 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     **2.8.11:** Vi faktoriserer:
 
-    **Svar:** Hull \(\underline{\underline{\left(a,\frac{2a}{a-1}\right)}}\), vertikal asymptote \(\underline{\underline{x=1}}\), horisontal asymptote \(\underline{\underline{y=1}}\), og ulikhetsløsning \(\underline{\underline{(-\infty,-a]\cup(1,a)\cup(a,\infty)}}\).
+    **Svar:**
+
+    \(\underline{\underline{x\le -a\ \lor\ x>1,\ x\ne a}}\).
 
     \[
     f_a(x)=\frac{(x-a)(x+a)}{(x-a)(x-1)}
@@ -148,7 +150,9 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     **2.8.12:** Definisjonsmengden er \(\mathbb R\setminus\{-1,1\}\). For \(x\ne-1,1\) forkorter vi med \(x-1\):
 
-    **Svar:** Skrå asymptote \(\underline{\underline{y=x+1}}\), hull \(\underline{\underline{(1,3)}}\), vertikal asymptote \(\underline{\underline{x=-1}}\), og ulikhetsløsning \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
+    **Svar:**
+
+    \(\underline{\underline{y=x+1}}\).
 
     \[
     g(x)=\frac{x^2+2x+3}{x+1}
@@ -175,4 +179,6 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
     (-1,1)\cup(1,\infty).
     \]
 
-    **Svar:** \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
+    **Svar:**
+
+    \(\underline{\underline{x>-1,\ x\ne1}}\).
