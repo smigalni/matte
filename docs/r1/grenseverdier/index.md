@@ -59,9 +59,9 @@ a) Faktoriser telleren og forenkle uttrykket så langt det lar seg gjøre.
 
 b) Oppgi definisjonsmengden.
 
-c) Hvilken verdi nærmer funksjonen seg når \(x\to2\)?
+c) Hva blir verdien av det forenklede uttrykket når du setter inn \(x=2\)?
 
-d) Forklar hvorfor denne grenseverdien ikke betyr at den opprinnelige funksjonen er definert i \(x=2\).
+d) Forklar hvorfor dette ikke betyr at den opprinnelige funksjonen automatisk er definert i \(x=2\).
 
 ??? note "Fasit – oppgaver 2.1"
 
@@ -72,13 +72,9 @@ d) Forklar hvorfor denne grenseverdien ikke betyr at den opprinnelige funksjonen
     - d) Rasjonal funksjon, \(D_p=\mathbb R\setminus\{3\}\).
     - e) Logaritmefunksjon, \(D_q=(2,\infty)\).
 
-    **2.1.2:** Vi faktoriserer \(x^2-4=(x-2)(x+2)\). For \(x\ne2\) får vi \(r(x)=x+2\). Definisjonsmengden er \(\mathbb R\setminus\{2\}\), og
+    **2.1.2:** Vi faktoriserer \(x^2-4=(x-2)(x+2)\). For \(x\ne2\) får vi \(r(x)=x+2\). Definisjonsmengden er \(\mathbb R\setminus\{2\}\). Det forenklede uttrykket gir verdien 4 når vi setter inn \(x=2\), men den opprinnelige funksjonen er fortsatt ikke definert der. Forkortingen endrer ikke definisjonsmengden.
 
-    \[
-    \lim_{x\to2}r(x)=4.
-    \]
-
-    Grenseverdien beskriver hva funksjonsverdiene nærmer seg. Den endrer ikke definisjonsmengden til den opprinnelige funksjonen.
+    **Resultat:** Det forenklede uttrykket gir \(\underline{\underline{4}}\), mens \(r(2)\) ikke er definert.
 
 
 ## 2.2 Funksjoner med delte forskrifter
