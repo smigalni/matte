@@ -712,7 +712,7 @@ Oppgaven kombinerer grenseverdier og asymptoter fra R1 med faktorisering, forteg
 
     **2.8.10:** \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\), og hull når \(a=1\). Horisontal asymptote er \(y=1\).
 
-        **2.8.11:** Vi faktoriserer:
+    **2.8.11:** Vi faktoriserer:
 
     \[
     f_a(x)=\frac{(x-a)(x+a)}{(x-a)(x-1)}
