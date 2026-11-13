@@ -181,4 +181,10 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     **Svar:**
 
-    \(\underline{\underline{x>-1,\ x\ne1}}\).
+    Skrå asymptote: \(\underline{\underline{y=x+1}}\).
+
+    Hull: \(\underline{\underline{(1,3)}}\).
+
+    Vertikal asymptote: \(\underline{\underline{x=-1}}\).
+
+    Ulikheten: \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
