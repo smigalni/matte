@@ -211,39 +211,53 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
     Ulikheten: \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
 
     **2.8.13:** Vi faktoriserer uttrykket inne i logaritmen:
-    
+
     \[
     x^2-4x+3=(x-1)(x-3).
     \]
-    
+
     **a)** Logaritmen krever at \((x-1)(x-3)>0\). Dermed er
-    
-    **Svar:** \(\underline{\underline{D_g=(-\infty,1)\cup(3,\infty)}}\).
-    
+
+    **Svar:**
+
+    \(\underline{\underline{D_g=(-\infty,1)\cup(3,\infty)}}\).
+
     **b)** Nullpunktene finnes ved å løse
+
     \[
     \ln(x^2-4x+3)=0
     \]
+
     som gir
+
     \[
     x^2-4x+3=1
     \quad\Longrightarrow\quad
     x^2-4x+2=0.
     \]
+
     Andregradslikningen gir \(x=2\pm\sqrt2\). Begge verdiene ligger i definisjonsmengden.
-    
-    **Svar:** \(\underline{\underline{x=2-\sqrt2\quad\text{og}\quad x=2+\sqrt2}}\).
-    
+
+    **Svar:**
+
+    \(\underline{\underline{x=2-\sqrt2\quad\text{og}\quad x=2+\sqrt2}}\).
+
     **c)** Når \(x\to1^-\), går \((x-1)(x-3)\) mot \(0\) gjennom positive verdier. Derfor går logaritmen mot \(-\infty\). Tilsvarende skjer når \(x\to3^+\).
+
     \[
     \lim_{x\to1^-}g(x)=-\infty,
     \qquad
     \lim_{x\to3^+}g(x)=-\infty.
     \]
-    **Svar:** \(\underline{\underline{x=1\quad\text{og}\quad x=3}}\) er vertikale asymptoter. Vi bruker bare grensene fra venstre ved \(x=1\) og fra høyre ved \(x=3\), fordi funksjonen ikke er definert i intervallet \(1<x<3\).
-    
+
+    **Svar:**
+
+    \(\underline{\underline{x=1\quad\text{og}\quad x=3}}\) er vertikale asymptoter. Vi bruker bare grensene fra venstre ved \(x=1\) og fra høyre ved \(x=3\), fordi funksjonen ikke er definert i intervallet \(1<x<3\).
+
     **d)** Uttrykket \((x-1)(x-3)\) kan anta alle positive verdier når \(x<1\) eller \(x>3\). Logaritmen av positive tall kan anta alle reelle verdier.
-    
-    **Svar:** \(\underline{\underline{V_g=\mathbb R}}\).
-    
+
+    **Svar:**
+
+    \(\underline{\underline{V_g=\mathbb R}}\).
+
     **e)** Sett \(p(x)=x^2-4x+3\) og \(h(x)=\ln x\). Da er \(g=h\circ p\). Polynomfunksjonen \(p\) er kontinuerlig for alle reelle \(x\), og logaritmefunksjonen \(h\) er kontinuerlig for positive argumenter. Siden \(p(x)>0\) akkurat på \(D_g\), er sammensetningen kontinuerlig på hele definisjonsmengden.
