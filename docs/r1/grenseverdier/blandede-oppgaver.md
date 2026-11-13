@@ -111,7 +111,7 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     **2.8.7:** Kontinuitet gir \(b=a-1\). Like stigningstall gir \(b=a+2\). Kravene kan ikke oppfylles samtidig.
 
-    **Resultat:** Kravene om kontinuitet og like stigningstall kan ikke oppfylles samtidig.
+    **Resultat:** Kravene er uforenlige: \(\underline{\underline{b=a-1}}\) for kontinuitet og \(\underline{\underline{b=a+2}}\) for like stigningstall.
 
     **2.8.8:** Ett eksempel er \(f(x)=-1+\frac{1}{x-2}\).
 
@@ -142,6 +142,8 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     Det forkortede uttrykket har samme funksjonsverdier som den opprinnelige funksjonen der begge er definert, men forkortingen fyller ikke inn de to punktene som manglet i den opprinnelige definisjonsmengden.
 
+    **Svar:** \(\underline{\underline{(-\infty,-a]\cup(1,a)\cup(a,\infty)}}\).
+
     **2.8.12:** Definisjonsmengden er \(\mathbb R\setminus\{-1,1\}\). For \(x\ne-1,1\) forkorter vi med \(x-1\):
 
     \[
@@ -169,4 +171,4 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
     (-1,1)\cup(1,\infty).
     \]
 
-
+    **Svar:** \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
