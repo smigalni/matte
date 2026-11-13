@@ -29,7 +29,7 @@ bx+2,&x\geq1.
 \end{cases}
 \]
 
-Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn deretter en sammenheng som også gjør de to uttrykkenes stigningstall like ved overgangen. Forklar forskjellen på kravene.
+Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn deretter en sammenheng som også gjør de to uttrykkenes tangentstigningstall like ved overgangen. Forklar forskjellen på kravene.
 
 *Merk: Del b er en smakebit på derivasjon og kan vente til kapittel 3 dersom klassen ikke har arbeidet med tangentstigningstall ennå.*
 
