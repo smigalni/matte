@@ -1,3 +1,5 @@
+# Lure oppgaver – grenseverdier og kontinuitet
+
 Disse oppgavene undersøker om du forstår hva grenseverdier, kontinuitet og asymptoter faktisk forteller. Flere av påstandene høres rimelige ut, men inneholder en feil. Begrunn alltid konklusjonen matematisk.
 
 Bruk den samme arbeidsmåten hver gang:
