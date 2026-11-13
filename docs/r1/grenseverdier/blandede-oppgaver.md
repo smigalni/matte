@@ -138,7 +138,7 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     så grafen har et hull i \(\left(a,\frac{2a}{a-1}\right)\). Siden \(a>1\), er telleren \(x+a\) ulik null ved \(x=1\), og dermed er \(x=1\) en vertikal asymptote. For \(x\to\pm\infty\) går brøken mot 1, så den horisontale asymptoten er \(y=1\).
 
-    For ulikheten ser vi på fortegnene til \(x+a\) og \(x-1\). Siden \(-a<1\), er brøken positiv for \(x\leq-a\) og for \(x>1\), men null ved \(x=-a\). Vi må likevel utelate \(x=a\), der den opprinnelige funksjonen ikke er definert. Løsningen er derfor
+    For ulikheten ser vi på fortegnene til \(x+a\) og \(x-1\). Siden \(-a<1\), er brøken er positiv for \(x<-a\) og for \(x>1\), og null ved \(x=-a\). Vi må likevel utelate \(x=a\), der den opprinnelige funksjonen ikke er definert. Løsningen er derfor
 
     \[
     (-\infty,-a]\cup(1,a)\cup(a,\infty).
