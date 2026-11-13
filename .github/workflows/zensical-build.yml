@@ -1,0 +1,30 @@
+name: Zensical build
+
+on:
+  pull_request:
+  push:
+    branches:
+      - pilot/r1-kapittel-2-isolert
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build documentation site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Zensical
+        run: python -m pip install --upgrade zensical
+
+      - name: Build site
+        run: zensical build --clean
