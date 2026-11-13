@@ -129,7 +129,7 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
 
     **2.8.6:** Vertikale asymptoter \(x=-3\) og \(x=3\), horisontal asymptote \(y=2\).
 
-    **2.8.7:** Kontinuitet gir \(b=a-1\). Like stigningstall gir \(b=a+2\). Kravene kan ikke oppfylles samtidig.
+    **2.8.7:** Kontinuitet gir \(b=a-1\). Like tangentstigningstall gir \(b=a+2\). Kravene kan ikke oppfylles samtidig.
 
     **Resultat:** Kravene er uforenlige: \(\underline{\underline{b=a-1}}\) for kontinuitet og \(\underline{\underline{b=a+2}}\) for like stigningstall.
 
