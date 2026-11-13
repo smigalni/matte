@@ -76,7 +76,7 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
 
     **Svar:** \(g(1)=2\), \(g(2)=3\) og \(g(3)=8\).
 
-    \\(\underline{\underline{g(1)=2,\\;g(2)=3,\\;g(3)=8}}\\)
+    \(\underline{\underline{g(1)=2,\;g(2)=3,\;g(3)=8}}\)
 
 ### Oppgaver 2.2
 
