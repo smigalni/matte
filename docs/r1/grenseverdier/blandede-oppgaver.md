@@ -208,6 +208,8 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
     Vertikal asymptote: \(\underline{\underline{x=-1}}\).
 
 
+    Ulikheten: \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
+
     **2.8.13:** Vi faktoriserer uttrykket inne i logaritmen:
     
     \[
@@ -245,4 +247,3 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
     **Svar:** \(\underline{\underline{V_g=\mathbb R}}\).
     
     **e)** Sett \(p(x)=x^2-4x+3\) og \(h(x)=\ln x\). Da er \(g=h\circ p\). Polynomfunksjonen \(p\) er kontinuerlig for alle reelle \(x\), og logaritmefunksjonen \(h\) er kontinuerlig for positive argumenter. Siden \(p(x)>0\) akkurat på \(D_g\), er sammensetningen kontinuerlig på hele definisjonsmengden.
-    Ulikheten: \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
