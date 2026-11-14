@@ -29,7 +29,7 @@ bx+2,&x\geq1.
 \end{cases}
 \]
 
-Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Finn deretter en sammenheng som også gjør de to uttrykkenes tangentstigningstall like ved overgangen. Forklar forskjellen på kravene.
+Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Undersøk deretter hvilken sammenheng mellom \(a\) og \(b\) som gjør tangentstigningstallene til de to deluttrykkene like ved overgangen. Kan begge kravene oppfylles samtidig? Begrunn svaret.
 
 *Merk: Del b er en smakebit på derivasjon og kan vente til kapittel 3 dersom klassen ikke har arbeidet med tangentstigningstall ennå.*
 
@@ -129,7 +129,7 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
 
     **2.8.6:** Vertikale asymptoter \(x=-3\) og \(x=3\), horisontal asymptote \(y=2\).
 
-    **2.8.7:** Kontinuitet gir \(b=a-1\). Like tangentstigningstall gir \(b=a+2\). Kravene kan ikke oppfylles samtidig.
+    **2.8.7:** Kontinuitet gir \(b=a-1\). For at tangentstigningstallene til deluttrykkene skal være like, må \(a+2=b\), altså \(b=a+2\). De to sammenhengene er uforenlige, så kravene kan ikke oppfylles samtidig.
 
     **Resultat:** Kravene er uforenlige: \(\underline{\underline{b=a-1}}\) for kontinuitet og \(\underline{\underline{b=a+2}}\) for like stigningstall.
 
