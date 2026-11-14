@@ -111,7 +111,9 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
 ??? note "Momenter i et godt svar"
 
-    For \(f\) deler vi teller og nevner på \(x^2\). Den horisontale asymptoten er \(y=3\). For \(g\) skriver vi \(g(x)=x+1/x\). Siden \(1/x\to0\) når \(x\to\pm\infty\), er \(y=x\) en skrå asymptote.
+    For \(f\) er nevneren null når \(x=\pm\sqrt2\), mens telleren da er ulik null. Dermed er \(x=-\sqrt2\) og \(x=\sqrt2\) vertikale asymptoter. Ved å dele teller og nevner på \(x^2\) får vi den horisontale asymptoten \(y=3\).
+
+For \(g\) skriver vi \(g(x)=x+1/x\). Når \(x\to0^-\) og \(x\to0^+\), går \(1/x\) mot henholdsvis \(-\infty\) og \(+\infty\), så \(x=0\) er en vertikal asymptote. Siden \(1/x\to0\) når \(x\to\pm\infty\), er \(y=x\) en skrå asymptote.
 
 ## Kjennetegn på en god muntlig framføring
 
