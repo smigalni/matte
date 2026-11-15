@@ -88,6 +88,44 @@ De ensidige grenseverdiene er ulike. Modellen er derfor diskontinuerlig ved \(t=
 
     d) Gi et eksempel på en situasjon der det kan være nyttig å vite hvilken verdi en modell nærmer seg, selv om modellen ikke er definert akkurat i grensepunktet.
 
+
+!!! question "Oppgave 4 – temperatur som nærmer seg romtemperaturen"
+
+    En kopp varm drikke står i et rom med konstant temperatur på 20 °C. En forenklet modell for temperaturen i drikken er
+
+    \[
+    T(t)=20+\\frac{60}{t+1},
+    \]
+
+    der \\(t\\) er tiden i minutter etter at koppen settes fra seg. Modellen gjelder for \\(t\\geq0\\).
+
+    a) Bestem temperaturen når \\(t=0\\), \\(t=9\\) og \\(t=59\\).
+
+    b) Lag en verditabell for noen større tidsverdier. Bruk tabellen til å undersøke hvilken temperatur drikken nærmer seg.
+
+    c) Tegn grafen digitalt. Beskriv hva grafen viser når tiden øker.
+
+    d) Bestem \\(\\lim_{t\\to\\infty}T(t)\\) algebraisk. Vis hvorfor brøkdelen går mot null.
+
+    e) Forklar hva grenseverdien betyr i situasjonen. Vil modellen noen gang gi nøyaktig 20 °C for en endelig verdi av \\(t\\)? Begrunn.
+
+??? note "Fasit – oppgave 4"
+
+    a) \\(T(0)=80\\), \\(T(9)=26\\) og \\(T(59)=21\\). Temperaturen er målt i grader Celsius.
+
+    b) For eksempel gir \\(t=99\\) temperaturen 20,6 °C, og \\(t=599\\) gir 20,1 °C. Verdiene nærmer seg 20 °C.
+
+    c) Grafen starter i \\((0,80)\\), synker og nærmer seg den horisontale linjen \\(T=20\\) ovenfra.
+
+    d)
+    \[
+    \lim_{t\\to\\infty}T(t)
+    =20+60\\lim_{t\\to\\infty}\\frac{1}{t+1}
+    =20.
+    \]
+
+    e) Grenseverdien 20 °C beskriver romtemperaturen som drikken nærmer seg. For alle endelige \\(t\\geq0\\) er \\(60/(t+1)>0\\), så modellen gir en temperatur som er litt høyere enn 20 °C. Den når ikke nøyaktig 20 °C på noe endelig tidspunkt.
+
 ## Fasit og løsningsskisser
 
 **Oppgave 1**
