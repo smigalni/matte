@@ -18,53 +18,53 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
 
 ## To eksempler som ser like ut – men ikke er det
 
-### Eksempel A – et hull
+!!! example "Eksempel A – et hull"
 
-Vi undersøker
+    Vi undersøker
 
-\[
-f(x)=\frac{x^2-4}{x-2}.
-\]
+    \[
+    f(x)=\frac{x^2-4}{x-2}.
+    \]
 
-Nevneren blir null når \(x=2\). Vi faktoriserer:
+    Nevneren blir null når \(x=2\). Vi faktoriserer:
 
-\[
-f(x)=\frac{(x-2)(x+2)}{x-2}=x+2,\qquad x\ne2.
-\]
+    \[
+    f(x)=\frac{(x-2)(x+2)}{x-2}=x+2,\qquad x\ne2.
+    \]
 
-Dermed får vi
+    Dermed får vi
 
-\[
-\lim_{x\to2^-}f(x)=4
-\qquad\text{og}\qquad
-\lim_{x\to2^+}f(x)=4.
-\]
+    \[
+    \lim_{x\to2^-}f(x)=4
+    \qquad\text{og}\qquad
+    \lim_{x\to2^+}f(x)=4.
+    \]
 
-Grenseverdiene er endelige. Grafen har et **hull** i \((2,4)\), ikke en vertikal asymptote.
+    Grenseverdiene er endelige. Grafen har et **hull** i \((2,4)\), ikke en vertikal asymptote.
 
-### Eksempel B – en vertikal asymptote
+!!! example "Eksempel B – en vertikal asymptote"
 
-Vi undersøker
+    Vi undersøker
 
-\[
-g(x)=\frac{x-2}{(x-2)^2}.
-\]
+    \[
+    g(x)=\frac{x-2}{(x-2)^2}.
+    \]
 
-Både teller og nevner blir null når \(x=2\). Vi forkorter én felles faktor:
+    Både teller og nevner blir null når \(x=2\). Vi forkorter én felles faktor:
 
-\[
-g(x)=\frac{1}{x-2},\qquad x\ne2.
-\]
+    \[
+    g(x)=\frac{1}{x-2},\qquad x\ne2.
+    \]
 
-Da får vi
+    Da får vi
 
-\[
-\lim_{x\to2^-}g(x)=-\infty
-\qquad\text{og}\qquad
-\lim_{x\to2^+}g(x)=+\infty.
-\]
+    \[
+    \lim_{x\to2^-}g(x)=-\infty
+    \qquad\text{og}\qquad
+    \lim_{x\to2^+}g(x)=+\infty.
+    \]
 
-Grafen har derfor en **vertikal asymptote** \(x=2\).
+    Grafen har derfor en **vertikal asymptote** \(x=2\).
 
 ## Oppgaver – undersøk kandidatene
 
