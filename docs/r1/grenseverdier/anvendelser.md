@@ -126,6 +126,9 @@ De ensidige grenseverdiene er ulike. Modellen er derfor diskontinuerlig ved \(t=
 
     e) Grenseverdien 20 °C beskriver romtemperaturen som drikken nærmer seg. For alle endelige \(t\geq0\) er \(60/(t+1)>0\), så modellen gir en temperatur som er litt høyere enn 20 °C. Den når ikke nøyaktig 20 °C på noe endelig tidspunkt.
 
+    **Resultat:** \( \underline{\underline{20\,\text{°C}}} \).
+
+
 ## Fasit og løsningsskisser
 
 **Oppgave 1**
