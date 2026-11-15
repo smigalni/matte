@@ -2,29 +2,29 @@
 
 Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kontinuitet og diskontinuitet kan også brukes til å undersøke modeller der en verdi endrer seg brått.
 
-## Eksempel – betaling for parkering
+!!! example "Eksempel – betaling for parkering"
 
-En parkeringsplass tar 30 kr for parkering i inntil én time, 60 kr for mer enn én og inntil to timer, og 90 kr for mer enn to og inntil tre timer.
+    En parkeringsplass tar 30 kr for parkering i inntil én time, 60 kr for mer enn én og inntil to timer, og 90 kr for mer enn to og inntil tre timer.
 
-La \(P(t)\) være prisen i kroner når bilen har stått parkert i \(t\) timer:
+    La \(P(t)\) være prisen i kroner når bilen har stått parkert i \(t\) timer:
 
-\[
-P(t)=
-\begin{cases}
-30, & 0<t\leq1,\\
-60, & 1<t\leq2,\\
-90, & 2<t\leq3.
-\end{cases}
-\]
+    \[
+    P(t)=
+    \begin{cases}
+    30, & 0<t\leq1,\\
+    60, & 1<t\leq2,\\
+    90, & 2<t\leq3.
+    \end{cases}
+    \]
 
-Når \(t\) nærmer seg 1 time fra venstre, er prisen 30 kr. Når \(t\) nærmer seg 1 time fra høyre, er prisen 60 kr:
+    Når \(t\) nærmer seg 1 time fra venstre, er prisen 30 kr. Når \(t\) nærmer seg 1 time fra høyre, er prisen 60 kr:
 
-\[
-\lim_{t\to1^-}P(t)=30,\qquad
-\lim_{t\to1^+}P(t)=60.
-\]
+    \[
+    \lim_{t\to1^-}P(t)=30,\qquad
+    \lim_{t\to1^+}P(t)=60.
+    \]
 
-De ensidige grenseverdiene er ulike. Modellen er derfor diskontinuerlig ved \(t=1\). Det beskriver et prishopp: En liten økning i parkeringstiden kan gi en større endring i prisen.
+    De ensidige grenseverdiene er ulike. Modellen er derfor diskontinuerlig ved \(t=1\). Det beskriver et prishopp: En liten økning i parkeringstiden kan gi en større endring i prisen.
 
 ## Oppgaver
 
@@ -118,6 +118,7 @@ De ensidige grenseverdiene er ulike. Modellen er derfor diskontinuerlig ved \(t=
     c) Grafen starter i \((0,80)\), synker og nærmer seg den horisontale linjen \(T=20\) ovenfra.
 
     d)
+
     \[
     \lim_{t\to\infty}T(t)
     =20+60\lim_{t\to\infty}\frac{1}{t+1}
