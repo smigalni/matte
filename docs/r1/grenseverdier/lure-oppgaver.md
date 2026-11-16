@@ -16,14 +16,12 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 En funksjon er gitt ved
 
 \[
-
 f(x)=
 \begin{cases}
 2x+1, & x<1,\\
 4, & x=1,\\
 x+2, & x>1.
 \end{cases}
-
 \]
 
 a) Bestem venstre og høyre grenseverdi når \(x\to1\).
@@ -46,18 +44,17 @@ d) En elev sier: «Grenseverdien er 3, så funksjonsverdien må også være 3.»
 
 
     **Resultat:** \(\underline{\underline{\lim_{x\to1}f(x)=3,\;f(1)=4}}\)
+
 ## Oppgave 2.12.2 – kontinuerlig, men ikke deriverbar
 
 La
 
 \[
-
 g(x)=
 \begin{cases}
 2x+1, & x<1,\\
 x+2, & x\geq1.
 \end{cases}
-
 \]
 
 a) Undersøk om \(g\) er kontinuerlig i \(x=1\).
@@ -76,14 +73,13 @@ c) Kan funksjonen være kontinuerlig, men ha en knekk? Forklar med utgangspunkt 
 
 
     **Resultat:** \(\underline{\underline{\text{kontinuerlig, men ikke deriverbar ved }x=1}}\)
+
 ## Oppgave 2.12.3 – uendelig på begge sider
 
 Vi har
 
 \[
-
 h(x)=\frac{1}{(x-2)^2}.
-
 \]
 
 a) Bestem grenseverdien når \(x\to2^-\).
@@ -106,14 +102,13 @@ d) Sammenlign med \(p(x)=\frac{1}{x-2}\). Hva er forskjellen på fortegnet til d
 
 
     **Resultat:** \(\underline{\underline{\lim_{x\to2^-}h(x)=+\infty,\;\lim_{x\to2^+}h(x)=+\infty}}\)
+
 ## Oppgave 2.12.4 – forkorting og definisjonsmengde
 
 Vi har funksjonen
 
 \[
-
 q(x)=\frac{x^2-1}{x-1},\qquad x\ne1.
-
 \]
 
 En elev forkorter og skriver \(q(x)=x+1\), og konkluderer med at \(q(1)=2\).
@@ -138,14 +133,13 @@ d) Hva måtte vi ha endret i definisjonen for at funksjonen skulle bli kontinuer
 
 
     **Resultat:** \(\underline{\underline{\lim_{x\to1}q(x)=2,\;q(1)\text{ er ikke definert}}}\)
+
 ## Oppgave 2.12.5 – asymptoten kan krysses
 
 Vi har
 
 \[
-
 r(x)=\frac{x^2+x}{x^2+1}.
-
 \]
 
 a) Bestem den horisontale asymptoten når \(x\to\infty\).
@@ -161,7 +155,6 @@ c) En elev sier: «En graf kan ikke krysse en asymptote.» Forklar hvorfor påst
     b) Vi løser
     
     \[
-    
     \frac{x^2+x}{x^2+1}=1
     \quad\Longrightarrow\quad
     x^2+x=x^2+1
@@ -175,14 +168,13 @@ c) En elev sier: «En graf kan ikke krysse en asymptote.» Forklar hvorfor påst
 
 
     **Resultat:** \(\underline{\underline{(1,1)}}\)
+
 ## Oppgave 2.12.6 – undersøk hver side, ikke bare nevneren
 
 Vi har
 
 \[
-
 s(x)=\frac{x^2-1}{(x-1)^2}.
-
 \]
 
 a) Finn kandidaten til vertikal asymptote.
@@ -200,7 +192,6 @@ d) Forklar hvorfor det er nødvendig å undersøke fortegnet når \(x\) nærmer 
     b)
     
     \[
-    
     s(x)=\frac{(x-1)(x+1)}{(x-1)^2}
     =\frac{x+1}{x-1},\qquad x\ne1.
     
@@ -212,14 +203,13 @@ d) Forklar hvorfor det er nødvendig å undersøke fortegnet når \(x\) nærmer 
 
 
     **Resultat:** \(\underline{\underline{x=1}}\)
+
 ## Oppgave 2.12.7 – grenseverdi ved uendelig fra to retninger
 
 Vi har
 
 \[
-
 t(x)=\frac{x}{\sqrt{x^2+1}}.
-
 \]
 
 a) Bestem grenseverdien når \(x\to\infty\).
@@ -233,7 +223,6 @@ c) Har funksjonen samme horisontale asymptote i begge retninger? Begrunn.
     Vi skriver
     
     \[
-    
     \frac{x}{\sqrt{x^2+1}}
     =\frac{x}{|x|\sqrt{1+1/x^2}}.
     
