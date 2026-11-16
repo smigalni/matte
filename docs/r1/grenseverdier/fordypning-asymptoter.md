@@ -1,4 +1,4 @@
-# Fordypning – når er det faktisk en asymptote?
+# 2.11 Fordypning – når er det faktisk en asymptote?
 
 Det er lett å trekke en for rask konklusjon: Hvis nevneren blir null for \(x=a\), må \(x=a\) være en vertikal asymptote. Det stemmer ikke.
 
