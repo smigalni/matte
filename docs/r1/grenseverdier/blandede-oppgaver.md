@@ -12,7 +12,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     **Resultat:** \(\underline{\underline{5}}\)
 
-
 **Oppgave 2.8.2** Finn de ensidige grenseverdiene for \(f(x)=\begin{cases}x+1,&x<0,\\2x+1,&x\geq0.\end{cases}\).
 
 ??? note "Fasit – 2.8.2"
@@ -21,7 +20,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     **Resultat:** \(\underline{\underline{1}}\)
 
-
 **Oppgave 2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
 
 ??? note "Fasit – 2.8.3"
@@ -29,7 +27,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Vertikal asymptote \(x=-4\).
 
     **Resultat:** \(\underline{\underline{x=-4}}\)
-
 
 ## Middels
 
@@ -41,7 +38,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     **Resultat:** \(\underline{\underline{a=2}}\)
 
-
 **Oppgave 2.8.5** Beregn \(\lim_{x\to4}\frac{x^2-16}{x-4}\), og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
 
 ??? note "Fasit – 2.8.5"
@@ -50,7 +46,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     **Resultat:** \(\underline{\underline{8}}\)
 
-
 **Oppgave 2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
 
 ??? note "Fasit – 2.8.6"
@@ -58,7 +53,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Vertikale asymptoter \(x=-3\) og \(x=3\), horisontal asymptote \(y=2\).
 
     **Resultat:** \(\underline{\underline{x=\pm3,\;y=2}}\)
-
 
 ## Krevende
 
@@ -81,7 +75,6 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     
     **Resultat:** Kravene er uforenlige: \(\underline{\underline{b=a-1}}\) for kontinuitet og \(\underline{\underline{b=a+2}}\) for like stigningstall.
 
-
 **Oppgave 2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
 
 ??? note "Fasit – 2.8.8"
@@ -89,7 +82,6 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     Ett eksempel er \(f(x)=-1+\frac{1}{x-2}\).
 
     **Resultat:** \(\underline{\underline{f(x)=-1+\frac{1}{x-2}}}\)
-
 
 ## Utfordrende
 
@@ -100,7 +92,6 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
 
     **Resultat:** \(\underline{\underline{\lim_{x\to1}\frac{x^2-1}{x-1}=2}}\)
-
 
 **Oppgave 2.8.10 – flere fenomener i samme funksjon**
 
@@ -125,7 +116,6 @@ e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de
     \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\). Når \(a=1\), blir det også et hull, denne gangen i \((-1,1)\). Horisontal asymptote er \(y=1\).
 
     **Resultat:** \(\underline{\underline{y=1}}\)
-
 
 **Oppgave 2.8.11 – R1 og T-matte: asymptoter og rasjonale ulikheter**
 
@@ -319,7 +309,6 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
     **e)** Sett \(p(x)=x^2-4x+3\) og \(h(x)=\ln x\). Da er \(g=h\circ p\). Polynomfunksjonen \(p\) er kontinuerlig for alle reelle \(x\), og logaritmefunksjonen \(h\) er kontinuerlig for positive argumenter. Siden \(p(x)>0\) akkurat på \(D_g\), er sammensetningen kontinuerlig på hele definisjonsmengden.
 
     **Resultat:** \(\underline{\underline{D_g=(-\infty,1)\cup(3,\infty)}}\)
-
 
 ## Flere blandede oppgaver
 
