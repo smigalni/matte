@@ -191,5 +191,49 @@ Tekst under
         errors = self.check(content)
         self.assertTrue(any("ekstra punktmarkør" in e for e in errors))
 
+
+    def test_task_and_fasit_ids_match(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Finn grenseverdien.
+
+??? note "Fasit – 2.3.1"
+
+    **Resultat:** \\(\\underline{\\underline{4}}\\)
+'''
+        self.assertEqual(self.check(content), [])
+
+    def test_mismatched_fasit_id_fails(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Finn grenseverdien.
+
+??? note "Fasit – 2.3.2"
+
+    **Resultat:** \\(\\underline{\\underline{4}}\\)
+'''
+        errors = self.check(content)
+        self.assertTrue(any("ingen oppgave med samme nummer" in e for e in errors))
+
+    def test_duplicate_task_id_fails(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Første oppgave.
+
+!!! question "Oppgave 2.3.1"
+
+    Andre oppgave.
+'''
+        errors = self.check(content)
+        self.assertTrue(any("brukt flere ganger" in e for e in errors))
+
+    def test_legacy_task_label_fails(self):
+        errors = self.check("**2.3.1** Finn grenseverdien.\\n")
+        self.assertTrue(any("mangler etiketten 'Oppgave'" in e for e in errors))
+
+    def test_empty_example_box_fails(self):
+        errors = self.check('!!! example "Eksempel 2.3.1"\\n\\n### Neste del\\n')
+        self.assertTrue(any("Tom admonition-boks" in e for e in errors))
+
 if __name__ == "__main__":
     unittest.main()
