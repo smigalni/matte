@@ -334,9 +334,9 @@ Når vi faktoriserer og forkorter en rasjonal funksjon, må vi passe på definis
 
 ### Grenseverdier når x går mot uendelig
 
-Når (x) blir svært stor, vokser potenser med høy eksponent raskere enn potenser med lavere eksponent. Derfor er leddene med lavere potenser mindre viktige for hvordan brøken oppfører seg langt ute.
+Når \(x\) blir svært stor, vokser potenser med høy eksponent raskere enn potenser med lavere eksponent. Derfor er leddene med lavere potenser mindre viktige for hvordan brøken oppfører seg langt ute.
 
-Vi deler teller og nevner på den høyeste potensen av (x) som forekommer. Da blir alle ledd med lavere potenser brøker der nevneren inneholder (x), og disse går mot 0 når (x\to\infty). På den måten står vi igjen med de leddene som bestemmer grenseverdien.
+Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da blir alle ledd med lavere potenser brøker der nevneren inneholder \(x\), og disse går mot 0 når \(x\to\infty\). På den måten står vi igjen med de leddene som bestemmer grenseverdien.
 
 !!! example "Eksempel 2.5.2 – grenseverdi når x går mot uendelig"
 
