@@ -237,5 +237,13 @@ Tekst under
         errors = self.check('!!! example "Eksempel 2.3.1"\\n\\n### Neste del\\n')
         self.assertTrue(any("Tom admonition-boks" in e for e in errors))
 
+
+    def test_parameter_tuple_is_not_mistaken_for_subtask(self):
+        content = """!!! question "Oppgave 2.3.1"
+
+    c) Finn to parameterpar \((a,b)\) som oppfyller kravet.
+"""
+        self.assertEqual(self.check(content), [])
+
 if __name__ == "__main__":
     unittest.main()
