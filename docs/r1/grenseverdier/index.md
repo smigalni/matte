@@ -305,43 +305,45 @@ Når funksjonen er kontinuerlig i punktet og uttrykket er definert der, kan vi o
 
 ### Faktorisering og forkorting
 
-**Eksempel 2.5.1 – faktorisering og forkorting**
+!!! example "Eksempel 2.5.1 – faktorisering og forkorting"
 
-\[
-\lim_{x\to2}\frac{x^2-4}{x-2}.
-\]
 
-Direkte innsetting gir \(\frac00\). Vi faktoriserer telleren:
+    \[
+    \lim_{x\to2}\frac{x^2-4}{x-2}.
+    \]
 
-\[
-x^2-4=(x-2)(x+2).
-\]
+    Direkte innsetting gir \(\frac00\). Vi faktoriserer telleren:
 
-For \(x\ne2\) kan vi forkorte faktoren \(x-2\):
+    \[
+    x^2-4=(x-2)(x+2).
+    \]
 
-\[
-\frac{(x-2)(x+2)}{x-2}=x+2.
-\]
+    For \(x\ne2\) kan vi forkorte faktoren \(x-2\):
 
-Derfor er
+    \[
+    \frac{(x-2)(x+2)}{x-2}=x+2.
+    \]
 
-\[
-\lim_{x\to2}\frac{x^2-4}{x-2}
-=\lim_{x\to2}(x+2)=4.
-\]
+    Derfor er
 
-Vi har ikke endret funksjonsverdien i \(x=2\); brøken er fortsatt ikke definert der. Vi har funnet hvilken verdi funksjonen nærmer seg.
+    \[
+    \lim_{x\to2}\frac{x^2-4}{x-2}
+    =\lim_{x\to2}(x+2)=4.
+    \]
+
+    Vi har ikke endret funksjonsverdien i \(x=2\); brøken er fortsatt ikke definert der. Vi har funnet hvilken verdi funksjonen nærmer seg.
 
 ### Grenseverdier når x går mot uendelig
 
-For en rasjonal funksjon kan vi ofte dele teller og nevner på den høyeste potensen av \(x\) i nevneren. Eksempel:
+!!! example "Eksempel 2.5.2 – grenseverdi når x går mot uendelig"
 
-\[
-\lim_{x\to\infty}\frac{3x^2+1}{x^2-4}
-=\lim_{x\to\infty}\frac{3+1/x^2}{1-4/x^2}=3.
-\]
 
-Siden \(1/x^2\to0\), nærmer funksjonen seg 3.
+    \[
+    \lim_{x\to\infty}\frac{3x^2+1}{x^2-4}
+    =\lim_{x\to\infty}\frac{3+1/x^2}{1-4/x^2}=3.
+    \]
+
+    Siden \(1/x^2\to0\), nærmer funksjonen seg 3.
 
 ### Oppgaver 2.5
 
@@ -393,7 +395,8 @@ En asymptote er en rett linje som grafen nærmer seg. Vi undersøker tre vanlige
 
 Linjen \(x=a\) er en vertikal asymptote når funksjonsverdiene går mot \(+\infty\) eller \(-\infty\) når \(x\) nærmer seg \(a\) fra minst én side.
 
-Eksempel: \(f(x)=\frac{2}{x-1}\) har vertikal asymptote \(x=1\), fordi nevneren nærmer seg null mens telleren er ulik null.
+!!! example "Eksempel 2.6.1 – vertikal asymptote"
+
 
 ### Horisontal asymptote
 
@@ -411,13 +414,14 @@ De to grensene kan gi ulike horisontale asymptoter.
 
 En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjoner kan polynomdivisjon ofte avsløre den.
 
-Eksempel:
+!!! example "Eksempel 2.6.2 – skrå asymptote"
 
-\[
-f(x)=\frac{x^2+1}{x}=x+\frac1x.
-\]
 
-Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
+    \[
+    f(x)=\frac{x^2+1}{x}=x+\frac1x.
+    \]
+
+    Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
 
 ### Oppgaver 2.6
 
