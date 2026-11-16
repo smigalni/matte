@@ -417,14 +417,60 @@ De to grensene kan gi ulike horisontale asymptoter.
 
 En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjoner kan polynomdivisjon ofte avsløre den.
 
-!!! example "Eksempel 2.6.2 – skrå asymptote"
-
+!!! example "Eksempel 2.6.2 – finn skrå asymptote med polynomdivisjon"
+    Bestem den skrå asymptoten til funksjonen
 
     \[
-    f(x)=\frac{x^2+1}{x}=x+\frac1x.
+    f(x)=\frac{x^2+1}{x-1}.
     \]
 
-    Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
+    **1. Utfør polynomdivisjonen**
+
+    Vi deler \(x^2+0x+1\) på \(x-1\).
+
+    Først deler vi det første leddet i telleren på det første leddet i nevneren:
+
+    \[
+    \frac{x^2}{x}=x.
+    \]
+
+    Vi ganger \(x\) med \(x-1\) og trekker fra:
+
+    \[
+    \begin{aligned}
+    &(x^2+0x+1)-(x^2-x)\\
+    &\qquad=x+1.
+    \end{aligned}
+    \]
+
+    Deretter deler vi \(x\) på \(x\), som gir \(1\). Vi ganger \(1\) med \(x-1\) og trekker fra:
+
+    \[
+    (x+1)-(x-1)=2.
+    \]
+
+    Kvotienten er \(x+1\), og resten er \(2\). Dermed får vi
+
+    \[
+    \frac{x^2+1}{x-1}
+    =x+1+\frac{2}{x-1}.
+    \]
+
+    **2. Undersøk restleddet**
+
+    Når \(x\to\infty\) eller \(x\to-\infty\), går
+
+    \[
+    \frac{2}{x-1}\to0.
+    \]
+
+    Funksjonen nærmer seg derfor linjen \(y=x+1\).
+
+    **Svar:** Den skrå asymptoten er
+
+    \[
+    \underline{\underline{y=x+1}}.
+    \]
 
 ### Oppgaver 2.6
 
