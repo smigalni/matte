@@ -2,7 +2,7 @@
 
 Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kontinuitet og diskontinuitet kan også brukes til å undersøke modeller der en verdi endrer seg brått.
 
-!!! example "Eksempel – betaling for parkering"
+!!! example "Eksempel 2.10.1 – betaling for parkering"
 
     En parkeringsplass tar 30 kr for parkering i inntil én time, 60 kr for mer enn én og inntil to timer, og 90 kr for mer enn to og inntil tre timer.
 
@@ -28,7 +28,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
 ## Oppgaver
 
-!!! question "Oppgave 1 – undersøk prishoppet"
+!!! question "Oppgave 2.10.2 – undersøk prishoppet"
 
     Bruk parkeringsmodellen ovenfor.
 
@@ -40,7 +40,29 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     d) Forklar med egne ord hvorfor en modell med prishopp ikke er kontinuerlig, og hvorfor dette likevel kan være en fornuftig modell.
 
-!!! question "Oppgave 2 – velg en modell"
+??? note "Fasit – 2.10.2"
+
+    a) \(P(1)=30\), \(P(1{,}5)=60\) og \(P(2)=60\).
+    
+    b) Ved \(t=1\):
+    
+    \[
+    \lim_{t\to1^-}P(t)=30,\qquad
+    \lim_{t\to1^+}P(t)=60.
+    \]
+    
+    Ved \(t=2\):
+    
+    \[
+    \lim_{t\to2^-}P(t)=60,\qquad
+    \lim_{t\to2^+}P(t)=90.
+    \]
+    
+    c) Modellen er diskontinuerlig ved begge tidspunktene fordi de ensidige grenseverdiene er ulike.
+    
+    d) Modellen har sprang ved grensepunktene. Den kan likevel være praktisk fordi parkeringsplassen faktisk tar betalt per påbegynte tidsintervall.
+
+!!! question "Oppgave 2.10.3 – velg en modell"
 
     En bedrift vurderer to prismodeller for en tjeneste. \(x\) er antall timer tjenesten brukes.
 
@@ -72,7 +94,19 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     d) Drøft hvilken modell som er mest forutsigbar for kunden. Begrunn med matematikk og ikke bare en mening.
 
-!!! question "Oppgave 3 – grenseverdi i en beregning"
+??? note "Fasit – 2.10.3"
+
+    a) For modell A er venstre grenseverdi 100 og høyre grenseverdi også 100. Dessuten er \(A(2)=100\). Modellen er kontinuerlig.
+    
+    For modell B er venstre grenseverdi 100, mens høyre grenseverdi er 180. Modellen er diskontinuerlig.
+    
+    b) Modell A endrer seg gradvis etter to timer. Modell B hopper fra 100 kr til 180 kr rett etter to timer.
+    
+    c) Modell B har et prishopp på 80 kr.
+    
+    d) Modell A er mer forutsigbar fordi prisen ikke hopper brått ved to timer. Eleven må begrunne vurderingen med grenseverdiene og prisforskjellen.
+
+!!! question "Oppgave 2.10.4 – grenseverdi i en beregning"
 
     I en matematisk modell inngår uttrykket
 
@@ -88,8 +122,27 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     d) Gi et eksempel på en situasjon der det kan være nyttig å vite hvilken verdi en modell nærmer seg, selv om modellen ikke er definert akkurat i grensepunktet.
 
+??? note "Fasit – 2.10.4"
 
-!!! question "Oppgave 4 – temperatur som nærmer seg romtemperaturen"
+    a) Vi faktoriserer:
+    
+    \[
+    Q(x)=\frac{(x-4)(x+4)}{x-4}=x+4,\qquad x\ne4.
+    \]
+    
+    Dermed er
+    
+    \[
+    \lim_{x\to4}Q(x)=8.
+    \]
+    
+    b) Den opprinnelige definisjonen har \(x-4\) i nevneren, så \(Q(4)\) er ikke definert.
+    
+    c) En grenseverdi beskriver hva funksjonen nærmer seg. At funksjonen mangler en verdi i ett punkt, hindrer ikke at grenseverdien finnes.
+    
+    d) Flere svar kan godtas. Eleven bør forklare at en grenseverdi kan beskrive en forventet eller tilnærmet verdi nær en grense, selv om selve punktet ikke inngår i modellen.
+
+!!! question "Oppgave 2.10.5 – temperatur som nærmer seg romtemperaturen"
 
     En kopp varm drikke står i et rom med konstant temperatur på 20 °C. En forenklet modell for temperaturen i drikken er
 
@@ -109,79 +162,22 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     e) Forklar hva grenseverdien betyr i situasjonen. Vil modellen noen gang gi nøyaktig 20 °C for en endelig verdi av \(t\)? Begrunn.
 
-??? note "Fasit – oppgave 4"
+??? note "Fasit – 2.10.5"
 
     a) \(T(0)=80\), \(T(9)=26\) og \(T(59)=21\). Temperaturen er målt i grader Celsius.
-
+    
     b) For eksempel gir \(t=99\) temperaturen 20,6 °C, og \(t=599\) gir 20,1 °C. Verdiene nærmer seg 20 °C.
-
+    
     c) Grafen starter i \((0,80)\), synker og nærmer seg den horisontale linjen \(T=20\) ovenfra.
-
+    
     d)
-
+    
     \[
     \lim_{t\to\infty}T(t)
     =20+60\lim_{t\to\infty}\frac{1}{t+1}
     =20.
     \]
-
+    
     e) Grenseverdien 20 °C beskriver romtemperaturen som drikken nærmer seg. For alle endelige \(t\geq0\) er \(60/(t+1)>0\), så modellen gir en temperatur som er litt høyere enn 20 °C. Den når ikke nøyaktig 20 °C på noe endelig tidspunkt.
-
+    
     **Resultat:** \( \underline{\underline{20\,\text{°C}}} \).
-
-
-## Fasit og løsningsskisser
-
-**Oppgave 1**
-
-a) \(P(1)=30\), \(P(1{,}5)=60\) og \(P(2)=60\).
-
-b) Ved \(t=1\):
-
-\[
-\lim_{t\to1^-}P(t)=30,\qquad
-\lim_{t\to1^+}P(t)=60.
-\]
-
-Ved \(t=2\):
-
-\[
-\lim_{t\to2^-}P(t)=60,\qquad
-\lim_{t\to2^+}P(t)=90.
-\]
-
-c) Modellen er diskontinuerlig ved begge tidspunktene fordi de ensidige grenseverdiene er ulike.
-
-d) Modellen har sprang ved grensepunktene. Den kan likevel være praktisk fordi parkeringsplassen faktisk tar betalt per påbegynte tidsintervall.
-
-**Oppgave 2**
-
-a) For modell A er venstre grenseverdi 100 og høyre grenseverdi også 100. Dessuten er \(A(2)=100\). Modellen er kontinuerlig.
-
-For modell B er venstre grenseverdi 100, mens høyre grenseverdi er 180. Modellen er diskontinuerlig.
-
-b) Modell A endrer seg gradvis etter to timer. Modell B hopper fra 100 kr til 180 kr rett etter to timer.
-
-c) Modell B har et prishopp på 80 kr.
-
-d) Modell A er mer forutsigbar fordi prisen ikke hopper brått ved to timer. Eleven må begrunne vurderingen med grenseverdiene og prisforskjellen.
-
-**Oppgave 3**
-
-a) Vi faktoriserer:
-
-\[
-Q(x)=\frac{(x-4)(x+4)}{x-4}=x+4,\qquad x\ne4.
-\]
-
-Dermed er
-
-\[
-\lim_{x\to4}Q(x)=8.
-\]
-
-b) Den opprinnelige definisjonen har \(x-4\) i nevneren, så \(Q(4)\) er ikke definert.
-
-c) En grenseverdi beskriver hva funksjonen nærmer seg. At funksjonen mangler en verdi i ett punkt, hindrer ikke at grenseverdien finnes.
-
-d) Flere svar kan godtas. Eleven bør forklare at en grenseverdi kan beskrive en forventet eller tilnærmet verdi nær en grense, selv om selve punktet ikke inngår i modellen.
