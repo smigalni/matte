@@ -137,7 +137,7 @@ d) Hva måtte vi ha endret i definisjonen for at funksjonen skulle bli kontinuer
     d) Vi kan definere \(q(1)=2\). Da blir funksjonen kontinuerlig i \(x=1\).
 
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to1}q(x)=2,\;q(1)\text{ er ikke definert}}\)
+    **Resultat:** \(\underline{\underline{\lim_{x\to1}q(x)=2,\;q(1)\text{ er ikke definert}}}\)
 ## Oppgave 2.12.5 – asymptoten kan krysses
 
 Vi har
