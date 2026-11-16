@@ -297,6 +297,11 @@ Når funksjonen er kontinuerlig i punktet og uttrykket er definert der, kan vi o
 
 ### Faktorisering og forkorting
 
+Når vi faktoriserer og forkorter en rasjonal funksjon, må vi passe på definisjonsmengden. Nevneren i den opprinnelige funksjonen kan ikke være null. Selv om en faktor forkortes bort, blir derfor ikke den tilhørende x-verdien automatisk tillatt.
+
+!!! rule "Definisjonsmengde ved forkorting"
+    Bestem først hvilke verdier som gjør den opprinnelige nevneren lik null. Disse verdiene skal utelates fra definisjonsmengden, også etter at du har forkortet uttrykket.
+
 !!! example "Eksempel 2.5.1 – faktorisering og forkorting"
 
 
@@ -323,7 +328,9 @@ Når funksjonen er kontinuerlig i punktet og uttrykket er definert der, kan vi o
     =\lim_{x\to2}(x+2)=4.
     \]
 
-    Vi har ikke endret funksjonsverdien i \(x=2\); brøken er fortsatt ikke definert der. Vi har funnet hvilken verdi funksjonen nærmer seg.
+    Vi har ikke endret funksjonsverdien i \(x=2\); brøken er fortsatt ikke definert der. Vi har funnet hvilken verdi funksjonen nærmer seg. Definisjonsmengden er fortsatt \(\mathbb R\setminus\{2\}\).
+
+    Grafen har et hull i \((2,4)\), ikke en vertikal asymptote.
 
 ### Grenseverdier når x går mot uendelig
 
