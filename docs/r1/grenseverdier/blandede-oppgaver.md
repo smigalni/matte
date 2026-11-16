@@ -116,7 +116,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Vi har funksjonen
 
     \[
-    f_a(x)=\frac{x^2+(a-1)x-a}{x^2-1}.
+    f_a(x)=\dfrac{x^2+(a-1)x-a}{x^2-1}.
     \]
 
     a) Faktoriser teller og nevner.
@@ -140,7 +140,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     La \(a>1\), og definer
 
     \[
-    f_a(x)=\frac{x^2-a^2}{(x-a)(x-1)}.
+    f_a(x)=\dfrac{x^2-a^2}{(x-a)(x-1)}.
     \]
 
     a) Faktoriser og forenkle uttrykket. Oppgi samtidig definisjonsmengden til den opprinnelige funksjonen.
@@ -164,14 +164,14 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     \(\underline{\underline{(-\infty,-a]\cup(1,a)\cup(a,\infty)}}\).
     
     \[
-    f_a(x)=\frac{(x-a)(x+a)}{(x-a)(x-1)}
-    =\frac{x+a}{x-1},\qquad x\ne a,\;x\ne1.
+    f_a(x)=\dfrac{(x-a)(x+a)}{(x-a)(x-1)}
+    =\dfrac{x+a}{x-1},\qquad x\ne a,\;x\ne1.
     \]
     
     Den opprinnelige funksjonen er ikke definert for \(x=a\) eller \(x=1\). Når \(x\to a\), får vi
     
     \[
-    \lim_{x\to a}f_a(x)=\frac{2a}{a-1},
+    \lim_{x\to a}f_a(x)=\dfrac{2a}{a-1},
     \]
     
     så grafen har et hull i \(\left(a,\frac{2a}{a-1}\right)\). Siden \(a>1\), er telleren \(x+a\) ulik null ved \(x=1\), og dermed er \(x=1\) en vertikal asymptote. For \(x\to\pm\infty\) går brøken mot 1, så den horisontale asymptoten er \(y=1\).
@@ -193,7 +193,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     La funksjonen være
 
     \[
-    g(x)=\frac{(x-1)(x^2+2x+3)}{(x-1)(x+1)}.
+    g(x)=\dfrac{(x-1)(x^2+2x+3)}{(x-1)(x+1)}.
     \]
 
     a) Oppgi definisjonsmengden og forenkle uttrykket så langt det lar seg gjøre.
@@ -217,14 +217,14 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     \(\underline{\underline{y=x+1}}\).
     
     \[
-    g(x)=\frac{x^2+2x+3}{x+1}
-    =x+1+\frac{2}{x+1}.
+    g(x)=\dfrac{x^2+2x+3}{x+1}
+    =x+1+\dfrac{2}{x+1}.
     \]
     
     Polynomdivisjonen viser at den skrå asymptoten er \(y=x+1\). Når \(x\to1\), får vi grenseverdien
     
     \[
-    \lim_{x\to1}g(x)=\frac{1+2+3}{2}=3,
+    \lim_{x\to1}g(x)=\dfrac{1+2+3}{2}=3,
     \]
     
     så grafen har et hull i \((1,3)\). Når \(x\to-1\), går telleren mot \(2\), mens nevneren går mot null. Derfor går funksjonen mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Den vertikale asymptoten er \(x=-1\).
@@ -335,7 +335,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     For \(a\in\mathbb R\) er funksjonen gitt ved
 
     \[
-    f_a(x)=\frac{x^2+(a-2)x-2a}{x^2-4}.
+    f_a(x)=\dfrac{x^2+(a-2)x-2a}{x^2-4}.
     \]
 
     a) Faktoriser teller og nevner, og oppgi den opprinnelige definisjonsmengden.
@@ -351,14 +351,14 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Vi faktoriserer:
 
     \[
-    f_a(x)=\frac{(x-2)(x+a)}{(x-2)(x+2)}
-    =\frac{x+a}{x+2},\qquad x\ne-2,2.
+    f_a(x)=\dfrac{(x-2)(x+a)}{(x-2)(x+2)}
+    =\dfrac{x+a}{x+2},\qquad x\ne-2,2.
     \]
 
     Ved \(x=2\) får vi alltid et hull. Grenseverdien er \((a+2)/4\), så hullet ligger i
 
     \[
-    \left(2,\frac{a+2}{4}\right).
+    \left(2,\dfrac{a+2}{4}\right).
     \]
 
     Ved \(x=-2\) er telleren etter forkorting \(a-2\). Når \(a\ne2\), får vi en vertikal asymptote. Når \(a=2\), forkortes også faktoren \(x+2\), og punktet blir et hull. Da er grenseverdien 1, så hullet ligger i \((-2,1)\).
@@ -390,7 +390,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     For \(x\ne3\) er
 
     \[
-    \frac{x^2-9}{x-3}=x+3.
+    \dfrac{x^2-9}{x-3}=x+3.
     \]
 
     Dermed er venstre grenseverdi 6. Kontinuitet krever at funksjonsverdien fra høyre også er 6:
@@ -408,7 +408,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     La
 
     \[
-    g_a(x)=\frac{3x^2+ax-1}{x^2-4x+5}.
+    g_a(x)=\dfrac{3x^2+ax-1}{x^2-4x+5}.
     \]
 
     a) Bestem den horisontale asymptoten når \(x\to\infty\).
@@ -442,7 +442,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Vi har funksjonen
 
     \[
-    h(x)=\frac{x^2-1}{x-1}.
+    h(x)=\dfrac{x^2-1}{x-1}.
     \]
 
     a) Bestem definisjonsmengden.
@@ -458,7 +458,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Definisjonsmengden er \(\mathbb R\setminus\{1\}\). Vi faktoriserer:
 
     \[
-    h(x)=\frac{(x-1)(x+1)}{x-1}=x+1,\qquad x\ne1.
+    h(x)=\dfrac{(x-1)(x+1)}{x-1}=x+1,\qquad x\ne1.
     \]
 
     Dermed er
@@ -495,8 +495,8 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     \[
     \sqrt{x^2+3x}-x
-    =\frac{3x}{\sqrt{x^2+3x}+x}
-    =\frac{3}{\sqrt{1+3/x}+1}.
+    =\dfrac{3x}{\sqrt{x^2+3x}+x}
+    =\dfrac{3}{\sqrt{1+3/x}+1}.
     \]
 
     Grensen er \(3/2\).
@@ -513,7 +513,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     \[
     x\left(1-\sqrt{1+3/x}\right)
-    =\frac{-3}{1+\sqrt{1+3/x}}.
+    =\dfrac{-3}{1+\sqrt{1+3/x}}.
     \]
 
     Når \(x\to-\infty\), går dette mot \(-3/2\).
