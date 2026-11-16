@@ -16,7 +16,7 @@ Disse reglene gjelder for alt arbeid i dette repositoriet. Følg eksisterende l�
 Bruk kapittel 3.1 og de nærmeste eksisterende kapitlene som visuell og strukturell fasit. Gjenbruk repoets etablerte MkDocs/Zensical-syntaks; ikke finn opp et nytt design for hver side.
 
 - **Eksempler:** alle gjennomarbeidede eksempler skal ligge inni en `!!! example`-boks. Bruk samme turkise eksempelbokser som i kapittel 3.1 og andre ferdige sider. Ikke presenter et fullstendig regneeksempel som en vanlig `### Eksempel`-overskrift uten boks.
-- **Regler og viktige formler:** bruk etablerte blå/regelfremhevende bokser og passende overskrifter.
+- **Regler og viktige formler:** bruk etablerte blå/regelfremhevende bokser og passende overskrifter. Regelbokser skal ikke ha en tung svart ramme; bruk repoets etablerte rolige, blå stil.
 - **Oppgaver:** bruk etablerte lilla `!!! question`-bokser. Tittelen skal alltid ha hierarkisk nummerering, for eksempel `Oppgave 2.6.3`. Ikke bruk bare løse, fete nummeretiketter. Deloppgaver skal stå på egne linjer med tom linje mellom dem.
 - **Deloppgaver:** presenter hver deloppgave på egen linje med bokstavmerking (`a)`, `b)`, `c)` osv.). Ikke bruk ekstra punktliste eller nummerering foran bokstavene. Bruk samme format i oppgavetekst og fasit, og sørg for at eventuelle formelblokker står riktig under tilhørende deloppgave.
 - **Fasit/momenter:** legg fasit eller momenter rett etter tilhørende oppgave i en sammenleggbar `??? note "Fasit – 2.6.3"`- eller `??? note "Momenter – 2.13.1"`-boks. Nummeret skal samsvare nøyaktig med oppgaven. Ikke flytt svarstoff til et annet delkapittel eller la det stå under en ny seksjonsoverskrift.
