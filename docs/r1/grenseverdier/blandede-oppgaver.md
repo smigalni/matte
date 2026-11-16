@@ -4,7 +4,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 ## Grunnleggende
 
-**2.8.1** Finn \(\lim_{x\to2}(3x-1)\).
+**Oppgave 2.8.1** Finn \(\lim_{x\to2}(3x-1)\).
 
 ??? note "Fasit – 2.8.1"
 
@@ -13,7 +13,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{5}}\)
 
 
-**2.8.2** Finn de ensidige grenseverdiene for \(f(x)=\begin{cases}x+1,&x<0,\\2x+1,&x\geq0.\end{cases}\).
+**Oppgave 2.8.2** Finn de ensidige grenseverdiene for \(f(x)=\begin{cases}x+1,&x<0,\\2x+1,&x\geq0.\end{cases}\).
 
 ??? note "Fasit – 2.8.2"
 
@@ -22,7 +22,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{1}}\)
 
 
-**2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
+**Oppgave 2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
 
 ??? note "Fasit – 2.8.3"
 
@@ -33,7 +33,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 ## Middels
 
-**2.8.4** Bestem \(a\) slik at \(f(x)=\begin{cases}ax+2,&x<1,\\x^2+3,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\).
+**Oppgave 2.8.4** Bestem \(a\) slik at \(f(x)=\begin{cases}ax+2,&x<1,\\x^2+3,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\).
 
 ??? note "Fasit – 2.8.4"
 
@@ -42,7 +42,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{a=2}}\)
 
 
-**2.8.5** Beregn \(\lim_{x\to4}\frac{x^2-16}{x-4}\), og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
+**Oppgave 2.8.5** Beregn \(\lim_{x\to4}\frac{x^2-16}{x-4}\), og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
 
 ??? note "Fasit – 2.8.5"
 
@@ -51,7 +51,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{8}}\)
 
 
-**2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
+**Oppgave 2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
 
 ??? note "Fasit – 2.8.6"
 
@@ -62,7 +62,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 ## Krevende
 
-**2.8.7 – krevende: kontinuitet og tangentstigningstall (bro til kapittel 3)** La
+**Oppgave 2.8.7 – krevende: kontinuitet og tangentstigningstall (bro til kapittel 3)** La
 
 \[
 f(x)=\begin{cases}
@@ -82,7 +82,7 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     **Resultat:** Kravene er uforenlige: \(\underline{\underline{b=a-1}}\) for kontinuitet og \(\underline{\underline{b=a+2}}\) for like stigningstall.
 
 
-**2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
+**Oppgave 2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
 
 ??? note "Fasit – 2.8.8"
 
@@ -93,7 +93,7 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
 
 ## Utfordrende
 
-**2.8.9** En elev hevder: «Hvis telleren og nevneren begge blir null, finnes det ingen grenseverdi.» Lag et moteksempel, løs grenseverdien og forklar hvilken konklusjon eleven burde trekke i stedet.
+**Oppgave 2.8.9** En elev hevder: «Hvis telleren og nevneren begge blir null, finnes det ingen grenseverdi.» Lag et moteksempel, løs grenseverdien og forklar hvilken konklusjon eleven burde trekke i stedet.
 
 ??? note "Fasit – 2.8.9"
 
@@ -102,7 +102,7 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     **Resultat:** \(\underline{\underline{\lim_{x\to1}\frac{x^2-1}{x-1}=2}}\)
 
 
-**2.8.10 – flere fenomener i samme funksjon**
+**Oppgave 2.8.10 – flere fenomener i samme funksjon**
 
 Vi har funksjonen
 
@@ -127,7 +127,7 @@ e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de
     **Resultat:** \(\underline{\underline{y=1}}\)
 
 
-**2.8.11 – R1 og T-matte: asymptoter og rasjonale ulikheter**
+**Oppgave 2.8.11 – R1 og T-matte: asymptoter og rasjonale ulikheter**
 
 La \(a>1\), og definer
 
@@ -180,7 +180,7 @@ Oppgaven kombinerer grenseverdier og asymptoter fra R1 med faktorisering, forteg
 
     **Resultat:** \(\underline{\underline{(-\infty,-a]\cup(1,a)\cup(a,\infty)}}\)
 
-**2.8.12 – R1 og T-matte: polynomdivisjon, asymptoter og fortegn**
+**Oppgave 2.8.12 – R1 og T-matte: polynomdivisjon, asymptoter og fortegn**
 
 La funksjonen være
 
@@ -246,7 +246,7 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
 
     **Resultat:** \(\underline{\underline{y=x+1}}\)
 
-**2.8.13 – R1: logaritmer, nullpunkter, asymptoter og kontinuitet**
+**Oppgave 2.8.13 – R1: logaritmer, nullpunkter, asymptoter og kontinuitet**
 
 La
 
@@ -319,3 +319,245 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
     **e)** Sett \(p(x)=x^2-4x+3\) og \(h(x)=\ln x\). Da er \(g=h\circ p\). Polynomfunksjonen \(p\) er kontinuerlig for alle reelle \(x\), og logaritmefunksjonen \(h\) er kontinuerlig for positive argumenter. Siden \(p(x)>0\) akkurat på \(D_g\), er sammensetningen kontinuerlig på hele definisjonsmengden.
 
     **Resultat:** \(\underline{\underline{D_g=(-\infty,1)\cup(3,\infty)}}\)
+
+
+## Middels
+
+**Oppgave 2.8.14 – hull eller vertikal asymptote?**
+
+For \(a\in\mathbb R\) er funksjonen gitt ved
+
+\[
+f_a(x)=\frac{x^2+(a-2)x-2a}{x^2-4}.
+\]
+
+a) Faktoriser teller og nevner, og oppgi den opprinnelige definisjonsmengden.
+
+b) Undersøk hva som skjer når \(x\to2\). Finn koordinatene til et eventuelt hull.
+
+c) Undersøk hva som skjer når \(x\to-2\). For hvilken verdi av \(a\) får vi et hull i stedet for en vertikal asymptote?
+
+d) Bestem den horisontale asymptoten.
+
+??? note "Fasit – 2.8.14"
+
+    Vi faktoriserer:
+
+    \[
+    f_a(x)=\frac{(x-2)(x+a)}{(x-2)(x+2)}
+    =\frac{x+a}{x+2},\qquad x\ne-2,2.
+    \]
+
+    Ved \(x=2\) får vi alltid et hull. Grenseverdien er \((a+2)/4\), så hullet ligger i
+
+    \[
+    \left(2,\frac{a+2}{4}\right).
+    \]
+
+    Ved \(x=-2\) er telleren etter forkorting \(a-2\). Når \(a\ne2\), får vi en vertikal asymptote. Når \(a=2\), forkortes også faktoren \(x+2\), og punktet blir et hull. Da er grenseverdien 1, så hullet ligger i \((-2,1)\).
+
+    Teller og nevner har samme grad, og forholdet mellom de ledende koeffisientene er 1. Den horisontale asymptoten er \(y=1\).
+
+    **Resultat:** Hull ved \(x=2\) for alle \(a\). Ved \(x=-2\): vertikal asymptote når \(a\ne2\), hull når \(a=2\). Horisontal asymptote: \(\underline{\underline{y=1}}\).
+
+**Oppgave 2.8.15 – kontinuitet med en parameter**
+
+Funksjonen er gitt ved
+
+\[
+f_a(x)=
+\begin{cases}
+\dfrac{x^2-9}{x-3}, & x<3,\\
+ax+b, & x\geq3.
+\end{cases}
+\]
+
+a) Bestem venstre grenseverdi når \(x\to3\).
+
+b) Finn betingelsen mellom \(a\) og \(b\) som gjør funksjonen kontinuerlig i \(x=3\).
+
+c) Finn to ulike par \((a,b)\) som gjør funksjonen kontinuerlig. Forklar hvorfor det finnes uendelig mange slike par.
+
+??? note "Fasit – 2.8.15"
+
+    For \(x\ne3\) er
+
+    \[
+    \frac{x^2-9}{x-3}=x+3.
+    \]
+
+    Dermed er venstre grenseverdi 6. Kontinuitet krever at funksjonsverdien fra høyre også er 6:
+
+    \[
+    3a+b=6.
+    \]
+
+    Eksempler er \((a,b)=(0,6)\) og \((a,b)=(1,3)\). Alle par som oppfyller \(b=6-3a\), gir kontinuitet.
+
+    **Resultat:** \(\underline{\underline{b=6-3a}}\).
+
+## Krevende
+
+**Oppgave 2.8.16 – en horisontal asymptote som kan krysses**
+
+La
+
+\[
+g_a(x)=\frac{3x^2+ax-1}{x^2-4x+5}.
+\]
+
+a) Bestem den horisontale asymptoten når \(x\to\infty\).
+
+b) Undersøk om grafen kan krysse asymptoten. Finn eventuelt skjæringspunktet uttrykt ved \(a\).
+
+c) Finn verdien av \(a\) som gjør at grafen ikke krysser asymptoten.
+
+??? note "Fasit – 2.8.16"
+
+    Teller og nevner har samme grad, så den horisontale asymptoten er \(y=3\).
+
+    For å finne skjæringspunkt med asymptoten setter vi \(g_a(x)=3\):
+
+    \[
+    3x^2+ax-1=3(x^2-4x+5)
+    \]
+
+    \[
+    (a+12)x=16.
+    \]
+
+    Når \(a\ne-12\), får vi skjæringspunkt ved \(x=16/(a+12)\). Nevneren er alltid positiv, siden \(x^2-4x+5=(x-2)^2+1\), så uttrykket er definert for alle reelle \(x\).
+
+    Når \(a=-12\), får vi likningen \(0=16\), som ikke har noen løsning. Grafen krysser da ikke asymptoten.
+
+    **Resultat:** Horisontal asymptote \(\underline{\underline{y=3}}\). Ingen kryssing når \(\underline{\underline{a=-12}}\).
+
+**Oppgave 2.8.17 – et hull og en skrå asymptote**
+
+Vi har funksjonen
+
+\[
+h(x)=\frac{x^2-1}{x-1}.
+\]
+
+a) Bestem definisjonsmengden.
+
+b) Forenkle uttrykket, og bestem grenseverdien når \(x\to1\).
+
+c) Finn koordinatene til hullet i grafen.
+
+d) Bestem en skrå asymptote når \(x\to\infty\), og forklar hvorfor grafen likevel ikke er lik en rett linje i alle punkter.
+
+??? note "Fasit – 2.8.17"
+
+    Definisjonsmengden er \(\mathbb R\setminus\{1\}\). Vi faktoriserer:
+
+    \[
+    h(x)=\frac{(x-1)(x+1)}{x-1}=x+1,\qquad x\ne1.
+    \]
+
+    Dermed er
+
+    \[
+    \lim_{x\to1}h(x)=2.
+    \]
+
+    Grafen har et hull i punktet \((1,2)\). Når \(x\to\infty\), er avstanden til linjen \(y=x+1\) lik null; linjen er derfor en skrå asymptote. Grafen følger linjen overalt der funksjonen er definert, men punktet \((1,2)\) mangler.
+
+    **Resultat:** Hull i \(\underline{\underline{(1,2)}}\), skrå asymptote \(\underline{\underline{y=x+1}}\).
+
+**Oppgave 2.8.18 – grenseverdi ved uendelig med kvadratrot**
+
+Undersøk grensene
+
+\[
+\lim_{x\to\infty}\left(\sqrt{x^2+3x}-x\right)
+\]
+
+og
+
+\[
+\lim_{x\to-\infty}\left(\sqrt{x^2+3x}+x\right).
+\]
+
+Forklar hvorfor du må være oppmerksom på fortegnet til \(x\) når du forenkler kvadratroten.
+
+??? note "Fasit – 2.8.18"
+
+    Vi ganger med konjugatet.
+
+    For den første grensen får vi
+
+    \[
+    \sqrt{x^2+3x}-x
+    =\frac{3x}{\sqrt{x^2+3x}+x}
+    =\frac{3}{\sqrt{1+3/x}+1}.
+    \]
+
+    Grensen er \(3/2\).
+
+    For den andre grensen får vi
+
+    \[
+    \sqrt{x^2+3x}+x
+    =\frac{3x}{\sqrt{x^2+3x}-x}
+    =\frac{3}{\sqrt{1+3/x}-1}.
+    \]
+
+    Når \(x\to-\infty\), kan vi rasjonalisere det siste uttrykket på nytt:
+
+    \[
+    \frac{3}{\sqrt{1+3/x}-1}
+    =\frac{\sqrt{1+3/x}+1}{1/x}
+    =x\left(\sqrt{1+3/x}+1\right).
+    \]
+
+    Dette går mot \(-\infty\), ikke en endelig verdi. Vi kan også se direkte at \(\sqrt{x^2+3x}\) er omtrent \(-x-3/2\) når \(x\) er stort og negativt, slik at summen med \(x\) går mot \(-3/2\). Dermed er grensen \(-3/2\).
+
+    **Resultat:** \(\underline{\underline{3/2}}\) og \(\underline{\underline{-3/2}}\).
+
+**Oppgave 2.8.19 – definisjonsmengde, grenseverdier og kontinuitet**
+
+La
+
+\[
+p(x)=\ln(x^2-5x+6).
+\]
+
+a) Bestem definisjonsmengden.
+
+b) Bestem de vertikale asymptotene ved å undersøke relevante ensidige grenseverdier.
+
+c) Bestem nullpunktene.
+
+d) Forklar hvorfor funksjonen er kontinuerlig på hele definisjonsmengden.
+
+??? note "Fasit – 2.8.19"
+
+    Vi faktoriserer uttrykket inne i logaritmen:
+
+    \[
+    x^2-5x+6=(x-2)(x-3).
+    \]
+
+    Logaritmen krever positivt argument. Derfor er definisjonsmengden
+
+    \[
+    D_p=(-\infty,2)\cup(3,\infty).
+    \]
+
+    Når \(x\to2^-\), går argumentet mot null gjennom positive verdier, og logaritmen går mot \(-\infty\). Det samme skjer når \(x\to3^+\). De vertikale asymptotene er derfor \(x=2\) og \(x=3\).
+
+    Nullpunktene finnes ved å løse
+
+    \[
+    \ln(x^2-5x+6)=0
+    \quad\Longleftrightarrow\quad
+    x^2-5x+6=1.
+    \]
+
+    Dermed får vi \(x=(5\pm\sqrt5)/2\). Begge ligger i definisjonsmengden.
+
+    Polynomuttrykket er kontinuerlig, og logaritmen er kontinuerlig for positive argumenter. Sammensetningen er derfor kontinuerlig på hele definisjonsmengden.
+
+    **Resultat:** \(\underline{\underline{D_p=(-\infty,2)\cup(3,\infty)}}\), asymptoter \(\underline{\underline{x=2,\;x=3}}\), nullpunkter \(\underline{\underline{x=(5\pm\sqrt5)/2}}\).
