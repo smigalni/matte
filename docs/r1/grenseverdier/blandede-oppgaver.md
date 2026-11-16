@@ -10,19 +10,25 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     \(5\).
 
+    **Resultat:** \\(\\underline{\\underline{5}}\\)
+
 **2.8.2** Finn de ensidige grenseverdiene for \(f(x)=\begin{cases}x+1,&x<0,\\2x+1,&x\geq0.\end{cases}\).
 
 ??? note "Fasit – 2.8.2"
 
     Begge ensidige grenseverdiene er \(1\).
 
-**2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
+    **Resultat:** \\(\\underline{\\underline{1}}\\)
 
-## Middels
+**2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
 
 ??? note "Fasit – 2.8.3"
 
     Vertikal asymptote \(x=-4\).
+
+    **Resultat:** \\(\\underline{\\underline{x=-4}}\\)
+
+## Middels
 
 **2.8.4** Bestem \(a\) slik at \(f(x)=\begin{cases}ax+2,&x<1,\\x^2+3,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\).
 
@@ -30,19 +36,25 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
     Kontinuitet gir \(a+2=4\), altså \(a=2\).
 
+    **Resultat:** \\(\\underline{\\underline{a=2}}\\)
+
 **2.8.5** Beregn \(\lim_{x\to4}\frac{x^2-16}{x-4}\), og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
 
 ??? note "Fasit – 2.8.5"
 
     Grenseverdien er \(8\). Funksjonen er ikke definert ved \(x=4\).
 
-**2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
+    **Resultat:** \\(\\underline{\\underline{8}}\\)
 
-## Krevende
+**2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
 
 ??? note "Fasit – 2.8.6"
 
     Vertikale asymptoter \(x=-3\) og \(x=3\), horisontal asymptote \(y=2\).
+
+    **Resultat:** \\(\\underline{\\underline{x=\pm3,\;y=2}}\\)
+
+## Krevende
 
 **2.8.7 – krevende: kontinuitet og tangentstigningstall (bro til kapittel 3)** La
 
@@ -63,19 +75,25 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     
     **Resultat:** Kravene er uforenlige: \(\underline{\underline{b=a-1}}\) for kontinuitet og \(\underline{\underline{b=a+2}}\) for like stigningstall.
 
-**2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
+    **Resultat:** \\(\\underline{\\underline{b=a-1\quad\text{og}\quad b=a+2}}\\)
 
-## Utfordrende
+**2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
 
 ??? note "Fasit – 2.8.8"
 
     Ett eksempel er \(f(x)=-1+\frac{1}{x-2}\).
+
+    **Resultat:** \\(\\underline{\\underline{f(x)=-1+\frac{1}{x-2}}}\\)
+
+## Utfordrende
 
 **2.8.9** En elev hevder: «Hvis telleren og nevneren begge blir null, finnes det ingen grenseverdi.» Lag et moteksempel, løs grenseverdien og forklar hvilken konklusjon eleven burde trekke i stedet.
 
 ??? note "Fasit – 2.8.9"
 
     For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
+
+    **Resultat:** \\(\\underline{\\underline{\lim_{x\to1}\frac{x^2-1}{x-1}=2}}\\)
 
 **2.8.10 – flere fenomener i samme funksjon**
 
@@ -98,6 +116,8 @@ e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de
 ??? note "Fasit – 2.8.10"
 
     \(f_a(x)=\frac{(x-1)(x+a)}{(x-1)(x+1)}=\frac{x+a}{x+1}\), for \(x\ne-1,1\). Ved \(x=1\) er det alltid et hull med grenseverdi \((a+1)/2\). Ved \(x=-1\) er det vertikal asymptote når \(a\ne1\). Når \(a=1\), blir det også et hull, denne gangen i \((-1,1)\). Horisontal asymptote er \(y=1\).
+
+    **Resultat:** \\(\\underline{\\underline{y=1}}\\)
 
 **2.8.11 – R1 og T-matte: asymptoter og rasjonale ulikheter**
 
@@ -149,6 +169,8 @@ Oppgaven kombinerer grenseverdier og asymptoter fra R1 med faktorisering, forteg
     Det forkortede uttrykket har samme funksjonsverdier som den opprinnelige funksjonen der begge er definert, men forkortingen fyller ikke inn de to punktene som manglet i den opprinnelige definisjonsmengden.
     
     **Svar:** \(\underline{\underline{(-\infty,-a]\cup(1,a)\cup(a,\infty)}}\).
+
+    **Resultat:** \\(\\underline{\\underline{(-\infty,-a]\cup(1,a)\cup(a,\infty)}}\\)
 
 **2.8.12 – R1 og T-matte: polynomdivisjon, asymptoter og fortegn**
 
@@ -213,6 +235,8 @@ Oppgaven kombinerer grenseverdier fra R1 med polynomdivisjon, andregradsuttrykk 
     
     
     Ulikheten: \(\underline{\underline{(-1,1)\cup(1,\infty)}}\).
+
+    **Resultat:** \\(\\underline{\\underline{y=x+1}}\\)
 
 **2.8.13 – R1: logaritmer, nullpunkter, asymptoter og kontinuitet**
 
@@ -285,3 +309,5 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
     \(\underline{\underline{V_g=\mathbb R}}\).
     
     **e)** Sett \(p(x)=x^2-4x+3\) og \(h(x)=\ln x\). Da er \(g=h\circ p\). Polynomfunksjonen \(p\) er kontinuerlig for alle reelle \(x\), og logaritmefunksjonen \(h\) er kontinuerlig for positive argumenter. Siden \(p(x)>0\) akkurat på \(D_g\), er sammensetningen kontinuerlig på hele definisjonsmengden.
+
+    **Resultat:** \\(\\underline{\\underline{D_g=(-\infty,1)\cup(3,\infty)}}\\)
