@@ -103,7 +103,7 @@ En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjo
 
 **Slik leser du grafen:** En åpen sirkel viser ofte at endepunktet ikke er med i den aktuelle delen. En fylt sirkel viser at punktet er med. Kontroller alltid selve ulikheten i forskriften.
 
-!!! example "Eksempel 2.2.3 – finn funksjonsverdien"
+!!! example "Eksempel 2.2.2 – finn funksjonsverdien"
     La
 
     \[
