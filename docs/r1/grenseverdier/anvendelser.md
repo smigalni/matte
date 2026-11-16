@@ -62,7 +62,6 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     
     d) Modellen har sprang ved grensepunktene. Den kan likevel være praktisk fordi parkeringsplassen faktisk tar betalt per påbegynte tidsintervall.
 
-
     **Resultat:** \(\underline{\underline{P(1)=30,\;P(1{,}5)=60,\;P(2)=60}}\)
 !!! question "Oppgave 2.10.3 – velg en modell"
 
@@ -108,14 +107,13 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     
     d) Modell A er mer forutsigbar fordi prisen ikke hopper brått ved to timer. Eleven må begrunne vurderingen med grenseverdiene og prisforskjellen.
 
-
     **Resultat:** \(\underline{\underline{80\,\text{kr}}}\)
 !!! question "Oppgave 2.10.4 – grenseverdi i en beregning"
 
     I en matematisk modell inngår uttrykket
 
     \[
-    Q(x)=\frac{x^2-16}{x-4},\qquad x\ne4.
+    Q(x)=\dfrac{x^2-16}{x-4},\qquad x\ne4.
     \]
 
     a) Bestem \(\lim_{x\to4}Q(x)\).
@@ -131,7 +129,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     a) Vi faktoriserer:
     
     \[
-    Q(x)=\frac{(x-4)(x+4)}{x-4}=x+4,\qquad x\ne4.
+    Q(x)=\dfrac{(x-4)(x+4)}{x-4}=x+4,\qquad x\ne4.
     \]
     
     Dermed er
@@ -146,14 +144,13 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     
     d) Flere svar kan godtas. Eleven bør forklare at en grenseverdi kan beskrive en forventet eller tilnærmet verdi nær en grense, selv om selve punktet ikke inngår i modellen.
 
-
     **Resultat:** \(\underline{\underline{\lim_{x\to4}Q(x)=8}}\)
 !!! question "Oppgave 2.10.5 – temperatur som nærmer seg romtemperaturen"
 
     En kopp varm drikke står i et rom med konstant temperatur på 20 °C. En forenklet modell for temperaturen i drikken er
 
     \[
-    T(t)=20+\frac{60}{t+1},
+    T(t)=20+\dfrac{60}{t+1},
     \]
 
     der \(t\) er tiden i minutter etter at koppen settes fra seg. Modellen gjelder for \(t\geq0\).
@@ -180,7 +177,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     
     \[
     \lim_{t\to\infty}T(t)
-    =20+60\lim_{t\to\infty}\frac{1}{t+1}
+    =20+60\lim_{t\to\infty}\dfrac{1}{t+1}
     =20.
     \]
     
