@@ -4,7 +4,7 @@ Disse reglene gjelder for alt arbeid i dette repositoriet. Følg eksisterende l�
 
 ## 1. Git og arbeidsflyt
 
-- Arbeid på den feature-branchen brukeren har angitt. I den pågående samlede kapittel 3-jobben er branchen `feature/kapittel-3-derivasjon-komplett`.
+- Arbeid alltid på den aktive feature-branchen som er angitt for oppgaven. Ikke anta at en tidligere oppgaves branch fortsatt gjelder. Bekreft branch før hver skriveoperasjon.
 - Ikke gjør endringer direkte på `main`, og ikke opprett en ny branch når brukeren uttrykkelig ber om å bruke samme branch.
 - Bevar alle eksisterende, urelaterte endringer. Ikke tilbakestill eller overskriv arbeid uten grunn.
 - Bruk små, beskrivende commit-meldinger på norsk eller engelsk som passer repoets eksisterende historikk.
@@ -17,17 +17,17 @@ Bruk kapittel 3.1 og de nærmeste eksisterende kapitlene som visuell og struktur
 
 - **Eksempler:** alle gjennomarbeidede eksempler skal ligge inni en `!!! example`-boks. Bruk samme turkise eksempelbokser som i kapittel 3.1 og andre ferdige sider. Ikke presenter et fullstendig regneeksempel som en vanlig `### Eksempel`-overskrift uten boks.
 - **Regler og viktige formler:** bruk etablerte blå/regelfremhevende bokser og passende overskrifter.
-- **Oppgaver:** bruk etablerte lilla oppgavebokser med konsekvent nummerering.
+- **Oppgaver:** bruk etablerte lilla `!!! question`-bokser. Tittelen skal alltid ha hierarkisk nummerering, for eksempel `Oppgave 2.6.3`. Ikke bruk bare løse, fete nummeretiketter. Deloppgaver skal stå på egne linjer med tom linje mellom dem.
 - **Deloppgaver:** presenter hver deloppgave på egen linje med bokstavmerking (`a)`, `b)`, `c)` osv.). Ikke bruk ekstra punktliste eller nummerering foran bokstavene. Bruk samme format i oppgavetekst og fasit, og sørg for at eventuelle formelblokker står riktig under tilhørende deloppgave.
-- **Fasit:** legg fasit i sammenleggbare bokser med samme mønster som resten av nettstedet, for eksempel `??? note "Fasit – oppgave ..."` når dette er mønsteret på siden.
-- **Svar:** alle endelige svar i utregnede eksempler og fasiter skal dobbeltunderstrekes i MathJax: `\\underline{\\underline{...}}`.
-- **Matematikk:** bruk korrekt MathJax. Bruk display-matematikk for sentrale formler og mellomregninger. Bruk `\\dfrac{...}{...}` når en brøk ellers blir for liten eller utydelig.
+- **Fasit:** legg fasit rett etter tilhørende oppgave i sammenleggbar `??? note "Fasit – 2.6.3"`-boks. Nummeret skal samsvare nøyaktig med oppgaven. Ikke flytt fasit til et annet delkapittel eller la den stå under en ny seksjonsoverskrift.
+- **Svar:** alle endelige svar i utregnede eksempler og fasiter skal dobbeltunderstrekes i MathJax: `\\underline{\\underline{...}}`. Ikke la en fasit ha en løs eller feilkopiert resultatlinje.
+- **Matematikk:** bruk korrekt MathJax. Bruk display-matematikk for sentrale formler og mellomregninger. Bruk `\\dfrac{...}{...}` i display-formler og når en brøk ellers blir for liten eller utydelig; `\\frac` kan brukes i korte inline-uttrykk. Sett alltid en tom linje før og etter hver display-formel. Inne i admonitions skal hele formelblokken ha samme innrykk som innholdet. Bruk `aligned` når flere regnetrinn hører sammen.
 - **Mellomregning:** vis logiske steg på egne linjer med `aligned` der det passer. Ikke hopp over viktige steg for elever på VGS.
 - **Eksempler:** forklar metode trinnvis, si hvilken regel som brukes, definer symboler før de brukes, og avslutt med et tydelig dobbeltunderstreket svar.
 - **Feil elevene ofte gjør:** der det er pedagogisk relevant, ta med en tydelig advarsel eller et eksempel som forklarer feilen.
 - **Oppgavenivå:** varier oppgavene fra grunnleggende til mer krevende. Nummerer dem i eksisterende kapittelstruktur; ikke opprett nye kategorier uten at brukeren ber om det.
 - **Språk:** skriv klart og naturlig norsk, med konsekvent matematisk notasjon og begrepsbruk.
-- **Navigasjon:** oppdater relevante lenker og indeksfiler når en ny side eller seksjon krever det. Ikke endre navigasjonen unødvendig.
+- **Navigasjon:** oppdater relevante lenker og indeksfiler når en ny side eller seksjon krever det. Nummereringen i venstremenyen skal samsvare med sidetitler, oppgavenummer og kapittelstruktur. Ikke la nummerhull stå uforklart.\n- **Struktur:** ikke la tomme eksempel-/regel-/oppgavebokser stå igjen. Hver oppgave skal ha én entydig ID på formen kapittel.delkapittel.løpenummer, og hver fasit-ID skal samsvare med oppgaven.\n- **Mellomrom:** bruk én tom linje mellom separate oppgave-, fasit- og eksempelbokser. Ikke slå sammen to admonitions eller la neste overskrift bli del av forrige boks.
 - **Bilder/SVG:** følg eksisterende mønstre, sørg for tilgjengelig `aria-label`/alternativ tekst og kontroller at SVG-/figure-elementer er balansert.
 
 ## 3. Regler for derivasjonskapitlene
@@ -45,7 +45,7 @@ Ikke erklær arbeidet ferdig bare fordi en commit er opprettet. Gjennomfør så 
 1. **Sammenlign designet** med kapittel 3.1 eller nærmeste ferdige side.
 2. **Kontroller struktur:** overskrifter, oppgavenummer, fasit til alle oppgaver, interne lenker, bilde-/SVG-tagger og kodeblokker.
 3. **Kontroller matematikk:** regn gjennom nye svar og fasiter, inkludert fortegn, parenteser, definisjonsmengder og dobbeltunderstreking.
-4. **Kontroller rendering/build:** kjør prosjektets faktiske Zensical/MkDocs-bygg og relevante formatterings-/testkommandoer hvis miljøet er tilgjengelig. Hvis ikke, si eksplisitt at full bygging eller visuell nettleserkontroll ikke ble utført; ikke påstå at den er bestått.
+4. **Kontroller rendering/build:** kjør bokkvalitetssjekkeren på alle endrede Markdown-filer, enhetstestene for sjekkeren, prosjektets faktiske Zensical/MkDocs-bygg og relevante formatterings-/testkommandoer hvis miljøet er tilgjengelig. Hvis ikke, si eksplisitt at full bygging eller visuell nettleserkontroll ikke ble utført; ikke påstå at den er bestått.
 5. **Kontroller Git:** bekreft branch, commit og endrede filer. Bevar eksisterende arbeid.
 6. **Rapporter kort:** oppsummer hva som er endret, lenk til branch/commit eller filer, og oppgi hvilke kontroller som faktisk ble kjørt og eventuelle begrensninger.
 
