@@ -320,6 +320,20 @@ Når funksjonen er kontinuerlig i punktet og uttrykket er definert der, kan vi o
 
 ### Faktorisering og forkorting
 
+**Faktorisering** betyr å skrive et uttrykk som et produkt av faktorer. For eksempel kan vi skrive
+
+\[
+x^2-4=(x-2)(x+2).
+\]
+
+**Forkorting** av en brøk betyr at vi deler teller og nevner på den samme faktoren, forutsatt at faktoren ikke er null. Vi kan for eksempel forkorte
+
+\[
+\dfrac{(x-2)(x+2)}{x-2}=x+2,
+\]
+
+men bare når \(x\ne2\). Vi forkorter faktorer, ikke ledd som er lagt sammen eller trukket fra hverandre.
+
 Når vi faktoriserer og forkorter en rasjonal funksjon, må vi passe på definisjonsmengden. Nevneren i den opprinnelige funksjonen kan ikke være null. Selv om en faktor forkortes bort, blir derfor ikke den tilhørende x-verdien automatisk tillatt.
 
 !!! rule "Definisjonsmengde ved forkorting"
