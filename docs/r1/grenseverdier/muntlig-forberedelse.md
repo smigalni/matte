@@ -49,7 +49,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     Forklar om den vanlige grenseverdien finnes. Er funksjonen kontinuerlig i \(x=2\)? Begrunn svaret ved å bruke definisjonen av kontinuitet.
 
-??? note "Momenter i et godt svar"
+??? note "Momenter – 2.13.1"
 
     De ensidige grenseverdiene er like, så den vanlige grenseverdien finnes og er 4. Men \(f(2)=1\), så grenseverdien er ikke lik funksjonsverdien. Funksjonen er derfor ikke kontinuerlig i punktet.
 
@@ -67,7 +67,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     Forklar hvorfor den ene har et hull og den andre har en vertikal asymptote. Bruk faktorisering og ensidige grenseverdier.
 
-??? note "Momenter i et godt svar"
+??? note "Momenter – 2.13.2"
 
     For \(f\) kan vi forkorte faktoren \(x-2\), og uttrykket blir \(x+2\) for \(x\ne2\). Grenseverdien er 4 fra begge sider, så grafen har et hull.
 
@@ -79,7 +79,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     Forklar hvorfor framgangsmåten ikke er tilstrekkelig. Lag et eksempel der høyre og venstre grenseverdi er forskjellige.
 
-??? note "Momenter i et godt svar"
+??? note "Momenter – 2.13.3"
 
     Den tosidige grenseverdien finnes bare dersom begge ensidige grenseverdiene finnes og er like. Et eksempel er \(f(x)=\frac{1}{x}\) når \(x\to0\): fra venstre går funksjonen mot \(-\infty\), og fra høyre mot \(+\infty\).
 
@@ -93,7 +93,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     Forklar hvorfor direkte innsetting ikke gir svaret, og hvorfor forkortingen er lovlig i grenseprosessen.
 
-??? note "Momenter i et godt svar"
+??? note "Momenter – 2.13.4"
 
     Vi får først \(0/0\), som er en ubestemt form. Telleren faktoriseres til \((x-3)(x+3)\). For \(x\ne3\) kan vi forkorte \(x-3\), og grenseverdien blir 6. Vi endrer ikke funksjonsverdien i \(x=3\); vi undersøker verdiene nær punktet.
 
@@ -109,7 +109,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     Bestem asymptotene og forklar hvilke grenseverdier eller algebraiske metoder du bruker.
 
-??? note "Momenter i et godt svar"
+??? note "Momenter – 2.13.5"
 
     For \(f\) er nevneren null når \(x=\pm\sqrt2\), mens telleren da er ulik null. Dermed er \(x=-\sqrt2\) og \(x=\sqrt2\) vertikale asymptoter. Ved å dele teller og nevner på \(x^2\) får vi den horisontale asymptoten \(y=3\).
 
