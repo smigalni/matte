@@ -23,10 +23,11 @@ Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-re
 9. Matematikk skal ikke skrives som vanlige hakeparenteser rundt et uttrykk, for eksempel `[ f(x)=x^2 ]`.
 10. Deloppgaver i oppgavetekster og fasiter skal stå i hvert sitt avsnitt med bokstavmerking (`a)`, `b)`, `c)` osv.). Det skal være en tom linje før hver deloppgave, ingen ekstra punktmarkør eller nummerering foran bokstavene, og flere deloppgaver skal aldri stå på samme linje. Den automatiske sjekkeren kontrollerer dette.
 11. Oppgaver skal bruke `!!! question` og ha hierarkisk ID på formen `Oppgave kapittel.delkapittel.løpenummer`.
-12. Fasit-ID skal samsvare med tilhørende oppgave-ID, og oppgave-/fasitbokser skal ikke slås sammen uten tom linje.
-13. Nummererte eksempler skal bruke `Eksempel kapittel.delkapittel.løpenummer`.
-14. Admonitions for eksempel, oppgave og regel skal ha innhold; tomme bokser er feil.
-15. Display-formler skal ha tom linje før og etter, balanserte MathJax-avgrensninger og korrekt innrykk. Bruk `\\dfrac` når brøken må være lett å lese.
+12. Hver oppgave skal ha en fasit- eller momentboks med samme ID. Fasit-ID skal samsvare med tilhørende oppgave-ID, og oppgave-/svarbokser skal ikke slås sammen uten tom linje.
+13. Eksempel-ID-er skal være unike innenfor hver fil; tomme eksempelbokser og dupliserte nummer skal fanges automatisk.
+14. Nummererte eksempler skal bruke `Eksempel kapittel.delkapittel.løpenummer`.
+15. Admonitions for eksempel, oppgave og regel skal ha innhold; tomme bokser er feil.
+16. Display-formler skal ha tom linje før og etter, balanserte MathJax-avgrensninger og korrekt innrykk. Bruk `\\dfrac` når brøken må være lett å lese.
 
 ## Lokal kjøring
 
