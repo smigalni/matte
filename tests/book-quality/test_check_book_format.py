@@ -241,7 +241,7 @@ Tekst under
     def test_parameter_tuple_is_not_mistaken_for_subtask(self):
         content = """!!! question "Oppgave 2.3.1"
 
-    c) Finn to parameterpar \((a,b)\) som oppfyller kravet.
+    c) Finn to parameterpar \\((a,b)\\) som oppfyller kravet.
 """
         self.assertEqual(self.check(content), [])
 
