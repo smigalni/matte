@@ -158,7 +158,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
 ??? note "Fasit – 2.11.6"
 
-    Påstanden er feil i begge deler. Oppgave A viser at nevner lik null kan gi et hull. Oppgave B viser at både teller og nevner lik null også kan gi en vertikal asymptote.
+    Påstanden er feil i begge deler. Eksempel 2.11.1 viser at nevner lik null kan gi et hull. Eksempel 2.11.2 viser at både teller og nevner lik null også kan gi en vertikal asymptote.
 
     **Resultat:** \(\underline{\underline{\text{Påstanden er feil}}}\)
 !!! question "Oppgave 2.11.7 – lag selv"
