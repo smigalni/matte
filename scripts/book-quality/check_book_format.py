@@ -131,7 +131,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
         answer_ids = []
         for number, line in visible:
             task = re.match(r'^\s*!!!\s+question\s+["\']Oppgave\s+(\d+\.\d+\.\d+)', line)
-            answer = re.match(r'^\s*\?\?\?\s+\w+\s+["\']Fasit\s*[–-]\s*(?:oppgave\s+)?(\d+\.\d+\.\d+)', line, re.IGNORECASE)
+            answer = re.match(r'^\s*\?\?\?\s+\w+\s+["\'](?:Fasit|Momenter)\s*[–-]\s*(?:oppgave\s+)?(\d+\.\d+\.\d+)', line, re.IGNORECASE)
             if task:
                 task_ids.append((task.group(1), number))
             if answer:
@@ -148,6 +148,9 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
             if answer_id not in seen_tasks:
                 errors.append(f"{relative}:{number}: Fasit {answer_id} har ingen oppgave med samme nummer.")
             seen_answers.add(answer_id)
+        for task_id, number in task_ids:
+            if task_id not in seen_answers:
+                errors.append(f"{relative}:{number}: Oppgave {task_id} mangler fasit- eller momentboks med samme nummer.")
 
     if checks.get("check_empty_admonitions", True):
         for position, (number, line) in enumerate(visible):
