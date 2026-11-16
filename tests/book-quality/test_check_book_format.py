@@ -205,6 +205,25 @@ Tekst under
 '''
         self.assertEqual(self.check(content), [])
 
+    def test_task_and_moments_ids_match(self):
+        content = r'''!!! question "Oppgave 2.13.1"
+
+    Forklar begrepet.
+
+??? note "Momenter – 2.13.1"
+
+    Et godt svar forklarer begrepet presist.
+'''
+        self.assertEqual(self.check(content), [])
+
+    def test_task_without_answer_box_fails(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Finn grenseverdien.
+'''
+        errors = self.check(content)
+        self.assertTrue(any("mangler fasit- eller momentboks" in e for e in errors))
+
     def test_mismatched_fasit_id_fails(self):
         content = r'''!!! question "Oppgave 2.3.1"
 
