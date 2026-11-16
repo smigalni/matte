@@ -199,7 +199,9 @@ Tekst under
 
 ??? note "Fasit – 2.3.1"
 
-    **Resultat:** \\(\\underline{\\underline{4}}\\)
+    \\\[
+    \\underline{\\underline{4}}
+    \\\]
 '''
         self.assertEqual(self.check(content), [])
 
