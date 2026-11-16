@@ -224,13 +224,16 @@ f(x)=\begin{cases}2x-1,&x<1,\\x+3,&x\geq1.\end{cases}
     **Resultat:** \(\underline{\underline{1\ne4}}\)
 ## 2.4 Kontinuitet
 
-En funksjon er kontinuerlig i \(x=a\) når grafen ikke har et brudd der. For å kontrollere kontinuitet må tre forhold være oppfylt:
+En funksjon er kontinuerlig i \(x=a\) når grafen ikke har et brudd der.
 
-1. \(f(a)\) er definert.
-2. Den tosidige grenseverdien \(\lim_{x\to a}f(x)\) finnes.
-3. Grenseverdien er lik funksjonsverdien: \(\lim_{x\to a}f(x)=f(a)\).
+!!! rule "Kontinuitet i et punkt"
+    En funksjon \(f\) er kontinuerlig i \(x=a\) når alle disse tre kravene er oppfylt:
 
-Det er nyttig å tenke på dette som tre kontrollspørsmål. At de ensidige grensene er like, er nødvendig for at den tosidige grenseverdien skal finnes, men det er ikke nok alene: grenseverdien må også være lik funksjonsverdien.
+    1. \(f(a)\) er definert.
+    2. Den tosidige grenseverdien \(\lim_{x\to a}f(x)\) finnes.
+    3. Grenseverdien er lik funksjonsverdien: \(\lim_{x\to a}f(x)=f(a)\).
+
+At de ensidige grensene er like, er nødvendig for at den tosidige grenseverdien skal finnes. Men det er ikke nok alene – grenseverdien må også være lik funksjonsverdien.
 
 !!! example "Eksempel 2.4.1 – bestem en parameter for kontinuitet"
     La
