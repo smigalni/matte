@@ -58,9 +58,9 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
     Sammenlign funksjonene
 
     \[
-    f(x)=\frac{x^2-4}{x-2}
+    f(x)=\dfrac{x^2-4}{x-2}
     \qquad\text{og}\qquad
-    g(x)=\frac{x^2-4}{(x-2)^2}.
+    g(x)=\dfrac{x^2-4}{(x-2)^2}.
     \]
 
     Begge har en nevner som blir null når \(x=2\).
@@ -88,7 +88,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
     Bestem
 
     \[
-    \lim_{x\to3}\frac{x^2-9}{x-3}.
+    \lim_{x\to3}\dfrac{x^2-9}{x-3}.
     \]
 
     Forklar hvorfor direkte innsetting ikke gir svaret, og hvorfor forkortingen er lovlig i grenseprosessen.
@@ -102,9 +102,9 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
     Sammenlign
 
     \[
-    f(x)=\frac{3x^2+1}{x^2-2}
+    f(x)=\dfrac{3x^2+1}{x^2-2}
     \qquad\text{og}\qquad
-    g(x)=\frac{x^2+1}{x}.
+    g(x)=\dfrac{x^2+1}{x}.
     \]
 
     Bestem asymptotene og forklar hvilke grenseverdier eller algebraiske metoder du bruker.
