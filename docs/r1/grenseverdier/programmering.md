@@ -31,7 +31,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     For \(x\ne2\) kan vi faktorisere uttrykket:
 
     \[
-    f(x)=\frac{(x-2)(x+2)}{x-2}=x+2.
+    f(x)=\dfrac{(x-2)(x+2)}{x-2}=x+2.
     \]
 
     Programmet skriver ut:
@@ -45,7 +45,6 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Verdiene nærmer seg 4. Funksjonen er ikke definert ved \(x=2\), fordi den opprinnelige nevneren blir null. Faktoriseringen viser matematisk at grenseverdien er 4.
     **Resultat:** \(\underline{\underline{4}}\).
-
 
 !!! question "Oppgave 2.7.2 – Les en undersøkelse fra begge sider"
 
@@ -79,13 +78,12 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Verdiene 2.9 og 2.99 ligger til venstre for 3. Verdiene 3.01 og 3.1 ligger til høyre. Dermed ser vi at funksjonen går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Dette viser hvorfor vi må undersøke begge retninger.
     **Resultat:** Fra venstre \(\underline{\underline{-\infty}}\), fra høyre \(\underline{\underline{+\infty}}\).
 
-
 !!! question "Oppgave 2.7.3 – Finn feilen i programmet"
 
     En elev vil undersøke funksjonen
 
     \[
-    f(x)=\frac{x^2-4}{x-2}
+    f(x)=\dfrac{x^2-4}{x-2}
     \]
 
     og skriver:
@@ -131,7 +129,6 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     **Resultat:** Programmet må håndtere \(\underline{\underline{x=2}}\) særskilt for å unngå deling på null.
 
-
 ### Del B – skriv egne programmer
 
 !!! question "Oppgave 2.7.4 – Lag en verditabell"
@@ -139,7 +136,7 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Skriv et Python-program som undersøker funksjonen
 
     \[
-    f(x)=\frac{x^2-9}{x-3}
+    f(x)=\dfrac{x^2-9}{x-3}
     \]
 
     for \(x\)-verdiene 2.9, 2.99, 3.01 og 3.1.
@@ -174,13 +171,12 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
     Verdiene nærmer seg 6. Ved faktorisering får vi \(f(x)=x+3\) for \(x\ne3\), og dermed er grenseverdien 6.
     **Resultat:** \(\underline{\underline{6}}\).
 
-
 !!! question "Oppgave 2.7.5 – Undersøk venstre og høyre side"
 
     Skriv et program som undersøker
 
     \[
-    g(x)=\frac{1}{x-1}
+    g(x)=\dfrac{1}{x-1}
     \]
 
     for x-verdier nær 1 fra begge sider.
@@ -216,7 +212,6 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Verdiene går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Derfor er \(x=1\) en vertikal asymptote.
     **Resultat:** Vertikal asymptote \(\underline{\underline{x=1}}\).
-
 
 !!! question "Oppgave 2.7.6 – Test kontinuitet med en parameter"
 
@@ -267,6 +262,4 @@ I dette delkapitlet skal du både lese andres kode og skrive egne programmer. Du
 
     Dermed er \(k=1\). Programmet undersøker tallverdier, mens likningen gir den eksakte begrunnelsen.
     **Resultat:** Kontinuitet fås for \(\underline{\underline{k=1}}\).
-
-
 
