@@ -1,6 +1,8 @@
 # 2. Grenseverdier og kontinuitet
 
-## Læringsmål
+## Dette skal du lære
+
+I dette kapittelet lærer du å undersøke hva funksjoner nærmer seg, avgjøre om de er kontinuerlige, og bruke grenseverdier til å forstå hull, sprang og asymptoter. Du skal kunne begrunne svarene både algebraisk og ved hjelp av grafer og digitale verktøy.
 
 Når du har arbeidet med kapittelet, skal du kunne:
 
@@ -49,6 +51,9 @@ d) \(p(x)=\frac{x+1}{x-3}\)
 
 e) \(q(x)=\ln(x-2)\)
 
+??? note "Fasit – 2.1.1"
+
+    a) Lineær funksjon, \(D_f=\mathbb R\).
 **2.1.2** En funksjon er gitt ved
 
 \[
@@ -63,24 +68,9 @@ c) Hva blir verdien av det forenklede uttrykket når du setter inn \(x=2\)?
 
 d) Forklar hvorfor dette ikke betyr at den opprinnelige funksjonen automatisk er definert i \(x=2\).
 
-??? note "Fasit – oppgaver 2.1"
+??? note "Fasit – 2.1.2"
 
-    **2.1.1:**
-
-    a) Lineær funksjon, \(D_f=\mathbb R\).
-
-    b) Andregradsfunksjon, \(D_g=\mathbb R\).
-
-    c) Eksponentialfunksjon, \(D_h=\mathbb R\).
-
-    d) Rasjonal funksjon, \(D_p=\mathbb R\setminus\{3\}\).
-
-    e) Logaritmefunksjon, \(D_q=(2,\infty)\).
-
-    **2.1.2:** Vi faktoriserer \(x^2-4=(x-2)(x+2)\). For \(x\ne2\) får vi \(r(x)=x+2\). Definisjonsmengden er \(\mathbb R\setminus\{2\}\). Det forenklede uttrykket gir verdien 4 når vi setter inn \(x=2\), men den opprinnelige funksjonen er fortsatt ikke definert der. Forkortingen endrer ikke definisjonsmengden.
-
-    **Resultat:** Det forenklede uttrykket gir \(\underline{\underline{4}}\), mens \(r(2)\) ikke er definert.
-
+    Vi faktoriserer \(x^2-4=(x-2)(x+2)\). For \(x\ne2\) får vi \(r(x)=x+2\). Definisjonsmengden er \(\mathbb R\setminus\{2\}\). Det forenklede uttrykket gir verdien 4 når vi setter inn \(x=2\), men den opprinnelige funksjonen er fortsatt ikke definert der. Forkortingen endrer ikke definisjonsmengden.
 
 ## 2.2 Funksjoner med delte forskrifter
 
@@ -99,7 +89,7 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
 
 **Slik leser du grafen:** En åpen sirkel viser ofte at endepunktet ikke er med i den aktuelle delen. En fylt sirkel viser at punktet er med. Kontroller alltid selve ulikheten i forskriften.
 
-!!! example "Eksempel – finn funksjonsverdien"
+!!! example "Eksempel 2.2.1 – finn funksjonsverdien"
     La
 
     \[
@@ -121,26 +111,26 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
 
 ### Oppgaver 2.2
 
-**2.2.1** La \(f(x)=\begin{cases}2x+1,&x<3,\\x^2-2,&x\geq3.\end{cases}\) Finn \(f(0)\), \(f(3)\) og \(f(4)\).
+**2.2.5** La \(f(x)=\begin{cases}2x+1,&x<3,\\x^2-2,&x\geq3.\end{cases}\) Finn \(f(0)\), \(f(3)\) og \(f(4)\).
 
-**2.2.2** Skriv \(|x-2|\) som en delt forskrift. Forklar hvorfor forskriften skifter ved \(x=2\).
+??? note "Fasit – 2.2.5"
 
-**2.2.3** En funksjon er gitt ved \(g(x)=\begin{cases}ax+1,&x<2,\\x^2-1,&x\geq2.\end{cases}\). Bestem \(a\) slik at de to uttrykkene gir samme grenseverdi ved \(x=2\). Er funksjonen da nødvendigvis kontinuerlig? Begrunn.
+    Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
+**2.2.5** Skriv \(|x-2|\) som en delt forskrift. Forklar hvorfor forskriften skifter ved \(x=2\).
 
-**2.2.4** Lag en delt forskrift som har \(f(0)=4\), men der venstre grenseverdi når \(x\to0\) er 2 og høyre grenseverdi er 5. Forklar hvordan forskriften din viser dette.
+??? note "Fasit – 2.2.5"
 
+    Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
+**2.2.5** En funksjon er gitt ved \(g(x)=\begin{cases}ax+1,&x<2,\\x^2-1,&x\geq2.\end{cases}\). Bestem \(a\) slik at de to uttrykkene gir samme grenseverdi ved \(x=2\). Er funksjonen da nødvendigvis kontinuerlig? Begrunn.
 
-??? note "Fasit – oppgaver 2.2"
+??? note "Fasit – 2.2.5"
 
-    **2.2.1:** \(f(0)=1\), \(f(3)=7\) og \(f(4)=14\).
+    Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
+**2.2.5** Lag en delt forskrift som har \(f(0)=4\), men der venstre grenseverdi når \(x\to0\) er 2 og høyre grenseverdi er 5. Forklar hvordan forskriften din viser dette.
 
-    **2.2.2:** \(|x-2|=2-x\) når \(x<2\), og \(|x-2|=x-2\) når \(x\geq2\).
+??? note "Fasit – 2.2.5"
 
-    **2.2.3:** Vi må ha \(2a+1=3\), så \(a=1\). Da er også \(g(2)=3\), og funksjonen er kontinuerlig i \(x=2\).
-
-    **2.2.4:** Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
-
-    **Resultat:** \(\underline{\underline{a=1}}\) i oppgave 2.2.3.
+    Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
 
 ## 2.3 Ensidige grenseverdier og grenseverdier
 
@@ -164,7 +154,7 @@ Vi skiller mellom to retninger:
 
 Den vanlige grenseverdien \(\lim_{x\to a}f(x)\) finnes bare når begge ensidige grenseverdiene finnes og er like.
 
-!!! example "Eksempel – grenseverdi fra graf eller forskrift"
+!!! example "Eksempel 2.3.1 – grenseverdi fra graf eller forskrift"
     La \(f(x)=\begin{cases}x+1,&x<2,\\5-x,&x\geq2.\end{cases}\)
 
     Fra venstre nærmer \(x+1\) seg 3:
@@ -183,30 +173,30 @@ Den vanlige grenseverdien \(\lim_{x\to a}f(x)\) finnes bare når begge ensidige 
 
 ### Oppgaver 2.3
 
-**2.3.1** Bestem de ensidige grenseverdiene og avgjør om den vanlige grenseverdien finnes:
+**2.3.5** Bestem de ensidige grenseverdiene og avgjør om den vanlige grenseverdien finnes:
 
 \[
 f(x)=\begin{cases}2x-1,&x<1,\\x+3,&x\geq1.\end{cases}
 \]
 
-**2.3.2** En graf nærmer seg \(y=4\) fra begge sider når \(x\to2\), men punktet \((2,1)\) er fylt. Hva er grenseverdien, og hva er \(f(2)\)? Forklar forskjellen.
+??? note "Fasit – 2.3.5"
 
-**2.3.3** Undersøk de ensidige grenseverdiene til \(f(x)=\frac{1}{x-3}\) når \(x\to3\). Forklar hvorfor den vanlige grenseverdien ikke finnes som et endelig tall.
+    Ett eksempel er \(f(x)=2\) når \(x<1\), \(f(1)=3\) og \(f(x)=5\) når \(x>1\).
+**2.3.5** En graf nærmer seg \(y=4\) fra begge sider når \(x\to2\), men punktet \((2,1)\) er fylt. Hva er grenseverdien, og hva er \(f(2)\)? Forklar forskjellen.
 
-**2.3.4** Lag en funksjon der \(\lim_{x\to1^-}f(x)=2\), mens \(\lim_{x\to1^+}f(x)=5\). Vis at den vanlige grenseverdien ikke finnes.
+??? note "Fasit – 2.3.5"
 
+    Ett eksempel er \(f(x)=2\) når \(x<1\), \(f(1)=3\) og \(f(x)=5\) når \(x>1\).
+**2.3.5** Undersøk de ensidige grenseverdiene til \(f(x)=\frac{1}{x-3}\) når \(x\to3\). Forklar hvorfor den vanlige grenseverdien ikke finnes som et endelig tall.
 
-??? note "Fasit – oppgaver 2.3"
+??? note "Fasit – 2.3.5"
 
-    **2.3.1:** Venstre grenseverdi er \(1\), mens høyre grenseverdi er \(4\). Den tosidige grenseverdien finnes ikke.
+    Ett eksempel er \(f(x)=2\) når \(x<1\), \(f(1)=3\) og \(f(x)=5\) når \(x>1\).
+**2.3.5** Lag en funksjon der \(\lim_{x\to1^-}f(x)=2\), mens \(\lim_{x\to1^+}f(x)=5\). Vis at den vanlige grenseverdien ikke finnes.
 
-    **2.3.2:** Grenseverdien er \(4\), mens \(f(2)=1\). Funksjonen er ikke kontinuerlig i \(x=2\).
+??? note "Fasit – 2.3.5"
 
-    **2.3.3:** Fra venstre går funksjonen mot \(-\infty\), og fra høyre mot \(+\infty\). Den har vertikal asymptote \(x=3\).
-
-    **2.3.4:** Ett eksempel er \(f(x)=2\) når \(x<1\), \(f(1)=3\) og \(f(x)=5\) når \(x>1\).
-
-    **Resultat:** \(\underline{\underline{\lim_{x\to1^-}f(x)=2,\quad \lim_{x\to1^+}f(x)=5}}\) i oppgave 2.3.4.
+    Ett eksempel er \(f(x)=2\) når \(x<1\), \(f(1)=3\) og \(f(x)=5\) når \(x>1\).
 
 ## 2.4 Kontinuitet
 
@@ -218,7 +208,7 @@ En funksjon er kontinuerlig i \(x=a\) når grafen ikke har et brudd der. For å 
 
 Det er nyttig å tenke på dette som tre kontrollspørsmål. At de ensidige grensene er like, er nødvendig for at den tosidige grenseverdien skal finnes, men det er ikke nok alene: grenseverdien må også være lik funksjonsverdien.
 
-!!! example "Eksempel – bestem en parameter for kontinuitet"
+!!! example "Eksempel 2.4.1 – bestem en parameter for kontinuitet"
     La
 
     \[
@@ -242,26 +232,26 @@ Det er nyttig å tenke på dette som tre kontrollspørsmål. At de ensidige gren
 
 ### Oppgaver 2.4
 
-**2.4.1** Undersøk om \(f(x)=\begin{cases}x+2,&x<1,\\2x,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\). Vis alle tre kontrollpunktene.
+**2.4.5** Undersøk om \(f(x)=\begin{cases}x+2,&x<1,\\2x,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\). Vis alle tre kontrollpunktene.
 
-**2.4.2** Bestem \(a\) slik at \(f(x)=\begin{cases}ax-2,&x<3,\\x+4,&x\geq3.\end{cases}\) er kontinuerlig i \(x=3\).
+??? note "Fasit – 2.4.5"
 
-**2.4.3** En funksjon har like ensidige grenseverdier 6 ved \(x=2\), men \(f(2)=0\). Er funksjonen kontinuerlig i punktet? Kan grenseverdien finnes? Begrunn.
+    For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
+**2.4.5** Bestem \(a\) slik at \(f(x)=\begin{cases}ax-2,&x<3,\\x+4,&x\geq3.\end{cases}\) er kontinuerlig i \(x=3\).
 
-**2.4.4** En funksjon er definert ved \(f(x)=\frac{x^2-4}{x-2}\) for \(x\ne2\), og \(f(2)=k\). Bestem \(k\) slik at funksjonen blir kontinuerlig i \(x=2\). Forklar hvorfor faktorisering er nyttig.
+??? note "Fasit – 2.4.5"
 
+    For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
+**2.4.5** En funksjon har like ensidige grenseverdier 6 ved \(x=2\), men \(f(2)=0\). Er funksjonen kontinuerlig i punktet? Kan grenseverdien finnes? Begrunn.
 
-??? note "Fasit – oppgaver 2.4"
+??? note "Fasit – 2.4.5"
 
-    **2.4.1:** Venstre grenseverdi er \(3\), mens høyre grenseverdi og funksjonsverdien er \(2\). Funksjonen er ikke kontinuerlig.
+    For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
+**2.4.5** En funksjon er definert ved \(f(x)=\frac{x^2-4}{x-2}\) for \(x\ne2\), og \(f(2)=k\). Bestem \(k\) slik at funksjonen blir kontinuerlig i \(x=2\). Forklar hvorfor faktorisering er nyttig.
 
-    **2.4.2:** Kontinuitet gir \(3a-2=7\), altså \(a=3\).
+??? note "Fasit – 2.4.5"
 
-    **2.4.3:** Den tosidige grenseverdien finnes og er \(6\), men funksjonsverdien er \(0\). Funksjonen er derfor ikke kontinuerlig.
-
-    **2.4.4:** For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
-
-    **Resultat:** \(\underline{\underline{k=4}}\) i oppgave 2.4.4.
+    For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
 
 ## 2.5 Teknikker for å beregne grenseverdier
 
@@ -269,7 +259,8 @@ Når funksjonen er kontinuerlig i punktet og uttrykket er definert der, kan vi o
 
 ### Faktorisering og forkorting
 
-Eksempel:
+**Eksempel 2.5.1 – faktorisering og forkorting**
+
 
 \[
 \lim_{x\to2}\frac{x^2-4}{x-2}.
@@ -309,30 +300,31 @@ Siden \(1/x^2\to0\), nærmer funksjonen seg 3.
 
 ### Oppgaver 2.5
 
-**2.5.1** Beregn \(\lim_{x\to3}\frac{x^2-9}{x-3}\). Vis faktoriseringen og forklar hvorfor forkortingen er lovlig i grenseprosessen.
+**2.5.7** Beregn \(\lim_{x\to3}\frac{x^2-9}{x-3}\). Vis faktoriseringen og forklar hvorfor forkortingen er lovlig i grenseprosessen.
 
-**2.5.2** Beregn \(\lim_{x\to-2}\frac{x^2+5x+6}{x+2}\).
+??? note "Fasit – 2.5.7"
 
-**2.5.3** Beregn \(\lim_{x\to1}\frac{x^2-1}{x^2-3x+2}\). Forklar hva som skjer med telleren og nevneren etter faktorisering.
+    \(0/0\) er en ubestemt form. Faktorisering gir \((x-2)(x+2)/(x-2)=x+2\), så grenseverdien er \(4\).
+**2.5.6** Beregn \(\lim_{x\to-2}\frac{x^2+5x+6}{x+2}\).
 
-**2.5.4** Beregn \(\lim_{x\to\infty}\frac{5x^2-2x+1}{2x^2+7}\), og begrunn svaret ved å dele på riktig potens av \(x\).
+??? note "Fasit – 2.5.6"
 
-**2.5.5** En elev sier at \(\lim_{x\to2}\frac{x^2-4}{x-2}\) ikke finnes fordi uttrykket gir \(0/0\). Forklar presist hva som er feil i argumentet, og vis en korrekt løsning.
+    Teller og nevner har samme grad. Grenseverdien er forholdet mellom koeffisientene foran \(x^2\), altså \(5/2\).
+**2.5.7** Beregn \(\lim_{x\to1}\frac{x^2-1}{x^2-3x+2}\). Forklar hva som skjer med telleren og nevneren etter faktorisering.
 
+??? note "Fasit – 2.5.7"
 
-??? note "Fasit – oppgaver 2.5"
+    \(0/0\) er en ubestemt form. Faktorisering gir \((x-2)(x+2)/(x-2)=x+2\), så grenseverdien er \(4\).
+**2.5.6** Beregn \(\lim_{x\to\infty}\frac{5x^2-2x+1}{2x^2+7}\), og begrunn svaret ved å dele på riktig potens av \(x\).
 
-    **2.5.1:** \(x^2-9=(x-3)(x+3)\), så grenseverdien er \(6\).
+??? note "Fasit – 2.5.6"
 
-    **2.5.2:** \(x^2+5x+6=(x+2)(x+3)\), så grenseverdien er \(1\).
+    Teller og nevner har samme grad. Grenseverdien er forholdet mellom koeffisientene foran \(x^2\), altså \(5/2\).
+**2.5.7** En elev sier at \(\lim_{x\to2}\frac{x^2-4}{x-2}\) ikke finnes fordi uttrykket gir \(0/0\). Forklar presist hva som er feil i argumentet, og vis en korrekt løsning.
 
-    **2.5.3:** Etter faktorisering og forkorting får vi \((x+1)/(x-2)\). Grenseverdien er \(-2\).
+??? note "Fasit – 2.5.7"
 
-    **2.5.4:** Teller og nevner har samme grad. Grenseverdien er forholdet mellom koeffisientene foran \(x^2\), altså \(5/2\).
-
-    **2.5.5:** \(0/0\) er en ubestemt form. Faktorisering gir \((x-2)(x+2)/(x-2)=x+2\), så grenseverdien er \(4\).
-
-    **Resultat:** \(\underline{\underline{6,\;1,\;-2,\;\frac52,\;4}}\) i oppgave 2.5.1–2.5.5.
+    \(0/0\) er en ubestemt form. Faktorisering gir \((x-2)(x+2)/(x-2)=x+2\), så grenseverdien er \(4\).
 
 ## 2.6 Asymptoter
 
@@ -370,23 +362,23 @@ Når \(x\to\pm\infty\), går \(1/x\to0\). Derfor er \(y=x\) en skrå asymptote.
 
 ### Oppgaver 2.6
 
-**2.6.1** Finn vertikal og horisontal asymptote til \(f(x)=\frac{3x+1}{x-2}\). Begrunn med grenseverdier.
+**2.6.5** Finn vertikal og horisontal asymptote til \(f(x)=\frac{3x+1}{x-2}\). Begrunn med grenseverdier.
 
-**2.6.2** Undersøk asymptotene til \(g(x)=\frac{x^2-4}{x-2}\). Forklar hvorfor en verdi som gjør nevneren null, ikke automatisk gir en vertikal asymptote.
+??? note "Fasit – 2.6.5"
 
-**2.6.3** Bruk polynomdivisjon til å bestemme eventuell skrå asymptote for \(h(x)=\frac{2x^2+3x-1}{x+1}\).
+    Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
+**2.6.6** Undersøk asymptotene til \(g(x)=\frac{x^2-4}{x-2}\). Forklar hvorfor en verdi som gjør nevneren null, ikke automatisk gir en vertikal asymptote.
 
-**2.6.4** En rasjonal funksjon har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\). Lag et mulig funksjonsuttrykk og forklar hvordan du vet at uttrykket oppfyller kravene. Det finnes flere svar.
+??? note "Fasit – 2.6.6"
 
+    Ett mulig uttrykk er \(f(x)=3+\frac{1}{x+2}\). Det har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\).
+**2.6.5** Bruk polynomdivisjon til å bestemme eventuell skrå asymptote for \(h(x)=\frac{2x^2+3x-1}{x+1}\).
 
-??? note "Fasit – oppgaver 2.6"
+??? note "Fasit – 2.6.5"
 
-    **2.6.1:** Vertikal asymptote \(x=2\), horisontal asymptote \(y=3\).
+    Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
+**2.6.6** En rasjonal funksjon har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\). Lag et mulig funksjonsuttrykk og forklar hvordan du vet at uttrykket oppfyller kravene. Det finnes flere svar.
 
-    **2.6.2:** For \(x\ne2\) er funksjonen lik \(x+2\). Grafen ligger derfor på linjen \(y=x+2\), bortsett fra et hull i \((2,4)\). Linjen \(y=x+2\) er den skrå asymptoten. Det er ingen vertikal asymptote ved \(x=2\), fordi grenseverdiene er endelige.
+??? note "Fasit – 2.6.6"
 
-    **2.6.3:** Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
-
-    **2.6.4:** Ett mulig uttrykk er \(f(x)=3+\frac{1}{x+2}\). Det har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\).
-
-    **Resultat:** \(\underline{\underline{x=2,\;y=3}}\) i oppgave 2.6.1.
+    Ett mulig uttrykk er \(f(x)=3+\frac{1}{x+2}\). Det har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\).
