@@ -321,7 +321,7 @@ e) Skriv \(g\) som en sammensetning av to funksjoner. Bruk dette til å forklare
     **Resultat:** \(\underline{\underline{D_g=(-\infty,1)\cup(3,\infty)}}\)
 
 
-## Middels
+## Flere blandede oppgaver
 
 **Oppgave 2.8.14 – hull eller vertikal asymptote?**
 
@@ -395,8 +395,6 @@ c) Finn to ulike par \((a,b)\) som gjør funksjonen kontinuerlig. Forklar hvorfo
     Eksempler er \((a,b)=(0,6)\) og \((a,b)=(1,3)\). Alle par som oppfyller \(b=6-3a\), gir kontinuitet.
 
     **Resultat:** \(\underline{\underline{b=6-3a}}\).
-
-## Krevende
 
 **Oppgave 2.8.16 – en horisontal asymptote som kan krysses**
 
@@ -496,23 +494,22 @@ Forklar hvorfor du må være oppmerksom på fortegnet til \(x\) når du forenkle
 
     Grensen er \(3/2\).
 
-    For den andre grensen får vi
+    For den andre grensen må vi bruke at \(x<0\), slik at \(\sqrt{x^2}=|x|=-x\):
 
     \[
     \sqrt{x^2+3x}+x
-    =\frac{3x}{\sqrt{x^2+3x}-x}
-    =\frac{3}{\sqrt{1+3/x}-1}.
+    =-x\sqrt{1+3/x}+x
+    =x\left(1-\sqrt{1+3/x}\right).
     \]
 
-    Når \(x\to-\infty\), kan vi rasjonalisere det siste uttrykket på nytt:
+    Vi rasjonaliserer:
 
     \[
-    \frac{3}{\sqrt{1+3/x}-1}
-    =\frac{\sqrt{1+3/x}+1}{1/x}
-    =x\left(\sqrt{1+3/x}+1\right).
+    x\left(1-\sqrt{1+3/x}\right)
+    =\frac{-3}{1+\sqrt{1+3/x}}.
     \]
 
-    Dette går mot \(-\infty\), ikke en endelig verdi. Vi kan også se direkte at \(\sqrt{x^2+3x}\) er omtrent \(-x-3/2\) når \(x\) er stort og negativt, slik at summen med \(x\) går mot \(-3/2\). Dermed er grensen \(-3/2\).
+    Når \(x\to-\infty\), går dette mot \(-3/2\).
 
     **Resultat:** \(\underline{\underline{3/2}}\) og \(\underline{\underline{-3/2}}\).
 
