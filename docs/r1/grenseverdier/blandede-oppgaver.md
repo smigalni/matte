@@ -13,7 +13,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{5}}\)
 
 
-    **Resultat:** \(\underline{\underline{5}}\)
 **2.8.2** Finn de ensidige grenseverdiene for \(f(x)=\begin{cases}x+1,&x<0,\\2x+1,&x\geq0.\end{cases}\).
 
 ??? note "Fasit – 2.8.2"
@@ -23,7 +22,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{1}}\)
 
 
-    **Resultat:** \(\underline{\underline{1}}\)
 **2.8.3** Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
 
 ??? note "Fasit – 2.8.3"
@@ -33,7 +31,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{x=-4}}\)
 
 
-    **Resultat:** \(\underline{\underline{x=-4}}\)
 ## Middels
 
 **2.8.4** Bestem \(a\) slik at \(f(x)=\begin{cases}ax+2,&x<1,\\x^2+3,&x\geq1.\end{cases}\) er kontinuerlig i \(x=1\).
@@ -45,7 +42,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{a=2}}\)
 
 
-    **Resultat:** \(\underline{\underline{a=2}}\)
 **2.8.5** Beregn \(\lim_{x\to4}\frac{x^2-16}{x-4}\), og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
 
 ??? note "Fasit – 2.8.5"
@@ -55,7 +51,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{8}}\)
 
 
-    **Resultat:** \(\underline{\underline{8}}\)
 **2.8.6** Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
 
 ??? note "Fasit – 2.8.6"
@@ -65,7 +60,6 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **Resultat:** \(\underline{\underline{x=\pm3,\;y=2}}\)
 
 
-    **Resultat:** \(\underline{\underline{x=\pm3,\;y=2}}\)
 ## Krevende
 
 **2.8.7 – krevende: kontinuitet og tangentstigningstall (bro til kapittel 3)** La
@@ -87,7 +81,6 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     
     **Resultat:** Kravene er uforenlige: \(\underline{\underline{b=a-1}}\) for kontinuitet og \(\underline{\underline{b=a+2}}\) for like stigningstall.
 
-    **Resultat:** \(\underline{\underline{b=a-1\quad\text{og}\quad b=a+2}}\)
 
 **2.8.8** En rasjonal funksjon har en vertikal asymptote ved \(x=2\) og en horisontal asymptote \(y=-1\). Lag et mulig uttrykk med disse egenskapene, og undersøk ensidige grenseverdier ved den vertikale asymptoten.
 
@@ -98,7 +91,6 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     **Resultat:** \(\underline{\underline{f(x)=-1+\frac{1}{x-2}}}\)
 
 
-    **Resultat:** \(\underline{\underline{f(x)=-1+\frac1{x-2}}}\)
 ## Utfordrende
 
 **2.8.9** En elev hevder: «Hvis telleren og nevneren begge blir null, finnes det ingen grenseverdi.» Lag et moteksempel, løs grenseverdien og forklar hvilken konklusjon eleven burde trekke i stedet.
@@ -110,7 +102,6 @@ Bestem sammenhengen mellom \(a\) og \(b\) som gir kontinuitet i \(x=1\). Unders�
     **Resultat:** \(\underline{\underline{\lim_{x\to1}\frac{x^2-1}{x-1}=2}}\)
 
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to1}\frac{x^2-1}{x-1}=2}}\)
 **2.8.10 – flere fenomener i samme funksjon**
 
 Vi har funksjonen
@@ -136,7 +127,6 @@ e) Forklar hvorfor det er viktig å undersøke hver kandidat separat, selv om de
     **Resultat:** \(\underline{\underline{y=1}}\)
 
 
-    **Resultat:** \(\underline{\underline{y=1}}\)
 **2.8.11 – R1 og T-matte: asymptoter og rasjonale ulikheter**
 
 La \(a>1\), og definer
