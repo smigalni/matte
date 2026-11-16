@@ -126,6 +126,15 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 if match and len(match.group(1).split(".")) != 3:
                     errors.append(f"{relative}:{number}: {kind} må nummereres kapittel.delkapittel.løpenummer.")
 
+        seen_examples = set()
+        for number, line in visible:
+            example = re.match(r'^\s*!!!\s+example\s+["\']Eksempel\s+(\d+\.\d+\.\d+)', line)
+            if example:
+                example_id = example.group(1)
+                if example_id in seen_examples:
+                    errors.append(f"{relative}:{number}: Eksempelnummer {example_id} er brukt flere ganger i samme fil.")
+                seen_examples.add(example_id)
+
     if checks.get("check_task_answer_pairing", True):
         task_ids = []
         answer_ids = []
