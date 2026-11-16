@@ -94,6 +94,8 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     
     Begge ensidige grenseverdiene er 6. Det er et hull i \((3,6)\), ikke en vertikal asymptote.
 
+
+    **Resultat:** \(\underline{\underline{(3,6)\text{ er et hull}}}\)
 !!! question "Oppgave 2.11.4 – begge blir null"
 
     Vi har funksjonen
@@ -119,6 +121,8 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     
     Når \(x\to2^-\), går funksjonen mot \(-\infty\). Når \(x\to2^+\), går den mot \(+\infty\). Dermed er \(x=2\) en vertikal asymptote, selv om både teller og nevner i det opprinnelige uttrykket blir null.
 
+
+    **Resultat:** \(\underline{\underline{x=2}}\)
 !!! question "Oppgave 2.11.5 – to kandidater, to ulike konklusjoner"
 
     Vi har funksjonen
@@ -145,6 +149,8 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     - Ved \(x=1\) er grenseverdien \(-2\). Dette gir et hull i \((1,-2)\).
     - Ved \(x=2\) går funksjonen mot uendelig i absoluttverdi. Dette gir en vertikal asymptote \(x=2\).
 
+
+    **Resultat:** \(\underline{\underline{x=1\text{ er hull, }x=2\text{ er asymptote}}}\)
 !!! question "Oppgave 2.11.6 – vurder en påstand"
 
     En elev sier:
@@ -157,6 +163,8 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     Påstanden er feil i begge deler. Oppgave A viser at nevner lik null kan gi et hull. Oppgave B viser at både teller og nevner lik null også kan gi en vertikal asymptote.
 
+
+    **Resultat:** \(\underline{\underline{\text{Påstanden er feil}}}\)
 !!! question "Oppgave 2.11.7 – lag selv"
 
     Lag to rasjonale funksjoner som begge har en nevner som blir null når \(x=1\):
@@ -182,6 +190,8 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     
     gir en vertikal asymptote \(x=1\).
 
+
+    **Resultat:** \(\underline{\underline{x=1}}\)
 !!! question "Oppgave 2.11.8 – krevende: parameter og asymptote"
 
     Vi har funksjonen
@@ -232,3 +242,6 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     Nevnerens nullpunkter er \(x=0\) og \(x=4\). Telleren er ulik null i begge punktene, så begge gir vertikale asymptoter.
     
     d) Vi må kontrollere hver kandidat. En felles faktor kan forkortes og gi et hull, mens en faktor som står igjen i nevneren kan gi en vertikal asymptote. Grenseverdiene avgjør.
+
+
+    **Resultat:** \(\underline{\underline{a\leq0,\;x=0,\;x=4}}\)
