@@ -77,7 +77,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     Vi har
 
     \[
-    h(x)=\frac{1}{(x-2)^2}.
+    h(x)=\dfrac{1}{(x-2)^2}.
     \]
 
     a) Bestem grenseverdien når \(x\to2^-\).
@@ -105,7 +105,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     Vi har funksjonen
 
     \[
-    q(x)=\frac{x^2-1}{x-1},\qquad x\ne1.
+    q(x)=\dfrac{x^2-1}{x-1},\qquad x\ne1.
     \]
 
     En elev forkorter og skriver \(q(x)=x+1\), og konkluderer med at \(q(1)=2\).
@@ -135,7 +135,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     Vi har
 
     \[
-    r(x)=\frac{x^2+x}{x^2+1}.
+    r(x)=\dfrac{x^2+x}{x^2+1}.
     \]
 
     a) Bestem den horisontale asymptoten når \(x\to\infty\).
@@ -151,11 +151,10 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     b) Vi løser
     
     \[
-    \frac{x^2+x}{x^2+1}=1
+    \dfrac{x^2+x}{x^2+1}=1
     \quad\Longrightarrow\quad
     x^2+x=x^2+1
     \quad\Longrightarrow\quad x=1.
-    
     \]
     
     Grafen krysser derfor linjen \(y=1\) i punktet \((1,1)\).
@@ -169,7 +168,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     Vi har
 
     \[
-    s(x)=\frac{x^2-1}{(x-1)^2}.
+    s(x)=\dfrac{x^2-1}{(x-1)^2}.
     \]
 
     a) Finn kandidaten til vertikal asymptote.
@@ -187,9 +186,8 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     b)
     
     \[
-    s(x)=\frac{(x-1)(x+1)}{(x-1)^2}
-    =\frac{x+1}{x-1},\qquad x\ne1.
-    
+    s(x)=\dfrac{(x-1)(x+1)}{(x-1)^2}
+    =\dfrac{x+1}{x-1},\qquad x\ne1.
     \]
     
     c) Når \(x\to1^-\), går funksjonen mot \(-\infty\). Når \(x\to1^+\), går den mot \(+\infty\). Dermed er \(x=1\) en vertikal asymptote.
@@ -203,7 +201,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     Vi har
 
     \[
-    t(x)=\frac{x}{\sqrt{x^2+1}}.
+    t(x)=\dfrac{x}{\sqrt{x^2+1}}.
     \]
 
     a) Bestem grenseverdien når \(x\to\infty\).
@@ -217,9 +215,8 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     Vi skriver
     
     \[
-    \frac{x}{\sqrt{x^2+1}}
-    =\frac{x}{|x|\sqrt{1+1/x^2}}.
-    
+    \dfrac{x}{\sqrt{x^2+1}}
+    =\dfrac{x}{|x|\sqrt{1+1/x^2}}.
     \]
     
     a) Når \(x\to\infty\), er \(x/|x|=1\), og grenseverdien er 1.
