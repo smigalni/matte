@@ -63,6 +63,7 @@ La oss repetere noen av funksjonstypene du har lært om tidligere. Se på forskr
     e) Logaritmefunksjon, \(D_q=(2,\infty)\).
 
     **Resultat:** \(\underline{\underline{D_q=(2,\infty)}}\)
+
 !!! question "Oppgave 2.1.2"
 
     En funksjon er gitt ved
@@ -132,6 +133,7 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
     \(f(0)=1\), \(f(3)=7\) og \(f(4)=14\).
 
     **Resultat:** \(\underline{\underline{f(0)=1,\;f(3)=7,\;f(4)=14}}\)
+
 !!! question "Oppgave 2.2.3"
 
     En funksjon er gitt ved \(g(x)=\begin{cases}ax+1,&x<2,\\x^2-1,&x\geq2.\end{cases}\). Bestem \(a\) slik at de to uttrykkene gir samme grenseverdi ved \(x=2\). Er funksjonen da nødvendigvis kontinuerlig? Begrunn.
@@ -141,6 +143,7 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
     Vi må ha \(2a+1=3\), så \(a=1\). Da er også \(g(2)=3\), og funksjonen er kontinuerlig i \(x=2\).
 
     **Resultat:** \(\underline{\underline{a=1}}\)
+
 !!! question "Oppgave 2.2.4"
 
     Lag en delt forskrift som har \(f(0)=4\), men der venstre grenseverdi når \(x\to0\) er 2 og høyre grenseverdi er 5. Forklar hvordan forskriften din viser dette.
@@ -204,6 +207,7 @@ Den vanlige grenseverdien \(\lim_{x\to a}f(x)\) finnes bare når begge ensidige 
     Venstre grenseverdi er \(1\), mens høyre grenseverdi er \(4\). Den tosidige grenseverdien finnes ikke.
 
     **Resultat:** \(\underline{\underline{\lim_{x\to1^-}f(x)=1,\;\lim_{x\to1^+}f(x)=4}}\)
+
 !!! question "Oppgave 2.3.3"
 
     En graf nærmer seg \(y=4\) fra begge sider når \(x\to2\), men punktet \((2,1)\) er fylt. Hva er grenseverdien, og hva er \(f(2)\)? Forklar forskjellen.
@@ -213,6 +217,7 @@ Den vanlige grenseverdien \(\lim_{x\to a}f(x)\) finnes bare når begge ensidige 
     Grenseverdien er \(4\), mens \(f(2)=1\). Funksjonen er ikke kontinuerlig i \(x=2\).
 
     **Resultat:** \(\underline{\underline{\lim_{x\to2}f(x)=4,\;f(2)=1}}\)
+
 !!! question "Oppgave 2.3.4"
 
     Undersøk de ensidige grenseverdiene til \(f(x)=\frac{1}{x-3}\) når \(x\to3\). Forklar hvorfor den vanlige grenseverdien ikke finnes som et endelig tall.
@@ -222,6 +227,7 @@ Den vanlige grenseverdien \(\lim_{x\to a}f(x)\) finnes bare når begge ensidige 
     Fra venstre går funksjonen mot \(-\infty\), og fra høyre mot \(+\infty\). Den har vertikal asymptote \(x=3\).
 
     **Resultat:** \(\underline{\underline{\lim_{x\to3^-}f(x)=-\infty,\;\lim_{x\to3^+}f(x)=+\infty}}\)
+
 !!! question "Oppgave 2.3.5"
 
     Lag en funksjon der \(\lim_{x\to1^-}f(x)=2\), mens \(\lim_{x\to1^+}f(x)=5\). Vis at den vanlige grenseverdien ikke finnes.
@@ -277,6 +283,7 @@ At de ensidige grensene er like, er nødvendig for at den tosidige grenseverdien
     Venstre grenseverdi er \(3\), mens høyre grenseverdi og funksjonsverdien er \(2\). Funksjonen er ikke kontinuerlig.
 
     **Resultat:** \(\underline{\underline{\lim_{x\to1^-}f(x)=3,\;\lim_{x\to1^+}f(x)=2=f(1)}}\)
+
 !!! question "Oppgave 2.4.3"
 
     Bestem \(a\) slik at \(f(x)=\begin{cases}ax-2,&x<3,\\x+4,&x\geq3.\end{cases}\) er kontinuerlig i \(x=3\).
@@ -286,6 +293,7 @@ At de ensidige grensene er like, er nødvendig for at den tosidige grenseverdien
     Kontinuitet gir \(3a-2=7\), altså \(a=3\).
 
     **Resultat:** \(\underline{\underline{a=3}}\)
+
 !!! question "Oppgave 2.4.4"
 
     En funksjon har like ensidige grenseverdier 6 ved \(x=2\), men \(f(2)=0\). Er funksjonen kontinuerlig i punktet? Kan grenseverdien finnes? Begrunn.
@@ -295,6 +303,7 @@ At de ensidige grensene er like, er nødvendig for at den tosidige grenseverdien
     Den tosidige grenseverdien finnes og er \(6\), men funksjonsverdien er \(0\). Funksjonen er derfor ikke kontinuerlig.
 
     **Resultat:** \(\underline{\underline{\lim_{x\to2}f(x)=6\ne0=f(2)}}\)
+
 !!! question "Oppgave 2.4.5"
 
     En funksjon er definert ved \(f(x)=\frac{x^2-4}{x-2}\) for \(x\ne2\), og \(f(2)=k\). Bestem \(k\) slik at funksjonen blir kontinuerlig i \(x=2\). Forklar hvorfor faktorisering er nyttig.
@@ -370,6 +379,7 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     \(x^2-9=(x-3)(x+3)\), så grenseverdien er \(6\).
 
     **Resultat:** \(\underline{\underline{6}}\)
+
 !!! question "Oppgave 2.5.4"
 
     Beregn \(\lim_{x\to-2}\frac{x^2+5x+6}{x+2}\).
@@ -379,6 +389,7 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     \(x^2+5x+6=(x+2)(x+3)\), så grenseverdien er \(1\).
 
     **Resultat:** \(\underline{\underline{1}}\)
+
 !!! question "Oppgave 2.5.5"
 
     Beregn \(\lim_{x\to1}\frac{x^2-1}{x^2-3x+2}\). Forklar hva som skjer med telleren og nevneren etter faktorisering.
@@ -388,6 +399,7 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     Etter faktorisering og forkorting får vi \((x+1)/(x-2)\). Grenseverdien er \(-2\).
 
     **Resultat:** \(\underline{\underline{-2}}\)
+
 !!! question "Oppgave 2.5.6"
 
     Beregn \(\lim_{x\to\infty}\frac{5x^2-2x+1}{2x^2+7}\), og begrunn svaret ved å dele på riktig potens av \(x\).
@@ -397,6 +409,7 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     Teller og nevner har samme grad. Grenseverdien er forholdet mellom koeffisientene foran \(x^2\), altså \(5/2\).
 
     **Resultat:** \(\underline{\underline{\frac52}}\)
+
 !!! question "Oppgave 2.5.7"
 
     En elev sier at \(\lim_{x\to2}\frac{x^2-4}{x-2}\) ikke finnes fordi uttrykket gir \(0/0\). Forklar presist hva som er feil i argumentet, og vis en korrekt løsning.
@@ -417,25 +430,25 @@ Linjen \(x=a\) er en vertikal asymptote når funksjonsverdiene går mot \(+\inft
 !!! example "Eksempel 2.6.1 – vertikal asymptote"
     Undersøk grenseverdiene til
 
-    \\[
-    f(x)=\\dfrac{1}{x-2}.
-    \\]
+    \[
+    f(x)=\dfrac{1}{x-2}.
+    \]
 
     Når \(x\) nærmer seg 2 fra venstre, er nevneren negativ og nærmer seg 0. Fra høyre er nevneren positiv og nærmer seg 0:
 
-    \\[
-    \\lim_{x\\to2^-}f(x)=-\\infty,
-    \\qquad
-    \\lim_{x\\to2^+}f(x)=+\\infty.
-    \\]
+    \[
+    \lim_{x\to2^-}f(x)=-\infty,
+    \qquad
+    \lim_{x\to2^+}f(x)=+\infty.
+    \]
 
     Minst én ensidig grenseverdi går mot uendelig i absoluttverdi. Derfor er
 
     **Svar:** Den vertikale asymptoten er
 
-    \\[
-    \\underline{\\underline{x=2}}.
-    \\]
+    \[
+    \underline{\underline{x=2}}.
+    \]
 
 ### Horisontal asymptote
 
@@ -519,6 +532,7 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
     Vertikal asymptote \(x=2\), horisontal asymptote \(y=3\).
 
     **Resultat:** \(\underline{\underline{x=2,\;y=3}}\)
+
 !!! question "Oppgave 2.6.4"
 
     Undersøk asymptotene til \(g(x)=\frac{x^2-4}{x-2}\). Forklar hvorfor en verdi som gjør nevneren null, ikke automatisk gir en vertikal asymptote.
@@ -528,6 +542,7 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
     For \(x\ne2\) er funksjonen lik \(x+2\). Grafen ligger derfor på linjen \(y=x+2\), bortsett fra et hull i \((2,4)\). Linjen \(y=x+2\) er den skrå asymptoten. Det er ingen vertikal asymptote ved \(x=2\), fordi grenseverdiene er endelige.
 
     **Resultat:** \(\underline{\underline{y=x+2}}\)
+
 !!! question "Oppgave 2.6.5"
 
     Bruk polynomdivisjon til å bestemme eventuell skrå asymptote for \(h(x)=\frac{2x^2+3x-1}{x+1}\).
@@ -537,6 +552,7 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
     Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
 
     **Resultat:** \(\underline{\underline{x=-1,\;y=2x+1}}\)
+
 !!! question "Oppgave 2.6.6"
 
     En rasjonal funksjon har vertikal asymptote \(x=-2\) og horisontal asymptote \(y=3\). Lag et mulig funksjonsuttrykk og forklar hvordan du vet at uttrykket oppfyller kravene. Det finnes flere svar.
