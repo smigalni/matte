@@ -18,7 +18,7 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
 
 ## To eksempler som ser like ut – men ikke er det
 
-!!! example "Eksempel A – et hull"
+!!! example "Eksempel 2.11.1 – et hull"
 
     Vi undersøker
 
@@ -42,7 +42,7 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
 
     Grenseverdiene er endelige. Grafen har et **hull** i \((2,4)\), ikke en vertikal asymptote.
 
-!!! example "Eksempel B – en vertikal asymptote"
+!!! example "Eksempel 2.11.2 – en vertikal asymptote"
 
     Vi undersøker
 
@@ -70,7 +70,7 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
 
 For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du skal avgjøre om kandidaten gir et hull eller en vertikal asymptote. Begrunn med faktorisering og grenseverdier fra begge sider.
 
-!!! question "Oppgave A – kandidaten er ikke alltid en asymptote"
+!!! question "Oppgave 2.11.3 – kandidaten er ikke alltid en asymptote"
 
     Vi har funksjonen
 
@@ -86,7 +86,15 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Forklar hvorfor \(x=3\) ikke er en vertikal asymptote.
 
-!!! question "Oppgave B – begge blir null"
+??? note "Fasit – 2.11.3"
+
+    \[
+    f(x)=\frac{(x-3)(x+3)}{x-3}=x+3,\qquad x\ne3.
+    \]
+    
+    Begge ensidige grenseverdiene er 6. Det er et hull i \((3,6)\), ikke en vertikal asymptote.
+
+!!! question "Oppgave 2.11.4 – begge blir null"
 
     Vi har funksjonen
 
@@ -102,7 +110,16 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Forklar hvorfor det ikke er nok å se at både teller og nevner blir null.
 
-!!! question "Oppgave C – to kandidater, to ulike konklusjoner"
+??? note "Fasit – 2.11.4"
+
+    \[
+    g(x)=\frac{(x-2)(x+2)}{(x-2)^2}
+    =\frac{x+2}{x-2},\qquad x\ne2.
+    \]
+    
+    Når \(x\to2^-\), går funksjonen mot \(-\infty\). Når \(x\to2^+\), går den mot \(+\infty\). Dermed er \(x=2\) en vertikal asymptote, selv om både teller og nevner i det opprinnelige uttrykket blir null.
+
+!!! question "Oppgave 2.11.5 – to kandidater, to ulike konklusjoner"
 
     Vi har funksjonen
 
@@ -118,7 +135,17 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Oppgi eventuelle hull og vertikale asymptoter.
 
-!!! question "Oppgave D – vurder en påstand"
+??? note "Fasit – 2.11.5"
+
+    \[
+    h(x)=\frac{(x-1)(x+1)}{(x-1)(x-2)}
+    =\frac{x+1}{x-2},\qquad x\ne1,2.
+    \]
+    
+    - Ved \(x=1\) er grenseverdien \(-2\). Dette gir et hull i \((1,-2)\).
+    - Ved \(x=2\) går funksjonen mot uendelig i absoluttverdi. Dette gir en vertikal asymptote \(x=2\).
+
+!!! question "Oppgave 2.11.6 – vurder en påstand"
 
     En elev sier:
 
@@ -126,7 +153,11 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     Er påstanden riktig? Bruk minst to konkrete eksempler fra dette arket for å argumentere.
 
-!!! question "Oppgave E – lag selv"
+??? note "Fasit – 2.11.6"
+
+    Påstanden er feil i begge deler. Oppgave A viser at nevner lik null kan gi et hull. Oppgave B viser at både teller og nevner lik null også kan gi en vertikal asymptote.
+
+!!! question "Oppgave 2.11.7 – lag selv"
 
     Lag to rasjonale funksjoner som begge har en nevner som blir null når \(x=1\):
 
@@ -135,7 +166,23 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     Vis ved faktorisering og grenseverdier at eksemplene dine har de egenskapene du hevder.
 
-!!! question "Oppgave F – krevende: parameter og asymptote"
+??? note "Fasit – 2.11.7"
+
+    Mulige eksempler:
+    
+    \[
+    f(x)=\frac{x^2-1}{x-1}=x+1,\qquad x\ne1
+    \]
+    
+    gir et hull ved \(x=1\), mens
+    
+    \[
+    g(x)=\frac{1}{x-1}
+    \]
+    
+    gir en vertikal asymptote \(x=1\).
+
+!!! question "Oppgave 2.11.8 – krevende: parameter og asymptote"
 
     Vi har funksjonen
 
@@ -151,88 +198,37 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Forklar hvorfor en parameteroppgave krever at vi undersøker både teller og nevner ved hver kandidat.
 
-## Fasit og løsningsskisser
+??? note "Fasit – 2.11.8"
 
-Fasitene står samlet etter oppgavene. I oppgaver der eleven skal lage egne eksempler, finnes det flere riktige svar.
-
-**Oppgave A**
-
-\[
-f(x)=\frac{(x-3)(x+3)}{x-3}=x+3,\qquad x\ne3.
-\]
-
-Begge ensidige grenseverdiene er 6. Det er et hull i \((3,6)\), ikke en vertikal asymptote.
-
-**Oppgave B**
-
-\[
-g(x)=\frac{(x-2)(x+2)}{(x-2)^2}
-=\frac{x+2}{x-2},\qquad x\ne2.
-\]
-
-Når \(x\to2^-\), går funksjonen mot \(-\infty\). Når \(x\to2^+\), går den mot \(+\infty\). Dermed er \(x=2\) en vertikal asymptote, selv om både teller og nevner i det opprinnelige uttrykket blir null.
-
-**Oppgave C**
-
-\[
-h(x)=\frac{(x-1)(x+1)}{(x-1)(x-2)}
-=\frac{x+1}{x-2},\qquad x\ne1,2.
-\]
-
-- Ved \(x=1\) er grenseverdien \(-2\). Dette gir et hull i \((1,-2)\).
-- Ved \(x=2\) går funksjonen mot uendelig i absoluttverdi. Dette gir en vertikal asymptote \(x=2\).
-
-**Oppgave D**
-
-Påstanden er feil i begge deler. Oppgave A viser at nevner lik null kan gi et hull. Oppgave B viser at både teller og nevner lik null også kan gi en vertikal asymptote.
-
-**Oppgave E**
-
-Mulige eksempler:
-
-\[
-f(x)=\frac{x^2-1}{x-1}=x+1,\qquad x\ne1
-\]
-
-gir et hull ved \(x=1\), mens
-
-\[
-g(x)=\frac{1}{x-1}
-\]
-
-gir en vertikal asymptote \(x=1\).
-
-**Oppgave F**
-
-Nevneren er
-
-\[
-x^2-4x+4+a=(x-2)^2+a.
-\]
-
-a) Likningen \((x-2)^2+a=0\) har reelle løsninger når \(a\leq0\).
-
-b) Når \(a=0\), får vi
-
-\[
-p_0(x)=\frac{(x-2)(x+2)}{(x-2)^2}
-=\frac{x+2}{x-2},\qquad x\ne2.
-\]
-
-Dermed er \(x=2\) en vertikal asymptote.
-
-c) Når \(a=-4\), blir nevneren
-
-\[
-(x-2)^2-4=(x-4)x.
-\]
-
-Da er
-
-\[
-p_{-4}(x)=\frac{(x-2)(x+2)}{x(x-4)}.
-\]
-
-Nevnerens nullpunkter er \(x=0\) og \(x=4\). Telleren er ulik null i begge punktene, så begge gir vertikale asymptoter.
-
-d) Vi må kontrollere hver kandidat. En felles faktor kan forkortes og gi et hull, mens en faktor som står igjen i nevneren kan gi en vertikal asymptote. Grenseverdiene avgjør.
+    Nevneren er
+    
+    \[
+    x^2-4x+4+a=(x-2)^2+a.
+    \]
+    
+    a) Likningen \((x-2)^2+a=0\) har reelle løsninger når \(a\leq0\).
+    
+    b) Når \(a=0\), får vi
+    
+    \[
+    p_0(x)=\frac{(x-2)(x+2)}{(x-2)^2}
+    =\frac{x+2}{x-2},\qquad x\ne2.
+    \]
+    
+    Dermed er \(x=2\) en vertikal asymptote.
+    
+    c) Når \(a=-4\), blir nevneren
+    
+    \[
+    (x-2)^2-4=(x-4)x.
+    \]
+    
+    Da er
+    
+    \[
+    p_{-4}(x)=\frac{(x-2)(x+2)}{x(x-4)}.
+    \]
+    
+    Nevnerens nullpunkter er \(x=0\) og \(x=4\). Telleren er ulik null i begge punktene, så begge gir vertikale asymptoter.
+    
+    d) Vi må kontrollere hver kandidat. En felles faktor kan forkortes og gi et hull, mens en faktor som står igjen i nevneren kan gi en vertikal asymptote. Grenseverdiene avgjør.
