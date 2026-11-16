@@ -121,7 +121,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
             example = re.match(r'^\s*!!!\s+example\s+["\']Eksempel\s+(\d+(?:\.\d+){0,2})', line)
             legacy = re.match(r'^\s*(?:#{1,6}\s+)?(?:\*\*)?(?:Oppgave\s+)?(\d+\.\d+\.\d+)(?:\*\*)?', line)
             if legacy:
-                errors.append(f"{relative}:{number}: Oppgavenummer mangler standard question-admonition og etiketten 'Oppgave'.")
+                errors.append(f"{relative}:{number}: Oppgavenummer mangler etiketten 'Oppgave' og standard question-admonition.")
             if re.match(r'^\s*!!!\s+question\s+', line) and not task:
                 errors.append(f"{relative}:{number}: Oppgave-boksen mangler hierarkisk tittel på formen 'Oppgave 2.3.1'.")
             if re.match(r'^\s*!!!\s+example\s+', line) and not example:
