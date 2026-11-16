@@ -16,26 +16,23 @@ Når du har arbeidet med kapittelet, skal du kunne:
 
 ## 2.1 Repetisjon av funksjonstyper
 
-Før vi arbeider med grenseverdier, repeterer vi hva som kjennetegner funksjonstypene. Det er nyttig å kunne lese forskriften, kjenne igjen grafens form og vite hvilke regler som gjelder.
+La oss repetere noen av funksjonstypene du har lært om tidligere. Se på forskriftene, og tenk gjennom hvordan grafene ser ut og hvilke egenskaper de har.
 
 | Funksjonstype | Eksempel | Kjennetegn |
 |---|---|---|
 | Konstant | \(f(x)=4\) | Horisontal graf. Verdien endrer seg ikke. |
 | Lineær | \(f(x)=2x-3\) | Rett linje med stigningstall 2. |
-| Andregradsfunksjon | \(f(x)=x^2-4x+3\) | Parabel. Topp- eller bunnpunkt kan finnes ved symmetri. Derivasjon kommer senere. |
+| Andregradsfunksjon | \(f(x)=x^2-4x+3\) | Parabel. Topp- eller bunnpunkt kan finnes ved symmetri. |
 | Potensfunksjon | \(f(x)=x^3\) | Formen avhenger av eksponenten. |
 | Eksponentialfunksjon | \(f(x)=2^x\) | Positiv graf som vokser når grunntallet er større enn 1. |
 | Logaritmefunksjon | \(f(x)=\ln x\) | Definert for \(x>0\). |
-| Rasjonal funksjon | \(f(x)=\frac{1}{x-2}\) | Brøk av polynomer; nevneren kan gi hull i definisjonsmengden eller asymptoter. |
-| Absoluttverdi | \(f(x)=|x|\) | V-formet graf; uttrykket kan skrives stykkevis. |
+| Rasjonal funksjon | \(f(x)=\dfrac{1}{x-2}\) | Brøk av polynomer; nevneren kan gi hull i definisjonsmengden eller asymptoter. |
 
 ### Dette må du huske
 
 - For en brøk må nevneren være ulik null.
 - For \(\ln x\) må \(x>0\).
 - En andregradsfunksjon har graf som er en parabel.
-- En absoluttverdi kan skrives med to forskrifter: \(|x|=x\) når \(x\geq 0\), og \(|x|=-x\) når \(x<0\).
-- En graf kan nærme seg en verdi selv om funksjonen ikke er definert i punktet.
 
 ### Oppgaver 2.1
 
@@ -132,25 +129,17 @@ Når \(x<1\), bruker vi \(x+2\). Når \(x\geq 1\), bruker vi \(x^2\). I punktet 
 
 
     **Resultat:** \(\underline{\underline{f(0)=1,\;f(3)=7,\;f(4)=14}}\)
-**2.2.3** Skriv \(|x-2|\) som en delt forskrift. Forklar hvorfor forskriften skifter ved \(x=2\).
+**2.2.3** En funksjon er gitt ved \(g(x)=\begin{cases}ax+1,&x<2,\\x^2-1,&x\geq2.\end{cases}\). Bestem \(a\) slik at de to uttrykkene gir samme grenseverdi ved \(x=2\). Er funksjonen da nødvendigvis kontinuerlig? Begrunn.
 
 ??? note "Fasit – 2.2.3"
-
-    \(|x-2|=2-x\) når \(x<2\), og \(|x-2|=x-2\) når \(x\geq2\).
-
-
-    **Resultat:** \(\underline{\underline{|x-2|=\begin{cases}2-x,&x<2\\x-2,&x\geq2\end{cases}}}\)
-**2.2.4** En funksjon er gitt ved \(g(x)=\begin{cases}ax+1,&x<2,\\x^2-1,&x\geq2.\end{cases}\). Bestem \(a\) slik at de to uttrykkene gir samme grenseverdi ved \(x=2\). Er funksjonen da nødvendigvis kontinuerlig? Begrunn.
-
-??? note "Fasit – 2.2.4"
 
     Vi må ha \(2a+1=3\), så \(a=1\). Da er også \(g(2)=3\), og funksjonen er kontinuerlig i \(x=2\).
 
 
     **Resultat:** \(\underline{\underline{a=1}}\)
-**2.2.5** Lag en delt forskrift som har \(f(0)=4\), men der venstre grenseverdi når \(x\to0\) er 2 og høyre grenseverdi er 5. Forklar hvordan forskriften din viser dette.
+**2.2.4** Lag en delt forskrift som har \(f(0)=4\), men der venstre grenseverdi når \(x\to0\) er 2 og høyre grenseverdi er 5. Forklar hvordan forskriften din viser dette.
 
-??? note "Fasit – 2.2.5"
+??? note "Fasit – 2.2.4"
 
     Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
 
