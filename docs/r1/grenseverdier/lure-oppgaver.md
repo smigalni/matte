@@ -44,6 +44,8 @@ d) En elev sier: «Grenseverdien er 3, så funksjonsverdien må også være 3.»
     
     d) Grenseverdien beskriver hva funksjonsverdiene nærmer seg, ikke nødvendigvis verdien i selve punktet.
 
+
+    **Resultat:** \(\underline{\underline{\lim_{x\to1}f(x)=3,\;f(1)=4}}\)
 ## Oppgave 2.12.2 – kontinuerlig, men ikke deriverbar
 
 La
@@ -72,6 +74,8 @@ c) Kan funksjonen være kontinuerlig, men ha en knekk? Forklar med utgangspunkt 
     
     c) Ja. Funksjonen er kontinuerlig, men stigningstallet endrer seg brått. Grafen har en knekk i \(x=1\), og funksjonen er ikke deriverbar der.
 
+
+    **Resultat:** \(\underline{\underline{\text{kontinuerlig, men ikke deriverbar ved }x=1}}\)
 ## Oppgave 2.12.3 – uendelig på begge sider
 
 Vi har
@@ -100,6 +104,8 @@ d) Sammenlign med \(p(x)=\frac{1}{x-2}\). Hva er forskjellen på fortegnet til d
     
     d) For \(p(x)=1/(x-2)\) går funksjonen mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Kvadratet i nevneren til \(h\) gjør nevneren positiv på begge sider.
 
+
+    **Resultat:** \(\underline{\underline{\lim_{x\to2^-}h(x)=+\infty,\;\lim_{x\to2^+}h(x)=+\infty}}\)
 ## Oppgave 2.12.4 – forkorting og definisjonsmengde
 
 Vi har funksjonen
@@ -130,6 +136,8 @@ d) Hva måtte vi ha endret i definisjonen for at funksjonen skulle bli kontinuer
     
     d) Vi kan definere \(q(1)=2\). Da blir funksjonen kontinuerlig i \(x=1\).
 
+
+    **Resultat:** \(\underline{\underline{\lim_{x\to1}q(x)=2,\;q(1)\text{ er ikke definert}}\)
 ## Oppgave 2.12.5 – asymptoten kan krysses
 
 Vi har
@@ -165,6 +173,8 @@ c) En elev sier: «En graf kan ikke krysse en asymptote.» Forklar hvorfor påst
     
     c) En horisontal asymptote beskriver hva funksjonen nærmer seg når \(x\) går mot uendelig. Den sier ikke at grafen aldri kan møte eller krysse linjen ved en endelig \(x\)-verdi.
 
+
+    **Resultat:** \(\underline{\underline{(1,1)}}\)
 ## Oppgave 2.12.6 – undersøk hver side, ikke bare nevneren
 
 Vi har
@@ -200,6 +210,8 @@ d) Forklar hvorfor det er nødvendig å undersøke fortegnet når \(x\) nærmer 
     
     d) Fortegnet til \(x-1\) er negativt på venstre side og positivt på høyre side. Det avgjør hvilken uendelighet funksjonen går mot.
 
+
+    **Resultat:** \(\underline{\underline{x=1}}\)
 ## Oppgave 2.12.7 – grenseverdi ved uendelig fra to retninger
 
 Vi har
@@ -232,3 +244,6 @@ c) Har funksjonen samme horisontale asymptote i begge retninger? Begrunn.
     b) Når \(x\to-\infty\), er \(x/|x|=-1\), og grenseverdien er \(-1\).
     
     c) Funksjonen har to ulike horisontale asymptoter: \(y=1\) mot høyre og \(y=-1\) mot venstre. Det er viktig å undersøke begge retningene.
+
+
+    **Resultat:** \(\underline{\underline{y=1\text{ og }y=-1}}\)
