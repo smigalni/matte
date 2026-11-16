@@ -117,9 +117,9 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
 
     if checks.get("check_hierarchical_task_labels", True):
         for number, line in visible:
-            task = re.match(r'^\\s*!!!\\s+question\\s+["\\']Oppgave\\s+(\\d+(?:\\.\\d+){0,2})', line)
-            example = re.match(r'^\\s*!!!\\s+example\\s+["\\']Eksempel\\s+(\\d+(?:\\.\\d+){0,2})', line)
-            legacy = re.match(r'^\\s*\\*\\*(\\d+\\.\\d+\\.\\d+)\\*\\*', line)
+            task = re.match(r'^\s*!!!\s+question\s+["\']Oppgave\s+(\d+(?:\.\d+){0,2})', line)
+            example = re.match(r'^\s*!!!\s+example\s+["\']Eksempel\s+(\d+(?:\.\d+){0,2})', line)
+            legacy = re.match(r'^\s*\*\*(\d+\.\d+\.\d+)\*\*', line)
             if legacy:
                 errors.append(f"{relative}:{number}: Oppgavenummer mangler etiketten 'Oppgave'. Bruk en question-admonition med hierarkisk nummerering.")
             for kind, match in (("Oppgave", task), ("Eksempel", example)):
@@ -130,8 +130,8 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
         task_ids = []
         answer_ids = []
         for number, line in visible:
-            task = re.match(r'^\\s*!!!\\s+question\\s+["\\']Oppgave\\s+(\\d+\\.\\d+\\.\\d+)', line)
-            answer = re.match(r'^\\s*\\?\\?\\?\\s+\\w+\\s+["\\']Fasit\\s*[–-]\\s*(?:oppgave\\s+)?(\\d+\\.\\d+\\.\\d+)', line, re.IGNORECASE)
+            task = re.match(r'^\s*!!!\s+question\s+["\']Oppgave\s+(\d+\.\d+\.\d+)', line)
+            answer = re.match(r'^\s*\?\?\?\s+\w+\s+["\']Fasit\s*[–-]\s*(?:oppgave\s+)?(\d+\.\d+\.\d+)', line, re.IGNORECASE)
             if task:
                 task_ids.append((task.group(1), number))
             if answer:
@@ -151,14 +151,14 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
 
     if checks.get("check_empty_admonitions", True):
         for position, (number, line) in enumerate(visible):
-            if not re.match(r'^\\s*!!!\\s+(?:example|question|rule)\\s+', line):
+            if not re.match(r'^\s*!!!\s+(?:example|question|rule)\s+', line):
                 continue
-            base_indent = len(line) - len(line.lstrip(" \\t"))
+            base_indent = len(line) - len(line.lstrip(" \t"))
             has_content = False
             for _, candidate in visible[position + 1:]:
                 if not candidate.strip():
                     continue
-                indent = len(candidate) - len(candidate.lstrip(" \\t"))
+                indent = len(candidate) - len(candidate.lstrip(" \t"))
                 if indent <= base_indent:
                     break
                 has_content = True
