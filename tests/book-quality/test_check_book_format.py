@@ -29,7 +29,7 @@ class BookQualityTests(unittest.TestCase):
             return checker.check_file(path, "page.md", BASE_CHECKS)
 
     def test_example_in_admonition_passes(self):
-        content = r'''!!! example "Eksempel"
+        content = r'''!!! example "Eksempel 2.3.1"
 
     Regn ut.
 
@@ -167,7 +167,7 @@ Tekst under
         self.assertEqual(self.check(content), [])
 
     def test_subtasks_on_same_line_fail(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
 
     a) Første deloppgave. b) Andre deloppgave.
 """
@@ -175,7 +175,7 @@ Tekst under
         self.assertTrue(any("Flere deloppgaver står på samme linje" in e for e in errors))
 
     def test_subtask_without_blank_line_before_fails(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
 
     a) Første deloppgave.
     b) Andre deloppgave.
@@ -184,7 +184,7 @@ Tekst under
         self.assertTrue(any("eget avsnitt med tom linje før" in e for e in errors))
 
     def test_subtask_with_extra_bullet_fails(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
 
     - a) Første deloppgave.
 """
