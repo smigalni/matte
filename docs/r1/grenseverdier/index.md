@@ -69,7 +69,7 @@ La oss repetere noen av funksjonstypene du har lært om tidligere. Se på forskr
     En funksjon er gitt ved
 
     \[
-    r(x)=\frac{x^2-4}{x-2},\qquad x\ne2.
+    r(x)=\dfrac{x^2-4}{x-2},\qquad x\ne2.
     \]
 
     a) Faktoriser telleren og forenkle uttrykket så langt det lar seg gjøre.
@@ -327,7 +327,7 @@ Når vi faktoriserer og forkorter en rasjonal funksjon, må vi passe på definis
 !!! example "Eksempel 2.5.1 – faktorisering og forkorting"
 
     \[
-    \lim_{x\to2}\frac{x^2-4}{x-2}.
+    \lim_{x\to2}\dfrac{x^2-4}{x-2}.
     \]
 
     Direkte innsetting gir \(\frac00\). Vi faktoriserer telleren:
@@ -339,13 +339,13 @@ Når vi faktoriserer og forkorter en rasjonal funksjon, må vi passe på definis
     For \(x\ne2\) kan vi forkorte faktoren \(x-2\):
 
     \[
-    \frac{(x-2)(x+2)}{x-2}=x+2.
+    \dfrac{(x-2)(x+2)}{x-2}=x+2.
     \]
 
     Derfor er
 
     \[
-    \lim_{x\to2}\frac{x^2-4}{x-2}
+    \lim_{x\to2}\dfrac{x^2-4}{x-2}
     =\lim_{x\to2}(x+2)=4.
     \]
 
@@ -362,8 +362,8 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
 !!! example "Eksempel 2.5.2 – grenseverdi når x går mot uendelig"
 
     \[
-    \lim_{x\to\infty}\frac{3x^2+1}{x^2-4}
-    =\lim_{x\to\infty}\frac{3+1/x^2}{1-4/x^2}=3.
+    \lim_{x\to\infty}\dfrac{3x^2+1}{x^2-4}
+    =\lim_{x\to\infty}\dfrac{3+1/x^2}{1-4/x^2}=3.
     \]
 
     Siden \(1/x^2\to0\), nærmer funksjonen seg 3.
@@ -470,7 +470,7 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
     Bestem den skrå asymptoten til funksjonen
 
     \[
-    f(x)=\frac{x^2+1}{x-1}.
+    f(x)=\dfrac{x^2+1}{x-1}.
     \]
 
     **1. Utfør polynomdivisjonen**
@@ -480,7 +480,7 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
     Først deler vi det første leddet i telleren på det første leddet i nevneren:
 
     \[
-    \frac{x^2}{x}=x.
+    \dfrac{x^2}{x}=x.
     \]
 
     Vi ganger \(x\) med \(x-1\) og trekker fra:
@@ -501,8 +501,8 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
     Kvotienten er \(x+1\), og resten er \(2\). Dermed får vi
 
     \[
-    \frac{x^2+1}{x-1}
-    =x+1+\frac{2}{x-1}.
+    \dfrac{x^2+1}{x-1}
+    =x+1+\dfrac{2}{x-1}.
     \]
 
     **2. Undersøk restleddet**
@@ -510,7 +510,7 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
     Når \(x\to\infty\) eller \(x\to-\infty\), går
 
     \[
-    \frac{2}{x-1}\to0.
+    \dfrac{2}{x-1}\to0.
     \]
 
     Funksjonen nærmer seg derfor linjen \(y=x+1\).
