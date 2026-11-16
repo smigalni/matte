@@ -273,6 +273,10 @@ Tekst under
         content = """!!! question "Oppgave 2.3.1"
 
     c) Finn to parameterpar \\((a,b)\\) som oppfyller kravet.
+
+??? note "Momenter – 2.3.1"
+
+    Det finnes flere mulige par.
 """
         self.assertEqual(self.check(content), [])
 
