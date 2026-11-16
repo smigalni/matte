@@ -41,7 +41,7 @@ En funksjon er kontinuerlig i \(x=a\) når alle tre kravene er oppfylt:
 Hvis direkte innsetting gir \(0/0\), er formen ubestemt. Faktoriser og undersøk om felles faktorer kan forkortes:
 
 \[
-\lim_{x\to a}\frac{(x-a)g(x)}{x-a}
+\lim_{x\to a}\dfrac{(x-a)g(x)}{x-a}
 =
 \lim_{x\to a}g(x),
 \]
