@@ -94,4 +94,4 @@
 
     Ett eksempel er \(f(x)=x+\frac{1}{x-1}\), med vertikal asymptote \(x=1\) og skrå asymptote \(y=x\).
     
-    **Resultat:** \(\underline{\underline{a=2}}\) i oppgave 2.P1.1.
+    **Resultat:** \(\underline{\underline{x=1,\;y=x}}\).
