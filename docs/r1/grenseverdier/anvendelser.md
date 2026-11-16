@@ -1,4 +1,4 @@
-# Anvendelser av grenseverdier og diskontinuitet
+# 2.10 Anvendelser av grenseverdier og diskontinuitet
 
 Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kontinuitet og diskontinuitet kan også brukes til å undersøke modeller der en verdi endrer seg brått.
 
