@@ -154,12 +154,12 @@ Tekst under
         self.assertTrue(any("Ubalansert HTML/SVG" in e for e in errors))
 
     def test_subtasks_on_separate_paragraphs_pass(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
     a) Første deloppgave.
 
     b) Andre deloppgave.
 
-??? note \"Fasit – oppgave 1\"
+??? note \"Fasit – 2.3.1\"
     a) Første svar.
 
     b) Andre svar.
@@ -200,7 +200,7 @@ Tekst under
 ??? note "Fasit – 2.3.1"
 
     \\\[
-    \\underline{\\underline{4}}
+    \underline{\underline{4}}
     \\\]
 '''
         self.assertEqual(self.check(content), [])
