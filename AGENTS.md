@@ -27,7 +27,9 @@ Bruk kapittel 3.1 og de nærmeste eksisterende kapitlene som visuell og struktur
 - **Feil elevene ofte gjør:** der det er pedagogisk relevant, ta med en tydelig advarsel eller et eksempel som forklarer feilen.
 - **Oppgavenivå:** varier oppgavene fra grunnleggende til mer krevende. Nummerer dem i eksisterende kapittelstruktur; ikke opprett nye kategorier uten at brukeren ber om det.
 - **Språk:** skriv klart og naturlig norsk, med konsekvent matematisk notasjon og begrepsbruk.
-- **Navigasjon:** oppdater relevante lenker og indeksfiler når en ny side eller seksjon krever det. Nummereringen i venstremenyen skal samsvare med sidetitler, oppgavenummer og kapittelstruktur. Ikke la nummerhull stå uforklart.\n- **Struktur:** ikke la tomme eksempel-/regel-/oppgavebokser stå igjen. Hver oppgave skal ha én entydig ID på formen kapittel.delkapittel.løpenummer, og hver fasit-ID skal samsvare med oppgaven.\n- **Mellomrom:** bruk én tom linje mellom separate oppgave-, fasit- og eksempelbokser. Ikke slå sammen to admonitions eller la neste overskrift bli del av forrige boks.
+- **Navigasjon:** oppdater relevante lenker og indeksfiler når en ny side eller seksjon krever det. Nummereringen i venstremenyen skal samsvare med sidetitler, oppgavenummer og kapittelstruktur. Ikke la nummerhull stå uforklart.
+- **Struktur:** ikke la tomme eksempel-/regel-/oppgavebokser stå igjen. Hver oppgave skal ha én entydig ID på formen kapittel.delkapittel.løpenummer, og hver fasit-ID skal samsvare med oppgaven.
+- **Mellomrom:** bruk én tom linje mellom separate oppgave-, fasit- og eksempelbokser. Ikke slå sammen to admonitions eller la neste overskrift bli del av forrige boks.
 - **Bilder/SVG:** følg eksisterende mønstre, sørg for tilgjengelig `aria-label`/alternativ tekst og kontroller at SVG-/figure-elementer er balansert.
 
 ## 3. Regler for derivasjonskapitlene
