@@ -119,9 +119,13 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
         for number, line in visible:
             task = re.match(r'^\s*!!!\s+question\s+["\']Oppgave\s+(\d+(?:\.\d+){0,2})', line)
             example = re.match(r'^\s*!!!\s+example\s+["\']Eksempel\s+(\d+(?:\.\d+){0,2})', line)
-            legacy = re.match(r'^\s*\*\*(\d+\.\d+\.\d+)\*\*', line)
+            legacy = re.match(r'^\s*(?:#{1,6}\s+)?(?:\*\*)?(?:Oppgave\s+)?(\d+\.\d+\.\d+)(?:\*\*)?', line)
             if legacy:
-                errors.append(f"{relative}:{number}: Oppgavenummer mangler etiketten 'Oppgave'. Bruk en question-admonition med hierarkisk nummerering.")
+                errors.append(f"{relative}:{number}: Oppgavenummer mangler standard question-admonition og etiketten 'Oppgave'.")
+            if re.match(r'^\s*!!!\s+question\s+', line) and not task:
+                errors.append(f"{relative}:{number}: Oppgave-boksen mangler hierarkisk tittel på formen 'Oppgave 2.3.1'.")
+            if re.match(r'^\s*!!!\s+example\s+', line) and not example:
+                errors.append(f"{relative}:{number}: Eksempel-boksen mangler hierarkisk tittel på formen 'Eksempel 2.3.1'.")
             for kind, match in (("Oppgave", task), ("Eksempel", example)):
                 if match and len(match.group(1).split(".")) != 3:
                     errors.append(f"{relative}:{number}: {kind} må nummereres kapittel.delkapittel.løpenummer.")
