@@ -38,7 +38,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
 ## Øvingsoppgaver til muntlig framføring
 
-!!! question "Muntlig oppgave 1 – grenseverdi eller funksjonsverdi?"
+!!! question "Oppgave 2.13.1 – grenseverdi eller funksjonsverdi?"
 
     En funksjon har
 
@@ -53,7 +53,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     De ensidige grenseverdiene er like, så den vanlige grenseverdien finnes og er 4. Men \(f(2)=1\), så grenseverdien er ikke lik funksjonsverdien. Funksjonen er derfor ikke kontinuerlig i punktet.
 
-!!! question "Muntlig oppgave 2 – et hull eller en vertikal asymptote?"
+!!! question "Oppgave 2.13.2 – et hull eller en vertikal asymptote?"
 
     Sammenlign funksjonene
 
@@ -73,7 +73,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     For \(g\) får vi \((x+2)/(x-2)\). Funksjonen går mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Dermed er \(x=2\) en vertikal asymptote.
 
-!!! question "Muntlig oppgave 3 – hvorfor undersøker vi begge sider?"
+!!! question "Oppgave 2.13.3 – hvorfor undersøker vi begge sider?"
 
     En elev undersøker bare grenseverdien fra høyre og konkluderer med at den vanlige grenseverdien finnes.
 
@@ -83,7 +83,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     Den tosidige grenseverdien finnes bare dersom begge ensidige grenseverdiene finnes og er like. Et eksempel er \(f(x)=\frac{1}{x}\) når \(x\to0\): fra venstre går funksjonen mot \(-\infty\), og fra høyre mot \(+\infty\).
 
-!!! question "Muntlig oppgave 4 – grenseverdi ved faktorisering"
+!!! question "Oppgave 2.13.4 – grenseverdi ved faktorisering"
 
     Bestem
 
@@ -97,7 +97,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
 
     Vi får først \(0/0\), som er en ubestemt form. Telleren faktoriseres til \((x-3)(x+3)\). For \(x\ne3\) kan vi forkorte \(x-3\), og grenseverdien blir 6. Vi endrer ikke funksjonsverdien i \(x=3\); vi undersøker verdiene nær punktet.
 
-!!! question "Muntlig oppgave 5 – horisontal og skrå asymptote"
+!!! question "Oppgave 2.13.5 – horisontal og skrå asymptote"
 
     Sammenlign
 
