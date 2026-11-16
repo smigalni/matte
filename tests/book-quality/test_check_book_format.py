@@ -252,6 +252,18 @@ Tekst under
         errors = self.check("**2.3.1** Finn grenseverdien.\\n")
         self.assertTrue(any("mangler etiketten 'Oppgave'" in e for e in errors))
 
+    def test_duplicate_example_id_fails(self):
+        content = """!!! example "Eksempel 2.3.1"
+
+    Første eksempel.
+
+!!! example "Eksempel 2.3.1"
+
+    Andre eksempel.
+"""
+        errors = self.check(content)
+        self.assertTrue(any("Eksempelnummer 2.3.1 er brukt flere ganger" in e for e in errors))
+
     def test_empty_example_box_fails(self):
         errors = self.check('!!! example "Eksempel 2.3.1"\\n\\n### Neste del\\n')
         self.assertTrue(any("Tom admonition-boks" in e for e in errors))
