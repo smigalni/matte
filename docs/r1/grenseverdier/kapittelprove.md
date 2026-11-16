@@ -28,7 +28,7 @@
     Beregn
 
     \[
-    \lim_{x\to3}\frac{x^2-5x+6}{x-3}.
+    \lim_{x\to3}\dfrac{x^2-5x+6}{x-3}.
     \]
 
     En elev forkorter med \(x-3\) direkte i telleren uten først å faktorisere. Forklar hvorfor metoden er ugyldig, og vis korrekt framgangsmåte.
@@ -56,7 +56,7 @@
     Undersøk funksjonen
 
     \[
-    g(x)=\frac{x^2-4x+3}{x^2-5x+6}.
+    g(x)=\dfrac{x^2-4x+3}{x^2-5x+6}.
     \]
 
     Bestem definisjonsmengden, finn eventuelle hull og asymptoter, og skisser grafen. Bruk algebra til å begrunne resultatene; grafen alene er ikke tilstrekkelig.
