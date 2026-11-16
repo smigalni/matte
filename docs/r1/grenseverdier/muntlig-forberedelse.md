@@ -1,4 +1,4 @@
-# Forberedelse til muntlig prøve – kapittel 2
+# 2.13 Forberedelse til muntlig prøve – kapittel 2
 
 Målet med en muntlig framføring er å vise at du forstår begrepene og kan forklare hvorfor metodene virker. Du skal ikke bare presentere en utregning, men også tolke resultatet og vurdere om konklusjonen er gyldig.
 
