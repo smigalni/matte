@@ -135,11 +135,11 @@ En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjo
 
     **Resultat:** \(\underline{\underline{f(0)=1,\;f(3)=7,\;f(4)=14}}\)
 
-!!! question "Oppgave 2.2.5"
+!!! question "Oppgave 2.2.4"
 
     En funksjon er gitt ved \(g(x)=\begin{cases}ax+1,&x<2,\\x^2-1,&x\geq2.\end{cases}\). Bestem \(a\) slik at de to uttrykkene gir samme grenseverdi ved \(x=2\). Er funksjonen da nødvendigvis kontinuerlig? Begrunn.
 
-??? note "Fasit – 2.2.5"
+??? note "Fasit – 2.2.4"
 
     Vi må ha \(2a+1=3\), så \(a=1\). Da er også \(g(2)=3\), og funksjonen er kontinuerlig i \(x=2\).
 
