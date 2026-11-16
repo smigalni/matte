@@ -95,7 +95,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
 
     if checks.get("check_subtasks_separate_lines", True):
         subtask_start = re.compile(r"^(\s*)(-\s+)?(?:\*\*)?([a-e])\)(?:\*\*)?(?:\s|$)")
-        subtask_anywhere = re.compile(r"(?<![\w\\(])(?:\*\*)?[a-e]\)(?:\*\*)?")
+        subtask_anywhere = re.compile(r"(?<![\w\\(,])(?:\*\*)?[a-e]\)(?:\*\*)?")
         for position, (number, line) in enumerate(visible):
             match = subtask_start.match(line)
             if not match:
