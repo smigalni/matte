@@ -10,6 +10,13 @@ Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-re
 - Sjekkeren bruker bare Python-standardbiblioteket.
 - Kildekontroller finner kjente strukturelle feil, men erstatter ikke bygging av boken eller visuell kontroll i nettleseren.
 
+## Absolutte regler for innholdsbevaring og navigasjon
+
+- Eksisterende kapittel- og delkapittelinnhold skal aldri regenereres, overskrives, erstattes eller gjenskapes som følge av navigasjons-, lenke-, formaterings- eller byggearbeid.
+- Ved `Not found` skal vi feilsøke den konkrete filbanen og anker-ID-en. Gjør bare en målrettet retting av lenken eller ankeret; bevar resten av innholdet.
+- Navigasjonslenker til delkapitler skal peke på eksisterende sider og verifiserte anker-ID-er. Bruk eksplisitte, stabile ID-er når automatiske overskriftsankere er usikre, og oppdater lenke og anker samlet.
+- Kontroller endringen med Git-diff: ved en ren navigasjonsretting skal oppgaver, eksempler, fasiter og forklarende tekst være uendret.
+
 ## Standardkontroller
 
 1. Et gjennomarbeidet eksempel skal bruke en `example`-admonition, ikke en løs Eksempel-overskrift.
