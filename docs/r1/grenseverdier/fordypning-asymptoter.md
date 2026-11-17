@@ -35,9 +35,9 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
     Dermed får vi
 
     \[
-    \lim_{x\to2^-}f(x)=4
+    \lim\limits_{x\to2^-}f(x)=4
     \qquad\text{og}\qquad
-    \lim_{x\to2^+}f(x)=4.
+    \lim\limits_{x\to2^+}f(x)=4.
     \]
 
     Grenseverdiene er endelige. Grafen har et **hull** i \((2,4)\), ikke en vertikal asymptote.
@@ -59,9 +59,9 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
     Da får vi
 
     \[
-    \lim_{x\to2^-}g(x)=-\infty
+    \lim\limits_{x\to2^-}g(x)=-\infty
     \qquad\text{og}\qquad
-    \lim_{x\to2^+}g(x)=+\infty.
+    \lim\limits_{x\to2^+}g(x)=+\infty.
     \]
 
     Grafen har derfor en **vertikal asymptote** \(x=2\).
