@@ -43,8 +43,8 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
     En funksjon har
 
     \[
-    \lim_{x\to2^-}f(x)=4,\qquad
-    \lim_{x\to2^+}f(x)=4,\qquad f(2)=1.
+    \lim\limits_{x\to2^-}f(x)=4,\qquad
+    \lim\limits_{x\to2^+}f(x)=4,\qquad f(2)=1.
     \]
 
     Forklar om den vanlige grenseverdien finnes. Er funksjonen kontinuerlig i \(x=2\)? Begrunn svaret ved å bruke definisjonen av kontinuitet.
@@ -88,7 +88,7 @@ Målet med en muntlig framføring er å vise at du forstår begrepene og kan for
     Bestem
 
     \[
-    \lim_{x\to3}\dfrac{x^2-9}{x-3}.
+    \lim\limits_{x\to3}\dfrac{x^2-9}{x-3}.
     \]
 
     Forklar hvorfor direkte innsetting ikke gir svaret, og hvorfor forkortingen er lovlig i grenseprosessen.
