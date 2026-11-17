@@ -13,6 +13,8 @@ Disse reglene gjelder for alt arbeid i dette repositoriet. Følg eksisterende l�
 
 ## 1.1 Bevaring av eksisterende innhold – absolutt regel
 
+- **Zensical-navigasjon:** Hvert element i `nav` skal peke på en faktisk Markdown-fil relativt til `docs_dir`. Ikke bruk `fil.md#anker` som mål i venstremenyen; Zensical-navigasjonen forventer en side, ikke et sidefragment. Hvis et delkapittel skal være et eget punkt i venstremenyen, skal det ha en egen Markdown-fil. Bruk ankerlenker i innholdet eller sidens innholdsfortegnelse for hopp innenfor samme side. Kontroller at alle nav-stier peker på eksisterende filer.
+
 - **Aldri regenerer, overskriv, erstatt eller gjenskap eksisterende kapittel- eller delkapittelinnhold** som en bivirkning av arbeid med navigasjon, lenker, formatering, bygg, struktur eller andre feil.
 - Hvis en side eller lenke viser `Not found`, undersøk først den konkrete filbanen, nav-konfigurasjonen og anker-ID-en. Rett bare den konkrete filen eller referansen som er feil.
 - Bevar eksisterende tekst, oppgaver, eksempler, fasiter og faglig innhold ordrett når oppgaven gjelder navigasjon eller teknisk struktur. Gjør kun målrettede endringer som er nødvendige for å løse feilen.
