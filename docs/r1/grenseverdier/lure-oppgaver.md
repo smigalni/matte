@@ -42,7 +42,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     
     d) Grenseverdien beskriver hva funksjonsverdiene nærmer seg, ikke nødvendigvis verdien i selve punktet.
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to1}f(x)=3,\;f(1)=4}}\)
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to1}f(x)=3,\;f(1)=4}}\)
 
 !!! question "Oppgave 2.12.2 – kontinuerlig, men ikke deriverbar"
 
@@ -86,19 +86,25 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     c) Er \(x=2\) en vertikal asymptote?
 
-    d) Sammenlign med \(p(x)=\frac{1}{x-2}\). Hva er forskjellen på fortegnet til de ensidige grenseverdiene?
+    d) Sammenlign med 
+
+    \[
+    p(x)=\frac{1}{x-2}
+    \]
+
+    . Hva er forskjellen på fortegnet til de ensidige grenseverdiene?
 
 ??? note "Fasit – 2.12.3"
 
-    a) \(\lim_{x\to2^-}h(x)=+\infty\).
+    a) \(\lim\limits_{x\to2^-}h(x)=+\infty\).
     
-    b) \(\lim_{x\to2^+}h(x)=+\infty\).
+    b) \(\lim\limits_{x\to2^+}h(x)=+\infty\).
     
     c) Ja, \(x=2\) er en vertikal asymptote.
     
     d) For \(p(x)=1/(x-2)\) går funksjonen mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Kvadratet i nevneren til \(h\) gjør nevneren positiv på begge sider.
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to2^-}h(x)=+\infty,\;\lim_{x\to2^+}h(x)=+\infty}}\)
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to2^-}h(x)=+\infty,\;\lim\limits_{x\to2^+}h(x)=+\infty}}\)
 
 !!! question "Oppgave 2.12.4 – forkorting og definisjonsmengde"
 
@@ -128,7 +134,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
     
     d) Vi kan definere \(q(1)=2\). Da blir funksjonen kontinuerlig i \(x=1\).
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to1}q(x)=2,\;q(1)\text{ er ikke definert}}}\)
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to1}q(x)=2,\;q(1)\text{ er ikke definert}}}\)
 
 !!! question "Oppgave 2.12.5 – asymptoten kan krysses"
 
