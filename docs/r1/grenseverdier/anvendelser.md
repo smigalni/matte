@@ -20,8 +20,8 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     Når \(t\) nærmer seg 1 time fra venstre, er prisen 30 kr. Når \(t\) nærmer seg 1 time fra høyre, er prisen 60 kr:
 
     \[
-    \lim_{t\to1^-}P(t)=30,\qquad
-    \lim_{t\to1^+}P(t)=60.
+    \lim\limits_{t\to1^-}P(t)=30,\qquad
+    \lim\limits_{t\to1^+}P(t)=60.
     \]
 
     De ensidige grenseverdiene er ulike. Modellen er derfor diskontinuerlig ved \(t=1\). Det beskriver et prishopp: En liten økning i parkeringstiden kan gi en større endring i prisen.
@@ -47,15 +47,15 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     b) Ved \(t=1\):
     
     \[
-    \lim_{t\to1^-}P(t)=30,\qquad
-    \lim_{t\to1^+}P(t)=60.
+    \lim\limits_{t\to1^-}P(t)=30,\qquad
+    \lim\limits_{t\to1^+}P(t)=60.
     \]
     
     Ved \(t=2\):
     
     \[
-    \lim_{t\to2^-}P(t)=60,\qquad
-    \lim_{t\to2^+}P(t)=90.
+    \lim\limits_{t\to2^-}P(t)=60,\qquad
+    \lim\limits_{t\to2^+}P(t)=90.
     \]
     
     c) Modellen er diskontinuerlig ved begge tidspunktene fordi de ensidige grenseverdiene er ulike.
@@ -116,7 +116,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     Q(x)=\dfrac{x^2-16}{x-4},\qquad x\ne4.
     \]
 
-    a) Bestem \(\lim_{x\to4}Q(x)\).
+    a) Bestem \(\lim\limits_{x\to4}Q(x)\).
 
     b) Forklar hvorfor \(Q(4)\) ikke er definert, selv om grenseverdien finnes.
 
@@ -135,7 +135,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     Dermed er
     
     \[
-    \lim_{x\to4}Q(x)=8.
+    \lim\limits_{x\to4}Q(x)=8.
     \]
     
     b) Den opprinnelige definisjonen har \(x-4\) i nevneren, så \(Q(4)\) er ikke definert.
@@ -144,7 +144,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     
     d) Flere svar kan godtas. Eleven bør forklare at en grenseverdi kan beskrive en forventet eller tilnærmet verdi nær en grense, selv om selve punktet ikke inngår i modellen.
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to4}Q(x)=8}}\)
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to4}Q(x)=8}}\)
 !!! question "Oppgave 2.10.5 – temperatur som nærmer seg romtemperaturen"
 
     En kopp varm drikke står i et rom med konstant temperatur på 20 °C. En forenklet modell for temperaturen i drikken er
@@ -161,7 +161,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     c) Tegn grafen digitalt. Beskriv hva grafen viser når tiden øker.
 
-    d) Bestem \(\lim_{t\to\infty}T(t)\) algebraisk. Vis hvorfor brøkdelen går mot null.
+    d) Bestem \(\lim\limits_{t\to\infty}T(t)\) algebraisk. Vis hvorfor brøkdelen går mot null.
 
     e) Forklar hva grenseverdien betyr i situasjonen. Vil modellen noen gang gi nøyaktig 20 °C for en endelig verdi av \(t\)? Begrunn.
 
@@ -176,8 +176,8 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     d)
     
     \[
-    \lim_{t\to\infty}T(t)
-    =20+60\lim_{t\to\infty}\dfrac{1}{t+1}
+    \lim\limits_{t\to\infty}T(t)
+    =20+60\lim\limits_{t\to\infty}\dfrac{1}{t+1}
     =20.
     \]
     
