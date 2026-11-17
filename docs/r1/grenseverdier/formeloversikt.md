@@ -7,25 +7,25 @@ Denne oversikten samler sentrale definisjoner og framgangsmåter fra kapittel 2.
 Fra venstre:
 
 \[
-\lim_{x\to a^-}f(x)
+\lim\limits_{x\to a^-}f(x)
 \]
 
 Fra høyre:
 
 \[
-\lim_{x\to a^+}f(x)
+\lim\limits_{x\to a^+}f(x)
 \]
 
 Den vanlige grenseverdien finnes når begge ensidige grenseverdiene finnes og er like:
 
 \[
-\lim_{x\to a^-}f(x)=\lim_{x\to a^+}f(x)=L
+\lim\limits_{x\to a^-}f(x)=\lim\limits_{x\to a^+}f(x)=L
 \]
 
 Da skriver vi
 
 \[
-\lim_{x\to a}f(x)=L.
+\lim\limits_{x\to a}f(x)=L.
 \]
 
 ## Kontinuitet i et punkt
@@ -33,17 +33,17 @@ Da skriver vi
 En funksjon er kontinuerlig i \(x=a\) når alle tre kravene er oppfylt:
 
 1. \(f(a)\) er definert.
-2. \(\lim_{x\to a}f(x)\) finnes.
-3. \(\lim_{x\to a}f(x)=f(a)\).
+2. \(\lim\limits_{x\to a}f(x)\) finnes.
+3. \(\lim\limits_{x\to a}f(x)=f(a)\).
 
 ## Grenseverdier ved faktorisering
 
 Hvis direkte innsetting gir \(0/0\), er formen ubestemt. Faktoriser og undersøk om felles faktorer kan forkortes:
 
 \[
-\lim_{x\to a}\dfrac{(x-a)g(x)}{x-a}
+\lim\limits_{x\to a}\dfrac{(x-a)g(x)}{x-a}
 =
-\lim_{x\to a}g(x),
+\lim\limits_{x\to a}g(x),
 \]
 
 forutsatt at uttrykkene er definert for \(x\ne a\) nær punktet.
@@ -55,9 +55,9 @@ Forkortingen endrer ikke den opprinnelige funksjonens definisjonsmengde. Funksjo
 Linjen \(x=a\) er en vertikal asymptote dersom minst én av de ensidige grenseverdiene går mot \(+\infty\) eller \(-\infty\):
 
 \[
-\lim_{x\to a^-}f(x)=\pm\infty
+\lim\limits_{x\to a^-}f(x)=\pm\infty
 \quad\text{eller}\quad
-\lim_{x\to a^+}f(x)=\pm\infty.
+\lim\limits_{x\to a^+}f(x)=\pm\infty.
 \]
 
 **Husk:** At nevneren blir null, gir bare en kandidat. Faktoriser, forkort eventuelle felles faktorer og undersøk grenseverdiene.
@@ -67,13 +67,13 @@ Linjen \(x=a\) er en vertikal asymptote dersom minst én av de ensidige grenseve
 Linjen \(y=L\) er en horisontal asymptote dersom
 
 \[
-\lim_{x\to\infty}f(x)=L
+\lim\limits_{x\to\infty}f(x)=L
 \]
 
 eller
 
 \[
-\lim_{x\to-\infty}f(x)=L.
+\lim\limits_{x\to-\infty}f(x)=L.
 \]
 
 De to grensene kan gi ulike horisontale asymptoter.
