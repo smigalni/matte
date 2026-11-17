@@ -79,7 +79,7 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     \lim\limits_{x\to3}\frac{x^2-9}{x-3}
     \]
 
-    . Vis faktoriseringen og forklar hvorfor forkortingen er lovlig i grenseprosessen.
+    Vis faktoriseringen og forklar hvorfor forkortingen er lovlig i grenseprosessen.
 
 ??? note "Fasit – 2.5.3"
 
@@ -111,7 +111,7 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     \lim\limits_{x\to1}\frac{x^2-1}{x^2-3x+2}
     \]
 
-    . Forklar hva som skjer med telleren og nevneren etter faktorisering.
+    Forklar hva som skjer med telleren og nevneren etter faktorisering.
 
 ??? note "Fasit – 2.5.5"
 
@@ -127,7 +127,7 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     \lim\limits_{x\to\infty}\frac{5x^2-2x+1}{2x^2+7}
     \]
 
-    , og begrunn svaret ved å dele på riktig potens av \(x\).
+    Begrunn svaret ved å dele på riktig potens av \(x\).
 
 ??? note "Fasit – 2.5.6"
 
