@@ -135,6 +135,72 @@
         });
       }
     }
+
+    constant: {
+      title: "Konstant funksjon f(x) = 2",
+      bounds: [-5, 5, 5, -1],
+      draw(board) {
+        board.create("functiongraph", [() => 2, -5, 5], { strokeColor: COLORS.curve, strokeWidth: 3 });
+        board.create("point", [0, 2], { name: "(0, 2)", size: 3.5, fixed: true, strokeColor: COLORS.accent, fillColor: COLORS.accent });
+      }
+    },
+    linear: {
+      title: "Lineær funksjon f(x) = 0,8x + 1",
+      bounds: [-5, 5, 5, -3],
+      draw(board) {
+        board.create("functiongraph", [x => 0.8*x + 1, -5, 5], { strokeColor: COLORS.curve, strokeWidth: 3 });
+        board.create("point", [0, 1], { name: "(0, 1)", size: 3.5, fixed: true, strokeColor: COLORS.accent, fillColor: COLORS.accent });
+      }
+    },
+    "quadratic-basic": {
+      title: "Andregradsfunksjon f(x) = x² − 2x − 3",
+      bounds: [-3, 6, 5, -6],
+      draw(board) {
+        board.create("functiongraph", [x => x*x - 2*x - 3, -2.2, 4.2], { strokeColor: COLORS.curve, strokeWidth: 3, numberPoints: 320 });
+        [[-1,0,"N₁(−1, 0)"],[3,0,"N₂(3, 0)"],[1,-4,"B(1, −4)"]].forEach(([x,y,label]) => {
+          board.create("point", [x,y], { name: label, size: 3.5, fixed: true, strokeColor: COLORS.accent, fillColor: COLORS.accent, label: { offset: [8, y===-4 ? -18 : 12] } });
+        });
+      }
+    },
+    power: {
+      title: "Potensfunksjon f(x) = x³",
+      bounds: [-3, 4, 3, -4],
+      draw(board) {
+        board.create("functiongraph", [x => x*x*x, -1.58, 1.58], { strokeColor: COLORS.curve, strokeWidth: 3, numberPoints: 320 });
+        board.create("point", [0,0], { name: "O", size: 3.5, fixed: true, strokeColor: COLORS.accent, fillColor: COLORS.accent });
+      }
+    },
+    exponential: {
+      title: "Eksponentialfunksjon f(x) = 2ˣ",
+      bounds: [-4, 9, 4, -1],
+      draw(board) {
+        board.create("functiongraph", [x => Math.pow(2,x), -4, 3.15], { strokeColor: COLORS.curve, strokeWidth: 3, numberPoints: 320 });
+        board.create("line", [[-4,0],[4,0]], { straightFirst:true, straightLast:true, strokeColor:COLORS.secondary, strokeWidth:2, dash:2, fixed:true });
+        board.create("point", [0,1], { name:"(0, 1)", size:3.5, fixed:true, strokeColor:COLORS.accent, fillColor:COLORS.accent });
+      }
+    },
+    logarithm: {
+      title: "Logaritmefunksjon f(x) = log₂(x)",
+      bounds: [-1, 5, 8, -5],
+      draw(board) {
+        board.create("functiongraph", [x => Math.log(x)/Math.log(2), 0.035, 8], { strokeColor: COLORS.curve, strokeWidth: 3, numberPoints: 320 });
+        board.create("line", [[0,-5],[0,5]], { straightFirst:true, straightLast:true, strokeColor:COLORS.secondary, strokeWidth:2, dash:2, fixed:true });
+        board.create("point", [1,0], { name:"(1, 0)", size:3.5, fixed:true, strokeColor:COLORS.accent, fillColor:COLORS.accent });
+      }
+    },
+    "rational-basic": {
+      title: "Rasjonal funksjon f(x) = 1 + 3/(x − 2)",
+      bounds: [-5, 6, 7, -5],
+      draw(board) {
+        const f = x => 1 + 3/(x-2);
+        board.create("functiongraph", [f, -5, 1.72], { strokeColor:COLORS.curve, strokeWidth:3, numberPoints:280 });
+        board.create("functiongraph", [f, 2.28, 7], { strokeColor:COLORS.curve, strokeWidth:3, numberPoints:280 });
+        board.create("line", [[2,-5],[2,6]], { straightFirst:true, straightLast:true, strokeColor:COLORS.accent, strokeWidth:2, dash:2, fixed:true });
+        board.create("line", [[-5,1],[7,1]], { straightFirst:true, straightLast:true, strokeColor:COLORS.secondary, strokeWidth:2, dash:2, fixed:true });
+        board.create("text", [2.12,5.2,"x = 2"], { fontSize:12, fixed:true, strokeColor:COLORS.accent });
+        board.create("text", [5.1,1.35,"y = 1"], { fontSize:12, fixed:true, strokeColor:COLORS.secondary });
+      }
+    },
   };
 
   const diagnostics = window.__R1_GRAPH_DIAGNOSTICS__ = {

@@ -18,7 +18,10 @@ der \(c\) er et fast tall.
 - Definisjonsmengde: \(D_f=\mathbb R\).
 - Verdimengde: \(V_f=\{c\}\).
 
-<svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen til en konstant funksjon er en vannrett linje." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M28 68 H218" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
+<div class="r1-graph-frame">
+  <div id="r1-21-constant" class="r1-function-graph" data-r1-graph="constant" role="img" aria-label="Konstant funksjon f(x) = 2"></div>
+  <p class="r1-graph-caption">Vannrett graf y = 2. Rutenettet viser at funksjonsverdien er den samme for alle x.</p>
+</div>
 
 ### Lineær funksjon
 
@@ -33,7 +36,10 @@ f(x)=ax+b,\qquad a\ne0
 - \(b\) er skjæringspunktet med y-aksen.
 - Definisjonsmengde og verdimengde er \(\mathbb R\).
 
-<svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen til en lineær funksjon er en rett linje." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M25 112 L215 24" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
+<div class="r1-graph-frame">
+  <div id="r1-21-linear" class="r1-function-graph" data-r1-graph="linear" role="img" aria-label="Lineær funksjon f(x) = 0,8x + 1"></div>
+  <p class="r1-graph-caption">Rett linje med stigningstall 0,8 og skjæring med y-aksen i 1.</p>
+</div>
 
 ### Andregradsfunksjon
 
@@ -54,7 +60,10 @@ x=-\frac{b}{2a}.
 - Definisjonsmengde: \(D_f=\mathbb R\).
 - Hvis \(a>0\), er verdimengden \([y_v,\infty)\). Hvis \(a<0\), er den \((-\infty,y_v]\), der \(y_v\) er y-koordinaten til topp- eller bunnpunktet.
 
-<svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen til en andregradsfunksjon er en parabel." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M28 25 Q120 165 212 25" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
+<div class="r1-graph-frame">
+  <div id="r1-21-quadratic-basic" class="r1-function-graph" data-r1-graph="quadratic-basic" role="img" aria-label="Andregradsfunksjon f(x) = x² − 2x − 3"></div>
+  <p class="r1-graph-caption">Parabel med nullpunktene −1 og 3 og bunnpunktet (1, −4).</p>
+</div>
 
 ### Potensfunksjon
 
@@ -72,7 +81,10 @@ der \(a\ne0\) og \(n\) er et positivt heltall.
 - Når \(n\) er partall, er verdimengden \([0,\infty)\) hvis \(a>0\), og \((-\infty,0]\) hvis \(a<0\). Når \(n\) er oddetall, er verdimengden \(\mathbb R\).
 - Definisjonsmengde: \(D_f=\mathbb R\).
 
-<svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen viser en typisk tredjegradsfunksjon." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M25 118 C65 118 78 108 105 82 C135 52 155 32 215 18" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
+<div class="r1-graph-frame">
+  <div id="r1-21-power" class="r1-function-graph" data-r1-graph="power" role="img" aria-label="Potensfunksjon f(x) = x³"></div>
+  <p class="r1-graph-caption">En typisk tredjegrads potensfunksjon, symmetrisk om origo.</p>
+</div>
 
 ### Eksponentialfunksjon
 
@@ -89,7 +101,10 @@ f(x)=a^x,\qquad a>0,\quad a\ne1
 - Verdimengde: \(V_f=(0,\infty)\).
 - x-aksen, \(y=0\), er en horisontal asymptote.
 
-<svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen viser en voksende eksponentialfunksjon." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M25 105 C85 105 115 99 142 75 C168 48 185 28 215 16" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
+<div class="r1-graph-frame">
+  <div id="r1-21-exponential" class="r1-function-graph" data-r1-graph="exponential" role="img" aria-label="Eksponentialfunksjon f(x) = 2ˣ"></div>
+  <p class="r1-graph-caption">Voksende eksponentialfunksjon som passerer (0, 1); y = 0 er asymptote.</p>
+</div>
 
 ### Logaritmefunksjon
 
@@ -106,7 +121,10 @@ f(x)=\log_a x,\qquad a>0,\quad a\ne1
 - Grafen skjærer x-aksen i \(x=1\).
 - y-aksen, \(x=0\), er en vertikal asymptote.
 
-<svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen viser en voksende logaritmefunksjon." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M47 119 C62 91 82 72 112 57 C150 38 180 27 215 20" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
+<div class="r1-graph-frame">
+  <div id="r1-21-logarithm" class="r1-function-graph" data-r1-graph="logarithm" role="img" aria-label="Logaritmefunksjon f(x) = log₂(x)"></div>
+  <p class="r1-graph-caption">Voksende logaritmefunksjon som passerer (1, 0); x = 0 er vertikal asymptote.</p>
+</div>
 
 ### Rasjonal funksjon
 
@@ -122,7 +140,10 @@ der \(P(x)\) og \(Q(x)\) er polynomer.
 - Grafen kan ha hull og asymptoter.
 - Verdimengden avhenger av funksjonsuttrykket. Den må undersøkes i hvert tilfelle.
 
-<svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen viser en typisk rasjonal funksjon med vertikal og horisontal asymptote." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M25 36 C60 38 87 52 110 109 M130 16 C153 63 177 70 215 72" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/><path d="M120 12 V126 M20 70 H225" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4" opacity=".65"/></svg>
+<div class="r1-graph-frame">
+  <div id="r1-21-rational-basic" class="r1-function-graph" data-r1-graph="rational-basic" role="img" aria-label="Rasjonal funksjon f(x) = 1 + 3/(x − 2)"></div>
+  <p class="r1-graph-caption">Vertikal asymptote x = 2 og horisontal asymptote y = 1.</p>
+</div>
 
 ### Dette bør du kunne kjenne igjen
 
