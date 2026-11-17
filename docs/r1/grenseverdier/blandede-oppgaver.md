@@ -60,7 +60,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     \lim\limits_{x\to4}\frac{x^2-16}{x-4}
     \]
 
-    , og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
+    Forklar også hvorfor svaret ikke er funksjonsverdien i \(x=4\).
 
 ??? note "Fasit – 2.8.5"
 
@@ -76,7 +76,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     f(x)=\frac{2x^2+1}{x^2-9}
     \]
 
-    .
+
 
 ??? note "Fasit – 2.8.6"
 
