@@ -52,7 +52,9 @@ jobs:
           exit 1
 
       - name: Test desktop and mobile rendering
-        run: node tests/visuals/function-graphs.spec.cjs
+        run: |
+          node tests/visuals/function-graphs.spec.cjs
+          node tests/visuals/chapter-2-1-graphs.spec.cjs
 
       - name: Upload browser screenshots
         if: always()
