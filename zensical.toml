@@ -6,15 +6,19 @@ site_url = "https://smigalni.github.io/matte/"
 docs_dir = "docs"
 extra_css = [
   "stylesheets/extra.css",
+  "https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css",
 ]
 extra_javascript = [
   "javascripts/mathjax.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+  "https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js",
+  "javascripts/function-graphs.js",
 ]
 
 nav = [
   { "Hjem" = "index.md" },
   { "R1" = [
+    { "Verksted – funksjonsgrafer (pilot)" = "r1/funksjonsgrafer-pilot.md" },
     { "Kapittel 2 – Grenseverdier og kontinuitet" = [
       { "Kapitteloversikt – Dette skal du lære" = "r1/grenseverdier/index.md" },
       { "2.1 Repetisjon av funksjonstyper" = "r1/grenseverdier/delkapittel-2-1.md" },
