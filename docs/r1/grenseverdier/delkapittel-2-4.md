@@ -159,4 +159,4 @@ Her er venstre og høyre grenseverdi ulike.
 
     For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
 
-    **Resultat:** \(\underline{\underline{k=4}}\`
+    **Resultat:** \(\underline{\underline{k=4}}\
