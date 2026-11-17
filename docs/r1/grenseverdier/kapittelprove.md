@@ -28,7 +28,7 @@
     Beregn
 
     \[
-    \lim_{x\to3}\dfrac{x^2-5x+6}{x-3}.
+    \lim\limits_{x\to3}\dfrac{x^2-5x+6}{x-3}.
     \]
 
     En elev forkorter med \(x-3\) direkte i telleren uten først å faktorisere. Forklar hvorfor metoden er ugyldig, og vis korrekt framgangsmåte.
@@ -41,13 +41,13 @@
 
 !!! question "Oppgave 2.9.3"
 
-    En funksjon har \(\lim_{x\to a^-}f(x)=4\), \(\lim_{x\to a^+}f(x)=4\) og \(f(a)=-2\). Drøft om grenseverdien finnes og om funksjonen er kontinuerlig. Lag en enkel delt forskrift som illustrerer situasjonen.
+    En funksjon har \(\lim\limits_{x\to a^-}f(x)=4\), \(\lim\limits_{x\to a^+}f(x)=4\) og \(f(a)=-2\). Drøft om grenseverdien finnes og om funksjonen er kontinuerlig. Lag en enkel delt forskrift som illustrerer situasjonen.
 
 ??? note "Fasit – 2.9.3"
 
     Grenseverdien finnes og er \(4\), men funksjonsverdien er \(-2\). Funksjonen er ikke kontinuerlig.
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to a}f(x)=4,\;f(a)=-2}}\)
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to a}f(x)=4,\;f(a)=-2}}\)
 
 ## Del 2 – med digitale hjelpemidler
 
@@ -95,3 +95,84 @@
     Ett eksempel er \(f(x)=x+\frac{1}{x-1}\), med vertikal asymptote \(x=1\) og skrå asymptote \(y=x\).
     
     **Resultat:** \(\underline{\underline{x=1,\;y=x}}\).
+
+
+!!! question "Oppgave 2.9.7 – polynomdivisjon og skrå asymptote"
+
+    Vi har funksjonen
+
+    \[
+    f(x)=\dfrac{x^2+1}{x-1}.
+    \]
+
+    a) Utfør polynomdivisjonen, og skriv funksjonen som et polynom pluss en brøk.
+
+    b) Bestem den vertikale asymptoten.
+
+    c) Bestem den skrå asymptoten, og forklar hvorfor restleddet ikke påvirker asymptoten når \(x\) går mot uendelig.
+
+??? note "Fasit – 2.9.7"
+
+    Polynomdivisjonen gir
+
+    \[
+    f(x)=x+1+\dfrac{2}{x-1}.
+    \]
+
+    Nevneren blir null ved \(x=1\), og telleren er ikke null der. Dermed er \(x=1\) vertikal asymptote. Restleddet går mot null når \(x\to\pm\infty\), så den skrå asymptoten er \(y=x+1\).
+
+    **Resultat:** \(\underline{\underline{x=1,\;y=x+1}}\
+
+!!! question "Oppgave 2.9.8 – les en graf og vurder kontinuitet"
+
+    En funksjon er gitt ved
+
+    \[
+    g(x)=
+    \begin{cases}
+    x+2, & x<0,\\
+    x^2+1, & x\geq0.
+    \end{cases}
+    \]
+
+    a) Bestem venstre grenseverdi når \(x\to0\).
+
+    b) Bestem høyre grenseverdi og funksjonsverdien \(g(0)\).
+
+    c) Finnes den tosidige grenseverdien? Er funksjonen kontinuerlig i \(x=0\)?
+
+    d) Skisser grafen, og marker åpen og fylt sirkel. Forklar hva sirklene viser.
+
+??? note "Fasit – 2.9.8"
+
+    Venstre grenseverdi er \(2\). Høyre grenseverdi er \(1\), og \(g(0)=1\). De ensidige grenseverdiene er ulike, så den tosidige grenseverdien finnes ikke. Funksjonen er ikke kontinuerlig i \(x=0\). Grafen har en åpen sirkel i \((0,2)\) og en fylt sirkel i \((0,1)\).
+
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to0^-}g(x)=2,\;\lim\limits_{x\to0^+}g(x)=1,\;g(0)=1}}\
+
+!!! question "Oppgave 2.9.9 – en asymptote kan krysses"
+
+    Vi har funksjonen
+
+    \[
+    h(x)=\dfrac{2x^2+x}{x^2+1}.
+    \]
+
+    a) Bestem den horisontale asymptoten.
+
+    b) Undersøk om grafen krysser asymptoten. Finn eventuelt skjæringspunktet.
+
+    c) Forklar hvorfor det ikke er noe problem at grafen krysser en horisontal asymptote.
+
+??? note "Fasit – 2.9.9"
+
+    Teller og nevner har samme grad, så den horisontale asymptoten er \(y=2\). Vi setter \(h(x)=2\):
+
+    \[
+    2x^2+x=2(x^2+1)
+    \quad\Longrightarrow\quad
+    x=2.
+    \]
+
+    Grafen krysser asymptoten i \((2,2)\). En horisontal asymptote beskriver grenseverdien når \(x\) går mot uendelig, og grafen kan derfor krysse linjen ved en endelig x-verdi.
+
+    **Resultat:** \(\underline{\underline{y=2,\;(2,2)}}\
