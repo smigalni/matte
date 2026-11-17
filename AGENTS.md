@@ -11,6 +11,14 @@ Disse reglene gjelder for alt arbeid i dette repositoriet. Følg eksisterende l�
 - Kontroller branch og filinnhold før du skriver. Etter endring: hent filen på nytt og kontroller at committen og innholdet faktisk finnes på riktig branch.
 - Ikke slett branches eller filer uten uttrykkelig beskjed.
 
+## 1.1 Bevaring av eksisterende innhold – absolutt regel
+
+- **Aldri regenerer, overskriv, erstatt eller gjenskap eksisterende kapittel- eller delkapittelinnhold** som en bivirkning av arbeid med navigasjon, lenker, formatering, bygg, struktur eller andre feil.
+- Hvis en side eller lenke viser `Not found`, undersøk først den konkrete filbanen, nav-konfigurasjonen og anker-ID-en. Rett bare den konkrete filen eller referansen som er feil.
+- Bevar eksisterende tekst, oppgaver, eksempler, fasiter og faglig innhold ordrett når oppgaven gjelder navigasjon eller teknisk struktur. Gjør kun målrettede endringer som er nødvendige for å løse feilen.
+- Hvis innhold faktisk mangler, stopp og rapporter hva som mangler før nytt innhold opprettes. Ikke fyll inn ved å regenerere et helt kapittel.
+- Før og etter slike endringer skal filinnhold og Git-diff kontrolleres for å bekrefte at eksisterende innhold er bevart.
+
 ## 2. Design og formatering – obligatorisk
 
 Bruk kapittel 3.1 og de nærmeste eksisterende kapitlene som visuell og strukturell fasit. Gjenbruk repoets etablerte MkDocs/Zensical-syntaks; ikke finn opp et nytt design for hver side.
