@@ -75,3 +75,13 @@ Sjekkeren og den gjenbrukbare workflowen vedlikeholdes i `smigalni/matte`. Etter
 - Asymptoter skal illustreres med en graf for hver hovedtype.
 - Polynomdivisjon skal vises med en korrekt, oppstilt algoritme. Vis kvotientledd, produktet som trekkes fra, ny rest og eventuell divisjonsrest.
 - Kapittelprøver bør normalt inneholde omtrent 8–10 varierte oppgaver som dekker hele kapittelet, ikke bare noen få representative regneoppgaver.
+
+
+## Funksjonsgrafer og visuell kvalitet
+
+- Bruk JSXGraph for koordinatbaserte funksjonsgrafer, tangenter, asymptoter og markerte matematiske punkter. Bruk SVG til enkle, statiske skisser der dette er mer hensiktsmessig.
+- Alle grafer skal bygge på eksplisitte funksjonsforskrifter og matematiske koordinater. Visningsvindu og definisjonsintervall må velges bevisst.
+- Bruk et felles visuelt system for akser, rutenett, farger, linjer, punkter og etiketter. Grafer skal være lesbare på mobil og desktop.
+- Hver graf skal ha alternativ tekst/ARIA-beskrivelse og en kort forklaring i elevteksten.
+- Playwright skal kontrollere at grafene rendres i nettleseren på mobil og desktop, at tegneflatene har tilstrekkelig størrelse, og at siden ikke får horisontal sideskrolling.
+- Skjermbilder fra nettlesertestene skal inspiseres før en ny grafmal godkjennes og tas i bruk i ordinært lærestoff. Automatiske tester alene beviser ikke pedagogisk eller matematisk kvalitet.
