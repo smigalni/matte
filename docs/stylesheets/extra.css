@@ -335,3 +335,41 @@
   border-color: #fca5a5;
   border-left-color: #dc2626;
 }
+
+
+/* R1 – felles grafstandard for JSXGraph */
+.md-typeset .r1-graph-frame {
+  margin: 1.2rem 0 2rem;
+  padding: .85rem;
+  border: 1px solid #dce5f0;
+  border-radius: .8rem;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(28, 62, 100, .045);
+}
+.md-typeset .r1-function-graph {
+  width: 100%;
+  height: clamp(250px, 42vw, 390px);
+  min-height: 250px;
+  border: 0;
+  border-radius: .45rem;
+  background: #fff;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+.md-typeset .r1-function-graph svg {
+  max-width: none;
+}
+.md-typeset .r1-function-graph .JXGtext {
+  font-family: inherit;
+}
+.md-typeset .r1-graph-caption {
+  margin: .7rem .35rem .15rem;
+  color: #52647b;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .md-typeset .r1-graph-frame { padding: .45rem; }
+  .md-typeset .r1-function-graph { height: 270px; min-height: 240px; }
+  .md-typeset .r1-graph-caption { font-size: .84rem; }
+}
