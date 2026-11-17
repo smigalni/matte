@@ -6,7 +6,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 !!! question "Oppgave 2.8.1"
 
-    Finn \(\lim_{x\to2}(3x-1)\).
+    Finn \(\lim\limits_{x\to2}(3x-1)\).
 
 ??? note "Fasit – 2.8.1"
 
@@ -26,7 +26,13 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 !!! question "Oppgave 2.8.3"
 
-    Finn den vertikale asymptoten til \(f(x)=\frac{1}{x+4}\).
+    Finn den vertikale asymptoten til 
+
+    \[
+    f(x)=\frac{1}{x+4}
+    \]
+
+    .
 
 ??? note "Fasit – 2.8.3"
 
@@ -48,7 +54,13 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 !!! question "Oppgave 2.8.5"
 
-    Beregn \(\lim_{x\to4}\frac{x^2-16}{x-4}\), og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
+    Beregn 
+
+    \[
+    \lim\limits_{x\to4}\frac{x^2-16}{x-4}
+    \]
+
+    , og forklar hvorfor svaret ikke er funksjonsverdien i \(x=4\).
 
 ??? note "Fasit – 2.8.5"
 
@@ -58,7 +70,13 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 !!! question "Oppgave 2.8.6"
 
-    Finn alle asymptotene til \(f(x)=\frac{2x^2+1}{x^2-9}\).
+    Finn alle asymptotene til 
+
+    \[
+    f(x)=\frac{2x^2+1}{x^2-9}
+    \]
+
+    .
 
 ??? note "Fasit – 2.8.6"
 
@@ -107,9 +125,9 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
 
 ??? note "Fasit – 2.8.9"
 
-    For eksempel \(\lim_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
+    For eksempel \(\lim\limits_{x\to1}\frac{x^2-1}{x-1}=2\). Formen \(0/0\) er ubestemt, ikke et svar.
 
-    **Resultat:** \(\underline{\underline{\lim_{x\to1}\frac{x^2-1}{x-1}=2}}\)
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to1}\frac{x^2-1}{x-1}=2}}\)
 
 !!! question "Oppgave 2.8.10 – flere fenomener i samme funksjon"
 
@@ -171,7 +189,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Den opprinnelige funksjonen er ikke definert for \(x=a\) eller \(x=1\). Når \(x\to a\), får vi
     
     \[
-    \lim_{x\to a}f_a(x)=\dfrac{2a}{a-1},
+    \lim\limits_{x\to a}f_a(x)=\dfrac{2a}{a-1},
     \]
     
     så grafen har et hull i \(\left(a,\frac{2a}{a-1}\right)\). Siden \(a>1\), er telleren \(x+a\) ulik null ved \(x=1\), og dermed er \(x=1\) en vertikal asymptote. For \(x\to\pm\infty\) går brøken mot 1, så den horisontale asymptoten er \(y=1\).
@@ -224,7 +242,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Polynomdivisjonen viser at den skrå asymptoten er \(y=x+1\). Når \(x\to1\), får vi grenseverdien
     
     \[
-    \lim_{x\to1}g(x)=\dfrac{1+2+3}{2}=3,
+    \lim\limits_{x\to1}g(x)=\dfrac{1+2+3}{2}=3,
     \]
     
     så grafen har et hull i \((1,3)\). Når \(x\to-1\), går telleren mot \(2\), mens nevneren går mot null. Derfor går funksjonen mot \(-\infty\) fra venstre og \(+\infty\) fra høyre. Den vertikale asymptoten er \(x=-1\).
@@ -309,9 +327,9 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     **c)** Når \(x\to1^-\), går \((x-1)(x-3)\) mot \(0\) gjennom positive verdier. Derfor går logaritmen mot \(-\infty\). Tilsvarende skjer når \(x\to3^+\).
     
     \[
-    \lim_{x\to1^-}g(x)=-\infty,
+    \lim\limits_{x\to1^-}g(x)=-\infty,
     \qquad
-    \lim_{x\to3^+}g(x)=-\infty.
+    \lim\limits_{x\to3^+}g(x)=-\infty.
     \]
     
     **Svar:**
@@ -464,7 +482,7 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Dermed er
 
     \[
-    \lim_{x\to1}h(x)=2.
+    \lim\limits_{x\to1}h(x)=2.
     \]
 
     Grafen har et hull i punktet \((1,2)\). Når \(x\to\infty\), er avstanden til linjen \(y=x+1\) lik null; linjen er derfor en skrå asymptote. Grafen følger linjen overalt der funksjonen er definert, men punktet \((1,2)\) mangler.
@@ -476,13 +494,13 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Undersøk grensene
 
     \[
-    \lim_{x\to\infty}\left(\sqrt{x^2+3x}-x\right)
+    \lim\limits_{x\to\infty}\left(\sqrt{x^2+3x}-x\right)
     \]
 
     og
 
     \[
-    \lim_{x\to-\infty}\left(\sqrt{x^2+3x}+x\right).
+    \lim\limits_{x\to-\infty}\left(\sqrt{x^2+3x}+x\right).
     \]
 
     Forklar hvorfor du må være oppmerksom på fortegnet til \(x\) når du forenkler kvadratroten.
