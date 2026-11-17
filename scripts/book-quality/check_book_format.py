@@ -201,6 +201,13 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                 errors.append(f"{relative}:{next_index + 1}: Innhold i admonition må indenteres fire mellomrom under markørlinjen.")
                 break
 
+    if checks.get("check_limit_subscript_below", False):
+        for number, line in visible:
+            if re.search(r"\\lim_\{", line):
+                errors.append(
+                    f"{relative}:{number}: Grensepunktet skal stå under lim-tegnet. Bruk \\lim\\limits_{{...}}."
+                )
+
     if checks.get("check_math_delimiters", True):
         # Check display delimiters as standalone lines; do not count inline math.
         for number, line in enumerate(lines, 1):
