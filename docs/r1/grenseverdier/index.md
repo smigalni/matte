@@ -1,3 +1,5 @@
+<a id="kapittel-2"></a>
+
 # 2. Grenseverdier og kontinuitet
 
 ## Dette skal du lære
@@ -13,6 +15,8 @@ Når du har arbeidet med kapittelet, skal du kunne:
 - beregne grenseverdier ved blant annet faktorisering og forkorting
 - bestemme vertikale, horisontale og skrå asymptoter
 - bruke digitale verktøy og programmering til å undersøke funksjoner
+
+<a id="delkapittel-2-1"></a>
 
 ## 2.1 Repetisjon av funksjonstyper
 
@@ -85,6 +89,8 @@ La oss repetere noen av funksjonstypene du har lært om tidligere. Se på forskr
     Vi faktoriserer \(x^2-4=(x-2)(x+2)\). For \(x\ne2\) får vi \(r(x)=x+2\). Definisjonsmengden er \(\mathbb R\setminus\{2\}\). Det forenklede uttrykket gir verdien 4 når vi setter inn \(x=2\), men den opprinnelige funksjonen er fortsatt ikke definert der. Forkortingen endrer ikke definisjonsmengden.
 
     **Resultat:** \(\underline{\underline{r(2)\text{ er ikke definert}}}\)
+<a id="delkapittel-2-2"></a>
+
 ## 2.2 Funksjoner med delte forskrifter
 
 En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjonsmengden. Vi må derfor alltid undersøke hvilken forskrift som gjelder på hver side av grensepunktet.
@@ -154,6 +160,8 @@ En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjo
     Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
 
     **Resultat:** \(\underline{\underline{f(0)=4,\;\lim_{x\to0^-}f(x)=2,\;\lim_{x\to0^+}f(x)=5}}\)
+<a id="delkapittel-2-3"></a>
+
 ## 2.3 Ensidige grenseverdier og grenseverdier
 
 En grenseverdi beskriver hvilken verdi funksjonen nærmer seg når \(x\) nærmer seg et bestemt tall. Vi skriver
@@ -238,6 +246,8 @@ Den vanlige grenseverdien \(\lim_{x\to a}f(x)\) finnes bare når begge ensidige 
     Ett eksempel er \(f(x)=2\) når \(x<1\), \(f(1)=3\) og \(f(x)=5\) når \(x>1\).
 
     **Resultat:** \(\underline{\underline{\lim_{x\to1^-}f(x)=2\ne5=\lim_{x\to1^+}f(x)}}\)
+<a id="delkapittel-2-4"></a>
+
 ## 2.4 Kontinuitet
 
 En funksjon er kontinuerlig i \(x=a\) når grafen ikke har et brudd der.
@@ -314,6 +324,8 @@ At de ensidige grensene er like, er nødvendig for at den tosidige grenseverdien
     For \(x\ne2\) er brøken lik \(x+2\). Grenseverdien er \(4\), så \(k=4\) gir kontinuitet.
 
     **Resultat:** \(\underline{\underline{k=4}}\)
+<a id="delkapittel-2-5"></a>
+
 ## 2.5 Teknikker for å beregne grenseverdier
 
 Når funksjonen er kontinuerlig i punktet og uttrykket er definert der, kan vi ofte sette inn x-verdien direkte. Hvis direkte innsetting gir \(\frac00\), må vi undersøke uttrykket nærmere. Formen \(\frac00\) er ikke svaret; den viser at vi trenger en annen metode.
@@ -434,6 +446,8 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
     \(0/0\) er en ubestemt form. Faktorisering gir \((x-2)(x+2)/(x-2)=x+2\), så grenseverdien er \(4\).
 
     **Resultat:** \(\underline{\underline{4}}\)
+<a id="delkapittel-2-6"></a>
+
 ## 2.6 Asymptoter
 
 En asymptote er en rett linje som grafen nærmer seg. Vi undersøker tre vanlige typer.
