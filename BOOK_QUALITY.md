@@ -17,6 +17,8 @@ Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-re
 - Navigasjonslenker til delkapitler skal peke på eksisterende sider og verifiserte anker-ID-er. Bruk eksplisitte, stabile ID-er når automatiske overskriftsankere er usikre, og oppdater lenke og anker samlet.
 - Kontroller endringen med Git-diff: ved en ren navigasjonsretting skal oppgaver, eksempler, fasiter og forklarende tekst være uendret.
 
+- **Zensical-navigasjon:** Hvert element i `nav` skal peke på en faktisk Markdown-fil relativt til `docs_dir`. Ikke bruk `fil.md#anker` som mål i venstremenyen; Zensical-navigasjonen forventer en side, ikke et sidefragment. Hvis et delkapittel skal være et eget punkt i venstremenyen, skal det ha en egen Markdown-fil. Bruk ankerlenker i innholdet eller sidens innholdsfortegnelse for hopp innenfor samme side. Kontroller at alle nav-stier peker på eksisterende filer.
+
 ## Standardkontroller
 
 1. Et gjennomarbeidet eksempel skal bruke en `example`-admonition, ikke en løs Eksempel-overskrift.
