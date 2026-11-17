@@ -121,8 +121,7 @@
 
     Nevneren blir null ved \(x=1\), og telleren er ikke null der. Dermed er \(x=1\) vertikal asymptote. Restleddet går mot null når \(x\to\pm\infty\), så den skrå asymptoten er \(y=x+1\).
 
-    **Resultat:** \(\underline{\underline{x=1,\;y=x+1}}\
-
+    **Resultat:** \(\underline{\underline{x=1,\;y=x+1}}\)
 !!! question "Oppgave 2.9.8 – les en graf og vurder kontinuitet"
 
     En funksjon er gitt ved
@@ -147,8 +146,7 @@
 
     Venstre grenseverdi er \(2\). Høyre grenseverdi er \(1\), og \(g(0)=1\). De ensidige grenseverdiene er ulike, så den tosidige grenseverdien finnes ikke. Funksjonen er ikke kontinuerlig i \(x=0\). Grafen har en åpen sirkel i \((0,2)\) og en fylt sirkel i \((0,1)\).
 
-    **Resultat:** \(\underline{\underline{\lim\limits_{x\to0^-}g(x)=2,\;\lim\limits_{x\to0^+}g(x)=1,\;g(0)=1}}\
-
+    **Resultat:** \(\underline{\underline{\lim\limits_{x\to0^-}g(x)=2,\;\lim\limits_{x\to0^+}g(x)=1,\;g(0)=1}}\)
 !!! question "Oppgave 2.9.9 – en asymptote kan krysses"
 
     Vi har funksjonen
@@ -175,4 +173,4 @@
 
     Grafen krysser asymptoten i \((2,2)\). En horisontal asymptote beskriver grenseverdien når \(x\) går mot uendelig, og grafen kan derfor krysse linjen ved en endelig x-verdi.
 
-    **Resultat:** \(\underline{\underline{y=2,\;(2,2)}}\
+    **Resultat:** \(\underline{\underline{y=2,\;(2,2)}}\)
