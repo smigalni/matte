@@ -62,3 +62,16 @@ python tests/book-quality/test_check_book_format.py
 ## Vedlikehold
 
 Sjekkeren og den gjenbrukbare workflowen vedlikeholdes i `smigalni/matte`. Etter at endringene er flettet til `main`, skal den gjenbrukbare workflowen peke på `main` i stedet for feature-branchen.
+
+
+## Mobilvisning, funksjonsoversikter og matematisk notasjon
+
+- Unngå tabeller i elevstoff når vertikale seksjoner gir bedre lesbarhet på mobil.
+- En funksjonsoversikt skal bruke generelle forskrifter med bokstaver, sentrale egenskaper, relevant definisjonsmengde/verdimengde og en enkel graf. Hold den som repetisjon, ikke et nytt teorikapittel.
+- Stykkevise funksjoner og større brøkuttrykk i oppgaver skal stå på egne display-linjer. Oppgavetekst skal ikke begynne på samme linje som en lang forskrift.
+- Bruk \(\lim\limits_{x\to a}\) slik at grensepunktet alltid står under lim-tegnet, også i inline uttrykk.
+- Åpne og fylte sirkler må forklares med ord og graf.
+- Kontinuitetsforklaringer skal vise hvorfor vi må kontrollere \(f(a)\), i tillegg til at grenseverdien finnes.
+- Asymptoter skal illustreres med en graf for hver hovedtype.
+- Polynomdivisjon skal vises med en korrekt, oppstilt algoritme. Vis kvotientledd, produktet som trekkes fra, ny rest og eventuell divisjonsrest.
+- Kapittelprøver bør normalt inneholde omtrent 8–10 varierte oppgaver som dekker hele kapittelet, ikke bare noen få representative regneoppgaver.
