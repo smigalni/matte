@@ -86,3 +86,16 @@ Bruk disse instruksjonene automatisk i alle fremtidige oppgaver i repositoriet. 
 - Asymptoter skal ha illustrative grafer som viser forskjellen mellom vertikal, horisontal og skrå asymptote.
 - Polynomdivisjon skal vises som en oppstilt divisjonsalgoritme med ledd under hverandre, multiplikasjon og subtraksjon i riktig rekkefølge. Ikke erstatt oppstillingen med bare løse tekstlige mellomregninger.
 - En kapittelprøve skal dekke bredden i kapittelet. Sikt mot omtrent 8–10 meningsfulle oppgaver med variasjon i begrepsforståelse, algebraisk metode, graflesing, begrunnelse og digitale verktøy når det er relevant.
+
+
+## 8. Grafikkstandard for funksjoner og matematiske illustrasjoner
+
+- **Funksjonsgrafer:** bruk JSXGraph og de gjenbrukbare malene i `docs/javascripts/function-graphs.js` når grafen skal vise en funksjon, punkter, tangenter, asymptoter eller andre matematiske objekter. Ikke tegn slike grafer manuelt som frie SVG-kurver når koordinatbasert generering er mulig.
+- **Statiske skisser:** bruk SVG når en fast, enkel skisse er bedre enn en interaktiv/koordinatbasert graf, for eksempel en fortegnslinje eller et rent geometrisk prinsippdiagram.
+- **Matematisk kilde:** hver graf skal ha en eksplisitt funksjonsforskrift, definisjonsintervall og visningsvindu. Punkter, skjæringer, ekstremalpunkter og asymptoter skal komme fra kontrollerte matematiske verdier, ikke øyemål.
+- **Visuell standard:** gjenbruk samme fargepalett, akser, rutenett, linjetykkelse, punktstørrelse, etiketter og rammer. Unngå unødvendige dekorasjoner og for mange etiketter.
+- **Mobil:** alle grafer skal være responsive, ha tilstrekkelig høyde og ikke skape horisontal sideskrolling eller klippe bort viktige deler av grafen.
+- **Tilgjengelighet:** alle grafer skal ha en presis `aria-label` og en kort tekst som forklarer hva eleven skal lese ut av grafen. Ikke la farge alene formidle betydning.
+- **Tester:** bruk Playwright-testene i `tests/visuals/function-graphs.spec.cjs` og workflowen `.github/workflows/function-graphs-visual.yml`. Kontroller at alle grafene rendres på desktop og mobil, at tegneflatene har fornuftig størrelse, at SVG-innhold finnes, og at siden ikke får horisontal sideskrolling.
+- **Visuell godkjenning:** CI og skjermbildetester er nødvendige, men ikke tilstrekkelige. Før en ny grafmal tas i bruk i lærestoffet, skal de faktiske skjermbildene gjennomgås visuelt. Ikke si at en graf er visuelt kontrollert uten å ha sett nettleserbildet.
+- **Ingen masseutrulling:** test nye grafmaler på pilotsiden først. Ikke erstatt eksisterende illustrasjoner i kapitlene før piloten er faglig og visuelt godkjent.
