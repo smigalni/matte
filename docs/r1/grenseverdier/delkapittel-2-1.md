@@ -69,7 +69,7 @@ der \(a\ne0\) og \(n\) er et positivt heltall.
 - Grafens form avhenger av eksponenten \(n\).
 - Når \(n\) er partall, er grafen symmetrisk om y-aksen.
 - Når \(n\) er oddetall, er grafen symmetrisk om origo.
-- For positiv \(a\) er verdimengden \([0,\infty)\) når \(n\) er partall, og \(\mathbb R\) når \(n\) er oddetall.
+- Når \(n\) er partall, er verdimengden \([0,\infty)\) hvis \(a>0\), og \((-\infty,0]\) hvis \(a<0\). Når \(n\) er oddetall, er verdimengden \(\mathbb R\).
 - Definisjonsmengde: \(D_f=\mathbb R\).
 
 <svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen viser en typisk tredjegradsfunksjon." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M25 118 C65 118 78 108 105 82 C135 52 155 32 215 18" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
@@ -102,6 +102,7 @@ f(x)=\log_a x,\qquad a>0,\quad a\ne1
 - Logaritmen er den omvendte funksjonen til eksponentialfunksjonen.
 - Definisjonsmengde: \(D_f=(0,\infty)\).
 - Verdimengde: \(V_f=\mathbb R\).
+- Når \(a>1\), er grafen voksende. Når \(0<a<1\), er den avtakende.
 - Grafen skjærer x-aksen i \(x=1\).
 - y-aksen, \(x=0\), er en vertikal asymptote.
 
