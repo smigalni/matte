@@ -28,7 +28,7 @@ Når vi faktoriserer og forkorter en rasjonal funksjon, må vi passe på definis
 !!! example "Eksempel 2.5.1 – faktorisering og forkorting"
 
     \[
-    \lim_{x\to2}\dfrac{x^2-4}{x-2}.
+    \lim\limits_{x\to2}\dfrac{x^2-4}{x-2}.
     \]
 
     Direkte innsetting gir \(\frac00\). Vi faktoriserer telleren:
@@ -46,8 +46,8 @@ Når vi faktoriserer og forkorter en rasjonal funksjon, må vi passe på definis
     Derfor er
 
     \[
-    \lim_{x\to2}\dfrac{x^2-4}{x-2}
-    =\lim_{x\to2}(x+2)=4.
+    \lim\limits_{x\to2}\dfrac{x^2-4}{x-2}
+    =\lim\limits_{x\to2}(x+2)=4.
     \]
 
     Vi har ikke endret funksjonsverdien i \(x=2\); brøken er fortsatt ikke definert der. Vi har funnet hvilken verdi funksjonen nærmer seg. Definisjonsmengden er fortsatt \(\mathbb R\setminus\{2\}\).
@@ -63,8 +63,8 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
 !!! example "Eksempel 2.5.2 – grenseverdi når x går mot uendelig"
 
     \[
-    \lim_{x\to\infty}\dfrac{3x^2+1}{x^2-4}
-    =\lim_{x\to\infty}\dfrac{3+1/x^2}{1-4/x^2}=3.
+    \lim\limits_{x\to\infty}\dfrac{3x^2+1}{x^2-4}
+    =\lim\limits_{x\to\infty}\dfrac{3+1/x^2}{1-4/x^2}=3.
     \]
 
     Siden \(1/x^2\to0\), nærmer funksjonen seg 3.
@@ -73,7 +73,13 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
 
 !!! question "Oppgave 2.5.3"
 
-    Beregn \(\lim_{x\to3}\frac{x^2-9}{x-3}\). Vis faktoriseringen og forklar hvorfor forkortingen er lovlig i grenseprosessen.
+    Beregn 
+
+    \[
+    \lim\limits_{x\to3}\frac{x^2-9}{x-3}
+    \]
+
+    . Vis faktoriseringen og forklar hvorfor forkortingen er lovlig i grenseprosessen.
 
 ??? note "Fasit – 2.5.3"
 
@@ -83,7 +89,13 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
 
 !!! question "Oppgave 2.5.4"
 
-    Beregn \(\lim_{x\to-2}\frac{x^2+5x+6}{x+2}\).
+    Beregn 
+
+    \[
+    \lim\limits_{x\to-2}\frac{x^2+5x+6}{x+2}
+    \]
+
+    .
 
 ??? note "Fasit – 2.5.4"
 
@@ -93,7 +105,13 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
 
 !!! question "Oppgave 2.5.5"
 
-    Beregn \(\lim_{x\to1}\frac{x^2-1}{x^2-3x+2}\). Forklar hva som skjer med telleren og nevneren etter faktorisering.
+    Beregn 
+
+    \[
+    \lim\limits_{x\to1}\frac{x^2-1}{x^2-3x+2}
+    \]
+
+    . Forklar hva som skjer med telleren og nevneren etter faktorisering.
 
 ??? note "Fasit – 2.5.5"
 
@@ -103,7 +121,13 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
 
 !!! question "Oppgave 2.5.6"
 
-    Beregn \(\lim_{x\to\infty}\frac{5x^2-2x+1}{2x^2+7}\), og begrunn svaret ved å dele på riktig potens av \(x\).
+    Beregn 
+
+    \[
+    \lim\limits_{x\to\infty}\frac{5x^2-2x+1}{2x^2+7}
+    \]
+
+    , og begrunn svaret ved å dele på riktig potens av \(x\).
 
 ??? note "Fasit – 2.5.6"
 
@@ -113,7 +137,13 @@ Vi deler teller og nevner på den høyeste potensen av \(x\) som forekommer. Da 
 
 !!! question "Oppgave 2.5.7"
 
-    En elev sier at \(\lim_{x\to2}\frac{x^2-4}{x-2}\) ikke finnes fordi uttrykket gir \(0/0\). Forklar presist hva som er feil i argumentet, og vis en korrekt løsning.
+    En elev sier at 
+
+    \[
+    \lim\limits_{x\to2}\frac{x^2-4}{x-2}
+    \]
+
+     ikke finnes fordi uttrykket gir \(0/0\). Forklar presist hva som er feil i argumentet, og vis en korrekt løsning.
 
 ??? note "Fasit – 2.5.7"
 
