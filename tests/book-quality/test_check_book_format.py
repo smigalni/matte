@@ -17,6 +17,7 @@ BASE_CHECKS = {
     "check_balanced_svg_figure": True,
     "check_math_delimiters": True,
     "check_display_math_spacing": True,
+    "check_limit_subscript_below": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
 }
@@ -279,6 +280,15 @@ Tekst under
     Det finnes flere mulige par.
 """
         self.assertEqual(self.check(content), [])
+
+    def test_limit_subscript_below_passes(self):
+        content = r'''Grenseverdi: \(\lim\limits_{x\to a}f(x)\).'''
+        self.assertEqual(self.check(content), [])
+
+    def test_limit_subscript_not_below_fails(self):
+        content = r'''Grenseverdi: \(\lim_{x\to a}f(x)\).'''
+        errors = self.check(content)
+        self.assertTrue(any("Grensepunktet skal stå under lim-tegnet" in e for e in errors))
 
 if __name__ == "__main__":
     unittest.main()
