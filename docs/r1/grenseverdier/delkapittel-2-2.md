@@ -108,4 +108,4 @@ En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjo
 
     Ett eksempel er \(f(x)=2\) når \(x<0\), \(f(0)=4\) og \(f(x)=5\) når \(x>0\).
 
-    **Resultat:** \(\underline{\underline{f(0)=4,\;\lim\limits_{x\to0^-}f(x)=2,\;\lim\limits_{x\to0^+}f(x)=5}}\
+    **Resultat:** \(\underline{\underline{f(0)=4,\;\lim\limits_{x\to0^-}f(x)=2,\;\lim\limits_{x\to0^+}f(x)=5}}\)
