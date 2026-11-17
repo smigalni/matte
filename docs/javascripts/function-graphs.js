@@ -134,7 +134,7 @@
           fontSize: 12, fixed: true, strokeColor: COLORS.text
         });
       }
-    }
+    },
 
     constant: {
       title: "Konstant funksjon f(x) = 2",
