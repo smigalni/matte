@@ -184,4 +184,4 @@ der \(P(x)\) og \(Q(x)\) er polynomer.
 
     Vi faktoriserer \(x^2-4=(x-2)(x+2)\). For \(x\ne2\) får vi \(r(x)=x+2\). Definisjonsmengden er \(\mathbb R\setminus\{2\}\). Det forenklede uttrykket gir verdien 4 når vi setter inn \(x=2\), men den opprinnelige funksjonen er fortsatt ikke definert der. Forkortingen endrer ikke definisjonsmengden.
 
-    **Resultat:** \(\underline{\underline{r(2)\text{ er ikke definert}}}\`
+    **Resultat:** \(\underline{\underline{r(2)\text{ er ikke definert}}}\
