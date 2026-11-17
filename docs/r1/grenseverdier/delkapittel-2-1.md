@@ -52,7 +52,7 @@ x=-\frac{b}{2a}.
 \]
 
 - Definisjonsmengde: \(D_f=\mathbb R\).
-- Hvis (a>0), er verdimengden ([y_v,infty)). Hvis (a<0), er den ((-infty,y_v]), der (y_v) er y-koordinaten til topp- eller bunnpunktet.
+- Hvis \(a>0\), er verdimengden \([y_v,\infty)\). Hvis \(a<0\), er den \((-\infty,y_v]\), der \(y_v\) er y-koordinaten til topp- eller bunnpunktet.
 
 <svg viewBox="0 0 240 140" width="100%" height="140" role="img" aria-label="Grafen til en andregradsfunksjon er en parabel." xmlns="http://www.w3.org/2000/svg"><path d="M20 110 H225 M45 125 V12" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M28 25 Q120 165 212 25" fill="none" stroke="#2878b8" stroke-width="2.8" stroke-linecap="round"/></svg>
 
