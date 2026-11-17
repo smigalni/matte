@@ -72,3 +72,17 @@ Bruk disse instruksjonene automatisk i alle fremtidige oppgaver i repositoriet. 
 - Den delte sjekkeren og reusable workflowen vedlikeholdes sentralt; ikke lag egne kopier i hvert bok-repo.
 - Bokspesifikke unntak skal ligge i .book-quality.toml, ikke som ad hoc-regler i hver chat.
 - Workflowen kontrollerer endrede Markdown-filer ved push og pull request. Den automatiske kontrollen supplerer, men erstatter ikke, faglig kontroll av matematikk eller visuell byggkontroll.
+
+
+## 7. Mobilvennlig matematikk og visuelle forklaringer
+
+- Unngå tabeller i elevstoff når informasjonen kan presenteres som korte, vertikale seksjoner. Tabeller blir ofte vanskelige å lese på mobil.
+- Oppsummeringer av funksjonstyper skal vise generell form med bokstaver, sentrale kjennetegn, definisjonsmengde og verdimengde når dette er relevant, samt en enkel og tydelig graf. Oppsummeringen skal være kort og repetere kjent stoff.
+- Stykkevise funksjoner skal settes opp som egne display-formler på separate linjer. Oppgaveteksten skal starte i et eget avsnitt etter forskriften.
+- I grenseverdier skal grensepunktet stå tydelig under lim. Bruk \(\lim\limits_{x\to a}\) konsekvent, også i oppgaver og fasiter.
+- Ikke press lange brøker inn i løpende oppgavetekst. Sett viktige eller sammensatte brøkuttrykk på egne display-linjer.
+- Forklar åpne og fylte sirkler eksplisitt, og bruk en graf når begrepene introduseres.
+- Kontinuitet skal alltid knyttes visuelt til de tre kontrollene: funksjonsverdien finnes, den tosidige grenseverdien finnes, og disse er like. Vis minst et kontinuerlig punkt, et hull med feil funksjonsverdi og et sprang.
+- Asymptoter skal ha illustrative grafer som viser forskjellen mellom vertikal, horisontal og skrå asymptote.
+- Polynomdivisjon skal vises som en oppstilt divisjonsalgoritme med ledd under hverandre, multiplikasjon og subtraksjon i riktig rekkefølge. Ikke erstatt oppstillingen med bare løse tekstlige mellomregninger.
+- En kapittelprøve skal dekke bredden i kapittelet. Sikt mot omtrent 8–10 meningsfulle oppgaver med variasjon i begrepsforståelse, algebraisk metode, graflesing, begrunnelse og digitale verktøy når det er relevant.
