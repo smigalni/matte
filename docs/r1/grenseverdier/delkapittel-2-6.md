@@ -165,4 +165,4 @@ En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjone
 
     Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
 
-    **Resultat:** \(\underline{\underline{x=-1,\;y=2x+1}}\
+    **Resultat:** \(\underline{\underline{x=-1,\;y=2x+1}}\)
