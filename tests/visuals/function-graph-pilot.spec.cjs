@@ -18,12 +18,13 @@ const assert = require("node:assert/strict");
       circles: node.querySelectorAll("svg circle").length
     })),
     pageWidth: document.documentElement.scrollWidth,
+    contentWidth: document.documentElement.clientWidth,
     viewportWidth: window.innerWidth
   }));
   assert.equal(desktop.graphs.length, 4, "All four graph examples should exist");
   assert.ok(desktop.graphs.every(graph => graph.rendered && graph.svg), "Every graph should render as SVG");
   assert.ok(desktop.graphs.every(graph => graph.paths > 0), "Every graph should contain curve paths");
-  assert.equal(desktop.pageWidth, desktop.viewportWidth, "Desktop page should not overflow horizontally");
+  assert.ok(desktop.pageWidth <= desktop.contentWidth, "Desktop page should not overflow horizontally");
   assert.deepEqual(errors, [], "No browser JavaScript errors");
   await page.screenshot({ path: "artifacts/graphs-desktop.png", fullPage: true });
 
@@ -32,12 +33,13 @@ const assert = require("node:assert/strict");
   await page.waitForFunction(() => document.documentElement.dataset.mathGraphsReady === "true");
   const mobile = await page.evaluate(() => ({
     pageWidth: document.documentElement.scrollWidth,
+    contentWidth: document.documentElement.clientWidth,
     viewportWidth: window.innerWidth,
     graphWidths: [...document.querySelectorAll(".math-graph svg")].map(svg => Math.round(svg.getBoundingClientRect().width))
   }));
-  assert.equal(mobile.pageWidth, mobile.viewportWidth, "Mobile page should not overflow horizontally");
+  assert.ok(mobile.pageWidth <= mobile.contentWidth, "Mobile page should not overflow horizontally");
   assert.equal(mobile.graphWidths.length, 4, "All four graphs should remain visible on mobile");
-  assert.ok(mobile.graphWidths.every(width => width > 300 && width <= 390), "SVG graphs should scale to the mobile viewport");
+  assert.ok(mobile.graphWidths.every(width => width > 300 && width <= mobile.contentWidth), "SVG graphs should scale to the mobile content width");
   await page.screenshot({ path: "artifacts/graphs-mobile.png", fullPage: true });
 
   await page.emulateMedia({ media: "print" });
