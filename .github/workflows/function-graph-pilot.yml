@@ -1,0 +1,51 @@
+name: Function graph pilot
+
+on:
+  push:
+    branches: ["feature/r1-illustrasjoner-munchstil"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-browser-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Zensical
+        run: pip install zensical
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Build site
+        run: zensical build --clean
+      - name: Start local site
+        run: |
+          python -m http.server 4173 --directory site > /tmp/math-site.log 2>&1 &
+          for i in {1..30}; do
+            if curl --silent --fail http://127.0.0.1:4173/ > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/math-site.log
+          exit 1
+      - name: Test desktop, mobile and print rendering
+        run: |
+          mkdir -p artifacts
+          node tests/visuals/function-graph-pilot.spec.cjs
+      - name: Upload visual review screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: function-graph-pilot-screenshots
+          path: artifacts/
