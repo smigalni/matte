@@ -335,3 +335,39 @@
   border-color: #fca5a5;
   border-left-color: #dc2626;
 }
+
+
+/* Nye lærebokgrafer – enkel, ren og utskriftsvennlig framstilling */
+.md-typeset .math-graph-frame {
+  margin: 1.1rem 0 1.8rem;
+  padding: .2rem 0;
+  background: transparent;
+}
+.md-typeset .math-graph {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+.md-typeset .math-graph svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 760px;
+  margin: 0 auto;
+  overflow: visible;
+}
+.md-typeset .math-graph-caption {
+  max-width: 760px;
+  margin: .25rem auto 0;
+  color: #52647b;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .md-typeset .math-graph-frame { margin: .8rem 0 1.4rem; }
+  .md-typeset .math-graph-caption { font-size: .82rem; }
+}
+@media print {
+  .md-typeset .math-graph-frame { break-inside: avoid; }
+  .md-typeset .math-graph svg { max-width: 100%; }
+}
