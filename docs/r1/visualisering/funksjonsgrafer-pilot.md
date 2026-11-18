@@ -49,10 +49,11 @@ x+1, & x\ne 1,\\
 Når \(x\) nærmer seg 1 fra venstre og høyre, nærmer funksjonsverdien seg 2. Likevel er \(f(1)=4\).
 
 \[
-\lim_{x\to 1^-}f(x)=
-\lim_{x\to 1^+}f(x)=
-\lim_{x\to 1}f(x)=2,
-\qquad f(1)=4.
+\begin{aligned}
+\lim_{x\to 1^-} f(x)&=2,\\
+\lim_{x\to 1^+} f(x)&=2,\\
+\lim_{x\to 1} f(x)&=2,\qquad f(1)=4.
+\end{aligned}
 \]
 
 <div class="math-graph-frame">
