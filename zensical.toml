@@ -9,12 +9,14 @@ extra_css = [
 ]
 extra_javascript = [
   "javascripts/mathjax.js",
+  "javascripts/math-graphs.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
 ]
 
 nav = [
   { "Hjem" = "index.md" },
   { "R1" = [
+    { "Visualiseringspilot – funksjonsgrafer" = "r1/visualisering/funksjonsgrafer-pilot.md" },
     { "Kapittel 3 – Derivasjon" = [
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
 
