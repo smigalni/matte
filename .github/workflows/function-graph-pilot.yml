@@ -2,7 +2,7 @@ name: Function graph pilot
 
 on:
   push:
-    branches: ["feature/r1-illustrasjoner-munchstil"]
+    branches: ["feature/r1-illustrasjoner-munchstil", "feature/r1-graph-art-direction-v2"]
   workflow_dispatch:
 
 permissions:
