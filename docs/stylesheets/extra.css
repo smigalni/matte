@@ -337,14 +337,15 @@
 }
 
 
-/* Nye lærebokgrafer – enkel, ren og utskriftsvennlig framstilling */
+/* Lærebokgrafer – redaksjonell figurstil, ikke UI-kort */
 .md-typeset .math-graph-frame {
-  margin: 1.4rem 0 2rem;
-  padding: 1rem 1rem .85rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 1rem;
-  background: linear-gradient(155deg, #fbfdff 0%, #f5f8fc 100%);
-  box-shadow: 0 8px 24px rgba(28, 52, 84, .055);
+  margin: 1.5rem 0 2.1rem;
+  padding: .45rem 0 .9rem;
+  border-top: 1px solid #dce5f0;
+  border-bottom: 1px solid #dce5f0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 .md-typeset .math-graph {
   width: 100%;
@@ -372,7 +373,7 @@
   line-height: 1.55;
 }
 @media (max-width: 600px) {
-  .md-typeset .math-graph-frame { margin: .8rem 0 1.4rem; }
+  .md-typeset .math-graph-frame { margin: 1rem 0 1.6rem; padding: .35rem 0 .7rem; }
   .md-typeset .math-graph-caption { font-size: .82rem; }
 }
 @media print {
