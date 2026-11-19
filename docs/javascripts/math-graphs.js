@@ -307,6 +307,8 @@
       }));
     });
 
+    svg.append(plot);
+
     (graph.vectors || []).forEach((v, vectorIndex) => {
       const markerId = `math-vector-arrow-${index}-${vectorIndex}`;
       const marker = svgElement("marker", {
@@ -326,8 +328,6 @@
         "paint-order": "stroke", stroke: "#ffffff", "stroke-width": 5, "stroke-linejoin": "round"
       }, v.label));
     });
-
-    svg.append(plot);
 
     const xAxisY = clamp(sy(0), pad.top, height - pad.bottom);
     const yAxisX = clamp(sx(0), pad.left, width - pad.right);
