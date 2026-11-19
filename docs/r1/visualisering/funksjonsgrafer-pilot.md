@@ -74,6 +74,68 @@ f'(1)=2.
   <p class="math-graph-caption">Den heltrukne grønne linjen er tangenten. Den stiplede oransje linjen er sekanten.</p>
 </div>
 
+
+## 5. Vektorer – retning, lengde og komponenter
+
+Vektorer tegnes i et koordinatsystem med rutenett. Hver rute tilsvarer én enhet, slik at både retning, komponenter og lengde kan leses direkte av figuren. Pilspissen viser retningen.
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="vectors" role="img" aria-label="To vektorer tegnet med pilspisser i koordinatrutenett"></div>
+  <p class="math-graph-caption">Rutenettet gjør det enkelt å telle horisontal og vertikal komponent. Lengden kan deretter bestemmes med Pytagoras.</p>
+</div>
+
+## 6. Punkter i koordinatsystemet
+
+Punktene skal være tydelige, og hjelpelinjer brukes når de gjør koordinatene enklere å lese.
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="points" role="img" aria-label="Tre punkter markert i koordinatsystem med rutenett"></div>
+  <p class="math-graph-caption">Punktene A, B og C er markert med koordinater og hjelpelinjer.</p>
+</div>
+
+## 7. Plane geometriske figurer
+
+Geometriske figurer skal ha et eget, rent tegnefelt – ikke et koordinatsystem med mindre koordinater faktisk er en del av oppgaven.
+
+### Trekant
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="triangle" role="img" aria-label="Trekant med hjørner, grunnlinje og høyde"></div>
+  <p class="math-graph-caption">Grunnlinje og høyde er markert separat.</p>
+</div>
+
+### Sirkel
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="circle" role="img" aria-label="Sirkel med sentrum, radius og diameter"></div>
+  <p class="math-graph-caption">Radius går fra sentrum til sirkelperiferien. Diameteren går gjennom sentrum.</p>
+</div>
+
+### Rektangel
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="rectangle" role="img" aria-label="Rektangel med rette vinkler og sidelengder"></div>
+  <p class="math-graph-caption">Rette vinkler og sidelengder skal være lette å skille fra hverandre.</p>
+</div>
+
+## 8. Romgeometri – kjegle og pyramide
+
+3D-figurene tegnes i perspektiv. Synlige kanter er heltrukne, mens skjulte kanter vises stiplet. Høyde og grunnflate markeres med egne linjestiler.
+
+### Kjegle
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="cone" role="img" aria-label="Kjegle med grunnflate, radius og høyde"></div>
+  <p class="math-graph-caption">Den bakre delen av grunnflaten er stiplet for å vise at den ligger skjult.</p>
+</div>
+
+### Firkantet pyramide
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="pyramid" role="img" aria-label="Firkantet pyramide med høyde og grunnflate"></div>
+  <p class="math-graph-caption">Pyramiden viser toppunkt, grunnflate og høyde. Skjulte kanter er stiplet.</p>
+</div>
+
 ---
 
 **Vurderingspunkt:** Før denne standarden brukes i lærebokkapitlene, skal grafene kontrolleres visuelt på mobil og desktop, i utskrift og mot de matematiske uttrykkene. Dette er en isolert pilot; eksisterende lærebokinnhold er ikke endret.
