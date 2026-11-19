@@ -95,7 +95,7 @@
     const sy = y => pad.top + (ymax - y) / (ymax - ymin) * plotH;
     const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
     const svg = svgElement("svg", {
-      viewBox: `0 0 ${width} ${height}`, role: "img",
+      viewBox: `0 0 ${width} ${height}`, class: graph.aspect === "square" ? "math-graph-svg math-graph-svg--square" : "math-graph-svg", role: "img",
       "aria-labelledby": `math-graph-title-${index} math-graph-desc-${index}`,
       preserveAspectRatio: "xMidYMid meet"
     });
