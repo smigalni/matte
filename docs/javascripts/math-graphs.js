@@ -1,4 +1,4 @@
-/* Lærebokgrafer i ren SVG – uten rutenett som standard og uten eksterne biblioteker. */
+/* Lærebokgrafer i ren SVG – individuelt utsnitt, tydelige asymptoter og redaksjonell lesbarhet. */
 (() => {
   "use strict";
 
