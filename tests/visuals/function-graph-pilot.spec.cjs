@@ -21,9 +21,11 @@ const assert = require("node:assert/strict");
     contentWidth: document.documentElement.clientWidth,
     viewportWidth: window.innerWidth
   }));
-  assert.equal(desktop.graphs.length, 4, "All four graph examples should exist");
+  assert.equal(desktop.graphs.length, 11, "All graph, vector, point and geometry examples should exist");
   assert.ok(desktop.graphs.every(graph => graph.rendered && graph.svg), "Every graph should render as SVG");
-  assert.ok(desktop.graphs.every(graph => graph.paths > 0), "Every graph should contain curve paths");
+  assert.ok(desktop.graphs.every(graph => graph.paths > 0), "Every graph should contain SVG paths");
+  assert.ok(desktop.graphs.some(graph => graph.id === "vectors" && graph.paths >= 2), "Vector example should include arrow paths");
+  assert.ok(desktop.graphs.some(graph => graph.id === "cone") && desktop.graphs.some(graph => graph.id === "pyramid"), "3D geometry examples should exist");
   assert.ok(desktop.pageWidth <= desktop.contentWidth, "Desktop page should not overflow horizontally");
   assert.deepEqual(errors, [], "No browser JavaScript errors");
   await page.screenshot({ path: "artifacts/graphs-desktop.png", fullPage: true });
@@ -38,7 +40,7 @@ const assert = require("node:assert/strict");
     graphWidths: [...document.querySelectorAll(".math-graph svg")].map(svg => Math.round(svg.getBoundingClientRect().width))
   }));
   assert.ok(mobile.pageWidth <= mobile.contentWidth, "Mobile page should not overflow horizontally");
-  assert.equal(mobile.graphWidths.length, 4, "All four graphs should remain visible on mobile");
+  assert.equal(mobile.graphWidths.length, 11, "All examples should remain visible on mobile");
   assert.ok(mobile.graphWidths.every(width => width > 300 && width <= mobile.contentWidth), "SVG graphs should scale to the mobile content width");
   await page.screenshot({ path: "artifacts/graphs-mobile.png", fullPage: true });
 
@@ -47,7 +49,7 @@ const assert = require("node:assert/strict");
     graphCount: document.querySelectorAll(".math-graph svg").length,
     hiddenGraphs: [...document.querySelectorAll(".math-graph svg")].filter(svg => getComputedStyle(svg).display === "none").length
   }));
-  assert.equal(print.graphCount, 4, "Print layout should retain all graphs");
+  assert.equal(print.graphCount, 11, "Print layout should retain all examples");
   assert.equal(print.hiddenGraphs, 0, "Print layout should not hide graphs");
 
   console.log(JSON.stringify({ desktop, mobile, print, errors }, null, 2));
