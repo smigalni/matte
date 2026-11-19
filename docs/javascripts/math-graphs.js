@@ -198,6 +198,34 @@
   }
 
   function render(container, graph, index) {
+    if (graph.illustration) {
+      const svg = svgElement("svg", {
+        viewBox: "0 0 520 380", class: "math-graph-svg math-graph-svg--illustration",
+        role: "img", "aria-labelledby": `math-graph-title-${index} math-graph-desc-${index}`,
+        preserveAspectRatio: "xMidYMid meet"
+      });
+      svg.append(
+        svgElement("title", { id: `math-graph-title-${index}` }, graph.title),
+        svgElement("desc", { id: `math-graph-desc-${index}` }, graph.description)
+      );
+      (graph.illustration.shapes || []).forEach(shape => {
+        svg.append(svgElement("path", {
+          d: shape.d, fill: shape.fill || "none", stroke: shape.stroke || COLORS.curve,
+          "stroke-width": shape.width || 3, "stroke-linejoin": "round",
+          "stroke-linecap": "round", ...(shape.dash ? { "stroke-dasharray": shape.dash } : {})
+        }));
+      });
+      (graph.illustration.labels || []).forEach(label => {
+        svg.append(svgElement("text", {
+          x: label.x, y: label.y, fill: label.color || COLORS.text,
+          "font-size": label.small ? 13 : 17, "font-weight": 650,
+          "text-anchor": label.anchor || "start"
+        }, label.text));
+      });
+      container.replaceChildren(svg);
+      container.dataset.rendered = "true";
+      return;
+    }
     const width = graph.aspect === "square" ? 520 : 680;
     const height = graph.aspect === "square" ? 480 : 390;
     const pad = { left: 62, right: 28, top: 30, bottom: 48 };
@@ -355,25 +383,6 @@
         "font-size": 14, "font-weight": 700
       }, note.text));
     });
-
-    if (graph.illustration) {
-      const art = svgElement("g", { class: "math-graph-illustration" });
-      (graph.illustration.shapes || []).forEach(shape => {
-        art.append(svgElement("path", {
-          d: shape.d, fill: shape.fill || "none", stroke: shape.stroke || COLORS.curve,
-          "stroke-width": shape.width || 3, "stroke-linejoin": "round",
-          "stroke-linecap": "round", ...(shape.dash ? { "stroke-dasharray": shape.dash } : {})
-        }));
-      });
-      (graph.illustration.labels || []).forEach(label => {
-        art.append(svgElement("text", {
-          x: label.x, y: label.y, fill: label.color || COLORS.text,
-          "font-size": label.small ? 13 : 17, "font-weight": 650,
-          "text-anchor": label.anchor || "start"
-        }, label.text));
-      });
-      svg.append(art);
-    }
 
     container.replaceChildren(svg);
     container.dataset.rendered = "true";
