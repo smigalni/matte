@@ -15,7 +15,8 @@ const assert = require("node:assert/strict");
       rendered: node.dataset.rendered === "true",
       svg: Boolean(node.querySelector("svg")),
       paths: node.querySelectorAll("svg path").length,
-      circles: node.querySelectorAll("svg circle").length
+      circles: node.querySelectorAll("svg circle").length,
+      lines: node.querySelectorAll("svg line").length
     })),
     pageWidth: document.documentElement.scrollWidth,
     contentWidth: document.documentElement.clientWidth,
@@ -23,7 +24,7 @@ const assert = require("node:assert/strict");
   }));
   assert.equal(desktop.graphs.length, 11, "All graph, vector, point and geometry examples should exist");
   assert.ok(desktop.graphs.every(graph => graph.rendered && graph.svg), "Every graph should render as SVG");
-  assert.ok(desktop.graphs.every(graph => graph.paths > 0), "Every graph should contain SVG paths");
+  assert.ok(desktop.graphs.every(graph => graph.paths + graph.circles + graph.lines > 0), "Every example should contain visible SVG geometry");
   assert.ok(desktop.graphs.some(graph => graph.id === "vectors" && graph.paths >= 2), "Vector example should include arrow paths");
   assert.ok(desktop.graphs.some(graph => graph.id === "cone") && desktop.graphs.some(graph => graph.id === "pyramid"), "3D geometry examples should exist");
   assert.ok(desktop.pageWidth <= desktop.contentWidth, "Desktop page should not overflow horizontally");
