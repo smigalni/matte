@@ -17,8 +17,8 @@
     parabola: {
       title: "Parabelen f(x) = x²",
       description: "En ren parabel med markerte punkter. Grafen har bunnpunkt i origo og er symmetrisk om y-aksen.",
-      x: [-3.2, 3.2], y: [-1, 8.5], grid: false, ticks: false,
-      curves: [{ fn: x => x * x, from: -2.9, to: 2.9, color: COLORS.curve, width: 4 }],
+      aspect: "square", x: [-2.5, 2.5], y: [-0.5, 4.5], grid: false, ticks: false,
+      curves: [{ fn: x => x * x, from: -2.05, to: 2.05, color: COLORS.curve, width: 4.5 }],
       points: [
         { x: -2, y: 4 }, { x: -1, y: 1 }, { x: 0, y: 0, label: "O", dx: 10, dy: 20 },
         { x: 1, y: 1 }, { x: 2, y: 4, label: "(2, 4)", dx: 12, dy: -10 }
@@ -27,14 +27,14 @@
     asymptotes: {
       title: "Rasjonal funksjon med asymptoter",
       description: "Grafen til f(x) = 1 + 2/(x − 1). Den vertikale asymptoten er x = 1 og den horisontale asymptoten er y = 1.",
-      x: [-4, 5], y: [-4, 6], grid: false, ticks: true,
+      x: [-5, 7], y: [-6, 8], grid: false, ticks: true,
       curves: [
-        { fn: x => 1 + 2 / (x - 1), from: -4, to: 0.62, color: COLORS.curve, width: 3.5 },
-        { fn: x => 1 + 2 / (x - 1), from: 1.38, to: 5, color: COLORS.curve, width: 3.5 }
+        { fn: x => 1 + 2 / (x - 1), from: -5, to: 0.65, color: COLORS.curve, width: 4, markerEnd: true },
+        { fn: x => 1 + 2 / (x - 1), from: 1.35, to: 7, color: COLORS.curve, width: 4, markerStart: true }
       ],
       asymptotes: [
-        { axis: "x", value: 1, label: "x = 1", color: COLORS.accent },
-        { axis: "y", value: 1, label: "y = 1", color: COLORS.secondary }
+        { axis: "x", value: 1, label: "x = 1", color: "#d97706" },
+        { axis: "y", value: 1, label: "y = 1", color: "#0f766e" }
       ],
       points: [
         { x: -1, y: 0, label: "(-1, 0)", dx: -58, dy: -12 },
@@ -85,7 +85,8 @@
   }
 
   function render(container, graph, index) {
-    const width = 680, height = 390;
+    const width = graph.aspect === "square" ? 520 : 680;
+    const height = graph.aspect === "square" ? 480 : 390;
     const pad = { left: 62, right: 28, top: 30, bottom: 48 };
     const plotW = width - pad.left - pad.right;
     const plotH = height - pad.top - pad.bottom;
@@ -104,6 +105,9 @@
     );
 
     const defs = svgElement("defs");
+    const arrow = svgElement("marker", { id: `math-graph-arrow-${index}`, markerWidth: 8, markerHeight: 8, refX: 6, refY: 3, orient: "auto-start-reverse", markerUnits: "strokeWidth" });
+    arrow.append(svgElement("path", { d: "M 0 0 L 6 3 L 0 6 z", fill: COLORS.curve }));
+    defs.append(arrow);
     const clipId = `math-graph-clip-${index}`;
     const clip = svgElement("clipPath", { id: clipId });
     clip.append(svgElement("rect", { x: pad.left, y: pad.top, width: plotW, height: plotH }));
@@ -125,7 +129,7 @@
       const attrs = a.axis === "x"
         ? { x1: sx(a.value), y1: pad.top, x2: sx(a.value), y2: height - pad.bottom }
         : { x1: pad.left, y1: sy(a.value), x2: width - pad.right, y2: sy(a.value) };
-      plot.append(svgElement("line", { ...attrs, stroke: a.color || COLORS.accent, "stroke-width": 1.8, "stroke-dasharray": "7 6" }));
+      plot.append(svgElement("line", { ...attrs, stroke: a.color || COLORS.accent, "stroke-width": 1.5, "stroke-dasharray": "9 7", "stroke-linecap": "round", opacity: 0.85 }));
     });
 
     (graph.guides || []).forEach(g => {
@@ -146,7 +150,9 @@
       }
       plot.append(svgElement("path", {
         d, fill: "none", stroke: curve.color || COLORS.curve,
-        "stroke-width": curve.width || 3.5, "stroke-linecap": "round", "stroke-linejoin": "round"
+        "stroke-width": curve.width || 3.5, "stroke-linecap": "round", "stroke-linejoin": "round",
+        ...(curve.markerStart ? { "marker-start": `url(#math-graph-arrow-${index})` } : {}),
+        ...(curve.markerEnd ? { "marker-end": `url(#math-graph-arrow-${index})` } : {})
       }));
     });
 
