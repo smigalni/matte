@@ -17,8 +17,8 @@
     parabola: {
       title: "Parabelen f(x) = x²",
       description: "En ren parabel med markerte punkter. Grafen har bunnpunkt i origo og er symmetrisk om y-aksen.",
-      aspect: "square", x: [-2.5, 2.5], y: [-0.5, 4.5], grid: false, ticks: false,
-      curves: [{ fn: x => x * x, from: -2.05, to: 2.05, color: COLORS.curve, width: 4.5 }],
+      aspect: "square", x: [-3, 3], y: [-0.5, 4.5], grid: false, ticks: false,
+      curves: [{ fn: x => x * x, from: -2, to: 2, color: COLORS.curve, width: 5 }],
       points: [
         { x: -2, y: 4 }, { x: -1, y: 1 }, { x: 0, y: 0, label: "O", dx: 10, dy: 20 },
         { x: 1, y: 1 }, { x: 2, y: 4, label: "(2, 4)", dx: 12, dy: -10 }
@@ -27,13 +27,13 @@
     asymptotes: {
       title: "Rasjonal funksjon med asymptoter",
       description: "Grafen til f(x) = 1 + 2/(x − 1). Den vertikale asymptoten er x = 1 og den horisontale asymptoten er y = 1.",
-      x: [-5, 7], y: [-6, 8], grid: false, ticks: true,
+      aspect: "square", x: [-4, 6], y: [-5, 7], grid: false, ticks: true,
       curves: [
-        { fn: x => 1 + 2 / (x - 1), from: -5, to: 0.65, color: COLORS.curve, width: 4, markerEnd: true },
-        { fn: x => 1 + 2 / (x - 1), from: 1.35, to: 7, color: COLORS.curve, width: 4, markerStart: true }
+        { fn: x => 1 + 2 / (x - 1), from: -4, to: 0.55, color: COLORS.curve, width: 4.8, markerEnd: true },
+        { fn: x => 1 + 2 / (x - 1), from: 1.45, to: 6, color: COLORS.curve, width: 4.8, markerStart: true }
       ],
       asymptotes: [
-        { axis: "x", value: 1, label: "x = 1", color: "#d97706" },
+        { axis: "x", value: 1, label: "x = 1", color: "#b45309" },
         { axis: "y", value: 1, label: "y = 1", color: "#0f766e" }
       ],
       points: [
@@ -105,7 +105,7 @@
     );
 
     const defs = svgElement("defs");
-    const arrow = svgElement("marker", { id: `math-graph-arrow-${index}`, markerWidth: 8, markerHeight: 8, refX: 6, refY: 3, orient: "auto-start-reverse", markerUnits: "strokeWidth" });
+    const arrow = svgElement("marker", { id: `math-graph-arrow-${index}`, markerWidth: 7, markerHeight: 7, refX: 5.5, refY: 3, orient: "auto-start-reverse", markerUnits: "userSpaceOnUse" });
     arrow.append(svgElement("path", { d: "M 0 0 L 6 3 L 0 6 z", fill: COLORS.curve }));
     defs.append(arrow);
     const clipId = `math-graph-clip-${index}`;
@@ -129,7 +129,7 @@
       const attrs = a.axis === "x"
         ? { x1: sx(a.value), y1: pad.top, x2: sx(a.value), y2: height - pad.bottom }
         : { x1: pad.left, y1: sy(a.value), x2: width - pad.right, y2: sy(a.value) };
-      plot.append(svgElement("line", { ...attrs, stroke: a.color || COLORS.accent, "stroke-width": 1.5, "stroke-dasharray": "9 7", "stroke-linecap": "round", opacity: 0.85 }));
+      plot.append(svgElement("line", { ...attrs, stroke: a.color || COLORS.accent, "stroke-width": 2.4, "stroke-dasharray": "8 6", "stroke-linecap": "round", opacity: 0.95 }));
     });
 
     (graph.guides || []).forEach(g => {
@@ -175,8 +175,8 @@
       svgElement("path", { d: `M ${width - pad.right + 8} ${xAxisY} l -7 -4 v 8 z`, fill: COLORS.axis }),
       svgElement("line", { x1: yAxisX, y1: height - pad.bottom, x2: yAxisX, y2: pad.top - 8, stroke: COLORS.axis, "stroke-width": 1.5 }),
       svgElement("path", { d: `M ${yAxisX} ${pad.top - 8} l -4 7 h 8 z`, fill: COLORS.axis }),
-      svgElement("text", { x: width - pad.right + 12, y: xAxisY + 5, fill: COLORS.text, "font-size": 15 }, "x"),
-      svgElement("text", { x: yAxisX + 9, y: pad.top - 13, fill: COLORS.text, "font-size": 15 }, "y")
+      svgElement("text", { x: width - pad.right + 12, y: xAxisY + 5, fill: COLORS.text, "font-size": 17, "font-weight": 600 }, "x"),
+      svgElement("text", { x: yAxisX + 9, y: pad.top - 13, fill: COLORS.text, "font-size": 17, "font-weight": 600 }, "y")
     );
 
     if (graph.ticks) {
@@ -185,21 +185,21 @@
         if (Math.abs(x) < 1e-8) continue;
         const px = sx(x);
         svg.append(svgElement("line", { x1: px, y1: xAxisY - 4, x2: px, y2: xAxisY + 4, stroke: COLORS.axis, "stroke-width": 1 }));
-        svg.append(svgElement("text", { x: px, y: xAxisY + 19, fill: COLORS.text, "font-size": 11, "text-anchor": "middle" }, String(x)));
+        svg.append(svgElement("text", { x: px, y: xAxisY + 19, fill: COLORS.text, "font-size": 13, "font-weight": 500, "text-anchor": "middle" }, String(x)));
       }
       for (let y = Math.ceil(ymin / tickStepY) * tickStepY; y <= ymax; y += tickStepY) {
         if (Math.abs(y) < 1e-8) continue;
         const py = sy(y);
         svg.append(svgElement("line", { x1: yAxisX - 4, y1: py, x2: yAxisX + 4, y2: py, stroke: COLORS.axis, "stroke-width": 1 }));
-        svg.append(svgElement("text", { x: yAxisX - 10, y: py + 4, fill: COLORS.text, "font-size": 11, "text-anchor": "end" }, String(y)));
+        svg.append(svgElement("text", { x: yAxisX - 10, y: py + 4, fill: COLORS.text, "font-size": 13, "font-weight": 500, "text-anchor": "end" }, String(y)));
       }
-      svg.append(svgElement("text", { x: yAxisX - 10, y: xAxisY + 17, fill: COLORS.text, "font-size": 11, "text-anchor": "end" }, "0"));
+      svg.append(svgElement("text", { x: yAxisX - 10, y: xAxisY + 17, fill: COLORS.text, "font-size": 13, "font-weight": 500, "text-anchor": "end" }, "0"));
     }
 
     (graph.asymptotes || []).forEach(a => {
       const x = a.axis === "x" ? sx(a.value) + 7 : width - pad.right - 4;
       const y = a.axis === "x" ? pad.top + 16 : sy(a.value) - 8;
-      svg.append(svgElement("text", { x, y, fill: a.color || COLORS.accent, "font-size": 13, "font-weight": 600 }, a.label));
+      svg.append(svgElement("text", { x, y, fill: a.color || COLORS.accent, "font-size": 16, "font-weight": 700, "paint-order": "stroke", stroke: "#ffffff", "stroke-width": 5, "stroke-linejoin": "round" }, a.label));
     });
 
     (graph.points || []).forEach(p => {
@@ -212,14 +212,14 @@
       }));
       if (p.label) svg.append(svgElement("text", {
         x: cx + (p.dx || 10), y: cy + (p.dy || -10),
-        fill: COLORS.text, "font-size": 12, "font-weight": 500
+        fill: COLORS.text, "font-size": 14, "font-weight": 600
       }, p.label));
     });
 
     (graph.notes || []).forEach(note => {
       svg.append(svgElement("text", {
         x: sx(note.x), y: sy(note.y), fill: note.color || COLORS.text,
-        "font-size": 13, "font-weight": 600
+        "font-size": 14, "font-weight": 700
       }, note.text));
     });
 
