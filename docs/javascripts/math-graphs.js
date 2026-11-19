@@ -61,6 +61,119 @@
         { x: 2.1, y: 4.7, text: "Høyregrense = 2", color: COLORS.secondary }
       ]
     },
+    vectors: {
+      title: "Vektorer i koordinatsystemet",
+      description: "Koordinatrutenett med vektorene a fra origo til 3, 2 og b fra 1, minus 2 til 4, 1.",
+      x: [-5, 6], y: [-4, 5], grid: true, gridStepX: 1, gridStepY: 1, ticks: true,
+      vectors: [
+        { x1: 0, y1: 0, x2: 3, y2: 2, label: "a = (3, 2)", color: COLORS.curve, dx: 12, dy: -12 },
+        { x1: 1, y1: -2, x2: 4, y2: 1, label: "b = (3, 3)", color: COLORS.secondary, dx: 12, dy: 20 }
+      ],
+      points: [
+        { x: 0, y: 0, label: "O", dx: -16, dy: 18 },
+        { x: 3, y: 2, label: "(3, 2)", dx: 10, dy: -12 },
+        { x: 1, y: -2, label: "(1, −2)", dx: -48, dy: 20 },
+        { x: 4, y: 1, label: "(4, 1)", dx: 10, dy: -10 }
+      ]
+    },
+    points: {
+      title: "Punkter og koordinater",
+      description: "Punktene A, B og C er markert i et koordinatsystem med rutenett og hjelpelinjer.",
+      x: [-4, 5], y: [-3, 5], grid: true, ticks: true,
+      guides: [
+        { x1: 2, y1: 0, x2: 2, y2: 3, dash: "4 4" },
+        { x1: 0, y1: 3, x2: 2, y2: 3, dash: "4 4" },
+        { x1: -2, y1: 0, x2: -2, y2: -1, dash: "4 4" },
+        { x1: 0, y1: -1, x2: -2, y2: -1, dash: "4 4" }
+      ],
+      points: [
+        { x: 2, y: 3, label: "A(2, 3)", dx: 12, dy: -12 },
+        { x: -2, y: -1, label: "B(−2, −1)", dx: 12, dy: 20 },
+        { x: 3, y: -2, label: "C(3, −2)", dx: 12, dy: 20 }
+      ]
+    },
+    triangle: {
+      title: "Trekant",
+      description: "En trekant med markerte hjørner og sidelengder.",
+      illustration: {
+        shapes: [
+          { d: "M 110 285 L 410 285 L 245 65 Z", fill: "#e8f0fb", stroke: "#2457a6", width: 4 },
+          { d: "M 245 65 L 245 285", fill: "none", stroke: "#94a3b8", width: 1.6, dash: "6 5" }
+        ],
+        labels: [
+          { x: 95, y: 305, text: "A" }, { x: 415, y: 305, text: "B" },
+          { x: 245, y: 48, text: "C", anchor: "middle" },
+          { x: 275, y: 180, text: "h", color: "#64748b" },
+          { x: 245, y: 330, text: "Grunnlinje", anchor: "middle", small: true }
+        ]
+      }
+    },
+    circle: {
+      title: "Sirkel med radius og diameter",
+      description: "En sirkel med sentrum, radius og diameter tydelig markert.",
+      illustration: {
+        shapes: [
+          { d: "M 260 180 m -112 0 a 112 112 0 1 0 224 0 a 112 112 0 1 0 -224 0", fill: "#edf5f7", stroke: "#0f766e", width: 4 },
+          { d: "M 148 180 L 372 180", fill: "none", stroke: "#2457a6", width: 3 },
+          { d: "M 260 180 L 339 101", fill: "none", stroke: "#c56a18", width: 3 }
+        ],
+        labels: [
+          { x: 260, y: 198, text: "O", anchor: "middle" },
+          { x: 300, y: 130, text: "r", color: "#a65310" },
+          { x: 260, y: 165, text: "d", color: "#2457a6", anchor: "middle" }
+        ]
+      }
+    },
+    rectangle: {
+      title: "Rektangel",
+      description: "Et rektangel med rette vinkler og markerte sidelengder.",
+      illustration: {
+        shapes: [
+          { d: "M 105 85 L 415 85 L 415 275 L 105 275 Z", fill: "#f0f5ff", stroke: "#2457a6", width: 4 },
+          { d: "M 105 105 L 125 105 L 125 85 M 395 85 L 395 105 L 415 105 M 415 255 L 395 255 L 395 275 M 125 275 L 125 255 L 105 255", fill: "none", stroke: "#0f766e", width: 2.5 }
+        ],
+        labels: [
+          { x: 260, y: 65, text: "a", anchor: "middle" },
+          { x: 435, y: 185, text: "b" },
+          { x: 260, y: 315, text: "Areal = a · b", anchor: "middle", small: true }
+        ]
+      }
+    },
+    cone: {
+      title: "Kjegle",
+      description: "En romlig kjegle med grunnflate, sidekant, høyde og skjult bakre del av grunnflaten.",
+      illustration: {
+        shapes: [
+          { d: "M 260 48 L 105 278 M 260 48 L 415 278", fill: "none", stroke: "#2457a6", width: 4 },
+          { d: "M 105 278 A 155 42 0 0 0 415 278", fill: "none", stroke: "#2457a6", width: 3 },
+          { d: "M 105 278 A 155 42 0 0 1 415 278", fill: "none", stroke: "#94a3b8", width: 2, dash: "6 5" },
+          { d: "M 260 48 L 260 278", fill: "none", stroke: "#0f766e", width: 2.5, dash: "7 5" },
+          { d: "M 260 278 L 415 278", fill: "none", stroke: "#c56a18", width: 3 }
+        ],
+        labels: [
+          { x: 278, y: 170, text: "h", color: "#0f766e" },
+          { x: 340, y: 268, text: "r", color: "#a65310" },
+          { x: 260, y: 28, text: "Toppunkt", anchor: "middle", small: true }
+        ]
+      }
+    },
+    pyramid: {
+      title: "Firkantet pyramide",
+      description: "En firkantet pyramide i perspektiv med høyde, grunnflate og skjult bakre kant.",
+      illustration: {
+        shapes: [
+          { d: "M 260 45 L 95 245 L 260 315 L 425 245 Z", fill: "#edf3fb", stroke: "#2457a6", width: 3.5 },
+          { d: "M 260 45 L 95 245 M 260 45 L 425 245 M 260 45 L 260 280", fill: "none", stroke: "#2457a6", width: 3.5 },
+          { d: "M 95 245 L 260 280 L 425 245", fill: "none", stroke: "#94a3b8", width: 2, dash: "6 5" },
+          { d: "M 260 45 L 260 280", fill: "none", stroke: "#0f766e", width: 2.5, dash: "7 5" }
+        ],
+        labels: [
+          { x: 278, y: 165, text: "h", color: "#0f766e" },
+          { x: 260, y: 28, text: "Toppunkt", anchor: "middle", small: true },
+          { x: 260, y: 340, text: "Kvadratisk grunnflate", anchor: "middle", small: true }
+        ]
+      }
+    },
     tangent: {
       title: "Sekant og tangent til f(x) = x²",
       description: "Tangenten i punktet (1, 1) har stigningstall 2. Sekanten gjennom (1, 1) og (2, 4) har stigningstall 3.",
@@ -166,6 +279,26 @@
       }));
     });
 
+    (graph.vectors || []).forEach((v, vectorIndex) => {
+      const markerId = `math-vector-arrow-${index}-${vectorIndex}`;
+      const marker = svgElement("marker", {
+        id: markerId, markerWidth: 10, markerHeight: 10, refX: 8, refY: 4,
+        orient: "auto", markerUnits: "userSpaceOnUse"
+      });
+      marker.append(svgElement("path", { d: "M 0 0 L 8 4 L 0 8 z", fill: v.color || COLORS.curve }));
+      defs.append(marker);
+      plot.append(svgElement("line", {
+        x1: sx(v.x1), y1: sy(v.y1), x2: sx(v.x2), y2: sy(v.y2),
+        stroke: v.color || COLORS.curve, "stroke-width": 4,
+        "stroke-linecap": "round", "marker-end": `url(#${markerId})`
+      }));
+      if (v.label) svg.append(svgElement("text", {
+        x: sx(v.x2) + (v.dx || 10), y: sy(v.y2) + (v.dy || -10),
+        fill: v.color || COLORS.curve, "font-size": 15, "font-weight": 700,
+        "paint-order": "stroke", stroke: "#ffffff", "stroke-width": 5, "stroke-linejoin": "round"
+      }, v.label));
+    });
+
     svg.append(plot);
 
     const xAxisY = clamp(sy(0), pad.top, height - pad.bottom);
@@ -222,6 +355,25 @@
         "font-size": 14, "font-weight": 700
       }, note.text));
     });
+
+    if (graph.illustration) {
+      const art = svgElement("g", { class: "math-graph-illustration" });
+      (graph.illustration.shapes || []).forEach(shape => {
+        art.append(svgElement("path", {
+          d: shape.d, fill: shape.fill || "none", stroke: shape.stroke || COLORS.curve,
+          "stroke-width": shape.width || 3, "stroke-linejoin": "round",
+          "stroke-linecap": "round", ...(shape.dash ? { "stroke-dasharray": shape.dash } : {})
+        }));
+      });
+      (graph.illustration.labels || []).forEach(label => {
+        art.append(svgElement("text", {
+          x: label.x, y: label.y, fill: label.color || COLORS.text,
+          "font-size": label.small ? 13 : 17, "font-weight": 650,
+          "text-anchor": label.anchor || "start"
+        }, label.text));
+      });
+      svg.append(art);
+    }
 
     container.replaceChildren(svg);
     container.dataset.rendered = "true";
