@@ -19,18 +19,10 @@ En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjo
 
     I grafen er punktet \((1,3)\) markert med en **åpen sirkel**. Det betyr at punktet ikke er med på grafen til den første delen, fordi \(x=1\) ikke oppfyller kravet \(x<1\). Punktet \((1,1)\) er markert med en **fylt sirkel**. Det er den faktiske funksjonsverdien, fordi \(x=1\) er med i den andre delen.
 
-    <svg viewBox="0 0 260 160" width="100%" height="160" role="img" aria-label="Graf av en delt funksjon. Åpen sirkel ved punktet 1,3 og fylt sirkel ved punktet 1,1." xmlns="http://www.w3.org/2000/svg">
-      <path d="M24 132 H245 M52 145 V12" fill="none" stroke="currentColor" stroke-width="1.3"/>
-      <path d="M52 82 L145 25" fill="none" stroke="#2878b8" stroke-width="2.8"/>
-      <path d="M145 82 Q178 75 218 30" fill="none" stroke="#2878b8" stroke-width="2.8"/>
-      <path d="M145 12 V145" stroke="currentColor" stroke-dasharray="4 4" opacity=".4"/>
-      <circle cx="145" cy="25" r="5.5" fill="white" stroke="#2878b8" stroke-width="2.5"/>
-      <circle cx="145" cy="82" r="5.5" fill="#2878b8" stroke="#2878b8" stroke-width="2"/>
-      <text x="151" y="20" font-size="10" fill="currentColor">(1, 3)</text>
-      <text x="153" y="94" font-size="10" fill="currentColor">(1, 1)</text>
-      <text x="235" y="146" font-size="10" fill="currentColor">x</text>
-      <text x="40" y="14" font-size="10" fill="currentColor">y</text>
-    </svg>
+    <div class="math-graph-frame">
+      <div class="math-graph" data-math-graph="piecewise" role="img" aria-label="Delt funksjon med åpent punkt i (1, 3) og fylt punkt i (1, 1)"></div>
+      <p class="math-graph-caption">Den åpne sirkelen viser grenseverdien fra venstre. Den fylte sirkelen viser funksjonsverdien f(1) = 1.</p>
+    </div>
 
 !!! rule "Åpen og fylt sirkel"
     - **Åpen sirkel:** Punktet er ikke med i grafen til den aktuelle forskriften.
