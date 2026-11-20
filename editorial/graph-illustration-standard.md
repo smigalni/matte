@@ -5,7 +5,7 @@ Denne standarden gjelder alle funksjonsgrafer og matematiske illustrasjoner i R1
 ## 1. Teknisk løsning
 
 - Bruk `docs/javascripts/math-graphs.js` som felles grafmotor.
-- Definer figurer som matematiske data i grafmotorens `graphs)-objekt. Ikke tegn koordinatgrafer som frie SVG-kurver i Markdown.
+- Definer figurer som matematiske data i grafmotorens `graphs`-objekt. Ikke tegn koordinatgrafer som frie SVG-kurver i Markdown.
 - Bruk `data-math-graph="<nøkkel>"` på et element med klassen `.math-graph`.
 - Pakk figuren inn i `.math-graph-frame` og legg en kort `.math-graph-caption` under.
 - SVG-en genereres med viewBox og skaleres responsivt. Den skal fungere på mobil, desktop og i utskrift.
@@ -33,8 +33,8 @@ Eksempel:
 
 - Vertikale og horisontale asymptoter skal bruke en tynn, rolig, stiplet linje med tydelig etikett.
 - Skrå asymptoter skal bruke samme visuelle språk som vertikale og horisontale asymptoter.
-- For funksjonen (f(x)=x+2/x) skal begge grener tegnes langt nok inn mot (x=0) til at kurven ser ut til å fortsette mot den vertikale asymptoten. Ikke stopp grenene kunstig ved (x=-1) og (x=1).
-- Samtidig skal utsnittet vise at grenene nærmer seg den skrå asymptoten (y=x) langt ute på begge sider.
+- For funksjonen \\(f(x)=x+2/x\\) skal begge grener tegnes langt nok inn mot \\(x=0\\) til at kurven ser ut til å fortsette mot den vertikale asymptoten. Ikke stopp grenene kunstig ved \\(x=-1\\) og \\(x=1\\).
+- Samtidig skal utsnittet vise at grenene nærmer seg den skrå asymptoten \\(y=x\\) langt ute på begge sider.
 - Kurvene klippes av tegneflatens grenser, ikke ved et vilkårlig endepunkt som gir et synlig bråstopp.
 
 ## 4. Punkter på grafer
