@@ -365,11 +365,16 @@
 
     (graph.points || []).forEach(p => {
       const cx = sx(p.x), cy = sy(p.y);
+      // Hvit frikant skjuler grafen bak punktet, slik at punktet leses tydelig.
+      svg.append(svgElement("circle", {
+        cx, cy, r: p.open ? 7 : 6.2,
+        fill: "#ffffff", stroke: "#ffffff", "stroke-width": 1
+      }));
       svg.append(svgElement("circle", {
         cx, cy, r: p.open ? 5 : 3.6,
         fill: p.open ? "#ffffff" : COLORS.point,
         stroke: p.open ? COLORS.point : "#ffffff",
-        "stroke-width": p.open ? 2.5 : 1.4
+        "stroke-width": p.open ? 2 : 1.2
       }));
       if (p.label) svg.append(svgElement("text", {
         x: cx + (p.dx || 10), y: cy + (p.dy || -10),
