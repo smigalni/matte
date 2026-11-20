@@ -34,7 +34,37 @@ Grafen har en vertikal asymptote og en horisontal asymptote. Punktene gjør det 
   <p class="math-graph-caption">Den vertikale asymptoten er \(x=1\), og den horisontale asymptoten er \(y=1\).</p>
 </div>
 
-## 3. Grenseverdier – samme grense fra begge sider, annen funksjonsverdi
+## 3. Skrå asymptote – ligning og graf
+
+Vi undersøker funksjonen
+
+\\[
+f(x)=x+\\frac{2}{x}, \\qquad x\\ne 0.
+\\]
+
+Når \(x\) går mot pluss eller minus uendelig, blir brøkdelen \(\\frac{2}{x}\) stadig mindre. Grafen nærmer seg derfor den skrå asymptoten
+
+\\[
+y=x.
+\\]
+
+Den stiplede rette linjen viser asymptoten. Vi viser samme funksjon både med og uten rutenett for å vurdere hvilken framstilling som er tydeligst.
+
+### Med rutenett
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="slantAsymptoteGrid" role="img" aria-label="Grafen f av x lik x pluss to delt på x med skrå asymptote y lik x og rutenett"></div>
+  <p class="math-graph-caption">Rutenettet gjør det enklere å lese av koordinater og sammenligne grafen med asymptoten.</p>
+</div>
+
+### Uten rutenett
+
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="slantAsymptotePlain" role="img" aria-label="Grafen f av x lik x pluss to delt på x med skrå asymptote y lik x uten rutenett"></div>
+  <p class="math-graph-caption">Uten rutenett blir oppmerksomheten rettet mot formen på grafen og hvordan den nærmer seg asymptoten.</p>
+</div>
+
+## 4. Grenseverdier – samme grense fra begge sider, annen funksjonsverdi
 
 Vi definerer funksjonen ved
 
@@ -61,7 +91,7 @@ Når \(x\) nærmer seg 1 fra venstre og høyre, nærmer funksjonsverdien seg 2. 
   <p class="math-graph-caption">Åpent punkt viser grenseverdien 2. Fylt punkt viser funksjonsverdien \(f(1)=4\).</p>
 </div>
 
-## 4. Sekant og tangent
+## 5. Sekant og tangent
 
 For \(f(x)=x^2\) ser vi på punktet \(P=(1,1)\). Tangenten har stigningstall 2, mens sekanten gjennom \(P\) og \(Q=(2,4)\) har stigningstall 3.
 
@@ -75,7 +105,7 @@ f'(1)=2.
 </div>
 
 
-## 5. Vektorer – retning, lengde og komponenter
+## 6. Vektorer – retning, lengde og komponenter
 
 Vektorer tegnes i et koordinatsystem med rutenett. Hver rute tilsvarer én enhet, slik at både retning, komponenter og lengde kan leses direkte av figuren. Pilspissen viser retningen.
 
@@ -84,7 +114,7 @@ Vektorer tegnes i et koordinatsystem med rutenett. Hver rute tilsvarer én enhet
   <p class="math-graph-caption">Rutenettet gjør det enkelt å telle horisontal og vertikal komponent. Lengden kan deretter bestemmes med Pytagoras.</p>
 </div>
 
-## 6. Punkter i koordinatsystemet
+## 7. Punkter i koordinatsystemet
 
 Punktene skal være tydelige, og hjelpelinjer brukes når de gjør koordinatene enklere å lese.
 
@@ -93,7 +123,7 @@ Punktene skal være tydelige, og hjelpelinjer brukes når de gjør koordinatene 
   <p class="math-graph-caption">Punktene A, B og C er markert med koordinater og hjelpelinjer.</p>
 </div>
 
-## 7. Plane geometriske figurer
+## 8. Plane geometriske figurer
 
 Geometriske figurer skal ha et eget, rent tegnefelt – ikke et koordinatsystem med mindre koordinater faktisk er en del av oppgaven.
 
@@ -118,7 +148,7 @@ Geometriske figurer skal ha et eget, rent tegnefelt – ikke et koordinatsystem 
   <p class="math-graph-caption">Rette vinkler og sidelengder skal være lette å skille fra hverandre.</p>
 </div>
 
-## 8. Romgeometri – kjegle og pyramide
+## 9. Romgeometri – kjegle og pyramide
 
 3D-figurene tegnes i perspektiv. Synlige kanter er heltrukne, mens skjulte kanter vises stiplet. Høyde og grunnflate markeres med egne linjestiler.
 
