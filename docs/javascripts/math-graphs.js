@@ -27,10 +27,10 @@
     asymptotes: {
       title: "Rasjonal funksjon med asymptoter",
       description: "Grafen til f(x) = 1 + 2/(x − 1). Den vertikale asymptoten er x = 1 og den horisontale asymptoten er y = 1.",
-      aspect: "square", x: [-4, 6], y: [-5, 7], grid: false, ticks: true,
+      aspect: "square", x: [-8, 10], y: [-5, 7], grid: false, ticks: true, tickStepX: 2,
       curves: [
-        { fn: x => 1 + 2 / (x - 1), from: -4, to: 0.55, color: COLORS.curve, width: 2.5, markerEnd: true },
-        { fn: x => 1 + 2 / (x - 1), from: 1.45, to: 6, color: COLORS.curve, width: 2.5, markerStart: true }
+        { fn: x => 1 + 2 / (x - 1), from: -8, to: 0.68, color: COLORS.curve, width: 2.5, markerEnd: true },
+        { fn: x => 1 + 2 / (x - 1), from: 1.32, to: 10, color: COLORS.curve, width: 2.5, markerStart: true }
       ],
       asymptotes: [
         { axis: "x", value: 1, label: "x = 1", color: "#b45309" },
