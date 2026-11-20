@@ -13,11 +13,13 @@ const path = require("node:path");
   if (!(await page.locator("#student-view").isVisible())) throw new Error("Elev View skal være synlig først.");
   if (await page.locator("#teacher-view").isVisible()) throw new Error("Teacher View skal være skjult ved oppstart.");
 
+  await page.waitForFunction(() => !!window.MathJax?.startup?.promise);
   await page.getByRole("button", { name: "Teacher View" }).click();
   await page.waitForFunction(() => document.querySelector("#teacher-view")?.dataset.modelReady === "true");
   await page.waitForFunction(() => document.querySelector("#function-curve")?.getAttribute("d")?.length > 100);
   if (!(await page.locator("#teacher-view h2").first().isVisible())) throw new Error("Læreroverskriften ble ikke rendret som Markdown/HTML.");
   if (!(await page.locator(".teacher-prompt strong").isVisible())) throw new Error("Undervisningsspørsmålet ble ikke formatert korrekt.");
+  await page.waitForSelector("#teacher-view mjx-container");
 
   const initial = await page.evaluate(() => ({
     secant: document.querySelector("#secant-slope").textContent,
