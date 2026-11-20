@@ -12,6 +12,7 @@ const path = require("node:path");
   await page.getByRole("button", { name: "Elev View" }).waitFor();
   if (!(await page.locator("#student-view").isVisible())) throw new Error("Elev View skal være synlig først.");
   if (await page.locator("#teacher-view").isVisible()) throw new Error("Teacher View skal være skjult ved oppstart.");
+  await page.screenshot({ path: "dual-view-student-desktop.png", fullPage: true });
 
   await page.waitForFunction(() => !!window.MathJax?.startup?.promise);
   await page.getByRole("button", { name: "Teacher View" }).click();
@@ -71,6 +72,9 @@ const path = require("node:path");
   const mobilePage = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
   mobilePage.on("pageerror", error => errors.push(error.message));
   await mobilePage.goto("file://" + file);
+  await mobilePage.screenshot({ path: "dual-view-student-mobile.png", fullPage: true });
+  const studentMobile = await mobilePage.evaluate(() => ({ width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth }));
+  if (studentMobile.scrollWidth > studentMobile.width + 1) throw new Error("Elev View har horisontal sideskrolling på mobil.");
   await mobilePage.getByRole("button", { name: "Teacher View" }).click();
   await mobilePage.waitForFunction(() => document.querySelector("#teacher-view")?.dataset.modelReady === "true");
   await mobilePage.waitForSelector("#teacher-view mjx-container");
@@ -87,7 +91,7 @@ const path = require("node:path");
   if (!(await page.locator("#student-view").isVisible())) throw new Error("Bytte tilbake til Elev View fungerer ikke.");
   if (errors.length) throw new Error("JavaScript-feil: " + errors.join("; "));
 
-  console.log(JSON.stringify({ initial, close, moved, mobile, pageErrors: errors }, null, 2));
+  console.log(JSON.stringify({ initial, close, moved, studentMobile, mobile, pageErrors: errors }, null, 2));
   await browser.close();
 })().catch(error => {
   console.error(error);
