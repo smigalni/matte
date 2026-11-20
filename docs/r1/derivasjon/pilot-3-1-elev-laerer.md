@@ -140,13 +140,15 @@ y-1=2(x-1)
 
 <h3>Faglig oppsummering</h3>
 
-For \(f(x)=x^2\), med \(P=(a,a^2)\) og \(Q=(a+h,(a+h)^2)\), er sekantens stigningstall
+<p>For <span class="arithmatex">\(f(x)=x^2\)</span>, med <span class="arithmatex">\(P=(a,a^2)\)</span> og <span class="arithmatex">\(Q=(a+h,(a+h)^2)\)</span>, er sekantens stigningstall</p>
 
+<div class="arithmatex">
 \[
 \frac{(a+h)^2-a^2}{h}=2a+h.
 \]
+</div>
 
-Når \(h\to 0\), går dette mot \(2a\), som er tangentens stigningstall \(f'(a)\).
+<p>Når <span class="arithmatex">\(h\to 0\)</span>, går dette mot <span class="arithmatex">\(2a\)</span>, som er tangentens stigningstall <span class="arithmatex">\(f'(a)\)</span>.</p>
 
 </div>
 
