@@ -73,6 +73,7 @@ const path = require("node:path");
   await mobilePage.goto("file://" + file);
   await mobilePage.getByRole("button", { name: "Teacher View" }).click();
   await mobilePage.waitForFunction(() => document.querySelector("#teacher-view")?.dataset.modelReady === "true");
+  await mobilePage.waitForSelector("#teacher-view mjx-container");
   await mobilePage.screenshot({ path: "dual-view-teacher-mobile.png", fullPage: true });
   const mobile = await mobilePage.evaluate(() => ({
     width: document.documentElement.clientWidth,
