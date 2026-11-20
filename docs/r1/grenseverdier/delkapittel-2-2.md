@@ -19,9 +19,12 @@ En funksjon med delt forskrift bruker ulike uttrykk på ulike deler av definisjo
 
     I grafen er punktet \((1,3)\) markert med en **åpen sirkel**. Det betyr at punktet ikke er med på grafen til den første delen, fordi \(x=1\) ikke oppfyller kravet \(x<1\). Punktet \((1,1)\) er markert med en **fylt sirkel**. Det er den faktiske funksjonsverdien, fordi \(x=1\) er med i den andre delen.
 
+    Se [figur 2.2.1](#figur-2-2-1).
+
+    <a id="figur-2-2-1"></a>
     <div class="math-graph-frame">
       <div class="math-graph" data-math-graph="piecewise" role="img" aria-label="Delt funksjon med åpent punkt i (1, 3) og fylt punkt i (1, 1)"></div>
-      <p class="math-graph-caption">Den åpne sirkelen viser grenseverdien fra venstre. Den fylte sirkelen viser funksjonsverdien f(1) = 1.</p>
+      <p class="math-graph-caption"><strong>Figur 2.2.1.</strong> Den åpne sirkelen viser grenseverdien fra venstre. Den fylte sirkelen viser funksjonsverdien f(1) = 1.</p>
     </div>
 
 !!! rule "Åpen og fylt sirkel"
