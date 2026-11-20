@@ -70,7 +70,7 @@ y-1=2(x-1)
 
 **Undervisningsidé:** La elevene først forutsi hva som skjer med sekantens stigningstall når punkt Q flyttes mot P. Bruk deretter modellen til å undersøke hypotesen.
 
-<div class="teacher-model">
+<div class="teacher-model" markdown="1">
   <div class="teacher-model-heading">
     <div>
       <span class="teacher-eyebrow">INTERAKTIV MODELL</span>
