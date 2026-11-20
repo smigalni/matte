@@ -27,6 +27,7 @@ Eksempel:
 - Akser og hjelpelinjer skal være visuelt svakere enn funksjonskurven.
 - Rutenett brukes bare når det hjelper eleven å lese av koordinater eller sammenligne avstander. Ikke bruk rutenett som standard på alle figurer.
 - Velg et stramt og pedagogisk utsnitt. Unngå unødvendig store tomme områder.
+- Velg bredde, høyde og akseintervaller etter figurens matematiske hensikt. Ikke la y-aksen bli unødvendig lang i forhold til x-aksen. Når geometriske forhold eller stigningstall skal kunne leses visuelt, må én enhet på x- og y-aksen ha samme visuelle lengde; tilpass derfor akseintervallene til tegneflatens proporsjoner.
 - Grafene skal være visuelt mindre og roligere enn hovedteksten. Vanlige kvadratiske grafer har maksbredde rundt 460 px.
 
 ## 3. Asymptoter
@@ -42,7 +43,8 @@ Eksempel:
 - Fylte punkter tegnes direkte oppå grafen. Ikke legg en hvit halo eller hvit bakgrunnssirkel bak dem; grafen skal fortsette uavbrutt gjennom punktet.
 - Åpne punkter tegnes som hvite sirkler med tydelig omriss. De viser at punktet ikke er med i den aktuelle grafen.
 - Ikke legg til ekstra punktmarkører hvis de ikke formidler matematisk informasjon.
-- Etiketter skal plasseres slik at de ikke kolliderer med kurven, andre etiketter eller viktige punkter.
+- Etiketter skal plasseres med tydelig avstand fra kurver, punkter og andre etiketter. Tekst skal aldri berøre eller ligge oppå en grafkurve. Flytt etiketten utenfor kurveforløpet, eller fjern den dersom informasjonen allerede kommer tydelig fram i bildeteksten eller brødteksten.
+- Ikke legg tekst direkte inne i grafområdet bare for å gjenta informasjon som kan stå i bildeteksten eller brødteksten.
 
 ## 5. Vektorer
 
