@@ -23,9 +23,8 @@
     linear: {
       title: "Lineær funksjon f(x) = 0,8x + 1",
       description: "En rett linje med stigningstall 0,8 og skjæring med y-aksen i 1.",
-      aspect: "square", x: [-5, 5], y: [-4, 6], grid: true, ticks: true, tickStepX: 1, tickStepY: 1,
-      curves: [{ fn: x => 0.8 * x + 1, from: -5, to: 5, color: COLORS.curve, width: 2.4 }],
-      points: [{ x: 0, y: 1, label: "(0, 1)", dx: 10, dy: -12 }]
+      aspect: "wide", x: [-6, 6], y: [-2.2, 4.15], grid: true, ticks: true, tickStepX: 1, tickStepY: 1,
+      curves: [{ fn: x => 0.8 * x + 1, from: -6, to: 6, color: COLORS.curve, width: 2.4 }]
     },
     quadraticBasic: {
       title: "Andregradsfunksjon f(x) = x² − 2x − 3",
@@ -87,12 +86,26 @@
         { x: 1, y: 1, label: "(1, 1)", dx: 10, dy: 18 }
       ]
     },
+    rationalReconstruction: {
+      title: "Rasjonal funksjon med to asymptoter og et kjent punkt",
+      description: "Grafen har vertikal asymptote x = 2, horisontal asymptote y = 1 og går gjennom punktet (0, 0).",
+      aspect: "wide", x: [-5, 8], y: [-3.5, 3.4], grid: false, ticks: true, tickStepX: 1, tickStepY: 1,
+      curves: [
+        { fn: x => 1 + 2 / (x - 2), from: -5, to: 1.42, color: COLORS.curve, width: 2.4 },
+        { fn: x => 1 + 2 / (x - 2), from: 2.58, to: 8, color: COLORS.curve, width: 2.4 }
+      ],
+      asymptotes: [
+        { axis: "x", value: 2, label: "x = 2", color: "#b45309" },
+        { axis: "y", value: 1, label: "y = 1", color: "#0f766e" }
+      ],
+      points: [{ x: 0, y: 0 }]
+    },
     continuous: {
       title: "Kontinuerlig funksjon",
       description: "Grafen er sammenhengende gjennom punktet a, og funksjonsverdien er lik grenseverdien.",
       aspect: "square", x: [-3, 4], y: [-2, 5], grid: false, ticks: true,
       curves: [{ fn: x => x + 1, from: -3, to: 4, color: COLORS.curve, width: 2.4 }],
-      points: [{ x: 1, y: 2, label: "f(a) = L", dx: 10, dy: -12 }]
+      points: [{ x: 1, y: 2, label: "f(a) = L", dx: -78, dy: 26 }]
     },
     jump: {
       title: "Sprangdiskontinuitet",
@@ -103,8 +116,8 @@
         { fn: () => 1, from: 1, to: 4, color: COLORS.curve, width: 2.4 }
       ],
       points: [
-        { x: 1, y: 3, open: true, label: "Venstregrense", dx: 10, dy: -12 },
-        { x: 1, y: 1, label: "f(a)", dx: 10, dy: 18 }
+        { x: 1, y: 3, open: true },
+        { x: 1, y: 1 }
       ]
     },
     verticalAsymptote: {
@@ -197,8 +210,8 @@
       ],
       guides: [{ x1: 1, y1: 0, x2: 1, y2: 2, dash: "4 5" }],
       points: [
-        { x: 1, y: 2, open: true, label: "Grenseverdi = 2", dx: 14, dy: -12 },
-        { x: 1, y: 4, label: "f(1) = 4", dx: 14, dy: -8 }
+        { x: 1, y: 2, open: true, label: "Grenseverdi = 2", dx: 18, dy: 28 },
+        { x: 1, y: 4, label: "f(1) = 4", dx: -72, dy: -12 }
       ],
       notes: [
         { x: -1.9, y: 4.7, text: "Venstregrense = 2", color: COLORS.secondary },
