@@ -70,7 +70,7 @@ y-1=2(x-1)
 
 **Undervisningsidé:** La elevene først forutsi hva som skjer med sekantens stigningstall når punkt Q flyttes mot P. Bruk deretter modellen til å undersøke hypotesen.
 
-<div class="teacher-model" markdown="1">
+<div class="teacher-model">
   <div class="teacher-model-heading">
     <div>
       <span class="teacher-eyebrow">INTERAKTIV MODELL</span>
@@ -132,8 +132,8 @@ y-1=2(x-1)
   </div>
 
   <p class="teacher-explanation" id="model-explanation">Når h blir mindre, nærmer sekantens stigningstall seg tangentens stigningstall.</p>
-  <div class="teacher-prompt" markdown="1">
-    **Spør klassen:** Hva skjer med forskjellen mellom stigningstallene når h nærmer seg 0? Hva tror dere skjer hvis P flyttes til et annet sted på grafen?
+  <div class="teacher-prompt">
+    <strong>Spør klassen:</strong> Hva skjer med forskjellen mellom stigningstallene når h nærmer seg 0? Hva tror dere skjer hvis P flyttes til et annet sted på grafen?
   </div>
   <p class="teacher-model-note">Tips: Du kan dra P og Q direkte i grafen, bruke skyveknappene eller fokusere på et punkt og bruke piltastene.</p>
 </div>
