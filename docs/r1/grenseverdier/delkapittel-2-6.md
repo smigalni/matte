@@ -8,9 +8,12 @@ En asymptote er en rett linje som grafen nærmer seg. Vi undersøker tre vanlige
 
 Linjen \(x=a\) er en vertikal asymptote når funksjonsverdiene går mot \(+\infty\) eller \(-\infty\) når \(x\) nærmer seg \(a\) fra minst én side.
 
+Se [figur 2.6.1](#figur-2-6-1).
+
+<a id="figur-2-6-1"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="verticalAsymptote" role="img" aria-label="Graf med vertikal asymptote x = 2"></div>
-  <p class="math-graph-caption">Grafen går mot uendelig i absoluttverdi når x nærmer seg 2. Den vertikale asymptoten er x = 2.</p>
+  <p class="math-graph-caption"><strong>Figur 2.6.1.</strong> Grafen går mot uendelig i absoluttverdi når x nærmer seg 2. Den vertikale asymptoten er x = 2.</p>
 </div>
 
 !!! example "Eksempel 2.6.1 – vertikal asymptote"
@@ -46,18 +49,24 @@ Linjen \(y=L\) er en horisontal asymptote dersom
 
 De to grensene kan gi ulike horisontale asymptoter.
 
+Se [figur 2.6.2](#figur-2-6-2).
+
+<a id="figur-2-6-2"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="horizontalAsymptote" role="img" aria-label="Graf med horisontal asymptote y = 1"></div>
-  <p class="math-graph-caption">Grafen nærmer seg linjen y = 1 både når x går mot pluss og minus uendelig.</p>
+  <p class="math-graph-caption"><strong>Figur 2.6.2.</strong> Grafen nærmer seg linjen y = 1 både når x går mot pluss og minus uendelig.</p>
 </div>
 
 ### Skrå asymptote
 
 En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjoner kan polynomdivisjon ofte avsløre den.
 
+Se [figur 2.6.3](#figur-2-6-3).
+
+<a id="figur-2-6-3"></a>
 <div class="math-graph-frame">
-  <div class="math-graph" data-math-graph="slantAsymptoteChapter2" role="img" aria-label="Graf med skrå asymptote y = x"></div>
-  <p class="math-graph-caption">Grafen til f(x) = (x² + 1)/(x − 1) nærmer seg den skrå asymptoten y = x + 1. Den vertikale asymptoten er x = 1.</p>
+  <div class="math-graph" data-math-graph="slantAsymptoteChapter2" role="img" aria-label="Graf med skrå asymptote y = x + 1 og vertikal asymptote x = 1"></div>
+  <p class="math-graph-caption"><strong>Figur 2.6.3.</strong> Grafen til f(x) = (x² + 1)/(x − 1) nærmer seg den skrå asymptoten y = x + 1. Den vertikale asymptoten er x = 1.</p>
 </div>
 
 !!! example "Eksempel 2.6.2 – finn skrå asymptote med polynomdivisjon"
