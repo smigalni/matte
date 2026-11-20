@@ -71,3 +71,10 @@ Eksempel:
 - Kontroller at kurver ikke stopper unaturlig, at punkter ikke lager utilsiktede hull, og at etiketter er lesbare.
 - Inspiser faktiske sider på desktop og mobil, og kontroller utskrift.
 - Behold den ordinære bokkvalitetskontrollen og Zensical-byggingen. Ikke behold midlertidige pilotnettlesertester eller egne graf-pilot-workflows når figurstandarden er tatt i bruk i kapitlene.
+
+## 9. Nummerering og henvisning til figurer
+- Gi hver figur en unik, hierarkisk ID på formen `figur-kapittel-delkapittel-løpenummer`, og vis nummeret i bildeteksten, for eksempel «Figur 2.4.1.».
+- Nummereringen starter på nytt i hvert delkapittel. Løpenummeret følger rekkefølgen figurene introduseres i.
+- Sett et stabilt HTML-anker på hver figur, for eksempel `<a id="figur-2-4-1"></a>`.
+- Henvis til figuren i den løpende teksten med en klikkbar henvisning, for eksempel `[figur 2.4.1](#figur-2-4-1)`. Ikke la figurer stå uten en tekstlig henvisning.
+- Kontroller at nummer, anker, henvisning, bildetekst og `aria-label` beskriver samme matematiske innhold.
