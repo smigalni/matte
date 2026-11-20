@@ -90,12 +90,13 @@ Bruk disse instruksjonene automatisk i alle fremtidige oppgaver i repositoriet. 
 
 ## 8. Grafikkstandard for funksjoner og matematiske illustrasjoner
 
-- **Funksjonsgrafer:** bruk JSXGraph og de gjenbrukbare malene i `docs/javascripts/function-graphs.js` når grafen skal vise en funksjon, punkter, tangenter, asymptoter eller andre matematiske objekter. Ikke tegn slike grafer manuelt som frie SVG-kurver når koordinatbasert generering er mulig.
-- **Statiske skisser:** bruk SVG når en fast, enkel skisse er bedre enn en interaktiv/koordinatbasert graf, for eksempel en fortegnslinje eller et rent geometrisk prinsippdiagram.
-- **Matematisk kilde:** hver graf skal ha en eksplisitt funksjonsforskrift, definisjonsintervall og visningsvindu. Punkter, skjæringer, ekstremalpunkter og asymptoter skal komme fra kontrollerte matematiske verdier, ikke øyemål.
-- **Visuell standard:** gjenbruk samme fargepalett, akser, rutenett, linjetykkelse, punktstørrelse, etiketter og rammer. Unngå unødvendige dekorasjoner og for mange etiketter.
-- **Mobil:** alle grafer skal være responsive, ha tilstrekkelig høyde og ikke skape horisontal sideskrolling eller klippe bort viktige deler av grafen.
-- **Tilgjengelighet:** alle grafer skal ha en presis `aria-label` og en kort tekst som forklarer hva eleven skal lese ut av grafen. Ikke la farge alene formidle betydning.
-- **Tester:** bruk Playwright-testene i `tests/visuals/function-graphs.spec.cjs` og workflowen `.github/workflows/function-graphs-visual.yml`. Kontroller at alle grafene rendres på desktop og mobil, at tegneflatene har fornuftig størrelse, at SVG-innhold finnes, og at siden ikke får horisontal sideskrolling.
-- **Visuell godkjenning:** CI og skjermbildetester er nødvendige, men ikke tilstrekkelige. Før en ny grafmal tas i bruk i lærestoffet, skal de faktiske skjermbildene gjennomgås visuelt. Ikke si at en graf er visuelt kontrollert uten å ha sett nettleserbildet.
-- **Ingen masseutrulling:** test nye grafmaler på pilotsiden først. Ikke erstatt eksisterende illustrasjoner i kapitlene før piloten er faglig og visuelt godkjent.
+- Følg den redaksjonelle standarden i `editorial/graph-illustration-standard.md`. Den er fasit for funksjonsgrafer, asymptoter, punkter, vektorer og geometriske figurer.
+- Bruk den felles, statiske SVG-grafmotoren i `docs/javascripts/math-graphs.js` og CSS-klasser `.math-graph-frame`, `.math-graph` og `.math-graph-caption`. Ikke bruk JSXGraph eller manuelle SVG-kurver for koordinatgrafer.
+- Hver grafdefinisjon skal ha en presis matematisk forskrift, definisjonsintervall, visningsvindu og beskrivende tilgjengelig tekst. Punkter og asymptoter skal plasseres fra matematiske koordinater.
+- Kurver skal være tynne og tydelige. Asymptoter skal ha samme rolige, stiplede stil; grenene skal følge asymptoten langt nok ut, og nærme seg vertikale asymptoter uten et kunstig bråstopp.
+- Fylte punkter skal legges direkte oppå kurven uten hvit halo eller hull i grafen. Åpne punkter skal ha hvitt sentrum og tydelig omriss.
+- Vektorer skal ha synlige, proporsjonale pilspisser, moderat linjetykkelse og ingen ekstra punktmarkører i endene.
+- Geometriske figurer skal være kompakte og underordne seg teksten. De skal ikke bruke koordinatsystem med mindre det er matematisk nødvendig.
+- Grafer og figurer skal være responsive, passe til mobil og utskrift, ikke skape horisontal sideskrolling og ikke fremstå som store interaktive widgets eller UI-kort.
+- Alle figurer skal ha presis `aria-label` eller SVG-tittel/beskrivelse og en kort bildetekst som forklarer hva eleven skal lese ut.
+- Ikke opprett permanente nettlesertester eller pilotsider for hver grafendring. Behold bokkvalitetskontroll og byggkontroll. Visuell godkjenning gjøres ved å inspisere de faktiske sidene på desktop, mobil og i utskrift.
