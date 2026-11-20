@@ -6,10 +6,12 @@ site_url = "https://smigalni.github.io/matte/"
 docs_dir = "docs"
 extra_css = [
   "stylesheets/extra.css",
+  "stylesheets/dual-view-3-1.css",
 ]
 extra_javascript = [
   "javascripts/mathjax.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+  "javascripts/dual-view-3-1.js",
 ]
 
 nav = [
@@ -17,6 +19,7 @@ nav = [
   { "R1" = [
     { "Kapittel 3 – Derivasjon" = [
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
+      { "Pilot – Elev View og Teacher View" = "r1/derivasjon/pilot-3-1-elev-laerer.md" },
 
       { "3.2 Vanlige derivasjonsregler" = "felles/derivasjon/vanlige-derivasjonsregler.md" },
       { "3.3 Kjerneregelen" = "felles/derivasjon/kjerneregelen.md" },
