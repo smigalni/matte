@@ -29,9 +29,12 @@ En funksjon er kontinuerlig i \(x=a\) når grafen henger sammen i punktet, uten 
 
 Grafen nærmer seg samme punkt fra begge sider, og punktet er med i grafen.
 
+Se [figur 2.4.1](#figur-2-4-1).
+
+<a id="figur-2-4-1"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="continuous" role="img" aria-label="Kontinuerlig funksjon med punkt på grafen"></div>
-  <p class="math-graph-caption">Grafen er sammenhengende gjennom a, og det fylte punktet viser at f(a) er lik grenseverdien.</p>
+  <p class="math-graph-caption"><strong>Figur 2.4.1.</strong> Grafen er sammenhengende gjennom a, og det fylte punktet viser at f(a) er lik grenseverdien.</p>
 </div>
 
 Her er grenseverdien lik funksjonsverdien.
@@ -40,9 +43,12 @@ Her er grenseverdien lik funksjonsverdien.
 
 Grafen nærmer seg samme høyde fra begge sider, men funksjonen har en annen verdi i punktet \(x=a\).
 
+Se [figur 2.4.2](#figur-2-4-2).
+
+<a id="figur-2-4-2"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="limit" role="img" aria-label="Hull med grenseverdi ulik funksjonsverdi"></div>
-  <p class="math-graph-caption">Den åpne sirkelen viser grenseverdien L, mens det fylte punktet viser en annen funksjonsverdi f(a).</p>
+  <p class="math-graph-caption"><strong>Figur 2.4.2.</strong> Den åpne sirkelen viser grenseverdien L, mens det fylte punktet viser en annen funksjonsverdi f(a).</p>
 </div>
 
 Dette er grunnen til at vi må kontrollere \(f(a)\). Selv om grenseverdien finnes, er funksjonen ikke kontinuerlig dersom \(f(a)\ne L\).
@@ -51,9 +57,12 @@ Dette er grunnen til at vi må kontrollere \(f(a)\). Selv om grenseverdien finne
 
 Grafen nærmer seg ulike høyder fra venstre og høyre. Da finnes ikke den tosidige grenseverdien.
 
+Se [figur 2.4.3](#figur-2-4-3).
+
+<a id="figur-2-4-3"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="jump" role="img" aria-label="Sprangdiskontinuitet med ulike ensidige grenseverdier"></div>
-  <p class="math-graph-caption">Den åpne sirkelen viser venstre grenseverdi, mens den fylte sirkelen viser funksjonsverdien fra høyre.</p>
+  <p class="math-graph-caption"><strong>Figur 2.4.3.</strong> Den åpne sirkelen viser venstre grenseverdi, mens den fylte sirkelen viser funksjonsverdien fra høyre.</p>
 </div>
 
 Her er venstre og høyre grenseverdi ulike.
