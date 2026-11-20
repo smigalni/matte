@@ -64,7 +64,7 @@ y-1=2(x-1)
 
 </div>
 
-<div id="teacher-view" class="dual-view-panel" data-view-panel="teacher" hidden>
+<div id="teacher-view" class="dual-view-panel" data-view-panel="teacher" hidden markdown="1">
 
 ## Teacher View – utforsk sammen med klassen
 
@@ -132,7 +132,7 @@ y-1=2(x-1)
   </div>
 
   <p class="teacher-explanation" id="model-explanation">Når h blir mindre, nærmer sekantens stigningstall seg tangentens stigningstall.</p>
-  <div class="teacher-prompt">
+  <div class="teacher-prompt" markdown="1">
     **Spør klassen:** Hva skjer med forskjellen mellom stigningstallene når h nærmer seg 0? Hva tror dere skjer hvis P flyttes til et annet sted på grafen?
   </div>
   <p class="teacher-model-note">Tips: Du kan dra P og Q direkte i grafen, bruke skyveknappene eller fokusere på et punkt og bruke piltastene.</p>
