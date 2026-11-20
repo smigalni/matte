@@ -46,10 +46,10 @@
     slantAsymptoteGrid: {
       title: "Skrå asymptote – med rutenett",
       description: "Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x når x går mot pluss eller minus uendelig. Rutenettet gjør avstanden synlig.",
-      aspect: "square", x: [-8, 8], y: [-8, 8], grid: true, ticks: true, tickStepX: 2, tickStepY: 2,
+      aspect: "square", x: [-16, 16], y: [-16, 16], grid: true, ticks: true, tickStepX: 4, tickStepY: 4,
       curves: [
-        { fn: x => x + 2 / x, from: -8, to: -0.5, color: COLORS.curve, width: 2.5, markerStart: true },
-        { fn: x => x + 2 / x, from: 0.5, to: 8, color: COLORS.curve, width: 2.5, markerEnd: true }
+        { fn: x => x + 2 / x, from: -16, to: -0.5, color: COLORS.curve, width: 2.3, markerStart: true },
+        { fn: x => x + 2 / x, from: 0.5, to: 16, color: COLORS.curve, width: 2.3, markerEnd: true }
       ],
       lines: [{ fn: x => x, color: COLORS.accent, width: 1.7, dash: "7 5" }],
       notes: [{ x: -7, y: 6.2, text: "Skrå asymptote: y = x", color: COLORS.accent }]
@@ -57,10 +57,10 @@
     slantAsymptotePlain: {
       title: "Skrå asymptote – uten rutenett",
       description: "Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x når x går mot pluss eller minus uendelig. Uten rutenett kommer kurvene tydeligere fram.",
-      aspect: "square", x: [-8, 8], y: [-8, 8], grid: false, ticks: true, tickStepX: 2, tickStepY: 2,
+      aspect: "square", x: [-16, 16], y: [-16, 16], grid: false, ticks: true, tickStepX: 4, tickStepY: 4,
       curves: [
-        { fn: x => x + 2 / x, from: -8, to: -0.5, color: COLORS.curve, width: 2.5, markerStart: true },
-        { fn: x => x + 2 / x, from: 0.5, to: 8, color: COLORS.curve, width: 2.5, markerEnd: true }
+        { fn: x => x + 2 / x, from: -16, to: -0.5, color: COLORS.curve, width: 2.3, markerStart: true },
+        { fn: x => x + 2 / x, from: 0.5, to: 16, color: COLORS.curve, width: 2.3, markerEnd: true }
       ],
       lines: [{ fn: x => x, color: COLORS.accent, width: 1.7, dash: "7 5" }],
       notes: [{ x: -7, y: 6.2, text: "Skrå asymptote: y = x", color: COLORS.accent }]
@@ -328,20 +328,20 @@
     (graph.vectors || []).forEach((v, vectorIndex) => {
       const markerId = `math-vector-arrow-${index}-${vectorIndex}`;
       const marker = svgElement("marker", {
-        id: markerId, markerWidth: 20, markerHeight: 20, refX: 18, refY: 10,
-        orient: "auto", markerUnits: "userSpaceOnUse", viewBox: "0 0 20 20"
+        id: markerId, markerWidth: 16, markerHeight: 16, refX: 14.5, refY: 8,
+        orient: "auto", markerUnits: "userSpaceOnUse", viewBox: "0 0 16 16"
       });
       marker.append(svgElement("path", {
-        d: "M 1 1 L 19 10 L 1 19 L 5.5 10 z",
+        d: "M 1 1 L 15 8 L 1 15 L 4.5 8 z",
         fill: v.color || COLORS.curve,
         stroke: "#ffffff",
-        "stroke-width": 1.2,
+        "stroke-width": 0.9,
         "stroke-linejoin": "round"
       }));
       defs.append(marker);
       plot.append(svgElement("line", {
         x1: sx(v.x1), y1: sy(v.y1), x2: sx(v.x2), y2: sy(v.y2),
-        stroke: v.color || COLORS.curve, "stroke-width": 3.4,
+        stroke: v.color || COLORS.curve, "stroke-width": 2.5,
         "stroke-linecap": "round", "marker-end": `url(#${markerId})`
       }));
       if (v.label) svg.append(svgElement("text", {
