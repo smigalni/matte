@@ -69,12 +69,6 @@
         { x1: 0, y1: 0, x2: 3, y2: 2, label: "a = (3, 2)", color: COLORS.curve, dx: 12, dy: -12 },
         { x1: 1, y1: -2, x2: 4, y2: 1, label: "b = (3, 3)", color: COLORS.secondary, dx: 12, dy: 20 }
       ],
-      points: [
-        { x: 0, y: 0, label: "O", dx: -16, dy: 18 },
-        { x: 3, y: 2, label: "(3, 2)", dx: 10, dy: -12 },
-        { x: 1, y: -2, label: "(1, −2)", dx: -48, dy: 20 },
-        { x: 4, y: 1, label: "(4, 1)", dx: 10, dy: -10 }
-      ]
     },
     points: {
       title: "Punkter og koordinater",
@@ -312,14 +306,20 @@
     (graph.vectors || []).forEach((v, vectorIndex) => {
       const markerId = `math-vector-arrow-${index}-${vectorIndex}`;
       const marker = svgElement("marker", {
-        id: markerId, markerWidth: 13, markerHeight: 13, refX: 11, refY: 6.5,
-        orient: "auto", markerUnits: "userSpaceOnUse"
+        id: markerId, markerWidth: 20, markerHeight: 20, refX: 18, refY: 10,
+        orient: "auto", markerUnits: "userSpaceOnUse", viewBox: "0 0 20 20"
       });
-      marker.append(svgElement("path", { d: "M 0 0 L 12 6.5 L 0 13 z", fill: v.color || COLORS.curve }));
+      marker.append(svgElement("path", {
+        d: "M 1 1 L 19 10 L 1 19 L 5.5 10 z",
+        fill: v.color || COLORS.curve,
+        stroke: "#ffffff",
+        "stroke-width": 1.2,
+        "stroke-linejoin": "round"
+      }));
       defs.append(marker);
       plot.append(svgElement("line", {
         x1: sx(v.x1), y1: sy(v.y1), x2: sx(v.x2), y2: sy(v.y2),
-        stroke: v.color || COLORS.curve, "stroke-width": 2.5,
+        stroke: v.color || COLORS.curve, "stroke-width": 3.4,
         "stroke-linecap": "round", "marker-end": `url(#${markerId})`
       }));
       if (v.label) svg.append(svgElement("text", {
