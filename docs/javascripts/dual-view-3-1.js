@@ -37,6 +37,7 @@
     const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
     const render = () => {
+      h = Math.min(h, 5 - a);
       const q = a + h;
       const pY = a * a;
       const qY = q * q;
@@ -62,7 +63,6 @@
 
       sliderA.value = a.toFixed(2);
       sliderH.max = Math.max(0.05, 5 - a).toFixed(2);
-      h = Math.min(h, Number(sliderH.max));
       sliderH.value = h.toFixed(2);
       root.querySelector("#point-a-value").textContent = fmt(a);
       root.querySelector("#delta-h-value").textContent = fmt(h);
