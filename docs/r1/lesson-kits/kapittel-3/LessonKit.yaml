@@ -38,8 +38,11 @@ lesson_flow:
     activity: "Avslutning og muntlig gjenhenting"
     teacher_prompt: "Hva er forskjellen på å kunne derivasjonsreglene og å forstå hva derivasjon betyr?"
 materials:
-  student_file: "01-Elevark.pdf"
-  teacher_file: "02-Laererveiledning.pdf"
+  student_source: "01-Elevark.md"
+  teacher_source: "02-Laererveiledning.md"
+  export_filenames:
+    student_pdf: "01-Elevark.pdf"
+    teacher_pdf: "02-Laererveiledning.pdf"
   computer_activity:
     optional: true
     tool: "GeoGebra eller tilsvarende grafverktøy"
