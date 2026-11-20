@@ -29,12 +29,10 @@ En funksjon er kontinuerlig i \(x=a\) når grafen henger sammen i punktet, uten 
 
 Grafen nærmer seg samme punkt fra begge sider, og punktet er med i grafen.
 
-<svg viewBox="0 0 250 135" width="100%" height="135" role="img" aria-label="Kontinuerlig graf med fylt punkt på kurven ved x lik a." xmlns="http://www.w3.org/2000/svg">
-  <path d="M18 112 H235 M125 122 V10" stroke="currentColor" stroke-width="1.2" fill="none"/>
-  <path d="M25 102 C75 90 95 65 125 58 C160 50 185 30 225 18" stroke="#2878b8" stroke-width="2.8" fill="none"/>
-  <circle cx="125" cy="58" r="5" fill="#2878b8"/>
-  <text x="130" y="126" font-size="10" fill="currentColor">a</text>
-</svg>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="continuous" role="img" aria-label="Kontinuerlig funksjon med punkt på grafen"></div>
+  <p class="math-graph-caption">Grafen er sammenhengende gjennom a, og det fylte punktet viser at f(a) er lik grenseverdien.</p>
+</div>
 
 Her er grenseverdien lik funksjonsverdien.
 
@@ -42,15 +40,10 @@ Her er grenseverdien lik funksjonsverdien.
 
 Grafen nærmer seg samme høyde fra begge sider, men funksjonen har en annen verdi i punktet \(x=a\).
 
-<svg viewBox="0 0 250 135" width="100%" height="135" role="img" aria-label="Graf med åpent punkt på kurven ved grenseverdien og fylt punkt lavere ved samme x-verdi." xmlns="http://www.w3.org/2000/svg">
-  <path d="M18 112 H235 M125 122 V10" stroke="currentColor" stroke-width="1.2" fill="none"/>
-  <path d="M25 102 C75 90 95 65 125 45 M125 45 C160 38 185 30 225 18" stroke="#2878b8" stroke-width="2.8" fill="none"/>
-  <circle cx="125" cy="45" r="5.5" fill="white" stroke="#2878b8" stroke-width="2.5"/>
-  <circle cx="125" cy="91" r="5.5" fill="#2878b8"/>
-  <text x="132" y="49" font-size="10" fill="currentColor">L</text>
-  <text x="132" y="95" font-size="10" fill="currentColor">f(a)</text>
-  <text x="130" y="126" font-size="10" fill="currentColor">a</text>
-</svg>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="limit" role="img" aria-label="Hull med grenseverdi ulik funksjonsverdi"></div>
+  <p class="math-graph-caption">Den åpne sirkelen viser grenseverdien L, mens det fylte punktet viser en annen funksjonsverdi f(a).</p>
+</div>
 
 Dette er grunnen til at vi må kontrollere \(f(a)\). Selv om grenseverdien finnes, er funksjonen ikke kontinuerlig dersom \(f(a)\ne L\).
 
@@ -58,13 +51,10 @@ Dette er grunnen til at vi må kontrollere \(f(a)\). Selv om grenseverdien finne
 
 Grafen nærmer seg ulike høyder fra venstre og høyre. Da finnes ikke den tosidige grenseverdien.
 
-<svg viewBox="0 0 250 135" width="100%" height="135" role="img" aria-label="Sprangdiskontinuitet med åpent punkt på venstre gren og fylt punkt på høyre gren." xmlns="http://www.w3.org/2000/svg">
-  <path d="M18 112 H235 M125 122 V10" stroke="currentColor" stroke-width="1.2" fill="none"/>
-  <path d="M25 42 H125 M125 88 H225" stroke="#2878b8" stroke-width="2.8" fill="none"/>
-  <circle cx="125" cy="42" r="5.5" fill="white" stroke="#2878b8" stroke-width="2.5"/>
-  <circle cx="125" cy="88" r="5.5" fill="#2878b8"/>
-  <text x="130" y="126" font-size="10" fill="currentColor">a</text>
-</svg>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="jump" role="img" aria-label="Sprangdiskontinuitet med ulike ensidige grenseverdier"></div>
+  <p class="math-graph-caption">Den åpne sirkelen viser venstre grenseverdi, mens den fylte sirkelen viser funksjonsverdien fra høyre.</p>
+</div>
 
 Her er venstre og høyre grenseverdi ulike.
 
