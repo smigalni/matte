@@ -55,6 +55,16 @@ const path = require("node:path");
     throw new Error("Flytting av P oppdaterer ikke tangentens stigningstall og punkt.");
   }
 
+  const graphBox = await page.locator("#slope-graph").boundingBox();
+  const qBox = await page.locator("#point-q").boundingBox();
+  const targetX = graphBox.x + ((149 + 2.60 * (520 / 6)) / 620) * graphBox.width;
+  await page.mouse.move(qBox.x + qBox.width / 2, qBox.y + qBox.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(targetX, qBox.y + qBox.height / 2, { steps: 8 });
+  await page.mouse.up();
+  const draggedH = Number((await page.locator("#delta-h-value").textContent()).replace(",", "."));
+  if (draggedH < 0.55 || draggedH > 0.65) throw new Error("Dra-og-slipp på Q endrer ikke h som forventet.");
+
   await page.screenshot({ path: "dual-view-teacher-desktop.png", fullPage: true });
   const mobilePage = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
   mobilePage.on("pageerror", error => errors.push(error.message));
