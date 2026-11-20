@@ -1,0 +1,46 @@
+name: Dual-view pilot review
+
+on:
+  push:
+    branches: ["feature/r1-dual-view-3-1"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-browser-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install Zensical
+        run: pip install zensical
+      - name: Build site
+        run: zensical build --clean
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Test both views and interactive graph
+        run: node tests/visuals/dual-view-3-1.spec.cjs
+      - name: Upload browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dual-view-3-1-browser-review
+          path: |
+            dual-view-teacher-desktop.png
+            dual-view-teacher-mobile.png
+          if-no-files-found: ignore
