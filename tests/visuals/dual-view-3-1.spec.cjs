@@ -68,6 +68,18 @@ const path = require("node:path");
   const draggedH = Number((await page.locator("#delta-h-value").textContent()).replace(",", "."));
   if (draggedH < 0.55 || draggedH > 0.65) throw new Error("Dra-og-slipp på Q endrer ikke h som forventet.");
 
+  const pBox = await page.locator("#point-p").boundingBox();
+  const targetPX = graphBox.x + ((149 + 1.50 * (520 / 6)) / 620) * graphBox.width;
+  await page.mouse.move(pBox.x + pBox.width / 2, pBox.y + pBox.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(targetPX, pBox.y + pBox.height / 2, { steps: 8 });
+  await page.mouse.up();
+  const draggedA = Number((await page.locator("#point-a-value").textContent()).replace(",", "."));
+  const hAfterP = Number((await page.locator("#delta-h-value").textContent()).replace(",", "."));
+  if (draggedA < 1.45 || draggedA > 1.55 || hAfterP < 0.55 || hAfterP > 0.65) {
+    throw new Error("Dra-og-slipp på P flytter ikke P uten å miste avstanden h.");
+  }
+
   await page.screenshot({ path: "dual-view-teacher-desktop.png", fullPage: true });
   const mobilePage = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
   mobilePage.on("pageerror", error => errors.push(error.message));
@@ -91,7 +103,7 @@ const path = require("node:path");
   if (!(await page.locator("#student-view").isVisible())) throw new Error("Bytte tilbake til Elev View fungerer ikke.");
   if (errors.length) throw new Error("JavaScript-feil: " + errors.join("; "));
 
-  console.log(JSON.stringify({ initial, close, moved, studentMobile, mobile, pageErrors: errors }, null, 2));
+  console.log(JSON.stringify({ initial, close, moved, draggedH, draggedA, hAfterP, studentMobile, mobile, pageErrors: errors }, null, 2));
   await browser.close();
 })().catch(error => {
   console.error(error);
