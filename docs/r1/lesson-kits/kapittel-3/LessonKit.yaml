@@ -1,0 +1,145 @@
+schema_version: "1.0"
+id: "LK-R1-3-01"
+title: "Deriverbarhet, definisjonen og matematisk problemløsing"
+subject: "R1"
+chapter: 3
+language: "nb-NO"
+duration_minutes: 60
+calculator: false
+cas: false
+audience: "Elev med svært høyt faglig nivå / privatundervisning"
+source_sections:
+  - "3.5 Deriverbarhet"
+  - "3.6 Den deriverte definert ved grenseverdi"
+  - "3.9 Blandede oppgaver"
+scope_note: >-
+  Denne økten dekker utvalgte deler av 3.5, 3.6 og 3.9. Den erstatter ikke
+  gjennomgang av 3.7 numerisk derivasjon eller 3.8 programmering. Kapittel 3
+  skal ikke regnes som fullført før disse delene også er arbeidet med.
+learning_goals:
+  - "Skille mellom kontinuitet og deriverbarhet."
+  - "Undersøke deriverbarhet ved å sammenligne ensidige deriverte."
+  - "Utlede en derivert fra definisjonen ved hjelp av grenseverdi."
+  - "Bruke derivasjon til å finne og bevise en optimal konstant."
+  - "Presentere et matematisk resonnement presist og fullstendig."
+lesson_flow:
+  - time: "00-04"
+    activity: "Startspørsmål"
+    teacher_prompt: "Kan en funksjon være kontinuerlig, men ikke deriverbar? Be eleven gi et eksempel."
+  - time: "04-17"
+    activity: "Oppgave 1 – kontinuitet og deriverbarhet"
+  - time: "17-28"
+    activity: "Oppgave 2 – absoluttverdi og knekkpunkt"
+  - time: "28-43"
+    activity: "Oppgave 3 – definisjonen av den deriverte"
+  - time: "43-57"
+    activity: "Oppgave 4 – optimal konstant"
+  - time: "57-60"
+    activity: "Avslutning og muntlig gjenhenting"
+    teacher_prompt: "Hva er forskjellen på å kunne derivasjonsreglene og å forstå hva derivasjon betyr?"
+materials:
+  student_file: "01-Elevark.pdf"
+  teacher_file: "02-Laererveiledning.pdf"
+  computer_activity:
+    optional: true
+    tool: "GeoGebra eller tilsvarende grafverktøy"
+    instructions: >-
+      Plott f(x)=abs(x^2-2x+1) og g(x)=abs(x^2-4x+3). Sammenlign grafene
+      nær x=1 og forklar grafisk det algebraiske resultatet. Skjermen skal
+      bekrefte argumentasjonen, ikke erstatte den.
+student_instructions:
+  - "Vis alle viktige mellomregninger."
+  - "Begrunn hvorfor metodene virker."
+  - "Bruk eksakte uttrykk, ikke desimaltall."
+  - "Ingen kalkulator eller CAS."
+tasks:
+  - id: "LK-R1-3-01.1"
+    section: "3.5"
+    title: "Når møtes to funksjonsuttrykk?"
+    prompt: |
+      Funksjonen er definert ved
+      f(x) = ax^2 + bx + 1, når x < 1;
+             x^2 + 3, når x >= 1.
+      a) Bestem en sammenheng mellom a og b som gjør funksjonen kontinuerlig i x=1.
+      b) Bestem a og b slik at funksjonen også er deriverbar i x=1.
+      c) Forklar hvorfor deriverbarhet innebærer kontinuitet, men ikke omvendt.
+    hints:
+      - "Hva må være likt når x nærmer seg 1 fra venstre og høyre?"
+      - "Sammenlign venstre grenseverdi med funksjonsverdien fra høyre uttrykk."
+      - "Deriver hvert uttrykk på sin side og sammenlign 2a+b med 2."
+    solution: |
+      Kontinuitet gir a+b+1=4, altså a+b=3.
+      Deriverbarhet gir i tillegg 2a+b=2.
+      Løsning av systemet gir a=-1 og b=4.
+      Deriverbarhet innebærer kontinuitet, men et knekkpunkt kan være kontinuerlig uten å være deriverbart.
+  - id: "LK-R1-3-01.2"
+    section: "3.5"
+    title: "Absoluttverdi og knekkpunkt"
+    prompt: |
+      Undersøk f(x)=|x^2-2x+1| og g(x)=|x^2-4x+3|.
+      a) Undersøk om f er deriverbar i x=1 uten å bruke graf.
+      b) Undersøk om g er deriverbar i x=1 ved hjelp av ensidige deriverte.
+      c) Forklar hvorfor funksjonene oppfører seg forskjellig i x=1.
+    hints:
+      - "Faktoriser uttrykkene inni absoluttverdien."
+      - "Undersøk fortegnet på hver side av x=1."
+      - "Skriv g som et vanlig polynom på hver side av 1, og finn ensidige deriverte."
+    solution: |
+      f(x)=|(x-1)^2|=(x-1)^2, så f'(1)=0 og f er deriverbar.
+      For g gjelder x^2-4x+3=(x-1)(x-3). Nær x=1 er x-3 negativ.
+      Når x<1 er produktet positivt og g=x^2-4x+3, slik at g'_-(1)=-2.
+      Når x>1 er produktet negativt og g=-(x^2-4x+3), slik at g'_+(1)=2.
+      De ensidige deriverte er ulike, så g er ikke deriverbar i x=1.
+      Det første uttrykket har et dobbelt nullpunkt uten fortegnsskifte; det andre har et enkelt nullpunkt med fortegnsskifte.
+  - id: "LK-R1-3-01.3"
+    section: "3.6"
+    title: "Deriver fra definisjonen"
+    prompt: |
+      La f(x)=x^3-2x.
+      a) Bruk definisjonen med Delta x til å utlede f'(x).
+      b) Finn tangentens likning når x=1.
+      c) Forklar hvorfor det er lov å forkorte med Delta x, men ikke sette Delta x=0 med en gang.
+    hints:
+      - "Skriv f(x+Delta x) før du setter inn i definisjonen."
+      - "Multipliser ut leddene i tredje potens."
+      - "Faktoriser Delta x i telleren før du forkorter."
+    solution: |
+      f'(x)=lim_(Delta x->0) [((x+Delta x)^3-2(x+Delta x))-(x^3-2x)]/Delta x
+      =lim_(Delta x->0) [3x^2 Delta x+3x(Delta x)^2+(Delta x)^3-2Delta x]/Delta x
+      =lim_(Delta x->0) [3x^2+3x Delta x+(Delta x)^2-2]
+      =3x^2-2.
+      f(1)=-1 og f'(1)=1. Tangenten er y+1=x-1, altså y=x-2.
+      I grenseuttrykket er Delta x ulik 0 mens vi forkorter; deretter lar vi Delta x nærme seg 0.
+  - id: "LK-R1-3-01.4"
+    section: "3.9"
+    title: "Finn den største konstanten"
+    challenge: true
+    prompt: |
+      Finn den største verdien av k slik at
+      x^4+4x+3 >= k(x+1)^2
+      gjelder for alle reelle x.
+      a) Begrunn hvorfor k ikke kan være større enn verdien du finner.
+      b) Bevis at verdien fungerer for alle reelle x.
+      c) Bruk derivasjon som en del av argumentasjonen. Undersøk x=-1 separat dersom du deler på (x+1)^2.
+    hints:
+      - "Velg en x-verdi som gir en øvre grense for k."
+      - "Prøv x=1. For å bevise at k=2 fungerer, se på differansen mellom sidene."
+      - "For x ulik -1: q(x)=(x^4+4x+3)/(x+1)^2=x^2-2x+3. Deriver q."
+    solution: |
+      Setter vi x=1, får vi 8>=4k, altså k<=2.
+      For x ulik -1 definerer vi q(x)=(x^4+4x+3)/(x+1)^2=x^2-2x+3.
+      Da er q'(x)=2x-2. Funksjonen avtar for x<1 og vokser for x>1,
+      så minimum er q(1)=2. Dessuten er q(x)=(x-1)^2+2>=2.
+      Dermed gjelder ulikheten for k=2 når x ulik -1.
+      For x=-1 er begge sider 0. Største mulige verdi er derfor k=2.
+assessment:
+  look_for:
+    - "Eleven skiller mellom kontinuitet og deriverbarhet."
+    - "Eleven bruker ensidige deriverte korrekt."
+    - "Eleven utleder fra definisjonen uten å sette Delta x lik null for tidlig."
+    - "Eleven viser både nødvendig betingelse og tilstrekkelig bevis."
+    - "Eleven forklarer resonnementet presist."
+  after_lesson: >-
+    Noter hvilke oppgaver eleven løste selvstendig, hvor hint måtte gis,
+    og hva som bør repeteres. Neste økt må også dekke 3.7 numerisk derivasjon
+    og 3.8 programmering før kapittel 3 kan regnes som fullført.
