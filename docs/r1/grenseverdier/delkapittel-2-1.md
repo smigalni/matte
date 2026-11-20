@@ -18,9 +18,12 @@ der \(c\) er et fast tall.
 - Definisjonsmengde: \(D_f=\mathbb R\).
 - Verdimengde: \(V_f=\{c\}\).
 
+Se [figur 2.1.1](#figur-2-1-1).
+
+<a id="figur-2-1-1"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="constant" role="img" aria-label="Konstant funksjon f(x) = 2"></div>
-  <p class="math-graph-caption">Vannrett graf y = 2. Rutenettet viser at funksjonsverdien er den samme for alle x.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.1.</strong> Vannrett graf y = 2. Rutenettet viser at funksjonsverdien er den samme for alle x.</p>
 </div>
 
 ### Lineær funksjon
@@ -36,9 +39,12 @@ f(x)=ax+b,\qquad a\ne0
 - \(b\) er skjæringspunktet med y-aksen.
 - Definisjonsmengde og verdimengde er \(\mathbb R\).
 
+Se [figur 2.1.2](#figur-2-1-2).
+
+<a id="figur-2-1-2"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="linear" role="img" aria-label="Lineær funksjon f(x) = 0,8x + 1"></div>
-  <p class="math-graph-caption">Rett linje med stigningstall 0,8 og skjæring med y-aksen i 1.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.2.</strong> Rett linje med stigningstall 0,8 og skjæring med y-aksen i 1.</p>
 </div>
 
 ### Andregradsfunksjon
@@ -60,9 +66,12 @@ x=-\frac{b}{2a}.
 - Definisjonsmengde: \(D_f=\mathbb R\).
 - Hvis \(a>0\), er verdimengden \([y_v,\infty)\). Hvis \(a<0\), er den \((-\infty,y_v]\), der \(y_v\) er y-koordinaten til topp- eller bunnpunktet.
 
+Se [figur 2.1.3](#figur-2-1-3).
+
+<a id="figur-2-1-3"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="quadraticBasic" role="img" aria-label="Andregradsfunksjon f(x) = x² − 2x − 3"></div>
-  <p class="math-graph-caption">Parabel med nullpunktene −1 og 3 og bunnpunktet (1, −4).</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.3.</strong> Parabel med nullpunktene −1 og 3 og bunnpunktet (1, −4).</p>
 </div>
 
 ### Potensfunksjon
@@ -81,9 +90,12 @@ der \(a\ne0\) og \(n\) er et positivt heltall.
 - Når \(n\) er partall, er verdimengden \([0,\infty)\) hvis \(a>0\), og \((-\infty,0]\) hvis \(a<0\). Når \(n\) er oddetall, er verdimengden \(\mathbb R\).
 - Definisjonsmengde: \(D_f=\mathbb R\).
 
+Se [figur 2.1.4](#figur-2-1-4).
+
+<a id="figur-2-1-4"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="power" role="img" aria-label="Potensfunksjon f(x) = x³"></div>
-  <p class="math-graph-caption">En typisk tredjegrads potensfunksjon, symmetrisk om origo.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.4.</strong> En typisk tredjegrads potensfunksjon, symmetrisk om origo.</p>
 </div>
 
 ### Eksponentialfunksjon
@@ -101,9 +113,12 @@ f(x)=a^x,\qquad a>0,\quad a\ne1
 - Verdimengde: \(V_f=(0,\infty)\).
 - x-aksen, \(y=0\), er en horisontal asymptote.
 
+Se [figur 2.1.5](#figur-2-1-5).
+
+<a id="figur-2-1-5"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="exponential" role="img" aria-label="Eksponentialfunksjon f(x) = 2ˣ"></div>
-  <p class="math-graph-caption">Voksende eksponentialfunksjon som passerer (0, 1); y = 0 er asymptote.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.5.</strong> Voksende eksponentialfunksjon som passerer (0, 1); y = 0 er asymptote.</p>
 </div>
 
 ### Logaritmefunksjon
@@ -121,9 +136,12 @@ f(x)=\log_a x,\qquad a>0,\quad a\ne1
 - Grafen skjærer x-aksen i \(x=1\).
 - y-aksen, \(x=0\), er en vertikal asymptote.
 
+Se [figur 2.1.6](#figur-2-1-6).
+
+<a id="figur-2-1-6"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="logarithm" role="img" aria-label="Logaritmefunksjon f(x) = log₂(x)"></div>
-  <p class="math-graph-caption">Voksende logaritmefunksjon som passerer (1, 0); x = 0 er vertikal asymptote.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.6.</strong> Voksende logaritmefunksjon som passerer (1, 0); x = 0 er vertikal asymptote.</p>
 </div>
 
 ### Rasjonal funksjon
@@ -140,9 +158,12 @@ der \(P(x)\) og \(Q(x)\) er polynomer.
 - Grafen kan ha hull og asymptoter.
 - Verdimengden avhenger av funksjonsuttrykket. Den må undersøkes i hvert tilfelle.
 
+Se [figur 2.1.7](#figur-2-1-7).
+
+<a id="figur-2-1-7"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="rationalBasic" role="img" aria-label="Rasjonal funksjon f(x) = 1 + 3/(x − 2)"></div>
-  <p class="math-graph-caption">Vertikal asymptote x = 2 og horisontal asymptote y = 1.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.7.</strong> Vertikal asymptote x = 2 og horisontal asymptote y = 1.</p>
 </div>
 
 ### Dette bør du kunne kjenne igjen
