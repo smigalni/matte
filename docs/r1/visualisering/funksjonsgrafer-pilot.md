@@ -38,15 +38,15 @@ Grafen har en vertikal asymptote og en horisontal asymptote. Punktene gjør det 
 
 Vi undersøker funksjonen
 
-\\[
-f(x)=x+\\frac{2}{x}, \\qquad x\\ne 0.
-\\]
+\[
+f(x)=x+\frac{2}{x}, \qquad x\ne 0.
+\]
 
-Når \(x\) går mot pluss eller minus uendelig, blir brøkdelen \(\\frac{2}{x}\) stadig mindre. Grafen nærmer seg derfor den skrå asymptoten
+Når \(x\) går mot pluss eller minus uendelig, blir brøkdelen \(\frac{2}{x}\) stadig mindre. Grafen nærmer seg derfor den skrå asymptoten
 
-\\[
+\[
 y=x.
-\\]
+\]
 
 Den stiplede rette linjen viser asymptoten. Vi viser samme funksjon både med og uten rutenett for å vurdere hvilken framstilling som er tydeligst.
 
