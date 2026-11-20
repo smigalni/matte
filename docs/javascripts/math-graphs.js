@@ -124,6 +124,18 @@
       curves: [{ fn: x => 1 + 2 / (x * x + 1), from: -8, to: 8, color: COLORS.curve, width: 2.4 }],
       asymptotes: [{ axis: "y", value: 1, label: "y = 1", color: "#0f766e" }]
     },
+    slantAsymptoteChapter2: {
+      title: "Skrå asymptote y = x + 1",
+      description: "Grafen til f(x) = (x² + 1)/(x − 1) nærmer seg den skrå asymptoten y = x + 1 og har vertikal asymptote x = 1.",
+      aspect: "square", x: [-8, 8], y: [-9, 10], grid: false, ticks: true, tickStepX: 2, tickStepY: 2,
+      curves: [
+        { fn: x => (x * x + 1) / (x - 1), from: -8, to: 0.72, color: COLORS.curve, width: 2.3 },
+        { fn: x => (x * x + 1) / (x - 1), from: 1.28, to: 8, color: COLORS.curve, width: 2.3 }
+      ],
+      lines: [{ fn: x => x + 1, color: COLORS.accent, width: 1.7, dash: "7 5" }],
+      asymptotes: [{ axis: "x", value: 1, label: "x = 1", color: "#b45309" }],
+      notes: [{ x: -7, y: -5.4, text: "Skrå asymptote: y = x + 1", color: COLORS.accent }]
+    },
     parabola: {
       title: "Parabelen f(x) = x²",
       description: "En ren parabel med markerte punkter. Grafen har bunnpunkt i origo og er symmetrisk om y-aksen.",
