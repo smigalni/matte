@@ -583,3 +583,50 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     Polynomuttrykket er kontinuerlig, og logaritmen er kontinuerlig for positive argumenter. Sammensetningen er derfor kontinuerlig på hele definisjonsmengden.
 
     **Resultat:** \(\underline{\underline{D_p=(-\infty,2)\cup(3,\infty)}}\), asymptoter \(\underline{\underline{x=2,\;x=3}}\), nullpunkter \(\underline{\underline{x=(5\pm\sqrt5)/2}}\).
+
+
+!!! question "Oppgave 2.8.20 – finn funksjonsuttrykket fra grafen"
+
+    Grafen nedenfor viser en rasjonal funksjon. Den har en vertikal asymptote ved \(x=2\), en horisontal asymptote ved \(y=1\), og grafen går gjennom punktet \((0,0)\).
+
+    Se [figur 2.8.1](#figur-2-8-1).
+
+    <a id="figur-2-8-1"></a>
+    <div class="math-graph-frame">
+      <div class="math-graph" data-math-graph="rationalReconstruction" role="img" aria-label="Graf til en rasjonal funksjon med vertikal asymptote x = 2, horisontal asymptote y = 1 og punktet (0, 0)"></div>
+      <p class="math-graph-caption"><strong>Figur 2.8.1.</strong> Graf med to asymptoter og et kjent punkt. Bruk opplysningene til å bestemme funksjonsuttrykket.</p>
+    </div>
+
+    a) Bruk asymptotene til å sette opp en mulig generell form for funksjonen:
+
+    \[
+    f(x)=c+\frac{a}{x-2}.
+    \]
+
+    b) Bestem konstantene \(a\) og \(c\) ved hjelp av opplysningene.
+
+    c) Skriv funksjonsuttrykket og kontroller at det stemmer med punktet i grafen.
+
+??? note "Fasit – 2.8.20"
+
+    Den horisontale asymptoten gir \(c=1\). Dermed har vi
+
+    \[
+    f(x)=1+\frac{a}{x-2}.
+    \]
+
+    Siden grafen går gjennom \((0,0)\), får vi
+
+    \[
+    0=1+\frac{a}{0-2}
+    \quad\Longrightarrow\quad
+    a=2.
+    \]
+
+    Funksjonsuttrykket er derfor
+
+    \[
+    f(x)=1+\frac{2}{x-2},\qquad x\ne2.
+    \]
+
+    **Resultat:** \(\underline{\underline{f(x)=1+\dfrac{2}{x-2}}}\`
