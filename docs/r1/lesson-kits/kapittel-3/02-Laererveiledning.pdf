@@ -1,0 +1,221 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 1136 >>
+stream
+BT
+/F1 10 Tf
+48 790 Td
+14 TL
+(R1 - DERIVASJON, KAPITTEL 3) Tj
+T*
+(LAERERVEILEDNING | LK-R1-3-01 | 60 MINUTTER) Tj
+T*
+(Privatundervisning - elev med svaert hoyt faglig niva) Tj
+T*
+(Hjelpemidler: Ingen kalkulator eller CAS) Tj
+T*
+() Tj
+T*
+(FORMAL OG AVGRENSNING) Tj
+T*
+(Eleven skal vise dyp forstaelse av deriverbarhet og definisjonen av) Tj
+T*
+(den deriverte, og bruke derivasjon til a bevise en generell ulikhet.) Tj
+T*
+(Denne okten dekker utvalgte deler av 3.5, 3.6 og 3.9.) Tj
+T*
+(Den erstatter ikke 3.7 numerisk derivasjon eller 3.8 programmering.) Tj
+T*
+(Kapittel 3 er ikke fullfort for disse delene ogsa er arbeidet med.) Tj
+T*
+() Tj
+T*
+(1. GJENNOMFORING - 60 MINUTTER) Tj
+T*
+(0-4 min: Startsporsmal: Kan en funksjon vaere kontinuerlig, men) Tj
+T*
+(ikke deriverbar? Be eleven gi et eksempel.) Tj
+T*
+(4-17 min: Oppgave 1. Kontinuitet for deriverbarhet.) Tj
+T*
+(17-28 min: Oppgave 2. Undersok fortegn pa hver side av x=1.) Tj
+T*
+(28-43 min: Oppgave 3. Krev full utledning fra definisjonen.) Tj
+T*
+(43-57 min: Oppgave 4. Finn nodvendig ovre grense og bevis den.) Tj
+T*
+(57-60 min: Eleven forklarer en ide uten a se pa arket.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 996 >>
+stream
+BT
+/F1 10 Tf
+48 790 Td
+14 TL
+(2. LOSNINGSFORSLAG OG HINT) Tj
+T*
+() Tj
+T*
+(OPPGAVE 1 - KONTINUITET OG DERIVERBARHET) Tj
+T*
+(Kontinuitet: a+b+1 = 1^2+3 = 4, altsa a+b=3.) Tj
+T*
+(Deriverbarhet: venstre derivert er 2a+b, hoyre derivert er 2.) Tj
+T*
+(Dermed 2a+b=2. Sammen med a+b=3 gir dette a=-1 og b=4.) Tj
+T*
+(Deriverbarhet innebaerer kontinuitet. Et knekkpunkt kan vaere) Tj
+T*
+(kontinuerlig uten a vaere deriverbart.) Tj
+T*
+(Hint: Sammenlign venstre grenseverdi med f\(1\). Deriver sa hvert) Tj
+T*
+(uttrykk pa sin side og sammenlign ensidige stigningstall.) Tj
+T*
+() Tj
+T*
+(OPPGAVE 2 - ABSOLUTTVERDI) Tj
+T*
+(f\(x\)=|\(x-1\)^2|=\(x-1\)^2. Dermed f'\(1\)=0.) Tj
+T*
+(g\(x\)=|\(x-1\)\(x-3\)|. Naer x=1 skifter uttrykket fortegn.) Tj
+T*
+(De ensidige deriverte er g'_-\(1\)=-2 og g'_+\(1\)=2.) Tj
+T*
+(De er ulike, sa g er ikke deriverbar i x=1.) Tj
+T*
+(Dobbelt nullpunkt gir ikke fortegnsskifte; enkelt nullpunkt gir det.) Tj
+T*
+(Hint: Faktoriser uttrykkene og undersok fortegn pa hver side.) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 949 >>
+stream
+BT
+/F1 10 Tf
+48 790 Td
+14 TL
+(OPPGAVE 3 - DEFINISJONEN) Tj
+T*
+(f'\(x\)=lim\(Delta x->0\) [f\(x+Delta x\)-f\(x\)]/Delta x.) Tj
+T*
+(Utvid telleren: 3x^2 Delta x + 3x\(Delta x\)^2 + \(Delta x\)^3) Tj
+T*
+(- 2 Delta x. Forkort med Delta x for Delta x != 0:) Tj
+T*
+(f'\(x\)=lim\(3x^2 + 3x Delta x + \(Delta x\)^2 - 2\)=3x^2-2.) Tj
+T*
+(Ved x=1: f\(1\)=-1 og f'\(1\)=1. Tangenten er y=x-2.) Tj
+T*
+(Forkortingen gjelder for Delta x ulik 0; deretter tar vi grensen.) Tj
+T*
+(Hint: Skriv f\(x+Delta x\), multipliser ut, faktoriser Delta x.) Tj
+T*
+() Tj
+T*
+(OPPGAVE 4 - OPTIMAL KONSTANT) Tj
+T*
+(Sett x=1: 8 >= 4k, derfor k<=2. Ingen storre k kan fungere.) Tj
+T*
+(For x != -1: q\(x\)=\(x^4+4x+3\)/\(x+1\)^2 = x^2-2x+3.) Tj
+T*
+(q'\(x\)=2x-2. Minimum er ved x=1, og q\(1\)=2.) Tj
+T*
+(Alternativt: q\(x\)=\(x-1\)^2+2 >= 2.) Tj
+T*
+(Ved x=-1 er begge sider 0. Dermed er storste k lik 2.) Tj
+T*
+(Hint: Bruk x=1 for ovre grense. Bevis deretter at k=2 fungerer.) Tj
+T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 891 >>
+stream
+BT
+/F1 10 Tf
+48 790 Td
+14 TL
+(3. PC-AKTIVITET - VALGFRI) Tj
+T*
+(Plott f\(x\)=|x^2-2x+1| og g\(x\)=|x^2-4x+3| i GeoGebra.) Tj
+T*
+(Sammenlign grafene naer x=1. Grafen skal bekrefte argumentasjonen,) Tj
+T*
+(ikke erstatte den.) Tj
+T*
+() Tj
+T*
+(4. OBSERVASJONSSKJEMA) Tj
+T*
+([ ] Skiller eleven mellom kontinuitet og deriverbarhet?) Tj
+T*
+([ ] Kan eleven bruke ensidige deriverte og forklare hvorfor de ma vaere like?) Tj
+T*
+([ ] Kan eleven utlede en derivert uten a sette Delta x=0 for tidlig?) Tj
+T*
+([ ] Kan eleven lage bade en nodvendig betingelse og et tilstrekkelig bevis?) Tj
+T*
+([ ] Forklarer eleven resonnementet presist?) Tj
+T*
+() Tj
+T*
+(ETTER TIMEN) Tj
+T*
+(Noter hvilke oppgaver eleven loste selvstendig, hvor hint matte gis,) Tj
+T*
+(og hva som bor repeteres. Neste okt ma ogsa dekke 3.7 numerisk) Tj
+T*
+(derivasjon og 3.8 programmering for kapittel 3 kan regnes som fullfort.) Tj
+T*
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 10 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000134 00000 n 
+0000000204 00000 n 
+0000001392 00000 n 
+0000001518 00000 n 
+0000002565 00000 n 
+0000002691 00000 n 
+0000003691 00000 n 
+0000003817 00000 n 
+0000004760 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+4888
+%%EOF

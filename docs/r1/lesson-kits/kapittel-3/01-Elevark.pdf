@@ -1,0 +1,161 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 1186 >>
+stream
+BT
+/F1 10 Tf
+48 790 Td
+14 TL
+(R1 - DERIVASJON, KAPITTEL 3) Tj
+T*
+(ELEVARK | LK-R1-3-01 | 60 MINUTTER) Tj
+T*
+(Hjelpemidler: Ingen kalkulator eller CAS) Tj
+T*
+() Tj
+T*
+(ARBEIDSMATE) Tj
+T*
+(Vis viktige mellomregninger. Begrunn metodene. Bruk eksakte uttrykk.) Tj
+T*
+() Tj
+T*
+(OPPGAVE 1 - KONTINUITET OG DERIVERBARHET \(3.5\)) Tj
+T*
+(f\(x\) = ax^2 + bx + 1, for x < 1) Tj
+T*
+(f\(x\) = x^2 + 3, for x >= 1) Tj
+T*
+() Tj
+T*
+(a\) Bestem en sammenheng mellom a og b som gir kontinuitet i x=1.) Tj
+T*
+(b\) Bestem a og b slik at funksjonen ogsa er deriverbar i x=1.) Tj
+T*
+(c\) Forklar hvorfor deriverbarhet innebaerer kontinuitet, men ikke omvendt.) Tj
+T*
+() Tj
+T*
+(Arbeidsplass:) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+() Tj
+T*
+(OPPGAVE 2 - ABSOLUTTVERDI OG KNEKKPUNKT \(3.5\)) Tj
+T*
+(f\(x\) = |x^2 - 2x + 1|,   g\(x\) = |x^2 - 4x + 3|) Tj
+T*
+() Tj
+T*
+(a\) Undersok om f er deriverbar i x=1. Begrunn uten graf.) Tj
+T*
+(b\) Undersok om g er deriverbar i x=1. Bruk ensidige deriverte.) Tj
+T*
+(c\) Forklar hvorfor funksjonene oppforer seg forskjellig ved x=1.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1474 >>
+stream
+BT
+/F1 10 Tf
+48 790 Td
+14 TL
+(OPPGAVE 3 - DERIVER FRA DEFINISJONEN \(3.6\)) Tj
+T*
+(La f\(x\) = x^3 - 2x.) Tj
+T*
+() Tj
+T*
+(a\) Bruk definisjonen med Delta x til a utlede f'\(x\).) Tj
+T*
+(b\) Finn tangentens likning nar x=1.) Tj
+T*
+(c\) Forklar hvorfor du kan forkorte med Delta x i grenseuttrykket,) Tj
+T*
+(   men ikke sette Delta x=0 med en gang.) Tj
+T*
+() Tj
+T*
+(Arbeidsplass:) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+() Tj
+T*
+(OPPGAVE 4 - FINN DEN STORSTE KONSTANTEN \(UTFORDRING\)) Tj
+T*
+(Finn storste k slik at:) Tj
+T*
+(x^4 + 4x + 3 >= k\(x+1\)^2 for alle reelle x.) Tj
+T*
+() Tj
+T*
+(a\) Begrunn hvorfor k ikke kan vaere storre enn verdien du finner.) Tj
+T*
+(b\) Bevis at verdien faktisk fungerer for alle reelle x.) Tj
+T*
+(c\) Bruk derivasjon i argumentasjonen. Undersok x=-1 separat dersom) Tj
+T*
+(   du deler pa \(x+1\)^2.) Tj
+T*
+() Tj
+T*
+(Arbeidsplass:) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+(________________________________________________________________________) Tj
+T*
+() Tj
+T*
+(AVSLUTNING) Tj
+T*
+(Skriv en setning: Hva er forskjellen mellom a kunne reglene for) Tj
+T*
+(derivasjon og a forsta hva derivasjon betyr?) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000001429 00000 n 
+0000001555 00000 n 
+0000003081 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3207
+%%EOF
