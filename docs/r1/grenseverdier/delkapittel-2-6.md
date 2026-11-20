@@ -8,12 +8,10 @@ En asymptote er en rett linje som grafen nærmer seg. Vi undersøker tre vanlige
 
 Linjen \(x=a\) er en vertikal asymptote når funksjonsverdiene går mot \(+\infty\) eller \(-\infty\) når \(x\) nærmer seg \(a\) fra minst én side.
 
-<svg viewBox="0 0 250 135" width="100%" height="135" role="img" aria-label="Graf med vertikal asymptote x lik a. Grafen går mot minus uendelig fra venstre og pluss uendelig fra høyre." xmlns="http://www.w3.org/2000/svg">
-  <path d="M18 68 H235 M125 122 V10" stroke="currentColor" stroke-width="1.2" fill="none"/>
-  <path d="M125 10 V125" stroke="currentColor" stroke-dasharray="4 4" opacity=".7"/>
-  <path d="M25 48 C70 49 100 65 117 119 M133 15 C150 57 180 66 225 68" stroke="#2878b8" stroke-width="2.8" fill="none"/>
-  <text x="130" y="126" font-size="10" fill="currentColor">a</text>
-</svg>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="verticalAsymptote" role="img" aria-label="Graf med vertikal asymptote x = 2"></div>
+  <p class="math-graph-caption">Grafen går mot uendelig i absoluttverdi når x nærmer seg 2. Den vertikale asymptoten er x = 2.</p>
+</div>
 
 !!! example "Eksempel 2.6.1 – vertikal asymptote"
     Undersøk grenseverdiene til
@@ -48,22 +46,19 @@ Linjen \(y=L\) er en horisontal asymptote dersom
 
 De to grensene kan gi ulike horisontale asymptoter.
 
-<svg viewBox="0 0 250 135" width="100%" height="135" role="img" aria-label="Graf som nærmer seg en horisontal asymptote både mot venstre og høyre." xmlns="http://www.w3.org/2000/svg">
-  <path d="M18 112 H235 M125 122 V10" stroke="currentColor" stroke-width="1.2" fill="none"/>
-  <path d="M20 47 H235" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".7"/>
-  <path d="M25 52 C65 52 90 65 112 105 M138 17 C160 34 185 44 225 47" stroke="#2878b8" stroke-width="2.8" fill="none"/>
-  <text x="210" y="40" font-size="10" fill="currentColor">y=L</text>
-</svg>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="horizontalAsymptote" role="img" aria-label="Graf med horisontal asymptote y = 1"></div>
+  <p class="math-graph-caption">Grafen nærmer seg linjen y = 1 både når x går mot pluss og minus uendelig.</p>
+</div>
 
 ### Skrå asymptote
 
 En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjoner kan polynomdivisjon ofte avsløre den.
 
-<svg viewBox="0 0 250 135" width="100%" height="135" role="img" aria-label="Graf som nærmer seg en skrå asymptote." xmlns="http://www.w3.org/2000/svg">
-  <path d="M18 112 H235 M125 122 V10" stroke="currentColor" stroke-width="1.2" fill="none"/>
-  <path d="M25 118 L220 18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".7"/>
-  <path d="M25 100 C75 92 95 78 120 68 C155 50 185 32 220 18" stroke="#2878b8" stroke-width="2.8" fill="none"/>
-</svg>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="slantAsymptoteGrid" role="img" aria-label="Graf med skrå asymptote y = x"></div>
+  <p class="math-graph-caption">Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x langt ute på begge sider.</p>
+</div>
 
 !!! example "Eksempel 2.6.2 – finn skrå asymptote med polynomdivisjon"
     Bestem den skrå asymptoten til funksjonen
