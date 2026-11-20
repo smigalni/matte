@@ -1,0 +1,221 @@
+/* Isolert styling for the 3.1 dual-view pilot. */
+.md-typeset .dual-view-switch {
+  display: flex;
+  gap: .45rem;
+  margin: 1.25rem 0 1.8rem;
+  padding: .35rem;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid #d9e3f0;
+  border-radius: .85rem;
+  background: #f3f6fb;
+}
+.md-typeset .dual-view-button {
+  border: 0;
+  border-radius: .6rem;
+  padding: .7rem 1.15rem;
+  background: transparent;
+  color: #38516f;
+  font: inherit;
+  font-size: .92rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.md-typeset .dual-view-button:hover { background: #e5edf8; }
+.md-typeset .dual-view-button.is-active {
+  color: #fff;
+  background: #2457a6;
+  box-shadow: 0 2px 7px rgba(25, 55, 96, .18);
+}
+.md-typeset .dual-view-panel[hidden] { display: none !important; }
+.md-typeset .dual-view-footnote {
+  margin-top: 2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: .78rem;
+  text-align: center;
+}
+.md-typeset .teacher-model {
+  margin: 1.4rem 0 2rem;
+  padding: clamp(.9rem, 2.5vw, 1.5rem);
+  border: 1px solid #d8e4f2;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #f8fbff, #fff 65%);
+  box-shadow: 0 10px 28px rgba(30, 64, 105, .07);
+}
+.md-typeset .teacher-model-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.md-typeset .teacher-eyebrow {
+  color: #3974ad;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+.md-typeset .teacher-model-heading h3 {
+  margin: .15rem 0 .1rem;
+  color: #19375b;
+}
+.md-typeset .teacher-model-heading p { margin: 0; color: #61748c; }
+.md-typeset .teacher-model-tag {
+  flex: 0 0 auto;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  background: #e6f4f3;
+  color: #176b69;
+  font-size: .72rem;
+  font-weight: 700;
+}
+.md-typeset .teacher-graph-wrap {
+  margin: 1rem 0 .4rem;
+  border: 1px solid #e5ebf3;
+  border-radius: .75rem;
+  background: #fff;
+  overflow: hidden;
+}
+.md-typeset #slope-graph {
+  display: block;
+  width: 100%;
+  height: auto;
+  touch-action: pan-y;
+}
+.md-typeset #slope-graph .graph-grid {
+  fill: none;
+  stroke: #e8eef5;
+  stroke-width: 1;
+}
+.md-typeset #slope-graph .graph-axes {
+  fill: none;
+  stroke: #66788e;
+  stroke-width: 1.6;
+}
+.md-typeset #slope-graph .graph-labels {
+  fill: #61748c;
+  font-size: 11px;
+}
+.md-typeset #slope-graph .function-curve {
+  fill: none;
+  stroke: #16805b;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+.md-typeset #slope-graph .secant-line {
+  fill: none;
+  stroke: #d97706;
+  stroke-width: 2.6;
+  stroke-dasharray: 7 4;
+}
+.md-typeset #slope-graph .tangent-line {
+  fill: none;
+  stroke: #2563eb;
+  stroke-width: 2.6;
+}
+.md-typeset #slope-graph .graph-point {
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: grab;
+  touch-action: none;
+}
+.md-typeset #slope-graph .graph-point:active { cursor: grabbing; }
+.md-typeset #slope-graph .graph-point:focus {
+  outline: none;
+  stroke: #172b4d;
+  stroke-width: 3;
+}
+.md-typeset #slope-graph .point-p { fill: #2563eb; }
+.md-typeset #slope-graph .point-q { fill: #d97706; }
+.md-typeset #slope-graph .graph-point-labels {
+  fill: #233d5c;
+  font-size: 14px;
+  font-weight: 800;
+  pointer-events: none;
+}
+.md-typeset .teacher-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem 1.2rem;
+  margin: .7rem 0 1.2rem;
+  color: #53677f;
+  font-size: .78rem;
+}
+.md-typeset .teacher-legend span { display: inline-flex; align-items: center; gap: .4rem; }
+.md-typeset .legend-dot { display: inline-block; width: .65rem; height: .65rem; border-radius: 50%; }
+.md-typeset .curve-dot { background: #16805b; }
+.md-typeset .secant-dot { background: #d97706; }
+.md-typeset .tangent-dot { background: #2563eb; }
+.md-typeset .teacher-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.4rem;
+  margin: 1rem 0;
+}
+.md-typeset .teacher-control label {
+  display: block;
+  margin-bottom: .35rem;
+  color: #334d6b;
+  font-size: .86rem;
+  font-weight: 700;
+}
+.md-typeset .teacher-control output { color: #155e9a; font-variant-numeric: tabular-nums; }
+.md-typeset .teacher-control input[type="range"] {
+  display: block;
+  width: 100%;
+  accent-color: #2457a6;
+  cursor: pointer;
+}
+.md-typeset .teacher-readouts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .6rem;
+  margin: 1rem 0;
+}
+.md-typeset .teacher-readouts > div {
+  padding: .75rem;
+  border: 1px solid #e1e9f3;
+  border-radius: .7rem;
+  background: #fff;
+}
+.md-typeset .teacher-readouts span {
+  display: block;
+  color: #687c94;
+  font-size: .72rem;
+}
+.md-typeset .teacher-readouts strong {
+  display: block;
+  margin-top: .15rem;
+  color: #1d426d;
+  font-size: 1.35rem;
+  font-variant-numeric: tabular-nums;
+}
+.md-typeset .teacher-explanation {
+  margin: .9rem 0;
+  padding: .8rem 1rem;
+  border-left: 4px solid #0d9488;
+  border-radius: .25rem .6rem .6rem .25rem;
+  background: #effaf8;
+  color: #245b5b;
+}
+.md-typeset .teacher-prompt {
+  margin: .9rem 0;
+  padding: .9rem 1rem;
+  border: 1px solid #d9e5f4;
+  border-radius: .7rem;
+  background: #f2f6fc;
+}
+.md-typeset .teacher-model-note {
+  margin: .7rem 0 0;
+  color: #708198;
+  font-size: .76rem;
+}
+@media (max-width: 650px) {
+  .md-typeset .dual-view-switch { width: 100%; }
+  .md-typeset .dual-view-button { flex: 1; padding: .65rem .45rem; }
+  .md-typeset .teacher-model-heading { flex-direction: column; }
+  .md-typeset .teacher-controls { grid-template-columns: 1fr; }
+  .md-typeset .teacher-readouts { gap: .35rem; }
+  .md-typeset .teacher-readouts > div { padding: .55rem .45rem; }
+  .md-typeset .teacher-readouts span { font-size: .65rem; }
+  .md-typeset .teacher-readouts strong { font-size: 1.05rem; }
+}
