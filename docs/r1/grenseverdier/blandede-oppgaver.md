@@ -629,4 +629,4 @@ Oppgavene er delt etter forventet vanskelighetsgrad. Nivået er veiledende; krev
     f(x)=1+\frac{2}{x-2},\qquad x\ne2.
     \]
 
-    **Resultat:** \(\underline{\underline{f(x)=1+\dfrac{2}{x-2}}}
+    **Resultat:** \(\underline{\underline{f(x)=1+\dfrac{2}{x-2}}}\)
