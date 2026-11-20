@@ -43,6 +43,28 @@
         { x: 3, y: 2 }
       ]
     },
+    slantAsymptoteGrid: {
+      title: "Skrå asymptote – med rutenett",
+      description: "Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x når x går mot pluss eller minus uendelig. Rutenettet gjør avstanden synlig.",
+      aspect: "square", x: [-8, 8], y: [-8, 8], grid: true, ticks: true, tickStepX: 2, tickStepY: 2,
+      curves: [
+        { fn: x => x + 2 / x, from: -8, to: -0.5, color: COLORS.curve, width: 2.5, markerStart: true },
+        { fn: x => x + 2 / x, from: 0.5, to: 8, color: COLORS.curve, width: 2.5, markerEnd: true }
+      ],
+      lines: [{ fn: x => x, color: COLORS.accent, width: 1.7, dash: "7 5" }],
+      notes: [{ x: -7, y: 6.2, text: "Skrå asymptote: y = x", color: COLORS.accent }]
+    },
+    slantAsymptotePlain: {
+      title: "Skrå asymptote – uten rutenett",
+      description: "Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x når x går mot pluss eller minus uendelig. Uten rutenett kommer kurvene tydeligere fram.",
+      aspect: "square", x: [-8, 8], y: [-8, 8], grid: false, ticks: true, tickStepX: 2, tickStepY: 2,
+      curves: [
+        { fn: x => x + 2 / x, from: -8, to: -0.5, color: COLORS.curve, width: 2.5, markerStart: true },
+        { fn: x => x + 2 / x, from: 0.5, to: 8, color: COLORS.curve, width: 2.5, markerEnd: true }
+      ],
+      lines: [{ fn: x => x, color: COLORS.accent, width: 1.7, dash: "7 5" }],
+      notes: [{ x: -7, y: 6.2, text: "Skrå asymptote: y = x", color: COLORS.accent }]
+    },
     limit: {
       title: "Like ensidige grenser, men en annen funksjonsverdi",
       description: "Grafen følger y = x + 1 på begge sider av x = 1. Det åpne punktet viser grenseverdien 2, mens det fylte punktet viser f(1) = 4.",
