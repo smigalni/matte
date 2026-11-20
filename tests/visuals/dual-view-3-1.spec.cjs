@@ -16,6 +16,8 @@ const path = require("node:path");
   await page.getByRole("button", { name: "Teacher View" }).click();
   await page.waitForFunction(() => document.querySelector("#teacher-view")?.dataset.modelReady === "true");
   await page.waitForFunction(() => document.querySelector("#function-curve")?.getAttribute("d")?.length > 100);
+  if (!(await page.locator("#teacher-view h2").first().isVisible())) throw new Error("Læreroverskriften ble ikke rendret som Markdown/HTML.");
+  if (!(await page.locator(".teacher-prompt strong").isVisible())) throw new Error("Undervisningsspørsmålet ble ikke formatert korrekt.");
 
   const initial = await page.evaluate(() => ({
     secant: document.querySelector("#secant-slope").textContent,
@@ -54,9 +56,13 @@ const path = require("node:path");
   }
 
   await page.screenshot({ path: "dual-view-teacher-desktop.png", fullPage: true });
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.screenshot({ path: "dual-view-teacher-mobile.png", fullPage: true });
-  const mobile = await page.evaluate(() => ({
+  const mobilePage = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
+  mobilePage.on("pageerror", error => errors.push(error.message));
+  await mobilePage.goto("file://" + file);
+  await mobilePage.getByRole("button", { name: "Teacher View" }).click();
+  await mobilePage.waitForFunction(() => document.querySelector("#teacher-view")?.dataset.modelReady === "true");
+  await mobilePage.screenshot({ path: "dual-view-teacher-mobile.png", fullPage: true });
+  const mobile = await mobilePage.evaluate(() => ({
     width: document.documentElement.clientWidth,
     scrollWidth: document.documentElement.scrollWidth,
     graphWidth: document.querySelector("#slope-graph").getBoundingClientRect().width,
