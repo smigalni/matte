@@ -64,11 +64,11 @@ y-1=2(x-1)
 
 </div>
 
-<div id="teacher-view" class="dual-view-panel" data-view-panel="teacher" hidden markdown="1">
+<div id="teacher-view" class="dual-view-panel" data-view-panel="teacher" hidden>
 
-## Teacher View – utforsk sammen med klassen
+<h2>Teacher View – utforsk sammen med klassen</h2>
 
-**Undervisningsidé:** La elevene først forutsi hva som skjer med sekantens stigningstall når punkt Q flyttes mot P. Bruk deretter modellen til å undersøke hypotesen.
+<p><strong>Undervisningsidé:</strong> La elevene først forutsi hva som skjer med sekantens stigningstall når punkt Q flyttes mot P. Bruk deretter modellen til å undersøke hypotesen.</p>
 
 <div class="teacher-model">
   <div class="teacher-model-heading">
@@ -138,7 +138,7 @@ y-1=2(x-1)
   <p class="teacher-model-note">Tips: Du kan dra P og Q direkte i grafen, bruke skyveknappene eller fokusere på et punkt og bruke piltastene.</p>
 </div>
 
-### Faglig oppsummering
+<h3>Faglig oppsummering</h3>
 
 For \(f(x)=x^2\), med \(P=(a,a^2)\) og \(Q=(a+h,(a+h)^2)\), er sekantens stigningstall
 
