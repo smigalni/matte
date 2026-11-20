@@ -18,7 +18,7 @@
       title: "Parabelen f(x) = x²",
       description: "En ren parabel med markerte punkter. Grafen har bunnpunkt i origo og er symmetrisk om y-aksen.",
       aspect: "square", x: [-3, 3], y: [-0.5, 4.5], grid: false, ticks: false,
-      curves: [{ fn: x => x * x, from: -2, to: 2, color: COLORS.curve, width: 5 }],
+      curves: [{ fn: x => x * x, from: -2, to: 2, color: COLORS.curve, width: 2.6 }],
       points: [
         { x: -2, y: 4 }, { x: -1, y: 1 }, { x: 0, y: 0, label: "O", dx: 10, dy: 20 },
         { x: 1, y: 1 }, { x: 2, y: 4, label: "(2, 4)", dx: 12, dy: -10 }
@@ -29,8 +29,8 @@
       description: "Grafen til f(x) = 1 + 2/(x − 1). Den vertikale asymptoten er x = 1 og den horisontale asymptoten er y = 1.",
       aspect: "square", x: [-4, 6], y: [-5, 7], grid: false, ticks: true,
       curves: [
-        { fn: x => 1 + 2 / (x - 1), from: -4, to: 0.55, color: COLORS.curve, width: 4.8, markerEnd: true },
-        { fn: x => 1 + 2 / (x - 1), from: 1.45, to: 6, color: COLORS.curve, width: 4.8, markerStart: true }
+        { fn: x => 1 + 2 / (x - 1), from: -4, to: 0.55, color: COLORS.curve, width: 2.5, markerEnd: true },
+        { fn: x => 1 + 2 / (x - 1), from: 1.45, to: 6, color: COLORS.curve, width: 2.5, markerStart: true }
       ],
       asymptotes: [
         { axis: "x", value: 1, label: "x = 1", color: "#b45309" },
@@ -48,7 +48,7 @@
       description: "Grafen følger y = x + 1 på begge sider av x = 1. Det åpne punktet viser grenseverdien 2, mens det fylte punktet viser f(1) = 4.",
       x: [-2.5, 4.2], y: [-1, 5.5], grid: false, ticks: true,
       curves: [
-        { fn: x => x + 1, from: -2.5, to: 0.985, color: COLORS.curve, width: 3.5 },
+        { fn: x => x + 1, from: -2.5, to: 0.985, color: COLORS.curve, width: 2.4 },
         { fn: x => x + 1, from: 1.015, to: 4.2, color: COLORS.curve, width: 3.5 }
       ],
       guides: [{ x1: 1, y1: 0, x2: 1, y2: 2, dash: "4 5" }],
@@ -178,10 +178,10 @@
       title: "Sekant og tangent til f(x) = x²",
       description: "Tangenten i punktet (1, 1) har stigningstall 2. Sekanten gjennom (1, 1) og (2, 4) har stigningstall 3.",
       x: [-1.1, 3.2], y: [-1.2, 6.2], grid: false, ticks: true,
-      curves: [{ fn: x => x * x, from: -0.95, to: 2.5, color: COLORS.curve, width: 3.5 }],
+      curves: [{ fn: x => x * x, from: -0.95, to: 2.5, color: COLORS.curve, width: 2.4 }],
       lines: [
-        { fn: x => 2 * x - 1, color: COLORS.secondary, width: 2.8, label: "Tangent" },
-        { fn: x => 3 * x - 2, color: COLORS.accent, width: 2.4, dash: "7 5", label: "Sekant" }
+        { fn: x => 2 * x - 1, color: COLORS.secondary, width: 2.1, label: "Tangent" },
+        { fn: x => 3 * x - 2, color: COLORS.accent, width: 1.9, dash: "7 5", label: "Sekant" }
       ],
       points: [
         { x: 1, y: 1, label: "P(1, 1)", dx: 12, dy: 20 },
@@ -211,14 +211,14 @@
       (graph.illustration.shapes || []).forEach(shape => {
         svg.append(svgElement("path", {
           d: shape.d, fill: shape.fill || "none", stroke: shape.stroke || COLORS.curve,
-          "stroke-width": shape.width || 3, "stroke-linejoin": "round",
+          "stroke-width": shape.width || 2.2, "stroke-linejoin": "round",
           "stroke-linecap": "round", ...(shape.dash ? { "stroke-dasharray": shape.dash } : {})
         }));
       });
       (graph.illustration.labels || []).forEach(label => {
         svg.append(svgElement("text", {
           x: label.x, y: label.y, fill: label.color || COLORS.text,
-          "font-size": label.small ? 13 : 17, "font-weight": 650,
+          "font-size": label.small ? 11 : 14, "font-weight": 650,
           "text-anchor": label.anchor || "start"
         }, label.text));
       });
@@ -270,13 +270,13 @@
       const attrs = a.axis === "x"
         ? { x1: sx(a.value), y1: pad.top, x2: sx(a.value), y2: height - pad.bottom }
         : { x1: pad.left, y1: sy(a.value), x2: width - pad.right, y2: sy(a.value) };
-      plot.append(svgElement("line", { ...attrs, stroke: a.color || COLORS.accent, "stroke-width": 2.4, "stroke-dasharray": "8 6", "stroke-linecap": "round", opacity: 0.95 }));
+      plot.append(svgElement("line", { ...attrs, stroke: a.color || COLORS.accent, "stroke-width": 1.5, "stroke-dasharray": "6 5", "stroke-linecap": "round", opacity: 0.95 }));
     });
 
     (graph.guides || []).forEach(g => {
       plot.append(svgElement("line", {
         x1: sx(g.x1), y1: sy(g.y1), x2: sx(g.x2), y2: sy(g.y2),
-        stroke: COLORS.guide, "stroke-width": 1.5, "stroke-dasharray": g.dash || "4 5"
+        stroke: COLORS.guide, "stroke-width": 1.1, "stroke-dasharray": g.dash || "4 5"
       }));
     });
 
@@ -312,19 +312,19 @@
     (graph.vectors || []).forEach((v, vectorIndex) => {
       const markerId = `math-vector-arrow-${index}-${vectorIndex}`;
       const marker = svgElement("marker", {
-        id: markerId, markerWidth: 10, markerHeight: 10, refX: 8, refY: 4,
+        id: markerId, markerWidth: 13, markerHeight: 13, refX: 11, refY: 6.5,
         orient: "auto", markerUnits: "userSpaceOnUse"
       });
-      marker.append(svgElement("path", { d: "M 0 0 L 8 4 L 0 8 z", fill: v.color || COLORS.curve }));
+      marker.append(svgElement("path", { d: "M 0 0 L 12 6.5 L 0 13 z", fill: v.color || COLORS.curve }));
       defs.append(marker);
       plot.append(svgElement("line", {
         x1: sx(v.x1), y1: sy(v.y1), x2: sx(v.x2), y2: sy(v.y2),
-        stroke: v.color || COLORS.curve, "stroke-width": 4,
+        stroke: v.color || COLORS.curve, "stroke-width": 2.5,
         "stroke-linecap": "round", "marker-end": `url(#${markerId})`
       }));
       if (v.label) svg.append(svgElement("text", {
         x: sx(v.x2) + (v.dx || 10), y: sy(v.y2) + (v.dy || -10),
-        fill: v.color || COLORS.curve, "font-size": 15, "font-weight": 700,
+        fill: v.color || COLORS.curve, "font-size": 12, "font-weight": 600,
         "paint-order": "stroke", stroke: "#ffffff", "stroke-width": 5, "stroke-linejoin": "round"
       }, v.label));
     });
@@ -332,11 +332,11 @@
     const xAxisY = clamp(sy(0), pad.top, height - pad.bottom);
     const yAxisX = clamp(sx(0), pad.left, width - pad.right);
     svg.append(
-      svgElement("line", { x1: pad.left, y1: xAxisY, x2: width - pad.right + 8, y2: xAxisY, stroke: COLORS.axis, "stroke-width": 1.5 }),
+      svgElement("line", { x1: pad.left, y1: xAxisY, x2: width - pad.right + 8, y2: xAxisY, stroke: COLORS.axis, "stroke-width": 1.15 }),
       svgElement("path", { d: `M ${width - pad.right + 8} ${xAxisY} l -7 -4 v 8 z`, fill: COLORS.axis }),
       svgElement("line", { x1: yAxisX, y1: height - pad.bottom, x2: yAxisX, y2: pad.top - 8, stroke: COLORS.axis, "stroke-width": 1.5 }),
       svgElement("path", { d: `M ${yAxisX} ${pad.top - 8} l -4 7 h 8 z`, fill: COLORS.axis }),
-      svgElement("text", { x: width - pad.right + 12, y: xAxisY + 5, fill: COLORS.text, "font-size": 17, "font-weight": 600 }, "x"),
+      svgElement("text", { x: width - pad.right + 12, y: xAxisY + 5, fill: COLORS.text, "font-size": 12, "font-weight": 500 }, "x"),
       svgElement("text", { x: yAxisX + 9, y: pad.top - 13, fill: COLORS.text, "font-size": 17, "font-weight": 600 }, "y")
     );
 
@@ -346,7 +346,7 @@
         if (Math.abs(x) < 1e-8) continue;
         const px = sx(x);
         svg.append(svgElement("line", { x1: px, y1: xAxisY - 4, x2: px, y2: xAxisY + 4, stroke: COLORS.axis, "stroke-width": 1 }));
-        svg.append(svgElement("text", { x: px, y: xAxisY + 19, fill: COLORS.text, "font-size": 13, "font-weight": 500, "text-anchor": "middle" }, String(x)));
+        svg.append(svgElement("text", { x: px, y: xAxisY + 19, fill: COLORS.text, "font-size": 11, "font-weight": 500, "text-anchor": "middle" }, String(x)));
       }
       for (let y = Math.ceil(ymin / tickStepY) * tickStepY; y <= ymax; y += tickStepY) {
         if (Math.abs(y) < 1e-8) continue;
@@ -360,13 +360,13 @@
     (graph.asymptotes || []).forEach(a => {
       const x = a.axis === "x" ? sx(a.value) + 7 : width - pad.right - 4;
       const y = a.axis === "x" ? pad.top + 16 : sy(a.value) - 8;
-      svg.append(svgElement("text", { x, y, fill: a.color || COLORS.accent, "font-size": 16, "font-weight": 700, "paint-order": "stroke", stroke: "#ffffff", "stroke-width": 5, "stroke-linejoin": "round" }, a.label));
+      svg.append(svgElement("text", { x, y, fill: a.color || COLORS.accent, "font-size": 13, "font-weight": 600, "paint-order": "stroke", stroke: "#ffffff", "stroke-width": 5, "stroke-linejoin": "round" }, a.label));
     });
 
     (graph.points || []).forEach(p => {
       const cx = sx(p.x), cy = sy(p.y);
       svg.append(svgElement("circle", {
-        cx, cy, r: p.open ? 6 : 4.8,
+        cx, cy, r: p.open ? 5 : 3.6,
         fill: p.open ? "#ffffff" : COLORS.point,
         stroke: p.open ? COLORS.point : "#ffffff",
         "stroke-width": p.open ? 2.5 : 1.4
@@ -380,7 +380,7 @@
     (graph.notes || []).forEach(note => {
       svg.append(svgElement("text", {
         x: sx(note.x), y: sy(note.y), fill: note.color || COLORS.text,
-        "font-size": 14, "font-weight": 700
+        "font-size": 12, "font-weight": 600
       }, note.text));
     });
 
