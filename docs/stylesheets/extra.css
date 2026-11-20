@@ -363,6 +363,9 @@
 .md-typeset .math-graph svg.math-graph-svg--square {
   max-width: 460px;
 }
+.md-typeset .math-graph svg.math-graph-svg--illustration {
+  max-width: 380px;
+}
 .md-typeset .math-graph-caption {
   max-width: 760px;
   margin: .55rem auto 0;
