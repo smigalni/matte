@@ -56,8 +56,8 @@ De to grensene kan gi ulike horisontale asymptoter.
 En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjoner kan polynomdivisjon ofte avsløre den.
 
 <div class="math-graph-frame">
-  <div class="math-graph" data-math-graph="slantAsymptoteGrid" role="img" aria-label="Graf med skrå asymptote y = x"></div>
-  <p class="math-graph-caption">Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x langt ute på begge sider.</p>
+  <div class="math-graph" data-math-graph="slantAsymptoteChapter2" role="img" aria-label="Graf med skrå asymptote y = x"></div>
+  <p class="math-graph-caption">Grafen til f(x) = (x² + 1)/(x − 1) nærmer seg den skrå asymptoten y = x + 1. Den vertikale asymptoten er x = 1.</p>
 </div>
 
 !!! example "Eksempel 2.6.2 – finn skrå asymptote med polynomdivisjon"
