@@ -136,7 +136,16 @@
         panels.forEach(panel => {
           panel.hidden = panel.dataset.viewPanel !== target;
         });
-        if (target === "teacher") init();
+        if (target === "teacher") {
+          init();
+          const panel = document.getElementById("teacher-view");
+          const mathJax = window.MathJax;
+          if (panel && mathJax?.startup?.promise && panel.dataset.mathReady !== "true") {
+            mathJax.startup.promise.then(() => mathJax.typesetPromise([panel])).then(() => {
+              panel.dataset.mathReady = "true";
+            });
+          }
+        }
       });
     });
   };
