@@ -10,6 +10,15 @@ Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-re
 - Sjekkeren bruker bare Python-standardbiblioteket.
 - Kildekontroller finner kjente strukturelle feil, men erstatter ikke bygging av boken eller visuell kontroll i nettleseren.
 
+## Absolutte regler for innholdsbevaring og navigasjon
+
+- Eksisterende kapittel- og delkapittelinnhold skal aldri regenereres, overskrives, erstattes eller gjenskapes som følge av navigasjons-, lenke-, formaterings- eller byggearbeid.
+- Ved `Not found` skal vi feilsøke den konkrete filbanen og anker-ID-en. Gjør bare en målrettet retting av lenken eller ankeret; bevar resten av innholdet.
+- Navigasjonslenker til delkapitler skal peke på eksisterende sider og verifiserte anker-ID-er. Bruk eksplisitte, stabile ID-er når automatiske overskriftsankere er usikre, og oppdater lenke og anker samlet.
+- Kontroller endringen med Git-diff: ved en ren navigasjonsretting skal oppgaver, eksempler, fasiter og forklarende tekst være uendret.
+
+- **Zensical-navigasjon:** Hvert element i `nav` skal peke på en faktisk Markdown-fil relativt til `docs_dir`. Ikke bruk `fil.md#anker` som mål i venstremenyen; Zensical-navigasjonen forventer en side, ikke et sidefragment. Hvis et delkapittel skal være et eget punkt i venstremenyen, skal det ha en egen Markdown-fil. Bruk ankerlenker i innholdet eller sidens innholdsfortegnelse for hopp innenfor samme side. Kontroller at alle nav-stier peker på eksisterende filer.
+
 ## Standardkontroller
 
 1. Et gjennomarbeidet eksempel skal bruke en `example`-admonition, ikke en løs Eksempel-overskrift.
@@ -22,6 +31,12 @@ Dette er standarden for formatering og kvalitetssikring på tvers av mattebok-re
 8. Display-matematikk skal bruke balanserte MathJax-avgrensninger: `\[ ... \]` eller `$$ ... $$`.
 9. Matematikk skal ikke skrives som vanlige hakeparenteser rundt et uttrykk, for eksempel `[ f(x)=x^2 ]`.
 10. Deloppgaver i oppgavetekster og fasiter skal stå i hvert sitt avsnitt med bokstavmerking (`a)`, `b)`, `c)` osv.). Det skal være en tom linje før hver deloppgave, ingen ekstra punktmarkør eller nummerering foran bokstavene, og flere deloppgaver skal aldri stå på samme linje. Den automatiske sjekkeren kontrollerer dette.
+11. Oppgaver skal bruke `!!! question` og ha hierarkisk ID på formen `Oppgave kapittel.delkapittel.løpenummer`.
+12. Hver oppgave skal ha en fasit- eller momentboks med samme ID. Fasit-ID skal samsvare med tilhørende oppgave-ID, og oppgave-/svarbokser skal ikke slås sammen uten tom linje.
+13. Eksempel-ID-er skal være unike innenfor hver fil; tomme eksempelbokser og dupliserte nummer skal fanges automatisk.
+14. Nummererte eksempler skal bruke `Eksempel kapittel.delkapittel.løpenummer`.
+15. Admonitions for eksempel, oppgave og regel skal ha innhold; tomme bokser er feil.
+16. Display-formler skal ha tom linje før og etter, balanserte MathJax-avgrensninger og korrekt innrykk. Bruk `\\dfrac` når brøken må være lett å lese.
 
 ## Lokal kjøring
 
@@ -47,3 +62,26 @@ python tests/book-quality/test_check_book_format.py
 ## Vedlikehold
 
 Sjekkeren og den gjenbrukbare workflowen vedlikeholdes i `smigalni/matte`. Etter at endringene er flettet til `main`, skal den gjenbrukbare workflowen peke på `main` i stedet for feature-branchen.
+
+
+## Mobilvisning, funksjonsoversikter og matematisk notasjon
+
+- Unngå tabeller i elevstoff når vertikale seksjoner gir bedre lesbarhet på mobil.
+- En funksjonsoversikt skal bruke generelle forskrifter med bokstaver, sentrale egenskaper, relevant definisjonsmengde/verdimengde og en enkel graf. Hold den som repetisjon, ikke et nytt teorikapittel.
+- Stykkevise funksjoner og større brøkuttrykk i oppgaver skal stå på egne display-linjer. Oppgavetekst skal ikke begynne på samme linje som en lang forskrift.
+- Bruk \(\lim\limits_{x\to a}\) slik at grensepunktet alltid står under lim-tegnet, også i inline uttrykk.
+- Åpne og fylte sirkler må forklares med ord og graf.
+- Kontinuitetsforklaringer skal vise hvorfor vi må kontrollere \(f(a)\), i tillegg til at grenseverdien finnes.
+- Asymptoter skal illustreres med en graf for hver hovedtype.
+- Polynomdivisjon skal vises med en korrekt, oppstilt algoritme. Vis kvotientledd, produktet som trekkes fra, ny rest og eventuell divisjonsrest.
+- Kapittelprøver bør normalt inneholde omtrent 8–10 varierte oppgaver som dekker hele kapittelet, ikke bare noen få representative regneoppgaver.
+
+
+## Funksjonsgrafer og visuell kvalitet
+
+- Bruk JSXGraph for koordinatbaserte funksjonsgrafer, tangenter, asymptoter og markerte matematiske punkter. Bruk SVG til enkle, statiske skisser der dette er mer hensiktsmessig.
+- Alle grafer skal bygge på eksplisitte funksjonsforskrifter og matematiske koordinater. Visningsvindu og definisjonsintervall må velges bevisst.
+- Bruk et felles visuelt system for akser, rutenett, farger, linjer, punkter og etiketter. Grafer skal være lesbare på mobil og desktop.
+- Hver graf skal ha alternativ tekst/ARIA-beskrivelse og en kort forklaring i elevteksten.
+- Playwright skal kontrollere at grafene rendres i nettleseren på mobil og desktop, at tegneflatene har tilstrekkelig størrelse, og at siden ikke får horisontal sideskrolling.
+- Skjermbilder fra nettlesertestene skal inspiseres før en ny grafmal godkjennes og tas i bruk i ordinært lærestoff. Automatiske tester alene beviser ikke pedagogisk eller matematisk kvalitet.
