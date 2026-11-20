@@ -48,8 +48,8 @@
       description: "Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x når x går mot pluss eller minus uendelig. Rutenettet gjør avstanden synlig.",
       aspect: "square", x: [-8, 8], y: [-8, 8], grid: true, ticks: true, tickStepX: 2, tickStepY: 2,
       curves: [
-        { fn: x => x + 2 / x, from: -8, to: -1, color: COLORS.curve, width: 2.3, markerStart: true },
-        { fn: x => x + 2 / x, from: 1, to: 8, color: COLORS.curve, width: 2.3, markerEnd: true }
+        { fn: x => x + 2 / x, from: -8, to: -0.2, color: COLORS.curve, width: 2.3, markerStart: true },
+        { fn: x => x + 2 / x, from: 0.2, to: 8, color: COLORS.curve, width: 2.3, markerEnd: true }
       ],
       lines: [{ fn: x => x, color: COLORS.accent, width: 1.7, dash: "7 5" }],
       notes: [{ x: -7, y: 6.2, text: "Skrå asymptote: y = x", color: COLORS.accent }]
@@ -59,8 +59,8 @@
       description: "Grafen til f(x) = x + 2/x nærmer seg den skrå asymptoten y = x når x går mot pluss eller minus uendelig. Uten rutenett kommer kurvene tydeligere fram.",
       aspect: "square", x: [-8, 8], y: [-8, 8], grid: false, ticks: true, tickStepX: 2, tickStepY: 2,
       curves: [
-        { fn: x => x + 2 / x, from: -16, to: -0.5, color: COLORS.curve, width: 2.3, markerStart: true },
-        { fn: x => x + 2 / x, from: 0.5, to: 16, color: COLORS.curve, width: 2.3, markerEnd: true }
+        { fn: x => x + 2 / x, from: -8, to: -0.2, color: COLORS.curve, width: 2.3, markerStart: true },
+        { fn: x => x + 2 / x, from: 0.2, to: 8, color: COLORS.curve, width: 2.3, markerEnd: true }
       ],
       lines: [{ fn: x => x, color: COLORS.accent, width: 1.7, dash: "7 5" }],
       notes: [{ x: -7, y: 6.2, text: "Skrå asymptote: y = x", color: COLORS.accent }]
