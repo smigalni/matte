@@ -118,7 +118,7 @@ Se [figur 2.1.5](#figur-2-1-5).
 <a id="figur-2-1-5"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="exponential" role="img" aria-label="Eksponentialfunksjon f(x) = 2ˣ"></div>
-  <p class="math-graph-caption"><strong>Figur 2.1.5.</strong> Voksende eksponentialfunksjon som passerer (0, 1); y = 0 er asymptote.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.5.</strong> Voksende eksponentialfunksjon. Grafen nærmer seg x-aksen ovenfra; y = 0 er horisontal asymptote.</p>
 </div>
 
 ### Logaritmefunksjon
@@ -141,7 +141,7 @@ Se [figur 2.1.6](#figur-2-1-6).
 <a id="figur-2-1-6"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="logarithm" role="img" aria-label="Logaritmefunksjon f(x) = log₂(x)"></div>
-  <p class="math-graph-caption"><strong>Figur 2.1.6.</strong> Voksende logaritmefunksjon som passerer (1, 0); x = 0 er vertikal asymptote.</p>
+  <p class="math-graph-caption"><strong>Figur 2.1.6.</strong> Voksende logaritmefunksjon med vertikal asymptote x = 0.</p>
 </div>
 
 ### Rasjonal funksjon
@@ -185,10 +185,10 @@ Se [figur 2.1.7](#figur-2-1-7).
 
     c) \(h(x)=2^x\)
 
-    d) \(p(x)=\)
+    d) Rasjonal funksjon gitt ved
 
     \[
-    \dfrac{x+1}{x-3}
+    p(x)=\dfrac{x+1}{x-3}
     \]
 
     e) \(q(x)=\ln(x-2)\)
