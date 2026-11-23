@@ -494,7 +494,7 @@
       svgElement("line", { x1: yAxisX, y1: height - pad.bottom, x2: yAxisX, y2: pad.top - 8, stroke: COLORS.axis, "stroke-width": 1.5 }),
       svgElement("path", { d: `M ${yAxisX} ${pad.top - 8} l -4 7 h 8 z`, fill: COLORS.axis }),
       svgElement("text", { x: width - pad.right + 12, y: xAxisY + 5, fill: COLORS.text, "font-size": 12, "font-weight": 500 }, "x"),
-      svgElement("text", { x: yAxisX + 9, y: pad.top - 13, fill: COLORS.text, "font-size": 17, "font-weight": 600 }, "y")
+      svgElement("text", { x: yAxisX + 9, y: pad.top - 13, fill: COLORS.text, "font-size": 12, "font-weight": 500 }, "y")
     );
 
     if (graph.ticks) {
