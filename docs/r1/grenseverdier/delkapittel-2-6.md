@@ -81,24 +81,22 @@ Se [figur 2.6.3](#figur-2-6-3).
     Vi skriver \(x^2+1\) som \(x^2+0x+1\), slik at alle potenser er med.
 
     \[
-    \begin{array}{lcc}
-    (x^2+0x+1):(x-1)&=&x\\
-    \overline{-(x^2-x)}&&\\
-    x+1&&
+    \begin{array}{r|l}
+       & x+1 \\
+    \cline{2-2}
+    x-1 & x^2+0x+1 \\
+       & -(x^2-x) \\
+    \cline{2-2}
+       & x+1 \\
+       & -(x-1) \\
+    \cline{2-2}
+       & 2
     \end{array}
     \]
 
-    Vi deler det første leddet i resten, \(x\), på \(x\). Det gir \(1\), som blir neste ledd i kvotienten. Vi multipliserer \(1\) med \(x-1\) og trekker fra:
+    Først deler vi det første leddet i telleren, \(x^2\), på det første leddet i nevneren, \(x\). Da får vi \(x\), som blir første ledd i kvotienten. Vi multipliserer \(x\) med \(x-1\) og trekker produktet fra telleren. Da står vi igjen med \(x+1\).
 
-    \[
-    \begin{array}{lcc}
-    (x^2+0x+1):(x-1)&=&x+1\\
-    \overline{-(x^2-x)}&&\\
-    x+1&&\\
-    \overline{-(x-1)}&&\\
-    2&&
-    \end{array}
-    \]
+    Deretter deler vi det første leddet i resten, \(x\), på \(x\). Da får vi \(1\), som blir neste ledd i kvotienten. Vi multipliserer \(1\) med \(x-1\) og trekker fra. Resten blir \(2\).
 
     Kvotienten er \(x+1\), og resten er \(2\). Derfor får vi
 
