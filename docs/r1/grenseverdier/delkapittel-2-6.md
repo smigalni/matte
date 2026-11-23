@@ -81,16 +81,16 @@ Se [figur 2.6.3](#figur-2-6-3).
     Vi skriver \(x^2+1\) som \(x^2+0x+1\), slik at alle potenser er med.
 
     \[
-    \begin{array}{r|l}
-       & x+1 \\
-    \cline{2-2}
-    x-1 & x^2+0x+1 \\
-       & -(x^2-x) \\
-    \cline{2-2}
-       & x+1 \\
-       & -(x-1) \\
-    \cline{2-2}
-       & 2
+    \begin{array}{r|rrr}
+       & x & +1 & \\
+    \cline{2-4}
+    x-1 & x^2 & +0x & +1 \\
+       & -x^2 & +x & \\
+    \cline{2-4}
+       & & x & +1 \\
+       & & -x & +1 \\
+    \cline{2-4}
+       & & & 2
     \end{array}
     \]
 
