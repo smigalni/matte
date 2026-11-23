@@ -1,4 +1,4 @@
-# 2.12 Lure oppgaver – grenseverdier og kontinuitet
+# 2.11 Lure oppgaver – grenseverdier og kontinuitet
 
 Disse oppgavene undersøker om du forstår hva grenseverdier, kontinuitet og asymptoter faktisk forteller. Flere av påstandene høres rimelige ut, men inneholder en feil. Begrunn alltid konklusjonen matematisk.
 
@@ -11,7 +11,7 @@ Bruk den samme arbeidsmåten hver gang:
 
 Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal også dukke opp underveis i de vanlige delkapitlene, slik at elevene møter dem i riktig faglig sammenheng.
 
-!!! question "Oppgave 2.12.1 – samme grenseverdi betyr ikke samme funksjonsverdi"
+!!! question "Oppgave 2.11.1 – samme grenseverdi betyr ikke samme funksjonsverdi"
 
     En funksjon er gitt ved
 
@@ -32,7 +32,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     d) En elev sier: «Grenseverdien er 3, så funksjonsverdien må også være 3.» Forklar feilen.
 
-??? note "Fasit – 2.12.1"
+??? note "Fasit – 2.11.1"
 
     a) Fra venstre får vi \(2\cdot1+1=3\). Fra høyre får vi \(1+2=3\).
     
@@ -44,7 +44,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     **Resultat:** \(\underline{\underline{\lim\limits_{x\to1}f(x)=3,\;f(1)=4}}\)
 
-!!! question "Oppgave 2.12.2 – kontinuerlig, men ikke deriverbar"
+!!! question "Oppgave 2.11.2 – kontinuerlig, men ikke deriverbar"
 
     La
 
@@ -62,7 +62,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     c) Kan funksjonen være kontinuerlig, men ha en knekk? Forklar med utgangspunkt i funksjonen.
 
-??? note "Fasit – 2.12.2"
+??? note "Fasit – 2.11.2"
 
     a) Venstre grenseverdi er \(2\cdot1+1=3\). Høyre grenseverdi og funksjonsverdien er \(1+2=3\). Funksjonen er kontinuerlig.
     
@@ -72,7 +72,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     **Resultat:** \(\underline{\underline{\text{kontinuerlig, men ikke deriverbar ved }x=1}}\)
 
-!!! question "Oppgave 2.12.3 – uendelig på begge sider"
+!!! question "Oppgave 2.11.3 – uendelig på begge sider"
 
     Vi har
 
@@ -94,7 +94,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     . Hva er forskjellen på fortegnet til de ensidige grenseverdiene?
 
-??? note "Fasit – 2.12.3"
+??? note "Fasit – 2.11.3"
 
     a) \(\lim\limits_{x\to2^-}h(x)=+\infty\).
     
@@ -106,7 +106,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     **Resultat:** \(\underline{\underline{\lim\limits_{x\to2^-}h(x)=+\infty,\;\lim\limits_{x\to2^+}h(x)=+\infty}}\)
 
-!!! question "Oppgave 2.12.4 – forkorting og definisjonsmengde"
+!!! question "Oppgave 2.11.4 – forkorting og definisjonsmengde"
 
     Vi har funksjonen
 
@@ -124,7 +124,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     d) Hva måtte vi ha endret i definisjonen for at funksjonen skulle bli kontinuerlig i \(x=1\)?
 
-??? note "Fasit – 2.12.4"
+??? note "Fasit – 2.11.4"
 
     a) Den opprinnelige funksjonen er definert for alle reelle \(x\) unntatt \(x=1\).
     
@@ -136,7 +136,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     **Resultat:** \(\underline{\underline{\lim\limits_{x\to1}q(x)=2,\;q(1)\text{ er ikke definert}}}\)
 
-!!! question "Oppgave 2.12.5 – asymptoten kan krysses"
+!!! question "Oppgave 2.11.5 – asymptoten kan krysses"
 
     Vi har
 
@@ -150,7 +150,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     c) En elev sier: «En graf kan ikke krysse en asymptote.» Forklar hvorfor påstanden er feil.
 
-??? note "Fasit – 2.12.5"
+??? note "Fasit – 2.11.5"
 
     a) Ved å dele teller og nevner på \(x^2\) får vi horisontal asymptote \(y=1\) når \(x\to\infty\).
     
@@ -169,7 +169,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     **Resultat:** \(\underline{\underline{(1,1)}}\)
 
-!!! question "Oppgave 2.12.6 – undersøk hver side, ikke bare nevneren"
+!!! question "Oppgave 2.11.6 – undersøk hver side, ikke bare nevneren"
 
     Vi har
 
@@ -185,7 +185,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     d) Forklar hvorfor det er nødvendig å undersøke fortegnet når \(x\) nærmer seg kandidaten.
 
-??? note "Fasit – 2.12.6"
+??? note "Fasit – 2.11.6"
 
     a) Nevneren blir null når \(x=1\).
     
@@ -202,7 +202,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     **Resultat:** \(\underline{\underline{x=1}}\)
 
-!!! question "Oppgave 2.12.7 – grenseverdi ved uendelig fra to retninger"
+!!! question "Oppgave 2.11.7 – grenseverdi ved uendelig fra to retninger"
 
     Vi har
 
@@ -216,7 +216,7 @@ Dette er en samling med ekstra oppgaver. De samme typene kontrollspørsmål skal
 
     c) Har funksjonen samme horisontale asymptote i begge retninger? Begrunn.
 
-??? note "Fasit – 2.12.7"
+??? note "Fasit – 2.11.7"
 
     Vi skriver
     
