@@ -46,19 +46,17 @@
     },
     exponential: {
       title: "Eksponentialfunksjon f(x) = 2ˣ",
-      description: "Voksende eksponentialfunksjon som passerer (0, 1) og nærmer seg x-aksen mot venstre.",
+      description: "Voksende eksponentialfunksjon som nærmer seg x-aksen ovenfra mot venstre.",
       aspect: "square", x: [-4, 4], y: [-1, 9], grid: true, ticks: true, tickStepX: 1, tickStepY: 2,
       curves: [{ fn: x => Math.pow(2, x), from: -4, to: 3.15, color: COLORS.curve, width: 2.4 }],
       lines: [{ fn: () => 0, color: COLORS.secondary, width: 1.7, dash: "7 5", label: "y = 0" }],
-      points: [{ x: 0, y: 1, label: "(0, 1)", dx: 10, dy: -12 }]
     },
     logarithm: {
       title: "Logaritmefunksjon f(x) = log₂(x)",
-      description: "Voksende logaritmefunksjon som passerer (1, 0) og har vertikal asymptote x = 0.",
+      description: "Voksende logaritmefunksjon med vertikal asymptote x = 0.",
       aspect: "square", x: [-1, 8], y: [-4, 4], grid: false, ticks: true, tickStepX: 1, tickStepY: 1,
       curves: [{ fn: x => Math.log(x) / Math.log(2), from: 0.04, to: 8, color: COLORS.curve, width: 2.4 }],
       asymptotes: [{ axis: "x", value: 0, label: "x = 0", color: COLORS.secondary }],
-      points: [{ x: 1, y: 0, label: "(1, 0)", dx: 10, dy: -12 }]
     },
     rationalBasic: {
       title: "Rasjonal funksjon f(x) = 1 + 3/(x − 2)",
@@ -509,7 +507,7 @@
         if (Math.abs(y) < 1e-8) continue;
         const py = sy(y);
         svg.append(svgElement("line", { x1: yAxisX - 4, y1: py, x2: yAxisX + 4, y2: py, stroke: COLORS.axis, "stroke-width": 1 }));
-        svg.append(svgElement("text", { x: yAxisX - 10, y: py + 4, fill: COLORS.text, "font-size": 13, "font-weight": 500, "text-anchor": "end" }, String(y)));
+        svg.append(svgElement("text", { x: yAxisX - 10, y: py + 4, fill: COLORS.text, "font-size": 11, "font-weight": 500, "text-anchor": "end" }, String(y)));
       }
       svg.append(svgElement("text", { x: yAxisX - 10, y: xAxisY + 17, fill: COLORS.text, "font-size": 13, "font-weight": 500, "text-anchor": "end" }, "0"));
     }
