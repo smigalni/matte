@@ -1,8 +1,8 @@
-# 2.10 Anvendelser av grenseverdier og diskontinuitet
+# 2.9 Anvendelser av grenseverdier og diskontinuitet
 
 Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kontinuitet og diskontinuitet kan også brukes til å undersøke modeller der en verdi endrer seg brått.
 
-!!! example "Eksempel 2.10.1 – betaling for parkering"
+!!! example "Eksempel 2.9.1 – betaling for parkering"
 
     En parkeringsplass tar 30 kr for parkering i inntil én time, 60 kr for mer enn én og inntil to timer, og 90 kr for mer enn to og inntil tre timer.
 
@@ -28,7 +28,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
 ## Oppgaver
 
-!!! question "Oppgave 2.10.2 – undersøk prishoppet"
+!!! question "Oppgave 2.9.2 – undersøk prishoppet"
 
     Bruk parkeringsmodellen ovenfor.
 
@@ -40,7 +40,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     d) Forklar med egne ord hvorfor en modell med prishopp ikke er kontinuerlig, og hvorfor dette likevel kan være en fornuftig modell.
 
-??? note "Fasit – 2.10.2"
+??? note "Fasit – 2.9.2"
 
     a) \(P(1)=30\), \(P(1{,}5)=60\) og \(P(2)=60\).
     
@@ -63,7 +63,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     d) Modellen har sprang ved grensepunktene. Den kan likevel være praktisk fordi parkeringsplassen faktisk tar betalt per påbegynte tidsintervall.
 
     **Resultat:** \(\underline{\underline{P(1)=30,\;P(1{,}5)=60,\;P(2)=60}}\)
-!!! question "Oppgave 2.10.3 – velg en modell"
+!!! question "Oppgave 2.9.3 – velg en modell"
 
     En bedrift vurderer to prismodeller for en tjeneste. \(x\) er antall timer tjenesten brukes.
 
@@ -95,7 +95,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     d) Drøft hvilken modell som er mest forutsigbar for kunden. Begrunn med matematikk og ikke bare en mening.
 
-??? note "Fasit – 2.10.3"
+??? note "Fasit – 2.9.3"
 
     a) For modell A er venstre grenseverdi 100 og høyre grenseverdi også 100. Dessuten er \(A(2)=100\). Modellen er kontinuerlig.
     
@@ -108,7 +108,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     d) Modell A er mer forutsigbar fordi prisen ikke hopper brått ved to timer. Eleven må begrunne vurderingen med grenseverdiene og prisforskjellen.
 
     **Resultat:** \(\underline{\underline{80\,\text{kr}}}\)
-!!! question "Oppgave 2.10.4 – grenseverdi i en beregning"
+!!! question "Oppgave 2.9.4 – grenseverdi i en beregning"
 
     I en matematisk modell inngår uttrykket
 
@@ -124,7 +124,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     d) Gi et eksempel på en situasjon der det kan være nyttig å vite hvilken verdi en modell nærmer seg, selv om modellen ikke er definert akkurat i grensepunktet.
 
-??? note "Fasit – 2.10.4"
+??? note "Fasit – 2.9.4"
 
     a) Vi faktoriserer:
     
@@ -145,7 +145,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
     d) Flere svar kan godtas. Eleven bør forklare at en grenseverdi kan beskrive en forventet eller tilnærmet verdi nær en grense, selv om selve punktet ikke inngår i modellen.
 
     **Resultat:** \(\underline{\underline{\lim\limits_{x\to4}Q(x)=8}}\)
-!!! question "Oppgave 2.10.5 – temperatur som nærmer seg romtemperaturen"
+!!! question "Oppgave 2.9.5 – temperatur som nærmer seg romtemperaturen"
 
     En kopp varm drikke står i et rom med konstant temperatur på 20 °C. En forenklet modell for temperaturen i drikken er
 
@@ -165,7 +165,7 @@ Grenseverdier er nyttige når vi vil beskrive hva en størrelse nærmer seg. Kon
 
     e) Forklar hva grenseverdien betyr i situasjonen. Vil modellen noen gang gi nøyaktig 20 °C for en endelig verdi av \(t\)? Begrunn.
 
-??? note "Fasit – 2.10.5"
+??? note "Fasit – 2.9.5"
 
     a) \(T(0)=80\), \(T(9)=26\) og \(T(59)=21\). Temperaturen er målt i grader Celsius.
     
