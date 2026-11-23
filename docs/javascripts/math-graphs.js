@@ -145,7 +145,7 @@
       ],
       lines: [{ fn: x => x + 1, color: COLORS.accent, width: 1.7, dash: "7 5" }],
       asymptotes: [{ axis: "x", value: 1, label: "x = 1", color: "#b45309" }],
-      notes: [{ x: -7, y: -5.4, text: "Skrå asymptote: y = x + 1", color: COLORS.accent }]
+      notes: [{ x: -6.8, y: 7.8, text: "Skrå asymptote: y = x + 1", color: COLORS.accent }]
     },
     parabola: {
       title: "Parabelen f(x) = x²",
