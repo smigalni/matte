@@ -1,4 +1,4 @@
-# 2.11 Fordypning – når er det faktisk en asymptote?
+# 2.10 Fordypning – når er det faktisk en asymptote?
 
 Det er lett å trekke en for rask konklusjon: Hvis nevneren blir null for \(x=a\), må \(x=a\) være en vertikal asymptote. Det stemmer ikke.
 
@@ -18,7 +18,7 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
 
 ## To eksempler som ser like ut – men ikke er det
 
-!!! example "Eksempel 2.11.1 – et hull"
+!!! example "Eksempel 2.10.1 – et hull"
 
     Vi undersøker
 
@@ -42,7 +42,7 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
 
     Grenseverdiene er endelige. Grafen har et **hull** i \((2,4)\), ikke en vertikal asymptote.
 
-!!! example "Eksempel 2.11.2 – en vertikal asymptote"
+!!! example "Eksempel 2.10.2 – en vertikal asymptote"
 
     Vi undersøker
 
@@ -70,7 +70,7 @@ Når du undersøker om \(x=a\) er en vertikal asymptote:
 
 For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du skal avgjøre om kandidaten gir et hull eller en vertikal asymptote. Begrunn med faktorisering og grenseverdier fra begge sider.
 
-!!! question "Oppgave 2.11.3 – kandidaten er ikke alltid en asymptote"
+!!! question "Oppgave 2.10.3 – kandidaten er ikke alltid en asymptote"
 
     Vi har funksjonen
 
@@ -86,7 +86,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Forklar hvorfor \(x=3\) ikke er en vertikal asymptote.
 
-??? note "Fasit – 2.11.3"
+??? note "Fasit – 2.10.3"
 
     \[
     f(x)=\dfrac{(x-3)(x+3)}{x-3}=x+3,\qquad x\ne3.
@@ -95,7 +95,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     Begge ensidige grenseverdiene er 6. Det er et hull i \((3,6)\), ikke en vertikal asymptote.
 
     **Resultat:** \(\underline{\underline{(3,6)\text{ er et hull}}}\)
-!!! question "Oppgave 2.11.4 – begge blir null"
+!!! question "Oppgave 2.10.4 – begge blir null"
 
     Vi har funksjonen
 
@@ -111,7 +111,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Forklar hvorfor det ikke er nok å se at både teller og nevner blir null.
 
-??? note "Fasit – 2.11.4"
+??? note "Fasit – 2.10.4"
 
     \[
     g(x)=\dfrac{(x-2)(x+2)}{(x-2)^2}
@@ -121,7 +121,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     Når \(x\to2^-\), går funksjonen mot \(-\infty\). Når \(x\to2^+\), går den mot \(+\infty\). Dermed er \(x=2\) en vertikal asymptote, selv om både teller og nevner i det opprinnelige uttrykket blir null.
 
     **Resultat:** \(\underline{\underline{x=2}}\)
-!!! question "Oppgave 2.11.5 – to kandidater, to ulike konklusjoner"
+!!! question "Oppgave 2.10.5 – to kandidater, to ulike konklusjoner"
 
     Vi har funksjonen
 
@@ -137,7 +137,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Oppgi eventuelle hull og vertikale asymptoter.
 
-??? note "Fasit – 2.11.5"
+??? note "Fasit – 2.10.5"
 
     \[
     h(x)=\dfrac{(x-1)(x+1)}{(x-1)(x-2)}
@@ -148,7 +148,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     - Ved \(x=2\) går funksjonen mot uendelig i absoluttverdi. Dette gir en vertikal asymptote \(x=2\).
 
     **Resultat:** \(\underline{\underline{x=1\text{ er hull, }x=2\text{ er asymptote}}}\)
-!!! question "Oppgave 2.11.6 – vurder en påstand"
+!!! question "Oppgave 2.10.6 – vurder en påstand"
 
     En elev sier:
 
@@ -156,12 +156,12 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     Er påstanden riktig? Bruk minst to konkrete eksempler fra dette arket for å argumentere.
 
-??? note "Fasit – 2.11.6"
+??? note "Fasit – 2.10.6"
 
-    Påstanden er feil i begge deler. Eksempel 2.11.1 viser at nevner lik null kan gi et hull. Eksempel 2.11.2 viser at både teller og nevner lik null også kan gi en vertikal asymptote.
+    Påstanden er feil i begge deler. Eksempel 2.10.1 viser at nevner lik null kan gi et hull. Eksempel 2.10.2 viser at både teller og nevner lik null også kan gi en vertikal asymptote.
 
     **Resultat:** \(\underline{\underline{\text{Påstanden er feil}}}\)
-!!! question "Oppgave 2.11.7 – lag selv"
+!!! question "Oppgave 2.10.7 – lag selv"
 
     Lag to rasjonale funksjoner som begge har en nevner som blir null når \(x=1\):
 
@@ -170,7 +170,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     Vis ved faktorisering og grenseverdier at eksemplene dine har de egenskapene du hevder.
 
-??? note "Fasit – 2.11.7"
+??? note "Fasit – 2.10.7"
 
     Mulige eksempler:
     
@@ -187,7 +187,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
     gir en vertikal asymptote \(x=1\).
 
     **Resultat:** \(\underline{\underline{x=1}}\)
-!!! question "Oppgave 2.11.8 – krevende: parameter og asymptote"
+!!! question "Oppgave 2.10.8 – krevende: parameter og asymptote"
 
     Vi har funksjonen
 
@@ -203,7 +203,7 @@ For hver oppgave skal du ikke bare finne verdiene som gjør nevneren null. Du sk
 
     d) Forklar hvorfor en parameteroppgave krever at vi undersøker både teller og nevner ved hver kandidat.
 
-??? note "Fasit – 2.11.8"
+??? note "Fasit – 2.10.8"
 
     Nevneren er
     
