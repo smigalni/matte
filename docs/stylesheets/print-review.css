@@ -1,0 +1,107 @@
+/* MathPlatform chapter prototype: screen and print presentation */
+
+.chapter-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  padding: .8rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .65rem;
+}
+.chapter-label, .task-level {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.chapter-label { color: var(--md-primary-fg-color); }
+.print-button {
+  border: 0;
+  border-radius: .45rem;
+  padding: .6rem .9rem;
+  background: var(--md-primary-fg-color);
+  color: white;
+  font: inherit;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.chapter-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem;
+  margin: 1.5rem 0;
+}
+.chapter-meta > div {
+  padding: .85rem 1rem;
+  background: var(--md-code-bg-color);
+  border-radius: .5rem;
+  font-size: .9rem;
+}
+.task {
+  margin: 1.1rem 0;
+  padding: .9rem 1.1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: .4rem;
+  break-inside: avoid;
+}
+.task-level { display: block; margin-bottom: .45rem; color: var(--md-primary-fg-color); }
+.math-note, .model-box {
+  margin: 1rem 0;
+  padding: .9rem 1.1rem;
+  background: var(--md-code-bg-color);
+  border-radius: .4rem;
+  break-inside: avoid;
+}
+.teacher-warning {
+  margin: 1rem 0;
+  padding: 1rem 1.2rem;
+  border: 2px solid #b45309;
+  border-radius: .45rem;
+  background: #fff7ed;
+  color: #7c2d12;
+}
+.student-reflection {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .45rem;
+}
+.teacher-source { font-size: .85rem; color: var(--md-default-fg-color--light); }
+
+@media (max-width: 600px) {
+  .chapter-meta { grid-template-columns: 1fr; }
+  .chapter-toolbar { align-items: flex-start; flex-direction: column; }
+}
+
+@media print {
+  @page { size: A4; margin: 18mm 17mm 20mm; }
+  html, body { background: #fff !important; }
+  body { color: #111 !important; font-size: 10.5pt; }
+  .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top,
+  .md-search, .md-content__button, .headerlink,
+  .chapter-toolbar .print-button { display: none !important; }
+  .md-main, .md-main__inner, .md-content, .md-content__inner,
+  .md-typeset { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .md-typeset { font-size: 10.5pt; line-height: 1.48; }
+  .md-typeset h1 { font-size: 25pt; margin: 0 0 1rem; }
+  .md-typeset h2 { font-size: 16pt; margin-top: 1.6rem; break-after: avoid; }
+  .md-typeset h3 { font-size: 12pt; break-after: avoid; }
+  .md-typeset p, .md-typeset li { orphans: 3; widows: 3; }
+  .chapter-toolbar { display: block; border: 0; padding: 0; margin-bottom: .5rem; }
+  .chapter-meta { grid-template-columns: repeat(2, 1fr); gap: .4rem; }
+  .chapter-meta > div { background: #f3f4f6 !important; border: 1px solid #ddd; padding: .55rem .7rem; }
+  .task, .math-note, .model-box, .teacher-warning, .student-reflection {
+    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .task { border-color: #aaa; border-left-color: #555; padding: .65rem .8rem; margin: .75rem 0; }
+  .task-level, .chapter-label { color: #222 !important; }
+  a { color: inherit !important; text-decoration: none !important; }
+  .md-typeset table { font-size: 9pt; }
+  .md-typeset mjx-container { break-inside: avoid; }
+}
