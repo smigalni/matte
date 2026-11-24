@@ -6,15 +6,21 @@ site_url = "https://smigalni.github.io/matte/"
 docs_dir = "docs"
 extra_css = [
   "stylesheets/extra.css",
+  "stylesheets/print-review.css",
 ]
 extra_javascript = [
   "javascripts/mathjax.js",
+  "javascripts/print-review.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
 ]
 
 nav = [
   { "Hjem" = "index.md" },
   { "R1" = [
+    { "Kapittel 1 – Potenser og logaritmer (pilot)" = [
+      { "Elevutgave" = "r1/kapittel-1-pilot/elev.md" },
+      { "Lærerveiledning" = "r1/kapittel-1-pilot/laerer.md" },
+    ] },
     { "Kapittel 3 – Derivasjon" = [
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
 
