@@ -17,6 +17,7 @@ BASE_CHECKS = {
     "check_balanced_svg_figure": True,
     "check_math_delimiters": True,
     "check_display_math_spacing": True,
+    "check_limit_subscript_below": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
 }
@@ -29,7 +30,7 @@ class BookQualityTests(unittest.TestCase):
             return checker.check_file(path, "page.md", BASE_CHECKS)
 
     def test_example_in_admonition_passes(self):
-        content = r'''!!! example "Eksempel"
+        content = r'''!!! example "Eksempel 2.3.1"
 
     Regn ut.
 
@@ -154,12 +155,12 @@ Tekst under
         self.assertTrue(any("Ubalansert HTML/SVG" in e for e in errors))
 
     def test_subtasks_on_separate_paragraphs_pass(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
     a) Første deloppgave.
 
     b) Andre deloppgave.
 
-??? note \"Fasit – oppgave 1\"
+??? note \"Fasit – 2.3.1\"
     a) Første svar.
 
     b) Andre svar.
@@ -167,7 +168,7 @@ Tekst under
         self.assertEqual(self.check(content), [])
 
     def test_subtasks_on_same_line_fail(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
 
     a) Første deloppgave. b) Andre deloppgave.
 """
@@ -175,7 +176,7 @@ Tekst under
         self.assertTrue(any("Flere deloppgaver står på samme linje" in e for e in errors))
 
     def test_subtask_without_blank_line_before_fails(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
 
     a) Første deloppgave.
     b) Andre deloppgave.
@@ -184,12 +185,110 @@ Tekst under
         self.assertTrue(any("eget avsnitt med tom linje før" in e for e in errors))
 
     def test_subtask_with_extra_bullet_fails(self):
-        content = """!!! question \"Oppgave 1\"
+        content = """!!! question \"Oppgave 2.3.1\"
 
     - a) Første deloppgave.
 """
         errors = self.check(content)
         self.assertTrue(any("ekstra punktmarkør" in e for e in errors))
+
+
+    def test_task_and_fasit_ids_match(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Finn grenseverdien.
+
+??? note "Fasit – 2.3.1"
+
+    \[
+    \underline{\underline{4}}
+    \]
+'''
+        self.assertEqual(self.check(content), [])
+
+    def test_task_and_moments_ids_match(self):
+        content = r'''!!! question "Oppgave 2.13.1"
+
+    Forklar begrepet.
+
+??? note "Momenter – 2.13.1"
+
+    Et godt svar forklarer begrepet presist.
+'''
+        self.assertEqual(self.check(content), [])
+
+    def test_task_without_answer_box_fails(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Finn grenseverdien.
+'''
+        errors = self.check(content)
+        self.assertTrue(any("mangler fasit- eller momentboks" in e for e in errors))
+
+    def test_mismatched_fasit_id_fails(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Finn grenseverdien.
+
+??? note "Fasit – 2.3.2"
+
+    **Resultat:** \\(\\underline{\\underline{4}}\\)
+'''
+        errors = self.check(content)
+        self.assertTrue(any("ingen oppgave med samme nummer" in e for e in errors))
+
+    def test_duplicate_task_id_fails(self):
+        content = r'''!!! question "Oppgave 2.3.1"
+
+    Første oppgave.
+
+!!! question "Oppgave 2.3.1"
+
+    Andre oppgave.
+'''
+        errors = self.check(content)
+        self.assertTrue(any("brukt flere ganger" in e for e in errors))
+
+    def test_legacy_task_label_fails(self):
+        errors = self.check("**2.3.1** Finn grenseverdien.\\n")
+        self.assertTrue(any("mangler etiketten 'Oppgave'" in e for e in errors))
+
+    def test_duplicate_example_id_fails(self):
+        content = """!!! example "Eksempel 2.3.1"
+
+    Første eksempel.
+
+!!! example "Eksempel 2.3.1"
+
+    Andre eksempel.
+"""
+        errors = self.check(content)
+        self.assertTrue(any("Eksempelnummer 2.3.1 er brukt flere ganger" in e for e in errors))
+
+    def test_empty_example_box_fails(self):
+        errors = self.check('!!! example "Eksempel 2.3.1"\\n\\n### Neste del\\n')
+        self.assertTrue(any("Tom admonition-boks" in e for e in errors))
+
+
+    def test_parameter_tuple_is_not_mistaken_for_subtask(self):
+        content = """!!! question "Oppgave 2.3.1"
+
+    c) Finn to parameterpar \\((a,b)\\) som oppfyller kravet.
+
+??? note "Momenter – 2.3.1"
+
+    Det finnes flere mulige par.
+"""
+        self.assertEqual(self.check(content), [])
+
+    def test_limit_subscript_below_passes(self):
+        content = r'''Grenseverdi: \(\lim\limits_{x\to a}f(x)\).'''
+        self.assertEqual(self.check(content), [])
+
+    def test_limit_subscript_not_below_fails(self):
+        content = r'''Grenseverdi: \(\lim_{x\to a}f(x)\).'''
+        errors = self.check(content)
+        self.assertTrue(any("Grensepunktet skal stå under lim-tegnet" in e for e in errors))
 
 if __name__ == "__main__":
     unittest.main()

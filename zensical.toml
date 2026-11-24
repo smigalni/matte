@@ -10,14 +10,31 @@ extra_css = [
 extra_javascript = [
   "javascripts/mathjax.js",
   "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+  "javascripts/math-graphs.js",
 ]
 
 nav = [
   { "Hjem" = "index.md" },
   { "R1" = [
+    { "Kapittel 2 – Grenseverdier og kontinuitet" = [
+      { "Kapitteloversikt – Dette skal du lære" = "r1/grenseverdier/index.md" },
+      { "2.1 Repetisjon av funksjonstyper" = "r1/grenseverdier/delkapittel-2-1.md" },
+      { "2.2 Funksjoner med delte forskrifter" = "r1/grenseverdier/delkapittel-2-2.md" },
+      { "2.3 Ensidige grenseverdier og grenseverdier" = "r1/grenseverdier/delkapittel-2-3.md" },
+      { "2.4 Kontinuitet" = "r1/grenseverdier/delkapittel-2-4.md" },
+      { "2.5 Teknikker for å beregne grenseverdier" = "r1/grenseverdier/delkapittel-2-5.md" },
+      { "2.6 Asymptoter" = "r1/grenseverdier/delkapittel-2-6.md" },
+      { "2.7 Programmering" = "r1/grenseverdier/programmering.md" },
+      { "2.8 Blandede oppgaver" = "r1/grenseverdier/blandede-oppgaver.md" },
+      { "2.9 Anvendelser av grenseverdier" = "r1/grenseverdier/anvendelser.md" },
+      { "2.10 Fordypning – asymptotekandidater" = "r1/grenseverdier/fordypning-asymptoter.md" },
+      { "2.11 Lure oppgaver" = "r1/grenseverdier/lure-oppgaver.md" },
+      { "2.12 Kapittelprøve" = "r1/grenseverdier/kapittelprove.md" },
+      { "2.13 Forberedelse til muntlig prøve" = "r1/grenseverdier/muntlig-forberedelse.md" },
+      { "Formeloversikt" = "r1/grenseverdier/formeloversikt.md" },
+    ] },
     { "Kapittel 3 – Derivasjon" = [
       { "3.1 Vekstfart og tangent" = "felles/vekstfart-og-tangent.md" },
-
       { "3.2 Vanlige derivasjonsregler" = "felles/derivasjon/vanlige-derivasjonsregler.md" },
       { "3.3 Kjerneregelen" = "felles/derivasjon/kjerneregelen.md" },
       { "3.4 Produktregelen og kvotientregelen" = "felles/derivasjon/produkt-og-kvotientregelen.md" },

@@ -18,6 +18,9 @@ DEFAULTS = {
     "check_math_delimiters": True,
     "check_display_math_spacing": True,
     "check_subtasks_separate_lines": True,
+    "check_hierarchical_task_labels": True,
+    "check_task_answer_pairing": True,
+    "check_empty_admonitions": True,
     "answer_marker": r"^\s*\*\*Svar:\*\*",
     "answer_search_lines": 12,
     "excluded_paths": ["site/", "build/", ".venv/", ".book-quality-tools/"],
@@ -92,7 +95,7 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
 
     if checks.get("check_subtasks_separate_lines", True):
         subtask_start = re.compile(r"^(\s*)(-\s+)?(?:\*\*)?([a-e])\)(?:\*\*)?(?:\s|$)")
-        subtask_anywhere = re.compile(r"(?<![\w\\])(?:\*\*)?[a-e]\)(?:\*\*)?")
+        subtask_anywhere = re.compile(r"(?<![\w\\(,])(?:\*\*)?[a-e]\)(?:\*\*)?")
         for position, (number, line) in enumerate(visible):
             match = subtask_start.match(line)
             if not match:
@@ -112,6 +115,73 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                     f"{relative}:{number}: Flere deloppgaver står på samme linje. Flytt hver bokstavmerking til eget avsnitt."
                 )
 
+    if checks.get("check_hierarchical_task_labels", True):
+        for number, line in visible:
+            task = re.match(r'^\s*!!!\s+question\s+["\']Oppgave\s+(\d+(?:\.\d+){0,2})', line)
+            example = re.match(r'^\s*!!!\s+example\s+["\']Eksempel\s+(\d+(?:\.\d+){0,2})', line)
+            legacy = re.match(r'^\s*(?:#{1,6}\s+)?(?:\*\*)?(?:Oppgave\s+)?(\d+\.\d+\.\d+)(?:\*\*)?', line)
+            if legacy:
+                errors.append(f"{relative}:{number}: Oppgavenummer mangler etiketten 'Oppgave' og standard question-admonition.")
+            if re.match(r'^\s*!!!\s+question\s+', line) and not task:
+                errors.append(f"{relative}:{number}: Oppgave-boksen mangler hierarkisk tittel på formen 'Oppgave 2.3.1'.")
+            if re.match(r'^\s*!!!\s+example\s+', line) and not example:
+                errors.append(f"{relative}:{number}: Eksempel-boksen mangler hierarkisk tittel på formen 'Eksempel 2.3.1'.")
+            for kind, match in (("Oppgave", task), ("Eksempel", example)):
+                if match and len(match.group(1).split(".")) != 3:
+                    errors.append(f"{relative}:{number}: {kind} må nummereres kapittel.delkapittel.løpenummer.")
+
+        seen_examples = set()
+        for number, line in visible:
+            example = re.match(r'^\s*!!!\s+example\s+["\']Eksempel\s+(\d+\.\d+\.\d+)', line)
+            if example:
+                example_id = example.group(1)
+                if example_id in seen_examples:
+                    errors.append(f"{relative}:{number}: Eksempelnummer {example_id} er brukt flere ganger i samme fil.")
+                seen_examples.add(example_id)
+
+    if checks.get("check_task_answer_pairing", True):
+        task_ids = []
+        answer_ids = []
+        for number, line in visible:
+            task = re.match(r'^\s*!!!\s+question\s+["\']Oppgave\s+(\d+\.\d+\.\d+)', line)
+            answer = re.match(r'^\s*\?\?\?\s+\w+\s+["\'](?:Fasit|Momenter)\s*[–-]\s*(?:oppgave\s+)?(\d+\.\d+\.\d+)', line, re.IGNORECASE)
+            if task:
+                task_ids.append((task.group(1), number))
+            if answer:
+                answer_ids.append((answer.group(1), number))
+        seen_tasks = set()
+        for task_id, number in task_ids:
+            if task_id in seen_tasks:
+                errors.append(f"{relative}:{number}: Oppgavenummer {task_id} er brukt flere ganger i samme fil.")
+            seen_tasks.add(task_id)
+        seen_answers = set()
+        for answer_id, number in answer_ids:
+            if answer_id in seen_answers:
+                errors.append(f"{relative}:{number}: Fasitnummer {answer_id} er brukt flere ganger i samme fil.")
+            if answer_id not in seen_tasks:
+                errors.append(f"{relative}:{number}: Fasit {answer_id} har ingen oppgave med samme nummer.")
+            seen_answers.add(answer_id)
+        for task_id, number in task_ids:
+            if task_id not in seen_answers:
+                errors.append(f"{relative}:{number}: Oppgave {task_id} mangler fasit- eller momentboks med samme nummer.")
+
+    if checks.get("check_empty_admonitions", True):
+        for position, (number, line) in enumerate(visible):
+            if not re.match(r'^\s*!!!\s+(?:example|question|rule)\s+', line):
+                continue
+            base_indent = len(line) - len(line.lstrip(" \t"))
+            has_content = False
+            for _, candidate in visible[position + 1:]:
+                if not candidate.strip():
+                    continue
+                indent = len(candidate) - len(candidate.lstrip(" \t"))
+                if indent <= base_indent:
+                    break
+                has_content = True
+                break
+            if not has_content:
+                errors.append(f"{relative}:{number}: Tom admonition-boks. Legg inn innhold eller fjern boksen.")
+
     if checks.get("check_admonition_indentation", True):
         for index, line in enumerate(lines):
             match = re.match(r"^(\s*)(!!!|\?\?\?)\s+\w+", line)
@@ -130,6 +200,13 @@ def check_file(path: Path, relative: str, checks: dict) -> list[str]:
                     break
                 errors.append(f"{relative}:{next_index + 1}: Innhold i admonition må indenteres fire mellomrom under markørlinjen.")
                 break
+
+    if checks.get("check_limit_subscript_below", False):
+        for number, line in visible:
+            if re.search(r"\\lim_\{", line):
+                errors.append(
+                    f"{relative}:{number}: Grensepunktet skal stå under lim-tegnet. Bruk \\lim\\limits_{{...}}."
+                )
 
     if checks.get("check_math_delimiters", True):
         # Check display delimiters as standalone lines; do not count inline math.
