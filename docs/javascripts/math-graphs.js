@@ -98,6 +98,13 @@
       ],
       points: [{ x: 0, y: 0 }]
     },
+    absoluteValueShifted: {
+      title: "Absoluttverdifunksjonen f(x) = |x − 1|",
+      description: "Grafen er V-formet med knekkpunkt i (1, 0). Stigningstallet er minus 1 til venstre og pluss 1 til høyre for knekkpunktet.",
+      aspect: "square", x: [-2, 4], y: [-1, 4.6], grid: false, ticks: true, tickStepX: 1, tickStepY: 1,
+      curves: [{ fn: x => Math.abs(x - 1), from: -2, to: 4, color: COLORS.curve, width: 2.4 }],
+      points: [{ x: 1, y: 0 }]
+    },
     continuous: {
       title: "Kontinuerlig funksjon",
       description: "Grafen er sammenhengende gjennom punktet a, og funksjonsverdien er lik grenseverdien.",
