@@ -18,27 +18,13 @@ De fleste vanlige, glatte grafer er deriverbare. Men det finnes også punkter de
 
     Grafen består av to rette linjer som møtes i punktet (1, 0).
 
-    <figure markdown>
-    <svg viewBox="0 0 360 230" role="img" aria-label="Grafen til f av x er absoluttverdien av x minus 1, med knekkpunkt ved x lik 1" xmlns="http://www.w3.org/2000/svg">
-      <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
-        <path d="M40 35H330 M40 75H330 M40 115H330 M40 155H330 M40 195H330"/>
-        <path d="M80 20V205 M120 20V205 M160 20V205 M200 20V205 M240 20V205 M280 20V205"/>
-      </g>
-      <g stroke="currentColor" stroke-width="1.4" fill="none">
-        <path d="M30 155H338"/><path d="M160 210V14"/>
-      </g>
-      <g fill="currentColor" font-size="12">
-        <text x="340" y="151">x</text><text x="168" y="17">y</text>
-        <text x="145" y="172">0</text><text x="112" y="172">−1</text><text x="202" y="172">1</text>
-        <text x="171" y="118">1</text><text x="171" y="78">2</text>
-        <text x="238" y="42">f(x) = |x-1|</text>
-      </g>
-      <path d="M110 65 L200 155 L290 65" fill="none" stroke="#1671c5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="200" cy="155" r="4.5" fill="#1671c5"/>
-      <text x="212" y="190" fill="currentColor" font-size="12">Knekkpunkt (1, 0)</text>
-    </svg>
-    <figcaption>Grafen til \(f(x)=|x-1|\). De to rette linjene møtes i et knekkpunkt ved \(x=1\).</figcaption>
-    </figure>
+    Se [figur 3.5.1](#figur-3-5-1).
+
+    <a id="figur-3-5-1"></a>
+    <div class="math-graph-frame">
+      <div class="math-graph" data-math-graph="absoluteValueShifted" role="img" aria-label="Grafen til f(x) = |x − 1| med knekkpunkt i (1, 0)"></div>
+      <p class="math-graph-caption"><strong>Figur 3.5.1.</strong> Grafen er kontinuerlig i knekkpunktet (1, 0), men stigningstallet skifter fra −1 til 1. Derfor er funksjonen ikke deriverbar i punktet.</p>
+    </div>
 
     - Til venstre for \(x=1\) er stigningstallet \(-1\).
     - Til høyre for \(x=1\) er stigningstallet \(1\).
