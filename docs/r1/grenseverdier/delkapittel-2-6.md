@@ -1,12 +1,10 @@
-<a id="delkapittel-2-6"></a>
-
 ## 2.6 Asymptoter
 
 En asymptote er en rett linje som grafen nærmer seg. Vi undersøker tre vanlige typer.
 
 ### Vertikal asymptote
 
-Linjen \(x=a\) er en vertikal asymptote når funksjonsverdiene går mot \(+\infty\) eller \(-\infty\) når \(x\) nærmer seg \(a\) fra minst én side.
+Linjen \\(x=a\\) er en vertikal asymptote når funksjonsverdiene går mot \\(+\\infty\\) eller \\(-\\infty\\) når \\(x\\) nærmer seg \\(a\\) fra minst én side.
 
 Se [figur 2.6.1](#figur-2-6-1).
 
@@ -19,33 +17,21 @@ Se [figur 2.6.1](#figur-2-6-1).
 !!! example "Eksempel 2.6.1 – vertikal asymptote"
     Undersøk grenseverdiene til
 
-    \[
-    f(x)=\dfrac{1}{x-2}.
-    \]
+    \\[\n    f(x)=\\dfrac{1}{x-2}.\n    \\]
 
-    Når \(x\) nærmer seg 2 fra venstre, er nevneren negativ og nærmer seg 0. Fra høyre er nevneren positiv og nærmer seg 0:
+    Når \\(x\\) nærmer seg 2 fra venstre, er nevneren negativ og nærmer seg 0. Fra høyre er nevneren positiv og nærmer seg 0:
 
-    \[
-    \lim\limits_{x\to2^-}f(x)=-\infty,
-    \qquad
-    \lim\limits_{x\to2^+}f(x)=+\infty.
-    \]
+    \\[\n    \\lim\\limits_{x\\to2^-}f(x)=-\\infty,\n    \\qquad\n    \\lim\\limits_{x\\to2^+}f(x)=+\\infty.\n    \\]
 
     Minst én ensidig grenseverdi går mot uendelig i absoluttverdi. Derfor er den vertikale asymptoten
 
-    \[
-    \underline{\underline{x=2}}.
-    \]
+    \\[\n    \\underline{\\underline{x=2}}.\n    \\]
 
 ### Horisontal asymptote
 
-Linjen \(y=L\) er en horisontal asymptote dersom
+Linjen \\(y=L\\) er en horisontal asymptote dersom
 
-\[
-\lim\limits_{x\to\infty}f(x)=L
-\quad\text{eller}\quad
-\lim\limits_{x\to-\infty}f(x)=L.
-\]
+\\[\n\\lim\\limits_{x\\to\\infty}f(x)=L\n\\quad\\text{eller}\\quad\n\\lim\\limits_{x\\to-\\infty}f(x)=L.\n\\]
 
 De to grensene kan gi ulike horisontale asymptoter.
 
@@ -59,7 +45,7 @@ Se [figur 2.6.2](#figur-2-6-2).
 
 ### Skrå asymptote
 
-En skrå asymptote har formen \(y=ax+b\), der \(a\ne0\). For rasjonale funksjoner kan polynomdivisjon ofte avsløre den.
+En skrå asymptote har formen \\(y=ax+b\\), der \\(a\\ne0\\). For rasjonale funksjoner kan polynomdivisjon ofte avsløre den.
 
 Se [figur 2.6.3](#figur-2-6-3).
 
@@ -72,54 +58,41 @@ Se [figur 2.6.3](#figur-2-6-3).
 !!! example "Eksempel 2.6.2 – finn skrå asymptote med polynomdivisjon"
     Bestem den skrå asymptoten til funksjonen
 
-    \[
-    f(x)=\dfrac{x^2+1}{x-1}.
-    \]
+    \\[\n    f(x)=\\dfrac{x^2+1}{x-1}.\n    \\]
 
     **1. Still opp polynomdivisjonen**
 
-    Vi skriver \(x^2+1\) som \(x^2+0x+1\), slik at alle potenser er med.
+    Vi skriver \\(x^2+1\\) som \\(x^2+0x+1\\), slik at alle potenser er med.
 
-    \[
-    \begin{array}{r|rrr}
-       & x & +1 & \\
-    \cline{2-4}
-    x-1 & x^2 & +0x & +1 \\
-       & -x^2 & +x & \\
-    \cline{2-4}
-       & & x & +1 \\
-       & & -x & +1 \\
-    \cline{2-4}
-       & & & 2
-    \end{array}
-    \]
+    ```text
+    x² + 0x + 1 : x - 1 = x + 1
+    -(x² - x)
+    ----------
+           x + 1
+         -(x - 1)
+         --------
+               2
+    ```
 
-    Først deler vi det første leddet i telleren, \(x^2\), på det første leddet i nevneren, \(x\). Da får vi \(x\), som blir første ledd i kvotienten. Vi multipliserer \(x\) med \(x-1\) og trekker produktet fra telleren. Da står vi igjen med \(x+1\).
+    Først deler vi det første leddet i telleren, \\(x^2\\), på det første leddet i nevneren, \\(x\\). Da får vi \\(x\\), som blir første ledd i kvotienten. Vi multipliserer \\(x\\) med \\(x-1\\) og trekker produktet fra telleren. Da står vi igjen med \\(x+1\\).
 
-    Deretter deler vi det første leddet i resten, \(x\), på \(x\). Da får vi \(1\), som blir neste ledd i kvotienten. Vi multipliserer \(1\) med \(x-1\) og trekker fra. Resten blir \(2\).
+    Deretter deler vi det første leddet i resten, \\(x\\), på \\(x\\). Da får vi \\(1\\), som blir neste ledd i kvotienten. Vi multipliserer \\(1\\) med \\(x-1\\) og trekker fra. Resten blir \\(2\\).
 
-    Kvotienten er \(x+1\), og resten er \(2\). Derfor får vi
+    Kvotienten er \\(x+1\\), og resten er \\(2\\). Derfor får vi
 
-    \[
-    \dfrac{x^2+1}{x-1}
-    =x+1+\dfrac{2}{x-1}.
-    \]
+    \\[\n    \\dfrac{x^2+1}{x-1}\n    =x+1+\\dfrac{2}{x-1}.\n    \\]
 
     **2. Undersøk restleddet**
 
-    Når \(x\to\infty\) eller \(x\to-\infty\), går
+    Når \\(x\\to\\infty\\) eller \\(x\\to-\\infty\\), går
 
-    \[
-    \dfrac{2}{x-1}\to0.
-    \]
+    \\[\n    \\dfrac{2}{x-1}\\to0.\n    \\]
 
-    Funksjonen nærmer seg derfor linjen \(y=x+1\).
+    Funksjonen nærmer seg derfor linjen \\(y=x+1\\).
 
     **Svar:** Den skrå asymptoten er
 
-    \[
-    \underline{\underline{y=x+1}}.
-    \]
+    \\[\n    \\underline{\\underline{y=x+1}}.\n    \\]
 
 ### Oppgaver 2.6
 
@@ -127,44 +100,38 @@ Se [figur 2.6.3](#figur-2-6-3).
 
     Finn vertikal og horisontal asymptote til
 
-    \[
-    f(x)=\dfrac{3x+1}{x-2}.
-    \]
+    \\[\n    f(x)=\\dfrac{3x+1}{x-2}.\n    \\]
 
     Begrunn med grenseverdier.
 
 ??? note "Fasit – 2.6.3"
 
-    Vertikal asymptote \(x=2\), horisontal asymptote \(y=3\).
+    Vertikal asymptote \\(x=2\\), horisontal asymptote \\(y=3\\).
 
-    **Resultat:** \(\underline{\underline{x=2,\;y=3}}\)
+    **Resultat:** \\(\\underline{\\underline{x=2,\\;y=3}}\\)
 
 !!! question "Oppgave 2.6.4"
 
     Undersøk asymptotene til
 
-    \[
-    g(x)=\dfrac{x^2-4}{x-2}.
-    \]
+    \\[\n    g(x)=\\dfrac{x^2-4}{x-2}.\n    \\]
 
     Forklar hvorfor en verdi som gjør nevneren null, ikke automatisk gir en vertikal asymptote.
 
 ??? note "Fasit – 2.6.4"
 
-    For \(x\ne2\) er funksjonen lik \(x+2\). Grafen ligger derfor på linjen \(y=x+2\), bortsett fra et hull i \((2,4)\). Linjen \(y=x+2\) er den skrå asymptoten. Det er ingen vertikal asymptote ved \(x=2\), fordi grenseverdiene er endelige.
+    For \\(x\\ne2\\) er funksjonen lik \\(x+2\\). Grafen ligger derfor på linjen \\(y=x+2\\), bortsett fra et hull i \\((2,4)\\). Linjen \\(y=x+2\\) er den skrå asymptoten. Det er ingen vertikal asymptote ved \\(x=2\\), fordi grenseverdiene er endelige.
 
-    **Resultat:** \(\underline{\underline{y=x+2}}\)
+    **Resultat:** \\(\\underline{\\underline{y=x+2}}\\)
 
 !!! question "Oppgave 2.6.5"
 
     Bruk polynomdivisjon til å bestemme eventuell skrå asymptote for
 
-    \[
-    h(x)=\dfrac{2x^2+3x-1}{x+1}.
-    \]
+    \\[\n    h(x)=\\dfrac{2x^2+3x-1}{x+1}.\n    \\]
 
 ??? note "Fasit – 2.6.5"
 
-    Polynomdivisjon gir \(h(x)=2x+1-\frac{2}{x+1}\). Skrå asymptote er \(y=2x+1\), og vertikal asymptote er \(x=-1\).
+    Polynomdivisjon gir \\(h(x)=2x+1-\\frac{2}{x+1}\\). Skrå asymptote er \\(y=2x+1\\), og vertikal asymptote er \\(x=-1\\).
 
-    **Resultat:** \(\underline{\underline{x=-1,\;y=2x+1}}\)
+    **Resultat:** \\(\\underline{\\underline{x=-1,\\;y=2x+1}}\\)
