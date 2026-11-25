@@ -2,11 +2,11 @@
 title: Potenser og logaritmer – lærer
 ---
 
-<div class="print-brand" aria-label="MathPlatform">
-  <div class="print-brand__mark">M</div>
-  <div>
-    <div class="print-brand__name">MathPlatform</div>
-    <div class="print-brand__tagline">Matematikk · forståelse · mestring</div>
+<div class="print-cover" aria-label="MathPlatform">
+  <div class="print-cover__identity">
+    <div class="print-cover__mark">M</div>
+    <div class="print-cover__name">MathPlatform</div>
+    <div class="print-cover__tagline">Matematikk · forståelse · mestring</div>
   </div>
 </div>
 
