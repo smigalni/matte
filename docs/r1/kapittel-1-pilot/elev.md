@@ -216,6 +216,17 @@ Løs ligningen du har laget, og forklar hvordan du vet at den har nøyaktig diss
 
 ## 6. Fordypning – arbeid mot karakter 6
 
+<div class="task" markdown="1">
+<span class="task-level">UTNYTT STRUKTUR · OPPGAVE 18</span>
+
+Løs ligningen:
+
+$2^x+2^{x+1}+2^{x+2}=56.$
+
+Finn en effektiv framgangsmåte. Forklar hvordan du kan faktorisere uttrykket slik at du slipper å prøve deg fram.
+</div>
+
+
 Disse oppgavene krever at du kombinerer flere ideer. Skriv en tydelig begrunnelse, og kommenter eventuelle begrensninger.
 
 <div class="task" markdown="1">
