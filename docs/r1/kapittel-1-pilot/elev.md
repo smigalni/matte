@@ -216,24 +216,26 @@ Løs ligningen du har laget, og forklar hvordan du vet at den har nøyaktig diss
 
 ## 6. Fordypning – arbeid mot karakter 6
 
-<div class="task" markdown="1">
-<span class="task-level">UTNYTT STRUKTUR · OPPGAVE 18</span>
+<div class="task task--extension" markdown="1">
+<div class="task-heading"><span class="task-level">UTVIDELSE</span><strong>Oppgave 18 · Faktoriser smart</strong></div>
 
 Løs ligningen:
 
-$2^x+2^{x+1}+2^{x+2}=56.$
+$$
+2^x+2^{x+1}+2^{x+2}=56.
+$$
 
 Finn en effektiv framgangsmåte. Forklar hvordan du kan faktorisere uttrykket slik at du slipper å prøve deg fram.
 </div>
 
-<div class="task" markdown="1">
-<span class="task-level">T-MATTE I FORKLEDNING · OPPGAVE 19</span>
+<div class="task task--extension" markdown="1">
+<div class="task-heading"><span class="task-level">UTVIDELSE</span><strong>Oppgave 19 · Andregradsligning i forkledning</strong></div>
 
 Løs ligningen:
 
-$
+$$
 (\lg x)^2+\lg x-2=0.
-$
+$$
 
 Bruk en substitusjon for å gjøre ligningen om til en andregradsligning. Vis hvordan du finner alle løsningene, og kontroller at de er gyldige.
 </div>
