@@ -101,10 +101,30 @@ d) Regn ut \(32^{-2/5}\).
 Forklar kort hvordan brøkeksponenten forteller hvilken rot du skal bruke.
 </div>
 
-## 3. Eksponentiallikninger
+## 3. Identiteter
 
 <div class="task" markdown="1">
-<span class="task-level">OPPGAVE 3 · SE FELLES FAKTOR</span>
+<span class="task-level">OPPGAVE 3 · IDENTITET ELLER LIKNING?</span>
+
+En identitet er en likhet som gjelder for alle verdier av variabelen som uttrykkene er definert for. En likning kan bare være sann for bestemte verdier.
+
+Avgjør hvilke av likhetene under som er identiteter, og hvilke som bare er likninger. Begrunn svarene.
+
+a) \((x+3)^2=x^2+6x+9\)
+
+b) \(2x+5=13\)
+
+c) \(3(a-2)=3a-6\)
+
+d) \(x^2=16\)
+
+For likningene som ikke er identiteter, finn løsningene.
+</div>
+
+## 4. Eksponentiallikninger
+
+<div class="task" markdown="1">
+<span class="task-level">OPPGAVE 4 · SE FELLES FAKTOR</span>
 
 Løs likningene uten digitale hjelpemidler.
 
@@ -118,7 +138,7 @@ I c) skal du ikke prøve deg fram. Skriv hvert ledd med \(2^x\) som faktor, og f
 </div>
 
 <div class="task" markdown="1">
-<span class="task-level">OPPGAVE 4 · SUBSTITUSJON</span>
+<span class="task-level">OPPGAVE 5 · SUBSTITUSJON</span>
 
 Løs likningen
 
@@ -129,10 +149,10 @@ $$
 Sett gjerne \(u=3^x\). Forklar hvorfor \(u\) må være positiv, og gå helt tilbake til \(x\) etter at du har løst andregradslikningen.
 </div>
 
-## 4. Logaritmer og definisjonsmengde
+## 5. Logaritmer og definisjonsmengde
 
 <div class="task" markdown="1">
-<span class="task-level">OPPGAVE 5 · LOGARITMEREGLER</span>
+<span class="task-level">OPPGAVE 6 · LOGARITMEREGLER</span>
 
 Forenkle uttrykkene.
 
@@ -148,7 +168,7 @@ Pass på at logaritmene er definerte.
 </div>
 
 <div class="task" markdown="1">
-<span class="task-level">OPPGAVE 6 · DEFINISJONSMENGDE FØR LØSNING</span>
+<span class="task-level">OPPGAVE 7 · DEFINISJONSMENGDE FØR LØSNING</span>
 
 Løs likningene. Skriv først hvilke verdier av \(x\) som er tillatt.
 
@@ -162,7 +182,7 @@ For hver likning skal du kontrollere svaret i den opprinnelige likningen. En lø
 </div>
 
 <div class="task task--extension" markdown="1">
-<span class="task-level">OPPGAVE 7 · NULLPRODUKT OG LOGARITMER</span>
+<span class="task-level">OPPGAVE 8 · NULLPRODUKT OG LOGARITMER</span>
 
 Løs likningen
 
@@ -178,10 +198,10 @@ Vis tydelig:
 Forklar hvorfor det ikke er nok å sette hver faktor lik null uten å kontrollere definisjonsmengden.
 </div>
 
-## 5. Utfordring
+## 6. Utfordring
 
 <div class="task task--extension" markdown="1">
-<span class="task-level">OPPGAVE 8 · NIVÅ 6</span>
+<span class="task-level">OPPGAVE 9 · NIVÅ 6</span>
 
 Løs likningen eksakt:
 
