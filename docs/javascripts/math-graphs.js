@@ -47,10 +47,10 @@
     },
     distanceTimeTangent: {
       title: "Strekning som funksjon av tid med tangent",
-      description: "Grafen s(t) = t² og tangenten i tidspunktet t = 2. Tangentens stigningstall er 4t = 8 i dette punktet.",
+      description: "Grafen s(t) = t² og tangenten i tidspunktet t = 2. Tangentens stigningstall er 2t = 4 i dette punktet.",
       aspect: "wide", x: [0, 4], y: [0, 17], grid: true, ticks: true, tickStepX: 1, tickStepY: 4,
       curves: [{ fn: t => t * t, from: 0, to: 4, color: COLORS.curve, width: 2.5 }],
-      lines: [{ fn: t => 8 * t - 4, color: COLORS.accent, width: 2.1 }],
+      lines: [{ fn: t => 4 * t - 4, color: COLORS.accent, width: 2.1 }],
       points: [{ x: 2, y: 4, label: "(2, 4)", dx: 10, dy: 18 }]
     },
     quadraticBasic: {
