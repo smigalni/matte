@@ -49,43 +49,15 @@ Verdien \(f'(a)\) forteller hvor raskt funksjonen endrer seg akkurat når \(x=a\
 
 Geometrisk forteller den samme verdien oss **stigningstallet til tangenten** til grafen i punktet \(P=(x_1,y_1)\).
 
-### Figur 1 – Graf, punkt og tangent
+### Figur 3.1.1 – Graf, punkt og tangent
 
 Se på funksjonen \(f(x)=x^2\) og punktet \(P=(1,1)\).
 
-<figure markdown>
-<svg viewBox="0 0 360 270" role="img" aria-label="Grafen y lik x i andre og tangenten y lik 2x minus 1 i punktet 1,1" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath id="plot1"><rect x="42" y="18" width="286" height="218"/></clipPath>
-  </defs>
-  <g stroke="currentColor" stroke-opacity="0.13" stroke-width="1">
-    <path d="M60 20V236 M100 20V236 M140 20V236 M180 20V236 M220 20V236 M260 20V236 M300 20V236"/>
-    <path d="M42 36H328 M42 76H328 M42 116H328 M42 156H328 M42 196H328 M42 236H328"/>
-  </g>
-  <g stroke="currentColor" stroke-width="1.4" fill="none">
-    <path d="M42 196H333"/>
-    <path d="M60 242V14"/>
-  </g>
-  <g fill="currentColor" font-size="10">
-    <text x="334" y="191">x</text><text x="67" y="15">y</text>
-    <text x="48" y="209">0</text><text x="96" y="209">1</text><text x="136" y="209">2</text><text x="176" y="209">3</text>
-    <text x="44" y="160">1</text><text x="44" y="120">2</text><text x="44" y="80">3</text><text x="44" y="40">4</text>
-  </g>
-  <g clip-path="url(#plot1)">
-    <path d="M60 196 C73.3 196 86.7 182.7 100 156 C113.3 129.3 126.7 89.3 140 36" fill="none" stroke="#16803d" stroke-width="3"/>
-    <path d="M60 236 L140 76" fill="none" stroke="#d97706" stroke-width="2.5"/>
-    <path d="M100 156 L140 156 L140 76" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4 3"/>
-  </g>
-  <circle cx="100" cy="156" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
-  <g fill="currentColor" font-size="10">
-    <text x="105" y="148">P = (1, 1)</text>
-    <text x="104" y="171" fill="#d97706">1 rute bort</text>
-    <text x="145" y="119" fill="#d97706">2 ruter opp</text>
-    <text x="203" y="52" fill="#16803d">f(x) = x²</text>
-  </g>
-</svg>
-<figcaption>Fra P går vi 1 rute mot høyre og 2 ruter opp langs tangenten. Stigningstallet er derfor 2/1 = 2. Tangenten berører grafen i P.</figcaption>
-</figure>
+<a id="figur-3-1-1"></a>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="tangentParabola" role="img" aria-label="Parabelen f(x) = x² og tangenten y = 2x − 1 i punktet P = (1, 1)"></div>
+  <p class="math-graph-caption"><strong>Figur 3.1.1.</strong> Tangenten berører grafen i P. Når vi går 1 enhet mot høyre langs tangenten, går vi 2 enheter opp. Stigningstallet er derfor 2.</p>
+</div>
 
 For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at tangenten i punktet \(P=(x_1,y_1)=(1,1)\) har stigningstall 2.
 
@@ -104,9 +76,13 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 
 ### Sekant: gjennomsnittlig vekstfart
 
-![Grafen til f og sekanten gjennom punktene P og Q](../images/sekant-gjennomsnittlig-vekstfart.svg)
+<a id="figur-3-1-2"></a>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="secantParabola" role="img" aria-label="Parabelen f(x) = x² og sekanten gjennom P = (1, 1) og Q = (4, 16)"></div>
+  <p class="math-graph-caption"><strong>Figur 3.1.2.</strong> Sekanten går gjennom P og Q. Stigningstallet er den gjennomsnittlige vekstfarten mellom x = 1 og x = 4.</p>
+</div>
 
-Den blå kurven viser grafen til \(f\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \(x_1\) og \(x_2\).
+Den blå kurven viser grafen til \\(f\\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \\(x_1\\) og \\(x_2\\).
 
 !!! example "Eksempel – Finn gjennomsnittlig vekstfart"
 
@@ -141,34 +117,13 @@ Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\)
 - Momentan vekstfart beskriver farten ved ett bestemt tidspunkt.
 - Når grafen viser strekning som funksjon av tid, er den momentane vekstfarten stigningstallet til tangenten.
 
-### Figur – Tangenten viser vekstfarten akkurat i punktet
+### Figur 3.1.3 – Tangenten viser vekstfarten akkurat i punktet
 
-<figure markdown>
-<svg viewBox="0 0 360 255" role="img" aria-label="Strekning som funksjon av tid med tangent i et bestemt tidspunkt" xmlns="http://www.w3.org/2000/svg">
-  <defs><clipPath id="plot2"><rect x="46" y="18" width="282" height="200"/></clipPath></defs>
-  <g stroke="currentColor" stroke-opacity="0.13" stroke-width="1">
-    <path d="M60 20V218 M110 20V218 M160 20V218 M210 20V218 M260 20V218 M310 20V218"/>
-    <path d="M46 218H328 M46 178H328 M46 138H328 M46 98H328 M46 58H328 M46 18H328"/>
-  </g>
-  <g stroke="currentColor" stroke-width="1.4" fill="none">
-    <path d="M46 218H334"/><path d="M60 228V12"/>
-  </g>
-  <g fill="currentColor" font-size="10">
-    <text x="336" y="213">t (s)</text><text x="68" y="13">s(t) (m)</text>
-    <text x="48" y="231">0</text><text x="106" y="231">1</text><text x="156" y="231">2</text><text x="206" y="231">3</text><text x="256" y="231">4</text>
-  </g>
-  <g clip-path="url(#plot2)">
-    <path d="M60 218 Q160 218 260 18" fill="none" stroke="#16803d" stroke-width="3"/>
-    <path d="M110 218 L260 68" fill="none" stroke="#d97706" stroke-width="2.5"/>
-  </g>
-  <circle cx="160" cy="168" r="5" fill="#16803d" stroke="white" stroke-width="1.3"/>
-  <g fill="currentColor" font-size="11">
-    <text x="169" y="159">Tidspunktet t = a</text>
-    <text x="248" y="62" fill="#d97706">Tangent</text>
-  </g>
-</svg>
-<figcaption>På en strekning–tid-graf er tangentens stigningstall den momentane farten på det aktuelle tidspunktet.</figcaption>
-</figure>
+<a id="figur-3-1-3"></a>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="distanceTimeTangent" role="img" aria-label="Strekning s(t) = t² som funksjon av tid, med tangent ved t = 2"></div>
+  <p class="math-graph-caption"><strong>Figur 3.1.3.</strong> Tangentens stigningstall ved t = 2 viser den momentane farten på dette tidspunktet.</p>
+</div>
 
 - Hvis tangenten stiger mot høyre, er vekstfarten positiv.
 - Hvis tangenten er vannrett, er vekstfarten null.
