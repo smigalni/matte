@@ -51,7 +51,7 @@ Geometrisk forteller den samme verdien oss **stigningstallet til tangenten** til
 
 ### Figur 3.1.1 – Graf, punkt og tangent
 
-Se på funksjonen \(f(x)=x^2\) og punktet \(P=(1,1)\).
+Se på funksjonen \(f(x)=x^2\) og punktet \(P=(1,1)\). Se [figur 3.1.1](#figur-3-1-1).
 
 <a id="figur-3-1-1"></a>
 <div class="math-graph-frame">
