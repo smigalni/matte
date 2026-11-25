@@ -9,18 +9,18 @@ title: Potenser og logaritmer – elev
 
 # Potenser og logaritmer
 
-**Elevutgave · Målrettet trening i R1**
+**Elevutgave · Fordypningsøkt mot karakter 6**
 
 <div class="chapter-meta" markdown="1">
   <div><strong>Fokus</strong><br>Presisjon · metodevalg · resonnering</div>
   <div><strong>Arbeidsmåte</strong><br>Vis mellomregning og forklar valgene dine</div>
-  <div><strong>Mål</strong><br>Stabil kompetanse på høyt nivå</div>
-  <div><strong>Tid</strong><br>Ca. 55–70 minutter</div>
+  <div><strong>Mål</strong><br>Mål: karakter 6 – presisjon, selvstendighet og resonnering</div>
+  <div><strong>Tid</strong><br>Ca. 2 timer</div>
 </div>
 
 Elev: ____________________________________    Dato: __________________
 
-Dette er en målrettet treningspakke basert på sentrale temaer i R1 kapittel 1. Den er laget for å undersøke både regneferdigheter, metodevalg og matematisk forståelse.
+Dette er en målrettet fordypningsøkt basert på sentrale temaer i R1 kapittel 1. Målet er å arbeide på nivå 6: velge effektive metoder, begrunne påstander, vurdere gyldighet og se sammenhenger.
 
 ## 1. Verktøykasse
 
@@ -204,6 +204,106 @@ Lag en eksponentialligning som har nøyaktig løsningene \(x=0\) og \(x=2\). Lig
 Løs ligningen du har laget, og forklar hvordan du vet at den har nøyaktig disse løsningene.
 </div>
 
+## 6. Fordypning – arbeid mot karakter 6
+
+Disse oppgavene krever at du kombinerer flere ideer. Skriv en tydelig begrunnelse, og kommenter eventuelle begrensninger.
+
+<div class="task" markdown="1">
+<span class="task-level">FORDYPNING · OPPGAVE 12</span>
+
+**Logaritmen som funksjon**
+
+For (a>0), (a\ne1), er (f(x)=\log_a x).
+
+a) Forklar hvorfor definisjonsmengden er (x>0), og hvorfor grafen alltid går gjennom punktet ((1,0)).
+
+b) Finn (\log_2 8), (\log_2(1/8)) og (\log_2\sqrt 2). Forklar sammenhengen mellom svarene.
+
+c) Beskriv hvordan grafen endres når grunntallet går fra (a>1) til (0<a<1).
+</div>
+
+<div class="task" markdown="1">
+<span class="task-level">FORDYPNING · OPPGAVE 13</span>
+
+**En ligning med parameter**
+
+Løs ligningen
+
+$\ln(x-1)+\ln(x+1)=\ln(k)$
+
+for (k>0).
+
+a) Bestem definisjonsmengden.
+
+b) Finn løsningene uttrykt ved (k).
+
+c) Forklar hvorfor det bare finnes én gyldig løsning for hver (k>0).
+</div>
+
+<div class="task" markdown="1">
+<span class="task-level">FORDYPNING · OPPGAVE 14</span>
+
+**To eksponentielle modeller**
+
+To modeller beskriver samme størrelse:
+
+$A(t)=500\cdot1{,}08^t,\qquad B(t)=650\cdot1{,}05^t.$
+
+a) Hvilken modell har størst startverdi? Hvilken har størst relativ vekst per tidsenhet?
+
+b) Bestem når modellene gir samme verdi.
+
+c) Hvilken modell gir størst verdi før og etter skjæringspunktet? Begrunn svaret uten å støtte deg bare på en graf.
+</div>
+
+<div class="task" markdown="1">
+<span class="task-level">FORDYPNING · OPPGAVE 15</span>
+
+**Finn og forklar feilen**
+
+En elev løser
+
+$\ln(x+2)+\ln(x-1)=\ln 5$
+
+slik:
+
+$\ln(2x+1)=\ln5\Rightarrow 2x+1=5\Rightarrow x=2.$
+
+a) Er svaret riktig?
+
+b) Undersøk om framgangsmåten er gyldig. Finn den korrekte løsningen og vis alle nødvendige kontroller.
+
+c) Forklar hvilken kontroll som er viktigst i denne oppgaven.
+</div>
+
+<div class="task" markdown="1">
+<span class="task-level">FORDYPNING · OPPGAVE 16</span>
+
+**Lag en generell regel**
+
+Anta at (a>0), (a\ne1), og (x>0).
+
+a) Vis at
+
+$\log_a x=\frac{\ln x}{\ln a}.$
+
+b) Bruk regelen til å løse (7^{2x-1}=11).
+
+c) Forklar hvorfor løsningen er entydig.
+</div>
+
+<div class="task" markdown="1">
+<span class="task-level">MUNTLIG / RESONNERING · OPPGAVE 17</span>
+
+Velg én av påstandene og forbered en presis forklaring:
+
+- «En eksponentialfunksjon vokser alltid raskere jo større (x) blir.»
+- «Hvis to eksponentialfunksjoner har ulik vekstfaktor, vil den med størst vekstfaktor alltid ligge øverst.»
+- «Logaritmer gjør multiplikasjon om til addisjon, og derfor kan de brukes til å løse alle ligninger.»
+
+Du skal enten begrunne påstanden eller gi et moteksempel og formulere en mer presis versjon.
+</div>
+
 ---
 
 <div class="student-reflection" markdown="1">
@@ -211,6 +311,6 @@ Løs ligningen du har laget, og forklar hvordan du vet at den har nøyaktig diss
 
 - Hvilke oppgaver løste jeg helt selvstendig?
 - Hvor måtte jeg prøve en annen strategi?
-- Hvilken feil oppdaget jeg eller lærte jeg av?
+- Hvilken feil oppdaget jeg eller lærte jeg av?\n- Hvilken oppgave krevde mest selvstendig resonnering?\n- Hva ville jeg gjort mer effektivt hvis jeg startet på nytt?
 - Hva bør jeg øve mer på?
 </div>
