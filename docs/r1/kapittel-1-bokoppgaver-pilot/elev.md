@@ -10,27 +10,13 @@ title: Potenser og logaritmer – oppgaver fra boka
   </div>
 </div>
 
+<div class="page-break"></div>
+
 <div class="chapter-toolbar" markdown="1">
   <span class="chapter-label">MATHPLATFORM · R1 · KAPITTEL 1</span>
   <button class="print-button" type="button" data-print-page>Skriv ut elevheftet</button>
 </div>
 
-# Potenser og logaritmer
-
-**R1 · Kapittel 1 · Oppgaver fra løsningsforslaget**
-
-<div class="chapter-meta" markdown="1">
-  <div><strong>Fokus</strong><br>Regneferdighet · metodevalg · definisjonsmengde</div>
-  <div><strong>Arbeidsmåte</strong><br>Vis mellomregning og forklar valgene dine</div>
-  <div><strong>Mål</strong><br>Fra sikker grunnmur til selvstendig resonnering</div>
-  <div><strong>Tid</strong><br>Ca. 35–45 minutter</div>
-</div>
-
-Elev: ____________________________________    Dato: __________________
-
-Dette heftet består av utvalgte oppgaver fra boka, gruppert etter vanskelighetsgrad. Oppgavenummereringen følger løsningsforslaget. Begynn på nivå 1 og arbeid deg videre. Du trenger ikke gjøre alt dersom du står fast – marker heller hva du må repetere.
-
-<div class="page-break"></div>
 
 ## 1. Verktøykasse
 
@@ -63,6 +49,24 @@ $$
 <div class="math-note" markdown="1">
 <strong>Husk definisjonsmengden:</strong> Argumentet i en logaritme må være positivt. Sjekk alltid at uttrykkene er definert, og kontroller løsningene i den opprinnelige ligningen.
 </div>
+
+
+# Potenser og logaritmer
+
+**R1 · Kapittel 1 · Oppgaver fra løsningsforslaget**
+
+<div class="chapter-meta" markdown="1">
+  <div><strong>Fokus</strong><br>Regneferdighet · metodevalg · definisjonsmengde</div>
+  <div><strong>Arbeidsmåte</strong><br>Vis mellomregning og forklar valgene dine</div>
+  <div><strong>Mål</strong><br>Fra sikker grunnmur til selvstendig resonnering</div>
+  <div><strong>Tid</strong><br>Ca. 35–45 minutter</div>
+</div>
+
+Elev: ____________________________________    Dato: __________________
+
+Dette heftet består av utvalgte oppgaver fra boka, gruppert etter vanskelighetsgrad. Oppgavenummereringen følger løsningsforslaget. Begynn på nivå 1 og arbeid deg videre. Du trenger ikke gjøre alt dersom du står fast – marker heller hva du må repetere.
+
+<div class="page-break"></div>
 
 ## 2. Nivå 1 – grunnleggende presisjon
 
