@@ -206,23 +206,27 @@ Målet er ikke å rekke flest mulig oppgaver. Prioriter kvaliteten i elevens val
 
 **Oppgave 12**
 
-a) Logaritmen (\log_a x) er eksponenten (y) som oppfyller (a^y=x). Derfor må (x>0). Siden (a^0=1), går grafen gjennom ((1,0)).
+a) Logaritmen \(\log_a x\) er eksponenten \(y\) som oppfyller \(a^y=x\). Derfor må \(x>0\). Siden \(a^0=1\), går grafen gjennom \((1,0)\).
 
-b) Svarene er (3), (-3) og (1/2). De viser at logaritmen av en potens blir eksponenten multiplisert med logaritmen av grunntallet; her leses eksponentene direkte fordi grunntallet er 2.
+b) Svarene er \(3\), \(-3\) og \(1/2\). De viser at logaritmen av en potens blir eksponenten multiplisert med logaritmen av grunntallet; her leses eksponentene direkte fordi grunntallet er 2.
 
-c) For (a>1) er funksjonen voksende. For (0<a<1) er den avtakende. Begge har definisjonsmengde (x>0) og går gjennom ((1,0)).
+c) For \(a>1\) er funksjonen voksende. For \(0<a<1\) er den avtakende. Begge har definisjonsmengde \(x>0\) og går gjennom \((1,0)\).
 
 **Oppgave 13**
 
-Definisjonskravene er (x-1>0) og (x+1>0), altså (x>1).
+Definisjonskravene er \(x-1>0\) og \(x+1>0\), altså \(x>1\).
 
-$\ln((x-1)(x+1))=\ln k\iff x^2-1=k.$
+$$
+\ln((x-1)(x+1))=\ln k\iff x^2-1=k.
+$$
 
-Dermed (x=\pm\sqrt{k+1}). Bare
+Dermed \(x=\pm\sqrt{k+1}\). Bare
 
-$x=\sqrt{k+1}$
+$$
+x=\sqrt{k+1}
+$$
 
-oppfyller (x>1). Det finnes nøyaktig én gyldig løsning for hvert (k>0).
+oppfyller \(x>1\). Det finnes nøyaktig én gyldig løsning for hvert \(k>0\).
 
 **Oppgave 14**
 
@@ -230,35 +234,47 @@ Startverdiene er 500 og 650. A har størst vekstfaktor (8 % mot 5 %).
 
 Skjæringspunktet finnes fra
 
-$500\cdot1{,}08^t=650\cdot1{,}05^t,$
+$$
+500\cdot1{,}08^t=650\cdot1{,}05^t,
+$$
 
-$t=\frac{\ln(1{,}3)}{\ln(1{,}08/1{,}05)}.$
+$$
+t=\frac{\ln(1{,}3)}{\ln(1{,}08/1{,}05)}.
+$$
 
-Før skjæringspunktet er B størst; etter skjæringspunktet er A størst. Begrunn gjerne ved å se på forholdet (A(t)/B(t)), som øker med (t).
+Før skjæringspunktet er B størst; etter skjæringspunktet er A størst. Begrunn gjerne ved å se på forholdet \(A(t)/B(t)\), som øker med \(t\).
 
 **Oppgave 15**
 
-Definisjonsmengden er (x>1). Riktig sammenslåing er
+Definisjonsmengden er \(x>1\). Riktig sammenslåing er
 
-$\ln((x+2)(x-1))=\ln5.$
+$$
+\ln((x+2)(x-1))=\ln5.
+$$
 
-Da får vi (x^2+x-2=5), altså (x^2+x-7=0). Løsningene er
+Da får vi \(x^2+x-2=5\), altså \(x^2+x-7=0\). Løsningene er
 
-$x=\frac{-1\pm\sqrt{29}}2.$
+$$
+x=\frac{-1\pm\sqrt{29}}2.
+$$
 
-Bare (x=\frac{-1+\sqrt{29}}2\approx2{,}19) er gyldig. Feilen er at ((x+2)(x-1)) ikke er (2x+1).
+Bare \(x=\frac{-1+\sqrt{29}}2\approx2{,}19\) er gyldig. Feilen er at \((x+2)(x-1)\) ikke er \(2x+1\).
 
 **Oppgave 16**
 
 Ta naturlig logaritme på begge sider:
 
-$ (2x-1)\ln7=\ln11.$
+$$
+(2x-1)\ln7=\ln11.
+$$
 
 Dermed
 
-$x=\frac{1+\frac{\ln11}{\ln7}}2.$
+$$
+x=\frac{1+\frac{\ln11}{\ln7}}2.
+$$
 
-Entydighet følger av at (7^u) er strengt voksende.
+Entydighet følger av at \(7^u\) er strengt voksende.
 
 **Oppgave 17**
 
