@@ -213,13 +213,13 @@ Disse oppgavene krever at du kombinerer flere ideer. Skriv en tydelig begrunnels
 
 **Logaritmen som funksjon**
 
-For (a>0), (a\ne1), er (f(x)=\log_a x).
+For \(a>0\), \(a\ne1\), er \(f(x)=\log_a x\).
 
-a) Forklar hvorfor definisjonsmengden er (x>0), og hvorfor grafen alltid går gjennom punktet ((1,0)).
+a) Forklar hvorfor definisjonsmengden er \(x>0\), og hvorfor grafen alltid går gjennom punktet \((1,0)\).
 
-b) Finn (\log_2 8), (\log_2(1/8)) og (\log_2\sqrt 2). Forklar sammenhengen mellom svarene.
+b) Finn \(\log_2 8\), \(\log_2(1/8)\) og \(\log_2\sqrt 2\). Forklar sammenhengen mellom svarene.
 
-c) Beskriv hvordan grafen endres når grunntallet går fra (a>1) til (0<a<1).
+c) Beskriv hvordan grafen endres når grunntallet går fra \(a>1\) til \(0<a<1\).
 </div>
 
 <div class="task" markdown="1">
@@ -229,15 +229,17 @@ c) Beskriv hvordan grafen endres når grunntallet går fra (a>1) til (0<a<1).
 
 Løs ligningen
 
-$\ln(x-1)+\ln(x+1)=\ln(k)$
+$$
+\ln(x-1)+\ln(x+1)=\ln(k)
+$$
 
-for (k>0).
+for \(k>0\).
 
 a) Bestem definisjonsmengden.
 
-b) Finn løsningene uttrykt ved (k).
+b) Finn løsningene uttrykt ved \(k\).
 
-c) Forklar hvorfor det bare finnes én gyldig løsning for hver (k>0).
+c) Forklar hvorfor det bare finnes én gyldig løsning for hver \(k>0\).
 </div>
 
 <div class="task" markdown="1">
@@ -247,7 +249,9 @@ c) Forklar hvorfor det bare finnes én gyldig løsning for hver (k>0).
 
 To modeller beskriver samme størrelse:
 
-$A(t)=500\cdot1{,}08^t,\qquad B(t)=650\cdot1{,}05^t.$
+$$
+A(t)=500\cdot1{,}08^t,\qquad B(t)=650\cdot1{,}05^t.
+$$
 
 a) Hvilken modell har størst startverdi? Hvilken har størst relativ vekst per tidsenhet?
 
@@ -263,11 +267,15 @@ c) Hvilken modell gir størst verdi før og etter skjæringspunktet? Begrunn sva
 
 En elev løser
 
-$\ln(x+2)+\ln(x-1)=\ln 5$
+$$
+\ln(x+2)+\ln(x-1)=\ln 5
+$$
 
 slik:
 
-$\ln(2x+1)=\ln5\Rightarrow 2x+1=5\Rightarrow x=2.$
+$$
+\ln(2x+1)=\ln5\Rightarrow 2x+1=5\Rightarrow x=2.
+$$
 
 a) Er svaret riktig?
 
@@ -281,13 +289,15 @@ c) Forklar hvilken kontroll som er viktigst i denne oppgaven.
 
 **Lag en generell regel**
 
-Anta at (a>0), (a\ne1), og (x>0).
+Anta at \(a>0\), \(a\ne1\), og \(x>0\).
 
 a) Vis at
 
-$\log_a x=\frac{\ln x}{\ln a}.$
+$$
+\log_a x=\frac{\ln x}{\ln a}.
+$$
 
-b) Bruk regelen til å løse (7^{2x-1}=11).
+b) Bruk regelen til å løse \(7^{2x-1}=11\).
 
 c) Forklar hvorfor løsningen er entydig.
 </div>
@@ -297,7 +307,7 @@ c) Forklar hvorfor løsningen er entydig.
 
 Velg én av påstandene og forbered en presis forklaring:
 
-- «En eksponentialfunksjon vokser alltid raskere jo større (x) blir.»
+- «En eksponentialfunksjon vokser alltid raskere jo større \(x\) blir.»
 - «Hvis to eksponentialfunksjoner har ulik vekstfaktor, vil den med størst vekstfaktor alltid ligge øverst.»
 - «Logaritmer gjør multiplikasjon om til addisjon, og derfor kan de brukes til å løse alle ligninger.»
 
@@ -306,7 +316,7 @@ Du skal enten begrunne påstanden eller gi et moteksempel og formulere en mer pr
 
 ---
 
-<div class="student-reflection" markdown="1">
+<div class="student-reflection"
 ## Egenvurdering
 
 - Hvilke oppgaver løste jeg helt selvstendig?
