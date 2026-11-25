@@ -100,7 +100,7 @@ x\ln2+8x=16\ln2+4
 \boxed{x=\frac{16\ln2+4}{\ln2+8}}
 \]
 
-Omtrent \(x\approx2{,}27\). Godta eksakt svar eller tilstrekkelig presis tilnærming.
+Omtrent \(x\approx1{,}74\). Godta eksakt svar eller tilstrekkelig presis tilnærming.
 
 ### C1 – identitet eller likning?
 
