@@ -2,11 +2,11 @@
 title: Potenser og logaritmer – elev
 ---
 
-<div class="print-brand" aria-label="MathPlatform">
-  <div class="print-brand__mark">M</div>
-  <div>
-    <div class="print-brand__name">MathPlatform</div>
-    <div class="print-brand__tagline">Matematikk · forståelse · mestring</div>
+<div class="print-cover" aria-label="MathPlatform">
+  <div class="print-cover__identity">
+    <div class="print-cover__mark">M</div>
+    <div class="print-cover__name">MathPlatform</div>
+    <div class="print-cover__tagline">Matematikk · forståelse · mestring</div>
   </div>
 </div>
 
@@ -14,21 +14,6 @@ title: Potenser og logaritmer – elev
   <span class="chapter-label">MATHPLATFORM · R1 · KAPITTEL 1</span>
   <button class="print-button" type="button" data-print-page>Skriv ut elevkapittelet</button>
 </div>
-
-# Potenser og logaritmer
-
-**Elevutgave · Fordypningsøkt mot karakter 6**
-
-<div class="chapter-meta" markdown="1">
-  <div><strong>Fokus</strong><br>Presisjon · metodevalg · resonnering</div>
-  <div><strong>Arbeidsmåte</strong><br>Vis mellomregning og forklar valgene dine</div>
-  <div><strong>Mål</strong><br>Mål: karakter 6 – presisjon, selvstendighet og resonnering</div>
-  <div><strong>Tid</strong><br>Ca. 2 timer</div>
-</div>
-
-Elev: ____________________________________    Dato: __________________
-
-Dette er en målrettet fordypningsøkt basert på sentrale temaer i R1 kapittel 1. Målet er å arbeide på nivå 6: velge effektive metoder, begrunne påstander, vurdere gyldighet og se sammenhenger.
 
 ## 1. Verktøykasse
 
@@ -67,6 +52,23 @@ Når du løser eksponentialligninger:
 - Prøv først å skrive begge sider med samme grunntall.
 - Hvis det ikke går, kan du ta logaritmen på begge sider.
 - Hvis du ser både \(a^{2x}\) og \(a^x\), kan substitusjonen \(u=a^x\) gjøre ligningen enklere.
+
+## Innledning
+
+# Potenser og logaritmer
+
+**Elevutgave · Fordypningsøkt mot karakter 6**
+
+<div class="chapter-meta" markdown="1">
+  <div><strong>Fokus</strong><br>Presisjon · metodevalg · resonnering</div>
+  <div><strong>Arbeidsmåte</strong><br>Vis mellomregning og forklar valgene dine</div>
+  <div><strong>Mål</strong><br>Mål: karakter 6 – presisjon, selvstendighet og resonnering</div>
+  <div><strong>Tid</strong><br>Ca. 2 timer</div>
+</div>
+
+Elev: ____________________________________    Dato: __________________
+
+Dette er en målrettet fordypningsøkt basert på sentrale temaer i R1 kapittel 1. Målet er å arbeide på nivå 6: velge effektive metoder, begrunne påstander, vurdere gyldighet og se sammenhenger.
 
 ## 2. Potenser og røtter
 
