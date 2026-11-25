@@ -1,7 +1,7 @@
 /* MathPlatform print identity and chapter prototype */
 
-/* The branded masthead is intentionally print-only. */
-.print-brand { display: none; }
+/* Cover is shown only in print output. */
+.print-cover { display: none; }
 
 
 .chapter-toolbar {
@@ -113,12 +113,31 @@
       font-weight: 700;
     }
   }
+  @page :first {
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+  }
   html, body { background: #fff !important; }
   body { color: #111 !important; font-size: 10.5pt; }
-  .print-brand { display: flex !important; align-items: center; gap: 1rem; margin: 0 0 1.5rem; padding: 0 0 1rem; border-bottom: 2px solid #243b6b; break-after: avoid; }
-  .print-brand__mark { display: grid; place-items: center; width: 2.7rem; height: 2.7rem; border-radius: .55rem; background: #243b6b !important; color: #fff !important; font: 800 19pt/1 Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .print-brand__name { color: #243b6b !important; font: 800 17pt/1.1 Arial, sans-serif; letter-spacing: -.4pt; }
-  .print-brand__tagline { margin-top: .25rem; color: #64748b !important; font: 8pt/1.2 Arial, sans-serif; letter-spacing: .7pt; text-transform: uppercase; }
+  .print-cover {
+    display: flex !important;
+    min-height: 253mm;
+    align-items: center;
+    justify-content: center;
+    break-after: page;
+    page-break-after: always;
+    text-align: center;
+  }
+  .print-cover__identity { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+  .print-cover__mark {
+    display: grid; place-items: center; width: 4.8rem; height: 4.8rem;
+    border-radius: 1rem; background: #243b6b !important; color: #fff !important;
+    font: 800 34pt/1 Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .print-cover__name { color: #243b6b !important; font: 800 30pt/1.1 Arial, sans-serif; letter-spacing: -1pt; }
+  .print-cover__tagline { color: #64748b !important; font: 9pt/1.2 Arial, sans-serif; letter-spacing: 1.4pt; text-transform: uppercase; }
   .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top,
   .md-search, .md-content__button, .headerlink,
   .chapter-toolbar .print-button { display: none !important; }
@@ -130,7 +149,7 @@
   .md-typeset h2 { font-size: 16pt; margin-top: 1.6rem; break-after: avoid; }
   .md-typeset h3 { font-size: 12pt; break-after: avoid; }
   .md-typeset p, .md-typeset li { orphans: 3; widows: 3; }
-  .chapter-toolbar { display: block; border: 0; padding: 0; margin-bottom: .5rem; }
+  .chapter-toolbar { display: none !important; }
   .chapter-meta { grid-template-columns: repeat(2, 1fr); gap: .4rem; }
   .chapter-meta > div { background: #f3f4f6 !important; border: 1px solid #ddd; padding: .55rem .7rem; }
   .task, .math-note, .model-box, .teacher-warning, .student-reflection {
