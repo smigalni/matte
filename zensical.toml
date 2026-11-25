@@ -19,6 +19,7 @@ nav = [
   { "R1" = [
     { "Kapittel 1 – Potenser og logaritmer (pilot)" = [
       { "Elevutgave" = "r1/kapittel-1-pilot/elev.md" },
+      { "Målrettet hjemmelekse – etter tilbakemelding" = "r1/kapittel-1-pilot/hjemmelekse-etter-tilbakemelding.md" },
       { "Lærerveiledning" = "r1/kapittel-1-pilot/laerer.md" },
     ] },
     { "Kapittel 3 – Derivasjon" = [
