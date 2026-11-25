@@ -284,6 +284,20 @@ $$
 
 Entydighet følger av at \(7^u\) er strengt voksende.
 
+**Oppgave 18**
+
+Trekk ut (2^x) som felles faktor:
+
+$
+2^x(1+2+4)=56
+$
+
+Dermed er (7cdot2^x=56), altså (2^x=8=2^3). Løsningen er
+
+$x=3.$
+
+Se etter om eleven oppdager felles faktor og forklarer hvorfor (1+2+4=7).
+
 **Oppgave 17**
 
 Vurder om eleven skiller mellom vekstfaktor og startverdi, mellom vekst og vekstfart, og om han bruker presise vilkår. Et godt svar korrigerer påstanden og underbygger med et eksempel eller en generell begrunnelse.
