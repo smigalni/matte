@@ -26,6 +26,33 @@
       aspect: "wide", x: [-6, 6], y: [-2.2, 4.15], grid: true, ticks: true, tickStepX: 1, tickStepY: 1,
       curves: [{ fn: x => 0.8 * x + 1, from: -6, to: 6, color: COLORS.curve, width: 2.4 }]
     },
+    tangentParabola: {
+      title: "Tangent til parabelen f(x) = x² i punktet (1, 1)",
+      description: "Parabelen f(x) = x² og tangenten y = 2x − 1 møtes i punktet (1, 1). Tangentens stigningstall er 2.",
+      aspect: "square", x: [-1, 3], y: [-1, 9], grid: true, ticks: true, tickStepX: 1, tickStepY: 2,
+      curves: [{ fn: x => x * x, from: -1, to: 3, color: COLORS.curve, width: 2.5 }],
+      lines: [{ fn: x => 2 * x - 1, color: COLORS.accent, width: 2.1 }],
+      points: [{ x: 1, y: 1, label: "P = (1, 1)", dx: 12, dy: -12 }]
+    },
+    secantParabola: {
+      title: "Sekant til parabelen f(x) = x² gjennom P og Q",
+      description: "Sekanten gjennom P = (1, 1) og Q = (4, 16) har stigningstall 5.",
+      aspect: "wide", x: [0, 4.6], y: [0, 20], grid: true, ticks: true, tickStepX: 1, tickStepY: 5,
+      curves: [{ fn: x => x * x, from: 0, to: 4.4, color: COLORS.curve, width: 2.5 }],
+      lines: [{ fn: x => 5 * x - 4, color: COLORS.accent, width: 2.1 }],
+      points: [
+        { x: 1, y: 1, label: "P = (1, 1)", dx: 10, dy: 18 },
+        { x: 4, y: 16, label: "Q = (4, 16)", dx: -82, dy: -12 }
+      ]
+    },
+    distanceTimeTangent: {
+      title: "Strekning som funksjon av tid med tangent",
+      description: "Grafen s(t) = t² og tangenten i tidspunktet t = 2. Tangentens stigningstall er 4t = 8 i dette punktet.",
+      aspect: "wide", x: [0, 4], y: [0, 17], grid: true, ticks: true, tickStepX: 1, tickStepY: 4,
+      curves: [{ fn: t => t * t, from: 0, to: 4, color: COLORS.curve, width: 2.5 }],
+      lines: [{ fn: t => 8 * t - 4, color: COLORS.accent, width: 2.1 }],
+      points: [{ x: 2, y: 4, label: "(2, 4)", dx: 10, dy: 18 }]
+    },
     quadraticBasic: {
       title: "Andregradsfunksjon f(x) = x² − 2x − 3",
       description: "Parabel med nullpunktene minus 1 og 3 og bunnpunktet (1, minus 4).",
