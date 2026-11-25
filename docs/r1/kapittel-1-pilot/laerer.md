@@ -284,6 +284,27 @@ $$
 
 Entydighet følger av at \(7^u\) er strengt voksende.
 
+**Oppgave 19 – T-matte i forkledning**
+
+Sett \(u=\lg x\). Da får vi andregradsligningen
+
+$u^2+u-2=0.$
+
+Faktoriser:
+
+$
+(u+2)(u-1)=0
+$
+
+Dermed er \(u=-2\) eller \(u=1\). Gå tilbake til \(x\):
+
+- \(\lg x=-2\Rightarrow x=10^{-2}=0{,}01\)
+- \(\lg x=1\Rightarrow x=10\)
+
+Begge løsningene er positive og dermed gyldige.
+
+**Svar:** \(x=0{,}01\) eller \(x=10\).
+
 **Oppgave 18**
 
 Trekk ut (2^x) som felles faktor:
