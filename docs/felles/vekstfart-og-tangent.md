@@ -76,6 +76,8 @@ Her er \(x_1\) og \(x_2\) start- og sluttverdiene på x-aksen. Telleren viser en
 
 ### Sekant: gjennomsnittlig vekstfart
 
+Se [figur 3.1.2](#figur-3-1-2).
+
 <a id="figur-3-1-2"></a>
 <div class="math-graph-frame">
   <div class="math-graph" data-math-graph="secantParabola" role="img" aria-label="Parabelen f(x) = x² og sekanten gjennom P = (1, 1) og Q = (4, 16)"></div>
@@ -118,6 +120,8 @@ Tenk deg at \(s(t)\) beskriver hvor langt en syklist har beveget seg etter \(t\)
 - Når grafen viser strekning som funksjon av tid, er den momentane vekstfarten stigningstallet til tangenten.
 
 ### Figur 3.1.3 – Tangenten viser vekstfarten akkurat i punktet
+
+Se [figur 3.1.3](#figur-3-1-3).
 
 <a id="figur-3-1-3"></a>
 <div class="math-graph-frame">
