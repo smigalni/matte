@@ -2,6 +2,14 @@
 title: Potenser og logaritmer – elev
 ---
 
+<div class="print-brand" aria-label="MathPlatform">
+  <div class="print-brand__mark">M</div>
+  <div>
+    <div class="print-brand__name">MathPlatform</div>
+    <div class="print-brand__tagline">Matematikk · forståelse · mestring</div>
+  </div>
+</div>
+
 <div class="chapter-toolbar" markdown="1">
   <span class="chapter-label">MATHPLATFORM · R1 · KAPITTEL 1</span>
   <button class="print-button" type="button" data-print-page>Skriv ut elevkapittelet</button>
