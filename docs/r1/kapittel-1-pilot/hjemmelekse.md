@@ -15,23 +15,6 @@ title: Hjemmelekse – R1 kapittel 1
   <button class="print-button" type="button" data-print-page>Skriv ut hjemmeleksen</button>
 </div>
 
-# Hjemmelekse: Potenser og logaritmer
-
-**R1 · Kapittel 1 · Målrettet repetisjon**
-
-<div class="chapter-meta" markdown="1">
-  <div><strong>Fokus</strong><br>Potensregler · røtter · logaritmer</div>
-  <div><strong>Arbeidsmåte</strong><br>Vis mellomregning – ikke hopp over trinn</div>
-  <div><strong>Mål</strong><br>Reglene skal sitte uten hjelp</div>
-  <div><strong>Tid</strong><br>Ca. 35–45 minutter</div>
-</div>
-
-Elev: ____________________________________    Dato: __________________
-
-Dette er en kort, målrettet hjemmelekse basert på det vi jobbet med i timen. Oppgavene trener på noen grunnleggende regler som må være sikre før du går videre til de mer sammensatte R1-oppgavene.
-
-<div class="page-break"></div>
-
 ## 1. Verktøykasse
 
 ### Potenser og røtter
@@ -64,6 +47,22 @@ $$
 1. Når du løser en logaritmeligning, må argumentet i hver logaritme være positivt.
 2. Når et produkt er null, må minst én av faktorene være null. Undersøk alle mulighetene – og kontroller at løsningene er gyldige.
 </div>
+
+
+# Hjemmelekse: Potenser og logaritmer
+
+**R1 · Kapittel 1 · Målrettet repetisjon**
+
+<div class="chapter-meta" markdown="1">
+  <div><strong>Fokus</strong><br>Potensregler · røtter · logaritmer</div>
+  <div><strong>Arbeidsmåte</strong><br>Vis mellomregning – ikke hopp over trinn</div>
+  <div><strong>Mål</strong><br>Reglene skal sitte uten hjelp</div>
+  <div><strong>Tid</strong><br>Ca. 35–45 minutter</div>
+</div>
+
+Elev: ____________________________________    Dato: __________________
+
+Dette er en kort, målrettet hjemmelekse basert på det vi jobbet med i timen. Oppgavene trener på noen grunnleggende regler som må være sikre før du går videre til de mer sammensatte R1-oppgavene.
 
 ## 2. Potensregler og overgangen mellom røtter og potenser
 
