@@ -313,11 +313,11 @@ Bruk denne faste notasjonen:
 
 Eksempel:
 
-> 34 min – oppg. 5 – H1, K – Eleven slo sammen logaritmene riktig, men glemte kravet (x>3). Jeg spurte «Når er begge logaritmene definert?». Eleven fant selv (x>3) og forkastet den negative løsningen. Neste steg: øv på definisjonsmengde før løsning.
+> 34 min – oppg. 5 – H1, K – Eleven slo sammen logaritmene riktig, men glemte kravet `x > 3`. Jeg spurte «Når er begge logaritmene definert?». Eleven fant selv `x > 3` og forkastet den negative løsningen. Neste steg: øv på definisjonsmengde før løsning.
 
 Eksempel på høy måloppnåelse:
 
-> 58 min – oppg. 7 – S, M, B – Valgte substitusjon (u=3^x) uten hint, forklarte at (u>0), og fant begge løsningene. Neste steg: la eleven begrunne hvorfor løsningen er fullstendig.
+> 58 min – oppg. 7 – S, M, B – Valgte substitusjon `u = 3^x` uten hint, forklarte at `u > 0`, og fant begge løsningene. Neste steg: la eleven begrunne hvorfor løsningen er fullstendig.
 
 **Viktig:** Skill mellom en feil eleven retter selv og en feil som først rettes etter hjelp. Det sier mye om selvstendighet. Noter gjerne elevens egne formuleringer i anførselstegn når de viser forståelse eller en misoppfatning.
 
