@@ -436,9 +436,11 @@ Deriverbarhet krever i tillegg at venstre stigningstall \(a\) er lik høyre stig
 
 **Oppgave R.4.4**
 
-Kontinuitet i \(x=0\) krever at høyre konstantledd er 0. I den opprinnelige funksjonen er konstantleddet 2, så funksjonen er ikke kontinuerlig slik den står. Hvis vi endrer høyre forskrift til \(cx+d\), må \(d=0\).
+a) Venstre grenseverdi er \(0\), mens høyre grenseverdi og funksjonsverdien er \(2\). Funksjonen er derfor ikke kontinuerlig for noen verdi av \(c\).
 
-Venstre stigningstall er \(g'_-(0)=2\), og høyre stigningstall er \(g'_+(0)=c\). Deriverbarhet krever derfor \(c=2\).
+b) Funksjonen kan heller ikke være deriverbar i \(x=0\), fordi den ikke er kontinuerlig der.
+
+c) Endre høyre forskrift til \(cx+d\). Kontinuitet krever \(d=0\). Venstre stigningstall er \(2\), og høyre stigningstall er \(c\). Deriverbarhet krever derfor \(c=2\).
 
 **Svar:** Velg høyre forskrift \(2x\). Da er funksjonen både kontinuerlig og deriverbar i \(x=0\).
 
