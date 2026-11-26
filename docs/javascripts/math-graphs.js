@@ -357,6 +357,22 @@
         ]
       }
     },
+    numericalSecants: {
+      title: "Numerisk derivasjon – sekantene nærmer seg tangenten",
+      description: "Grafen f(x) = x² med punktet P = (2, 4). Sekantene for h = 1 og h = 0,5 har stigningstall henholdsvis 5 og 4,5. Tangenten har stigningstall 4.",
+      aspect: "wide", x: [0, 4], y: [-1, 14], grid: false, ticks: true, tickStepX: 1, tickStepY: 2,
+      curves: [{ fn: x => x * x, from: 0, to: 3.7, color: COLORS.curve, width: 2.5 }],
+      lines: [
+        { fn: x => 4 * x - 4, color: COLORS.secondary, width: 2.2 },
+        { fn: x => 4.5 * x - 5, color: COLORS.accent, width: 1.9, dash: "7 5" },
+        { fn: x => 5 * x - 6, color: "#7c3aed", width: 1.8, dash: "3 5" }
+      ],
+      points: [
+        { x: 2, y: 4, label: "P(2, 4)", dx: 10, dy: 20 },
+        { x: 2.5, y: 6.25, label: "Q₂", dx: 9, dy: -10 },
+        { x: 3, y: 9, label: "Q₁", dx: 9, dy: -10 }
+      ]
+    },
     tangent: {
       title: "Sekant og tangent til f(x) = x²",
       description: "Tangenten i punktet (1, 1) har stigningstall 2. Sekanten gjennom (1, 1) og (2, 4) har stigningstall 3.",
