@@ -80,8 +80,8 @@ Se [figur 3.1.2](#figur-3-1-2).
 
 <a id="figur-3-1-2"></a>
 <div class="math-graph-frame">
-  <div class="math-graph" data-math-graph="secantParabola" role="img" aria-label="Parabelen f(x) = x² og sekanten gjennom P = (1, 1) og Q = (4, 16)"></div>
-  <p class="math-graph-caption"><strong>Figur 3.1.2.</strong> Sekanten går gjennom P og Q. Stigningstallet er den gjennomsnittlige vekstfarten mellom x = 1 og x = 4.</p>
+  <div class="math-graph" data-math-graph="secantParabola" role="img" aria-label="Parabelen f(x) = x² og sekanten gjennom P = (1, 1) og Q = (2, 4)"></div>
+  <p class="math-graph-caption"><strong>Figur 3.1.2.</strong> Sekanten går gjennom P og Q. Stigningstallet er den gjennomsnittlige vekstfarten mellom x = 1 og x = 2.</p>
 </div>
 
 Den blå kurven viser grafen til \\(f\\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \\(x_1\\) og \\(x_2\\).
@@ -93,7 +93,7 @@ Den blå kurven viser grafen til \\(f\\), mens den røde, rette linjen er sekant
     **Steg 1: Finn funksjonsverdiene.**
 
     \[
-    f(1)=1^2=1,\qquad f(4)=4^2=16
+    f(1)=1^2=1,\qquad f(2)=2^2=4
     \]
 
     **Steg 2: Bruk formelen for gjennomsnittlig vekstfart.**
@@ -106,7 +106,7 @@ Den blå kurven viser grafen til \\(f\\), mens den røde, rette linjen er sekant
     **Svar:**
 
     \[
-    \underline{\underline{a=5}}
+    \underline{\underline{a=3}}
     \]
 
     Den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=4\) er 5.
