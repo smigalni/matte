@@ -42,7 +42,7 @@ For \(h=0,5\) får vi sekantstigningstall 1,5. For \(h=0,25\) får vi 1,25. Tang
     \dfrac{(2+h)^2-2^2}{h}=4+h.
     \]
 
-    Ved \(h=0,1\) får vi \(4,1\), og ved \(h=0,01\) får vi \(4,01\).
+    Ved \(h=0,1\) får vi \(4,1\), og ved \(h=0,01\) får vi \(4,01\).\n\n    **Svar:** Tilnærmingene er \(\underline{\underline{4,1}}\) og \(\underline{\underline{4,01}}\), som nærmer seg 4.
 
 !!! question "Oppgave 3.7.2 – Vurder feilkilder"
 
@@ -50,7 +50,7 @@ For \(h=0,5\) får vi sekantstigningstall 1,5. For \(h=0,25\) får vi 1,25. Tang
 
 ??? note "Fasit – oppgave 3.7.2"
 
-    Når \(h\) er svært liten, trekkes to nesten like funksjonsverdier fra hverandre. Avrunding kan da få stor relativ betydning. Derfor gir ikke stadig mindre \(h\) nødvendigvis et mer nøyaktig svar.
+    Når \(h\) er svært liten, trekkes to nesten like funksjonsverdier fra hverandre. Avrunding kan da få stor relativ betydning. Derfor gir ikke stadig mindre \(h\) nødvendigvis et mer nøyaktig svar.\n\n    **Svar:** En svært liten \(h\)-verdi kan gjøre \(\underline{\underline{\text{avrundingsfeil}}}\) mer betydningsfull.
 
 !!! question "Oppgave 3.7.3 – Sammenlign to metoder"
 
@@ -66,4 +66,4 @@ For \(h=0,5\) får vi sekantstigningstall 1,5. For \(h=0,25\) får vi 1,25. Tang
     | 0,01 | 0,995033 | 1,000033 |
     | 0,001 | 0,999500 | 1,000000 |
 
-    Den symmetriske tilnærmingen er her nærmere 1 for samme \(h\). Når \(h\) blir svært liten, kan avrundingsfeil likevel påvirke resultatet.
+    Den symmetriske tilnærmingen er her nærmere 1 for samme \(h\). Når \(h\) blir svært liten, kan avrundingsfeil likevel påvirke resultatet.\n\n    **Svar:** Den symmetriske metoden er \(\underline{\underline{\text{mest nøyaktig for de undersøkte }h\text{-verdiene}}}\).
