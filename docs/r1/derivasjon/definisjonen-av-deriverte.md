@@ -10,6 +10,16 @@ Definisjonen av den deriverte forteller hva derivasjon betyr, ikke bare hvordan 
 
     Brøken er stigningstallet til en sekant. Når \(\Delta x\) nærmer seg null, nærmer sekanten seg tangenten. Grenseverdien gir tangentens stigningstall dersom den finnes som et endelig tall.
 
+### Sekanten nærmer seg tangenten
+
+Se [figur 3.6.1](#figur-3-6-1). Vi bruker \(f(x)=x^2\) og lar punktet Q nærme seg P.
+
+<a id="figur-3-6-1"></a>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="limitSecants" role="img" aria-label="Grafen f(x) = x² med to sekanter som nærmer seg tangenten i P = (1, 1)"></div>
+  <p class="math-graph-caption"><strong>Figur 3.6.1.</strong> Når Q nærmer seg P, nærmer sekantens stigningstall seg tangentens stigningstall. Grenseverdien av sekantstigningstallet er den deriverte i P.</p>
+</div>
+
 !!! example "Eksempel 3.6.1 – Finn den deriverte til \(f(x)=x^2\)"
 
     \[
