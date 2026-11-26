@@ -85,6 +85,7 @@ Arbeid først uten digitale hjelpemidler. Bruk figurene aktivt, men ikke stol p�
   <p class="math-graph-caption"><strong>Figur 2.13.1.</strong> En graf som går sammenhengende gjennom punktet. [Gå til oppgave 2.13.1](#oppgave-2-13-1).</p>
 </div>
 
+<a id="oppgave-2-13-1"></a>
 <div class="task" markdown="1">
 <span class="task-level">GRUNNLEGGENDE · OPPGAVE 2.13.1</span>
 **Les av figur 2.13.1.**
@@ -104,6 +105,7 @@ d) Er funksjonen kontinuerlig i \(x=1\)? Begrunn med de tre kontinuitetskravene.
   <p class="math-graph-caption"><strong>Figur 2.13.2.</strong> Grafen nærmer seg samme høyde fra begge sider, men funksjonsverdien er en annen. [Gå til oppgave 2.13.2](#oppgave-2-13-2).</p>
 </div>
 
+<a id="oppgave-2-13-2"></a>
 <div class="task" markdown="1">
 <span class="task-level">GRUNNLEGGENDE · OPPGAVE 2.13.2</span>
 **Skill mellom grenseverdi og funksjonsverdi.**
@@ -123,6 +125,7 @@ d) Beskriv hvordan grafen måtte vært endret for at funksjonen skulle blitt kon
   <p class="math-graph-caption"><strong>Figur 2.13.3.</strong> Venstre og høyre side nærmer seg ulike verdier. [Gå til oppgave 2.13.3](#oppgave-2-13-3).</p>
 </div>
 
+<a id="oppgave-2-13-3"></a>
 <div class="task" markdown="1">
 <span class="task-level">GRUNNLEGGENDE · OPPGAVE 2.13.3</span>
 **Undersøk spranget i figur 2.13.3.**
@@ -191,6 +194,7 @@ c) \(h(x)=\begin{cases}x+1,&x<0,\\x+2,&x\geq0.\end{cases}\) i \(x=0\).
   <p class="math-graph-caption"><strong>Figur 2.13.4.</strong> En delt funksjon der funksjonsverdien er bestemt av den høyre forskriften. [Gå til oppgave 2.13.7](#oppgave-2-13-7).</p>
 </div>
 
+<a id="oppgave-2-13-7"></a>
 <div class="task" markdown="1">
 <span class="task-level">KJERNE · OPPGAVE 2.13.7</span>
 **Bruk figur 2.13.4.**
@@ -274,6 +278,7 @@ d) Lag et eksempel der grenseverdien ikke finnes.
   <p class="math-graph-caption"><strong>Figur 2.13.5.</strong> Grafen går mot uendelig med motsatt fortegn på hver side av den vertikale asymptoten. [Gå til oppgave 2.13.12](#oppgave-2-13-12).</p>
 </div>
 
+<a id="oppgave-2-13-12"></a>
 <div class="task" markdown="1">
 <span class="task-level">KJERNE · OPPGAVE 2.13.12</span>
 **Undersøk figur 2.13.5.**
@@ -293,6 +298,7 @@ d) Hvilket enkelt funksjonsuttrykk kan ha denne grafen? Begrunn.
   <p class="math-graph-caption"><strong>Figur 2.13.6.</strong> En horisontal asymptote beskriver oppførselen langt ute på x-aksen. [Gå til oppgave 2.13.13](#oppgave-2-13-13).</p>
 </div>
 
+<a id="oppgave-2-13-13"></a>
 <div class="task" markdown="1">
 <span class="task-level">KJERNE · OPPGAVE 2.13.13</span>
 **Undersøk figur 2.13.6.**
@@ -312,6 +318,7 @@ d) Kan du ut fra figuren alene bevise grenseverdien? Begrunn.
   <p class="math-graph-caption"><strong>Figur 2.13.7.</strong> To asymptoter og ett kjent punkt kan være nok til å bestemme en enkel rasjonal funksjon. [Gå til oppgave 2.13.14](#oppgave-2-13-14).</p>
 </div>
 
+<a id="oppgave-2-13-14"></a>
 <div class="task" markdown="1">
 <span class="task-level">KREVENDE · OPPGAVE 2.13.14</span>
 Grafen i figur 2.13.7 har vertikal asymptote \(x=2\), horisontal asymptote \(y=1\) og går gjennom \((0,0)\).
@@ -331,6 +338,7 @@ d) Bestem de ensidige grenseverdiene ved \(x=2\).
   <p class="math-graph-caption"><strong>Figur 2.13.8.</strong> Den stiplede linjen er en skrå asymptote. [Gå til oppgave 2.13.15](#oppgave-2-13-15).</p>
 </div>
 
+<a id="oppgave-2-13-15"></a>
 <div class="task" markdown="1">
 <span class="task-level">KREVENDE · OPPGAVE 2.13.15</span>
 **Bruk figur 2.13.8.**
