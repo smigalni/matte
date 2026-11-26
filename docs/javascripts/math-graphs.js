@@ -28,21 +28,21 @@
     },
     tangentParabola: {
       title: "Tangent til parabelen f(x) = x² i punktet (1, 1)",
-      description: "Parabelen f(x) = x² og tangenten y = 2x − 1 møtes i punktet (1, 1). Tangentens stigningstall er 2.",
-      aspect: "square", x: [-1, 3], y: [-1, 9], grid: true, ticks: true, tickStepX: 1, tickStepY: 2,
-      curves: [{ fn: x => x * x, from: -1, to: 3, color: COLORS.curve, width: 2.5 }],
+      description: "Parabelen f(x) = x² og tangenten y = 2x − 1 møtes i punktet (1, 1). Tangentens stigningstall er 2. Aksene har samme målestokk.",
+      aspect: "square", x: [-1, 2], y: [-1, 2], grid: false, ticks: true, tickStepX: 1, tickStepY: 1,
+      curves: [{ fn: x => x * x, from: -1, to: 1.4, color: COLORS.curve, width: 2.5 }],
       lines: [{ fn: x => 2 * x - 1, color: COLORS.accent, width: 2.1 }],
-      points: [{ x: 1, y: 1, label: "P = (1, 1)", dx: 12, dy: -12 }]
+      points: [{ x: 1, y: 1, label: "P = (1, 1)", dx: 10, dy: -12 }]
     },
     secantParabola: {
       title: "Sekant til parabelen f(x) = x² gjennom P og Q",
-      description: "Sekanten gjennom P = (1, 1) og Q = (4, 16) har stigningstall 5.",
-      aspect: "wide", x: [0, 4.6], y: [0, 20], grid: true, ticks: true, tickStepX: 1, tickStepY: 5,
-      curves: [{ fn: x => x * x, from: 0, to: 4.4, color: COLORS.curve, width: 2.5 }],
-      lines: [{ fn: x => 5 * x - 4, color: COLORS.accent, width: 2.1 }],
+      description: "Sekanten gjennom P = (1, 1) og Q = (2, 4) har stigningstall 3. Aksene har samme målestokk.",
+      aspect: "square", x: [-1, 4], y: [-1, 4], grid: false, ticks: true, tickStepX: 1, tickStepY: 1,
+      curves: [{ fn: x => x * x, from: -1, to: 2, color: COLORS.curve, width: 2.5 }],
+      lines: [{ fn: x => 3 * x - 2, color: COLORS.accent, width: 2.1 }],
       points: [
         { x: 1, y: 1, label: "P = (1, 1)", dx: 10, dy: 18 },
-        { x: 4, y: 16, label: "Q = (4, 16)", dx: -82, dy: -12 }
+        { x: 2, y: 4, label: "Q = (2, 4)", dx: -82, dy: -12 }
       ]
     },
     distanceTimeTangent: {
@@ -359,34 +359,34 @@
     },
     limitSecants: {
       title: "Sekanter nærmer seg tangenten når h går mot null",
-      description: "Grafen f(x) = x² med P = (1, 1), to sekantlinjer gjennom P og punkter nærmere P, og tangenten y = 2x − 1.",
-      aspect: "wide", x: [-0.2, 3.1], y: [-1.2, 8.5], grid: false, ticks: true, tickStepX: 1, tickStepY: 2,
-      curves: [{ fn: x => x * x, from: -0.1, to: 2.85, color: COLORS.curve, width: 2.5 }],
+      description: "Grafen f(x) = x² med P = (1, 1), to sekantlinjer gjennom P og punkter nærmere P, og tangenten y = 2x − 1. Aksene har samme målestokk.",
+      aspect: "square", x: [0, 3], y: [0, 3], grid: false, ticks: true, tickStepX: 1, tickStepY: 1,
+      curves: [{ fn: x => x * x, from: 0, to: 1.7, color: COLORS.curve, width: 2.5 }],
       lines: [
         { fn: x => 2 * x - 1, color: COLORS.secondary, width: 2.2 },
-        { fn: x => 2.5 * x - 1.5, color: COLORS.accent, width: 1.9, dash: "7 5" },
-        { fn: x => 3 * x - 2, color: "#7c3aed", width: 1.8, dash: "3 5" }
+        { fn: x => 2.25 * x - 1.25, color: COLORS.accent, width: 1.9, dash: "7 5" },
+        { fn: x => 2.5 * x - 1.5, color: "#7c3aed", width: 1.8, dash: "3 5" }
       ],
       points: [
         { x: 1, y: 1, label: "P(1, 1)", dx: 10, dy: 19 },
-        { x: 1.5, y: 2.25, label: "Q₁", dx: 9, dy: -10 },
-        { x: 2, y: 4, label: "Q₂", dx: 9, dy: -10 }
+        { x: 1.25, y: 1.5625, label: "Q₁", dx: 9, dy: -10 },
+        { x: 1.5, y: 2.25, label: "Q₂", dx: 9, dy: -10 }
       ]
     },
     numericalSecants: {
       title: "Numerisk derivasjon – sekantene nærmer seg tangenten",
-      description: "Grafen f(x) = x² med punktet P = (2, 4). Sekantene for h = 1 og h = 0,5 har stigningstall henholdsvis 5 og 4,5. Tangenten har stigningstall 4.",
-      aspect: "wide", x: [0, 4], y: [-1, 14], grid: false, ticks: true, tickStepX: 1, tickStepY: 2,
-      curves: [{ fn: x => x * x, from: 0, to: 3.7, color: COLORS.curve, width: 2.5 }],
+      description: "Grafen f(x) = x² med punktet P = (0,5, 0,25). Sekantene for h = 0,5 og h = 0,25 har stigningstall 1,5 og 1,25. Tangenten har stigningstall 1. Aksene har samme målestokk.",
+      aspect: "square", x: [0, 1.5], y: [0, 1.5], grid: false, ticks: true, tickStepX: 0.5, tickStepY: 0.5,
+      curves: [{ fn: x => x * x, from: 0, to: 1.2, color: COLORS.curve, width: 2.5 }],
       lines: [
-        { fn: x => 4 * x - 4, color: COLORS.secondary, width: 2.2 },
-        { fn: x => 4.5 * x - 5, color: COLORS.accent, width: 1.9, dash: "7 5" },
-        { fn: x => 5 * x - 6, color: "#7c3aed", width: 1.8, dash: "3 5" }
+        { fn: x => x - 0.25, color: COLORS.secondary, width: 2.2 },
+        { fn: x => 1.25 * x - 0.375, color: COLORS.accent, width: 1.9, dash: "7 5" },
+        { fn: x => 1.5 * x - 0.5, color: "#7c3aed", width: 1.8, dash: "3 5" }
       ],
       points: [
-        { x: 2, y: 4, label: "P(2, 4)", dx: 10, dy: 20 },
-        { x: 2.5, y: 6.25, label: "Q₂", dx: 9, dy: -10 },
-        { x: 3, y: 9, label: "Q₁", dx: 9, dy: -10 }
+        { x: 0.5, y: 0.25, label: "P", dx: 10, dy: 19 },
+        { x: 0.75, y: 0.5625, label: "Q₁", dx: 9, dy: -10 },
+        { x: 1, y: 1, label: "Q₂", dx: 9, dy: -10 }
       ]
     },
     tangent: {
