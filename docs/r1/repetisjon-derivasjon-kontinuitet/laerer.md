@@ -445,7 +445,7 @@ b) Funksjonen kan heller ikke være deriverbar i \(x=0\), fordi den ikke er kont
 
 c) Endre høyre forskrift til \(cx+d\). Kontinuitet krever \(\underline{\underline{d=0}}\). Venstre stigningstall er \(2\), og høyre stigningstall er \(c\). Deriverbarhet krever derfor \(\underline{\underline{c=2}}\).
 
-**Svar:** Velg høyre forskrift \(\underline{\underline{cx=2x}}\). Da er funksjonen både kontinuerlig og deriverbar i \(x=0\).
+**Svar:** Velg høyre forskrift \(\underline{\underline{2x}}\). Da er funksjonen både kontinuerlig og deriverbar i \(x=0\).
 
 ### Oppgaver R.5.1–R.5.6 · Kontinuitet og asymptoter
 
