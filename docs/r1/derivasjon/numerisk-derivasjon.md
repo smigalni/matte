@@ -54,8 +54,16 @@ For \\(h=1\\) får vi sekantstigningstall 5. For \\(h=0,5\\) får vi 4,5. Tangen
 
 !!! question "Oppgave 3.7.3 – Sammenlign to metoder"
 
-    Beregn den ensidige og symmetriske tilnærmingen for \\(f(x)=\\ln x\\) i \\(x=1\\), med \\(h=0,1\\) og \\(h=0,01\\). Sammenlign med den eksakte verdien, og kommenter nøyaktigheten. Undersøk minst tre verdier av \(h\), og kommenter nøyaktigheten.
+    Beregn den ensidige og symmetriske tilnærmingen for \\(f(x)=\\ln x\\) i \\(x=1\\), med \\(h=0,1\\), \\(h=0,01\\) og \\(h=0,001\\). Sammenlign med den eksakte verdien, og kommenter nøyaktigheten.
 
 ??? note "Fasit – oppgave 3.7.3"
 
-    Den eksakte verdien er \(f'(1)=1\). Den ensidige tilnærmingen er \(\ln(1+h)/h\), mens den symmetriske er \(\bigl(\ln(1+h)-\ln(1-h)\bigr)/(2h)\), for \(0<h<1\). Sammenlign resultatene med \(1\); den symmetriske tilnærmingen er vanligvis mer nøyaktig for samme \(h\).
+    Den eksakte verdien er \\(f'(1)=1\\). Vi får omtrent:
+
+    | \\(h\\) | Ensidig tilnærming | Symmetrisk tilnærming |
+    |---:|---:|---:|
+    | 0,1 | 0,953102 | 1,003354 |
+    | 0,01 | 0,995033 | 1,000033 |
+    | 0,001 | 0,999500 | 1,000000 |
+
+    Den symmetriske tilnærmingen er her nærmere 1 for samme \\(h\\). Når \\(h\\) blir svært liten, kan avrundingsfeil likevel påvirke resultatet.
