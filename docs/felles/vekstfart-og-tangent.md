@@ -304,4 +304,8 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     y=2x-1.
     \]
 
-    **Svar:** Tangentens likning er \(\underline{\underline{y=2x-1}}\).
+    **Svar:** Tangentens likning er
+
+    \[
+    \underline{\underline{y=2x-1}}
+    \]
