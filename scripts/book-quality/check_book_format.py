@@ -297,7 +297,7 @@ def main() -> int:
     args = parser.parse_args()
     root = args.root.resolve()
     config_path = args.config if args.config.is_absolute() else root / args.config
-    checks = load_config(config_path)
+    checks = load_config(config_path)["checks"]
     exclusions = tuple(checks.get("excluded_paths", DEFAULTS["excluded_paths"]))
     file_names = args.files_from.read_text(encoding="utf-8").splitlines() if args.files_from else args.files
 
