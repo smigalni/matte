@@ -257,7 +257,7 @@ Definisjonsmengden er \(x\ne1\).
 
 **Oppgave R.2.1**
 
-a) Kvotienten er stigningstallet til sekanten gjennom \((a,f(a))\) og \((a+h,f(a+h))\).
+a) Kvotienten er stigningstallet til sekanten mellom punktet med x-verdi \(a\) og punktet med x-verdi \(a+h\).
 
 b) \(h\) er den horisontale avstanden mellom punktenes x-koordinater.
 
@@ -445,7 +445,13 @@ b) Funksjonen kan heller ikke være deriverbar i \(x=0\), fordi den ikke er kont
 
 c) Endre høyre forskrift til \(cx+d\). Kontinuitet krever \(\underline{\underline{d=0}}\). Venstre stigningstall er \(2\), og høyre stigningstall er \(c\). Deriverbarhet krever derfor \(\underline{\underline{c=2}}\).
 
-**Svar:** Velg høyre forskrift \(\underline{\underline{2x}}\). Da er funksjonen både kontinuerlig og deriverbar i \(x=0\).
+**Svar:**
+
+\[
+\underline{\underline{\text{Høyre forskrift: }2x}}
+\]
+
+Da er funksjonen både kontinuerlig og deriverbar i \(x=0\).
 
 ### Oppgaver R.5.1–R.5.6 · Kontinuitet og asymptoter
 
