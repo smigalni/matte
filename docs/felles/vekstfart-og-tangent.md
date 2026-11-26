@@ -68,6 +68,7 @@ For denne funksjonen er den deriverte i \(x=1\) lik \(f'(1)=2\). Det betyr at ta
 Den **gjennomsnittlige vekstfarten** forteller hvor mye funksjonsverdien endrer seg i gjennomsnitt når vi går fra én x-verdi til en annen. Geometrisk er den stigningstallet til en **sekant** – en rett linje som går gjennom to punkter på grafen.
 
 !!! important "Formel for gjennomsnittlig vekstfart"
+
     \[
     a=\dfrac{f(x_2)-f(x_1)}{x_2-x_1}
     \]
@@ -84,9 +85,9 @@ Se [figur 3.1.2](#figur-3-1-2).
   <p class="math-graph-caption"><strong>Figur 3.1.2.</strong> Sekanten går gjennom P og Q. Stigningstallet er den gjennomsnittlige vekstfarten mellom x = 1 og x = 2.</p>
 </div>
 
-Den blå kurven viser grafen til \(f\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \\(x_1\\) og \\(x_2\\).
+Den blå kurven viser grafen til \(f\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \(x_1\) og \(x_2\).
 
-!!! example "Eksempel – Finn gjennomsnittlig vekstfart"
+!!! example "Eksempel 3.1.1 – Finn gjennomsnittlig vekstfart"
 
     La \(f(x)=x^2\). Vi finner gjennomsnittlig vekstfart fra \(x=1\) til \(x=2\).
 
@@ -140,6 +141,7 @@ I en strekning–tid-modell måles den momentane vekstfarten i for eksempel mete
 Den enkleste metoden er ofte å starte med \(y=ax+b\). Når vi kjenner tangentens stigningstall, bruker vi punktet på grafen til å finne konstanten \(b\). Vi kan også bruke et punkts formel:
 
 !!! important "Ettpunktsformelen"
+
     \[
     y-y_1=a(x-x_1)
     \]
@@ -154,11 +156,12 @@ For tangenten til grafen til \(f\) i \(x=x_1\) kjenner vi både punktet og stign
 Tangentens likning blir derfor:
 
 !!! important "Tangentens likning"
+
     \[
     y-y_1=f'(x_1)(x-x_1)
     \]
 
-!!! example "Eksempel – Finn tangentens likning steg for steg"
+!!! example "Eksempel 3.1.2 – Finn tangentens likning steg for steg"
 
     Vi bruker \(f(x)=x^2\) og finner tangenten der \(x=1\). Punktet på grafen er \(P=(x_1,y_1)=(1,1)\), og tangentens stigningstall er \(f'(1)=2\).
 
@@ -226,7 +229,7 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     a=\dfrac{f(3)-f(1)}{3-1}=\dfrac{9-1}{2}=4.
     \]
 
-    **Svar:** Den gjennomsnittlige vekstfarten er \(4\).
+    **Svar:** Den gjennomsnittlige vekstfarten er \(\underline{\underline{4}}\).
 
 !!! question "Oppgave 3.1.2 – Tolk vekstfarten"
 
@@ -301,4 +304,4 @@ Oppgavene trener på gjennomsnittlig og momentan vekstfart og på å finne tange
     y=2x-1.
     \]
 
-    **Svar:** Tangentens likning er \(y=2x-1\).
+    **Svar:** Tangentens likning er \(\underline{\underline{y=2x-1}}\).
