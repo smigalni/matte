@@ -24,7 +24,7 @@ jobs:
             echo "BOOK_QUALITY_ROOT=${GITHUB_WORKSPACE}" >> "${GITHUB_ENV}"
           else
             # Book repositories always use the released shared checker from main.
-            git clone --depth 1 --branch main https://github.com/smigalni/matte.git .book-quality-tools
+            git clone --depth 1 --branch fix/book-quality-config-loading https://github.com/smigalni/matte.git .book-quality-tools
             echo "BOOK_QUALITY_ROOT=${GITHUB_WORKSPACE}/.book-quality-tools" >> "${GITHUB_ENV}"
           fi
 
