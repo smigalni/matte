@@ -357,6 +357,22 @@
         ]
       }
     },
+    limitSecants: {
+      title: "Sekanter nærmer seg tangenten når h går mot null",
+      description: "Grafen f(x) = x² med P = (1, 1), to sekantlinjer gjennom P og punkter nærmere P, og tangenten y = 2x − 1.",
+      aspect: "wide", x: [-0.2, 3.1], y: [-1.2, 8.5], grid: false, ticks: true, tickStepX: 1, tickStepY: 2,
+      curves: [{ fn: x => x * x, from: -0.1, to: 2.85, color: COLORS.curve, width: 2.5 }],
+      lines: [
+        { fn: x => 2 * x - 1, color: COLORS.secondary, width: 2.2 },
+        { fn: x => 2.5 * x - 1.5, color: COLORS.accent, width: 1.9, dash: "7 5" },
+        { fn: x => 3 * x - 2, color: "#7c3aed", width: 1.8, dash: "3 5" }
+      ],
+      points: [
+        { x: 1, y: 1, label: "P(1, 1)", dx: 10, dy: 19 },
+        { x: 1.5, y: 2.25, label: "Q₁", dx: 9, dy: -10 },
+        { x: 2, y: 4, label: "Q₂", dx: 9, dy: -10 }
+      ]
+    },
     numericalSecants: {
       title: "Numerisk derivasjon – sekantene nærmer seg tangenten",
       description: "Grafen f(x) = x² med punktet P = (2, 4). Sekantene for h = 1 og h = 0,5 har stigningstall henholdsvis 5 og 4,5. Tangenten har stigningstall 4.",
