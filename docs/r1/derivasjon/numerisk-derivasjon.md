@@ -14,6 +14,18 @@ En symmetrisk tilnærming er
 f'(x)\approx\dfrac{f(x+h)-f(x-h)}{2h}.
 \]
 
+### Fra sekant til tangent
+
+Se [figur 3.7.1](#figur-3-7-1). Vi bruker \\(f(x)=x^2\\) og undersøker stigningstallet ved \\(x=2\\).
+
+<a id="figur-3-7-1"></a>
+<div class="math-graph-frame">
+  <div class="math-graph" data-math-graph="numericalSecants" role="img" aria-label="Grafen f(x) = x² med to sekanter fra punktet (2, 4) og tangenten i samme punkt"></div>
+  <p class="math-graph-caption"><strong>Figur 3.7.1.</strong> Når h blir mindre, flyttes det andre punktet på sekanten nærmere P. Sekantens stigningstall nærmer seg tangentens stigningstall, som er 4.</p>
+</div>
+
+For \\(h=1\\) får vi sekantstigningstall 5. For \\(h=0,5\\) får vi 4,5. Tangentens stigningstall er 4. Figuren viser den geometriske ideen bak numerisk derivasjon.
+
 ## Oppgaver
 
 !!! question "Oppgave 3.7.1 – Sammenlign tilnærming og eksakt verdi"
