@@ -16,7 +16,7 @@ f'(x)\approx\dfrac{f(x+h)-f(x-h)}{2h}.
 
 ### Fra sekant til tangent
 
-Se [figur 3.7.1](#figur-3-7-1). Vi bruker \(f(x)=x^2\) og undersøker stigningstallet ved \(x=2\).
+Se [figur 3.7.1](#figur-3-7-1). Vi bruker \(f(x)=x^2\) og undersøker stigningstallet ved \(x=0,5\).
 
 <a id="figur-3-7-1"></a>
 <div class="math-graph-frame">
@@ -24,7 +24,7 @@ Se [figur 3.7.1](#figur-3-7-1). Vi bruker \(f(x)=x^2\) og undersøker stigningst
   <p class="math-graph-caption"><strong>Figur 3.7.1.</strong> Når h blir mindre, flyttes det andre punktet på sekanten nærmere P. Sekantens stigningstall nærmer seg tangentens stigningstall, som er 4.</p>
 </div>
 
-For \(h=1\) får vi sekantstigningstall 5. For \(h=0,5\) får vi 4,5. Tangentens stigningstall er 4. Figuren viser den geometriske ideen bak numerisk derivasjon.
+For \(h=0,5\) får vi sekantstigningstall 1,5. For \(h=0,25\) får vi 1,25. Tangentens stigningstall er 1. Figuren viser den geometriske ideen bak numerisk derivasjon.
 
 ## Oppgaver
 
