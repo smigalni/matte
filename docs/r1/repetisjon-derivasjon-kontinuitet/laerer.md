@@ -206,9 +206,12 @@ h'=\frac{(2x-4)(2x+1)-2(x^2-4x)}{(2x+1)^2}
 \]
 
 d) Definisjonsmengdene:
-- a) \(x\ne2\)
-- b) alle reelle tall
-- c) \(x\ne-\frac12\)
+
+a) \(x\ne2\).
+
+b) Alle reelle tall.
+
+c) \(x\ne-\frac12\).
 
 **Oppgave R.1.5**
 
@@ -440,9 +443,9 @@ a) Venstre grenseverdi er \(0\), mens høyre grenseverdi og funksjonsverdien er 
 
 b) Funksjonen kan heller ikke være deriverbar i \(x=0\), fordi den ikke er kontinuerlig der.
 
-c) Endre høyre forskrift til \(cx+d\). Kontinuitet krever \(d=0\). Venstre stigningstall er \(2\), og høyre stigningstall er \(c\). Deriverbarhet krever derfor \(c=2\).
+c) Endre høyre forskrift til \(cx+d\). Kontinuitet krever \(\underline{\underline{d=0}}\). Venstre stigningstall er \(2\), og høyre stigningstall er \(c\). Deriverbarhet krever derfor \(\underline{\underline{c=2}}\).
 
-**Svar:** Velg høyre forskrift \(2x\). Da er funksjonen både kontinuerlig og deriverbar i \(x=0\).
+**Svar:** Velg høyre forskrift \(\underline{\underline{cx=2x}}\). Da er funksjonen både kontinuerlig og deriverbar i \(x=0\).
 
 ### Oppgaver R.5.1–R.5.6 · Kontinuitet og asymptoter
 
