@@ -84,11 +84,11 @@ Se [figur 3.1.2](#figur-3-1-2).
   <p class="math-graph-caption"><strong>Figur 3.1.2.</strong> Sekanten går gjennom P og Q. Stigningstallet er den gjennomsnittlige vekstfarten mellom x = 1 og x = 2.</p>
 </div>
 
-Den blå kurven viser grafen til \\(f\\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \\(x_1\\) og \\(x_2\\).
+Den blå kurven viser grafen til \(f\), mens den røde, rette linjen er sekanten gjennom P og Q. **Sekantens stigningstall** er den gjennomsnittlige vekstfarten mellom \\(x_1\\) og \\(x_2\\).
 
 !!! example "Eksempel – Finn gjennomsnittlig vekstfart"
 
-    La \(f(x)=x^2\). Vi finner gjennomsnittlig vekstfart fra \(x=1\) til \(x=4\).
+    La \(f(x)=x^2\). Vi finner gjennomsnittlig vekstfart fra \(x=1\) til \(x=2\).
 
     **Steg 1: Finn funksjonsverdiene.**
 
@@ -99,8 +99,8 @@ Den blå kurven viser grafen til \\(f\\), mens den røde, rette linjen er sekant
     **Steg 2: Bruk formelen for gjennomsnittlig vekstfart.**
 
     \[
-    a=\dfrac{f(4)-f(1)}{4-1}
-    =\dfrac{16-1}{3}=5
+    a=\dfrac{f(2)-f(1)}{2-1}
+    =\dfrac{4-1}{1}=3
     \]
 
     **Svar:**
@@ -109,7 +109,7 @@ Den blå kurven viser grafen til \\(f\\), mens den røde, rette linjen er sekant
     \underline{\underline{a=3}}
     \]
 
-    Den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=4\) er 5.
+    Den gjennomsnittlige vekstfarten fra \(x=1\) til \(x=2\) er 3.
 
 ## 4. Momentan vekstfart
 
